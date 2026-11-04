@@ -1,0 +1,974 @@
+{
+  "schema": "formal-companion/informalize-items",
+  "schema_version": 1,
+  "library": {
+    "commit": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+    "declarations_sha256": "121f798714cd06714f7196df0c2e60fce591d0705f562a11a78a72983c786e9d"
+  },
+  "reference_work": "A. Hatcher, Algebraic Topology, Cambridge University Press, 2002",
+  "sections": [
+    {
+      "number": "1",
+      "title": "Paths, subpaths and subdivisions",
+      "slug": "paths-and-subdivisions"
+    },
+    {
+      "number": "2",
+      "title": "Fundamental groupoids and fundamental groups",
+      "slug": "fundamental-groupoids-and-groups"
+    },
+    {
+      "number": "3",
+      "title": "Functors out of a connected groupoid",
+      "slug": "connected-groupoids"
+    },
+    {
+      "number": "4",
+      "title": "The fundamental groupoid of a cover",
+      "slug": "fundamental-groupoid-of-a-cover"
+    },
+    {
+      "number": "5",
+      "title": "Covers generate the fundamental group",
+      "slug": "fundamental-group-of-a-cover"
+    },
+    {
+      "number": "6",
+      "title": "The Seifert--van Kampen theorem",
+      "slug": "seifert-van-kampen"
+    }
+  ],
+  "items": [
+    {
+      "id": "1.1",
+      "section": "1",
+      "kind": "lemma",
+      "title": "A Lebesgue number for a family of neighborhoods",
+      "gist": "For a compact subset of a pseudometric space and a family of sets one of which is a neighborhood of each point of that subset, there is a positive radius such that every ball of that radius around a point of the subset lies in a single member of the family.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "The members of the family are not assumed to be open; each is only required to be a neighborhood of the points it has to cover.",
+      "declarations": [
+        {
+          "name": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
+          "module": "TauCeti.Topology.MetricSpace.Lebesgue",
+          "line": 33,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a pseudometric space",
+            "an index type for the family",
+            "a subset of the space",
+            "a family of subsets of the space indexed by the index type",
+            "the subset is compact",
+            "every point of the subset has some member of the family as a neighborhood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.2",
+      "section": "1",
+      "kind": "lemma",
+      "title": "Equally spaced subdivision points of an interval",
+      "gist": "In a linearly ordered additive commutative group whose addition respects the order, the point reached from the left endpoint of a closed interval after a given number of nonnegative steps, clipped to the interval, is the smaller of the right endpoint and the left endpoint plus that many steps.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "The equality is one between elements of the group: the left-hand side is the element underlying a point of the interval, and clipping at the left endpoint is what the nonnegative step makes redundant.",
+      "declarations": [
+        {
+          "name": "Set.Icc.coe_addNSMul",
+          "module": "TauCeti.Topology.UnitInterval",
+          "line": 64,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "an additive commutative group that is linearly ordered and whose addition respects the order",
+            "two endpoints and a step size in the group",
+            "the left endpoint is at most the right endpoint",
+            "the step size is nonnegative",
+            "a number of steps, a natural number"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.3",
+      "section": "1",
+      "kind": "definition",
+      "title": "The restriction of a path to a subspace",
+      "gist": "A path in the ambient space all of whose values lie in a subset, together with endpoints chosen in that subset, becomes a path in the subspace taking the same values.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "Path.codRestrict",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 74,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "a subset of the space",
+            "two points of the subset",
+            "a path between the underlying points of those two points",
+            "every value of the path lies in the subset"
+          ]
+        },
+        {
+          "name": "Path.codRestrict_coe",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 83,
+          "part": null,
+          "role": "helper",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "a subset of the space",
+            "two points of the subset",
+            "a path between the underlying points of those two points",
+            "every value of the path lies in the subset",
+            "a parameter in the unit interval"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.4",
+      "section": "1",
+      "kind": "lemma",
+      "title": "Mapping a restricted path back to the ambient space",
+      "gist": "Pushing the restriction of a path forward along the inclusion of the subspace returns the original path.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "Path.map_codRestrict",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 89,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "a subset of the space",
+            "two points of the subset",
+            "a path between the underlying points of those two points",
+            "every value of the path lies in the subset"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.5",
+      "section": "1",
+      "kind": "lemma",
+      "title": "The values of a concatenation of paths",
+      "gist": "A concatenation of two paths takes, at a parameter in the first or in the second half of the unit interval, a value of the first or of the second path at a rescaled parameter.",
+      "parts": [
+        {
+          "letter": "a",
+          "gist": "At a parameter whose value is at most one half, the concatenation agrees with the first path at any parameter whose value is twice as large.",
+          "reference": null
+        },
+        {
+          "letter": "b",
+          "gist": "At a parameter whose value is at least one half, the concatenation agrees with the second path at any parameter whose value is twice as large, less one.",
+          "reference": null
+        }
+      ],
+      "in_v1": true,
+      "reference": null,
+      "departures": "The rescaled parameter is given as a point of the unit interval together with the equation its value satisfies, rather than computed from the original parameter.",
+      "declarations": [
+        {
+          "name": "Path.trans_apply_of_le",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 101,
+          "part": "a",
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "three points of the space",
+            "a path between the first two and a path between the last two",
+            "a parameter in the unit interval whose value is at most one half",
+            "a parameter in the unit interval whose value is twice that of the first"
+          ]
+        },
+        {
+          "name": "Path.trans_apply_of_ge",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 108,
+          "part": "b",
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "three points of the space",
+            "a path between the first two and a path between the last two",
+            "a parameter in the unit interval whose value is at least one half",
+            "a parameter in the unit interval whose value is twice that of the first, less one"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.6",
+      "section": "1",
+      "kind": "lemma",
+      "title": "A subpath of a path confined to a set",
+      "gist": "If a path sends every parameter of a closed interval into a set, then the subpath between any two parameters of that interval takes all of its values in the set.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "Path.subpath_apply_mem",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 120,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two points of the space and a path between them",
+            "a subset of the space",
+            "two parameters in the unit interval bounding a closed interval of parameters",
+            "the path sends every parameter of that closed interval into the subset",
+            "two parameters of that closed interval",
+            "a parameter in the unit interval"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.7",
+      "section": "1",
+      "kind": "proposition",
+      "title": "Subdividing a path along a family of sets",
+      "gist": "If every parameter has a neighborhood that the path sends into some member of a family of sets, then the path can be cut at finitely many increasing parameters running from zero to one so that each consecutive subpath has its range inside a single member.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "Path.exists_monotone_range_subpath_subset",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 224,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "an index type for the family",
+            "a family of subsets of the space indexed by the index type",
+            "two points of the space and a path between them",
+            "every parameter has a neighborhood whose image under the path lies in some member of the family"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.8",
+      "section": "1",
+      "kind": "lemma",
+      "title": "Cutting a path class at an intermediate parameter",
+      "gist": "Concatenating the classes of two consecutive subpaths of one path, each with its endpoints renamed along equalities, gives the class of the subpath that spans both.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "Path.Homotopic.Quotient.subpath_cast_trans",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 325,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two points of the space and a path between them",
+            "three parameters in the unit interval",
+            "three points of the space",
+            "each of the three points equals the value of the path at the corresponding parameter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.1",
+      "section": "2",
+      "kind": "lemma",
+      "title": "The fundamental groupoid of a path-connected space",
+      "gist": "In the fundamental groupoid of a path-connected space there is at least one morphism between any two objects.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "FundamentalGroupoid.nonempty_hom",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+          "line": 63,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "the space is path connected",
+            "two objects of its fundamental groupoid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.2",
+      "section": "2",
+      "kind": "lemma",
+      "title": "An injective map is injective on objects",
+      "gist": "The functor on fundamental groupoids induced by an injective continuous map sends distinct objects to distinct objects.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "ContinuousMap.fundamentalGroupoid_map_obj_injective",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "line": 80,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "two topological spaces",
+            "a continuous map between them",
+            "the map is injective"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.3",
+      "section": "2",
+      "kind": "lemma",
+      "title": "Recasting the endpoints of a path class",
+      "gist": "A class of paths whose endpoints have been renamed along equalities of points belongs to a subgroupoid of the fundamental groupoid exactly when the original class does.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "Path.Homotopic.Quotient.cast_mem_arrows_iff",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "line": 50,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "a subgroupoid of its fundamental groupoid",
+            "two points of the space and two further points",
+            "a class of paths between the first two points",
+            "each further point equals the corresponding one of the first two"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.4",
+      "section": "2",
+      "kind": "lemma",
+      "title": "The image of the class of a loop",
+      "gist": "The homomorphism of fundamental groups induced by a continuous map carries the class of a loop at the basepoint to the class of the image of that loop.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "TauCeti.FundamentalGroup.map_fromPath",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+          "line": 173,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "two topological spaces",
+            "a continuous map between them",
+            "a basepoint in the source",
+            "a loop at that basepoint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3.1",
+      "section": "3",
+      "kind": "definition",
+      "title": "The functor picking out a chosen object",
+      "gist": "For a chosen object of a category there is a functor from the one-object category of its monoid of endomorphisms which sends the unique object to the chosen one and an endomorphism to itself.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "TauCeti.Groupoid.singleObjFunctor",
+          "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "line": 66,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a category",
+            "a chosen object of the category"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3.2",
+      "section": "3",
+      "kind": "definition",
+      "title": "The functor induced by a homomorphism out of a vertex group",
+      "gist": "A homomorphism from the endomorphism group of a chosen object of a groupoid to a monoid, together with a morphism from that object to every object, induces a functor from the groupoid to the one-object category of the monoid which sends a morphism to the image of the loop obtained by conjugating it with the two chosen morphisms.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "TauCeti.Groupoid.functorOfEndHom",
+          "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "line": 128,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a groupoid",
+            "a chosen object of the groupoid",
+            "a morphism from the chosen object to every object",
+            "a monoid",
+            "a homomorphism from the endomorphism group of the chosen object to the monoid"
+          ]
+        },
+        {
+          "name": "TauCeti.Groupoid.functorOfEndHom_map",
+          "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "line": 147,
+          "part": null,
+          "role": "helper",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a groupoid",
+            "a chosen object of the groupoid",
+            "a morphism from the chosen object to every object",
+            "a monoid",
+            "a homomorphism from the endomorphism group of the chosen object to the monoid",
+            "two objects of the groupoid and a morphism between them"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.1",
+      "section": "4",
+      "kind": "theorem",
+      "title": "Covers generate the fundamental groupoid",
+      "gist": "If every point of the space has some member of a family of subsets as a neighborhood, then the images of the functors induced by the inclusions of the members generate the whole fundamental groupoid as a subgroupoid.",
+      "parts": [],
+      "in_v1": true,
+      "reference": {
+        "number": "Theorem 1.20",
+        "source": "module docstring",
+        "declaration": "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
+      },
+      "departures": "The members of the family are not assumed to be open and no connectedness is assumed of them or of their intersections; each member is only required to be a neighborhood of the points it covers.",
+      "declarations": [
+        {
+          "name": "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "line": 113,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "an index type for the family",
+            "a family of subsets of the space indexed by the index type",
+            "every point of the space has some member of the family as a neighborhood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.2",
+      "section": "4",
+      "kind": "definition",
+      "title": "Gluing functors out of fundamental groupoids",
+      "gist": "Functors to a fixed category out of the fundamental groupoids of the members of such a family, agreeing after restriction to every pairwise intersection, glue to a single functor out of the fundamental groupoid of the whole space.",
+      "parts": [],
+      "in_v1": true,
+      "reference": {
+        "number": "Theorem 1.20",
+        "source": "module docstring",
+        "declaration": "TauCeti.FundamentalGroupoid.glue"
+      },
+      "departures": "The target is an arbitrary category, the members of the family are not assumed to be open, and neither they nor their intersections are assumed connected.",
+      "declarations": [
+        {
+          "name": "TauCeti.FundamentalGroupoid.glue",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "line": 702,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "an index type for the family",
+            "a family of subsets of the space indexed by the index type",
+            "a category as the common target",
+            "every point of the space has some member of the family as a neighborhood",
+            "a functor out of the fundamental groupoid of each member",
+            "for every two members, the two functors agree after restriction along the inclusions of the intersection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.3",
+      "section": "4",
+      "kind": "proposition",
+      "title": "The glued functor restricts to the given functors",
+      "gist": "Composing the functor induced by the inclusion of a member with the glued functor returns the functor given on that member.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "line": 712,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "an index type for the family",
+            "a family of subsets of the space indexed by the index type",
+            "a category as the common target",
+            "every point of the space has some member of the family as a neighborhood",
+            "a functor out of the fundamental groupoid of each member",
+            "for every two members, the two functors agree after restriction along the inclusions of the intersection",
+            "a member of the family"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.4",
+      "section": "4",
+      "kind": "definition",
+      "title": "Gluing two functors out of fundamental groupoids",
+      "gist": "When the interiors of two subsets cover the space, two functors out of the fundamental groupoids of those subsets which agree after restriction to the fundamental groupoid of their intersection glue to a functor out of the fundamental groupoid of the space.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "The two subsets need not be open: only their interiors have to cover the space, and no connectedness is assumed.",
+      "declarations": [
+        {
+          "name": "TauCeti.FundamentalGroupoid.glueTwo",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
+          "line": 131,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a category as the common target",
+            "the interiors of the two subsets cover the space",
+            "a functor out of the fundamental groupoid of each of the two subsets",
+            "the two functors agree after restriction along the inclusions of the intersection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.5",
+      "section": "4",
+      "kind": "proposition",
+      "title": "The functor glued from two restricts to each of them",
+      "gist": "Composing the functor induced by the inclusion of either of the two subsets with the glued functor returns the functor given on that subset.",
+      "parts": [
+        {
+          "letter": "a",
+          "gist": "Restricting the glued functor along the inclusion of the first subset returns the functor given on the first subset.",
+          "reference": null
+        },
+        {
+          "letter": "b",
+          "gist": "Restricting the glued functor along the inclusion of the second subset returns the functor given on the second subset.",
+          "reference": null
+        }
+      ],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
+          "line": 138,
+          "part": "a",
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a category as the common target",
+            "the interiors of the two subsets cover the space",
+            "a functor out of the fundamental groupoid of each of the two subsets",
+            "the two functors agree after restriction along the inclusions of the intersection"
+          ]
+        },
+        {
+          "name": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
+          "line": 145,
+          "part": "b",
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a category as the common target",
+            "the interiors of the two subsets cover the space",
+            "a functor out of the fundamental groupoid of each of the two subsets",
+            "the two functors agree after restriction along the inclusions of the intersection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5.1",
+      "section": "5",
+      "kind": "theorem",
+      "title": "Covers generate the fundamental group",
+      "gist": "If every point of the space has some member of a family of subsets as a neighborhood, every member contains the basepoint, and every intersection of two members is path connected, then the images of the fundamental groups of the members generate the fundamental group of the space.",
+      "parts": [],
+      "in_v1": true,
+      "reference": {
+        "number": "Theorem 1.20",
+        "source": "module docstring",
+        "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
+      },
+      "departures": "The members of the family are not assumed to be open, and path-connectedness is assumed of every intersection of two members, which for a member paired with itself is the member itself.",
+      "declarations": [
+        {
+          "name": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "line": 126,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "an index type for the family",
+            "a family of subsets of the space indexed by the index type",
+            "a basepoint in the space",
+            "every point of the space has some member of the family as a neighborhood",
+            "every member of the family contains the basepoint",
+            "the intersection of any two members is path connected"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5.2",
+      "section": "5",
+      "kind": "corollary",
+      "title": "Two sets generate the fundamental group",
+      "gist": "If the interiors of two subsets cover the space, the two subsets and their intersection are path connected, and both subsets contain the basepoint, then the images of the two fundamental groups generate the fundamental group of the space.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "The two subsets need not be open: only their interiors have to cover the space.",
+      "declarations": [
+        {
+          "name": "TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "line": 185,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "a basepoint in the space",
+            "two subsets of the space",
+            "the interiors of the two subsets cover the space",
+            "each of the two subsets is path connected",
+            "the intersection of the two subsets is path connected",
+            "each of the two subsets contains the basepoint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.1",
+      "section": "6",
+      "kind": "definition",
+      "title": "The homomorphism out of the fundamental group of the space",
+      "gist": "Homomorphisms to a monoid out of the fundamental groups of two subsets, whose interiors cover the space and which are path connected along with their intersection, and which agree after restriction to the fundamental group of the intersection, induce a homomorphism out of the fundamental group of the space.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "The target is only assumed to be a monoid, and the two subsets need not be open: only their interiors have to cover the space.",
+      "declarations": [
+        {
+          "name": "TauCeti.vanKampenDesc",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "line": 226,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a basepoint in the space",
+            "a monoid as the common target",
+            "the interiors of the two subsets cover the space",
+            "each of the two subsets is path connected",
+            "the intersection of the two subsets is path connected",
+            "each of the two subsets contains the basepoint",
+            "a homomorphism to the monoid out of the fundamental group of each of the two subsets",
+            "the two homomorphisms agree after restriction along the inclusions of the intersection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.2",
+      "section": "6",
+      "kind": "proposition",
+      "title": "The induced homomorphism restricts to the given ones",
+      "gist": "The induced homomorphism agrees with each of the two given homomorphisms after restriction along the inclusion of the corresponding subset.",
+      "parts": [
+        {
+          "letter": "a",
+          "gist": "On the image of the fundamental group of the first subset, the induced homomorphism takes the value the first given homomorphism takes.",
+          "reference": null
+        },
+        {
+          "letter": "b",
+          "gist": "On the image of the fundamental group of the second subset, the induced homomorphism takes the value the second given homomorphism takes.",
+          "reference": null
+        }
+      ],
+      "in_v1": true,
+      "reference": null,
+      "departures": "The library states each equality both element by element and as an equality of homomorphisms; the two forms say the same thing.",
+      "declarations": [
+        {
+          "name": "TauCeti.vanKampenDesc_map_left",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "line": 267,
+          "part": "a",
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a basepoint in the space",
+            "a monoid as the common target",
+            "the interiors of the two subsets cover the space",
+            "each of the two subsets is path connected",
+            "the intersection of the two subsets is path connected",
+            "each of the two subsets contains the basepoint",
+            "a homomorphism to the monoid out of the fundamental group of each of the two subsets",
+            "the two homomorphisms agree after restriction along the inclusions of the intersection",
+            "an element of the fundamental group of the first subset"
+          ]
+        },
+        {
+          "name": "TauCeti.vanKampenDesc_comp_map_left",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "line": 300,
+          "part": "a",
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a basepoint in the space",
+            "a monoid as the common target",
+            "the interiors of the two subsets cover the space",
+            "each of the two subsets is path connected",
+            "the intersection of the two subsets is path connected",
+            "each of the two subsets contains the basepoint",
+            "a homomorphism to the monoid out of the fundamental group of each of the two subsets",
+            "the two homomorphisms agree after restriction along the inclusions of the intersection"
+          ]
+        },
+        {
+          "name": "TauCeti.vanKampenDesc_map_right",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "line": 283,
+          "part": "b",
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a basepoint in the space",
+            "a monoid as the common target",
+            "the interiors of the two subsets cover the space",
+            "each of the two subsets is path connected",
+            "the intersection of the two subsets is path connected",
+            "each of the two subsets contains the basepoint",
+            "a homomorphism to the monoid out of the fundamental group of each of the two subsets",
+            "the two homomorphisms agree after restriction along the inclusions of the intersection",
+            "an element of the fundamental group of the second subset"
+          ]
+        },
+        {
+          "name": "TauCeti.vanKampenDesc_comp_map_right",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "line": 314,
+          "part": "b",
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a basepoint in the space",
+            "a monoid as the common target",
+            "the interiors of the two subsets cover the space",
+            "each of the two subsets is path connected",
+            "the intersection of the two subsets is path connected",
+            "each of the two subsets contains the basepoint",
+            "a homomorphism to the monoid out of the fundamental group of each of the two subsets",
+            "the two homomorphisms agree after restriction along the inclusions of the intersection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.3",
+      "section": "6",
+      "kind": "proposition",
+      "title": "Uniqueness of the induced homomorphism",
+      "gist": "Two homomorphisms to a monoid out of the fundamental group of the space are equal as soon as they agree after restriction along the inclusions of both subsets.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "The target is only assumed to be a monoid, and the two subsets need not be open: only their interiors have to cover the space.",
+      "declarations": [
+        {
+          "name": "TauCeti.vanKampen_hom_ext",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "line": 329,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a basepoint in the space",
+            "a monoid as the common target",
+            "the interiors of the two subsets cover the space",
+            "each of the two subsets is path connected",
+            "the intersection of the two subsets is path connected",
+            "each of the two subsets contains the basepoint",
+            "two homomorphisms to the monoid out of the fundamental group of the space",
+            "the two homomorphisms agree after restriction along the inclusion of the first subset",
+            "the two homomorphisms agree after restriction along the inclusion of the second subset"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.4",
+      "section": "6",
+      "kind": "theorem",
+      "title": "The based Seifert--van Kampen theorem",
+      "gist": "If the interiors of two subsets cover the space, the two subsets and their intersection are path connected, and all three contain the basepoint, then the square of fundamental groups formed by the four homomorphisms induced by the inclusions is a pushout in the category of groups.",
+      "parts": [],
+      "in_v1": true,
+      "reference": {
+        "number": "Theorem 1.20",
+        "source": "module docstring",
+        "declaration": "TauCeti.isPushout_fundamentalGroup"
+      },
+      "departures": "The two subsets need not be open: only their interiors have to cover the space. The basepoint of the intersection is the basepoint of the space, which lies in the intersection because it lies in both subsets.",
+      "declarations": [
+        {
+          "name": "TauCeti.isPushout_fundamentalGroup",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "line": 349,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "two subsets of the space",
+            "a basepoint in the space",
+            "the interiors of the two subsets cover the space",
+            "each of the two subsets is path connected",
+            "the intersection of the two subsets is path connected",
+            "each of the two subsets contains the basepoint"
+          ]
+        }
+      ]
+    }
+  ],
+  "deferred": [],
+  "decisions": []
+}
