@@ -9,3 +9,99 @@
 
 Each numbered statement carries exactly the hypotheses of the Lean
 declaration that states it.
+
+Throughout, $X$ is a topological space and $Y$ is a second one, and $f$ is a
+continuous map from $X$ to $Y$.  Where a distance on $X$ is needed, $X$ carries
+a pseudometric, and $\ball{x}{\rho}$ is the open ball of radius $\rho$ about a
+point $x$, for a real number $\rho$ greater than zero.  The letters $x$, $y$
+and $z$ name points of $X$, and $x$ is the basepoint wherever a basepoint is
+chosen.  The letters $x_{0}$, $x_{1}$ and $x_{2}$ name further points of $X$,
+and $x'$ and $y'$ name points of $X$ that are tied to $x$ and $y$ by an
+equation.
+
+The letters $A$ and $B$ name two subsets of $X$, and $S$ names a single subset
+of $X$ when only one is in play; $T$ names a subset of $X$ that contains $S$.
+The letter $I$ names an index type, $i$ and $j$ name its elements, and $U$
+names a family of subsets of $X$ indexed by $I$, whose member at $i$ is
+$U_{i}$.  Every subset of $X$ carries the topology it inherits from $X$ and is
+treated as a space in its own right, so that a point of $S$ is a point of $X$
+together with a proof that it lies in $S$.  The map $\incl{S}$ is the inclusion
+of $S$ into $X$, and $\inclin{S}{T}$ is the inclusion of $S$ into $T$.  The
+interior of $A$ is written $\intr A$.
+
+The unit interval is $\uI$, and the letters $r$, $s$, $t$, $u$ and $v$ name
+points of it, which we call parameters.  A path in $X$ from $x$ to $y$ is a
+continuous map from $\uI$ to $X$ whose value at $0$ is $x$ and whose value at
+$1$ is $y$; the letters $\gamma$ and $\delta$ name paths, and a loop at $x$ is
+a path from $x$ to $x$.  For a path $\gamma$ from $x$ to $y$ and a path
+$\delta$ from $y$ to $z$, the concatenation $\gamma \ptrans \delta$ runs
+through $\gamma$ at twice the speed on the first half of $\uI$ and through
+$\delta$ at twice the speed on the second.  For parameters $r$ and $s$, the
+subpath $\subpath{\gamma}{r}{s}$ is the path from $\gamma(r)$ to $\gamma(s)$
+that runs through $\gamma$ at a constant speed.  When every value of $\gamma$
+lies in a subset $S$, the path $\codres{\gamma}{S}$ is $\gamma$ read as a path
+in $S$.
+
+Two paths with the same two endpoints are homotopic when a homotopy carries one
+to the other and holds both endpoints fixed throughout, and $\pcls{\gamma}$ is
+the class of $\gamma$ under this relation.  The fundamental groupoid $\fgpd{X}$
+has the points of $X$ as its objects and the classes of paths from $x$ to $y$
+as its morphisms from $x$ to $y$, composed by concatenation; the letter
+$\omega$ names such a class.  The functor $\fgpd{f}$ sends a point to its image
+under $f$ and a class to the class of its image.  The fundamental group
+$\fgrp{X}{x}$ is the group of morphisms of $\fgpd{X}$ from $x$ to itself, and
+$\fgrp{f}{x}$ is the homomorphism from $\fgrp{X}{x}$ to $\fgrp{Y}{f(x)}$ that
+$f$ induces.  A subgroupoid $\mathcal{H}$ of $\fgpd{X}$ picks out, for each
+ordered pair of points, a set of morphisms between them, and these sets are
+closed under composition and under inverses.  When $\fgpd{f}$ is injective on
+objects, $\im \fgpd{f}$ is the subgroupoid of the morphisms that $\fgpd{f}$
+produces, and $\im \varphi$ is the subgroup of the values of a homomorphism
+$\varphi$.  A family of subgroupoids generates $\fgpd{X}$ when the smallest
+subgroupoid containing all of them has every morphism of $\fgpd{X}$, and a
+family of subgroups generates a group when the smallest subgroup containing all
+of them is the whole group.
+
+The letters $\mathcal{C}$ and $\mathcal{D}$ name categories, and $\mathcal{C}$
+is a groupoid where that is said.  The letter $w$ names a chosen object of
+$\mathcal{C}$, the letters $c$ and $c'$ name further objects of $\mathcal{C}$,
+and $g$ names a morphism of $\mathcal{C}$.  The monoid of morphisms of
+$\mathcal{C}$ from $w$ to itself is $\End(w)$, a group when $\mathcal{C}$ is a
+groupoid, and $\tau$ names a family that gives, for each object $c$, a morphism
+$\tau_{c}$ from $w$ to $c$.  The letter $M$ names a monoid, and $\sobj{M}$ is
+the category with one object whose morphisms from that object to itself are the
+elements of $M$ and whose composition is the product of $M$.  The letters
+$\varphi$ and $\psi$ name homomorphisms of monoids, and $\varphi_{A}$ and
+$\varphi_{B}$ are the ones given on $A$ and on $B$.  The letter $F$ names a
+functor, $F_{i}$ the functor given on $U_{i}$, and $F_{A}$ and $F_{B}$ those
+given on $A$ and on $B$.  A pushout square of groups is a pushout in the
+category whose objects are the groups and whose morphisms are the group
+homomorphisms.
+
+The set of natural numbers is $\N$ and starts at $0$; the letters $n$ and $k$
+name natural numbers, and a subdivision of $\uI$ into $n$ pieces is written
+$t_{0}, \dots, t_{n}$.  The set of integers is $\Z$ and the set of real numbers
+is $\R$.  A parameter is compared with and combined with real numbers through
+its value in $\R$, so that an expression such as $2u - 1$ is read in $\R$ and
+no subtraction is ever taken in $\N$.  The letter $G$ names an additive
+commutative group that is linearly ordered and whose addition respects that
+order; $a$ and $b$ name elements of $G$ with $a$ at most $b$, $d$ names an
+element of $G$ used as a step size, and $nd$ is the sum of $n$ copies of $d$.
+
+Two constructions are given a value everywhere, including where the
+mathematics they describe says nothing.  The point reached from $a$ by $n$
+steps of size $d$ is pushed into the closed interval from $a$ to $b$: it is
+$a + nd$ when that element lies in the interval, $a$ when that element is
+smaller than $a$, and $b$ when that element is larger than $b$.  The subpath
+$\subpath{\gamma}{r}{s}$ is formed for every pair of parameters, so it runs
+backwards along $\gamma$ when $s$ is smaller than $r$, and it is the constant
+path at $\gamma(r)$ when $r$ and $s$ agree.
+
+Four hypotheses recur, and each is always written in the same words.  The
+first is that \hypCoverTwo*.  The second is that \hypCoverFamily*.  The third
+is that \hypPathConnected*.  The fourth is that \hypBasepoint*.  A statement
+carries one of these four only where the declaration behind it assumes it.
+
+A number such as \fcref{Theorem 1.20} points to the result carrying that
+number in the reference work, and no sentence of that work is reproduced here.
+A dagger after such a number marks a number that the library's documentation
+does not state.

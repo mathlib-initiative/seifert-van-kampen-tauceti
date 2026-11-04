@@ -1,0 +1,26 @@
+{
+  "schema": "formal-companion/informalize-hypotheses",
+  "schema_version": 1,
+  "hypotheses": [
+    {
+      "key": "cover-two",
+      "macro": "\\hypCoverTwo",
+      "binder_type": "interior A ∪ interior B = Set\\.univ"
+    },
+    {
+      "key": "cover-family",
+      "macro": "\\hypCoverFamily",
+      "binder_type": "∀ \\([a-z][a-z0-9]* : X\\), ∃ i, U i ∈ nhds [a-z][a-z0-9]*"
+    },
+    {
+      "key": "path-connected",
+      "macro": "\\hypPathConnected",
+      "binder_head": "IsPathConnected"
+    },
+    {
+      "key": "basepoint",
+      "macro": "\\hypBasepoint",
+      "binder_type": "x ∈ [AB]"
+    }
+  ]
+}

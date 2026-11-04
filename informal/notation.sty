@@ -12,7 +12,7 @@
 % "Suppose that \hypOpen." then prints the words and records the hypothesis
 % for the item or part it is written in; \hypOpen* prints the words only.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{notation}[2026/11/03 v1.0 notation]
+\ProvidesPackage{notation}[2026/11/04 v1.1 notation]
 
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
@@ -20,7 +20,38 @@
 % Number systems.
 \providecommand\N{\mathbb{N}}
 \providecommand\Z{\mathbb{Z}}
+\providecommand\R{\mathbb{R}}
+
+% The unit interval, whose points are the parameters of a path.
+\newcommand\uI{[0,1]}
+
+% Subsets of the ambient space.
+\DeclareMathOperator{\intr}{int}
+\newcommand\ball[2]{B(#1,#2)}
+\newcommand\incl[1]{\iota_{#1}}
+\newcommand\inclin[2]{\iota_{#1,#2}}
+
+% Paths.
+\newcommand\ptrans{\mathbin{\cdot}}
+\newcommand\subpath[3]{#1_{[#2,#3]}}
+\newcommand\codres[2]{#1^{#2}}
+\newcommand\pcls[1]{[#1]}
+
+% Fundamental groupoid and fundamental group, and the functor and the
+% homomorphism a continuous map induces on them.
+\newcommand\fgpd[1]{\Pi_{1}(#1)}
+\newcommand\fgrp[2]{\pi_{1}(#1,#2)}
+
+% Categories, monoids and subobjects.
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\im}{im}
+\newcommand\sobj[1]{\Sigma #1}
+\newcommand\gen[1]{\langle #1 \rangle}
 
 % Standing hypotheses (one \fcdefhyp per key of hypotheses.json).
+\fcdefhyp{\hypCoverTwo}{cover-two}{the interiors of $A$ and $B$ cover $X$}
+\fcdefhyp{\hypCoverFamily}{cover-family}{each point of $X$ has some $U_{i}$ as a neighborhood}
+\fcdefhyp{\hypPathConnected}{path-connected}{$A$, $B$ and $A \cap B$ are path connected}
+\fcdefhyp{\hypBasepoint}{basepoint}{$x$ lies in $A$ and in $B$}
 
 \endinput
