@@ -1,0 +1,50 @@
+{
+  "schema": "formal-companion/informalize-generated",
+  "schema_version": 1,
+  "generator": {
+    "name": "formal-companion",
+    "version": "0.2.0",
+    "commit": "da82fdc301baaab1fafbca0c0cd15de9ea5badcc"
+  },
+  "instance_files": [
+    "informalize.json"
+  ],
+  "files": [
+    {
+      "path": "LICENSE-runtime",
+      "sha256": "3655403548aed8112ff943e3116d9a7ab2d0cdcb7f61095ee804440646a4cb66"
+    },
+    {
+      "path": "STYLE.md",
+      "sha256": "0f3ac8abcae677928e64b496380adf20dbab2d40dde864ddf8f12856f291ebe0"
+    },
+    {
+      "path": "fcmarkers.sty",
+      "sha256": "e2f0f17f92a7b71d7bd41e7930705c011f1e0d04bab286f74d145e01e7ce6fa4"
+    },
+    {
+      "path": "tools/build_pdf.sh",
+      "sha256": "d8c49c98ea3fa29054912140cffa41f141d8afcc47f3a957c047cfdf7875fb62"
+    },
+    {
+      "path": "tools/check_items.py",
+      "sha256": "faf13a1faef12b282e301db9758235977edb1614ec8e7c3868c4ca4d3c7ae5e2"
+    },
+    {
+      "path": "tools/extract_markers.py",
+      "sha256": "f8b03c0742ef7e0cbed82dbae35034ef6a86a6f384ef60b1da7be003b2ab413e"
+    },
+    {
+      "path": "tools/fccommon.py",
+      "sha256": "a7ee572b77bdc7bf8a38fda413b044a8c8a5d98e0cfd36948d6005e222aa6c0f"
+    },
+    {
+      "path": "tools/fcitems.py",
+      "sha256": "854e860fae343f491d2a4775deb2a083250bb8242523cd4d9ca753a4bbb8b7eb"
+    },
+    {
+      "path": "tools/proof_sheets.py",
+      "sha256": "2b084672b94cc4d4f5410d4c568c23fb8b59507790f9a40f2eae38b816161e64"
+    }
+  ]
+}

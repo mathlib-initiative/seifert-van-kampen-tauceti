@@ -1,0 +1,6 @@
+*.pdf
+.lake/
+/build/
+/site/*
+!/site/index.html
+__pycache__/
