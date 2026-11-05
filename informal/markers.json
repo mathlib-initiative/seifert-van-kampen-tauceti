@@ -1,0 +1,479 @@
+{
+ "schema": "formal-companion/informalize-markers",
+ "schema_version": 1,
+ "job": "svk-tauceti",
+ "source_commit": "381df6ef1c01f624909287247b2d10413d049468",
+ "pdf_sha256": "0bcad9ea3776dc86d06b9e703cbe80395b85b581f6b17735cbebb246674aae64",
+ "pages": 6,
+ "page_size_pt": [612.0, 792.0],
+ "boxes_config": {
+  "res_dpi": 288,
+  "ink_level": 224,
+  "pad_bp": 3.0,
+  "frame_bp": 4.0
+ },
+ "box_format": "[page, x, y, w, h]; page 1-based; fractions of the page from the top left",
+ "entries": [
+  {
+   "id": "1.1",
+   "kind": "lemma",
+   "label": "item:1.1",
+   "number": "1.1",
+   "section": "1",
+   "title": "A Lebesgue number for a family of neighborhoods",
+   "parts": [],
+   "decls": [
+    "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.134785, 0.739298, 0.089173]
+   ]
+  },
+  {
+   "id": "1.2",
+   "kind": "lemma",
+   "label": "item:1.2",
+   "number": "1.2",
+   "section": "1",
+   "title": "Equally spaced subdivision points of an interval",
+   "parts": [],
+   "decls": [
+    "Set.Icc.coe_addNSMul"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.229009, 0.739298, 0.088068]
+   ]
+  },
+  {
+   "id": "1.3",
+   "kind": "definition",
+   "label": "item:1.3",
+   "number": "1.3",
+   "section": "1",
+   "title": "The restriction of a path to a subspace",
+   "parts": [],
+   "decls": [
+    "Path.codRestrict",
+    "Path.codRestrict_coe"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.322128, 0.739217, 0.072285]
+   ]
+  },
+  {
+   "id": "1.4",
+   "kind": "lemma",
+   "label": "item:1.4",
+   "number": "1.4",
+   "section": "1",
+   "title": "Mapping a restricted path back to the ambient space",
+   "parts": [],
+   "decls": [
+    "Path.map_codRestrict"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.399463, 0.739217, 0.054766]
+   ]
+  },
+  {
+   "id": "1.5",
+   "kind": "lemma",
+   "label": "item:1.5",
+   "number": "1.5",
+   "section": "1",
+   "title": "The values of a concatenation of paths",
+   "parts": [
+    "1.5(a)",
+    "1.5(b)"
+   ],
+   "decls": [],
+   "boxes": [
+    [3, 0.130391, 0.45928, 0.739217, 0.105587]
+   ]
+  },
+  {
+   "id": "1.5(a)",
+   "parent": "1.5",
+   "part": "a",
+   "label": "item:1.5:a",
+   "number": "1.5(a)",
+   "decls": [
+    "Path.trans_apply_of_le"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.494634, 0.739217, 0.034722]
+   ]
+  },
+  {
+   "id": "1.5(b)",
+   "parent": "1.5",
+   "part": "b",
+   "label": "item:1.5:b",
+   "number": "1.5(b)",
+   "decls": [
+    "Path.trans_apply_of_ge"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.529356, 0.739217, 0.035511]
+   ]
+  },
+  {
+   "id": "1.6",
+   "kind": "lemma",
+   "label": "item:1.6",
+   "number": "1.6",
+   "section": "1",
+   "title": "A subpath of a path confined to a set",
+   "parts": [],
+   "decls": [
+    "Path.subpath_apply_mem"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.569918, 0.739217, 0.072759]
+   ]
+  },
+  {
+   "id": "1.7",
+   "kind": "proposition",
+   "label": "item:1.7",
+   "number": "1.7",
+   "section": "1",
+   "title": "Subdividing a path along a family of sets",
+   "parts": [],
+   "decls": [
+    "Path.exists_monotone_range_subpath_subset"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.647727, 0.739217, 0.107008]
+   ]
+  },
+  {
+   "id": "1.8",
+   "kind": "lemma",
+   "label": "item:1.8",
+   "number": "1.8",
+   "section": "1",
+   "title": "Cutting a path class at an intermediate parameter",
+   "parts": [],
+   "decls": [
+    "Path.Homotopic.Quotient.subpath_cast_trans"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.759785, 0.739217, 0.11774]
+   ]
+  },
+  {
+   "id": "2.1",
+   "kind": "lemma",
+   "label": "item:2.1",
+   "number": "2.1",
+   "section": "2",
+   "title": "The fundamental groupoid of a path-connected space",
+   "parts": [],
+   "decls": [
+    "FundamentalGroupoid.nonempty_hom"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.134785, 0.739217, 0.054924]
+   ]
+  },
+  {
+   "id": "2.2",
+   "kind": "lemma",
+   "label": "item:2.2",
+   "number": "2.2",
+   "section": "2",
+   "title": "An injective map is injective on objects",
+   "parts": [],
+   "decls": [
+    "ContinuousMap.fundamentalGroupoid_map_obj_injective"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.196023, 0.739217, 0.038826]
+   ]
+  },
+  {
+   "id": "2.3",
+   "kind": "lemma",
+   "label": "item:2.3",
+   "number": "2.3",
+   "section": "2",
+   "title": "Recasting the endpoints of a path class",
+   "parts": [],
+   "decls": [
+    "Path.Homotopic.Quotient.cast_mem_arrows_iff"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.24053, 0.739217, 0.089015]
+   ]
+  },
+  {
+   "id": "2.4",
+   "kind": "lemma",
+   "label": "item:2.4",
+   "number": "2.4",
+   "section": "2",
+   "title": "The image of the class of a loop",
+   "parts": [],
+   "decls": [
+    "TauCeti.FundamentalGroup.map_fromPath"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.335859, 0.739217, 0.072917]
+   ]
+  },
+  {
+   "id": "3.1",
+   "kind": "definition",
+   "label": "item:3.1",
+   "number": "3.1",
+   "section": "3",
+   "title": "The functor picking out a chosen object",
+   "parts": [],
+   "decls": [
+    "TauCeti.Groupoid.singleObjFunctor"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.461174, 0.739217, 0.055556]
+   ]
+  },
+  {
+   "id": "3.2",
+   "kind": "definition",
+   "label": "item:3.2",
+   "number": "3.2",
+   "section": "3",
+   "title": "The functor induced by a homomorphism out of a vertex group",
+   "parts": [],
+   "decls": [
+    "TauCeti.Groupoid.functorOfEndHom",
+    "TauCeti.Groupoid.functorOfEndHom_map"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.522412, 0.739217, 0.107008]
+   ]
+  },
+  {
+   "id": "4.1",
+   "kind": "theorem",
+   "label": "item:4.1",
+   "number": "4.1",
+   "section": "4",
+   "title": "Covers generate the fundamental groupoid",
+   "parts": [],
+   "decls": [
+    "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.681818, 0.739217, 0.089962]
+   ]
+  },
+  {
+   "id": "4.2",
+   "kind": "definition",
+   "label": "item:4.2",
+   "number": "4.2",
+   "section": "4",
+   "title": "Gluing functors out of fundamental groupoids",
+   "parts": [],
+   "decls": [
+    "TauCeti.FundamentalGroupoid.glue"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.777462, 0.739217, 0.124369]
+   ]
+  },
+  {
+   "id": "4.3",
+   "kind": "proposition",
+   "label": "item:4.3",
+   "number": "4.3",
+   "section": "4",
+   "title": "The glued functor restricts to the given functors",
+   "parts": [],
+   "decls": [
+    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue"
+   ],
+   "boxes": [
+    [5, 0.130391, 0.104167, 0.739217, 0.124053]
+   ]
+  },
+  {
+   "id": "4.4",
+   "kind": "definition",
+   "label": "item:4.4",
+   "number": "4.4",
+   "section": "4",
+   "title": "Gluing two functors out of fundamental groupoids",
+   "parts": [],
+   "decls": [
+    "TauCeti.FundamentalGroupoid.glueTwo"
+   ],
+   "boxes": [
+    [5, 0.130391, 0.236111, 0.739217, 0.106376]
+   ]
+  },
+  {
+   "id": "4.5",
+   "kind": "proposition",
+   "label": "item:4.5",
+   "number": "4.5",
+   "section": "4",
+   "title": "The functor glued from two restricts to each of them",
+   "parts": [
+    "4.5(a)",
+    "4.5(b)"
+   ],
+   "decls": [],
+   "boxes": [
+    [5, 0.130391, 0.350063, 0.739217, 0.124053]
+   ]
+  },
+  {
+   "id": "4.5(a)",
+   "parent": "4.5",
+   "part": "a",
+   "label": "item:4.5:a",
+   "number": "4.5(a)",
+   "decls": [
+    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left"
+   ],
+   "boxes": [
+    [5, 0.130391, 0.437973, 0.739217, 0.016888]
+   ]
+  },
+  {
+   "id": "4.5(b)",
+   "parent": "4.5",
+   "part": "b",
+   "label": "item:4.5:b",
+   "number": "4.5(b)",
+   "decls": [
+    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right"
+   ],
+   "boxes": [
+    [5, 0.130391, 0.454861, 0.739217, 0.019255]
+   ]
+  },
+  {
+   "id": "5.1",
+   "kind": "theorem",
+   "label": "item:5.1",
+   "number": "5.1",
+   "section": "5",
+   "title": "Covers generate the fundamental group",
+   "parts": [],
+   "decls": [
+    "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
+   ],
+   "boxes": [
+    [5, 0.130391, 0.526831, 0.739217, 0.107008]
+   ]
+  },
+  {
+   "id": "5.2",
+   "kind": "corollary",
+   "label": "item:5.2",
+   "number": "5.2",
+   "section": "5",
+   "title": "Two sets generate the fundamental group",
+   "parts": [],
+   "decls": [
+    "TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top"
+   ],
+   "boxes": [
+    [5, 0.130391, 0.640783, 0.739217, 0.089646]
+   ]
+  },
+  {
+   "id": "6.1",
+   "kind": "definition",
+   "label": "item:6.1",
+   "number": "6.1",
+   "section": "6",
+   "title": "The homomorphism out of the fundamental group of the space",
+   "parts": [],
+   "decls": [
+    "TauCeti.vanKampenDesc"
+   ],
+   "boxes": [
+    [5, 0.130391, 0.783144, 0.739217, 0.089962],
+    [6, 0.130391, 0.104798, 0.739217, 0.079861]
+   ]
+  },
+  {
+   "id": "6.2",
+   "kind": "proposition",
+   "label": "item:6.2",
+   "number": "6.2",
+   "section": "6",
+   "title": "The induced homomorphism restricts to the given ones",
+   "parts": [
+    "6.2(a)",
+    "6.2(b)"
+   ],
+   "decls": [],
+   "boxes": [
+    [6, 0.130391, 0.191919, 0.739217, 0.217803]
+   ]
+  },
+  {
+   "id": "6.2(a)",
+   "parent": "6.2",
+   "part": "a",
+   "label": "item:6.2:a",
+   "number": "6.2(a)",
+   "decls": [
+    "TauCeti.vanKampenDesc_map_left",
+    "TauCeti.vanKampenDesc_comp_map_left"
+   ],
+   "boxes": [
+    [6, 0.130391, 0.339015, 0.739217, 0.034407]
+   ]
+  },
+  {
+   "id": "6.2(b)",
+   "parent": "6.2",
+   "part": "b",
+   "label": "item:6.2:b",
+   "number": "6.2(b)",
+   "decls": [
+    "TauCeti.vanKampenDesc_map_right",
+    "TauCeti.vanKampenDesc_comp_map_right"
+   ],
+   "boxes": [
+    [6, 0.130391, 0.373422, 0.739217, 0.036301]
+   ]
+  },
+  {
+   "id": "6.3",
+   "kind": "proposition",
+   "label": "item:6.3",
+   "number": "6.3",
+   "section": "6",
+   "title": "Uniqueness of the induced homomorphism",
+   "parts": [],
+   "decls": [
+    "TauCeti.vanKampen_hom_ext"
+   ],
+   "boxes": [
+    [6, 0.130391, 0.416667, 0.739217, 0.107008]
+   ]
+  },
+  {
+   "id": "6.4",
+   "kind": "theorem",
+   "label": "item:6.4",
+   "number": "6.4",
+   "section": "6",
+   "title": "The based Seifert--van Kampen theorem",
+   "parts": [],
+   "decls": [
+    "TauCeti.isPushout_fundamentalGroup"
+   ],
+   "boxes": [
+    [6, 0.130391, 0.530619, 0.739298, 0.141414]
+   ]
+  }
+ ]
+}
