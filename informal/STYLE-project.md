@@ -18,7 +18,7 @@ The macros of `notation.sty`, one row each.
 | `\ball{x}{\rho}` | the open ball of radius `\rho` about `x` |
 | `\incl{S}` | the inclusion of the subset `S` into `X` |
 | `\inclin{S}{T}` | the inclusion of `S` into a subset `T` containing it |
-| `\ptrans` | the concatenation of two paths, `\gamma \ptrans \delta` |
+| `\ptrans` | the concatenation of two paths, `\gamma \ptrans \delta`, and the composition of two homotopy classes, `\pcls{\gamma} \ptrans \pcls{\delta}` |
 | `\subpath{\gamma}{r}{s}` | the subpath of `\gamma` from the parameter `r` to the parameter `s` |
 | `\codres{\gamma}{S}` | a path whose values lie in `S`, read as a path in `S` |
 | `\pcls{\gamma}` | the homotopy class of the path `\gamma` |

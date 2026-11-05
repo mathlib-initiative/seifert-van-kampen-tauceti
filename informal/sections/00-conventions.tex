@@ -27,7 +27,9 @@ $U_{i}$.  Every subset of $X$ carries the topology it inherits from $X$ and is
 treated as a space in its own right, so that a point of $S$ is a point of $X$
 together with a proof that it lies in $S$.  The map $\incl{S}$ is the inclusion
 of $S$ into $X$, and $\inclin{S}{T}$ is the inclusion of $S$ into $T$.  The
-interior of $A$ is written $\intr A$.
+interior of $A$ is written $\intr A$.  A neighborhood of a point of a space is
+a subset of that space whose interior contains the point, and such a subset
+need not be open.
 
 The unit interval is $\uI$, and the letters $r$, $s$, $t$, $u$ and $v$ name
 points of it, which we call parameters.  A path in $X$ from $x$ to $y$ is a
@@ -44,10 +46,12 @@ in $S$.
 
 Two paths with the same two endpoints are homotopic when a homotopy carries one
 to the other and holds both endpoints fixed throughout, and $\pcls{\gamma}$ is
-the class of $\gamma$ under this relation.  The fundamental groupoid $\fgpd{X}$
-has the points of $X$ as its objects and the classes of paths from $x$ to $y$
-as its morphisms from $x$ to $y$, composed by concatenation; the letter
-$\omega$ names such a class.  The functor $\fgpd{f}$ sends a point to its image
+the class of $\gamma$ under this relation.  The symbol $\ptrans$ also writes
+the composition of two such classes, so that $\pcls{\gamma} \ptrans
+\pcls{\delta}$ is $\pcls{\gamma \ptrans \delta}$.  The fundamental groupoid
+$\fgpd{X}$ has the points of $X$ as its objects and the classes of paths from
+$x$ to $y$ as its morphisms from $x$ to $y$, composed by concatenation; the
+letter $\omega$ names such a class.  The functor $\fgpd{f}$ sends a point to its image
 under $f$ and a class to the class of its image.  The fundamental group
 $\fgrp{X}{x}$ is the group of morphisms of $\fgpd{X}$ from $x$ to itself, and
 $\fgrp{f}{x}$ is the homomorphism from $\fgrp{X}{x}$ to $\fgrp{Y}{f(x)}$ that
