@@ -1,0 +1,153 @@
+{
+  "schema": "formal-companion/overlay-generated",
+  "schema_version": 3,
+  "generator": {
+    "name": "formal-companion",
+    "version": "0.2.0",
+    "commit": "1739f86f746dd163245f8a968022ed0b1e0b4669"
+  },
+  "format": {
+    "package": "literature-links",
+    "version": "1.0.1",
+    "commit": "789af9af85ae7590d7149cb8312f09cfac0752b4",
+    "tag": "v1.0.1"
+  },
+  "instance_files": [
+    "overlay.config.json"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "d47827450e710e1253cb97e7136fbfb1af86c2909b4a1bdbdfc0c4b68e98bcb5"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "sha256": "42fef470e7f7337bc963dac939bf58d9233c77c0b2c009c77e73f96d893b7637"
+    },
+    {
+      "path": "schema/overlay-config-v1.schema.json",
+      "sha256": "8c92daeb858c6c5ee9a72d8b3b1d9ac3c041299f572fe6f995057c1c4f55e316"
+    },
+    {
+      "path": "tools/build_site.py",
+      "sha256": "2f6cca5add954df245853a0b6645697eee3a5ed686d866de5dc1d1cd000d923c"
+    },
+    {
+      "path": "tools/check_generated.py",
+      "sha256": "c521a240fe440c73833f7e48302b7617027112faadd38fa6f009ab6d43e4a9f9"
+    },
+    {
+      "path": "tools/literature_links/__init__.py",
+      "sha256": "9d1e7fb5494ee9bdd88ce05a8dcfcf478674fd06573fb38cda0fdb7eb6fa6ae2"
+    },
+    {
+      "path": "tools/literature_links/__main__.py",
+      "sha256": "42e1507a2bd4e3ab9e856c59434480b58aeb4babddd1afb0efa0191d7bf119e1"
+    },
+    {
+      "path": "tools/literature_links/cli.py",
+      "sha256": "b8a1c8e1fff7815cd0dd2a526db4e4c8cc3df7285b291a0761a97bdf757d6774"
+    },
+    {
+      "path": "tools/literature_links/companion.py",
+      "sha256": "fd7409e71c37ac51a560c841aaa27dd7f1a451e34da7112a9d78fef82d0c5186"
+    },
+    {
+      "path": "tools/literature_links/discovery.py",
+      "sha256": "dbf60c983fb4975a137352b3c9bbebfd4aec6e918aa04439b286612197c84036"
+    },
+    {
+      "path": "tools/literature_links/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/literature_links/schema/companion.schema.json",
+      "sha256": "9387537f21e69dc368357fcc8939fffa3c6846d33ab2b3a3b7c2a20a4350a797"
+    },
+    {
+      "path": "tools/literature_links/schemacheck.py",
+      "sha256": "e75c42cc8fd7a297492903f8d404618cf397e7f591155b2502e3ce69fd18bbd0"
+    },
+    {
+      "path": "tools/overlay_annotations.py",
+      "sha256": "869fc31950d64fdbd52504b5819d96828ec6763fcb08f0cda6561be40f22eb6a"
+    },
+    {
+      "path": "tools/serve.py",
+      "sha256": "08317f2a08efe62aaa45c998cc9258551869923a1857063312ddd8f5b2780378"
+    },
+    {
+      "path": "tools/verso_extract.py",
+      "sha256": "2b74afdf0842701c80c76262b847a8361b6e9b84fa457e685f3e890a159d0c5f"
+    },
+    {
+      "path": "vendor/pdfjs/LICENSE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "vendor/pdfjs/PINNED.md",
+      "sha256": "fe251b44aeba59dfcf860877949bf74d3f7ce59e6d9eb08ce92b3b341ee70191"
+    },
+    {
+      "path": "vendor/pdfjs/pdf.min.mjs",
+      "sha256": "9fab0c910bf1484835c5c2aeb68f7eb3dfce7f9eb435a004526c5af86d70890c"
+    },
+    {
+      "path": "vendor/pdfjs/pdf.worker.min.mjs",
+      "sha256": "bc0d1b88ea0b66196b1d36a58ac243c6d92adfe725624e2a9fdd381bdf8ef434"
+    },
+    {
+      "path": "viewer/index.html",
+      "sha256": "fdcb2371b7151fffdee9e8395ba2b58bb40c165d73496eb50a483aa865f2ef10"
+    },
+    {
+      "path": "viewer/viewer-core.js",
+      "sha256": "5eafd57f6fdf705ed76f7c2381c62b0dd6b42477a69c7573d5d3252e889a66fb"
+    },
+    {
+      "path": "viewer/viewer.css",
+      "sha256": "62ec81e0b6a27e3fcc2ed1a1223d7adbc43c93da5f25be1db822acc37ca49807"
+    },
+    {
+      "path": "viewer/viewer.js",
+      "sha256": "7ac0da4e944f86d5a4278d70052e178ff808e27ca1868e122720e5d6da6da727"
+    }
+  ],
+  "annotations": {
+    "bundle": {
+      "path": "annotations.bundle.json",
+      "sha256": "5be8bcae3bb2c3da758ab20784a3664b77c80060be573b2567e1e51edce28e31"
+    },
+    "count": 32,
+    "directory": "annotations",
+    "export": {
+      "commit": "55f2d60128107566078b0a4a3824beb367e20d83",
+      "convention": "informal-markers",
+      "source_id": "svk-tauceti",
+      "lean": {
+        "repo": "github.com/TauCetiProject/TauCeti",
+        "commit": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85"
+      }
+    },
+    "extension": "org.mathlib-initiative.formal-companion.overlay",
+    "inputs": [
+      {
+        "path": "informal/declarations.json",
+        "sha256": "121f798714cd06714f7196df0c2e60fce591d0705f562a11a78a72983c786e9d"
+      },
+      {
+        "path": "informal/informalize.json",
+        "sha256": "fe88c8aa023797a72c908493696eee99ff84939a6552cac01b255145da47b57f"
+      },
+      {
+        "path": "informal/items.json",
+        "sha256": "28e1a2690a8fed3abd33a98364a2b6ba908a877c1ab2ab97574f5c2d1f194d8e"
+      },
+      {
+        "path": "informal/markers.json",
+        "sha256": "bcbb61c4d664d052689c6aacbc361226184b09059b9c13207af0e666e3610c21"
+      }
+    ],
+    "manifest_sha256": "75ae6fe5b93420b77225f4404affaaecff5c4f9da681dc3bb1f9e3391901d0da"
+  }
+}

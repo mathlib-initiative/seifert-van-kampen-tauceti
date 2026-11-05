@@ -1,0 +1,26 @@
+{
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.Groupoid.functorOfEndHom",
+        "module": "TauCeti.CategoryTheory.Groupoid.SingleObj"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.Groupoid.functorOfEndHom",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "L128"
+          },
+          "snippet": {
+            "line": 128,
+            "text": "noncomputable def functorOfEndHom (τ : ∀ y : C, x₀ ⟶ y) {G : Type*} [Monoid G]\n    (f : End x₀ →* G) : C ⥤ SingleObj G where\n  obj _ := SingleObj.star G\n  map {y z} g := f (.of (τ y ≫ g ≫ inv (τ z)))\n  map_id y := by\n    rw [Category.id_comp, IsIso.hom_inv_id, SingleObj.id_as_one]\n    exact map_one f\n  map_comp {y z w} g h := by\n    rw [SingleObj.comp_as_mul, ← map_mul]\n    congr 1\n    ext\n    simp"
+          }
+        }
+      }
+    }
+  ]
+}

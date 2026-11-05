@@ -1,0 +1,37 @@
+{
+  "id": "proposition-6.2-b",
+  "kind": "proposition",
+  "subject": {
+    "location": {
+      "page": 6,
+      "rect": [0.130391, 0.373422, 0.739217, 0.036301]
+    },
+    "title": "Proposition 6.2(b) (The induced homomorphism restricts to the given ones)",
+    "extensions": {
+      "org.mathlib-initiative.formal-companion.overlay": {
+        "region": "proposition-6.2-b@p006"
+      }
+    }
+  },
+  "object": {
+    "role": "key",
+    "extensions": {
+      "org.mathlib-initiative.formal-companion.overlay": {
+        "declaration": {
+          "kind": "theorem"
+        },
+        "destination": {
+          "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean"
+        }
+      }
+    }
+  },
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [6],
+        "printed": [6]
+      }
+    }
+  }
+}

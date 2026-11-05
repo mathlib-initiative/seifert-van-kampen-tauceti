@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    >
+    <meta name="referrer" content="no-referrer">
+    <!--
+      This shell is static and generic: it names no source, no companion and no
+      page count. The title, the heading and the lede below are placeholders
+      that viewer.js replaces at run time with the values in
+      ../overlay.config.json, which may also name a back link to show; every
+      other string on the page comes from the
+      annotations. Nothing is substituted into this file when it is
+      copied into a companion.
+    -->
+    <title>Source and formalization overlay</title>
+    <link rel="stylesheet" href="./viewer.css">
+    <script type="module" src="./viewer.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#page-scroller">Skip to the PDF</a>
+    <header class="topbar">
+      <a id="back-link" class="back-link" hidden></a>
+      <span class="topbar-sep" aria-hidden="true"></span>
+      <h1 id="page-heading">Source and formalization overlay</h1>
+      <button id="toggle-faithfulness" class="switch" type="button" aria-pressed="false" hidden>Show faithfulness</button>
+      <details id="status-chip" class="status-chip">
+        <summary aria-labelledby="status">
+          <span id="status-glyph" class="status-glyph" aria-hidden="true"></span>
+          <span id="status" class="status-text" role="status" aria-live="polite">Loading…</span>
+        </summary>
+        <p id="status-note" class="status-pop">
+          The PDF is served only on loopback from a local cache. This page checks its SHA-256
+          against the one the annotations pin before PDF.js renders it. It is never uploaded
+          or published.
+        </p>
+      </details>
+    </header>
+
+    <main class="main">
+      <p id="error" class="error" role="alert" hidden></p>
+
+      <section id="workspace" class="workspace" aria-label="PDF inspection workspace" hidden>
+        <div class="viewer-column">
+          <nav class="toolbar" aria-label="PDF controls">
+            <button id="previous-page" class="icon" type="button" aria-label="Previous page"
+                    title="Previous page (←)" aria-keyshortcuts="ArrowLeft">‹</button>
+            <input id="page-number" type="number" inputmode="numeric" min="1" value="1" aria-label="Page">
+            <span id="page-count" class="page-count"></span>
+            <button id="next-page" class="icon" type="button" aria-label="Next page"
+                    title="Next page (→)" aria-keyshortcuts="ArrowRight">›</button>
+            <span class="toolbar-sep" aria-hidden="true"></span>
+            <button id="zoom-out" class="icon" type="button" aria-label="Zoom out"
+                    title="Zoom out (−)" aria-keyshortcuts="-">−</button>
+            <output id="zoom-value" class="zoom-value" aria-label="Zoom">100%</output>
+            <button id="zoom-in" class="icon" type="button" aria-label="Zoom in"
+                    title="Zoom in (+)" aria-keyshortcuts="Plus =">+</button>
+            <span class="toolbar-sep" aria-hidden="true"></span>
+            <button id="rotate-right" class="icon" type="button" aria-label="Rotate clockwise"
+                    title="Rotate clockwise (R)" aria-keyshortcuts="R">↻</button>
+          </nav>
+
+          <div
+            id="page-scroller"
+            class="page-scroller"
+            tabindex="0"
+            aria-label="Rendered PDF page with selectable source regions"
+          >
+            <div id="page-stage" class="page-stage" hidden>
+              <canvas id="pdf-canvas" aria-label="Rendered PDF page"></canvas>
+              <svg
+                id="overlay"
+                class="overlay"
+                xmlns="http://www.w3.org/2000/svg"
+                role="group"
+                aria-label="Selectable source regions"
+              ></svg>
+              <div id="region-bar" class="region-bar" aria-hidden="true" hidden></div>
+              <div id="region-peek" class="region-peek" aria-hidden="true" hidden></div>
+            </div>
+          </div>
+        </div>
+
+        <aside id="details" class="details-column" aria-label="Lean counterparts">
+          <div id="selection-empty" class="page-view">
+            <h2 id="index-heading" class="index-heading" tabindex="-1">Page 1</h2>
+            <p id="index-meta" class="index-meta"></p>
+            <p id="page-jump" class="page-jump" hidden></p>
+            <p id="page-lede" class="lede">
+              Inspect the verified source PDF and the declarations attributed to its items.
+            </p>
+            <p id="notice" class="notice" role="status" hidden></p>
+            <ol id="page-index" class="page-index" aria-label="Passages on this page"></ol>
+            <div id="legend" class="legend"></div>
+            <div id="verdict-legend" class="legend" hidden></div>
+            <p id="keys" class="keys">
+              <kbd>← →</kbd> page · <kbd>+ −</kbd> zoom · <kbd>R</kbd> rotate · <kbd>Esc</kbd> back
+            </p>
+            <p id="index-footer" class="foot" hidden></p>
+          </div>
+
+          <div id="selection" class="item-view" hidden>
+            <div class="nav-strip">
+              <button id="back-to-page" class="text-button" type="button">← Page 1</button>
+              <div class="stepper">
+                <button id="previous-item" class="icon" type="button" aria-label="Previous passage">‹</button>
+                <span id="item-position" aria-live="polite"></span>
+                <button id="next-item" class="icon" type="button" aria-label="Next passage">›</button>
+              </div>
+            </div>
+            <div id="item-choices" class="item-choices" hidden></div>
+
+            <header id="item-head" class="item-head">
+              <button id="step-parent" class="text-button step-parent" type="button" hidden></button>
+              <h2 id="item-label" class="item-label" tabindex="-1"></h2>
+              <div class="item-meta">
+                <p id="target-summary" class="target-summary"></p>
+                <p id="item-locator" class="item-locator"></p>
+              </div>
+              <button id="note-toggle" class="text-button note-toggle" type="button" aria-expanded="false"
+                      aria-controls="coverage-note" hidden></button>
+              <p id="coverage-note" class="coverage-note" hidden></p>
+            </header>
+            <div id="verdict-notes" class="verdict-notes"></div>
+
+            <section id="key-section" class="key-section" aria-label="Key declarations">
+              <div id="key-head" class="key-head" hidden>
+                <p id="key-count" class="key-count" hidden></p>
+                <input
+                  id="target-filter"
+                  class="filter"
+                  type="search"
+                  autocomplete="off"
+                  placeholder="Filter by name"
+                  aria-label="Filter declarations by name"
+                  hidden
+                >
+              </div>
+              <p id="filter-empty" class="empty-line filter-empty" hidden>No declaration matches.</p>
+              <div id="key-note" class="key-note" hidden></div>
+              <ol id="key-list" class="key-list"></ol>
+              <button id="key-more" class="text-button more" type="button" hidden></button>
+            </section>
+
+            <section id="step-section" class="related" aria-labelledby="step-heading" hidden>
+              <div class="related-head">
+                <h3 id="step-heading">Proof</h3>
+                <span id="step-count" class="count"></span>
+              </div>
+              <ol id="step-list" class="step-list"></ol>
+            </section>
+
+            <section id="related-section" class="related" aria-labelledby="related-heading" hidden>
+              <div class="related-head">
+                <h3 id="related-heading">Related</h3>
+                <span id="related-count" class="count" aria-live="polite"></span>
+              </div>
+              <ul id="related-list" class="related-list"></ul>
+              <nav id="related-pager" class="pagination" aria-label="Related declaration pages" hidden>
+                <button id="previous-targets" class="icon" type="button" aria-label="Previous declarations">‹</button>
+                <output id="target-page" aria-live="polite"></output>
+                <button id="next-targets" class="icon" type="button" aria-label="Next declarations">›</button>
+              </nav>
+            </section>
+
+            <p id="provenance-note" class="foot" hidden></p>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <div id="hover-card" class="hover-card" role="tooltip" hidden></div>
+  </body>
+</html>

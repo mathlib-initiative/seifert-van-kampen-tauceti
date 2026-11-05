@@ -1,0 +1,51 @@
+{
+  "id": "proposition-4.5-a",
+  "kind": "proposition",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.437973, 0.739217, 0.016888]
+      },
+      "title": "Proposition 4.5(a) (The functor glued from two restricts to each of them)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proposition-4.5-a@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L138",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Pushout.lean"
+          },
+          "snippet": {
+            "line": 138,
+            "text": "theorem map_subtypeVal_comp_glueTwo_left :\n    map (ContinuousMap.subtypeVal A) ⋙ glueTwo hCover FA FB h = FA :="
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      }
+    }
+  }
+}

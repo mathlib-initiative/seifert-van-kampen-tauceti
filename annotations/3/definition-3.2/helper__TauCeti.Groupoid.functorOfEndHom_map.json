@@ -1,0 +1,26 @@
+{
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.Groupoid.functorOfEndHom_map",
+        "module": "TauCeti.CategoryTheory.Groupoid.SingleObj"
+      },
+      "role": "helper",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.Groupoid.functorOfEndHom_map",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L147"
+          },
+          "snippet": {
+            "line": 147,
+            "text": "theorem functorOfEndHom_map (τ : ∀ y : C, x₀ ⟶ y) {G : Type*} [Monoid G] (f : End x₀ →* G)\n    {y z : C} (g : y ⟶ z) : (functorOfEndHom x₀ τ f).map g = f (.of (τ y ≫ g ≫ inv (τ z))) :="
+          }
+        }
+      }
+    }
+  ]
+}

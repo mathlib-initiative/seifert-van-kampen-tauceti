@@ -1,0 +1,24 @@
+{
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.vanKampenDesc_comp_map_right",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.vanKampenDesc_comp_map_right"
+          },
+          "destination": {
+            "fragment": "L314"
+          },
+          "snippet": {
+            "line": 314,
+            "text": "theorem vanKampenDesc_comp_map_right (hCover : interior A ∪ interior B = univ)\n    (hA : IsPathConnected A) (hB : IsPathConnected B) (hAB : IsPathConnected (A ∩ B))\n    (hxA : x ∈ A) (hxB : x ∈ B) (fA : FundamentalGroup A ⟨x, hxA⟩ →* K)\n    (fB : FundamentalGroup B ⟨x, hxB⟩ →* K)\n    (h : fA.comp (FundamentalGroup.map (ContinuousMap.inclusion inter_subset_left)\n        ⟨x, hxA, hxB⟩) =\n      fB.comp (FundamentalGroup.map (ContinuousMap.inclusion inter_subset_right)\n        ⟨x, hxA, hxB⟩)) :\n    (vanKampenDesc hCover hA hB hAB hxA hxB fA fB h).comp\n        (FundamentalGroup.map (ContinuousMap.subtypeVal B) ⟨x, hxB⟩) = fB :="
+          }
+        }
+      }
+    }
+  ]
+}

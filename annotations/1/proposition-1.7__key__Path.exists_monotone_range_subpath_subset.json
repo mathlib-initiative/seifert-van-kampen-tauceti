@@ -1,0 +1,51 @@
+{
+  "id": "proposition-1.7",
+  "kind": "proposition",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.647727, 0.739217, 0.107008]
+      },
+      "title": "Proposition 1.7 (Subdividing a path along a family of sets)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proposition-1.7@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.exists_monotone_range_subpath_subset",
+        "module": "TauCeti.Topology.Homotopy.Path"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.exists_monotone_range_subpath_subset",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L224",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean"
+          },
+          "snippet": {
+            "line": 224,
+            "text": "theorem exists_monotone_range_subpath_subset {ι : Type*} {U : ι → Set X} {x y : X}\n    (γ : Path x y) (hU : ∀ s, ∃ i, γ ⁻¹' U i ∈ 𝓝 s) :\n    ∃ (n : ℕ) (t : Fin (n + 1) → I), t 0 = 0 ∧ t (Fin.last n) = 1 ∧ Monotone t ∧\n      ∀ k : Fin n, ∃ i, range (γ.subpath (t k.castSucc) (t k.succ)) ⊆ U i := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      }
+    }
+  }
+}

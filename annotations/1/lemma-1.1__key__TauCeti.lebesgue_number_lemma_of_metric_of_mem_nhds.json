@@ -1,0 +1,51 @@
+{
+  "id": "lemma-1.1",
+  "kind": "lemma",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.134785, 0.739298, 0.089173]
+      },
+      "title": "Lemma 1.1 (A Lebesgue number for a family of neighborhoods)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "lemma-1.1@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
+        "module": "TauCeti.Topology.MetricSpace.Lebesgue"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L33",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/MetricSpace/Lebesgue.lean"
+          },
+          "snippet": {
+            "line": 33,
+            "text": "theorem lebesgue_number_lemma_of_metric_of_mem_nhds {α ι : Type*} [PseudoMetricSpace α]\n    {s : Set α} {c : ι → Set α} (hs : IsCompact s) (hc : ∀ x ∈ s, ∃ i, c i ∈ 𝓝 x) :\n    ∃ δ > 0, ∀ x ∈ s, ∃ i, ball x δ ⊆ c i := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      }
+    }
+  }
+}

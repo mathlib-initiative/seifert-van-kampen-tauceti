@@ -1,0 +1,51 @@
+{
+  "id": "lemma-2.3",
+  "kind": "lemma",
+  "subject": [
+    {
+      "location": {
+        "page": 4,
+        "rect": [0.130391, 0.24053, 0.739217, 0.089015]
+      },
+      "title": "Lemma 2.3 (Recasting the endpoints of a path class)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "lemma-2.3@p004"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.Homotopic.Quotient.cast_mem_arrows_iff",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.Homotopic.Quotient.cast_mem_arrows_iff",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L50",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean"
+          },
+          "snippet": {
+            "line": 50,
+            "text": "theorem cast_mem_arrows_iff\n    {X : Type*} [TopologicalSpace X]\n    {S : CategoryTheory.Subgroupoid (_root_.FundamentalGroupoid X)} {a b a' b' : X}\n    (q : Path.Homotopic.Quotient a b) (ha : a' = a) (hb : b' = b) :\n    (q.cast (x' := a') (y' := b') ha hb :\n        _root_.FundamentalGroupoid.mk a' ⟶ _root_.FundamentalGroupoid.mk b') ∈\n        S.arrows (_root_.FundamentalGroupoid.mk a') (_root_.FundamentalGroupoid.mk b') ↔\n      (q : _root_.FundamentalGroupoid.mk a ⟶ _root_.FundamentalGroupoid.mk b) ∈\n        S.arrows (_root_.FundamentalGroupoid.mk a) (_root_.FundamentalGroupoid.mk b) := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [4],
+        "printed": [4]
+      }
+    }
+  }
+}

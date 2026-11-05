@@ -1,0 +1,51 @@
+{
+  "id": "theorem-5.1",
+  "kind": "theorem",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.526831, 0.739217, 0.107008]
+      },
+      "title": "Theorem 5.1 (Covers generate the fundamental group)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "theorem-5.1@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L126",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean"
+          },
+          "snippet": {
+            "line": 126,
+            "text": "theorem iSup_range_map_subtypeVal_eq_top (hU : ∀ y, ∃ i, U i ∈ 𝓝 y) (hx : ∀ i, x ∈ U i)\n    (hpc : ∀ i j, IsPathConnected (U i ∩ U j)) :\n    (⨆ i, (_root_.FundamentalGroup.map (ContinuousMap.subtypeVal (U i)) ⟨x, hx i⟩).range :\n      Subgroup (_root_.FundamentalGroup X x)) = ⊤ := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      }
+    }
+  }
+}

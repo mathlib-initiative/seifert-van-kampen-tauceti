@@ -1,0 +1,51 @@
+{
+  "id": "lemma-1.5-b",
+  "kind": "lemma",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.529356, 0.739217, 0.035511]
+      },
+      "title": "Lemma 1.5(b) (The values of a concatenation of paths)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "lemma-1.5-b@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.trans_apply_of_ge",
+        "module": "TauCeti.Topology.Homotopy.Path"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.trans_apply_of_ge",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L108",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean"
+          },
+          "snippet": {
+            "line": 108,
+            "text": "theorem trans_apply_of_ge {x y z : X} (γ : Path x y) (δ : Path y z) {u : I}\n    (hu : 1 / 2 ≤ (u : ℝ)) (v : I) (hv : (v : ℝ) = 2 * u - 1) : γ.trans δ u = δ v := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      }
+    }
+  }
+}

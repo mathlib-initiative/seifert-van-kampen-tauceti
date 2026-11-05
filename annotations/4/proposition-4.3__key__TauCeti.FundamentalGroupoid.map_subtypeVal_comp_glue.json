@@ -1,0 +1,51 @@
+{
+  "id": "proposition-4.3",
+  "kind": "proposition",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.104167, 0.739217, 0.124053]
+      },
+      "title": "Proposition 4.3 (The glued functor restricts to the given functors)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proposition-4.3@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L712",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean"
+          },
+          "snippet": {
+            "line": 712,
+            "text": "@[simp] theorem map_subtypeVal_comp_glue (i : ι) :\n    map (ContinuousMap.subtypeVal (U i)) ⋙ glue hU F hF = F i := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      }
+    }
+  }
+}

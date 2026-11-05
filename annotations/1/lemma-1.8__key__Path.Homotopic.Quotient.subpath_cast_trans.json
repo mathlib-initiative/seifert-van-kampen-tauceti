@@ -1,0 +1,51 @@
+{
+  "id": "lemma-1.8",
+  "kind": "lemma",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.759785, 0.739217, 0.11774]
+      },
+      "title": "Lemma 1.8 (Cutting a path class at an intermediate parameter)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "lemma-1.8@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.Homotopic.Quotient.subpath_cast_trans",
+        "module": "TauCeti.Topology.Homotopy.Path"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.Homotopic.Quotient.subpath_cast_trans",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L325",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean"
+          },
+          "snippet": {
+            "line": 325,
+            "text": "theorem subpath_cast_trans {x y : X} (p : Path x y) (a b c : unitInterval) {x₀ x₁ x₂ : X}\n    (h₀ : x₀ = p a) (h₁ : x₁ = p b) (h₂ : x₂ = p c) :\n    trans (mk ((p.subpath a b).cast h₀ h₁)) (mk ((p.subpath b c).cast h₁ h₂)) =\n      mk ((p.subpath a c).cast h₀ h₂) := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      }
+    }
+  }
+}

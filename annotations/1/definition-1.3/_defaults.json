@@ -1,0 +1,33 @@
+{
+  "id": "definition-1.3",
+  "kind": "definition",
+  "subject": {
+    "location": {
+      "page": 3,
+      "rect": [0.130391, 0.322128, 0.739217, 0.072285]
+    },
+    "title": "Definition 1.3 (The restriction of a path to a subspace)",
+    "extensions": {
+      "org.mathlib-initiative.formal-companion.overlay": {
+        "region": "definition-1.3@p003"
+      }
+    }
+  },
+  "object": {
+    "extensions": {
+      "org.mathlib-initiative.formal-companion.overlay": {
+        "destination": {
+          "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean"
+        }
+      }
+    }
+  },
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      }
+    }
+  }
+}

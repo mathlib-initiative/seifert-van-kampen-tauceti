@@ -1,0 +1,26 @@
+{
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.codRestrict",
+        "module": "TauCeti.Topology.Homotopy.Path"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.codRestrict",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "L74"
+          },
+          "snippet": {
+            "line": 74,
+            "text": "def codRestrict {s : Set X} {x y : s} (γ : Path x.val y.val) (hmem : ∀ t, γ t ∈ s) :\n    Path x y where\n  toFun := s.codRestrict γ hmem\n  continuous_toFun := γ.continuous.codRestrict hmem\n  source' := Subtype.ext γ.source\n  target' := Subtype.ext γ.target"
+          }
+        }
+      }
+    }
+  ]
+}

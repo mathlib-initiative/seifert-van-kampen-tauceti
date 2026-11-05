@@ -1,0 +1,51 @@
+{
+  "id": "proposition-6.3",
+  "kind": "proposition",
+  "subject": [
+    {
+      "location": {
+        "page": 6,
+        "rect": [0.130391, 0.416667, 0.739217, 0.107008]
+      },
+      "title": "Proposition 6.3 (Uniqueness of the induced homomorphism)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proposition-6.3@p006"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.vanKampen_hom_ext",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.vanKampen_hom_ext",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L329",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean"
+          },
+          "snippet": {
+            "line": 329,
+            "text": "theorem vanKampen_hom_ext (hCover : interior A ∪ interior B = univ)\n    (hA : IsPathConnected A) (hB : IsPathConnected B) (hAB : IsPathConnected (A ∩ B))\n    (hxA : x ∈ A) (hxB : x ∈ B) {f g : FundamentalGroup X x →* K}\n    (hfgA : f.comp (FundamentalGroup.map (ContinuousMap.subtypeVal A) ⟨x, hxA⟩) =\n      g.comp (FundamentalGroup.map (ContinuousMap.subtypeVal A) ⟨x, hxA⟩))\n    (hfgB : f.comp (FundamentalGroup.map (ContinuousMap.subtypeVal B) ⟨x, hxB⟩) =\n      g.comp (FundamentalGroup.map (ContinuousMap.subtypeVal B) ⟨x, hxB⟩)) :\n    f = g := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [6],
+        "printed": [6]
+      }
+    }
+  }
+}

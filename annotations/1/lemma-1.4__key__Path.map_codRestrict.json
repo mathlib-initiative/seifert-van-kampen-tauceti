@@ -1,0 +1,51 @@
+{
+  "id": "lemma-1.4",
+  "kind": "lemma",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.399463, 0.739217, 0.054766]
+      },
+      "title": "Lemma 1.4 (Mapping a restricted path back to the ambient space)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "lemma-1.4@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.map_codRestrict",
+        "module": "TauCeti.Topology.Homotopy.Path"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.map_codRestrict",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L89",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean"
+          },
+          "snippet": {
+            "line": 89,
+            "text": "theorem map_codRestrict {s : Set X} {x y : s} (γ : Path x.val y.val) (hmem : ∀ t, γ t ∈ s) :\n    (γ.codRestrict hmem).map continuous_subtype_val = γ := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      }
+    }
+  }
+}
