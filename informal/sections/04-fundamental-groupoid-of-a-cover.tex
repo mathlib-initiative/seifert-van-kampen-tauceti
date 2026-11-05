@@ -13,11 +13,11 @@ These subgroupoids, one for each index $i$, generate $\fgpd{X}$.
 Let $I$ be an index type, let $U$ be a family of subsets of $X$ indexed by
 $I$, and let $\mathcal{D}$ be a category.  Suppose that \hypCoverFamily.
 For each index $i$, let $F_{i}$ be a functor from $\fgpd{U_{i}}$ to
-$\mathcal{D}$, and suppose that for every two indices $i$ and $j$ the functor
+$\mathcal{D}$.  Suppose that for every two indices $i$ and $j$ the functor
 from $\fgpd{U_{i} \cap U_{j}}$ to $\mathcal{D}$ obtained by applying
 $\fgpd{\inclin{U_{i} \cap U_{j}}{U_{i}}}$ and then $F_{i}$ is equal to the one
 obtained by applying $\fgpd{\inclin{U_{i} \cap U_{j}}{U_{j}}}$ and then
-$F_{j}$.  These data determine a functor from $\fgpd{X}$ to $\mathcal{D}$,
+$F_{j}$.  These data give a functor from $\fgpd{X}$ to $\mathcal{D}$,
 which we call the functor glued from the $F_{i}$.
 \leanref{TauCeti.FundamentalGroupoid.glue}
 \end{definition}
@@ -26,12 +26,12 @@ which we call the functor glued from the $F_{i}$.
 Let $I$ be an index type, let $U$ be a family of subsets of $X$ indexed by
 $I$, and let $\mathcal{D}$ be a category.  Suppose that \hypCoverFamily.
 For each index $i$, let $F_{i}$ be a functor from $\fgpd{U_{i}}$ to
-$\mathcal{D}$, and suppose that for every two indices $i$ and $j$ the functor
+$\mathcal{D}$.  Suppose that for every two indices $i$ and $j$ the functor
 from $\fgpd{U_{i} \cap U_{j}}$ to $\mathcal{D}$ obtained by applying
 $\fgpd{\inclin{U_{i} \cap U_{j}}{U_{i}}}$ and then $F_{i}$ is equal to the one
 obtained by applying $\fgpd{\inclin{U_{i} \cap U_{j}}{U_{j}}}$ and then
-$F_{j}$.  Let $i$ be an index.  Applying $\fgpd{\incl{U_{i}}}$ and then the
-functor from $\fgpd{X}$ to $\mathcal{D}$ that \itemref{4.2} gives is equal
+$F_{j}$.  Let $i$ be an index.  The composite of $\fgpd{\incl{U_{i}}}$ with
+the functor from $\fgpd{X}$ to $\mathcal{D}$ that \itemref{4.2} gives is equal
 to $F_{i}$.
 \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue}
 \end{proposition}
@@ -43,7 +43,7 @@ $\mathcal{D}$ and let $F_{B}$ be a functor from $\fgpd{B}$ to $\mathcal{D}$,
 and suppose that the functor from $\fgpd{A \cap B}$ to $\mathcal{D}$ obtained
 by applying $\fgpd{\inclin{A \cap B}{A}}$ and then $F_{A}$ is equal to the one
 obtained by applying $\fgpd{\inclin{A \cap B}{B}}$ and then $F_{B}$.  These
-data determine a functor from $\fgpd{X}$ to $\mathcal{D}$, which we call the
+data give a functor from $\fgpd{X}$ to $\mathcal{D}$, which we call the
 functor glued from $F_{A}$ and $F_{B}$.
 \leanref{TauCeti.FundamentalGroupoid.glueTwo}
 \end{definition}
@@ -56,11 +56,11 @@ and suppose that the functor from $\fgpd{A \cap B}$ to $\mathcal{D}$ obtained
 by applying $\fgpd{\inclin{A \cap B}{A}}$ and then $F_{A}$ is equal to the one
 obtained by applying $\fgpd{\inclin{A \cap B}{B}}$ and then $F_{B}$.
 \itempart{a}{%
-  Applying $\fgpd{\incl{A}}$ and then the functor glued from $F_{A}$ and
+  The composite of $\fgpd{\incl{A}}$ with the functor glued from $F_{A}$ and
   $F_{B}$ is equal to $F_{A}$.
   \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left}}
 \itempart{b}{%
-  Applying $\fgpd{\incl{B}}$ and then the functor glued from $F_{A}$ and
+  The composite of $\fgpd{\incl{B}}$ with the functor glued from $F_{A}$ and
   $F_{B}$ is equal to $F_{B}$.
   \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right}}
 \end{proposition}

@@ -2,9 +2,9 @@
 Let $X$ be a pseudometric space, let $I$ be an index type, let $S$ be a subset
 of $X$, and let $U$ be a family of subsets of $X$ indexed by $I$.  Suppose that
 $S$ is compact, and that every point $x$ of $S$ has some $U_{i}$ as a
-neighborhood.  Then there is a real number $\rho$ greater than zero with the
-following property: for every point $x$ of $S$ there is an index $i$ such that
-$\ball{x}{\rho}$ is contained in $U_{i}$.
+neighborhood in $X$.  Then there is a real number $\rho$ greater than zero with
+the following property: for every point $x$ of $S$ there is an index $i$ such
+that $\ball{x}{\rho}$ is contained in $U_{i}$.
 \leanref{TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds}
 \end{lemma}
 
@@ -12,8 +12,9 @@ $\ball{x}{\rho}$ is contained in $U_{i}$.
 Let $G$ be an additive commutative group that is linearly ordered and whose
 addition respects that order.  Let $a$, $b$ and $d$ be elements of $G$ with $a$
 at most $b$ and $d$ at least $0$, and let $n$ be a natural number.  The element
-of $G$ underlying the point of the closed interval from $a$ to $b$ reached from
-$a$ by $n$ steps of size $d$ is the smaller of $b$ and $a + nd$.
+of $G$ underlying the point reached from $a$ by $n$ steps of size $d$ and
+pushed into the closed interval from $a$ to $b$ is the smaller of $b$ and $a +
+nd$.
 \leanref{Set.Icc.coe_addNSMul}
 \end{lemma}
 
@@ -21,8 +22,8 @@ $a$ by $n$ steps of size $d$ is the smaller of $b$ and $a + nd$.
 Let $S$ be a subset of $X$, let $x$ and $y$ be points of $X$ that lie in $S$,
 and let $\gamma$ be a path in $X$ from $x$ to $y$.  Suppose that $\gamma(t)$
 lies in $S$ for every parameter $t$.  Then $\codres{\gamma}{S}$ is the path in
-$S$ from $x$ to $y$ whose value at a parameter $t$ is the point of $S$ carried
-by $\gamma(t)$.
+$S$ from $x$ to $y$ whose value at a parameter $t$ is $\gamma(t)$, read as a
+point of $S$.
 \leanref{Path.codRestrict}
 The point of $X$ under $\codres{\gamma}{S}(t)$ is $\gamma(t)$, for every
 parameter $t$.
@@ -32,8 +33,8 @@ parameter $t$.
 \begin{lemma}[id=1.4]{Mapping a restricted path back to the ambient space}
 Let $S$ be a subset of $X$, let $x$ and $y$ be points of $X$ that lie in $S$,
 and let $\gamma$ be a path in $X$ from $x$ to $y$ such that $\gamma(t)$ lies in
-$S$ for every parameter $t$.  The image of $\codres{\gamma}{S}$ under
-$\incl{S}$ is $\gamma$.
+$S$ for every parameter $t$.  The path obtained by composing
+$\codres{\gamma}{S}$ with $\incl{S}$ is $\gamma$.
 \leanref{Path.map_codRestrict}
 \end{lemma}
 
@@ -79,8 +80,8 @@ Let $r$, $s$ and $t$ be parameters, and let $x_{0}$, $x_{1}$ and $x_{2}$ be
 points of $X$ with $x_{0} = \gamma(r)$, $x_{1} = \gamma(s)$ and $x_{2} =
 \gamma(t)$.  Read $\subpath{\gamma}{r}{s}$ as a path from $x_{0}$ to $x_{1}$,
 read $\subpath{\gamma}{s}{t}$ as a path from $x_{1}$ to $x_{2}$, and read
-$\subpath{\gamma}{r}{t}$ as a path from $x_{0}$ to $x_{2}$, each along these
-three equations.  Then
+$\subpath{\gamma}{r}{t}$ as a path from $x_{0}$ to $x_{2}$, each along the two
+of these equations that name its endpoints.  Then
 \[
   \pcls{\subpath{\gamma}{r}{s}} \ptrans \pcls{\subpath{\gamma}{s}{t}}
     = \pcls{\subpath{\gamma}{r}{t}}.
