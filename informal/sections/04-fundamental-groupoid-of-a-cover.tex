@@ -1,37 +1,38 @@
 \begin{theorem}[id=4.1]{Covers generate the fundamental groupoid}
 \fcref{Theorem 1.20}
 Let $I$ be an index type and let $U$ be a family of subsets of $X$ indexed by
-$I$.  Suppose that \hypCoverFamily.  Each inclusion $\incl{U_{i}}$ is
-injective, so $\fgpd{\incl{U_{i}}}$ is injective on objects and
-$\im \fgpd{\incl{U_{i}}}$ is a subgroupoid of $\fgpd{X}$.  These subgroupoids,
-one for each index $i$, generate $\fgpd{X}$.
+$I$.  Suppose that \hypCoverFamily.  For each index $i$, the inclusion
+$\incl{U_{i}}$ is injective, so $\fgpd{\incl{U_{i}}}$ is injective on
+objects and $\im \fgpd{\incl{U_{i}}}$ is a subgroupoid of $\fgpd{X}$.
+These subgroupoids, one for each index $i$, generate $\fgpd{X}$.
 \leanref{TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top}
 \end{theorem}
 
 \begin{definition}[id=4.2]{Gluing functors out of fundamental groupoids}
 \fcref{Theorem 1.20}
 Let $I$ be an index type, let $U$ be a family of subsets of $X$ indexed by
-$I$, and let $\mathcal{D}$ be a category.  Suppose that \hypCoverFamily.  Let
-$F$ assign to each index $i$ a functor $F_{i}$ from $\fgpd{U_{i}}$ to
+$I$, and let $\mathcal{D}$ be a category.  Suppose that \hypCoverFamily.
+For each index $i$, let $F_{i}$ be a functor from $\fgpd{U_{i}}$ to
 $\mathcal{D}$, and suppose that for every two indices $i$ and $j$ the functor
 from $\fgpd{U_{i} \cap U_{j}}$ to $\mathcal{D}$ obtained by applying
 $\fgpd{\inclin{U_{i} \cap U_{j}}{U_{i}}}$ and then $F_{i}$ is equal to the one
 obtained by applying $\fgpd{\inclin{U_{i} \cap U_{j}}{U_{j}}}$ and then
 $F_{j}$.  These data determine a functor from $\fgpd{X}$ to $\mathcal{D}$,
-which we call the functor glued from $F$.
+which we call the functor glued from the $F_{i}$.
 \leanref{TauCeti.FundamentalGroupoid.glue}
 \end{definition}
 
 \begin{proposition}[id=4.3]{The glued functor restricts to the given functors}
 Let $I$ be an index type, let $U$ be a family of subsets of $X$ indexed by
-$I$, and let $\mathcal{D}$ be a category.  Suppose that \hypCoverFamily.  Let
-$F$ assign to each index $i$ a functor $F_{i}$ from $\fgpd{U_{i}}$ to
+$I$, and let $\mathcal{D}$ be a category.  Suppose that \hypCoverFamily.
+For each index $i$, let $F_{i}$ be a functor from $\fgpd{U_{i}}$ to
 $\mathcal{D}$, and suppose that for every two indices $i$ and $j$ the functor
 from $\fgpd{U_{i} \cap U_{j}}$ to $\mathcal{D}$ obtained by applying
 $\fgpd{\inclin{U_{i} \cap U_{j}}{U_{i}}}$ and then $F_{i}$ is equal to the one
 obtained by applying $\fgpd{\inclin{U_{i} \cap U_{j}}{U_{j}}}$ and then
 $F_{j}$.  Let $i$ be an index.  Applying $\fgpd{\incl{U_{i}}}$ and then the
-functor glued from $F$ gives $F_{i}$.
+functor from $\fgpd{X}$ to $\mathcal{D}$ that \itemref{4.2} gives is equal
+to $F_{i}$.
 \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue}
 \end{proposition}
 
@@ -56,10 +57,10 @@ by applying $\fgpd{\inclin{A \cap B}{A}}$ and then $F_{A}$ is equal to the one
 obtained by applying $\fgpd{\inclin{A \cap B}{B}}$ and then $F_{B}$.
 \itempart{a}{%
   Applying $\fgpd{\incl{A}}$ and then the functor glued from $F_{A}$ and
-  $F_{B}$ gives $F_{A}$.
+  $F_{B}$ is equal to $F_{A}$.
   \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left}}
 \itempart{b}{%
   Applying $\fgpd{\incl{B}}$ and then the functor glued from $F_{A}$ and
-  $F_{B}$ gives $F_{B}$.
+  $F_{B}$ is equal to $F_{B}$.
   \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right}}
 \end{proposition}

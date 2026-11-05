@@ -12,17 +12,17 @@ $\ball{x}{\rho}$ is contained in $U_{i}$.
 Let $G$ be an additive commutative group that is linearly ordered and whose
 addition respects that order.  Let $a$, $b$ and $d$ be elements of $G$ with $a$
 at most $b$ and $d$ at least $0$, and let $n$ be a natural number.  The element
-of $G$ underlying the point reached from $a$ by $n$ steps of size $d$ is the
-smaller of $b$ and $a + nd$.
+of $G$ underlying the point of the closed interval from $a$ to $b$ reached from
+$a$ by $n$ steps of size $d$ is the smaller of $b$ and $a + nd$.
 \leanref{Set.Icc.coe_addNSMul}
 \end{lemma}
 
 \begin{definition}[id=1.3]{The restriction of a path to a subspace}
-Let $S$ be a subset of $X$, let $x$ and $y$ be points of $S$, and let $\gamma$
-be a path in $X$ from the point of $X$ under $x$ to the point of $X$ under $y$.
-Suppose that $\gamma(t)$ lies in $S$ for every parameter $t$.  Then
-$\codres{\gamma}{S}$ is the path in $S$ from $x$ to $y$ whose value at a
-parameter $t$ is the point of $S$ carried by $\gamma(t)$.
+Let $S$ be a subset of $X$, let $x$ and $y$ be points of $X$ that lie in $S$,
+and let $\gamma$ be a path in $X$ from $x$ to $y$.  Suppose that $\gamma(t)$
+lies in $S$ for every parameter $t$.  Then $\codres{\gamma}{S}$ is the path in
+$S$ from $x$ to $y$ whose value at a parameter $t$ is the point of $S$ carried
+by $\gamma(t)$.
 \leanref{Path.codRestrict}
 The point of $X$ under $\codres{\gamma}{S}(t)$ is $\gamma(t)$, for every
 parameter $t$.
@@ -30,10 +30,10 @@ parameter $t$.
 \end{definition}
 
 \begin{lemma}[id=1.4]{Mapping a restricted path back to the ambient space}
-Let $S$ be a subset of $X$, let $x$ and $y$ be points of $S$, and let $\gamma$
-be a path in $X$ from the point of $X$ under $x$ to the point of $X$ under $y$
-such that $\gamma(t)$ lies in $S$ for every parameter $t$.  The image of
-$\codres{\gamma}{S}$ under $\incl{S}$ is $\gamma$.
+Let $S$ be a subset of $X$, let $x$ and $y$ be points of $X$ that lie in $S$,
+and let $\gamma$ be a path in $X$ from $x$ to $y$ such that $\gamma(t)$ lies in
+$S$ for every parameter $t$.  The image of $\codres{\gamma}{S}$ under
+$\incl{S}$ is $\gamma$.
 \leanref{Path.map_codRestrict}
 \end{lemma}
 
@@ -56,8 +56,8 @@ and let $\delta$ be a path from $y$ to $z$.
 Let $x$ and $y$ be points of $X$, let $\gamma$ be a path from $x$ to $y$, and
 let $S$ be a subset of $X$.  Let $r$ and $s$ be parameters, and suppose that
 $\gamma(t)$ lies in $S$ for every parameter $t$ with $r \le t \le s$.  Let $u$
-and $v$ be parameters with $r \le u \le s$ and $r \le v \le s$.  Then
-$\subpath{\gamma}{u}{v}(t)$ lies in $S$ for every parameter $t$.
+and $v$ be parameters with $r \le u \le s$ and $r \le v \le s$.  Then every
+value of $\subpath{\gamma}{u}{v}$ lies in $S$.
 \leanref{Path.subpath_apply_mem}
 \end{lemma}
 
@@ -65,11 +65,11 @@ $\subpath{\gamma}{u}{v}(t)$ lies in $S$ for every parameter $t$.
 Let $I$ be an index type, let $U$ be a family of subsets of $X$ indexed by $I$,
 let $x$ and $y$ be points of $X$, and let $\gamma$ be a path from $x$ to $y$.
 Suppose that for every parameter $s$ there is an index $i$ such that the
-preimage of $U_{i}$ under $\gamma$ is a neighborhood of $s$.  Then there are a
-natural number $n$ and parameters $t_{0}, \dots, t_{n}$ such that $t_{0} = 0$,
-$t_{n} = 1$ and $t_{0} \le t_{1} \le \dots \le t_{n}$, and such that for every
-natural number $k$ smaller than $n$ there is an index $i$ for which the range
-of $\subpath{\gamma}{t_{k}}{t_{k+1}}$ is contained in $U_{i}$.
+preimage of $U_{i}$ under $\gamma$ is a neighborhood of $s$ in $\uI$.  Then
+there are a natural number $n$ and parameters $t_{0}, \dots, t_{n}$ such that
+$t_{0} = 0$, $t_{n} = 1$ and $t_{0} \le t_{1} \le \dots \le t_{n}$, and such
+that for every natural number $k$ smaller than $n$ there is an index $i$ for
+which the range of $\subpath{\gamma}{t_{k}}{t_{k+1}}$ is contained in $U_{i}$.
 \leanref{Path.exists_monotone_range_subpath_subset}
 \end{proposition}
 

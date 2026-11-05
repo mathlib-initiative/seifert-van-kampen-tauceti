@@ -2,7 +2,8 @@
 % sections.tex; this file holds the items of section 6 only.
 
 \begin{definition}[id=6.1]{The homomorphism out of the fundamental group of the space}
-Let $M$ be a monoid.  Suppose that \hypCoverTwo and that \hypPathConnected.
+Let $x$ be a point of $X$ and let $A$ and $B$ be subsets of $X$.  Let $M$ be a
+monoid.  Suppose that \hypCoverTwo and that \hypPathConnected.
 Suppose also that \hypBasepoint.  The point $x$ then lies in $A \cap B$, and it
 is the basepoint of $A$, of $B$ and of $A \cap B$.  Let $\varphi_{A}$ be a
 homomorphism from $\fgrp{A}{x}$ to $M$, let $\varphi_{B}$ be a homomorphism
@@ -11,12 +12,14 @@ from $\fgrp{B}{x}$ to $M$, and suppose that
   \varphi_{A} \circ \fgrp{\inclin{A \cap B}{A}}{x}
     = \varphi_{B} \circ \fgrp{\inclin{A \cap B}{B}}{x} .
 \]
-These data determine a homomorphism $\varphi$ from $\fgrp{X}{x}$ to $M$.
+These data determine a homomorphism $\varphi$ from $\fgrp{X}{x}$ to $M$, which
+we call the homomorphism induced by $\varphi_{A}$ and $\varphi_{B}$.
 \leanref{TauCeti.vanKampenDesc}
 \end{definition}
 
 \begin{proposition}[id=6.2]{The induced homomorphism restricts to the given ones}
-Let $M$ be a monoid.  Suppose that \hypCoverTwo and that \hypPathConnected.
+Let $x$ be a point of $X$ and let $A$ and $B$ be subsets of $X$.  Let $M$ be a
+monoid.  Suppose that \hypCoverTwo and that \hypPathConnected.
 Suppose also that \hypBasepoint.  The point $x$ then lies in $A \cap B$, and it
 is the basepoint of $A$, of $B$ and of $A \cap B$.  Let $\varphi_{A}$ be a
 homomorphism from $\fgrp{A}{x}$ to $M$, let $\varphi_{B}$ be a homomorphism
@@ -25,8 +28,8 @@ from $\fgrp{B}{x}$ to $M$, suppose that
   \varphi_{A} \circ \fgrp{\inclin{A \cap B}{A}}{x}
     = \varphi_{B} \circ \fgrp{\inclin{A \cap B}{B}}{x} ,
 \]
-and let $\varphi$ be the homomorphism from $\fgrp{X}{x}$ to $M$ that
-\itemref{6.1} gives.
+and let $\varphi$ be the homomorphism induced by $\varphi_{A}$ and
+$\varphi_{B}$.
 \itempart{a}{%
   For every element $\omega$ of $\fgrp{A}{x}$, the value of $\varphi$ at the
   image of $\omega$ under $\fgrp{\incl{A}}{x}$ is $\varphi_{A}(\omega)$, and
@@ -42,8 +45,10 @@ and let $\varphi$ be the homomorphism from $\fgrp{X}{x}$ to $M$ that
 \end{proposition}
 
 \begin{proposition}[id=6.3]{Uniqueness of the induced homomorphism}
-Let $M$ be a monoid.  Suppose that \hypCoverTwo and that \hypPathConnected.
-Suppose also that \hypBasepoint.  Let $\varphi$ and $\psi$ be homomorphisms from
+Let $x$ be a point of $X$ and let $A$ and $B$ be subsets of $X$.  Let $M$ be a
+monoid.  Suppose that \hypCoverTwo and that \hypPathConnected.
+Suppose also that \hypBasepoint.  The point $x$ is then the basepoint of $A$
+and of $B$.  Let $\varphi$ and $\psi$ be any two homomorphisms from
 $\fgrp{X}{x}$ to $M$.  If
 $\varphi \circ \fgrp{\incl{A}}{x} = \psi \circ \fgrp{\incl{A}}{x}$ and
 $\varphi \circ \fgrp{\incl{B}}{x} = \psi \circ \fgrp{\incl{B}}{x}$, then
@@ -53,7 +58,8 @@ $\varphi = \psi$.
 
 \begin{theorem}[id=6.4]{The based Seifert--van Kampen theorem}
 \fcref{Theorem 1.20}
-Suppose that \hypCoverTwo and that \hypPathConnected.  Suppose also that
+Let $x$ be a point of $X$ and let $A$ and $B$ be subsets of $X$.  Suppose that
+\hypCoverTwo and that \hypPathConnected.  Suppose also that
 \hypBasepoint.  The point $x$ then lies in $A \cap B$, and it is the basepoint
 of $A$, of $B$ and of $A \cap B$.  The homomorphism
 $\fgrp{\inclin{A \cap B}{A}}{x}$ runs from
