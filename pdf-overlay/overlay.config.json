@@ -1,0 +1,37 @@
+{
+  "schema": "formal-companion/overlay-config",
+  "schema_version": 1,
+  "source_id": "svk-tauceti",
+  "title": "The Seifert–van Kampen theorem, after TauCeti",
+  "lede": "Each statement of the text, and the TauCeti declaration that states it.",
+  "back_link": {
+    "href": "../index.html",
+    "text": "Back to the site"
+  },
+  "display": {
+    "strip_prefix": "TauCeti.",
+    "minimal": true
+  },
+  "storage_key": "formal-companion-overlay-page",
+  "pdf": {
+    "file_name": "svk-tauceti.pdf",
+    "cache_dir": ".lake/overlay-pdf",
+    "route": "/__overlay_pdf__/svk-tauceti.pdf",
+    "publish": {
+      "license": "Apache-2.0"
+    }
+  },
+  "site": {
+    "output_root": "site",
+    "index": "index.html",
+    "mount": "pdf-overlay",
+    "link_text": "Source overlay"
+  },
+  "build": {
+    "commands": []
+  },
+  "serve": {
+    "host": "127.0.0.1",
+    "port": 8000
+  }
+}
