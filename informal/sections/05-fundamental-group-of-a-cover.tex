@@ -1,0 +1,21 @@
+\begin{theorem}[id=5.1]{Covers generate the fundamental group}
+\fcref{Theorem 1.20}
+Let $I$ be an index type, let $U$ be a family of subsets of $X$ indexed by
+$I$, and let $x$ be a point of $X$.  Suppose that \hypCoverFamily, that $x$
+lies in $U_{i}$ for every index $i$, and that $U_{i} \cap U_{j}$ is path
+connected for all indices $i$ and $j$, equal or not.  For each index $i$ the
+inclusion $\incl{U_{i}}$ induces the homomorphism $\fgrp{\incl{U_{i}}}{x}$
+from $\fgrp{U_{i}}{x}$ to $\fgrp{X}{x}$.  The subgroups
+$\im \fgrp{\incl{U_{i}}}{x}$, one for each index $i$, generate $\fgrp{X}{x}$.
+\leanref{TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top}
+\end{theorem}
+
+\begin{corollary}[id=5.2]{Two sets generate the fundamental group}
+Let $x$ be a point of $X$ and let $A$ and $B$ be subsets of $X$.  Suppose
+that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  The
+inclusions $\incl{A}$ and $\incl{B}$ induce the homomorphisms
+$\fgrp{\incl{A}}{x}$ from $\fgrp{A}{x}$ to $\fgrp{X}{x}$ and
+$\fgrp{\incl{B}}{x}$ from $\fgrp{B}{x}$ to $\fgrp{X}{x}$.  The two subgroups
+$\im \fgrp{\incl{A}}{x}$ and $\im \fgrp{\incl{B}}{x}$ generate $\fgrp{X}{x}$.
+\leanref{TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top}
+\end{corollary}
