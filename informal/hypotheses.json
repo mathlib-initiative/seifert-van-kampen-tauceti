@@ -15,12 +15,12 @@
     {
       "key": "path-connected",
       "macro": "\\hypPathConnected",
-      "binder_head": "IsPathConnected"
+      "binder_type": "IsPathConnected (?:A|B|\\(A ∩ B\\))"
     },
     {
       "key": "basepoint",
       "macro": "\\hypBasepoint",
-      "binder_type": "x ∈ [AB]"
+      "binder_type": "x ∈ (?:A|B)"
     }
   ]
 }

@@ -12,7 +12,7 @@
 % "Suppose that \hypOpen." then prints the words and records the hypothesis
 % for the item or part it is written in; \hypOpen* prints the words only.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{notation}[2026/11/04 v1.1 notation]
+\ProvidesPackage{notation}[2026/11/06 v1.2 notation]
 
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
@@ -22,8 +22,10 @@
 \providecommand\Z{\mathbb{Z}}
 \providecommand\R{\mathbb{R}}
 
-% The unit interval, whose points are the parameters of a path.
-\newcommand\uI{[0,1]}
+% Closed intervals, and the unit interval, whose points are the parameters of
+% a path.
+\newcommand\cint[2]{[#1,#2]}
+\newcommand\uI{\cint{0}{1}}
 
 % Subsets of the ambient space.
 \DeclareMathOperator{\intr}{int}

@@ -13,7 +13,8 @@ The macros of `notation.sty`, one row each.
 | write | for |
 |---|---|
 | `\N`, `\Z`, `\R` | the natural numbers, the integers, the real numbers |
-| `\uI` | the unit interval, `[0,1]` |
+| `\cint{a}{b}` | the closed interval from `a` to `b` |
+| `\uI` | the unit interval, `\cint{0}{1}` |
 | `\intr A` | the interior of a subset |
 | `\ball{x}{\rho}` | the open ball of radius `\rho` about `x` |
 | `\incl{S}` | the inclusion of the subset `S` into `X` |
@@ -79,7 +80,7 @@ it stands for.
 |---|---|---|
 | `\hypCoverTwo` | the interiors of `A` and `B` cover `X` | the printed type `interior A ∪ interior B = Set.univ` |
 | `\hypCoverFamily` | each point of `X` has some `U_i` as a neighborhood | a printed type `∀ (y : X), ∃ i, U i ∈ nhds y`, for any one name `y` |
-| `\hypPathConnected` | `A`, `B` and `A ∩ B` are path connected | every binder whose type has head `IsPathConnected`; the three always appear together |
+| `\hypPathConnected` | `A`, `B` and `A ∩ B` are path connected | the printed types `IsPathConnected A`, `IsPathConnected B` and `IsPathConnected (A ∩ B)`, which always appear together |
 | `\hypBasepoint` | `x` lies in `A` and in `B` | the printed types `x ∈ A` and `x ∈ B` |
 
 Write the macro, never the words by hand, and write it only where the key declaration of
@@ -97,11 +98,15 @@ subsets `A`, `B`, `S`, `T` and the family `U`, with their index type; that a sub
 space with the inherited topology and that a point of a subset is a point of `X` lying in
 it; the inclusions; the interior; that a neighborhood of a point is a set whose interior
 contains the point, so the sets of a cover need not be open; the unit interval, parameters,
-paths, concatenation, subpaths and `\codres{\gamma}{S}`; homotopy of paths and classes of
-paths; the fundamental groupoid, the fundamental group, the functor and the homomorphism a
-continuous map induces, and the product of two loop classes; subgroupoids, images and
-generation; categories, groupoids, `\End(w)`, the family `\tau`, monoids, `\sobj{M}`,
-functors and homomorphisms; pushout squares of groups; and the two junk values below.
+paths, their range, concatenation, subpaths, `\codres{\gamma}{S}`, the image of a path
+under a continuous map, and the renaming of a path's endpoints along equalities;
+compactness and path connectedness, which for a subset includes nonemptiness; homotopy of
+paths, classes of paths and the renaming of their endpoints; the fundamental groupoid, the
+fundamental group, the functor and the homomorphism a continuous map induces, the product
+of two loop classes, and the class of a loop as an element of the fundamental group;
+subgroupoids, images and generation; categories, groupoids, inverses, `\End(w)`, the family
+`\tau`, monoids, `\sobj{M}`, functors and homomorphisms; pushout squares in the category of
+groups; the number systems and the closed interval; and the two junk values below.
 
 An item names only what is particular to it. Typeclass binders, universe variables, the
 index type of a family and the side conditions the library discharges inside a statement
@@ -110,12 +115,28 @@ in an item.
 
 ## Marking notions
 
-`declarations.json` for this run carries no `references`, and every constant in its
-`declarations` is stated by an item of `items.json`. The conventions therefore mark no
-notion: a `\fcnotion` may name only a constant that file carries, and the standard notions
-the conventions fix (the interior, a neighborhood, a path, a homotopy class, the
-fundamental groupoid and group, a subgroupoid, a groupoid, a monoid, a pushout) are not
-among them. Items mark nothing in any case.
+Each notion the conventions fix carries one `\fcnotion{<constant>}{<words>}`, where the
+conventions introduce it and nowhere else; items mark nothing. The constants are these 51,
+each copied from `declarations.json` (all of them rows of its `references`, the constants
+of Mathlib and of Lean's prelude that the library's statements are built from):
+
+`TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
+`instTopologicalSpaceSubtype`, `Set.Elem`, `ContinuousMap.subtypeVal`,
+`ContinuousMap.inclusion`, `interior`, `nhds`, `unitInterval`, `Path`, `Set.range`,
+`Path.trans`, `Path.subpath`, `Path.map`, `Path.cast`, `IsCompact`, `IsPathConnected`,
+`PathConnectedSpace`, `Path.Homotopic.Quotient`, `Path.Homotopic.Quotient.cast`,
+`Path.Homotopic.Quotient.trans`, `FundamentalGroupoid`, `FundamentalGroupoid.map`,
+`FundamentalGroup`, `FundamentalGroup.map`, `FundamentalGroup.fromPath`,
+`CategoryTheory.Subgroupoid`, `CategoryTheory.Subgroupoid.im`, `MonoidHom.range`,
+`Subgroup`, `iSup`, `CategoryTheory.Category`, `CategoryTheory.Groupoid`,
+`CategoryTheory.inv`, `CategoryTheory.End`, `Monoid`, `CategoryTheory.SingleObj`,
+`MonoidHom`, `CategoryTheory.Functor`, `CategoryTheory.IsPushout`, `GrpCat`, `Nat`,
+`Monotone`, `Real`, `AddCommGroup`, `LinearOrder`, `IsOrderedAddMonoid`, `Set.Icc`,
+`Set.Icc.addNSMul`.
+
+The constants the items state are marked nowhere: an item records its declaration with
+`\leanref`, so `Path.codRestrict`, which the conventions write as `\codres{\gamma}{S}`, and
+every other entry of the `declarations` list belong to their items, not to a `\fcnotion`.
 
 ## Numbers, coercions and junk values
 
@@ -124,7 +145,8 @@ real numbers through its value in `\R`, so an expression such as `2u - 1` is rea
 and no subtraction is taken in `\N`. The passage from a point of a subset `S` to the point
 of `X` under it, and back along `\codres{\gamma}{S}`, is left silent except where a
 statement is about it; so is the reading of a basepoint `x` of `X` lying in `S` as the
-basepoint of `S` in `\fgrp{S}{x}`.
+basepoint of `S` in `\fgrp{S}{x}`. The points of a subdivision are nondecreasing, not
+strictly increasing.
 
 Two constructions are total where the mathematics is partial, as
 `sections/00-conventions.tex` states: the point reached from `a` by `n` steps of size `d`
