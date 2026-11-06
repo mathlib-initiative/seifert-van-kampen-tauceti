@@ -23,6 +23,7 @@
     "amssymb.sty",
     "amsthm.sty",
     "keyval.sty",
+    "xspace.sty",
     "zref-savepos.sty",
     "zref-abspage.sty",
     "lmodern.sty",
