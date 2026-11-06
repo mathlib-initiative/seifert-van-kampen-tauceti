@@ -21,8 +21,9 @@ Then the $F_{i}$ glue to a functor $F$ from $\fgpd{X}$ to $\mathcal{D}$.
 \end{definition}
 
 \begin{proposition}[id=4.3]{The glued functor restricts to the given functors}
-Suppose that \hypCoverFamily, and let $F$ be the functor of \itemref{4.2},
-glued from the $F_{i}$.  Then $F \circ \fgpd{\incl{U_{i}}} = F_{i}$ for
+Suppose that \hypCoverFamily, let the $F_{i}$ agree after restriction along the
+inclusions of the pairwise intersections, and let $F$ be the functor of
+\itemref{4.2} glued from them.  Then $F \circ \fgpd{\incl{U_{i}}} = F_{i}$ for
 every $i$.
 \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue}
 \end{proposition}
@@ -40,8 +41,9 @@ $\mathcal{D}$.
 \end{definition}
 
 \begin{proposition}[id=4.5]{The functor glued from two restricts to each of them}
-Suppose that \hypCoverTwo, and let $F$ be the functor of \itemref{4.4}, glued
-from $F_{A}$ and $F_{B}$.
+Suppose that \hypCoverTwo, let $F_{A}$ and $F_{B}$ agree after restriction along
+the inclusions of $A \cap B$, and let $F$ be the functor of \itemref{4.4} glued
+from them.
 \itempart{a}{%
   $F \circ \fgpd{\incl{A}} = F_{A}$.
   \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left}}
