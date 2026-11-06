@@ -10,7 +10,7 @@
     {
       "key": "cover-family",
       "macro": "\\hypCoverFamily",
-      "binder_type": "∀ \\([a-z][a-z0-9]* : X\\), ∃ i, U i ∈ nhds [a-z][a-z0-9]*"
+      "binder_type": "∀ \\(([a-z][a-z0-9]*) : X\\), ∃ i, U i ∈ nhds \\1"
     },
     {
       "key": "path-connected",

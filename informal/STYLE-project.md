@@ -54,7 +54,7 @@ Each letter keeps one meaning in the whole text.
 | `t_0, ..., t_n` | the points of a subdivision of the unit interval |
 | `\gamma`, `\delta` | paths in `X` |
 | `\omega` | a homotopy class of paths: a morphism of a fundamental groupoid, or an element of a fundamental group |
-| `\mathcal{H}` | a subgroupoid of the fundamental groupoid of `X` |
+| `\mathcal{H}`, `\mathcal{H}_i` | a subgroupoid of the fundamental groupoid of `X`, and a family of them |
 | `\mathcal{C}` | a category, a groupoid where that is said |
 | `\mathcal{D}` | a category used as the common target of glued functors |
 | `w` | a chosen object of `\mathcal{C}` |
@@ -78,14 +78,44 @@ it stands for.
 | macro | prints | stands for |
 |---|---|---|
 | `\hypCoverTwo` | the interiors of `A` and `B` cover `X` | the printed type `interior A ∪ interior B = Set.univ` |
-| `\hypCoverFamily` | each point of `X` has some `U_i` as a neighborhood | a printed type `∀ (x : X), ∃ i, U i ∈ nhds x` |
+| `\hypCoverFamily` | each point of `X` has some `U_i` as a neighborhood | a printed type `∀ (y : X), ∃ i, U i ∈ nhds y`, for any one name `y` |
 | `\hypPathConnected` | `A`, `B` and `A ∩ B` are path connected | every binder whose type has head `IsPathConnected`; the three always appear together |
 | `\hypBasepoint` | `x` lies in `A` and in `B` | the printed types `x ∈ A` and `x ∈ B` |
 
 Write the macro, never the words by hand, and write it only where the key declaration of
 the item or part binds the hypothesis. The pairwise condition of the indexed statements,
 `∀ (i j : I), IsPathConnected (U i ∩ U j)`, and the indexed basepoint condition,
-`∀ (i : I), x ∈ U i`, are not among these four: state them in words.
+`∀ (i : I), x ∈ U i`, are not among these four: state them in words. The Lebesgue number
+lemma's neighborhood condition, `∀ x ∈ s, ∃ i, c i ∈ nhds x`, covers a subset rather than
+the whole space, so it too is stated in words.
+
+## What the conventions carry
+
+`sections/00-conventions.tex` fixes all of the following, and no item repeats any of it:
+the ambient space `X` and a second space `Y`; the pseudometric and the open ball; the
+subsets `A`, `B`, `S`, `T` and the family `U`, with their index type; that a subset is a
+space with the inherited topology and that a point of a subset is a point of `X` lying in
+it; the inclusions; the interior; that a neighborhood of a point is a set whose interior
+contains the point, so the sets of a cover need not be open; the unit interval, parameters,
+paths, concatenation, subpaths and `\codres{\gamma}{S}`; homotopy of paths and classes of
+paths; the fundamental groupoid, the fundamental group, the functor and the homomorphism a
+continuous map induces, and the product of two loop classes; subgroupoids, images and
+generation; categories, groupoids, `\End(w)`, the family `\tau`, monoids, `\sobj{M}`,
+functors and homomorphisms; pushout squares of groups; and the two junk values below.
+
+An item names only what is particular to it. Typeclass binders, universe variables, the
+index type of a family and the side conditions the library discharges inside a statement
+(that an inclusion is injective, that the basepoint lies where it must) are never written
+in an item.
+
+## Marking notions
+
+`declarations.json` for this run carries no `references`, and every constant in its
+`declarations` is stated by an item of `items.json`. The conventions therefore mark no
+notion: a `\fcnotion` may name only a constant that file carries, and the standard notions
+the conventions fix (the interior, a neighborhood, a path, a homotopy class, the
+fundamental groupoid and group, a subgroupoid, a groupoid, a monoid, a pushout) are not
+among them. Items mark nothing in any case.
 
 ## Numbers, coercions and junk values
 
@@ -93,7 +123,8 @@ the item or part binds the hypothesis. The pairwise condition of the indexed sta
 real numbers through its value in `\R`, so an expression such as `2u - 1` is read in `\R`
 and no subtraction is taken in `\N`. The passage from a point of a subset `S` to the point
 of `X` under it, and back along `\codres{\gamma}{S}`, is left silent except where a
-statement is about it.
+statement is about it; so is the reading of a basepoint `x` of `X` lying in `S` as the
+basepoint of `S` in `\fgrp{S}{x}`.
 
 Two constructions are total where the mathematics is partial, as
 `sections/00-conventions.tex` states: the point reached from `a` by `n` steps of size `d`
@@ -107,9 +138,10 @@ own.
 
 The text cites A. Hatcher, Algebraic Topology, Cambridge University Press, 2002 by number only, through `\fcref`: never a sentence of the work, and never a close paraphrase. `\fcref{<number>}` is for a number the library's docstrings give, `\fcref*{<number>}`, with a dagger, for one inferred from the work's order (`items.json`, each `reference.source`).
 
-Every number this text cites comes from a module docstring, so every `\fcref` is unstarred.
-`items.json` gives `Theorem 1.20` for the four items that carry a reference, two of them in
-section 4 and one each in sections 5 and 6, and no number anywhere else. The four are items
-`4.1` and `4.2`, item `5.1` and item `6.4`; a drafter of section 4 writes two `\fcref`, one
-on each of those two items. Every one of the four numbers belongs to the item as a whole,
-so no part of an item carries a number of its own.
+Every number this text cites comes from a module docstring, so every `\fcref` is unstarred
+and no dagger is printed anywhere. `items.json` gives `Theorem 1.20` for the four items
+that carry a reference, two of them in section 4 and one each in sections 5 and 6, and no
+number anywhere else. The four are items `4.1` and `4.2`, item `5.1` and item `6.4`; a
+drafter of section 4 writes two `\fcref`, one on each of those two items. Every one of the
+four numbers belongs to the item as a whole, so no part of an item carries a number of its
+own.

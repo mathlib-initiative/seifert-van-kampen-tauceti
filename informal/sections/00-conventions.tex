@@ -7,42 +7,37 @@
 % and what its dagger marks.
 \section*{Conventions}\label{sec:conventions}
 
-Each numbered statement carries exactly the hypotheses of the Lean
-declaration that states it.
-
 Throughout, $X$ is a topological space and $Y$ is a second one, and $f$ is a
 continuous map from $X$ to $Y$.  Where a distance on $X$ is needed, $X$ carries
 a pseudometric, and $\ball{x}{\rho}$ is the open ball of radius $\rho$ about a
 point $x$, for a real number $\rho$ greater than zero.  The letters $x$, $y$
 and $z$ name points of $X$, and $x$ is the basepoint wherever a basepoint is
 chosen.  The letters $x_{0}$, $x_{1}$ and $x_{2}$ name further points of $X$,
-and $x'$ and $y'$ name points of $X$ that are tied to $x$ and $y$ by an
-equation.
+and $x'$ and $y'$ name points of $X$ tied to $x$ and $y$ by an equation.
 
-The letters $A$ and $B$ name two subsets of $X$, and $S$ names a single subset
-of $X$ when only one is in play; $T$ names a subset of $X$ that contains $S$.
+The letters $A$ and $B$ name two subsets of $X$; $S$ names a single subset of
+$X$ when only one is in play, and $T$ names a subset of $X$ containing $S$.
 The letter $I$ names an index type, $i$ and $j$ name its elements, and $U$
 names a family of subsets of $X$ indexed by $I$, whose member at $i$ is
-$U_{i}$.  Every subset of $X$ carries the topology it inherits from $X$ and is
-treated as a space in its own right, so that a point of $S$ is a point of $X$
-together with a proof that it lies in $S$.  The map $\incl{S}$ is the inclusion
-of $S$ into $X$, and $\inclin{S}{T}$ is the inclusion of $S$ into $T$.  The
-interior of $A$ is written $\intr A$.  A neighborhood of a point of a space is
-a subset of that space whose interior contains the point, and such a subset
-need not be open.
+$U_{i}$.  Each subset of $X$ carries the topology it inherits from $X$ and is
+a space in its own right; a point of $S$ is a point of $X$ lying in $S$, and
+the passage between the two is left silent.  The map $\incl{S}$ is the
+inclusion of $S$ into $X$, and $\inclin{S}{T}$ is the inclusion of $S$ into
+$T$.  The interior of $A$ is written $\intr A$.  A neighborhood of a point of
+a space is a subset of that space whose interior contains the point, so such a
+subset need not be open.
 
 The unit interval is $\uI$, and the letters $r$, $s$, $t$, $u$ and $v$ name
-points of it, which we call parameters.  A path in $X$ from $x$ to $y$ is a
+points of it, which are called parameters.  A path in $X$ from $x$ to $y$ is a
 continuous map from $\uI$ to $X$ whose value at $0$ is $x$ and whose value at
 $1$ is $y$; the letters $\gamma$ and $\delta$ name paths, and a loop at $x$ is
 a path from $x$ to $x$.  For a path $\gamma$ from $x$ to $y$ and a path
 $\delta$ from $y$ to $z$, the concatenation $\gamma \ptrans \delta$ runs
 through $\gamma$ at twice the speed on the first half of $\uI$ and through
 $\delta$ at twice the speed on the second.  For parameters $r$ and $s$, the
-subpath $\subpath{\gamma}{r}{s}$ is the path from $\gamma(r)$ to $\gamma(s)$
-that runs through $\gamma$ at a constant speed.  When every value of $\gamma$
-lies in a subset $S$, the path $\codres{\gamma}{S}$ is $\gamma$ read as a path
-in $S$.
+subpath $\subpath{\gamma}{r}{s}$ runs through $\gamma$ from $\gamma(r)$ to
+$\gamma(s)$ at a constant speed.  When every value of $\gamma$ lies in a
+subset $S$, the path $\codres{\gamma}{S}$ is $\gamma$ read as a path in $S$.
 
 Two paths with the same two endpoints are homotopic when a homotopy carries one
 to the other and holds both endpoints fixed throughout, and $\pcls{\gamma}$ is
@@ -51,32 +46,36 @@ the composition of two such classes, so that $\pcls{\gamma} \ptrans
 \pcls{\delta}$ is $\pcls{\gamma \ptrans \delta}$.  The fundamental groupoid
 $\fgpd{X}$ has the points of $X$ as its objects and the classes of paths from
 $x$ to $y$ as its morphisms from $x$ to $y$, composed by concatenation; the
-letter $\omega$ names such a class.  The functor $\fgpd{f}$ sends a point to its image
-under $f$ and a class to the class of its image.  The fundamental group
-$\fgrp{X}{x}$ is the group of morphisms of $\fgpd{X}$ from $x$ to itself, and
-$\fgrp{f}{x}$ is the homomorphism from $\fgrp{X}{x}$ to $\fgrp{Y}{f(x)}$ that
-$f$ induces.  A subgroupoid $\mathcal{H}$ of $\fgpd{X}$ picks out, for each
-ordered pair of points, a set of morphisms between them, and these sets are
-closed under composition and under inverses.  When $\fgpd{f}$ is injective on
-objects, $\im \fgpd{f}$ is the subgroupoid of the morphisms that $\fgpd{f}$
-produces, and $\im \varphi$ is the subgroup of the values of a homomorphism
-$\varphi$.  A family of subgroupoids generates $\fgpd{X}$ when the smallest
-subgroupoid containing all of them has every morphism of $\fgpd{X}$, and a
-family of subgroups generates a group when the smallest subgroup containing all
-of them is the whole group.
+letter $\omega$ names such a class.  The functor $\fgpd{f}$ sends a point to
+its image under $f$ and a class to the class of its image.  The fundamental
+group $\fgrp{X}{x}$ is the group of morphisms of $\fgpd{X}$ from $x$ to
+itself, the product of two of them being the second one followed by the first,
+and $\fgrp{f}{x}$ is the homomorphism from $\fgrp{X}{x}$ to $\fgrp{Y}{f(x)}$
+that $f$ induces.  For a point $x$ lying in $S$, the group $\fgrp{S}{x}$ is
+the fundamental group of $S$ based at that point of $S$.
+
+A subgroupoid $\mathcal{H}$ of $\fgpd{X}$ picks out, for each ordered pair of
+points, a set of morphisms between them, and these sets are closed under
+composition and under inverses.  When $\fgpd{f}$ is injective on objects,
+$\im \fgpd{f}$ is the subgroupoid of the morphisms that $\fgpd{f}$ produces,
+and $\im \varphi$ is the subgroup of the values of a homomorphism $\varphi$.
+Given subgroupoids $\mathcal{H}_{i}$ of $\fgpd{X}$, one for each $i$, the
+subgroupoid $\gen{\mathcal{H}_{i}}$ is the smallest one containing every
+$\mathcal{H}_{i}$, and the $\mathcal{H}_{i}$ generate $\fgpd{X}$ when
+$\gen{\mathcal{H}_{i}}$ is $\fgpd{X}$.  Subgroups of a group are written and
+generated the same way.
 
 The letters $\mathcal{C}$ and $\mathcal{D}$ name categories, and $\mathcal{C}$
 is a groupoid where that is said.  The letter $w$ names a chosen object of
 $\mathcal{C}$, the letters $c$ and $c'$ name further objects of $\mathcal{C}$,
 and $g$ names a morphism of $\mathcal{C}$.  The monoid of morphisms of
 $\mathcal{C}$ from $w$ to itself is $\End(w)$, a group when $\mathcal{C}$ is a
-groupoid, and the product of two elements of $\End(w)$ is the second one
+groupoid, and the product of two of its elements is again the second one
 followed by the first.  The letter $\tau$ names a family that gives, for each
 object $c$, a morphism $\tau_{c}$ from $w$ to $c$.  The letter $M$ names a
 monoid, and $\sobj{M}$ is the category with one object whose morphisms from
-that object to itself are the elements of $M$.  The composition of $\sobj{M}$
-takes a morphism and a second morphism to the product in $M$ of the second with
-the first.  The letters
+that object to itself are the elements of $M$; one of them followed by a
+second composes to the product of the second with the first.  The letters
 $\varphi$ and $\psi$ name homomorphisms of monoids, and $\varphi_{A}$ and
 $\varphi_{B}$ are the ones given on $A$ and on $B$.  The letter $F$ names a
 functor, $F_{i}$ the functor given on $U_{i}$, and $F_{A}$ and $F_{B}$ those
@@ -103,12 +102,9 @@ $\subpath{\gamma}{r}{s}$ is formed for every pair of parameters, so it runs
 backwards along $\gamma$ when $s$ is smaller than $r$, and it is the constant
 path at $\gamma(r)$ when $r$ and $s$ agree.
 
-Four hypotheses recur, and each is always written in the same words.  The
-first is that \hypCoverTwo*.  The second is that \hypCoverFamily*.  The third
-is that \hypPathConnected*.  The fourth is that \hypBasepoint*.  A statement
-carries one of these four only where the declaration behind it assumes it.
+Four hypotheses recur, each in fixed words: that \hypCoverTwo*; that
+\hypCoverFamily*; that \hypPathConnected*; and that \hypBasepoint*.  A
+statement assumes one of the four only where it says so.
 
 A number such as \fcref{Theorem 1.20} points to the result carrying that
-number in the reference work, and no sentence of that work is reproduced here.
-A dagger after such a number marks a number that the library's documentation
-does not state.
+number in the reference work.
