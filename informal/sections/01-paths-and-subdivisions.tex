@@ -6,8 +6,8 @@ $x$ of $S$ some $U_{i}$ contains $\ball{x}{\rho}$.
 \end{lemma}
 
 \begin{lemma}[id=1.2]{Equally spaced subdivision points of an interval}
-Let $d$ be nonnegative and let $n$ be a natural number.  Then the point reached
-from $a$ by $n$ steps of size $d$ is the smaller of $b$ and $a + nd$.
+Let $d$ be nonnegative.  Then the point reached from $a$ by $n$ steps of size
+$d$ is the smaller of $b$ and $a + nd$.
 \leanref{Set.Icc.coe_addNSMul}
 \end{lemma}
 
@@ -49,8 +49,8 @@ of $\subpath{\gamma}{u}{v}$ lies in $S$.
 
 \begin{proposition}[id=1.7]{Subdividing a path along a family of sets}
 Let $\gamma$ be a path in $X$, and suppose that every parameter has a
-neighborhood that $\gamma$ maps into some $U_{i}$.  Then there are a natural
-number $n$ and a subdivision $t_{0}, \dots, t_{n}$ of $\uI$ with $t_{0} = 0$ and
+neighborhood that $\gamma$ maps into some $U_{i}$.  Then there is a subdivision
+$t_{0}, \dots, t_{n}$ of $\uI$ with $t_{0} = 0$ and
 $t_{n} = 1$ such that, for each $k$ less than $n$, the range of
 $\subpath{\gamma}{t_{k}}{t_{k+1}}$ is contained in some $U_{i}$.
 \leanref{Path.exists_monotone_range_subpath_subset}
@@ -59,10 +59,9 @@ $\subpath{\gamma}{t_{k}}{t_{k+1}}$ is contained in some $U_{i}$.
 \begin{lemma}[id=1.8]{Cutting a path class at an intermediate parameter}
 Let $\gamma$ be a path in $X$, let $r$, $s$ and $t$ be parameters, and let
 $x_{0}$, $x_{1}$ and $x_{2}$ be points of $X$ with $x_{0} = \gamma(r)$,
-$x_{1} = \gamma(s)$ and $x_{2} = \gamma(t)$.  Read $\subpath{\gamma}{r}{s}$ as a
-path from $x_{0}$ to $x_{1}$, $\subpath{\gamma}{s}{t}$ as a path from $x_{1}$ to
-$x_{2}$, and $\subpath{\gamma}{r}{t}$ as a path from $x_{0}$ to $x_{2}$, by
-renaming their endpoints.  Then
+$x_{1} = \gamma(s)$ and $x_{2} = \gamma(t)$.  Rename the endpoints of
+$\subpath{\gamma}{r}{s}$, $\subpath{\gamma}{s}{t}$ and $\subpath{\gamma}{r}{t}$
+along these equalities.  Then
 \[
   \pcls{\subpath{\gamma}{r}{s}} \ptrans \pcls{\subpath{\gamma}{s}{t}}
     = \pcls{\subpath{\gamma}{r}{t}}.

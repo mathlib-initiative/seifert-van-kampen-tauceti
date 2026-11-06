@@ -22,15 +22,14 @@ Then the $F_{i}$ glue to a functor $F$ from $\fgpd{X}$ to $\mathcal{D}$.
 
 \begin{proposition}[id=4.3]{The glued functor restricts to the given functors}
 Suppose that \hypCoverFamily, and let $F$ be the functor of \itemref{4.2},
-glued from functors $F_{i}$ from $\fgpd{U_{i}}$ to $\mathcal{D}$.  Then
-$F \circ \fgpd{\incl{U_{i}}} = F_{i}$ for every $i$.
+glued from the $F_{i}$.  Then $F \circ \fgpd{\incl{U_{i}}} = F_{i}$ for
+every $i$.
 \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue}
 \end{proposition}
 
 \begin{definition}[id=4.4]{Gluing two functors out of fundamental groupoids}
-Suppose that \hypCoverTwo.  Let $F_{A}$ be a functor from $\fgpd{A}$ to
-$\mathcal{D}$ and let $F_{B}$ be a functor from $\fgpd{B}$ to $\mathcal{D}$,
-and suppose that
+Suppose that \hypCoverTwo.  Let $F_{A}$ and $F_{B}$ be functors from
+$\fgpd{A}$ and $\fgpd{B}$ to $\mathcal{D}$, and suppose that
 \[
   F_{A} \circ \fgpd{\inclin{A \cap B}{A}}
     = F_{B} \circ \fgpd{\inclin{A \cap B}{B}}.

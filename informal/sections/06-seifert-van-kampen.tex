@@ -4,26 +4,25 @@
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
 $\varphi_{A}$ be a homomorphism from $\fgrp{A}{x}$ to $M$ and $\varphi_{B}$ one
 from $\fgrp{B}{x}$ to $M$ with
-\begin{equation}\label{eq:6.1-agree}
+\[
   \varphi_{A} \circ \fgrp{\inclin{A \cap B}{A}}{x}
     = \varphi_{B} \circ \fgrp{\inclin{A \cap B}{B}}{x}.
-\end{equation}
+\]
 Then $\varphi_{A}$ and $\varphi_{B}$ induce a homomorphism $\varphi$ from
 $\fgrp{X}{x}$ to $M$.
 \leanref{TauCeti.vanKampenDesc}
 \end{definition}
 
 \begin{proposition}[id=6.2]{The induced homomorphism restricts to the given ones}
-Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
-$\varphi_{A}$ be a homomorphism from $\fgrp{A}{x}$ to $M$ and $\varphi_{B}$ one
-from $\fgrp{B}{x}$ to $M$ satisfying \eqref{eq:6.1-agree}, and let $\varphi$ be
-the homomorphism from $\fgrp{X}{x}$ to $M$ of \itemref{6.1}.
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint, and
+let $\varphi$ be the homomorphism of \itemref{6.1}, induced by $\varphi_{A}$ and
+$\varphi_{B}$.
 \itempart{a}{%
-  The composite $\varphi \circ \fgrp{\incl{A}}{x}$ is $\varphi_{A}$.
+  $\varphi \circ \fgrp{\incl{A}}{x} = \varphi_{A}$.
   \leanref{TauCeti.vanKampenDesc_map_left}%
   \leanref{TauCeti.vanKampenDesc_comp_map_left}}
 \itempart{b}{%
-  The composite $\varphi \circ \fgrp{\incl{B}}{x}$ is $\varphi_{B}$.
+  $\varphi \circ \fgrp{\incl{B}}{x} = \varphi_{B}$.
   \leanref{TauCeti.vanKampenDesc_map_right}%
   \leanref{TauCeti.vanKampenDesc_comp_map_right}}
 \end{proposition}

@@ -2,8 +2,8 @@
 % Items 2.1--2.4.  The heading comes from sections.tex.
 
 \begin{lemma}[id=2.1]{The fundamental groupoid of a path-connected space}
-Suppose $X$ is a path-connected space.  Then for all points $x$ and $y$ of $X$
-there is a morphism of $\fgpd{X}$ from $x$ to $y$.
+Suppose $X$ is a path-connected space.  Then there is a morphism of $\fgpd{X}$
+from $x$ to $y$.
 \leanref{FundamentalGroupoid.nonempty_hom}
 \end{lemma}
 
@@ -13,10 +13,9 @@ Suppose $f$ is injective.  Then $\fgpd{f}$ is injective on objects.
 \end{lemma}
 
 \begin{lemma}[id=2.3]{Recasting the endpoints of a path class}
-Let $\mathcal{H}$ be a subgroupoid of $\fgpd{X}$, let $\omega$ be a class of
-paths from $x$ to $y$, and suppose $x' = x$ and $y' = y$.  Then the class
-obtained from $\omega$ by renaming its endpoints to $x'$ and $y'$ lies in
-$\mathcal{H}$ if and only if $\omega$ does.
+Let $\omega$ be a class of paths from $x$ to $y$, and suppose $x' = x$ and
+$y' = y$.  Then the class obtained from $\omega$ by renaming its endpoints to
+$x'$ and $y'$ lies in $\mathcal{H}$ if and only if $\omega$ does.
 \leanref{Path.Homotopic.Quotient.cast_mem_arrows_iff}
 \end{lemma}
 
