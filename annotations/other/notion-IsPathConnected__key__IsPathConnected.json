@@ -1,0 +1,46 @@
+{
+  "id": "notion:IsPathConnected",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.539595, 0.849116, 0.122422, 0.017045]
+      },
+      "title": "path connected",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:IsPathConnected@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "IsPathConnected",
+        "module": "Mathlib.Topology.Connected.PathConnected"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "IsPathConnected",
+            "kind": "def"
+          },
+          "destination": {
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Connected/PathConnected.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      }
+    }
+  }
+}

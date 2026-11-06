@@ -1,0 +1,46 @@
+{
+  "id": "notion:Real",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.487096, 0.705019, 0.015325, 0.017045]
+      },
+      "title": "$\\R$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:Real@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Real",
+        "module": "Mathlib.Basic.Real.Basic"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Real",
+            "kind": "inductive"
+          },
+          "destination": {
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Basic/Real/Basic.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

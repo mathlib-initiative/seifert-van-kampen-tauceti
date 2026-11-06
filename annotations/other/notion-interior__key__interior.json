@@ -1,0 +1,46 @@
+{
+  "id": "notion:interior",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.213109, 0.659564, 0.040082, 0.016572]
+      },
+      "title": "$\\intr A$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:interior@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "interior",
+        "module": "Mathlib.Topology.Defs.Basic"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "interior",
+            "kind": "def"
+          },
+          "destination": {
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Defs/Basic.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      }
+    }
+  }
+}

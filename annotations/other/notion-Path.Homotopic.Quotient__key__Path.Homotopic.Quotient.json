@@ -1,0 +1,47 @@
+{
+  "id": "notion:Path.Homotopic.Quotient",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.559728, 0.123106, 0.022662, 0.017677]
+      },
+      "title": "$\\pcls{\\gamma}$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:Path.Homotopic.Quotient@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.Homotopic.Quotient",
+        "module": "Mathlib.Topology.Homotopy.Path"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.Homotopic.Quotient",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "Path.Homotopic.Quotient",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Homotopy/Path.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

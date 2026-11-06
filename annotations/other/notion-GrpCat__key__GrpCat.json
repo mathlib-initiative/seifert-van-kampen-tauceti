@@ -1,0 +1,46 @@
+{
+  "id": "notion:GrpCat",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.406015, 0.653725, 0.146242, 0.017045]
+      },
+      "title": "category of groups",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:GrpCat@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "GrpCat",
+        "module": "Mathlib.Algebra.Category.Grp.Basic"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "GrpCat",
+            "kind": "inductive"
+          },
+          "destination": {
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Category/Grp/Basic.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

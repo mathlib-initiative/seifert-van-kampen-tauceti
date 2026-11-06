@@ -1,0 +1,47 @@
+{
+  "id": "notion:FundamentalGroupoid.map",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.195816, 0.208649, 0.048063, 0.017361]
+      },
+      "title": "$\\fgpd{f}$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:FundamentalGroupoid.map@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "FundamentalGroupoid.map",
+        "module": "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "FundamentalGroupoid.map",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "FundamentalGroupoid.map",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

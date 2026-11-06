@@ -1,0 +1,46 @@
+{
+  "id": "notion:iSup",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.504383, 0.379735, 0.289598, 0.017361]
+      },
+      "title": "the smallest one containing every $\\mathcal{H}_{i}$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:iSup@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "iSup",
+        "module": "Mathlib.Order.SetNotation"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "iSup",
+            "kind": "def"
+          },
+          "destination": {
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/SetNotation.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

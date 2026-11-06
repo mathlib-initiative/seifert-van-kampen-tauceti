@@ -1,0 +1,47 @@
+{
+  "id": "notion:Set.Elem",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.132842, 0.624842, 0.099122, 0.017203]
+      },
+      "title": "a point of $S$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:Set.Elem@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Set.Elem",
+        "module": "Mathlib.Data.Set.CoeSort"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Set.Elem",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "Set.Elem",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Set/CoeSort.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      }
+    }
+  }
+}

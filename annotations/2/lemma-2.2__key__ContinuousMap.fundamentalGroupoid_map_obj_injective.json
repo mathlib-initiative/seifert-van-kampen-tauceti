@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.196023, 0.739217, 0.038826]
+        "page": 3,
+        "rect": [0.130391, 0.86411, 0.739217, 0.037721]
       },
       "title": "Lemma 2.2 (An injective map is injective on objects)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-2.2@p004"
+          "region": "lemma-2.2@p003"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

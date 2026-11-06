@@ -1,0 +1,47 @@
+{
+  "id": "notion:Path.Homotopic.Quotient.cast",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.132842, 0.140783, 0.074791, 0.016414]
+      },
+      "title": "renaming",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:Path.Homotopic.Quotient.cast@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.Homotopic.Quotient.cast",
+        "module": "Mathlib.Topology.Homotopy.Path"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.Homotopic.Quotient.cast",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "Path.Homotopic.Quotient.cast",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Homotopy/Path.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

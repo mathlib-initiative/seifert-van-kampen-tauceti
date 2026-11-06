@@ -1,0 +1,47 @@
+{
+  "id": "notion:CategoryTheory.Groupoid",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.54245, 0.431187, 0.071326, 0.01673]
+      },
+      "title": "groupoid",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:CategoryTheory.Groupoid@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "CategoryTheory.Groupoid",
+        "module": "Mathlib.CategoryTheory.Groupoid"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "CategoryTheory.Groupoid",
+            "kind": "inductive"
+          },
+          "destination": {
+            "fragment": "CategoryTheory.Groupoid",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Groupoid.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

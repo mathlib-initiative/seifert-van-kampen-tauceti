@@ -1,0 +1,47 @@
+{
+  "id": "notion:CategoryTheory.inv",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.325019, 0.447917, 0.055581, 0.017519]
+      },
+      "title": "inverse",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:CategoryTheory.inv@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "CategoryTheory.inv",
+        "module": "Mathlib.CategoryTheory.Iso"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "CategoryTheory.inv",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "CategoryTheory.inv",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Iso.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

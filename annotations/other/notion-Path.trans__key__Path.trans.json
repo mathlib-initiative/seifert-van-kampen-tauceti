@@ -1,0 +1,47 @@
+{
+  "id": "notion:Path.trans",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.33477, 0.761521, 0.034209, 0.017519]
+      },
+      "title": "$\\gamma\\ptrans\\delta$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:Path.trans@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.trans",
+        "module": "Mathlib.Topology.Path"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.trans",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "Path.trans",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Path.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      }
+    }
+  }
+}

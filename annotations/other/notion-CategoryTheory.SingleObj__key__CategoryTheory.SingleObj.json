@@ -1,0 +1,47 @@
+{
+  "id": "notion:CategoryTheory.SingleObj",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.709603, 0.533775, 0.034561, 0.017203]
+      },
+      "title": "$\\sobj{M}$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:CategoryTheory.SingleObj@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "CategoryTheory.SingleObj",
+        "module": "Mathlib.CategoryTheory.SingleObj"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "CategoryTheory.SingleObj",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "CategoryTheory.SingleObj",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/SingleObj.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

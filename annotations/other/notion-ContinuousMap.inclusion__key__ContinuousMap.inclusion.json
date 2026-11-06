@@ -1,0 +1,47 @@
+{
+  "id": "notion:ContinuousMap.inclusion",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.461161, 0.642045, 0.03177, 0.017519]
+      },
+      "title": "$\\inclin{S}{T}$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:ContinuousMap.inclusion@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "ContinuousMap.inclusion",
+        "module": "Mathlib.Topology.ContinuousMap.Basic"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "ContinuousMap.inclusion",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "ContinuousMap.inclusion",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousMap/Basic.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      }
+    }
+  }
+}

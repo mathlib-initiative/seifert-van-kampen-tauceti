@@ -1,0 +1,47 @@
+{
+  "id": "notion:Path.map",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.429814, 0.813605, 0.039734, 0.018308]
+      },
+      "title": "$f \\circ\\gamma$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:Path.map@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.map",
+        "module": "Mathlib.Topology.Path"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.map",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "Path.map",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Path.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      }
+    }
+  }
+}

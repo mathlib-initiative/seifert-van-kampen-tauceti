@@ -1,0 +1,47 @@
+{
+  "id": "notion:Metric.ball",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.71525, 0.470644, 0.058056, 0.017677]
+      },
+      "title": "$\\ball{x}{\\rho}$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:Metric.ball@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Metric.ball",
+        "module": "Mathlib.Topology.MetricSpace.Pseudo.Defs"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Metric.ball",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "Metric.ball",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Pseudo/Defs.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      }
+    }
+  }
+}

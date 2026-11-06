@@ -1,0 +1,46 @@
+{
+  "id": "notion:instTopologicalSpaceSubtype",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.365348, 0.607639, 0.249517, 0.017203]
+      },
+      "title": "the topology it inherits from $X$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:instTopologicalSpaceSubtype@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "instTopologicalSpaceSubtype",
+        "module": "Mathlib.Topology.Defs.Induced"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "instTopologicalSpaceSubtype",
+            "kind": "def"
+          },
+          "destination": {
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Defs/Induced.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      }
+    }
+  }
+}

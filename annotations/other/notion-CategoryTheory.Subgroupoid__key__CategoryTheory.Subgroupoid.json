@@ -1,0 +1,47 @@
+{
+  "id": "notion:CategoryTheory.Subgroupoid",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.1802, 0.309975, 0.098162, 0.018624]
+      },
+      "title": "subgroupoid",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:CategoryTheory.Subgroupoid@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "CategoryTheory.Subgroupoid",
+        "module": "Mathlib.CategoryTheory.Groupoid.Subgroupoid"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "CategoryTheory.Subgroupoid",
+            "kind": "inductive"
+          },
+          "destination": {
+            "fragment": "CategoryTheory.Subgroupoid",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Groupoid/Subgroupoid.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

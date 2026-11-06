@@ -1,0 +1,47 @@
+{
+  "id": "notion:CategoryTheory.End",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.237634, 0.482323, 0.061493, 0.017677]
+      },
+      "title": "$\\End(w)$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:CategoryTheory.End@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "CategoryTheory.End",
+        "module": "Mathlib.CategoryTheory.Endomorphism"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "CategoryTheory.End",
+            "kind": "inductive"
+          },
+          "destination": {
+            "fragment": "CategoryTheory.End",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Endomorphism.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.236111, 0.739217, 0.106376]
+        "page": 4,
+        "rect": [0.130391, 0.680871, 0.739217, 0.097854]
       },
       "title": "Definition 4.4 (Gluing two functors out of fundamental groupoids)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "definition-4.4@p005"
+          "region": "definition-4.4@p004"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }

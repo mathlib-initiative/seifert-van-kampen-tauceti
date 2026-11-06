@@ -1,0 +1,47 @@
+{
+  "id": "notion:Path.subpath",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.787865, 0.77904, 0.03633, 0.018308]
+      },
+      "title": "$\\subpath{\\gamma}{r}{s}$",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:Path.subpath@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "Path.subpath",
+        "module": "Mathlib.Topology.Subpath"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "Path.subpath",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "Path.subpath",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Subpath.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      }
+    }
+  }
+}

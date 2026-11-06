@@ -1,0 +1,59 @@
+{
+  "id": "notion:MonoidHom.comp",
+  "kind": "passage",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.731145, 0.619318, 0.138463, 0.017045]
+      },
+      "title": "the composite of two homomorphisms",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:MonoidHom.comp@p002"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.130391, 0.636364, 0.16518, 0.017361]
+      },
+      "title": "the composite of two homomorphisms",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:MonoidHom.comp@p002#2"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "MonoidHom.comp",
+        "module": "Mathlib.Algebra.Group.Hom.Defs"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "MonoidHom.comp",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "MonoidHom.comp",
+            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Group/Hom/Defs.html"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}
