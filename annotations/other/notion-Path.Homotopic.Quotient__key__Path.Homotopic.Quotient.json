@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.559728, 0.123106, 0.022662, 0.017677]
       },
-      "title": "$\\pcls{\\gamma}$",
+      "title": "[γ]",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Path.Homotopic.Quotient@p002"

@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.71525, 0.470644, 0.058056, 0.017677]
       },
-      "title": "$\\ball{x}{\\rho}$",
+      "title": "B(x, ρ)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Metric.ball@p001"

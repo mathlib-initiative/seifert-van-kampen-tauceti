@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.429814, 0.813605, 0.039734, 0.018308]
       },
-      "title": "$f \\circ\\gamma$",
+      "title": "f ◦γ",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Path.map@p001"

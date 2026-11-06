@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.132842, 0.790088, 0.037438, 0.017835]
       },
-      "title": "$\\cint{a}{b}$",
+      "title": "[a, b]",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Set.Icc@p002"

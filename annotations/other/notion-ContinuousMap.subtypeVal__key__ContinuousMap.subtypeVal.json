@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.173179, 0.642045, 0.018717, 0.017519]
       },
-      "title": "$\\incl{S}$",
+      "title": "ιS",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:ContinuousMap.subtypeVal@p001"

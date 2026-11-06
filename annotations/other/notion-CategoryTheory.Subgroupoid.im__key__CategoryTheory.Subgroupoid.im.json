@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.318289, 0.345644, 0.070971, 0.017361]
       },
-      "title": "$\\im\\fgpd{f}$",
+      "title": "im Π1 (f )",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:CategoryTheory.Subgroupoid.im@p002"

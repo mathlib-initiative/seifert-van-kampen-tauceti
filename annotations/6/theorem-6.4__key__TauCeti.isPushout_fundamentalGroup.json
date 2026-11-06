@@ -7,7 +7,7 @@
         "page": 5,
         "rect": [0.130391, 0.616162, 0.739217, 0.140783]
       },
-      "title": "Theorem 6.4 (The based Seifert--van Kampen theorem)",
+      "title": "Theorem 6.4 (The based Seifert–van Kampen theorem)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "theorem-6.4@p005"

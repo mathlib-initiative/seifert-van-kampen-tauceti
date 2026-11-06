@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.132842, 0.624842, 0.099122, 0.017203]
       },
-      "title": "a point of $S$",
+      "title": "a point of S",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Set.Elem@p001"

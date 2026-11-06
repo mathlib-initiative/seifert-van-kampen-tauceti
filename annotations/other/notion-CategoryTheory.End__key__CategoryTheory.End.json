@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.237634, 0.482323, 0.061493, 0.017677]
       },
-      "title": "$\\End(w)$",
+      "title": "End(w)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:CategoryTheory.End@p002"

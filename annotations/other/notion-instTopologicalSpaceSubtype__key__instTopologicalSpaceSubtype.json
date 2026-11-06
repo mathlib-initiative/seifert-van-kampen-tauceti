@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.365348, 0.607639, 0.249517, 0.017203]
       },
-      "title": "the topology it inherits from $X$",
+      "title": "the topology it inherits from X",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:instTopologicalSpaceSubtype@p001"

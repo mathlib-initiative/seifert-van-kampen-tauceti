@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.709603, 0.533775, 0.034561, 0.017203]
       },
-      "title": "$\\sobj{M}$",
+      "title": "ΣM",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:CategoryTheory.SingleObj@p002"

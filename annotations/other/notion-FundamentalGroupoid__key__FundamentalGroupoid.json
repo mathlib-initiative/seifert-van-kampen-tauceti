@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.209209, 0.174558, 0.053583, 0.017519]
       },
-      "title": "$\\fgpd{X}$",
+      "title": "Π1 (X)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:FundamentalGroupoid@p002"

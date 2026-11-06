@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.286094, 0.22601, 0.067495, 0.017045]
       },
-      "title": "$\\fgrp{X}{x}$",
+      "title": "π1 (X, x)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:FundamentalGroup@p002"

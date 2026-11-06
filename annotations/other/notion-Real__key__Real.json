@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.487096, 0.705019, 0.015325, 0.017045]
       },
-      "title": "$\\R$",
+      "title": "R",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Real@p002"

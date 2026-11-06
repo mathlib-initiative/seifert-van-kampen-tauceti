@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.314389, 0.692866, 0.038191, 0.017519]
       },
-      "title": "$\\uI$",
+      "title": "[0, 1]",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:unitInterval@p001"

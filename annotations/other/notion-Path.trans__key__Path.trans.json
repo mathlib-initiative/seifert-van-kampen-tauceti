@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.33477, 0.761521, 0.034209, 0.017519]
       },
-      "title": "$\\gamma\\ptrans\\delta$",
+      "title": "γ·δ",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Path.trans@p001"

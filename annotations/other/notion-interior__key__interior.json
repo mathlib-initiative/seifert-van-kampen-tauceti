@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.213109, 0.659564, 0.040082, 0.016572]
       },
-      "title": "$\\intr A$",
+      "title": "int A",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:interior@p001"

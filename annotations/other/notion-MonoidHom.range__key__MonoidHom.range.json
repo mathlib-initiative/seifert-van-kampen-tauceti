@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.1697, 0.363005, 0.03702, 0.01673]
       },
-      "title": "$\\im\\varphi$",
+      "title": "im φ",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:MonoidHom.range@p002"
