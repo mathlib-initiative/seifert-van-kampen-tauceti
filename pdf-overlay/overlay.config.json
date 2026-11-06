@@ -2,10 +2,10 @@
   "schema": "formal-companion/overlay-config",
   "schema_version": 1,
   "source_id": "svk-tauceti",
-  "title": "The Seifert–van Kampen theorem, after TauCeti",
+  "title": "The Seifert--van Kampen theorem, after TauCeti",
   "lede": "Each statement of the text, and the TauCeti declaration that states it.",
   "back_link": {
-    "href": "../index.html",
+    "href": "../../index.html",
     "text": "Back to the site"
   },
   "display": {
