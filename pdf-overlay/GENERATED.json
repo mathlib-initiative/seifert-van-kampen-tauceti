@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "f8a90378880a87134b5917fc1545afc4668c6b6f"
+    "commit": "9a9bb09a4ae4d688a5b7be7d3046bd3c0085b669"
   },
   "format": {
     "package": "literature-links",
@@ -121,7 +121,7 @@
     "count": 86,
     "directory": "annotations",
     "export": {
-      "commit": "ec840157829648a437d735081e50de2a6413166d",
+      "commit": "a7c27a1288426abbfe72464a2caed28d67d7be0b",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
