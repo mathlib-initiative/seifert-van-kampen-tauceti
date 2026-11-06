@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "d770c3795746c0e2a6542fff4abc6eb78eec4e44"
+    "commit": "f8a90378880a87134b5917fc1545afc4668c6b6f"
   },
   "format": {
     "package": "literature-links",
@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "02c53a534040566d2ac92f5864312ac1da2438b3b76f4e5dc6b14985c541b8b5"
+      "sha256": "0ab660610d869cfea12461fab5670c7a38e5179cf86ee4acc888678b1c304703"
     },
     "count": 86,
     "directory": "annotations",
     "export": {
-      "commit": "2379cf6c88928070b019902d3f2d2d7b61472b34",
+      "commit": "ec840157829648a437d735081e50de2a6413166d",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -148,6 +148,6 @@
         "sha256": "fe634b459f966ebf3a01ee7d85c4293e9ef38bf8349b042cce646989642735b0"
       }
     ],
-    "manifest_sha256": "ace16a163537040291583ab430308ff2d23ed229c584c9f875680df0de7574df"
+    "manifest_sha256": "09032ab62a8f2f42ae6b089afe9285a3667cc6cf58733962d2b497f9ba1521a5"
   }
 }

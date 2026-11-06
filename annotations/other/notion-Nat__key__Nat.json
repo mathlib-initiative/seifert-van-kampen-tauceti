@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.39301, 0.67077, 0.015325, 0.01673]
       },
-      "title": "N",
+      "title": "ℕ",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Nat@p002"

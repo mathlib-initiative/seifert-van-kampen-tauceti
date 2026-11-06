@@ -9,7 +9,7 @@
       "type": "book",
       "URL": "https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v1/svk-tauceti.pdf",
       "id": "svk-tauceti",
-      "title": "The Seifert--van Kampen theorem, after TauCeti"
+      "title": "The Seifert–van Kampen theorem, after TauCeti"
     },
     "extensions": {
       "org.mathlib-initiative.formal-companion.overlay": {

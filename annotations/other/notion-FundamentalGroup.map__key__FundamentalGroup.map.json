@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.627106, 0.243056, 0.061974, 0.017045]
       },
-      "title": "π1 (f, x)",
+      "title": "π₁(f, x)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:FundamentalGroup.map@p002"
