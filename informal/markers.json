@@ -2,9 +2,9 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "381df6ef1c01f624909287247b2d10413d049468",
- "pdf_sha256": "0bcad9ea3776dc86d06b9e703cbe80395b85b581f6b17735cbebb246674aae64",
- "pages": 6,
+ "source_commit": "87c7e819b782e66567ce3e003b6653aa754dd689",
+ "pdf_sha256": "114759bd933521929879f472b1475af98271b40233bf20be6405efba393cc846",
+ "pages": 5,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
   "res_dpi": 288,
@@ -26,7 +26,7 @@
     "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds"
    ],
    "boxes": [
-    [3, 0.130391, 0.134785, 0.739298, 0.089173]
+    [3, 0.130391, 0.263258, 0.739217, 0.055398]
    ]
   },
   {
@@ -41,7 +41,7 @@
     "Set.Icc.coe_addNSMul"
    ],
    "boxes": [
-    [3, 0.130391, 0.229009, 0.739298, 0.088068]
+    [3, 0.130391, 0.323706, 0.739217, 0.037721]
    ]
   },
   {
@@ -57,7 +57,7 @@
     "Path.codRestrict_coe"
    ],
    "boxes": [
-    [3, 0.130391, 0.322128, 0.739217, 0.072285]
+    [3, 0.130391, 0.366793, 0.739217, 0.056345]
    ]
   },
   {
@@ -72,7 +72,7 @@
     "Path.map_codRestrict"
    ],
    "boxes": [
-    [3, 0.130391, 0.399463, 0.739217, 0.054766]
+    [3, 0.130391, 0.428188, 0.739298, 0.038668]
    ]
   },
   {
@@ -88,7 +88,7 @@
    ],
    "decls": [],
    "boxes": [
-    [3, 0.130391, 0.45928, 0.739217, 0.105587]
+    [3, 0.130391, 0.471907, 0.739217, 0.055398]
    ]
   },
   {
@@ -101,7 +101,7 @@
     "Path.trans_apply_of_le"
    ],
    "boxes": [
-    [3, 0.130391, 0.494634, 0.739217, 0.034722]
+    [3, 0.130391, 0.491162, 0.739217, 0.017045]
    ]
   },
   {
@@ -114,7 +114,7 @@
     "Path.trans_apply_of_ge"
    ],
    "boxes": [
-    [3, 0.130391, 0.529356, 0.739217, 0.035511]
+    [3, 0.130391, 0.508207, 0.739217, 0.019097]
    ]
   },
   {
@@ -129,7 +129,7 @@
     "Path.subpath_apply_mem"
    ],
    "boxes": [
-    [3, 0.130391, 0.569918, 0.739217, 0.072759]
+    [3, 0.130391, 0.532355, 0.739217, 0.056818]
    ]
   },
   {
@@ -144,7 +144,7 @@
     "Path.exists_monotone_range_subpath_subset"
    ],
    "boxes": [
-    [3, 0.130391, 0.647727, 0.739217, 0.107008]
+    [3, 0.130391, 0.594223, 0.739217, 0.071496]
    ]
   },
   {
@@ -159,7 +159,7 @@
     "Path.Homotopic.Quotient.subpath_cast_trans"
    ],
    "boxes": [
-    [3, 0.130391, 0.759785, 0.739217, 0.11774]
+    [3, 0.130391, 0.671717, 0.739217, 0.074811]
    ]
   },
   {
@@ -174,7 +174,7 @@
     "FundamentalGroupoid.nonempty_hom"
    ],
    "boxes": [
-    [4, 0.130391, 0.134785, 0.739217, 0.054924]
+    [3, 0.130391, 0.820707, 0.739217, 0.038352]
    ]
   },
   {
@@ -189,7 +189,7 @@
     "ContinuousMap.fundamentalGroupoid_map_obj_injective"
    ],
    "boxes": [
-    [4, 0.130391, 0.196023, 0.739217, 0.038826]
+    [3, 0.130391, 0.86411, 0.739217, 0.037721]
    ]
   },
   {
@@ -204,7 +204,7 @@
     "Path.Homotopic.Quotient.cast_mem_arrows_iff"
    ],
    "boxes": [
-    [4, 0.130391, 0.24053, 0.739217, 0.089015]
+    [4, 0.130391, 0.104167, 0.739298, 0.054924]
    ]
   },
   {
@@ -219,7 +219,7 @@
     "TauCeti.FundamentalGroup.map_fromPath"
    ],
    "boxes": [
-    [4, 0.130391, 0.335859, 0.739217, 0.072917]
+    [4, 0.130391, 0.166667, 0.739217, 0.03851]
    ]
   },
   {
@@ -234,7 +234,7 @@
     "TauCeti.Groupoid.singleObjFunctor"
    ],
    "boxes": [
-    [4, 0.130391, 0.461174, 0.739217, 0.055556]
+    [4, 0.130391, 0.257891, 0.739217, 0.03851]
    ]
   },
   {
@@ -250,7 +250,7 @@
     "TauCeti.Groupoid.functorOfEndHom_map"
    ],
    "boxes": [
-    [4, 0.130391, 0.522412, 0.739217, 0.107008]
+    [4, 0.130391, 0.303346, 0.739217, 0.058081]
    ]
   },
   {
@@ -265,7 +265,7 @@
     "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
    ],
    "boxes": [
-    [4, 0.130391, 0.681818, 0.739217, 0.089962]
+    [4, 0.130391, 0.412879, 0.739217, 0.055871]
    ]
   },
   {
@@ -280,7 +280,7 @@
     "TauCeti.FundamentalGroupoid.glue"
    ],
    "boxes": [
-    [4, 0.130391, 0.777462, 0.739217, 0.124369]
+    [4, 0.130391, 0.475694, 0.739217, 0.118371]
    ]
   },
   {
@@ -295,7 +295,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue"
    ],
    "boxes": [
-    [5, 0.130391, 0.104167, 0.739217, 0.124053]
+    [4, 0.130391, 0.60101, 0.739298, 0.073232]
    ]
   },
   {
@@ -310,7 +310,7 @@
     "TauCeti.FundamentalGroupoid.glueTwo"
    ],
    "boxes": [
-    [5, 0.130391, 0.236111, 0.739217, 0.106376]
+    [4, 0.130391, 0.680871, 0.739217, 0.097854]
    ]
   },
   {
@@ -326,7 +326,7 @@
    ],
    "decls": [],
    "boxes": [
-    [5, 0.130391, 0.350063, 0.739217, 0.124053]
+    [4, 0.130391, 0.785669, 0.739298, 0.089962]
    ]
   },
   {
@@ -339,7 +339,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left"
    ],
    "boxes": [
-    [5, 0.130391, 0.437973, 0.739217, 0.016888]
+    [4, 0.130391, 0.839015, 0.739298, 0.017361]
    ]
   },
   {
@@ -352,7 +352,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right"
    ],
    "boxes": [
-    [5, 0.130391, 0.454861, 0.739217, 0.019255]
+    [4, 0.130391, 0.856376, 0.739298, 0.019255]
    ]
   },
   {
@@ -367,7 +367,7 @@
     "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
    ],
    "boxes": [
-    [5, 0.130391, 0.526831, 0.739217, 0.107008]
+    [5, 0.130391, 0.134785, 0.739217, 0.054924]
    ]
   },
   {
@@ -382,7 +382,7 @@
     "TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top"
    ],
    "boxes": [
-    [5, 0.130391, 0.640783, 0.739217, 0.089646]
+    [5, 0.130391, 0.19476, 0.739217, 0.054293]
    ]
   },
   {
@@ -397,8 +397,7 @@
     "TauCeti.vanKampenDesc"
    ],
    "boxes": [
-    [5, 0.130391, 0.783144, 0.739217, 0.089962],
-    [6, 0.130391, 0.104798, 0.739217, 0.079861]
+    [5, 0.130391, 0.301136, 0.739217, 0.107008]
    ]
   },
   {
@@ -414,7 +413,7 @@
    ],
    "decls": [],
    "boxes": [
-    [6, 0.130391, 0.191919, 0.739217, 0.217803]
+    [5, 0.130391, 0.413194, 0.739217, 0.122159]
    ]
   },
   {
@@ -428,7 +427,7 @@
     "TauCeti.vanKampenDesc_comp_map_left"
    ],
    "boxes": [
-    [6, 0.130391, 0.339015, 0.739217, 0.034407]
+    [5, 0.130391, 0.499684, 0.739217, 0.017361]
    ]
   },
   {
@@ -442,7 +441,7 @@
     "TauCeti.vanKampenDesc_comp_map_right"
    ],
    "boxes": [
-    [6, 0.130391, 0.373422, 0.739217, 0.036301]
+    [5, 0.130391, 0.517045, 0.739217, 0.018308]
    ]
   },
   {
@@ -457,7 +456,7 @@
     "TauCeti.vanKampen_hom_ext"
    ],
    "boxes": [
-    [6, 0.130391, 0.416667, 0.739217, 0.107008]
+    [5, 0.130391, 0.540404, 0.739298, 0.070707]
    ]
   },
   {
@@ -472,7 +471,548 @@
     "TauCeti.isPushout_fundamentalGroup"
    ],
    "boxes": [
-    [6, 0.130391, 0.530619, 0.739298, 0.141414]
+    [5, 0.130391, 0.616162, 0.739217, 0.140783]
+   ]
+  },
+  {
+   "id": "notion:TopologicalSpace",
+   "notion": "TopologicalSpace",
+   "words": "topological space",
+   "label": "notion:1",
+   "number": "n1",
+   "boxes": [
+    [1, 0.291836, 0.452336, 0.134773, 0.018308]
+   ]
+  },
+  {
+   "id": "notion:ContinuousMap",
+   "notion": "ContinuousMap",
+   "words": "continuous map",
+   "label": "notion:2",
+   "number": "n2",
+   "boxes": [
+    [1, 0.697188, 0.452336, 0.125364, 0.018308]
+   ]
+  },
+  {
+   "id": "notion:PseudoMetricSpace",
+   "notion": "PseudoMetricSpace",
+   "words": "pseudometric",
+   "label": "notion:3",
+   "number": "n3",
+   "boxes": [
+    [1, 0.566738, 0.470644, 0.10559, 0.017677]
+   ]
+  },
+  {
+   "id": "notion:Metric.ball",
+   "notion": "Metric.ball",
+   "words": "$\\ball{x}{\\rho}$",
+   "label": "notion:4",
+   "number": "n4",
+   "boxes": [
+    [1, 0.71525, 0.470644, 0.058056, 0.017677]
+   ]
+  },
+  {
+   "id": "notion:instTopologicalSpaceSubtype",
+   "notion": "instTopologicalSpaceSubtype",
+   "words": "the topology it inherits from $X$",
+   "label": "notion:5",
+   "number": "n5",
+   "boxes": [
+    [1, 0.365348, 0.607639, 0.249517, 0.017203]
+   ]
+  },
+  {
+   "id": "notion:Set.Elem",
+   "notion": "Set.Elem",
+   "words": "a point of $S$",
+   "label": "notion:6",
+   "number": "n6",
+   "boxes": [
+    [1, 0.132842, 0.624842, 0.099122, 0.017203]
+   ]
+  },
+  {
+   "id": "notion:ContinuousMap.subtypeVal",
+   "notion": "ContinuousMap.subtypeVal",
+   "words": "$\\incl{S}$",
+   "label": "notion:7",
+   "number": "n7",
+   "boxes": [
+    [1, 0.173179, 0.642045, 0.018717, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:ContinuousMap.inclusion",
+   "notion": "ContinuousMap.inclusion",
+   "words": "$\\inclin{S}{T}$",
+   "label": "notion:8",
+   "number": "n8",
+   "boxes": [
+    [1, 0.461161, 0.642045, 0.03177, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:interior",
+   "notion": "interior",
+   "words": "$\\intr A$",
+   "label": "notion:9",
+   "number": "n9",
+   "boxes": [
+    [1, 0.213109, 0.659564, 0.040082, 0.016572]
+   ]
+  },
+  {
+   "id": "notion:nhds",
+   "notion": "nhds",
+   "words": "neighborhood",
+   "label": "notion:10",
+   "number": "n10",
+   "boxes": [
+    [1, 0.282861, 0.659564, 0.108461, 0.016572]
+   ]
+  },
+  {
+   "id": "notion:unitInterval",
+   "notion": "unitInterval",
+   "words": "$\\uI$",
+   "label": "notion:11",
+   "number": "n11",
+   "boxes": [
+    [1, 0.314389, 0.692866, 0.038191, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:Path",
+   "notion": "Path",
+   "words": "path",
+   "label": "notion:12",
+   "number": "n12",
+   "boxes": [
+    [1, 0.251014, 0.710385, 0.038102, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:Set.range",
+   "notion": "Set.range",
+   "words": "range",
+   "label": "notion:13",
+   "number": "n13",
+   "boxes": [
+    [1, 0.199379, 0.744792, 0.045083, 0.01673]
+   ]
+  },
+  {
+   "id": "notion:Path.trans",
+   "notion": "Path.trans",
+   "words": "$\\gamma\\ptrans\\delta$",
+   "label": "notion:14",
+   "number": "n14",
+   "boxes": [
+    [1, 0.33477, 0.761521, 0.034209, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:Path.subpath",
+   "notion": "Path.subpath",
+   "words": "$\\subpath{\\gamma}{r}{s}$",
+   "label": "notion:15",
+   "number": "n15",
+   "boxes": [
+    [1, 0.787865, 0.77904, 0.03633, 0.018308]
+   ]
+  },
+  {
+   "id": "notion:Path.map",
+   "notion": "Path.map",
+   "words": "$f \\circ\\gamma$",
+   "label": "notion:16",
+   "number": "n16",
+   "boxes": [
+    [1, 0.429814, 0.813605, 0.039734, 0.018308]
+   ]
+  },
+  {
+   "id": "notion:Path.cast",
+   "notion": "Path.cast",
+   "words": "renaming",
+   "label": "notion:17",
+   "number": "n17",
+   "boxes": [
+    [1, 0.633775, 0.831913, 0.074791, 0.017203]
+   ]
+  },
+  {
+   "id": "notion:IsCompact",
+   "notion": "IsCompact",
+   "words": "compact",
+   "label": "notion:18",
+   "number": "n18",
+   "boxes": [
+    [1, 0.388108, 0.849116, 0.06781, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:IsPathConnected",
+   "notion": "IsPathConnected",
+   "words": "path connected",
+   "label": "notion:19",
+   "number": "n19",
+   "boxes": [
+    [1, 0.539595, 0.849116, 0.122422, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:PathConnectedSpace",
+   "notion": "PathConnectedSpace",
+   "words": "path-connected space",
+   "label": "notion:20",
+   "number": "n20",
+   "boxes": [
+    [1, 0.152153, 0.883049, 0.16892, 0.018782]
+   ]
+  },
+  {
+   "id": "notion:Path.Homotopic.Quotient",
+   "notion": "Path.Homotopic.Quotient",
+   "words": "$\\pcls{\\gamma}$",
+   "label": "notion:21",
+   "number": "n21",
+   "boxes": [
+    [2, 0.559728, 0.123106, 0.022662, 0.017677]
+   ]
+  },
+  {
+   "id": "notion:Path.Homotopic.Quotient.cast",
+   "notion": "Path.Homotopic.Quotient.cast",
+   "words": "renaming",
+   "label": "notion:22",
+   "number": "n22",
+   "boxes": [
+    [2, 0.132842, 0.140783, 0.074791, 0.016414]
+   ]
+  },
+  {
+   "id": "notion:Path.Homotopic.Quotient.trans",
+   "notion": "Path.Homotopic.Quotient.trans",
+   "words": "the composition",
+   "label": "notion:23",
+   "number": "n23",
+   "boxes": [
+    [2, 0.235079, 0.157197, 0.127818, 0.017361]
+   ]
+  },
+  {
+   "id": "notion:FundamentalGroupoid",
+   "notion": "FundamentalGroupoid",
+   "words": "$\\fgpd{X}$",
+   "label": "notion:24",
+   "number": "n24",
+   "boxes": [
+    [2, 0.209209, 0.174558, 0.053583, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:FundamentalGroupoid.map",
+   "notion": "FundamentalGroupoid.map",
+   "words": "$\\fgpd{f}$",
+   "label": "notion:25",
+   "number": "n25",
+   "boxes": [
+    [2, 0.195816, 0.208649, 0.048063, 0.017361]
+   ]
+  },
+  {
+   "id": "notion:FundamentalGroup",
+   "notion": "FundamentalGroup",
+   "words": "$\\fgrp{X}{x}$",
+   "label": "notion:26",
+   "number": "n26",
+   "boxes": [
+    [2, 0.286094, 0.22601, 0.067495, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:FundamentalGroup.map",
+   "notion": "FundamentalGroup.map",
+   "words": "$\\fgrp{f}{x}$",
+   "label": "notion:27",
+   "number": "n27",
+   "boxes": [
+    [2, 0.627106, 0.243056, 0.061974, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:FundamentalGroup.fromPath",
+   "notion": "FundamentalGroup.fromPath",
+   "words": "an element",
+   "label": "notion:28",
+   "number": "n28",
+   "boxes": [
+    [2, 0.683463, 0.260101, 0.086415, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.Subgroupoid",
+   "notion": "CategoryTheory.Subgroupoid",
+   "words": "subgroupoid",
+   "label": "notion:29",
+   "number": "n29",
+   "boxes": [
+    [2, 0.1802, 0.309975, 0.098162, 0.018624]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.Subgroupoid.im",
+   "notion": "CategoryTheory.Subgroupoid.im",
+   "words": "$\\im\\fgpd{f}$",
+   "label": "notion:30",
+   "number": "n30",
+   "boxes": [
+    [2, 0.318289, 0.345644, 0.070971, 0.017361]
+   ]
+  },
+  {
+   "id": "notion:MonoidHom.range",
+   "notion": "MonoidHom.range",
+   "words": "$\\im\\varphi$",
+   "label": "notion:31",
+   "number": "n31",
+   "boxes": [
+    [2, 0.1697, 0.363005, 0.03702, 0.01673]
+   ]
+  },
+  {
+   "id": "notion:Subgroup",
+   "notion": "Subgroup",
+   "words": "subgroup",
+   "label": "notion:32",
+   "number": "n32",
+   "boxes": [
+    [2, 0.265428, 0.363005, 0.0739, 0.01673]
+   ]
+  },
+  {
+   "id": "notion:iSup",
+   "notion": "iSup",
+   "words": "the smallest one containing every $\\mathcal{H}_{i}$",
+   "label": "notion:33",
+   "number": "n33",
+   "boxes": [
+    [2, 0.504383, 0.379735, 0.289598, 0.017361]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.Category",
+   "notion": "CategoryTheory.Category",
+   "words": "categories",
+   "label": "notion:34",
+   "number": "n34",
+   "boxes": [
+    [2, 0.370962, 0.431187, 0.078853, 0.01673]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.Groupoid",
+   "notion": "CategoryTheory.Groupoid",
+   "words": "groupoid",
+   "label": "notion:35",
+   "number": "n35",
+   "boxes": [
+    [2, 0.54245, 0.431187, 0.071326, 0.01673]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.inv",
+   "notion": "CategoryTheory.inv",
+   "words": "inverse",
+   "label": "notion:36",
+   "number": "n36",
+   "boxes": [
+    [2, 0.325019, 0.447917, 0.055581, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.End",
+   "notion": "CategoryTheory.End",
+   "words": "$\\End(w)$",
+   "label": "notion:37",
+   "number": "n37",
+   "boxes": [
+    [2, 0.237634, 0.482323, 0.061493, 0.017677]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.CategoryStruct.comp",
+   "notion": "CategoryTheory.CategoryStruct.comp",
+   "words": "$\\circ$",
+   "label": "notion:38",
+   "number": "n38",
+   "boxes": [
+    [2, 0.331536, 0.5, 0.011364, 0.01673]
+   ]
+  },
+  {
+   "id": "notion:Monoid",
+   "notion": "Monoid",
+   "words": "monoid",
+   "label": "notion:39",
+   "number": "n39",
+   "boxes": [
+    [2, 0.60656, 0.533775, 0.059887, 0.017203]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.SingleObj",
+   "notion": "CategoryTheory.SingleObj",
+   "words": "$\\sobj{M}$",
+   "label": "notion:40",
+   "number": "n40",
+   "boxes": [
+    [2, 0.709603, 0.533775, 0.034561, 0.017203]
+   ]
+  },
+  {
+   "id": "notion:MonoidHom",
+   "notion": "MonoidHom",
+   "words": "homomorphisms",
+   "label": "notion:41",
+   "number": "n41",
+   "boxes": [
+    [2, 0.253235, 0.585069, 0.129454, 0.017361]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.Functor",
+   "notion": "CategoryTheory.Functor",
+   "words": "functor",
+   "label": "notion:42",
+   "number": "n42",
+   "boxes": [
+    [2, 0.336275, 0.602431, 0.058452, 0.016888]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.Functor.comp",
+   "notion": "CategoryTheory.Functor.comp",
+   "words": "the composite of two functors",
+   "label": "notion:43",
+   "number": "n43",
+   "boxes": [
+    [2, 0.452243, 0.619318, 0.238478, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:MonoidHom.comp",
+   "notion": "MonoidHom.comp",
+   "words": "the composite of two homomorphisms",
+   "label": "notion:44",
+   "number": "n44",
+   "boxes": [
+    [2, 0.731145, 0.619318, 0.138463, 0.017045],
+    [2, 0.130391, 0.636364, 0.16518, 0.017361]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.IsPushout",
+   "notion": "CategoryTheory.IsPushout",
+   "words": "pushout",
+   "label": "notion:45",
+   "number": "n45",
+   "boxes": [
+    [2, 0.799768, 0.636364, 0.064938, 0.017361]
+   ]
+  },
+  {
+   "id": "notion:GrpCat",
+   "notion": "GrpCat",
+   "words": "category of groups",
+   "label": "notion:46",
+   "number": "n46",
+   "boxes": [
+    [2, 0.406015, 0.653725, 0.146242, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:Nat",
+   "notion": "Nat",
+   "words": "$\\N$",
+   "label": "notion:47",
+   "number": "n47",
+   "boxes": [
+    [2, 0.39301, 0.67077, 0.015325, 0.01673]
+   ]
+  },
+  {
+   "id": "notion:Monotone",
+   "notion": "Monotone",
+   "words": "nondecreasing",
+   "label": "notion:48",
+   "number": "n48",
+   "boxes": [
+    [2, 0.681623, 0.6875, 0.111532, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:Real",
+   "notion": "Real",
+   "words": "$\\R$",
+   "label": "notion:49",
+   "number": "n49",
+   "boxes": [
+    [2, 0.487096, 0.705019, 0.015325, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:AddCommGroup",
+   "notion": "AddCommGroup",
+   "words": "additive commutative group",
+   "label": "notion:50",
+   "number": "n50",
+   "boxes": [
+    [2, 0.586242, 0.739268, 0.221884, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:LinearOrder",
+   "notion": "LinearOrder",
+   "words": "linearly ordered",
+   "label": "notion:51",
+   "number": "n51",
+   "boxes": [
+    [2, 0.132842, 0.756313, 0.125559, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:IsOrderedAddMonoid",
+   "notion": "IsOrderedAddMonoid",
+   "words": "whose addition respects that order",
+   "label": "notion:52",
+   "number": "n52",
+   "boxes": [
+    [2, 0.297867, 0.756313, 0.275382, 0.017045]
+   ]
+  },
+  {
+   "id": "notion:Set.Icc",
+   "notion": "Set.Icc",
+   "words": "$\\cint{a}{b}$",
+   "label": "notion:53",
+   "number": "n53",
+   "boxes": [
+    [2, 0.132842, 0.790088, 0.037438, 0.017835]
+   ]
+  },
+  {
+   "id": "notion:Set.Icc.addNSMul",
+   "notion": "Set.Icc.addNSMul",
+   "words": "The point reached from $a$ by $n$ steps of size $d$",
+   "label": "notion:54",
+   "number": "n54",
+   "boxes": [
+    [2, 0.315497, 0.824495, 0.364676, 0.017677]
    ]
   }
  ]
