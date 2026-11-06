@@ -3,7 +3,7 @@
   "schema_version": 1,
   "library": {
     "commit": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
-    "declarations_sha256": "121f798714cd06714f7196df0c2e60fce591d0705f562a11a78a72983c786e9d"
+    "declarations_sha256": "05273d1d18c383c25f3d4f32344a2d0103a0db7135c0cdd07581f8af5e990a81"
   },
   "reference_work": "A. Hatcher, Algebraic Topology, Cambridge University Press, 2002",
   "sections": [
