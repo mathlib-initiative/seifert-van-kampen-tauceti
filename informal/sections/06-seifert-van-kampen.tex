@@ -2,8 +2,8 @@
 
 \begin{definition}[id=6.1]{The homomorphism out of the fundamental group of the space}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
-$\varphi_{A}$ be a homomorphism from $\fgrp{A}{x}$ to $M$ and $\varphi_{B}$ one
-from $\fgrp{B}{x}$ to $M$ with
+$\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
+$\fgrp{B}{x}$ with
 \[
   \varphi_{A} \circ \fgrp{\inclin{A \cap B}{A}}{x}
     = \varphi_{B} \circ \fgrp{\inclin{A \cap B}{B}}{x}.
@@ -14,9 +14,10 @@ $\fgrp{X}{x}$ to $M$.
 \end{definition}
 
 \begin{proposition}[id=6.2]{The induced homomorphism restricts to the given ones}
-Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint, and
-let $\varphi$ be the homomorphism of \itemref{6.1}, induced by $\varphi_{A}$ and
-$\varphi_{B}$.
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
+$\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
+$\fgrp{B}{x}$ that agree after restriction along the inclusions of $A \cap B$,
+and let $\varphi$ be the homomorphism of \itemref{6.1} they induce.
 \itempart{a}{%
   $\varphi \circ \fgrp{\incl{A}}{x} = \varphi_{A}$.
   \leanref{TauCeti.vanKampenDesc_map_left}%
