@@ -1,0 +1,52 @@
+% Section 4: The fundamental groupoid of a cover.
+% Items 4.1--4.5.  The heading comes from sections.tex.
+
+\begin{theorem}[id=4.1]{Covers generate the fundamental groupoid}
+\fcref{Theorem 1.20}
+Suppose that \hypCoverFamily.  Then the subgroupoids $\im \fgpd{\incl{U_{i}}}$
+generate $\fgpd{X}$.
+\leanref{TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top}
+\end{theorem}
+
+\begin{definition}[id=4.2]{Gluing functors out of fundamental groupoids}
+\fcref{Theorem 1.20}
+Suppose that \hypCoverFamily.  For each $i$ let $F_{i}$ be a functor from
+$\fgpd{U_{i}}$ to $\mathcal{D}$, and suppose that for all $i$ and $j$
+\[
+  F_{i} \circ \fgpd{\inclin{U_{i} \cap U_{j}}{U_{i}}}
+    = F_{j} \circ \fgpd{\inclin{U_{i} \cap U_{j}}{U_{j}}}.
+\]
+Then the $F_{i}$ glue to a functor $F$ from $\fgpd{X}$ to $\mathcal{D}$.
+\leanref{TauCeti.FundamentalGroupoid.glue}
+\end{definition}
+
+\begin{proposition}[id=4.3]{The glued functor restricts to the given functors}
+Suppose that \hypCoverFamily, and let $F$ be the functor of \itemref{4.2},
+glued from functors $F_{i}$ from $\fgpd{U_{i}}$ to $\mathcal{D}$.  Then
+$F \circ \fgpd{\incl{U_{i}}} = F_{i}$ for every $i$.
+\leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue}
+\end{proposition}
+
+\begin{definition}[id=4.4]{Gluing two functors out of fundamental groupoids}
+Suppose that \hypCoverTwo.  Let $F_{A}$ be a functor from $\fgpd{A}$ to
+$\mathcal{D}$ and let $F_{B}$ be a functor from $\fgpd{B}$ to $\mathcal{D}$,
+and suppose that
+\[
+  F_{A} \circ \fgpd{\inclin{A \cap B}{A}}
+    = F_{B} \circ \fgpd{\inclin{A \cap B}{B}}.
+\]
+Then $F_{A}$ and $F_{B}$ glue to a functor $F$ from $\fgpd{X}$ to
+$\mathcal{D}$.
+\leanref{TauCeti.FundamentalGroupoid.glueTwo}
+\end{definition}
+
+\begin{proposition}[id=4.5]{The functor glued from two restricts to each of them}
+Suppose that \hypCoverTwo, and let $F$ be the functor of \itemref{4.4}, glued
+from $F_{A}$ and $F_{B}$.
+\itempart{a}{%
+  $F \circ \fgpd{\incl{A}} = F_{A}$.
+  \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left}}
+\itempart{b}{%
+  $F \circ \fgpd{\incl{B}} = F_{B}$.
+  \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right}}
+\end{proposition}

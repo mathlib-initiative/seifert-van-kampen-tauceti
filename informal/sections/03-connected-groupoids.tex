@@ -1,0 +1,15 @@
+\begin{definition}[id=3.1]{The functor picking out a chosen object}
+The functor from $\sobj{\End(w)}$ to $\mathcal{C}$ takes the unique object to
+$w$, and takes an element $g$ of $\End(w)$ to $g$ itself.
+\leanref{TauCeti.Groupoid.singleObjFunctor}
+\end{definition}
+
+\begin{definition}[id=3.2]{The functor induced by a homomorphism out of a vertex group}
+Suppose that $\mathcal{C}$ is a groupoid, and let $\varphi$ be a homomorphism
+from $\End(w)$ to $M$.  The functor from $\mathcal{C}$ to $\sobj{M}$ induced by
+$\tau$ and $\varphi$ takes every object to the unique object of $\sobj{M}$, and
+takes a morphism $g$ from $c$ to $c'$ to
+$\varphi(\tau_{c'}^{-1} \circ g \circ \tau_{c})$.
+\leanref{TauCeti.Groupoid.functorOfEndHom}
+\leanref{TauCeti.Groupoid.functorOfEndHom_map}
+\end{definition}

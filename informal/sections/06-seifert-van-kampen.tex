@@ -1,0 +1,53 @@
+% Section 6: The Seifert--van Kampen theorem.  Items 6.1 to 6.4.
+
+\begin{definition}[id=6.1]{The homomorphism out of the fundamental group of the space}
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
+$\varphi_{A}$ be a homomorphism from $\fgrp{A}{x}$ to $M$ and $\varphi_{B}$ one
+from $\fgrp{B}{x}$ to $M$ with
+\begin{equation}\label{eq:6.1-agree}
+  \varphi_{A} \circ \fgrp{\inclin{A \cap B}{A}}{x}
+    = \varphi_{B} \circ \fgrp{\inclin{A \cap B}{B}}{x}.
+\end{equation}
+Then $\varphi_{A}$ and $\varphi_{B}$ induce a homomorphism $\varphi$ from
+$\fgrp{X}{x}$ to $M$.
+\leanref{TauCeti.vanKampenDesc}
+\end{definition}
+
+\begin{proposition}[id=6.2]{The induced homomorphism restricts to the given ones}
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
+$\varphi_{A}$ be a homomorphism from $\fgrp{A}{x}$ to $M$ and $\varphi_{B}$ one
+from $\fgrp{B}{x}$ to $M$ satisfying \eqref{eq:6.1-agree}, and let $\varphi$ be
+the homomorphism from $\fgrp{X}{x}$ to $M$ of \itemref{6.1}.
+\itempart{a}{%
+  The composite $\varphi \circ \fgrp{\incl{A}}{x}$ is $\varphi_{A}$.
+  \leanref{TauCeti.vanKampenDesc_map_left}%
+  \leanref{TauCeti.vanKampenDesc_comp_map_left}}
+\itempart{b}{%
+  The composite $\varphi \circ \fgrp{\incl{B}}{x}$ is $\varphi_{B}$.
+  \leanref{TauCeti.vanKampenDesc_map_right}%
+  \leanref{TauCeti.vanKampenDesc_comp_map_right}}
+\end{proposition}
+
+\begin{proposition}[id=6.3]{Uniqueness of the induced homomorphism}
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
+$\varphi$ and $\psi$ be homomorphisms from $\fgrp{X}{x}$ to $M$ such that
+$\varphi \circ \fgrp{\incl{A}}{x} = \psi \circ \fgrp{\incl{A}}{x}$ and
+$\varphi \circ \fgrp{\incl{B}}{x} = \psi \circ \fgrp{\incl{B}}{x}$.  Then
+$\varphi = \psi$.
+\leanref{TauCeti.vanKampen_hom_ext}
+\end{proposition}
+
+\begin{theorem}[id=6.4]{The based Seifert--van Kampen theorem}
+\fcref{Theorem 1.20}
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Then
+the square
+\[
+  \begin{array}{ccc}
+    \fgrp{A \cap B}{x} & \longrightarrow & \fgrp{A}{x} \\
+    \downarrow & & \downarrow \\
+    \fgrp{B}{x} & \longrightarrow & \fgrp{X}{x}
+  \end{array}
+\]
+whose homomorphisms are induced by the inclusions is a pushout square.
+\leanref{TauCeti.isPushout_fundamentalGroup}
+\end{theorem}
