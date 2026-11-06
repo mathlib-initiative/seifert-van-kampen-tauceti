@@ -1,4 +1,4 @@
-# The Seifert--van Kampen theorem, after TauCeti
+# The Seifert–van Kampen theorem, after TauCeti
 
 An informal account, without proofs, of the definitions and results on which the theorem
 `TauCeti.isPushout_fundamentalGroup` depends in the Lean library [TauCeti](https://github.com/TauCetiProject/TauCeti) at
