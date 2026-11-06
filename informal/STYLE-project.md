@@ -105,8 +105,9 @@ paths, classes of paths and the renaming of their endpoints; the fundamental gro
 fundamental group, the functor and the homomorphism a continuous map induces, the product
 of two loop classes, and the class of a loop as an element of the fundamental group;
 subgroupoids, images and generation; categories, groupoids, inverses, `\End(w)`, the
-composition of two morphisms, written `\circ`, the family `\tau`, monoids, `\sobj{M}`,
-functors and homomorphisms; pushout squares in the category of
+composition of two morphisms, the family `\tau`, monoids, `\sobj{M}`,
+functors and homomorphisms, and the composition of two functors and of two
+homomorphisms, all three compositions written `\circ`; pushout squares in the category of
 groups; the number systems and the closed interval; and the two junk values below.
 
 An item names only what is particular to it. Typeclass binders, universe variables, the
@@ -117,7 +118,7 @@ in an item.
 ## Marking notions
 
 Each notion the conventions fix carries one `\fcnotion{<constant>}{<words>}`, where the
-conventions introduce it and nowhere else; items mark nothing. The constants are these 52,
+conventions introduce it and nowhere else; items mark nothing. The constants are these 54,
 each copied from `declarations.json` (all of them rows of its `references`, the constants
 of Mathlib and of Lean's prelude that the library's statements are built from):
 
@@ -132,6 +133,7 @@ of Mathlib and of Lean's prelude that the library's statements are built from):
 `Subgroup`, `iSup`, `CategoryTheory.Category`, `CategoryTheory.Groupoid`,
 `CategoryTheory.inv`, `CategoryTheory.End`, `CategoryTheory.CategoryStruct.comp`, `Monoid`,
 `CategoryTheory.SingleObj`, `MonoidHom`, `CategoryTheory.Functor`,
+`CategoryTheory.Functor.comp`, `MonoidHom.comp`,
 `CategoryTheory.IsPushout`, `GrpCat`, `Nat`,
 `Monotone`, `Real`, `AddCommGroup`, `LinearOrder`, `IsOrderedAddMonoid`, `Set.Icc`,
 `Set.Icc.addNSMul`.
