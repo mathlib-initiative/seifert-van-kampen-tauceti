@@ -1,17 +1,17 @@
 {
-  "id": "lemma-1.4",
-  "kind": "lemma",
+  "id": "proposition-1.6",
+  "kind": "proposition",
   "relation": "exactMatch",
   "subject": [
     {
       "location": {
-        "page": 1,
-        "rect": [0.130391, 0.656881, 0.739298, 0.038826]
+        "page": 2,
+        "rect": [0.130391, 0.149306, 0.739217, 0.07197]
       },
-      "title": "Lemma 1.4 (Mapping a restricted path back to the ambient space)",
+      "title": "Proposition 1.6 (Subdividing a path along a family of sets)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-1.4@p001"
+          "region": "proposition-1.6@p002"
         }
       }
     }
@@ -22,24 +22,24 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "declaration": "Path.map_codRestrict",
+        "declaration": "Path.exists_monotone_range_subpath_subset",
         "module": "TauCeti.Topology.Homotopy.Path"
       },
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "Path.map_codRestrict",
+            "id": "Path.exists_monotone_range_subpath_subset",
             "kind": "theorem"
           },
           "destination": {
-            "fragment": "L89",
+            "fragment": "L224",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 89,
-            "text": "theorem map_codRestrict {s : Set X} {x y : s} (γ : Path x.val y.val) (hmem : ∀ t, γ t ∈ s) :\n    (γ.codRestrict hmem).map continuous_subtype_val = γ := by"
+            "line": 224,
+            "text": "theorem exists_monotone_range_subpath_subset {ι : Type*} {U : ι → Set X} {x y : X}\n    (γ : Path x y) (hU : ∀ s, ∃ i, γ ⁻¹' U i ∈ 𝓝 s) :\n    ∃ (n : ℕ) (t : Fin (n + 1) → I), t 0 = 0 ∧ t (Fin.last n) = 1 ∧ Monotone t ∧\n      ∀ k : Fin n, ∃ i, range (γ.subpath (t k.castSucc) (t k.succ)) ⊆ U i := by"
           }
         }
       }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [1],
-        "printed": [1]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

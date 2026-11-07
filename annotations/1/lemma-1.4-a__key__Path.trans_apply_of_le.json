@@ -1,17 +1,17 @@
 {
-  "id": "lemma-1.5-b",
+  "id": "lemma-1.4-a",
   "kind": "lemma",
   "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.77983, 0.739217, 0.019413]
+        "rect": [0.130391, 0.739899, 0.739217, 0.017361]
       },
-      "title": "Lemma 1.5(b) (The values of a concatenation of paths)",
+      "title": "Lemma 1.4(a) (The values of a concatenation of paths)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-1.5-b@p001"
+          "region": "lemma-1.4-a@p001"
         }
       }
     }
@@ -22,24 +22,24 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "declaration": "Path.trans_apply_of_ge",
+        "declaration": "Path.trans_apply_of_le",
         "module": "TauCeti.Topology.Homotopy.Path"
       },
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "Path.trans_apply_of_ge",
+            "id": "Path.trans_apply_of_le",
             "kind": "theorem"
           },
           "destination": {
-            "fragment": "L108",
+            "fragment": "L101",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 108,
-            "text": "theorem trans_apply_of_ge {x y z : X} (γ : Path x y) (δ : Path y z) {u : I}\n    (hu : 1 / 2 ≤ (u : ℝ)) (v : I) (hv : (v : ℝ) = 2 * u - 1) : γ.trans δ u = δ v := by"
+            "line": 101,
+            "text": "theorem trans_apply_of_le {x y z : X} (γ : Path x y) (δ : Path y z) {u : I}\n    (hu : (u : ℝ) ≤ 1 / 2) (v : I) (hv : (v : ℝ) = 2 * u) : γ.trans δ u = γ v := by"
           }
         }
       }

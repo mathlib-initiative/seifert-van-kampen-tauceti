@@ -1,17 +1,17 @@
 {
-  "id": "lemma-1.8",
+  "id": "lemma-1.4-b",
   "kind": "lemma",
   "relation": "exactMatch",
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.130391, 0.291351, 0.739217, 0.089331]
+        "page": 1,
+        "rect": [0.130391, 0.75726, 0.739217, 0.019255]
       },
-      "title": "Lemma 1.8 (Cutting a path class at an intermediate parameter)",
+      "title": "Lemma 1.4(b) (The values of a concatenation of paths)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-1.8@p002"
+          "region": "lemma-1.4-b@p001"
         }
       }
     }
@@ -22,24 +22,24 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "declaration": "Path.Homotopic.Quotient.subpath_cast_trans",
+        "declaration": "Path.trans_apply_of_ge",
         "module": "TauCeti.Topology.Homotopy.Path"
       },
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "Path.Homotopic.Quotient.subpath_cast_trans",
+            "id": "Path.trans_apply_of_ge",
             "kind": "theorem"
           },
           "destination": {
-            "fragment": "L325",
+            "fragment": "L108",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 325,
-            "text": "theorem subpath_cast_trans {x y : X} (p : Path x y) (a b c : unitInterval) {x₀ x₁ x₂ : X}\n    (h₀ : x₀ = p a) (h₁ : x₁ = p b) (h₂ : x₂ = p c) :\n    trans (mk ((p.subpath a b).cast h₀ h₁)) (mk ((p.subpath b c).cast h₁ h₂)) =\n      mk ((p.subpath a c).cast h₀ h₂) := by"
+            "line": 108,
+            "text": "theorem trans_apply_of_ge {x y z : X} (γ : Path x y) (δ : Path y z) {u : I}\n    (hu : 1 / 2 ≤ (u : ℝ)) (v : I) (hv : (v : ℝ) = 2 * u - 1) : γ.trans δ u = δ v := by"
           }
         }
       }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }
