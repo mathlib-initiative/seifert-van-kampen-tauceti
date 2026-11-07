@@ -232,7 +232,7 @@ def main():
             subjects = []
             for page, x, y, w, h in region['boxes']:
                 subjects.append({'location': {'page': page, 'rect': [x,y,w,h]},
-                    'title': step['label'] + ': ' + step['title'],
+                    'title': step['title'],
                     'extensions': {NS: {'region': f'{iid}@p{page:03d}'}}})
             loc = {'module': target['module'], 'lines': target['lines']}
             if target.get('declaration'):
@@ -248,8 +248,8 @@ def main():
                 'relation': 'relatedMatch' if target['role'] == 'support' else 'closeMatch',
                 'note': target['title'], 'subject': subjects, 'object': [obj],
                 'extensions': {NS: {'provenance': {'actor': 'agent', 'method': 'agent_annotation',
-                    'confirmed_by_human': False}, 'locator': {'physical': [b[0] for b in region['boxes']],
-                                                            'printed': [b[0] for b in region['boxes']]}}}}
+                    'confirmed_by_human': False}, 'locator': {'physical': sorted({b[0] for b in region['boxes']}),
+                                                            'printed': sorted({b[0] for b in region['boxes']})}}}}
             (directory / f'proof-{step["id"]}-{n:02d}.json').write_bytes(defaults.dumps(record))
     found = sync.read_annotations(ROOT)
     if found.problems:
