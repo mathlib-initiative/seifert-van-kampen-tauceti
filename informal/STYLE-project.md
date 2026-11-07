@@ -60,6 +60,11 @@ need no standalone lemmas. Retain short notation introductions where needed.
 Keep the subdivision and homotopy-class reassembly results because they carry
 the passage from local paths to the global argument. Omitted implementation
 helpers may remain in the item table without creating PDF statements or links.
+Section 2 introduces the fundamental groupoid, its functoriality, subgroupoids
+and fundamental groups in prose. Leave immediate consequences of these
+definitions implicit: existence of morphisms under path connectedness,
+injectivity of the object map and the image of a loop class. Endpoint
+transports also stay implicit.
 
 ## Assumed background
 
@@ -117,14 +122,14 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep each retained notion link once. The constants are these 42,
-each copied from `declarations.json` (41 rows of its `references` from Mathlib, plus TauCeti's path restriction
+with its explanation; keep each retained notion link once. The constants are these 41,
+each copied from `declarations.json` (40 rows of its `references` from Mathlib, plus TauCeti's path restriction
 construction):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
 `ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
 `Path.trans`, `Path.subpath`, `Path.map`, `IsCompact`, `IsPathConnected`,
-`PathConnectedSpace`, `Path.Homotopic.Quotient`, `Path.Homotopic.Quotient.cast`,
+`PathConnectedSpace`, `Path.Homotopic.Quotient`,
 `Path.Homotopic.Quotient.trans`, `FundamentalGroupoid`, `FundamentalGroupoid.map`,
 `FundamentalGroup`, `FundamentalGroup.map`, `FundamentalGroup.fromPath`,
 `CategoryTheory.Subgroupoid`, `CategoryTheory.Subgroupoid.im`, `MonoidHom.range`,

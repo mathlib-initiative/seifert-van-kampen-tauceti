@@ -243,117 +243,6 @@
       ]
     },
     {
-      "id": "2.1",
-      "section": "2",
-      "kind": "lemma",
-      "title": "The fundamental groupoid of a path-connected space",
-      "gist": "In the fundamental groupoid of a path-connected space there is at least one morphism between any two objects.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
-        {
-          "name": "FundamentalGroupoid.nonempty_hom",
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
-          "line": 63,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "a topological space",
-            "the space is path connected",
-            "two objects of its fundamental groupoid"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2.2",
-      "section": "2",
-      "kind": "lemma",
-      "title": "An injective map is injective on objects",
-      "gist": "The functor on fundamental groupoids induced by an injective continuous map sends distinct objects to distinct objects.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
-        {
-          "name": "ContinuousMap.fundamentalGroupoid_map_obj_injective",
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
-          "line": 80,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "two topological spaces",
-            "a continuous map between them",
-            "the map is injective"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2.3",
-      "section": "2",
-      "kind": "lemma",
-      "title": "Recasting the endpoints of a path class",
-      "gist": "A class of paths whose endpoints have been renamed along equalities of points belongs to a subgroupoid of the fundamental groupoid exactly when the original class does.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
-        {
-          "name": "Path.Homotopic.Quotient.cast_mem_arrows_iff",
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
-          "line": 50,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "a topological space",
-            "a subgroupoid of its fundamental groupoid",
-            "two points of the space and two further points",
-            "a class of paths between the first two points",
-            "each further point equals the corresponding one of the first two"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2.4",
-      "section": "2",
-      "kind": "lemma",
-      "title": "The image of the class of a loop",
-      "gist": "The homomorphism of fundamental groups induced by a continuous map carries the class of a loop at the basepoint to the class of the image of that loop.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
-        {
-          "name": "TauCeti.FundamentalGroup.map_fromPath",
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
-          "line": 173,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "two topological spaces",
-            "a continuous map between them",
-            "a basepoint in the source",
-            "a loop at that basepoint"
-          ]
-        }
-      ]
-    },
-    {
       "id": "3.1",
       "section": "3",
       "kind": "definition",
@@ -453,6 +342,36 @@
             "an index type for the family",
             "a family of subsets of the space indexed by the index type",
             "every point of the space has some member of the family as a neighborhood"
+          ]
+        },
+        {
+          "name": "ContinuousMap.fundamentalGroupoid_map_obj_injective",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "line": 80,
+          "part": null,
+          "role": "helper",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "two topological spaces",
+            "a continuous map between them",
+            "the map is injective"
+          ]
+        },
+        {
+          "name": "Path.Homotopic.Quotient.cast_mem_arrows_iff",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "line": 50,
+          "part": null,
+          "role": "helper",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "a subgroupoid of its fundamental groupoid",
+            "two points of the space and two further points",
+            "a class of paths between the first two points",
+            "each further point equals the corresponding one of the first two"
           ]
         }
       ]
@@ -643,6 +562,35 @@
             "every point of the space has some member of the family as a neighborhood",
             "every member of the family contains the basepoint",
             "the intersection of any two members is path connected"
+          ]
+        },
+        {
+          "name": "FundamentalGroupoid.nonempty_hom",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+          "line": 63,
+          "part": null,
+          "role": "helper",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "the space is path connected",
+            "two objects of its fundamental groupoid"
+          ]
+        },
+        {
+          "name": "TauCeti.FundamentalGroup.map_fromPath",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+          "line": 173,
+          "part": null,
+          "role": "helper",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "two topological spaces",
+            "a continuous map between them",
+            "a basepoint in the source",
+            "a loop at that basepoint"
           ]
         }
       ]

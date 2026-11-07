@@ -4,35 +4,15 @@ and homotopy classes of paths as morphisms, composed by concatenation.
 Here a \fcnotion{PathConnectedSpace}{path-connected space} is understood to
 be nonempty.
 
-\begin{lemma}[id=2.1]{The fundamental groupoid of a path-connected space}
-Suppose $X$ is path connected, and let $x,y\in X$.  Then there is a morphism
-of $\fgpd{X}$ from $x$ to $y$.
-\leanref{FundamentalGroupoid.nonempty_hom}
-\end{lemma}
-
 Let $f:X\longrightarrow Y$ be a \fcnotion{ContinuousMap}{continuous map} between topological spaces.
 The induced \fcnotion{CategoryTheory.Functor}{functor}
 \fcnotion{FundamentalGroupoid.map}{$\fgpd{f}$} sends points to their images
 and path classes to the classes of their images.  For a path $\gamma$,
 \fcnotion{Path.map}{$f\circ\gamma$} is its image path in $Y$.
 
-\begin{lemma}[id=2.2]{An injective map is injective on objects}
-Suppose $f$ is injective.  Then $\fgpd{f}$ is injective on objects.
-\leanref{ContinuousMap.fundamentalGroupoid_map_obj_injective}
-\end{lemma}
-
 A \fcnotion{CategoryTheory.Subgroupoid}{subgroupoid} of $\fgpd{X}$ specifies
 sets of morphisms between pairs of points, closed under composition and
-inverses.  Equalities of endpoints also
-\fcnotion{Path.Homotopic.Quotient.cast}{rename the endpoints of a path class}.
-
-\begin{lemma}[id=2.3]{Recasting the endpoints of a path class}
-Let $\mathcal H$ be a subgroupoid of $\fgpd{X}$, let $\omega$ be a class of
-paths from $x$ to $y$, and let $x',y'\in X$ satisfy $x'=x$ and $y'=y$.
-Then $\omega$ with its endpoints renamed to $x'$ and $y'$ lies in
-$\mathcal H$ if and only if $\omega$ does.
-\leanref{Path.Homotopic.Quotient.cast_mem_arrows_iff}
-\end{lemma}
+inverses.
 
 At a basepoint $x\in X$, the \fcnotion{FundamentalGroup}{fundamental group}
 $\fgrp{X}{x}$ is the group of morphisms from $x$ to itself in $\fgpd{X}$.
@@ -41,9 +21,3 @@ The \fcnotion{FundamentalGroup.fromPath}{class of a loop at $x$} is an element
 of this group.  The map $f$ induces a homomorphism
 \fcnotion{FundamentalGroup.map}{$\fgrp{f}{x}$} from $\fgrp{X}{x}$ to
 $\fgrp{Y}{f(x)}$.
-
-\begin{lemma}[id=2.4]{The image of the class of a loop}
-Let $x\in X$ and let $\gamma$ be a loop at $x$.  Then $\fgrp{f}{x}$ sends
-$\pcls{\gamma}$ to $\pcls{f\circ\gamma}$.
-\leanref{TauCeti.FundamentalGroup.map_fromPath}
-\end{lemma}

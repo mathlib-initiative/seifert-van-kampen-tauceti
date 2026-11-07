@@ -1,8 +1,8 @@
 # The item table, for the maintainer
 
 The source inventory records the dependency closure of `TauCeti.isPushout_fundamentalGroup` at commit
-`37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`: 32 scope members, 20 selected items in 6 sections, 24 of
-the members as key declarations and 8 as helpers. The ids are provisional and contiguous
+`37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`: 32 scope members, 16 selected items in 6 sections, 20 of
+the members as key declarations and 12 as helpers. The ids are provisional and contiguous
 within each section, in reading order.
 
 The six sections run from the interval and path lemmas, through the fundamental groupoid and
@@ -17,10 +17,6 @@ itself.
 | 1.1 | lemma | A Lebesgue number for a family of neighborhoods | `TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds` | — | — | the members of the family need not be open, only neighborhoods of the points they cover |
 | 1.2 | proposition | Subdividing a path along a family of sets | `Path.exists_monotone_range_subpath_subset` | — | — | — |
 | 1.3 | lemma | Cutting a path class at an intermediate parameter | `Path.Homotopic.Quotient.subpath_cast_trans` | — | — | — |
-| 2.1 | lemma | The fundamental groupoid of a path-connected space | `FundamentalGroupoid.nonempty_hom` | — | — | — |
-| 2.2 | lemma | An injective map is injective on objects | `ContinuousMap.fundamentalGroupoid_map_obj_injective` | — | — | — |
-| 2.3 | lemma | Recasting the endpoints of a path class | `Path.Homotopic.Quotient.cast_mem_arrows_iff` | — | — | — |
-| 2.4 | lemma | The image of the class of a loop | `TauCeti.FundamentalGroup.map_fromPath` | — | — | — |
 | 3.1 | definition | The functor picking out a chosen object | `TauCeti.Groupoid.singleObjFunctor` | — | — | — |
 | 3.2 | definition | The functor induced by a homomorphism out of a vertex group | `TauCeti.Groupoid.functorOfEndHom` | — | — | — |
 | 4.1 | theorem | Covers generate the fundamental groupoid | `TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top` | Theorem 1.20 | module docstring | the members need not be open and nothing is assumed connected |
@@ -51,8 +47,7 @@ cited nowhere.
 ## Scope members that are no key declaration
 
 The seven routine path and interval constructions and lemmas below are helpers
-on 1.2. The
-paper introduces notation and uses their elementary properties implicitly;
+on 1.2. The paper introduces notation and uses their elementary properties implicitly;
 their presence in the source inventory does not require separate statements.
 
 - `Path.codRestrict`: linked from the notation $\gamma^S$ in the local prose.
@@ -65,6 +60,19 @@ their presence in the source inventory does not require separate statements.
   subdivision machinery; it has no definition or example in the exposition.
 - `TauCeti.Groupoid.functorOfEndHom_map` (helper on 3.2): it states the formula for the value
   of the induced functor on a morphism, which is the content of the definition in 3.2.
+
+Section 2 is a prose introduction to the objects used later. Its immediate
+consequences remain in the source inventory as helpers, without numbered
+statements or cards:
+
+- `FundamentalGroupoid.nonempty_hom` (helper on 5.1): path connectedness supplies
+  the connecting morphisms.
+- `ContinuousMap.fundamentalGroupoid_map_obj_injective` (helper on 4.1): the
+  object map is the original continuous map.
+- `Path.Homotopic.Quotient.cast_mem_arrows_iff` (helper on 4.1): endpoint
+  transport is implicit throughout the argument.
+- `TauCeti.FundamentalGroup.map_fromPath` (helper on 5.1): the map on loop classes
+  is already covered by the functoriality described in Section 2.
 
 ## Notes on the shape of the table
 
