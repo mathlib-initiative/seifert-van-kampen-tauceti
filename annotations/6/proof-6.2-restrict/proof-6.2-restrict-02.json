@@ -1,0 +1,61 @@
+{
+  "id": "proof-6.2-restrict",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Restriction on B",
+  "subject": [
+    {
+      "location": {
+        "page": 6,
+        "rect": [0.130391, 0.235795, 0.739217, 0.071654]
+      },
+      "title": "Proof idea: Recover the original homomorphisms",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.2-restrict@p006"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.vanKampenDesc_map_right",
+        "lines": [294, 296],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "Restriction on B",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-6.2-restrict-2",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L294-L296",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 294,
+            "text": "  (vanKampenDesc_map_subtypeVal hCover hA hB hAB hxA hxB fA fB h hxB _\n    (FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right hCover _ _ _) g).trans\n    (localFunctor_map_base inter_subset_right hAB hB (interBase hxA hxB) fB g)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [6],
+        "printed": [6]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

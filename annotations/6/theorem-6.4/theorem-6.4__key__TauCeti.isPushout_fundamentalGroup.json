@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.616162, 0.739217, 0.140783]
+        "page": 6,
+        "rect": [0.130391, 0.482008, 0.739217, 0.151199]
       },
       "title": "Theorem 6.4 (The based Seifert–van Kampen theorem)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "theorem-6.4@p005"
+          "region": "theorem-6.4@p006"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [6],
+        "printed": [6]
       }
     }
   }

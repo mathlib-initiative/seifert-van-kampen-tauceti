@@ -1,0 +1,61 @@
+{
+  "id": "proof-6.4-pushout",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "The pushout universal property",
+  "subject": [
+    {
+      "location": {
+        "page": 6,
+        "rect": [0.130391, 0.641414, 0.739217, 0.088699]
+      },
+      "title": "Proof idea: Verify the universal property",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.4-pushout@p006"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.isPushout_fundamentalGroup",
+        "lines": [359, 378],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "The pushout universal property",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-6.4-pushout-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L359-L378",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 359,
+            "text": "  have comm : (FundamentalGroup.map (ContinuousMap.subtypeVal A) ⟨x, hxA⟩).comp\n      (FundamentalGroup.map (ContinuousMap.inclusion inter_subset_left) ⟨x, hxA, hxB⟩) =\n      (FundamentalGroup.map (ContinuousMap.subtypeVal B) ⟨x, hxB⟩).comp\n        (FundamentalGroup.map (ContinuousMap.inclusion inter_subset_right) ⟨x, hxA, hxB⟩) := by\n    -- Both composites send the class of a loop in `A ∩ B` to the class of the same loop in `X`.\n    ext ⟨g⟩\n    induction g using Path.Homotopic.Quotient.ind\n    rfl\n  refine IsPushout.of_isColimit (PushoutCocone.IsColimit.mk (congrArg GrpCat.ofHom comm)\n    (fun s ↦ GrpCat.ofHom (vanKampenDesc hCover hA hB hAB hxA hxB s.inl.hom s.inr.hom\n      (congrArg GrpCat.Hom.hom s.condition))) (fun s ↦ ?_) (fun s ↦ ?_) fun s m h₁ h₂ ↦ ?_)\n  · exact GrpCat.hom_ext (vanKampenDesc_comp_map_left hCover hA hB hAB hxA hxB _ _\n      (congrArg GrpCat.Hom.hom s.condition))\n  · exact GrpCat.hom_ext (vanKampenDesc_comp_map_right hCover hA hB hAB hxA hxB _ _\n      (congrArg GrpCat.Hom.hom s.condition))\n  · refine GrpCat.hom_ext (vanKampen_hom_ext hCover hA hB hAB hxA hxB ?_ ?_)\n    · exact (congrArg GrpCat.Hom.hom h₁).trans (vanKampenDesc_comp_map_left hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm\n    · exact (congrArg GrpCat.Hom.hom h₂).trans (vanKampenDesc_comp_map_right hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [6],
+        "printed": [6]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

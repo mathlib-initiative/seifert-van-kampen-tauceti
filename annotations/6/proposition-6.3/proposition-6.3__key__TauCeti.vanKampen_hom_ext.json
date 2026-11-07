@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.540404, 0.739298, 0.070707]
+        "page": 6,
+        "rect": [0.130391, 0.318497, 0.739298, 0.072917]
       },
       "title": "Proposition 6.3 (Uniqueness of the induced homomorphism)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proposition-6.3@p005"
+          "region": "proposition-6.3@p006"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [6],
+        "printed": [6]
       }
     }
   }

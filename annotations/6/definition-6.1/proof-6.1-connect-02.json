@@ -1,0 +1,60 @@
+{
+  "id": "proof-6.1-connect",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Turn the homomorphism into a functor",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.726326, 0.739217, 0.088699]
+      },
+      "title": "Proof idea: Pass from homomorphisms to functors",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.1-connect@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [164, 164],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "Turn the homomorphism into a functor",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-6.1-connect-2",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L164-L164",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 164,
+            "text": "  Groupoid.functorOfEndHom _ (connect hST hS hT s₀) f"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

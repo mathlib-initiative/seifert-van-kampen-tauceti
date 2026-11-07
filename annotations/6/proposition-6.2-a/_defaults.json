@@ -3,13 +3,13 @@
   "kind": "proposition",
   "subject": {
     "location": {
-      "page": 5,
-      "rect": [0.130391, 0.499684, 0.739217, 0.017361]
+      "page": 6,
+      "rect": [0.130391, 0.191446, 0.739217, 0.017519]
     },
     "title": "Proposition 6.2(a) (The induced homomorphism restricts to the given ones)",
     "extensions": {
       "org.mathlib-initiative.formal-companion.overlay": {
-        "region": "proposition-6.2-a@p005"
+        "region": "proposition-6.2-a@p006"
       }
     }
   },
@@ -29,8 +29,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [6],
+        "printed": [6]
       }
     }
   }

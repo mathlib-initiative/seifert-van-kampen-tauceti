@@ -1,0 +1,60 @@
+{
+  "id": "proof-6.1-glue",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Agreement on the intersection",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.824811, 0.739217, 0.071654]
+      },
+      "title": "Proof idea: Glue on the common intersection",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.1-glue@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [215, 217],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "Agreement on the intersection",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-6.1-glue-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L215-L217",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 215,
+            "text": "  (map_inclusion_comp_localFunctor _ _ _ _ _).trans <|\n    (congrArg (Groupoid.functorOfEndHom _ (baseHom hAB _)) h).trans\n      (map_inclusion_comp_localFunctor _ _ _ _ _).symm"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "proof-5.1-basepoint",
+  "kind": "proof_step",
+  "relation": "relatedMatch",
+  "note": "Invoked on each local path piece",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.400568, 0.739217, 0.106376]
+      },
+      "title": "Proof idea: Turn path pieces into based loops",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-5.1-basepoint@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top",
+        "lines": [166, 167],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
+      },
+      "title": "Invoked on each local path piece",
+      "role": "support",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-5.1-basepoint-2",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L166-L167",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 166,
+            "text": "    exact comp_comp_inv_mem_iSup_range hx hpc (hτ a).somePath (δ.map continuous_subtype_val)\n      (hτ b).somePath (hτ' a) (by rintro _ ⟨t, rfl⟩; exact (δ t).2) (hτ' b)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

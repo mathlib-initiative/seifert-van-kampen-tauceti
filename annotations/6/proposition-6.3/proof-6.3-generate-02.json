@@ -1,0 +1,61 @@
+{
+  "id": "proof-6.3-generate",
+  "kind": "proof_step",
+  "relation": "relatedMatch",
+  "note": "Invoked for uniqueness in the pushout",
+  "subject": [
+    {
+      "location": {
+        "page": 6,
+        "rect": [0.130391, 0.39899, 0.739217, 0.071654]
+      },
+      "title": "Proof idea: Use generation for uniqueness",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.3-generate@p006"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.isPushout_fundamentalGroup",
+        "lines": [374, 378],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "Invoked for uniqueness in the pushout",
+      "role": "support",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-6.3-generate-2",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L374-L378",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 374,
+            "text": "  · refine GrpCat.hom_ext (vanKampen_hom_ext hCover hA hB hAB hxA hxB ?_ ?_)\n    · exact (congrArg GrpCat.Hom.hom h₁).trans (vanKampenDesc_comp_map_left hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm\n    · exact (congrArg GrpCat.Hom.hom h₂).trans (vanKampenDesc_comp_map_right hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [6],
+        "printed": [6]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}
