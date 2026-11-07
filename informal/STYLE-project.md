@@ -185,3 +185,9 @@ sentences with `\proofstep` and individual displayed equations with
 `\proofequation`; each must name exactly one matching Lean range in
 `proofsteps.json`. Never mark a whole proof as one region. Lean names remain
 in the annotations.
+
+In the proof of 5.1, use $H$ for the generated subgroup and $S$ for the
+subgroupoid defined by transporting morphisms to the basepoint, matching
+the local names in Lean. Here $S=\top$ means that this subgroupoid is the
+whole fundamental groupoid. This is a local exception to the global use of
+$S$ for a subset of $X$.
