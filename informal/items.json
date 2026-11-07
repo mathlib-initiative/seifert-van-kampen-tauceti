@@ -242,7 +242,7 @@
       "section": "2",
       "kind": "definition",
       "title": "The functor picking out a chosen object",
-      "gist": "For a chosen object of a category there is a functor from the one-object category of its monoid of endomorphisms which sends the unique object to the chosen one and an endomorphism to itself.",
+      "gist": "For a chosen object w of a category C, J_w denotes the functor from the one-object category of its monoid of endomorphisms to C, sending the unique object to w and each endomorphism to itself.",
       "parts": [],
       "in_v1": true,
       "reference": null,
