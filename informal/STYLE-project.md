@@ -36,8 +36,8 @@ says so in its report.
 ## Local introductions
 
 Introduce spaces, subsets, basepoints and families in the section that uses them.
-Introduce specialized objects, such as the ordered group for the subdivision
-formula or the chosen connecting morphisms, beside the result that needs them.
+Introduce specialized objects, such as the chosen connecting morphisms, beside
+the result that needs them.
 Use direct mathematical sentences: "Let S be a subset of a topological space X."
 Do not reserve a catalogue of letters for the whole text.
 
@@ -95,9 +95,9 @@ the whole space, so it too is stated in words.
 There is no separate conventions section. Give each section a short local setup,
 and explain specialized notation next to its first use:
 
-- Section 1: the auxiliary pseudometric lemma and subdivision points, then
-  the general topological space, paths and subpaths. Introduce the family of
-  subsets beside Proposition 1.3, then homotopy classes and their composition.
+- Section 1: the auxiliary pseudometric lemma, then the general topological
+  space, paths and subpaths. Introduce subdivisions and the family of subsets
+  beside Proposition 1.2, then homotopy classes and their composition.
 - Section 2: fundamental groupoids and induced functors, subgroupoids, then the
   fundamental group at a basepoint and its induced homomorphism.
 - Section 3: categories, endomorphisms and the one-object category, then the
@@ -117,9 +117,9 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep each retained notion link once. The constants are these 48,
-each copied from `declarations.json` (47 rows of its `references` from Mathlib and
-Lean's prelude, plus TauCeti's path restriction construction):
+with its explanation; keep each retained notion link once. The constants are these 42,
+each copied from `declarations.json` (41 rows of its `references` from Mathlib, plus TauCeti's path restriction
+construction):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
 `ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
@@ -132,9 +132,7 @@ Lean's prelude, plus TauCeti's path restriction construction):
 `CategoryTheory.inv`, `CategoryTheory.End`, `CategoryTheory.CategoryStruct.comp`, `Monoid`,
 `CategoryTheory.SingleObj`, `MonoidHom`, `CategoryTheory.Functor`,
 `CategoryTheory.Functor.comp`, `MonoidHom.comp`,
-`CategoryTheory.IsPushout`, `GrpCat`, `Nat`,
-`Monotone`, `AddCommGroup`, `LinearOrder`, `IsOrderedAddMonoid`, `Set.Icc`,
-`Set.Icc.addNSMul`, `Path.codRestrict`.
+`CategoryTheory.IsPushout`, `GrpCat`, `Monotone`, `Path.codRestrict`.
 
 A numbered item records its key declarations with `\leanref`. The helper
 `Path.codRestrict` is instead linked from the notation `\codres{\gamma}{S}`
@@ -151,11 +149,10 @@ statement is about it; so is the reading of a basepoint `x` of `X` lying in `S` 
 basepoint of `S` in `\fgrp{S}{x}`. The points of a subdivision are nondecreasing, not
 strictly increasing.
 
-Definition 1.2 defines subdivision points directly by `t_n = min{b, a + nd}`
-for a nonnegative step size. Do not restate this formula as a separate lemma.
-Its annotation links to the Lean lemma identifying Mathlib's interval-valued
-construction with that formula. The unused negative-step case, where Mathlib
-also clips at the left endpoint, need not appear in the text.
+Use the subdivision-existence proposition directly in the exposition. Do not
+introduce the general clipped-step construction, its ordered-group setup or
+its numerical example. These are implementation details of the Lean library.
+When the gluing proof needs equal subdivisions, introduce $t_k=k/N$ there.
 
 The subpath `\subpath{\gamma}{r}{s}` is formed for every pair of parameters,
 running backwards when `s` is smaller than `r` and constant when they agree.

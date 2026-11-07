@@ -1,8 +1,8 @@
 # The item table, for the maintainer
 
 The source inventory records the dependency closure of `TauCeti.isPushout_fundamentalGroup` at commit
-`37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`: 32 scope members, 21 selected items in 6 sections, 25 of
-the members as key declarations and 7 as helpers. The ids are provisional and contiguous
+`37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`: 32 scope members, 20 selected items in 6 sections, 24 of
+the members as key declarations and 8 as helpers. The ids are provisional and contiguous
 within each section, in reading order.
 
 The six sections run from the interval and path lemmas, through the fundamental groupoid and
@@ -15,9 +15,8 @@ itself.
 | id | kind | title | key declarations | reference | source | departures |
 |---|---|---|---|---|---|---|
 | 1.1 | lemma | A Lebesgue number for a family of neighborhoods | `TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds` | — | — | the members of the family need not be open, only neighborhoods of the points they cover |
-| 1.2 | definition | Subdivision points of an interval | `Set.Icc.coe_addNSMul` | — | — | the minimum formula is used as a definition; the related Lean lemma identifies it with Mathlib's interval-valued construction for nonnegative steps |
-| 1.3 | proposition | Subdividing a path along a family of sets | `Path.exists_monotone_range_subpath_subset` | — | — | — |
-| 1.4 | lemma | Cutting a path class at an intermediate parameter | `Path.Homotopic.Quotient.subpath_cast_trans` | — | — | — |
+| 1.2 | proposition | Subdividing a path along a family of sets | `Path.exists_monotone_range_subpath_subset` | — | — | — |
+| 1.3 | lemma | Cutting a path class at an intermediate parameter | `Path.Homotopic.Quotient.subpath_cast_trans` | — | — | — |
 | 2.1 | lemma | The fundamental groupoid of a path-connected space | `FundamentalGroupoid.nonempty_hom` | — | — | — |
 | 2.2 | lemma | An injective map is injective on objects | `ContinuousMap.fundamentalGroupoid_map_obj_injective` | — | — | — |
 | 2.3 | lemma | Recasting the endpoints of a path class | `Path.Homotopic.Quotient.cast_mem_arrows_iff` | — | — | — |
@@ -51,7 +50,8 @@ cited nowhere.
 
 ## Scope members that are no key declaration
 
-The six routine path constructions and lemmas below are helpers on 1.3. The
+The seven routine path and interval constructions and lemmas below are helpers
+on 1.2. The
 paper introduces notation and uses their elementary properties implicitly;
 their presence in the source inventory does not require separate statements.
 
@@ -61,6 +61,8 @@ their presence in the source inventory does not require separate statements.
 - `Path.trans_apply_of_le` and `Path.trans_apply_of_ge`: the two formulas in
   the definition of concatenation.
 - `Path.subpath_apply_mem`: containment of a subpath in the original segment.
+- `Set.Icc.coe_addNSMul`: the clipped-step formula used internally by the
+  subdivision machinery; it has no definition or example in the exposition.
 - `TauCeti.Groupoid.functorOfEndHom_map` (helper on 3.2): it states the formula for the value
   of the induced functor on a morphism, which is the content of the definition in 3.2.
 
@@ -72,8 +74,7 @@ their presence in the source inventory does not require separate statements.
   element by element and as an equality of homomorphisms, and the two are the same statement.
 - No statement in the closure relies on a junk value, so every `junk` list is empty. The
   statements do use coercions out of subtypes and out of the unit interval, which the
-  local notation leaves implicit; item 1.2 is the one place where a coercion carries the
-  content of the statement.
+  local notation leaves implicit.
 - The target of the descent in 6.1 to 6.3 is a monoid, not a group, while the pushout in 6.4 is
   taken in the category of groups. The text should say this where it states 6.1, since a reader
   expecting the usual statement will expect a group.

@@ -72,35 +72,6 @@
     {
       "id": "1.2",
       "section": "1",
-      "kind": "definition",
-      "title": "Subdivision points of an interval",
-      "gist": "For a nonnegative step size d, define the nth subdivision point of [a,b] by t_n = min{b, a + nd}.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "The text uses the minimum formula as the definition of the underlying interval point. The linked Lean lemma proves that Mathlib's clipped-step construction has this value for a nonnegative step size.",
-      "declarations": [
-        {
-          "name": "Set.Icc.coe_addNSMul",
-          "module": "TauCeti.Topology.UnitInterval",
-          "line": 64,
-          "part": null,
-          "role": "key",
-          "relation": "relatedMatch",
-          "junk": [],
-          "hypotheses": [
-            "an additive commutative group that is linearly ordered and whose addition respects the order",
-            "two endpoints and a step size in the group",
-            "the left endpoint is at most the right endpoint",
-            "the step size is nonnegative",
-            "a number of steps, a natural number"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1.3",
-      "section": "1",
       "kind": "proposition",
       "title": "Subdividing a path along a family of sets",
       "gist": "If every parameter has a neighborhood that the path sends into some member of a family of sets, then the path can be cut at finitely many increasing parameters running from zero to one so that each consecutive subpath has its range inside a single member.",
@@ -223,11 +194,27 @@
             "two parameters of that closed interval",
             "a parameter in the unit interval"
           ]
+        },
+        {
+          "name": "Set.Icc.coe_addNSMul",
+          "module": "TauCeti.Topology.UnitInterval",
+          "line": 64,
+          "part": null,
+          "role": "helper",
+          "relation": "relatedMatch",
+          "junk": [],
+          "hypotheses": [
+            "an additive commutative group that is linearly ordered and whose addition respects the order",
+            "two endpoints and a step size in the group",
+            "the left endpoint is at most the right endpoint",
+            "the step size is nonnegative",
+            "a number of steps, a natural number"
+          ]
         }
       ]
     },
     {
-      "id": "1.4",
+      "id": "1.3",
       "section": "1",
       "kind": "lemma",
       "title": "Cutting a path class at an intermediate parameter",
