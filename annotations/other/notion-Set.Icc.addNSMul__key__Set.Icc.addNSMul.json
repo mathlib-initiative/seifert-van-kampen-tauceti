@@ -1,13 +1,14 @@
 {
   "id": "notion:Set.Icc.addNSMul",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.727689, 0.525253, 0.137018, 0.017361]
+        "rect": [0.214105, 0.567235, 0.145364, 0.018308]
       },
-      "title": "subdivision point",
+      "title": "subdivision points",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Set.Icc.addNSMul@p001"

@@ -1,6 +1,7 @@
 {
   "id": "notion:Monotone",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

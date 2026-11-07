@@ -1,6 +1,7 @@
 {
   "id": "notion:CategoryTheory.Functor.comp",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

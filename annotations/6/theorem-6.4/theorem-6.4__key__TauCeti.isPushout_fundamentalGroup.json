@@ -1,6 +1,7 @@
 {
   "id": "theorem-6.4",
   "kind": "theorem",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

@@ -1,6 +1,7 @@
 {
   "id": "definition-3.1",
   "kind": "definition",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

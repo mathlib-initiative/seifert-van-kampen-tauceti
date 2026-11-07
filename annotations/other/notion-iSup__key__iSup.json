@@ -1,6 +1,7 @@
 {
   "id": "notion:iSup",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

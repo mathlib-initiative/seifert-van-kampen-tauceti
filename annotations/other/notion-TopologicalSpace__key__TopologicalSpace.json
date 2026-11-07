@@ -1,11 +1,12 @@
 {
   "id": "notion:TopologicalSpace",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.344173, 0.629735, 0.135452, 0.018624]
+        "rect": [0.344173, 0.620107, 0.135452, 0.016572]
       },
       "title": "topological space",
       "extensions": {

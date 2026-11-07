@@ -1,11 +1,12 @@
 {
   "id": "notion:Metric.ball",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.62363, 0.365846, 0.056942, 0.021465]
+        "rect": [0.62363, 0.367109, 0.056942, 0.021465]
       },
       "title": "B(z, ρ)",
       "extensions": {

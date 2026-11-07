@@ -1,16 +1,17 @@
 {
-  "id": "lemma-1.2",
-  "kind": "lemma",
+  "id": "definition-1.2",
+  "kind": "definition",
+  "relation": "relatedMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.584912, 0.739217, 0.03851]
+        "rect": [0.130391, 0.538194, 0.739217, 0.021465]
       },
-      "title": "Lemma 1.2 (Equally spaced subdivision points of an interval)",
+      "title": "Definition 1.2 (Subdivision points of an interval)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-1.2@p001"
+          "region": "definition-1.2@p001"
         }
       }
     }
@@ -49,7 +50,8 @@
       "locator": {
         "physical": [1],
         "printed": [1]
-      }
+      },
+      "relation": "related"
     }
   }
 }

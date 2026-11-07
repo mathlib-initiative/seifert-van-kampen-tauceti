@@ -1,11 +1,12 @@
 {
   "id": "notion:AddCommGroup",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.487142, 0.472538, 0.223201, 0.018308]
+        "rect": [0.487142, 0.47601, 0.223201, 0.018308]
       },
       "title": "additive commutative group",
       "extensions": {

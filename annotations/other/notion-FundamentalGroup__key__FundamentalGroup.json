@@ -1,6 +1,7 @@
 {
   "id": "notion:FundamentalGroup",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

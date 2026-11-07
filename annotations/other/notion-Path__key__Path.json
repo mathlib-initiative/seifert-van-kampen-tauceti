@@ -1,11 +1,12 @@
 {
   "id": "notion:Path",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.826605, 0.629735, 0.038102, 0.018624]
+        "rect": [0.826605, 0.620107, 0.038102, 0.016572]
       },
       "title": "path",
       "extensions": {

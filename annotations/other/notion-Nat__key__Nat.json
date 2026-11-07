@@ -1,11 +1,12 @@
 {
   "id": "notion:Nat",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.366765, 0.525253, 0.15519, 0.017361]
+        "rect": [0.447125, 0.512153, 0.154511, 0.018466]
       },
       "title": "nonnegative integer",
       "extensions": {

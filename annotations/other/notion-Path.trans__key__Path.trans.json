@@ -1,11 +1,12 @@
 {
   "id": "notion:Path.trans",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.452702, 0.799558, 0.034141, 0.020518]
+        "rect": [0.452702, 0.79072, 0.034141, 0.020518]
       },
       "title": "γ · δ",
       "extensions": {

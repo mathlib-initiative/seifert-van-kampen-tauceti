@@ -1,11 +1,12 @@
 {
   "id": "lemma-1.5-b",
   "kind": "lemma",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.879735, 0.739217, 0.019255]
+        "rect": [0.130391, 0.872001, 0.739217, 0.019413]
       },
       "title": "Lemma 1.5(b) (The values of a concatenation of paths)",
       "extensions": {

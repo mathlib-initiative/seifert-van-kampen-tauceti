@@ -1,6 +1,7 @@
 {
   "id": "lemma-2.4",
   "kind": "lemma",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

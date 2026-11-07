@@ -1,11 +1,12 @@
 {
   "id": "notion:IsOrderedAddMonoid",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.132842, 0.490846, 0.170573, 0.017835]
+        "rect": [0.132842, 0.494318, 0.170573, 0.017835]
       },
       "title": "preserved by addition",
       "extensions": {

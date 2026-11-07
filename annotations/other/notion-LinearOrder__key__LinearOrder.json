@@ -1,11 +1,12 @@
 {
   "id": "notion:LinearOrder",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.771315, 0.472538, 0.093391, 0.018308]
+        "rect": [0.771315, 0.47601, 0.093391, 0.018308]
       },
       "title": "linear order",
       "extensions": {
