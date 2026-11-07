@@ -116,6 +116,26 @@ def proof_boxes(build, config, fc, markers):
 
 
 
+def pdf_subjects(step, boxes):
+    """One region per page, with one quadrilateral for every marked line.
+
+    Reusing a region id on separate endpoints discards later endpoints in the
+    viewer. Keep the line shapes together in that region's quads instead.
+    """
+    by_page = {}
+    for page, x, y, width, height in boxes:
+        by_page.setdefault(page, []).append((x, y, round(x+width, 6), round(y+height, 6)))
+    subjects = []
+    for page, lines in by_page.items():
+        left, top = min(b[0] for b in lines), min(b[1] for b in lines)
+        right, bottom = max(b[2] for b in lines), max(b[3] for b in lines)
+        quads = [[x,y,right,y,right,bottom,x,bottom] for x,y,right,bottom in lines]
+        subjects.append({'location': {'page': page, 'rect': [left,top,round(right-left,6),round(bottom-top,6)]},
+            'title': step['title'], 'extensions': {NS: {
+                'region': f'proof-{step["id"]}@p{page:03d}', 'quads': quads}}})
+    return subjects
+
+
 def check_export(root=ROOT):
     config = json.loads((root / CONFIG).read_text())
     bundle = json.loads((root / 'pdf-overlay/annotations.bundle.json').read_text())
@@ -147,10 +167,22 @@ def check_export(root=ROOT):
                 raise ValueError(f'{key}: destination does not select the full range')
             if row['relation'] != ('relatedMatch' if target['role']=='support' else 'closeMatch'):
                 raise ValueError(f'{key}: wrong proof-step relation')
+            pages = set()
             for subject in row['subject']:
-                rect = subject['location']['rect']
+                location = subject['location']
+                page, rect = location['page'], location['rect']
+                if page in pages:
+                    raise ValueError(f'{key}: repeated region on a page loses sentence lines')
+                pages.add(page)
                 if len(rect)!=4 or any(x < 0 for x in rect) or rect[2] <= 0 or rect[3] <= 0 or rect[0]+rect[2]>1 or rect[1]+rect[3]>1:
                     raise ValueError(f'{key}: invalid PDF box')
+                quads = subject['extensions'][NS].get('quads', [])
+                if not quads or any(len(q)!=8 or any(not 0<=x<=1 for x in q) for q in quads):
+                    raise ValueError(f'{key}: missing or malformed sentence quadrilaterals')
+                x,y,w,h = rect
+                if any(not (x-1e-6 <= q[i] <= x+w+1e-6 and y-1e-6 <= q[i+1] <= y+h+1e-6)
+                       for q in quads for i in (0,2,4,6)):
+                    raise ValueError(f'{key}: sentence quadrilateral outside its region')
     if seen != set(expected):
         raise ValueError('missing proof-step targets')
     print(f'PASS {len(config["steps"])} sentence/equation steps, {len(seen)} pinned Lean ranges')
@@ -229,11 +261,7 @@ def main():
         directory.mkdir(exist_ok=True)
         for n, (target, code) in enumerate(targets[step['id']], 1):
             iid = 'proof-' + step['id']
-            subjects = []
-            for page, x, y, w, h in region['boxes']:
-                subjects.append({'location': {'page': page, 'rect': [x,y,w,h]},
-                    'title': step['title'],
-                    'extensions': {NS: {'region': f'{iid}@p{page:03d}'}}})
+            subjects = pdf_subjects(step, region['boxes'])
             loc = {'module': target['module'], 'lines': target['lines']}
             if target.get('declaration'):
                 loc['declaration'] = target['declaration']

@@ -100,6 +100,22 @@ class EquationGeometry(unittest.TestCase):
             proof_steps.equation_box(self.Page(),start,end,[18000,2000,1500],2,100)
 
 
+class SentenceGeometry(unittest.TestCase):
+    def test_all_lines_stay_together_in_one_region(self):
+        rows=proof_steps.pdf_subjects({'id':'5.1-example','title':'Example'},
+            [[6,.3,.4,.5,.02],[6,.1,.42,.4,.02]])
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]['location'],{'page':6,'rect':[.1,.4,.7,.04]})
+        self.assertEqual(rows[0]['extensions'][proof_steps.NS]['quads'],
+            [[.3,.4,.8,.4,.8,.42,.3,.42],[.1,.42,.5,.42,.5,.44,.1,.44]])
+
+    def test_page_break_keeps_both_regions(self):
+        rows=proof_steps.pdf_subjects({'id':'5.1-example','title':'Example'},
+            [[6,.3,.8,.5,.02],[7,.1,.1,.4,.02]])
+        self.assertEqual([r['location']['page'] for r in rows],[6,7])
+        self.assertNotEqual(*[r['extensions'][proof_steps.NS]['region'] for r in rows])
+
+
 class ExportIntegrity(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -129,6 +145,24 @@ class ExportIntegrity(unittest.TestCase):
     def test_wrong_destination_is_rejected(self):
         self.alter(lambda ext: ext['destination'].update(href='https://example.org/wrong'))
         with self.assertRaisesRegex(ValueError, 'destination'):
+            proof_steps.check_export(self.root)
+
+    def test_repeated_region_that_discards_a_line_is_rejected(self):
+        p=self.root/'pdf-overlay/annotations.bundle.json'
+        v=json.loads(p.read_text())
+        row=next(r['annotation'] for r in v['annotations'] if r['annotation'].get('kind')=='proof_step')
+        row['subject'].append(copy.deepcopy(row['subject'][0]))
+        p.write_text(json.dumps(v))
+        with self.assertRaisesRegex(ValueError,'repeated region'):
+            proof_steps.check_export(self.root)
+
+    def test_missing_sentence_quads_are_rejected(self):
+        p=self.root/'pdf-overlay/annotations.bundle.json'
+        v=json.loads(p.read_text())
+        row=next(r['annotation'] for r in v['annotations'] if r['annotation'].get('kind')=='proof_step')
+        row['subject'][0]['extensions'][proof_steps.NS].pop('quads',None)
+        p.write_text(json.dumps(v))
+        with self.assertRaisesRegex(ValueError,'sentence quadrilaterals'):
             proof_steps.check_export(self.root)
 
 
