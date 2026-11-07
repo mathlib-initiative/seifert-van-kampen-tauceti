@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "a79a0ab516fec0be7ffd57d235e4299985e65058"
+    "commit": "5bda2b9be5dcd5e167abc909264021ad8b6d2cb2"
   },
   "format": {
     "package": "literature-links",
@@ -18,7 +18,7 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "d47827450e710e1253cb97e7136fbfb1af86c2909b4a1bdbdfc0c4b68e98bcb5"
+      "sha256": "c624f8b98ea6236079323785e71ac8d59d744263ff7ebbe3114eb6214684de0f"
     },
     {
       "path": "THIRD_PARTY.md",
@@ -98,7 +98,7 @@
     },
     {
       "path": "viewer/index.html",
-      "sha256": "c9e5dc2ae8fc4388097b1eead6484da10a4de211abbfc7b0a3bf4d9db7bcf5c4"
+      "sha256": "87f79bb3cbb83e630ecf065dfcfa16acf41797f17cd7a0f92f3e0bafbd28012b"
     },
     {
       "path": "viewer/viewer-core.js",
@@ -106,11 +106,11 @@
     },
     {
       "path": "viewer/viewer.css",
-      "sha256": "adee36fed4961b565d3735c50c5c2d6b38b98f6e8729acf03c999441f20884fc"
+      "sha256": "1c92e015f46978b7e1cf396e12f680d7d8bf0b2eefa7c4ebc1aca0fd8690000b"
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "f5a3ba07e9c4658c97acc043301024af7b2e584f3980f6b5edf461ba4c067038"
+      "sha256": "e4bd7c91b107d619d0c51944280cfb269e7129da8b332e6a4ad150bb2f83f063"
     }
   ],
   "annotations": {
