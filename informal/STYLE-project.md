@@ -56,6 +56,8 @@ interiors, compactness, subspace topologies, set membership or the range of a ma
 Introduce notation when it is needed, and keep conventions that affect the
 mathematics, such as the nonemptiness of path-connected spaces and subsets.
 Do not retain introductory prose solely to create a notion annotation.
+Treat paths in a subspace as familiar: introduce $\gamma^S$ only as notation,
+without a numbered definition or an explanation of its pointwise construction.
 
 ## Standing hypotheses
 
@@ -83,7 +85,7 @@ and explain specialized notation next to its first use:
 
 - Section 1: the auxiliary pseudometric lemma and subdivision points, then
   the general topological space, paths and subpaths. Introduce the family of
-  subsets beside Proposition 1.7, then homotopy classes and endpoint renaming.
+  subsets beside Proposition 1.6, then homotopy classes and endpoint renaming.
 - Section 2: fundamental groupoids and induced functors, subgroupoids, then the
   fundamental group at a basepoint and its induced homomorphism.
 - Section 3: categories, endomorphisms and the one-object category, then the
@@ -103,9 +105,9 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep each retained notion link once. The constants are these 48,
-each copied from `declarations.json` (all of them rows of its `references`, the constants
-of Mathlib and of Lean's prelude that the library's statements are built from):
+with its explanation; keep each retained notion link once. The constants are these 49,
+each copied from `declarations.json` (48 rows of its `references` from Mathlib and
+Lean's prelude, plus TauCeti's path restriction construction):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
 `ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
@@ -120,11 +122,12 @@ of Mathlib and of Lean's prelude that the library's statements are built from):
 `CategoryTheory.Functor.comp`, `MonoidHom.comp`,
 `CategoryTheory.IsPushout`, `GrpCat`, `Nat`,
 `Monotone`, `AddCommGroup`, `LinearOrder`, `IsOrderedAddMonoid`, `Set.Icc`,
-`Set.Icc.addNSMul`.
+`Set.Icc.addNSMul`, `Path.codRestrict`.
 
-The constants the items state are marked nowhere: an item records its declaration with
-`\leanref`, so `Path.codRestrict`, written as `\codres{\gamma}{S}`, and
-every other entry of the `declarations` list belong to their items, not to a `\fcnotion`.
+A numbered item records its key declarations with `\leanref`. The helper
+`Path.codRestrict` is instead linked from the notation `\codres{\gamma}{S}`
+in the local prose; its elementary construction has no numbered definition.
+The other entries of the `declarations` list belong to their items.
 
 ## Numbers, coercions and junk values
 

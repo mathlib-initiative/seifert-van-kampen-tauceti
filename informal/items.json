@@ -101,20 +101,36 @@
     {
       "id": "1.3",
       "section": "1",
-      "kind": "definition",
-      "title": "The restriction of a path to a subspace",
-      "gist": "A path in the ambient space all of whose values lie in a subset, together with endpoints chosen in that subset, becomes a path in the subspace taking the same values.",
+      "kind": "lemma",
+      "title": "Mapping a restricted path back to the ambient space",
+      "gist": "Pushing the restriction of a path forward along the inclusion of the subspace returns the original path.",
       "parts": [],
       "in_v1": true,
       "reference": null,
       "departures": "",
       "declarations": [
         {
+          "name": "Path.map_codRestrict",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 89,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "a subset of the space",
+            "two points of the subset",
+            "a path between the underlying points of those two points",
+            "every value of the path lies in the subset"
+          ]
+        },
+        {
           "name": "Path.codRestrict",
           "module": "TauCeti.Topology.Homotopy.Path",
           "line": 74,
           "part": null,
-          "role": "key",
+          "role": "helper",
           "relation": "exactMatch",
           "junk": [],
           "hypotheses": [
@@ -146,35 +162,6 @@
     },
     {
       "id": "1.4",
-      "section": "1",
-      "kind": "lemma",
-      "title": "Mapping a restricted path back to the ambient space",
-      "gist": "Pushing the restriction of a path forward along the inclusion of the subspace returns the original path.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
-        {
-          "name": "Path.map_codRestrict",
-          "module": "TauCeti.Topology.Homotopy.Path",
-          "line": 89,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "a topological space",
-            "a subset of the space",
-            "two points of the subset",
-            "a path between the underlying points of those two points",
-            "every value of the path lies in the subset"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1.5",
       "section": "1",
       "kind": "lemma",
       "title": "The values of a concatenation of paths",
@@ -230,7 +217,7 @@
       ]
     },
     {
-      "id": "1.6",
+      "id": "1.5",
       "section": "1",
       "kind": "lemma",
       "title": "A subpath of a path confined to a set",
@@ -261,7 +248,7 @@
       ]
     },
     {
-      "id": "1.7",
+      "id": "1.6",
       "section": "1",
       "kind": "proposition",
       "title": "Subdividing a path along a family of sets",
@@ -290,7 +277,7 @@
       ]
     },
     {
-      "id": "1.8",
+      "id": "1.7",
       "section": "1",
       "kind": "lemma",
       "title": "Cutting a path class at an intermediate parameter",
