@@ -28,6 +28,7 @@
 }
 \usepackage{fcmarkers}
 \usepackage{notation}
+\usepackage{proofsteps}
 
 \title{The Seifert--van Kampen theorem, after TauCeti}
 \author{Jack McCarthy}
@@ -40,10 +41,10 @@
 \section*{Introduction}
 This is an informal account, in our own words, of the definitions and results
 of the Lean library TauCeti~\cite{library} that the theorem closing this text
-depends on, in the order in which they build on one another.  It contains no
-proofs: the proofs are the Lean code.  Each numbered statement, and each
-lettered part of one, corresponds to the Lean declaration that states it, and
-is linked to that declaration when this text is read beside the Lean source.
+depends on, in the order in which they build on one another.  It includes selected proof ideas, with links to the corresponding steps
+of the Lean proofs.  These sketches explain the main constructions; the complete
+proofs are the Lean code.  Each numbered statement, and each lettered part of
+one, is also linked to the Lean declaration that states it.
 The text is released under the Apache License, Version~2.0.
 
 \input{sections/00-conventions}

@@ -13,6 +13,23 @@ $\fgrp{X}{x}$ to $M$.
 \leanref{TauCeti.vanKampenDesc}
 \end{definition}
 
+\begin{proofidea}{6.1-connect}{Pass from homomorphisms to functors}
+Choose paths from $x$ to every point of $A$, choosing them inside
+$A\cap B$ at points of the intersection, and choose the constant path at $x$.
+Make the corresponding choices for $B$, using the same paths on $A\cap B$.
+The construction of \itemref{3.2} turns $\varphi_A$ and $\varphi_B$ into
+functors: close a path to a loop with the chosen paths, then apply the given
+homomorphism.
+\end{proofidea}
+
+\begin{proofidea}{6.1-glue}{Glue on the common intersection}
+On $A\cap B$, both local functors use the same connecting paths.  They
+therefore agree because $\varphi_A$ and $\varphi_B$ agree on
+$\fgrp{A\cap B}{x}$.  Glue the functors by \itemref{4.4}, then restrict the
+glued functor to loops at $x$.  This gives the homomorphism of
+\itemref{6.1}.
+\end{proofidea}
+
 \begin{proposition}[id=6.2]{The induced homomorphism restricts to the given ones}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
 $\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
@@ -28,6 +45,14 @@ as in \itemref{6.1}, and let $\varphi$ be the homomorphism they induce.
   \leanref{TauCeti.vanKampenDesc_comp_map_right}}
 \end{proposition}
 
+\begin{proofidea}{6.2-restrict}{Recover the original homomorphisms}
+The glued functor restricts to each local functor by \itemref{4.5}.
+At $x$ the chosen connecting path is constant, so closing a loop with the
+connecting paths leaves it unchanged.  Evaluating the restricted functor on
+a loop in $A$ therefore gives $\varphi_A$, and the same argument in $B$
+gives $\varphi_B$.
+\end{proofidea}
+
 \begin{proposition}[id=6.3]{Uniqueness of the induced homomorphism}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
 $\varphi$ and $\psi$ be homomorphisms from $\fgrp{X}{x}$ to $M$ such that
@@ -36,6 +61,13 @@ $\varphi \circ \fgrp{\incl{B}}{x} = \psi \circ \fgrp{\incl{B}}{x}$.  Then
 $\varphi = \psi$.
 \leanref{TauCeti.vanKampen_hom_ext}
 \end{proposition}
+
+\begin{proofidea}{6.3-generate}{Use generation for uniqueness}
+The elements on which $\varphi$ and $\psi$ agree form a subgroup of
+$\fgrp{X}{x}$.  The hypotheses put the images of both
+$\fgrp{A}{x}$ and $\fgrp{B}{x}$ in this subgroup.  These images generate the
+whole group by \itemref{5.2}, so the homomorphisms agree everywhere.
+\end{proofidea}
 
 \begin{theorem}[id=6.4]{The based Seifert--van Kampen theorem}
 \fcref{Theorem 1.20}
@@ -51,3 +83,12 @@ the square
 whose homomorphisms are induced by the inclusions is a pushout square.
 \leanref{TauCeti.isPushout_fundamentalGroup}
 \end{theorem}
+
+\begin{proofidea}{6.4-pushout}{Verify the universal property}
+The square commutes because either composite inclusion sends a loop in
+$A\cap B$ to the same loop in $X$.  For a compatible pair of homomorphisms to
+any group, use \itemref{6.1} to obtain a homomorphism out of
+$\fgrp{X}{x}$.  Its two composites are the prescribed homomorphisms by
+\itemref{6.2}, and it is unique by \itemref{6.3}.  These are exactly the
+existence, factorization and uniqueness clauses of the pushout property.
+\end{proofidea}

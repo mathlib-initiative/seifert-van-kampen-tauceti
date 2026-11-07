@@ -1,0 +1,19 @@
+% Project-authored proof-idea markers; the generated runtime remains unchanged.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{proofsteps}[2026/11/06 Selected proof ideas]
+\RequirePackage{fcmarkers}
+\makeatletter
+\def\svk@auxstep#1#2{}
+\newenvironment{proofidea}[2]{%
+  \par\addvspace{.6\baselineskip}\begingroup
+  \edef\svk@marker{fc:proof:#1}%
+  \@ifundefined{svk@seen@#1}{}{\PackageError{proofsteps}{Duplicate proof idea #1}{Use each id once.}}%
+  \expandafter\global\expandafter\let\csname svk@seen@#1\endcsname\@empty
+  \fc@auxwrite{\string\svk@auxstep{#1}{\detokenize{#2}}}%
+  \postdisplaypenalty\@M
+  \noindent\fc@above{\svk@marker}\fc@savepos{\svk@marker:start}%
+  \textit{Proof idea: #2.}\enspace\ignorespaces
+}{%
+  \fc@endmark{\svk@marker}\endgroup\smallskip
+}
+\makeatother

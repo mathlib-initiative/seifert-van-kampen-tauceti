@@ -171,3 +171,13 @@ number anywhere else. The four are items `4.1` and `4.2`, item `5.1` and item `6
 drafter of section 4 writes two `\fcref`, one on each of those two items. Every one of the
 four numbers belongs to the item as a whole, so no part of an item carries a number of its
 own.
+
+## Selected proof ideas
+
+The maintainer requested selected proof ideas and their uses in the Lean proofs on
+2026-11-06. These project-authored paragraphs override the statements-only and
+no-proof-sketch rules of STYLE.md. They follow their statements in `proofidea`
+environments, whose position markers are defined in `proofsteps.sty`.
+`proofsteps.json` records the pinned Lean ranges; `tools/proof_steps.py` exports
+them as Literature Links `proof_step` annotations. They are sketches of the key
+arguments, not claims to include every step. Lean names remain in annotations.

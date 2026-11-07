@@ -8,6 +8,14 @@ generate $\fgpd{X}$.
 \leanref{TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top}
 \end{theorem}
 
+\begin{proofidea}{4.1-subdivide}{Subdivide and reassemble}
+Represent a morphism by a path.  Apply \itemref{1.7} to split the path into
+finitely many subpaths, each lying in one member of the cover.  Each subpath
+class lies in the corresponding image subgroupoid.  Concatenating the pieces
+recovers the original path class, so the generated subgroupoid contains every
+morphism.
+\end{proofidea}
+
 \begin{definition}[id=4.2]{Gluing functors out of fundamental groupoids}
 \fcref{Theorem 1.20}
 Suppose that \hypCoverFamily.  For each $i$ let $F_{i}$ be a functor from
@@ -19,6 +27,16 @@ $\fgpd{U_{i}}$ to $\mathcal{D}$, and suppose that for all $i$ and $j$
 Then the $F_{i}$ glue to a functor $F$ from $\fgpd{X}$ to $\mathcal{D}$.
 \leanref{TauCeti.FundamentalGroupoid.glue}
 \end{definition}
+
+\begin{proofidea}{4.2-homotopy}{Make the glued value independent of the path}
+Apply the local functors to small pieces of a path and compose their
+values.  Agreement on intersections makes the choice of cover member
+irrelevant, and refinement does not change the composite.  Subdivide a
+homotopy square into cells whose images each lie in one cover member.  The
+two routes around every cell have the same value; composing these equalities
+across the grid identifies the values of the boundary paths.  Thus the
+construction descends to homotopy classes.
+\end{proofidea}
 
 \begin{proposition}[id=4.3]{The glued functor restricts to the given functors}
 Suppose that \hypCoverFamily, let the $F_{i}$ agree after restriction along the

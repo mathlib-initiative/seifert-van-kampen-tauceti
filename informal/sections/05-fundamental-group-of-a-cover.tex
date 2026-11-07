@@ -9,6 +9,17 @@ $\im \fgrp{\incl{U_{i}}}{x}$ generate $\fgrp{X}{x}$.
 \leanref{TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top}
 \end{theorem}
 
+\begin{proofidea}{5.1-basepoint}{Turn path pieces into based loops}
+Choose a path from $x$ to every point inside some member of the cover.
+For a path piece lying in $U_i$, choose additional paths from $x$ to its
+endpoints inside the relevant pairwise intersections.  Inserting these paths
+and their reverses splits the based loop associated to the piece into three
+loops, each lying in one cover member.  The morphisms whose associated loops
+lie in the generated subgroup form a subgroupoid.  By \itemref{4.1} this is
+the whole fundamental groupoid, and cancelling the chosen path at $x$ gives
+the required generation of $\fgrp{X}{x}$.
+\end{proofidea}
+
 \begin{corollary}[id=5.2]{Two sets generate the fundamental group}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.
 Then $\im \fgrp{\incl{A}}{x}$ and $\im \fgrp{\incl{B}}{x}$ generate

@@ -1,0 +1,226 @@
+{
+  "schema": "svk-tauceti/proof-steps",
+  "schema_version": 1,
+  "library": {
+    "url": "https://github.com/TauCetiProject/TauCeti",
+    "commit": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85"
+  },
+  "steps": [
+    {
+      "id": "4.1-subdivide",
+      "item": "4.1",
+      "title": "Subdivide and reassemble",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "lines": [
+            120,
+            131
+          ],
+          "sha256": "87c6461916125c884b06dd15737499d337a39e4dc5f96a1cd3afa53a6e92f12a",
+          "title": "Subdivision and concatenation",
+          "role": "key",
+          "declaration": "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
+        },
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            159,
+            161
+          ],
+          "sha256": "6d67808d3f848949ff989a6b15fe0f27253abf0aad3b3c68267412dc67429c56",
+          "title": "Invoked to generate based loops",
+          "role": "support",
+          "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
+        }
+      ]
+    },
+    {
+      "id": "4.2-homotopy",
+      "item": "4.2",
+      "title": "Make the glued value independent of the path",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            663,
+            681
+          ],
+          "sha256": "8927ad1527528551d40a3fc2748b86e9393eb2e5f0d41f96c5a7e2abeec68174",
+          "title": "Homotopy grid and cell relations",
+          "role": "key"
+        },
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            704,
+            705
+          ],
+          "sha256": "c545c71f09458648e8ccf98f665c2ee548792c28eeb22bf47cf224b648532e50",
+          "title": "Invoked when descending to homotopy classes",
+          "role": "support",
+          "declaration": "TauCeti.FundamentalGroupoid.glue"
+        }
+      ]
+    },
+    {
+      "id": "5.1-basepoint",
+      "item": "5.1",
+      "title": "Turn path pieces into based loops",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            97,
+            119
+          ],
+          "sha256": "57445a5eff8181e2f657dd9f2c596439b16c390b622bde2ddd44a366d814683c",
+          "title": "Split into three loops",
+          "role": "key"
+        },
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            166,
+            167
+          ],
+          "sha256": "ce6b5548545840e5d37b4dda91d32b9e779b2fcc86f856abb0b5f3df61be0b82",
+          "title": "Invoked on each local path piece",
+          "role": "support",
+          "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
+        }
+      ]
+    },
+    {
+      "id": "6.1-connect",
+      "item": "6.1",
+      "title": "Pass from homomorphisms to functors",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            136,
+            139
+          ],
+          "sha256": "e47cb5fda196efca62c61786610429f529338db482ed19bbd14eafa58a0ee2af",
+          "title": "Choose connecting paths in the intersection",
+          "role": "key"
+        },
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            164,
+            164
+          ],
+          "sha256": "a5441d7c60c19894cf994e9bc6846183a3b62e745fd332e7c9047e4254dd8ff9",
+          "title": "Turn the homomorphism into a functor",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.1-glue",
+      "item": "6.1",
+      "title": "Glue on the common intersection",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            215,
+            217
+          ],
+          "sha256": "ec2ab6b65c1db2e89308cd3e7a1a429fe10d2db6fb5f1b84a9641fac80db2df9",
+          "title": "Agreement on the intersection",
+          "role": "key"
+        },
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            235,
+            239
+          ],
+          "sha256": "80dff83fff83ca7d24304407e00b8d9fa80dc3570769d51aed85a6d10c6af0b9",
+          "title": "Glue, then restrict to loops",
+          "role": "key",
+          "declaration": "TauCeti.vanKampenDesc"
+        }
+      ]
+    },
+    {
+      "id": "6.2-restrict",
+      "item": "6.2",
+      "title": "Recover the original homomorphisms",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            278,
+            280
+          ],
+          "sha256": "7907a577c861301bd8d2578dc811d245c918ce531fe80da11ddb5eb644cba768",
+          "title": "Restriction on A",
+          "role": "key",
+          "declaration": "TauCeti.vanKampenDesc_map_left"
+        },
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            294,
+            296
+          ],
+          "sha256": "975a032c4b4aa7103419bbe72f86356a4deb5e9d69ff47549e1377cde0012683",
+          "title": "Restriction on B",
+          "role": "key",
+          "declaration": "TauCeti.vanKampenDesc_map_right"
+        }
+      ]
+    },
+    {
+      "id": "6.3-generate",
+      "item": "6.3",
+      "title": "Use generation for uniqueness",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            337,
+            342
+          ],
+          "sha256": "8982b5627836e7cd2041409b348f42392ddb97c6287ed166b7e3a0494056b506",
+          "title": "Agreement subgroup and generation",
+          "role": "key",
+          "declaration": "TauCeti.vanKampen_hom_ext"
+        },
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            374,
+            378
+          ],
+          "sha256": "e107e0640df6ee93bf4ee31cbe35109123e54e5e44eb7b77e7196c9a5048b195",
+          "title": "Invoked for uniqueness in the pushout",
+          "role": "support",
+          "declaration": "TauCeti.isPushout_fundamentalGroup"
+        }
+      ]
+    },
+    {
+      "id": "6.4-pushout",
+      "item": "6.4",
+      "title": "Verify the universal property",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            359,
+            378
+          ],
+          "sha256": "2de86d772af9839481737e798ef198d0bae312f9db95295fb5a6422ecbad974a",
+          "title": "The pushout universal property",
+          "role": "key",
+          "declaration": "TauCeti.isPushout_fundamentalGroup"
+        }
+      ]
+    }
+  ]
+}
