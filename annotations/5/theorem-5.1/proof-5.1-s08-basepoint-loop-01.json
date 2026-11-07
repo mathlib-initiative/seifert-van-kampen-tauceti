@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.130391, 0.104167, 0.739217, 0.033775]
+        "page": 5,
+        "rect": [0.130391, 0.708176, 0.739217, 0.032038]
       },
       "title": "The chosen path at the basepoint belongs to the subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.544516, 0.104167, 0.869608, 0.104167, 0.869608, 0.124527, 0.544516, 0.124527],
-            [0.130391, 0.124527, 0.247815, 0.124527, 0.247815, 0.137942, 0.130391, 0.137942]
+            [0.544516, 0.708176, 0.869608, 0.708176, 0.869608, 0.7268, 0.544516, 0.7268],
+            [0.130391, 0.726799, 0.247815, 0.726799, 0.247815, 0.740214, 0.130391, 0.740214]
           ],
-          "region": "proof-5.1-s08-basepoint-loop@p006"
+          "region": "proof-5.1-s08-basepoint-loop@p005"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [5],
+        "printed": [5]
       },
       "provenance": {
         "actor": "agent",

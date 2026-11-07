@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 7,
-        "rect": [0.251143, 0.148429, 0.497713, 0.021995]
+        "page": 6,
+        "rect": [0.251143, 0.731399, 0.497713, 0.021995]
       },
       "title": "Apply compatibility to the transported loop in the intersection",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.251143, 0.148429, 0.748856, 0.148429, 0.748856, 0.170424, 0.251143, 0.170424]
+            [0.251143, 0.731399, 0.748856, 0.731399, 0.748856, 0.753394, 0.251143, 0.753394]
           ],
-          "region": "proof-6.1-s03-compatibility@p007"
+          "region": "proof-6.1-s03-compatibility@p006"
         }
       }
     }
@@ -53,8 +53,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [7],
-        "printed": [7]
+        "physical": [6],
+        "printed": [6]
       },
       "provenance": {
         "actor": "agent",

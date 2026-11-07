@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.523003, 0.104798, 0.03633, 0.019729]
+        "page": 1,
+        "rect": [0.523003, 0.804293, 0.03633, 0.020044]
       },
       "title": "γ[r,s]",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Path.subpath@p002"
+          "region": "notion:Path.subpath@p001"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

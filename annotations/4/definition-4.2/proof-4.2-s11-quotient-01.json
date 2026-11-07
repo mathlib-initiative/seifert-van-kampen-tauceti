@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.160516, 0.657513, 0.70419, 0.017203]
+        "rect": [0.160516, 0.525884, 0.70419, 0.017203]
       },
       "title": "Descend the path value to homotopy classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.160516, 0.657513, 0.864706, 0.657513, 0.864706, 0.674716, 0.160516, 0.674716]
+            [0.160516, 0.525884, 0.864706, 0.525884, 0.864706, 0.543087, 0.160516, 0.543087]
           ],
           "region": "proof-4.2-s11-quotient@p004"
         }

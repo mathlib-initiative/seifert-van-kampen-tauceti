@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 7,
-        "rect": [0.130391, 0.175189, 0.739217, 0.03851]
+        "page": 6,
+        "rect": [0.130391, 0.761995, 0.739217, 0.038668]
       },
       "title": "Invoke gluing of the two local functors",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.774354, 0.175189, 0.869608, 0.175189, 0.869608, 0.194444, 0.774354, 0.194444],
-            [0.130391, 0.194444, 0.597765, 0.194444, 0.597765, 0.213699, 0.130391, 0.213699]
+            [0.774354, 0.761995, 0.869608, 0.761995, 0.869608, 0.781408, 0.774354, 0.781408],
+            [0.130391, 0.781408, 0.597765, 0.781408, 0.597765, 0.800663, 0.130391, 0.800663]
           ],
-          "region": "proof-6.1-s04-glue@p007"
+          "region": "proof-6.1-s04-glue@p006"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [7],
-        "printed": [7]
+        "physical": [6],
+        "printed": [6]
       },
       "provenance": {
         "actor": "agent",

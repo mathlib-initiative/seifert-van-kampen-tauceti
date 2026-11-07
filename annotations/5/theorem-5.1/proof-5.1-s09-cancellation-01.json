@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.401871, 0.136853, 0.196259, 0.023192]
+        "page": 5,
+        "rect": [0.401871, 0.739122, 0.196259, 0.023192]
       },
       "title": "Cancel the basepoint transport",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.401871, 0.136853, 0.59813, 0.136853, 0.59813, 0.160045, 0.401871, 0.160045]
+            [0.401871, 0.739122, 0.59813, 0.739122, 0.59813, 0.762314, 0.401871, 0.762314]
           ],
-          "region": "proof-5.1-s09-cancellation@p006"
+          "region": "proof-5.1-s09-cancellation@p005"
         }
       }
     }
@@ -53,8 +53,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [5],
+        "printed": [5]
       },
       "provenance": {
         "actor": "agent",
