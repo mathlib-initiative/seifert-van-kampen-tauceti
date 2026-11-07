@@ -33,12 +33,13 @@
           "role": "support",
           "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
         }
-      ]
+      ],
+      "label": "Proof"
     },
     {
       "id": "4.2-homotopy",
       "item": "4.2",
-      "title": "Descend to homotopy classes",
+      "title": "Gluing on homotopy classes",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
@@ -61,12 +62,13 @@
           "role": "support",
           "declaration": "TauCeti.FundamentalGroupoid.glue"
         }
-      ]
+      ],
+      "label": "Construction"
     },
     {
       "id": "5.1-basepoint",
       "item": "5.1",
-      "title": "Turn path pieces into based loops",
+      "title": "Generation by based loops",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
@@ -88,13 +90,36 @@
           "title": "Invoked on each local path piece",
           "role": "support",
           "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
+        },
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            143,
+            157
+          ],
+          "sha256": "015b9cfba58a318b8ee5b1ba7041110896a2c2a114fd842f9fc6030b9ce2ba3e",
+          "title": "Closure under inverses and composition",
+          "role": "key",
+          "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
+        },
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            168,
+            179
+          ],
+          "sha256": "c8938789bfc810cfb9312ac42a91907123f9fa35760330917f2e9e8ff1a3c90d",
+          "title": "Cancel the chosen basepoint loop",
+          "role": "key",
+          "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
         }
-      ]
+      ],
+      "label": "Proof"
     },
     {
       "id": "6.1-connect",
       "item": "6.1",
-      "title": "Pass from homomorphisms to functors",
+      "title": "The local functors",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
@@ -116,12 +141,13 @@
           "title": "Turn the homomorphism into a functor",
           "role": "key"
         }
-      ]
+      ],
+      "label": "Construction"
     },
     {
       "id": "6.1-glue",
       "item": "6.1",
-      "title": "Glue on the common intersection",
+      "title": "The induced homomorphism",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
@@ -144,12 +170,13 @@
           "role": "key",
           "declaration": "TauCeti.vanKampenDesc"
         }
-      ]
+      ],
+      "label": "Construction"
     },
     {
       "id": "6.2-restrict",
       "item": "6.2",
-      "title": "Recover the original homomorphisms",
+      "title": "The restriction equations",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
@@ -173,12 +200,13 @@
           "role": "key",
           "declaration": "TauCeti.vanKampenDesc_map_right"
         }
-      ]
+      ],
+      "label": "Proof"
     },
     {
       "id": "6.3-generate",
       "item": "6.3",
-      "title": "Use generation for uniqueness",
+      "title": "Uniqueness from generation",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
@@ -202,12 +230,13 @@
           "role": "support",
           "declaration": "TauCeti.isPushout_fundamentalGroup"
         }
-      ]
+      ],
+      "label": "Proof"
     },
     {
       "id": "6.4-pushout",
       "item": "6.4",
-      "title": "Verify the universal property",
+      "title": "The pushout universal property",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
@@ -220,7 +249,8 @@
           "role": "key",
           "declaration": "TauCeti.isPushout_fundamentalGroup"
         }
-      ]
+      ],
+      "label": "Proof"
     }
   ]
 }

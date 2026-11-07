@@ -39,23 +39,26 @@ The text and the PDF are released under the Apache License, Version 2.0 (`LICENS
 formal-companion copies into `informal/` (`fcmarkers.sty`, `STYLE.md`, `tools/`) is under
 the Apache License 2.0 (`informal/LICENSE-runtime`).
 
-## Selected proof ideas
+## Proofs linked to the Lean
 
-The text includes eight short proof ideas, from path subdivision and homotopy
-grids to the construction and uniqueness of the van Kampen homomorphism.
-Each is a Literature Links `proof_step` passage. Its cards show exact ranges
-of the pinned Lean source, including selected invocations later in the proof.
-The original statements and their numbering are unchanged.
+Selected results now have proofs, and the gluing definitions have explicit
+constructions with their well-definedness checks. The arguments include the
+three-loop factorization in the generation theorem, the homotopy-grid proof
+for gluing, the local functor equations, and the pushout universal property.
+They use the earlier numbered results and omit routine endpoint renaming and
+path reparametrizations.
 
-The project-owned `informal/proofsteps.sty` records the PDF regions;
-`informal/proofsteps.json` records the Lean ranges and a hash of each range.
-The exporter refuses a range whose bytes have changed. It marks these sketches
-as agent-authored and awaiting human review.
+Eight linked passages carry 17 pinned Lean ranges, including selected
+invocations later in the proof. Click a proof or construction to inspect its
+code. The project-owned `informal/proofsteps.sty` records its PDF regions;
+`informal/proofsteps.json` records the Lean ranges and their hashes. The
+exporter rejects changed ranges and records these passages as agent-authored
+and awaiting human review.
 
 To regenerate this revision, build the PDF twice with
 `bash informal/tools/canonical_pdf.sh --source-commit COMMIT build/proof-ideas`,
 copy `build/proof-ideas/a/markers.json` to `informal/markers.json`, and commit it.
-Then export both the statements and proof ideas with the producer checkout:
+Then export both the statements and proofs with the producer checkout:
 
 ```sh
 python3 tools/proof_steps.py \
@@ -68,7 +71,7 @@ python3 tools/proof_steps.py --check
 python3 pdf-overlay/tools/serve.py --build
 ```
 
-In the viewer, click a proof-idea paragraph or its entry beneath the statement
+In the viewer, click a proof or construction or its entry beneath the statement
 to open the Lean ranges.
 
 The v2 PDF URL is the proposed destination for this revision; publishing it

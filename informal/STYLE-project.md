@@ -172,12 +172,14 @@ drafter of section 4 writes two `\fcref`, one on each of those two items. Every 
 four numbers belongs to the item as a whole, so no part of an item carries a number of its
 own.
 
-## Selected proof ideas
+## Proofs and constructions
 
-The maintainer requested selected proof ideas and their uses in the Lean proofs on
-2026-11-06. These project-authored paragraphs override the statements-only and
-no-proof-sketch rules of STYLE.md. They follow their statements in `proofidea`
-environments, whose position markers are defined in `proofsteps.sty`.
-`proofsteps.json` records the pinned Lean ranges; `tools/proof_steps.py` exports
-them as Literature Links `proof_step` annotations. They are sketches of the key
-arguments, not claims to include every step. Lean names remain in annotations.
+The maintainer requested actual proofs, allowing concise proof sketches, on
+2026-11-06. This overrides the statements-only and no-proof-sketch rules of
+STYLE.md. A selected proof must give its construction, the equalities or
+closure arguments it needs, and the deduction of the stated conclusion.
+Use earlier numbered results explicitly; do not replace an argument with a
+statement of its intended strategy. Additional notation is local to the proof
+where it is introduced. The project-owned `proofpassage` environment and
+`proofsteps.json` record the PDF passages and the corresponding pinned Lean
+ranges. Lean names remain in the annotations.

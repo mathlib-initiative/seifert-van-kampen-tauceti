@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export selected proof ideas and invocation ranges alongside the statement annotations.
+"""Export selected proof passages and invocation ranges alongside the statement annotations.
 
 Project adapter for this exposition, using the existing PDF-marker geometry and
 Literature Links format. It does not modify TauCeti or the generated runtimes.
@@ -65,13 +65,13 @@ def proof_boxes(build, config, fc, markers):
     raw = build.aux.read_text()
     actual = []
     for match in re.finditer(r'\\svk@auxstep(?![A-Za-z@])', raw):
-        groups = fc._groups(raw, match.end(), 2)
+        groups = fc._groups(raw, match.end(), 3)
         if groups is None:
-            raise ValueError('malformed proof-idea marker')
+            raise ValueError('malformed proof-passage marker')
         actual.append(tuple(groups[0]))
-    expected = [(s['id'], s['title']) for s in config['steps']]
+    expected = [(s['id'], s['label'], s['title']) for s in config['steps']]
     if actual != expected:
-        raise ValueError('proof-idea markers do not match proofsteps.json in order and title')
+        raise ValueError('proof-passage markers do not match proofsteps.json in order and title')
     geo = markers.Geometry(aux.geometry, fc.pdf_pages(build.pdf))
     params = markers.Params.of(build.config.boxes)
     ink = markers.render_pages(build.pdf, geo, params)
@@ -127,7 +127,7 @@ def check_export(root=ROOT):
                     raise ValueError(f'{key}: invalid PDF box')
     if seen != set(expected):
         raise ValueError('missing proof-step targets')
-    print(f'PASS {len(config["steps"])} proof ideas, {len(seen)} pinned Lean ranges')
+    print(f'PASS {len(config["steps"])} proof passages, {len(seen)} pinned Lean ranges')
 
 
 def main():
@@ -206,7 +206,7 @@ def main():
             subjects = []
             for page, x, y, w, h in region['boxes']:
                 subjects.append({'location': {'page': page, 'rect': [x,y,w,h]},
-                    'title': 'Proof idea: ' + step['title'],
+                    'title': step['label'] + ': ' + step['title'],
                     'extensions': {NS: {'region': f'{iid}@p{page:03d}'}}})
             loc = {'module': target['module'], 'lines': target['lines']}
             if target.get('declaration'):
@@ -241,7 +241,7 @@ def main():
     cache.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(build.pdf, cache / 'svk-tauceti.pdf')
     report = {'pdf_sha256': digest(build.pdf.read_bytes()), 'library': config['library'],
-              'proof_ideas': len(boxes), 'lean_ranges': sum(map(len, targets.values())),
+              'proof_passages': len(boxes), 'lean_ranges': sum(map(len, targets.values())),
               'annotations': manifest['count'], 'steps': boxes, 'confirmed_by_human': False}
     (args.build_dir / 'proof-steps-report.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps({k:v for k,v in report.items() if k!='steps'}, indent=2))

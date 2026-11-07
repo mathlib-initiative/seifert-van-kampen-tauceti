@@ -1,20 +1,21 @@
-% Project-authored proof-idea markers; the generated runtime remains unchanged.
+% Project-authored position markers for proofs and constructions.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{proofsteps}[2026/11/06 Selected proof ideas]
+\ProvidesPackage{proofsteps}[2026/11/06 Linked proofs and constructions]
 \RequirePackage{fcmarkers}
 \makeatletter
-\def\svk@auxstep#1#2{}
-\newenvironment{proofidea}[2]{%
-  \par\addvspace{.6\baselineskip}\begingroup
+\def\svk@auxstep#1#2#3{}
+\newenvironment{proofpassage}[3]{%
+  \par\addvspace{.8\baselineskip}\begingroup
   \edef\svk@marker{fc:proof:#1}%
-  \@ifundefined{svk@seen@#1}{}{\PackageError{proofsteps}{Duplicate proof idea #1}{Use each id once.}}%
+  \@ifundefined{svk@seen@#1}{}{\PackageError{proofsteps}{Duplicate proof passage #1}{Use each id once.}}%
   \expandafter\global\expandafter\let\csname svk@seen@#1\endcsname\@empty
-  \fc@auxwrite{\string\svk@auxstep{#1}{\detokenize{#2}}}%
+  \fc@auxwrite{\string\svk@auxstep{#1}{\detokenize{#2}}{\detokenize{#3}}}%
   \postdisplaypenalty\@M
-  \interlinepenalty\@M
+  \clubpenalty\@M\widowpenalty\@M
   \noindent\fc@above{\svk@marker}\fc@savepos{\svk@marker:start}%
-  \textit{Proof idea: #2.}\enspace\ignorespaces
+  \textit{#2 (#3).}\enspace\ignorespaces
 }{%
+  \unskip\nobreak\hfill\ensuremath{\square}%
   \fc@endmark{\svk@marker}\endgroup\smallskip
 }
 \makeatother
