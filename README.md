@@ -21,7 +21,7 @@ The viewer and validation tools need Python 3.11 or later. From a fresh clone:
 
 ```sh
 python3 pdf-overlay/tools/check_generated.py
-python3 pdf-overlay/tools/serve.py
+python3 pdf-overlay/tools/serve.py --build
 ```
 
 The viewer fetches the published PDF and verifies its SHA-256 before serving it locally.
