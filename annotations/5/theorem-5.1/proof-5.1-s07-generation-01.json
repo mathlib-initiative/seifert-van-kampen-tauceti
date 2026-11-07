@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.279356, 0.739217, 0.03346]
+        "page": 4,
+        "rect": [0.130391, 0.839646, 0.739217, 0.03567]
       },
       "title": "Invoke generation of the fundamental groupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.132842, 0.279356, 0.869608, 0.279356, 0.869608, 0.296086, 0.132842, 0.296086],
-            [0.130391, 0.296086, 0.362613, 0.296086, 0.362613, 0.312816, 0.130391, 0.312816]
+            [0.132842, 0.839646, 0.869608, 0.839646, 0.869608, 0.856534, 0.132842, 0.856534],
+            [0.130391, 0.856534, 0.362613, 0.856534, 0.362613, 0.875316, 0.130391, 0.875316]
           ],
-          "region": "proof-5.1-s07-generation@p005"
+          "region": "proof-5.1-s07-generation@p004"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4],
+        "printed": [4]
       },
       "provenance": {
         "actor": "agent",

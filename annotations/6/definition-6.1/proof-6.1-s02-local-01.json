@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.386298, 0.182449, 0.314613, 0.017361]
+        "page": 5,
+        "rect": [0.386298, 0.710227, 0.314613, 0.017361]
       },
       "title": "Invoke the functor construction from a homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.386298, 0.182449, 0.700911, 0.182449, 0.700911, 0.19981, 0.386298, 0.19981]
+            [0.386298, 0.710227, 0.700911, 0.710227, 0.700911, 0.727588, 0.386298, 0.727588]
           ],
-          "region": "proof-6.1-s02-local@p006"
+          "region": "proof-6.1-s02-local@p005"
         }
       }
     }
@@ -53,8 +53,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [5],
+        "printed": [5]
       },
       "provenance": {
         "actor": "agent",
