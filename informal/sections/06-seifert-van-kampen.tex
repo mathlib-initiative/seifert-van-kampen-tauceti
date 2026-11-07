@@ -43,8 +43,8 @@ functor; the argument for $F_B$ is identical.
 \end{proofpassage}
 
 \begin{proofpassage}{6.1-glue}{Construction}{The induced homomorphism}
-Write $j_A:\fgrp{C}{x}\longrightarrow\fgrp{A}{x}$ and
-$j_B:\fgrp{C}{x}\longrightarrow\fgrp{B}{x}$ for the inclusion-induced maps.
+Let $j_A$ and $j_B$ be the maps from $\fgrp{C}{x}$ induced by the
+inclusions of $C$ into $A$ and $B$, respectively.
 For a morphism $g:y\longrightarrow z$ in $\fgpd C$, the loop
 $\eta=\rho_z^{-1}\circ g\circ\rho_y$ is based at $x$ in $C$.
 The choices in the preceding construction and the compatibility of the
@@ -146,10 +146,12 @@ whose homomorphisms are induced by the inclusions is a pushout square.
 \begin{proofpassage}{6.4-pushout}{Proof}{The pushout universal property}
 Write $C=A\cap B$, and denote the inclusion-induced maps by
 \[
- j_A:\fgrp{C}{x}\longrightarrow\fgrp{A}{x},\quad
- j_B:\fgrp{C}{x}\longrightarrow\fgrp{B}{x},\quad
- p_A:\fgrp{A}{x}\longrightarrow\fgrp{X}{x},\quad
- p_B:\fgrp{B}{x}\longrightarrow\fgrp{X}{x}.
+\begin{aligned}
+ j_A&:\fgrp{C}{x}\longrightarrow\fgrp{A}{x},&
+ j_B&:\fgrp{C}{x}\longrightarrow\fgrp{B}{x},\\
+ p_A&:\fgrp{A}{x}\longrightarrow\fgrp{X}{x},&
+ p_B&:\fgrp{B}{x}\longrightarrow\fgrp{X}{x}.
+\end{aligned}
 \]
 For a loop in $C$, either composite inclusion gives the same loop in $X$.
 Passing to classes proves $p_A\circ j_A=p_B\circ j_B$, so the square
