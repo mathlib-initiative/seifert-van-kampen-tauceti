@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "5bda2b9be5dcd5e167abc909264021ad8b6d2cb2"
+    "commit": "bbdd3eb84b3d5ae1436ce7e6a58de6a6a540e52c"
   },
   "format": {
     "package": "literature-links",
@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "e00bf4604ea42d6e67247448c23d5e90121ba368763bf283bf4fc8e49b18a210"
+      "sha256": "4a6e0433c047769691b6507b6ca35c866143fc134261c6a1aab8390b1ed1215a"
     },
     "count": 120,
     "directory": "annotations",
     "export": {
-      "commit": "8bd4833320686b3dbe36c11435639b3605baa466",
+      "commit": "93fe31579540f30c877f5f9fdcc4228c6cfb083d",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -197,9 +197,9 @@
       },
       {
         "path": "tools/proof_steps.py",
-        "sha256": "680f082d99ddf50a6b8c27fd5e9a5fffa7da1eea6a7cb760776f8a037604a8e4"
+        "sha256": "b05ab792d689607b856420cb7e22d047bc9b04530b35d11e7bbd950a0f1b82df"
       }
     ],
-    "manifest_sha256": "9c550d3efdc43a11958d269baf7781b9c91ccf738c436a126cdc4db3dff0f4c4"
+    "manifest_sha256": "118547bd7445b8fd80a9582b9f9f9359f43b989941deea90074c67d83c723730"
   }
 }

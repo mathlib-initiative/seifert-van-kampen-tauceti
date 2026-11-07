@@ -21,7 +21,6 @@
         "declaration": "CategoryTheory.IsPushout",
         "module": "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Defs"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,8 +28,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "fragment": "CategoryTheory.IsPushout",
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Limits/Shapes/Pullback/IsPullback/Defs.html"
+            "fragment": "L78",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/CategoryTheory/Limits/Shapes/Pullback/IsPullback/Defs.lean"
+          },
+          "snippet": {
+            "line": 78,
+            "text": "structure IsPushout {Z X Y P : C} (f : Z ⟶ X) (g : Z ⟶ Y) (inl : X ⟶ P) (inr : Y ⟶ P) : Prop\n    extends CommSq f g inl inr where\n  /-- the pushout cocone is a colimit -/\n  isColimit' : Nonempty (IsColimit (PushoutCocone.mk _ _ w))"
           }
         }
       }

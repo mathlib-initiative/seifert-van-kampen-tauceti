@@ -33,7 +33,6 @@
         "declaration": "PathConnectedSpace",
         "module": "Mathlib.Topology.Connected.PathConnected"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -41,7 +40,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Connected/PathConnected.html"
+            "fragment": "L577",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Connected/PathConnected.lean"
+          },
+          "snippet": {
+            "line": 577,
+            "text": "class PathConnectedSpace (X : Type*) [TopologicalSpace X] : Prop where\n  /-- A path-connected space must be nonempty. -/\n  nonempty : Nonempty X\n  /-- Any two points in a path-connected space must be joined by a continuous path. -/\n  joined : ∀ x y : X, Joined x y"
           }
         }
       }

@@ -17,6 +17,9 @@
   ],
   "object": [
     {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
         "declaration": "Path.Homotopic.Quotient.cast_mem_arrows_iff",
         "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic"
@@ -30,7 +33,8 @@
           },
           "destination": {
             "fragment": "L50",
-            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean"
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+            "resolution": "exact"
           },
           "snippet": {
             "line": 50,

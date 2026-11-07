@@ -21,7 +21,6 @@
         "declaration": "ContinuousMap",
         "module": "Mathlib.Topology.ContinuousMap.Defs"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,7 +28,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousMap/Defs.html"
+            "fragment": "L32",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/ContinuousMap/Defs.lean"
+          },
+          "snippet": {
+            "line": 32,
+            "text": "structure ContinuousMap (X Y : Type*) [TopologicalSpace X] [TopologicalSpace Y] where\n  /-- The function `X → Y` -/\n  protected toFun : X → Y\n  /-- Proposition that `toFun` is continuous -/\n  protected continuous_toFun : Continuous toFun := by fun_prop"
           }
         }
       }

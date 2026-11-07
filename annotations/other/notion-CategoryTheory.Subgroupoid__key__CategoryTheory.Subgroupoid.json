@@ -21,7 +21,6 @@
         "declaration": "CategoryTheory.Subgroupoid",
         "module": "Mathlib.CategoryTheory.Groupoid.Subgroupoid"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,8 +28,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "fragment": "CategoryTheory.Subgroupoid",
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Groupoid/Subgroupoid.html"
+            "fragment": "L72",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/CategoryTheory/Groupoid/Subgroupoid.lean"
+          },
+          "snippet": {
+            "line": 72,
+            "text": "structure Subgroupoid (C : Type u) [Groupoid C] where\n  /-- The arrow choice for each pair of vertices -/\n  arrows : ∀ c d : C, Set (c ⟶ d)\n  protected inv : ∀ {c d} {p : c ⟶ d}, p ∈ arrows c d → Groupoid.inv p ∈ arrows d c\n  protected mul : ∀ {c d e} {p}, p ∈ arrows c d → ∀ {q}, q ∈ arrows d e → p ≫ q ∈ arrows c e"
           }
         }
       }

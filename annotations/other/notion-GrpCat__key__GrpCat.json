@@ -21,7 +21,6 @@
         "declaration": "GrpCat",
         "module": "Mathlib.Algebra.Category.Grp.Basic"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,7 +28,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Category/Grp/Basic.html"
+            "fragment": "L39",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Category/Grp/Basic.lean"
+          },
+          "snippet": {
+            "line": 39,
+            "text": "structure GrpCat : Type (u + 1) where\n  /-- The underlying type. -/\n  (carrier : Type u)\n  [str : Group carrier]"
           }
         }
       }

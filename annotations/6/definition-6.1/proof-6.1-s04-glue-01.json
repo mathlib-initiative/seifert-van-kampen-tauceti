@@ -23,6 +23,9 @@
   ],
   "object": [
     {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
         "lines": [236, 239],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"

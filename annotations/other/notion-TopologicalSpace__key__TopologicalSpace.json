@@ -21,7 +21,6 @@
         "declaration": "TopologicalSpace",
         "module": "Mathlib.Topology.Defs.Basic"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,7 +28,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Defs/Basic.html"
+            "fragment": "L71",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Defs/Basic.lean"
+          },
+          "snippet": {
+            "line": 71,
+            "text": "class TopologicalSpace (X : Type u) where\n  /-- A predicate saying that a set is an open set. Use `IsOpen` in the root namespace instead. -/\n  protected IsOpen : Set X → Prop\n  /-- The set representing the whole space is an open set.\n  Use `isOpen_univ` in the root namespace instead. -/\n  protected isOpen_univ : IsOpen univ\n  /-- The intersection of two open sets is an open set. Use `IsOpen.inter` instead. -/\n  protected isOpen_inter : ∀ s t, IsOpen s → IsOpen t → IsOpen (s ∩ t)\n  /-- The union of a family of open sets is an open set.\n  Use `isOpen_sUnion` in the root namespace instead. -/\n  protected isOpen_sUnion : ∀ s, (∀ t ∈ s, IsOpen t) → IsOpen (⋃₀ s)"
           }
         }
       }

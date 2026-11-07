@@ -21,7 +21,6 @@
         "declaration": "Monoid",
         "module": "Mathlib.Algebra.Group.Monoid"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,7 +28,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Group/Monoid.html"
+            "fragment": "L388",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Group/Monoid.lean"
+          },
+          "snippet": {
+            "line": 388,
+            "text": "class Monoid (M : Type*) extends One M, Mul M, Semigroup M, MulOneClass M, NPow M where\n  npow := npowRecAuto\n  /-- Raising to the power `(0 : ℕ)` gives `1`. -/\n  protected npow_zero (x : M) : x ^ 0 = 1 := by intros; rfl\n  /-- Raising to the power `(n + 1 : ℕ)` behaves as expected. -/\n  protected npow_succ (n : ℕ) (x : M) : x ^ (n + 1) = x ^ n * x := by intros; rfl"
           }
         }
       }

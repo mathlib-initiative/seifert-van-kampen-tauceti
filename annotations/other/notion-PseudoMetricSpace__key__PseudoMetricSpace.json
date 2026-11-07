@@ -21,7 +21,6 @@
         "declaration": "PseudoMetricSpace",
         "module": "Mathlib.Topology.MetricSpace.Pseudo.Defs"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,7 +28,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Pseudo/Defs.html"
+            "fragment": "L140",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/MetricSpace/Pseudo/Defs.lean"
+          },
+          "snippet": {
+            "line": 140,
+            "text": "class PseudoMetricSpace (α : Type u) : Type u extends Dist α where\n  dist_self : ∀ x : α, dist x x = 0\n  dist_comm : ∀ x y : α, dist x y = dist y x\n  dist_triangle : ∀ x y z : α, dist x z ≤ dist x y + dist y z\n  /-- Extended distance between two points -/\n  edist : α → α → ℝ≥0∞ := fun x y => ENNReal.ofNNReal (.mk (dist x y) (dist_nonneg' _ ‹_› ‹_› ‹_›))\n  edist_dist : ∀ x y : α, edist x y = ENNReal.ofReal (dist x y) := by\n    intro x y; exact ENNReal.coe_nnreal_eq _\n  toUniformSpace : UniformSpace α := .ofDist dist dist_self dist_comm dist_triangle\n  uniformity_dist : 𝓤 α = ⨅ ε > 0, 𝓟 { p : α × α | dist p.1 p.2 < ε } := by intros; rfl\n  toBornology : Bornology α := Bornology.ofDist dist dist_comm dist_triangle\n  cobounded_sets : (Bornology.cobounded α).sets =\n    { s | ∃ C : ℝ, ∀ x ∈ sᶜ, ∀ y ∈ sᶜ, dist x y ≤ C } := by intros; rfl"
           }
         }
       }

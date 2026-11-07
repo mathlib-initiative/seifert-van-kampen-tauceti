@@ -21,7 +21,6 @@
         "declaration": "FundamentalGroupoid.map",
         "module": "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,8 +28,12 @@
             "kind": "def"
           },
           "destination": {
-            "fragment": "FundamentalGroupoid.map",
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.html"
+            "fragment": "L301",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.lean"
+          },
+          "snippet": {
+            "line": 301,
+            "text": "@[simps] def map (f : C(X, Y)) : FundamentalGroupoid X ⥤ FundamentalGroupoid Y where\n  obj x := ⟨f x.as⟩\n  map p := p.map f\n  map_id _ := rfl\n  map_comp := by rintro _ _ _ ⟨p⟩ ⟨q⟩; congrm Quotient.mk'' $(p.map_trans q f.continuous)"
           }
         }
       }

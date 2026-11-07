@@ -21,7 +21,6 @@
         "declaration": "LinearOrder",
         "module": "Mathlib.Order.Defs.LinearOrder"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,7 +28,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/Defs/LinearOrder.html"
+            "fragment": "L60",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Order/Defs/LinearOrder.lean"
+          },
+          "snippet": {
+            "line": 60,
+            "text": "class LinearOrder (α : Type*) extends PartialOrder α, Min α, Max α, Ord α where\n  /-- A linear order is total. -/\n  protected le_total (a b : α) : a ≤ b ∨ b ≤ a\n  /-- In a linearly ordered type, we assume the order relations are all decidable. -/\n  toDecidableLE : DecidableLE α\n  /-- In a linearly ordered type, we assume the order relations are all decidable. -/\n  toDecidableEq : DecidableEq α := @decidableEqOfDecidableLE _ _ toDecidableLE\n  /-- In a linearly ordered type, we assume the order relations are all decidable. -/\n  toDecidableLT : DecidableLT α := @decidableLTOfDecidableLE _ _ toDecidableLE\n  min := fun a b => if a ≤ b then a else b\n  max := fun a b => if a ≤ b then b else a\n  /-- The minimum function is equivalent to the one you get from `minOfLe`. -/\n  protected min_def : ∀ a b, min a b = if a ≤ b then a else b := by intros; rfl\n  /-- The minimum function is equivalent to the one you get from `maxOfLe`. -/\n  protected max_def : ∀ a b, max a b = if a ≤ b then b else a := by intros; rfl\n  compare a b := compareOfLessAndEq a b\n  /-- Comparison via `compare` is equal to the canonical comparison given decidable `<` and `=`. -/\n  compare_eq_compareOfLessAndEq : ∀ a b, compare a b = compareOfLessAndEq a b := by\n    compareOfLessAndEq_rfl"
           }
         }
       }

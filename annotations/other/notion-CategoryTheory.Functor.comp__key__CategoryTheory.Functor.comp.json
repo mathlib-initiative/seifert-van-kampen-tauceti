@@ -21,7 +21,6 @@
         "declaration": "CategoryTheory.Functor.comp",
         "module": "Mathlib.CategoryTheory.Functor.Basic"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,8 +28,12 @@
             "kind": "def"
           },
           "destination": {
-            "fragment": "CategoryTheory.Functor.comp",
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Functor/Basic.html"
+            "fragment": "L119",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/CategoryTheory/Functor/Basic.lean"
+          },
+          "snippet": {
+            "line": 119,
+            "text": "def comp (F : C ⥤ D) (G : D ⥤ E) : C ⥤ E where\n  obj X := G.obj (F.obj X)\n  map f := G.map (F.map f)"
           }
         }
       }

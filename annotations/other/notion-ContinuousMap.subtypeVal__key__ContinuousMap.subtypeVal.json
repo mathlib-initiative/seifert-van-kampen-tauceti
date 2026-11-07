@@ -21,7 +21,6 @@
         "declaration": "ContinuousMap.subtypeVal",
         "module": "Mathlib.Topology.ContinuousMap.Basic"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,8 +28,12 @@
             "kind": "def"
           },
           "destination": {
-            "fragment": "ContinuousMap.subtypeVal",
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousMap/Basic.html"
+            "fragment": "L415",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/ContinuousMap/Basic.lean"
+          },
+          "snippet": {
+            "line": 415,
+            "text": "def subtypeVal (s : Set α) : C(s, α) where\n  toFun := Subtype.val\n  continuous_toFun := continuous_subtype_val"
           }
         }
       }

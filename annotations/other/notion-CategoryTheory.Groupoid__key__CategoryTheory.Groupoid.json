@@ -21,7 +21,6 @@
         "declaration": "CategoryTheory.Groupoid",
         "module": "Mathlib.CategoryTheory.Groupoid"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,8 +28,12 @@
             "kind": "inductive"
           },
           "destination": {
-            "fragment": "CategoryTheory.Groupoid",
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Groupoid.html"
+            "fragment": "L40",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/CategoryTheory/Groupoid.lean"
+          },
+          "snippet": {
+            "line": 40,
+            "text": "class Groupoid (obj : Type u) : Type max u (v + 1) extends Category.{v} obj where\n  /-- The inverse morphism -/\n  inv : ∀ {X Y : obj}, (X ⟶ Y) → (Y ⟶ X)\n  /-- `inv f` composed `f` is the identity -/\n  inv_comp : ∀ {X Y : obj} (f : X ⟶ Y), comp (inv f) f = id Y := by cat_disch\n  /-- `f` composed with `inv f` is the identity -/\n  comp_inv : ∀ {X Y : obj} (f : X ⟶ Y), comp f (inv f) = id X := by cat_disch"
           }
         }
       }

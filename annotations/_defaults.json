@@ -21,8 +21,9 @@
   },
   "object": {
     "type": "lean",
-    "uri": "https://github.com/TauCetiProject/TauCeti",
-    "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+    "uri": "https://github.com/leanprover-community/mathlib4",
+    "version": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+    "role": "key",
     "extensions": {
       "org.mathlib-initiative.formal-companion.overlay": {
         "destination": {

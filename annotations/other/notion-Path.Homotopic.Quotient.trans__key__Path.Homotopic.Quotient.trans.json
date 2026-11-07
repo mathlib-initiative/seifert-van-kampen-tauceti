@@ -21,7 +21,6 @@
         "declaration": "Path.Homotopic.Quotient.trans",
         "module": "Mathlib.Topology.Homotopy.Path"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -29,8 +28,12 @@
             "kind": "def"
           },
           "destination": {
-            "fragment": "Path.Homotopic.Quotient.trans",
-            "href": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Homotopy/Path.html"
+            "fragment": "L387",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Homotopy/Path.lean"
+          },
+          "snippet": {
+            "line": 387,
+            "text": "def trans (P₀ : Path.Homotopic.Quotient x₀ x₁) (P₁ : Path.Homotopic.Quotient x₁ x₂) :\n    Path.Homotopic.Quotient x₀ x₂ :=\n  Quotient.map₂ Path.trans (fun (_ : Path x₀ x₁) _ hp (_ : Path x₁ x₂) _ hq => hcomp hp hq) P₀ P₁"
           }
         }
       }
