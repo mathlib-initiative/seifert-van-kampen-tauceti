@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "4ea5ebb6b4497a21177e699aab3acdbf9d33ce778060f08b8d0fc2e4169a72c0"
+      "sha256": "87e50e4bdf3264ad9946c239a99ca3db3a4800b18ed03811b2398fddee72f1dc"
     },
     "count": 100,
     "directory": "annotations",
     "export": {
-      "commit": "19aaea8b7eb0f7e240b9a122c015bce81a068495",
+      "commit": "00b21fec8fa143a93f2508898048af23a2075cc7",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -197,9 +197,9 @@
       },
       {
         "path": "tools/proof_steps.py",
-        "sha256": "90803cee7e39a468f0d747541cbae32ef1dffdf5db0d73db2bdd553d6c04fce5"
+        "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "8f987c5a27f35d2a405314c5dbeaecfdd0d620fc7ea8f62cf4f5f09fba30146a"
+    "manifest_sha256": "574a6a4c5b18a9c348e0e34c54457bb88e34d1971ae8d3165d4675aaf2744da4"
   }
 }
