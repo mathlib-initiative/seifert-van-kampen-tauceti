@@ -46,6 +46,14 @@ same letter for a different object when it introduces that object explicitly.
 State every extra assumption where it is used: the pseudometric assumption in
 Lemma 1.1, for example, is local to that lemma.
 
+## Assumed background
+
+Assume basic familiarity with point-set topology. Do not explain neighborhoods,
+interiors, compactness, subspace topologies, set membership or the range of a map.
+Introduce notation when it is needed, and keep conventions that affect the
+mathematics, such as the nonemptiness of path-connected spaces and subsets.
+Do not retain introductory prose solely to create a notion annotation.
+
 ## Standing hypotheses
 
 One row per key of `hypotheses.json`: the macro, the words it prints, and the Lean binder
@@ -70,7 +78,7 @@ the whole space, so it too is stated in words.
 There is no separate conventions section. Give each section a short local setup,
 and explain specialized notation next to its first use:
 
-- Section 1: subsets and neighborhoods, subdivision points, paths and subpaths,
+- Section 1: the space and family of subsets, subdivision points, paths and subpaths,
   then homotopy classes and endpoint renaming.
 - Section 2: fundamental groupoids and induced functors, subgroupoids, then the
   fundamental group at a basepoint and its induced homomorphism.
@@ -91,13 +99,12 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep every existing notion link once. The constants are these 54,
+with its explanation; keep each retained notion link once. The constants are these 49,
 each copied from `declarations.json` (all of them rows of its `references`, the constants
 of Mathlib and of Lean's prelude that the library's statements are built from):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
-`instTopologicalSpaceSubtype`, `Set.Elem`, `ContinuousMap.subtypeVal`,
-`ContinuousMap.inclusion`, `interior`, `nhds`, `unitInterval`, `Path`, `Set.range`,
+`ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
 `Path.trans`, `Path.subpath`, `Path.map`, `Path.cast`, `IsCompact`, `IsPathConnected`,
 `PathConnectedSpace`, `Path.Homotopic.Quotient`, `Path.Homotopic.Quotient.cast`,
 `Path.Homotopic.Quotient.trans`, `FundamentalGroupoid`, `FundamentalGroupoid.map`,

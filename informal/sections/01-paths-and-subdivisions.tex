@@ -1,11 +1,8 @@
 Let $S$ be a subset of a \fcnotion{TopologicalSpace}{topological space} $X$,
-and let $(U_i)_{i\in I}$ be a family of subsets of $X$.  A
-\fcnotion{nhds}{neighborhood} of a point is a set containing that point in its
-\fcnotion{interior}{interior}.  We first use a consequence of
-\fcnotion{IsCompact}{compactness}.  When $X$ carries a
-\fcnotion{PseudoMetricSpace}{pseudometric},
-\fcnotion{Metric.ball}{$\ball{x}{\rho}$} denotes the open ball of radius
-$\rho$ about $x$.
+and let $(U_i)_{i\in I}$ be a family of subsets of $X$.  We first use a
+consequence of \fcnotion{IsCompact}{compactness}.  For a
+\fcnotion{PseudoMetricSpace}{pseudometric} on $X$, write
+\fcnotion{Metric.ball}{$\ball{x}{\rho}$} for an open ball.
 
 \begin{lemma}[id=1.1]{A Lebesgue number for a family of neighborhoods}
 Suppose that $X$ is a pseudometric space, that $S$ is compact and that each
@@ -31,14 +28,11 @@ $d$ is the smaller of $b$ and $a + nd$.
 \leanref{Set.Icc.coe_addNSMul}
 \end{lemma}
 
-Give $S$ \fcnotion{instTopologicalSpaceSubtype}{the topology inherited from $X$},
-and regard \fcnotion{Set.Elem}{points of $S$} as points of $X$ lying in $S$.
 Write \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}$} for the inclusion
 $S\longrightarrow X$.  A \fcnotion{Path}{path} from $x$ to $y$ in $X$ is a
 \fcnotion{ContinuousMap}{continuous map} from the unit interval
 \fcnotion{unitInterval}{$\uI$} of \fcnotion{Real}{real numbers} to $X$, with values
-$x$ at $0$ and $y$ at $1$.  Points of $\uI$ are called parameters, and the
-\fcnotion{Set.range}{range} of a path is the set of its values.
+$x$ at $0$ and $y$ at $1$.  Path parameters lie in $\uI$.
 
 \begin{definition}[id=1.3]{The restriction of a path to a subspace}
 Let $x$ and $y$ be points of $S$, and let $\gamma$ be a path in $X$ from $x$ to
