@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "83f82eff28c8f5012b597bcbb9ca3b5d0a9f175c",
- "pdf_sha256": "9fe6b844e8b49f1811c61dc70fc49cfbb41d097d55da79c6aeb4c3fbdcf4b4f2",
+ "source_commit": "88af225de52aba41c69ff7311ed44b9f6bcc91b2",
+ "pdf_sha256": "563366678aac211dc9f0ee309975304dd6ed717a6ca0f4d86344001c3f1a77ec",
  "pages": 7,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -87,7 +87,7 @@
     "TauCeti.Groupoid.functorOfEndHom_map"
    ],
    "boxes": [
-    [2, 0.130391, 0.186869, 0.739217, 0.075126]
+    [2, 0.130391, 0.173295, 0.739217, 0.075126]
    ]
   },
   {
@@ -102,7 +102,7 @@
     "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
    ],
    "boxes": [
-    [2, 0.130391, 0.507891, 0.739217, 0.055556]
+    [2, 0.130391, 0.496843, 0.739217, 0.055556]
    ]
   },
   {
@@ -117,7 +117,7 @@
     "TauCeti.FundamentalGroupoid.glue"
    ],
    "boxes": [
-    [2, 0.130391, 0.794192, 0.739217, 0.10827]
+    [2, 0.130391, 0.789773, 0.739217, 0.112689]
    ]
   },
   {
@@ -499,7 +499,7 @@
    "label": "notion:19",
    "number": "n19",
    "boxes": [
-    [2, 0.197042, 0.146149, 0.071326, 0.018624]
+    [2, 0.197652, 0.147727, 0.071326, 0.020202]
    ]
   },
   {
@@ -509,126 +509,116 @@
    "label": "notion:20",
    "number": "n20",
    "boxes": [
-    [2, 0.462312, 0.146149, 0.055581, 0.018624]
-   ]
-  },
-  {
-   "id": "notion:MonoidHom",
-   "notion": "MonoidHom",
-   "words": "Homomorphisms of monoids",
-   "label": "notion:21",
-   "number": "n21",
-   "boxes": [
-    [2, 0.528214, 0.146149, 0.22302, 0.018624]
+    [2, 0.464387, 0.147727, 0.055581, 0.020202]
    ]
   },
   {
    "id": "notion:FundamentalGroupoid",
    "notion": "FundamentalGroupoid",
    "words": "$\\fgpd{X}$",
-   "label": "notion:22",
-   "number": "n22",
+   "label": "notion:21",
+   "number": "n21",
    "boxes": [
-    [2, 0.811123, 0.3125, 0.053583, 0.019571]
+    [2, 0.811123, 0.299558, 0.053583, 0.019571]
    ]
   },
   {
    "id": "notion:ContinuousMap",
    "notion": "ContinuousMap",
    "words": "continuous map",
-   "label": "notion:23",
-   "number": "n23",
+   "label": "notion:22",
+   "number": "n22",
    "boxes": [
-    [2, 0.343654, 0.364899, 0.126428, 0.017992]
+    [2, 0.343654, 0.351799, 0.126428, 0.01815]
    ]
   },
   {
    "id": "notion:CategoryTheory.Functor",
    "notion": "CategoryTheory.Functor",
    "words": "functor",
-   "label": "notion:24",
-   "number": "n24",
+   "label": "notion:23",
+   "number": "n23",
    "boxes": [
-    [2, 0.806255, 0.364899, 0.058452, 0.017992]
+    [2, 0.806255, 0.351799, 0.058452, 0.01815]
    ]
   },
   {
    "id": "notion:FundamentalGroupoid.map",
    "notion": "FundamentalGroupoid.map",
    "words": "$\\fgpd{f}$",
-   "label": "notion:25",
-   "number": "n25",
+   "label": "notion:24",
+   "number": "n24",
    "boxes": [
-    [2, 0.132842, 0.382891, 0.048063, 0.017677]
+    [2, 0.132842, 0.369949, 0.048063, 0.017677]
    ]
   },
   {
    "id": "notion:Path.map",
    "notion": "Path.map",
    "words": "$f\\circ\\gamma$",
-   "label": "notion:26",
-   "number": "n26",
+   "label": "notion:25",
+   "number": "n25",
    "boxes": [
-    [2, 0.153955, 0.400568, 0.040151, 0.016572]
+    [2, 0.153955, 0.387626, 0.040151, 0.016572]
    ]
   },
   {
    "id": "notion:CategoryTheory.Subgroupoid",
    "notion": "CategoryTheory.Subgroupoid",
    "words": "subgroupoid",
-   "label": "notion:27",
-   "number": "n27",
+   "label": "notion:26",
+   "number": "n26",
    "boxes": [
-    [2, 0.179848, 0.41714, 0.098162, 0.017677]
+    [2, 0.179848, 0.404198, 0.098162, 0.017519]
    ]
   },
   {
    "id": "notion:CategoryTheory.Subgroupoid.im",
    "notion": "CategoryTheory.Subgroupoid.im",
    "words": "$\\im\\fgpd{\\incl{U_i}}$",
-   "label": "notion:28",
-   "number": "n28",
+   "label": "notion:27",
+   "number": "n27",
    "boxes": [
-    [2, 0.5086, 0.451389, 0.081976, 0.017519]
+    [2, 0.5086, 0.438289, 0.081976, 0.017677]
    ]
   },
   {
    "id": "notion:iSup",
    "notion": "iSup",
    "words": "the smallest subgroupoid containing them",
-   "label": "notion:29",
-   "number": "n29",
+   "label": "notion:28",
+   "number": "n28",
    "boxes": [
-    [2, 0.584041, 0.468908, 0.285568, 0.016888],
-    [2, 0.130391, 0.485795, 0.044513, 0.019255]
+    [2, 0.584041, 0.455966, 0.285568, 0.016888],
+    [2, 0.130391, 0.472854, 0.044513, 0.019255]
    ]
   },
   {
    "id": "notion:ContinuousMap.inclusion",
    "notion": "ContinuousMap.inclusion",
    "words": "$\\inclin{S}{T}$",
-   "label": "notion:30",
-   "number": "n30",
+   "label": "notion:29",
+   "number": "n29",
    "boxes": [
-    [2, 0.561385, 0.753472, 0.03177, 0.019097]
+    [2, 0.561385, 0.747159, 0.03177, 0.019097]
    ]
   },
   {
    "id": "notion:CategoryTheory.Functor.comp",
    "notion": "CategoryTheory.Functor.comp",
    "words": "$F\\circ G$",
-   "label": "notion:31",
-   "number": "n31",
+   "label": "notion:30",
+   "number": "n30",
    "boxes": [
-    [2, 0.232465, 0.772569, 0.047239, 0.01815]
+    [2, 0.232465, 0.766256, 0.047239, 0.01815]
    ]
   },
   {
    "id": "notion:FundamentalGroup",
    "notion": "FundamentalGroup",
    "words": "fundamental group",
-   "label": "notion:32",
-   "number": "n32",
+   "label": "notion:31",
+   "number": "n31",
    "boxes": [
     [4, 0.765208, 0.19476, 0.104401, 0.019255],
     [4, 0.130391, 0.214015, 0.049514, 0.017361]
@@ -638,10 +628,20 @@
    "id": "notion:FundamentalGroup.fromPath",
    "notion": "FundamentalGroup.fromPath",
    "words": "class of a loop at $x$",
+   "label": "notion:32",
+   "number": "n32",
+   "boxes": [
+    [4, 0.539705, 0.231376, 0.155946, 0.016572]
+   ]
+  },
+  {
+   "id": "notion:MonoidHom",
+   "notion": "MonoidHom",
+   "words": "homomorphism",
    "label": "notion:33",
    "number": "n33",
    "boxes": [
-    [4, 0.539705, 0.231376, 0.155946, 0.016572]
+    [4, 0.536914, 0.247948, 0.122423, 0.017519]
    ]
   },
   {
