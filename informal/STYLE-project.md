@@ -103,7 +103,7 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep each retained notion link once. The constants are these 49,
+with its explanation; keep each retained notion link once. The constants are these 48,
 each copied from `declarations.json` (all of them rows of its `references`, the constants
 of Mathlib and of Lean's prelude that the library's statements are built from):
 
@@ -119,7 +119,7 @@ of Mathlib and of Lean's prelude that the library's statements are built from):
 `CategoryTheory.SingleObj`, `MonoidHom`, `CategoryTheory.Functor`,
 `CategoryTheory.Functor.comp`, `MonoidHom.comp`,
 `CategoryTheory.IsPushout`, `GrpCat`, `Nat`,
-`Monotone`, `Real`, `AddCommGroup`, `LinearOrder`, `IsOrderedAddMonoid`, `Set.Icc`,
+`Monotone`, `AddCommGroup`, `LinearOrder`, `IsOrderedAddMonoid`, `Set.Icc`,
 `Set.Icc.addNSMul`.
 
 The constants the items state are marked nowhere: an item records its declaration with

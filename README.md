@@ -94,7 +94,7 @@ python3 pdf-overlay/tools/check_generated.py
 python3 pdf-overlay/tools/serve.py --build-only
 ```
 
-This builds only the 32 Mathlib modules used by the cards and combines their
+This builds only the Mathlib modules used by the cards and combines their
 hovers with the TauCeti pages. It checks source revisions before building and
 requires every Mathlib card to have a matching hover statement. Separate page
 builds have separate hover identifiers; the exporter remaps them when combining
