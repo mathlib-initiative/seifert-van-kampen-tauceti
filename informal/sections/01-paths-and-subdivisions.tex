@@ -1,14 +1,12 @@
-Let $S$ be a subset of a \fcnotion{TopologicalSpace}{topological space} $X$,
-and let $(U_i)_{i\in I}$ be a family of subsets of $X$.  We first use a
-consequence of \fcnotion{IsCompact}{compactness}.  For a
-\fcnotion{PseudoMetricSpace}{pseudometric} on $X$, write
-\fcnotion{Metric.ball}{$\ball{x}{\rho}$} for an open ball.
+We begin with a \fcnotion{IsCompact}{compactness} lemma for
+\fcnotion{PseudoMetricSpace}{pseudometric spaces};
+\fcnotion{Metric.ball}{$\ball{z}{\rho}$} denotes an open ball.
 
 \begin{lemma}[id=1.1]{A Lebesgue number for a family of neighborhoods}
-Suppose that $X$ is a pseudometric space, that $S$ is compact and that each
-point of $S$ has some $U_i$ as a neighborhood.  Then there is a positive radius
-$\rho$ such that for each point $x$ of $S$ some $U_i$ contains
-$\ball{x}{\rho}$.
+Let $Z$ be a pseudometric space, $K$ a compact subset of $Z$, and
+$(V_j)_{j\in J}$ a family of subsets of $Z$.  If each point of $K$ has some
+$V_j$ as a neighborhood, then there is a positive radius $\rho$ such that for
+each $z\in K$ some $V_j$ contains $\ball{z}{\rho}$.
 \leanref{TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds}
 \end{lemma}
 
@@ -28,6 +26,7 @@ $d$ is the smaller of $b$ and $a + nd$.
 \leanref{Set.Icc.coe_addNSMul}
 \end{lemma}
 
+Let $S$ be a subset of a \fcnotion{TopologicalSpace}{topological space} $X$.
 Write \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}$} for the inclusion
 $S\longrightarrow X$.  A \fcnotion{Path}{path} from $x$ to $y$ in $X$ is a
 \fcnotion{ContinuousMap}{continuous map} from the unit interval
@@ -49,9 +48,9 @@ $y$ every value of which lies in $S$.  Then $\incl{S} \circ \codres{\gamma}{S} =
 \leanref{Path.map_codRestrict}
 \end{lemma}
 
-For composable paths $\gamma$ and $\delta$, the concatenation
-\fcnotion{Path.trans}{$\gamma\ptrans\delta$} traverses $\gamma$ and then
-$\delta$, each at twice its original speed.
+For composable paths $\gamma$ and $\delta$, write
+\fcnotion{Path.trans}{$\gamma\ptrans\delta$} for their concatenation, with
+$\gamma$ traversed first.
 
 \begin{lemma}[id=1.5]{The values of a concatenation of paths}
 Let $\gamma$ be a path from $x$ to $y$ and $\delta$ a path from $y$ to $z$ in
@@ -81,6 +80,8 @@ $r \le v \le s$, every value of $\subpath{\gamma}{u}{v}$ lies in $S$.
 
 A subdivision of $\uI$ is a finite \fcnotion{Monotone}{nondecreasing} sequence
 $0=t_0\le\cdots\le t_n=1$.
+
+Let $(U_i)_{i\in I}$ be a family of subsets of $X$.
 
 \begin{proposition}[id=1.7]{Subdividing a path along a family of sets}
 Let $\gamma$ be a path in $X$.  Suppose that every parameter has a

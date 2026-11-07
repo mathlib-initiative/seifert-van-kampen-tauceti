@@ -44,7 +44,10 @@ Do not reserve a catalogue of letters for the whole text.
 Keep a letter's meaning fixed within an argument. A later section may use the
 same letter for a different object when it introduces that object explicitly.
 State every extra assumption where it is used: the pseudometric assumption in
-Lemma 1.1, for example, is local to that lemma.
+Lemma 1.1, for example, is local to that lemma. Use a separate space $Z$ and
+compact subset $K$ there. Introduce the general topological space $X$ only
+when the path results begin; do not impose a pseudometric or vector-space
+structure on it.
 
 ## Assumed background
 
@@ -78,8 +81,9 @@ the whole space, so it too is stated in words.
 There is no separate conventions section. Give each section a short local setup,
 and explain specialized notation next to its first use:
 
-- Section 1: the space and family of subsets, subdivision points, paths and subpaths,
-  then homotopy classes and endpoint renaming.
+- Section 1: the auxiliary pseudometric lemma and subdivision points, then
+  the general topological space, paths and subpaths. Introduce the family of
+  subsets beside Proposition 1.7, then homotopy classes and endpoint renaming.
 - Section 2: fundamental groupoids and induced functors, subgroupoids, then the
   fundamental group at a basepoint and its induced homomorphism.
 - Section 3: categories, endomorphisms and the one-object category, then the
