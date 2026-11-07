@@ -6,13 +6,13 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.130391, 0.39899, 0.739217, 0.071654]
+        "page": 8,
+        "rect": [0.130391, 0.186237, 0.739217, 0.202652]
       },
-      "title": "Proof idea: Use generation for uniqueness",
+      "title": "Proof: Uniqueness from generation",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.3-generate@p006"
+          "region": "proof-6.3-generate@p008"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [8],
+        "printed": [8]
       },
       "provenance": {
         "actor": "agent",

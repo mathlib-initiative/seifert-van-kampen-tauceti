@@ -6,13 +6,13 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.130391, 0.641414, 0.739217, 0.088699]
+        "page": 8,
+        "rect": [0.130391, 0.561237, 0.739217, 0.285354]
       },
-      "title": "Proof idea: Verify the universal property",
+      "title": "Proof: The pushout universal property",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.4-pushout@p006"
+          "region": "proof-6.4-pushout@p008"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [8],
+        "printed": [8]
       },
       "provenance": {
         "actor": "agent",

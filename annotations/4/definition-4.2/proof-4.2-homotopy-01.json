@@ -6,13 +6,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.684975, 0.739217, 0.106061]
+        "page": 5,
+        "rect": [0.130391, 0.104167, 0.739217, 0.473801]
       },
-      "title": "Proof idea: Descend to homotopy classes",
+      "title": "Construction: Gluing on homotopy classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-homotopy@p004"
+          "region": "proof-4.2-homotopy@p005"
         }
       }
     }
@@ -47,8 +47,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [5],
+        "printed": [5]
       },
       "provenance": {
         "actor": "agent",

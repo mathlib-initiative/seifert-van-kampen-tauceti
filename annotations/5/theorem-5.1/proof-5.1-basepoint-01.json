@@ -6,13 +6,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.400568, 0.739217, 0.106376]
+        "page": 6,
+        "rect": [0.130391, 0.199811, 0.739217, 0.455492]
       },
-      "title": "Proof idea: Turn path pieces into based loops",
+      "title": "Proof: Generation by based loops",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-5.1-basepoint@p005"
+          "region": "proof-5.1-basepoint@p006"
         }
       }
     }
@@ -47,8 +47,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [6],
+        "printed": [6]
       },
       "provenance": {
         "actor": "agent",

@@ -6,13 +6,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.726326, 0.739217, 0.088699]
+        "page": 7,
+        "rect": [0.130391, 0.104167, 0.739217, 0.261679]
       },
-      "title": "Proof idea: Pass from homomorphisms to functors",
+      "title": "Construction: The local functors",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.1-connect@p005"
+          "region": "proof-6.1-connect@p007"
         }
       }
     }
@@ -47,8 +47,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [7],
+        "printed": [7]
       },
       "provenance": {
         "actor": "agent",

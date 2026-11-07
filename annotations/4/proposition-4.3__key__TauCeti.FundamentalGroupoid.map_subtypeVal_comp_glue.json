@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.802399, 0.739298, 0.073232]
+        "page": 5,
+        "rect": [0.130391, 0.589331, 0.739298, 0.073232]
       },
       "title": "Proposition 4.3 (The glued functor restricts to the given functors)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proposition-4.3@p004"
+          "region": "proposition-4.3@p005"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [5],
+        "printed": [5]
       }
     }
   }

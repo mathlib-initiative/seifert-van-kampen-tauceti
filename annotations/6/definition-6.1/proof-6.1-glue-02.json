@@ -6,13 +6,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.824811, 0.739217, 0.071654]
+        "page": 7,
+        "rect": [0.130391, 0.379735, 0.739217, 0.234217]
       },
-      "title": "Proof idea: Glue on the common intersection",
+      "title": "Construction: The induced homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.1-glue@p005"
+          "region": "proof-6.1-glue@p007"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [7],
+        "printed": [7]
       },
       "provenance": {
         "actor": "agent",

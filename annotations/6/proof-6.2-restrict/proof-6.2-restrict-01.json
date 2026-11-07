@@ -6,13 +6,13 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.130391, 0.235795, 0.739217, 0.071654]
+        "page": 7,
+        "rect": [0.130391, 0.757891, 0.739217, 0.137942]
       },
-      "title": "Proof idea: Recover the original homomorphisms",
+      "title": "Proof: The restriction equations",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.2-restrict@p006"
+          "region": "proof-6.2-restrict@p007"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [7],
+        "printed": [7]
       },
       "provenance": {
         "actor": "agent",

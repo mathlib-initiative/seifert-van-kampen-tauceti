@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 1,
-        "rect": [0.539595, 0.849116, 0.122422, 0.017045]
+        "page": 2,
+        "rect": [0.539595, 0.104482, 0.122422, 0.018939]
       },
       "title": "path connected",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:IsPathConnected@p001"
+          "region": "notion:IsPathConnected@p002"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [1],
-        "printed": [1]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }
