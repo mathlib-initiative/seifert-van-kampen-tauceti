@@ -1,0 +1,68 @@
+{
+  "id": "proof-3.1-s01-subdivide",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Choose a subdivision subordinate to the cover",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.130391, 0.592172, 0.739218, 0.056975]
+      },
+      "title": "Choose a subdivision subordinate to the cover",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.775334, 0.592172, 0.869609, 0.592172, 0.869609, 0.609533, 0.775334, 0.609533],
+            [0.130391, 0.609533, 0.869608, 0.609533, 0.869608, 0.625474, 0.130391, 0.625474],
+            [0.130391, 0.625473, 0.70421, 0.625473, 0.70421, 0.649147, 0.130391, 0.649147]
+          ],
+          "region": "proof-3.1-s01-subdivide@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [120, 122],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
+      },
+      "title": "Choose a subdivision subordinate to the cover",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-3.1-s01-subdivide-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L120-L122",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 120,
+            "text": "  obtain ⟨n, t, ht0, htn, -, ht⟩ := γ.exists_monotone_range_subpath_subset fun s ↦ by\n    obtain ⟨i, hi⟩ := hU (γ s)\n    exact ⟨i, γ.continuous.continuousAt.preimage_mem_nhds hi⟩"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

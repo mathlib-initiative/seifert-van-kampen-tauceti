@@ -1,0 +1,68 @@
+{
+  "id": "proof-3.2-s03-indices",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Compatibility makes the local path value independent of the index",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.250631, 0.739218, 0.053189]
+      },
+      "title": "Compatibility makes the local path value independent of the index",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.600511, 0.250631, 0.869609, 0.250631, 0.869609, 0.269886, 0.600511, 0.269886],
+            [0.130391, 0.269886, 0.869608, 0.269886, 0.869608, 0.2863, 0.130391, 0.2863],
+            [0.130391, 0.286301, 0.158867, 0.286301, 0.158867, 0.30382, 0.130391, 0.30382]
+          ],
+          "region": "proof-3.2-s03-indices@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [262, 265],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Compatibility makes the local path value independent of the index",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-3.2-s03-indices-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L262-L265",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 262,
+            "text": "  have hx : x ∈ U i ∩ U j := P.source ▸ ⟨hi 0, hj 0⟩\n  have hy : y ∈ U i ∩ U j := P.target ▸ ⟨hi 1, hj 1⟩\n  have h := Functor.congr_hom (hF i j) (Path.Homotopic.Quotient.mk\n    (P.codRestrict (x := ⟨x, hx⟩) (y := ⟨y, hy⟩) fun t ↦ ⟨hi t, hj t⟩) : mk _ ⟶ mk _)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

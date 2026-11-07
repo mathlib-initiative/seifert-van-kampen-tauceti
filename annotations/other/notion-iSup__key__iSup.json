@@ -5,12 +5,24 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.23646, 0.731218, 0.329593, 0.019097]
+        "rect": [0.584041, 0.468908, 0.285568, 0.016888]
       },
       "title": "the smallest subgroupoid containing them",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:iSup@p002"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.130391, 0.485795, 0.044513, 0.019255]
+      },
+      "title": "the smallest subgroupoid containing them",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:iSup@p002#2"
         }
       }
     }

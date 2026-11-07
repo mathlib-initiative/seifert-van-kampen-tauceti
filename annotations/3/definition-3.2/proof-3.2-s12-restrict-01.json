@@ -1,0 +1,68 @@
+{
+  "id": "proof-3.2-s12-restrict",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Collapse the subdivision inside a single cover member",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.559659, 0.739217, 0.052084]
+      },
+      "title": "Collapse the subdivision inside a single cover member",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.850372, 0.559659, 0.869608, 0.559659, 0.869608, 0.577336, 0.850372, 0.577336],
+            [0.130391, 0.577336, 0.869608, 0.577336, 0.869608, 0.594066, 0.130391, 0.594066],
+            [0.130391, 0.594066, 0.213807, 0.594066, 0.213807, 0.611743, 0.130391, 0.611743]
+          ],
+          "region": "proof-3.2-s12-restrict@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [564, 567],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Collapse the subdivision inside a single cover member",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-3.2-s12-restrict-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L564-L567",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 564,
+            "text": "private lemma lift_eq_locVal {x y : X} (γ : Path x y) (i : ι) (hγ : ∀ t, γ t ∈ U i) :\n    lift hU F hF γ = locVal hU F hF i γ hγ := by\n  obtain ⟨N₀, hN₀⟩ := exists_isFine hU γ\n  rw [lift_eq_liftN hU F hF γ (hN₀ N₀ le_rfl).2 (hN₀ N₀ le_rfl).1, liftN_eq_locVal]"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

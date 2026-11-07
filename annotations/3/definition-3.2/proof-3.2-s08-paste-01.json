@@ -1,0 +1,67 @@
+{
+  "id": "proof-3.2-s08-paste",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Paste the commuting squares across one row",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.457386, 0.739218, 0.034091]
+      },
+      "title": "Paste the commuting squares across one row",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.67786, 0.457386, 0.869609, 0.457386, 0.869609, 0.474431, 0.67786, 0.474431],
+            [0.130391, 0.474432, 0.55268, 0.474432, 0.55268, 0.491477, 0.130391, 0.491477]
+          ],
+          "region": "proof-3.2-s08-paste@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [676, 681],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Paste the commuting squares across one row",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-3.2-s08-paste-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L676-L681",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 676,
+            "text": "      (NatTrans.ofSequence (F := Functor.ofSequence (segVal hU F hF _ (hrow l)))\n        (G := Functor.ofSequence (segVal hU F hF _ (hrow (l + 1))))\n        (fun k ↦ pathVal hU F hF (colSeg H N l k) (hcol l k)) fun k ↦ by\n          obtain ⟨i, hi⟩ := hcell l k\n          rw [Functor.ofSequence_map_homOfLE_succ, Functor.ofSequence_map_homOfLE_succ]\n          exact pathVal_cell hU F hF H N l k i hi _ _ _ _).naturality (homOfLE N.zero_le)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

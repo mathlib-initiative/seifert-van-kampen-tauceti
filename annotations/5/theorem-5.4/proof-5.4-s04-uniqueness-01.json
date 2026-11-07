@@ -1,0 +1,66 @@
+{
+  "id": "proof-5.4-s04-uniqueness",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Invoke uniqueness for the mediating homomorphism",
+  "subject": [
+    {
+      "location": {
+        "page": 7,
+        "rect": [0.132842, 0.401831, 0.224099, 0.016572]
+      },
+      "title": "Invoke uniqueness for the mediating homomorphism",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.132842, 0.401831, 0.356941, 0.401831, 0.356941, 0.418403, 0.132842, 0.418403]
+          ],
+          "region": "proof-5.4-s04-uniqueness@p007"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [374, 378],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "Invoke uniqueness for the mediating homomorphism",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-5.4-s04-uniqueness-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L374-L378",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 374,
+            "text": "  · refine GrpCat.hom_ext (vanKampen_hom_ext hCover hA hB hAB hxA hxB ?_ ?_)\n    · exact (congrArg GrpCat.Hom.hom h₁).trans (vanKampenDesc_comp_map_left hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm\n    · exact (congrArg GrpCat.Hom.hom h₂).trans (vanKampenDesc_comp_map_right hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [7],
+        "printed": [7]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

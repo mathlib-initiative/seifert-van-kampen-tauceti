@@ -1,0 +1,55 @@
+{
+  "id": "proposition-3.3",
+  "kind": "proposition",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.63952, 0.739298, 0.073232]
+      },
+      "title": "Proposition 3.3 (The glued functor restricts to the given functors)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proposition-3.3@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "declaration": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L712",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 712,
+            "text": "@[simp] theorem map_subtypeVal_comp_glue (i : ι) :\n    map (ContinuousMap.subtypeVal (U i)) ⋙ glue hU F hF = F i := by"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      }
+    }
+  }
+}

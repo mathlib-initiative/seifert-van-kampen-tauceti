@@ -1,0 +1,68 @@
+{
+  "id": "proof-3.2-s07-cell",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "The two routes around one cell have the same value",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.405934, 0.739217, 0.051452]
+      },
+      "title": "The two routes around one cell have the same value",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.194671, 0.405934, 0.869608, 0.405934, 0.869608, 0.422979, 0.194671, 0.422979],
+            [0.130391, 0.42298, 0.869608, 0.42298, 0.869608, 0.440341, 0.130391, 0.440341],
+            [0.130391, 0.440341, 0.488514, 0.440341, 0.488514, 0.457386, 0.130391, 0.457386]
+          ],
+          "region": "proof-3.2-s07-cell@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [647, 658],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "The two routes around one cell have the same value",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-3.2-s07-cell-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L647-L658",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 647,
+            "text": "  -- Both composites are images of paths from `(0, 0)` to `(1, 1)` in the square `I × I` under the\n  -- affine parametrisation of the cell by the square.\n  let g : C(I × I, X) := H.toContinuousMap.comp\n    ((ContinuousMap.mk _ (Icc.continuous_convexComb (pt N l) (pt N (l + 1)))).prodMap\n      (ContinuousMap.mk _ (Icc.continuous_convexComb (pt N k) (pt N (k + 1)))))\n  refine locVal_eq_of_simplyConnected hU F hF i g\n    (fun z ↦ hi _ (convexComb_mem_Icc_pt N l z.1) _ (convexComb_mem_Icc_pt N k z.2))\n    (((Path.refl 0).trans Path.id).prod (Path.id.trans (Path.refl 1)))\n    ((Path.id.trans (Path.refl 1)).prod ((Path.refl 0).trans Path.id)) _ _ (fun t ↦ ?_)\n    (fun t ↦ ?_) _ _ <;>\n  · rw [Path.trans_apply]\n    split_ifs with h <;> rw [one_div] at h <;> simp [g, colSeg, Path.subpath, Path.trans_apply, h]"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}
