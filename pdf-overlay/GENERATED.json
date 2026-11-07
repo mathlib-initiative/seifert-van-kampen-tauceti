@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "e315d9189a5b70de24d5a3a538ecea91afe5723ec44bd59f255c23a9fcaeab0a"
+      "sha256": "a755026c6cdff6d29703fa77c768e66a1eafae41d9e969dc626349404b260cd6"
     },
-    "count": 120,
+    "count": 125,
     "directory": "annotations",
     "export": {
-      "commit": "9ae105475f3230a042935f862ecfb02a1ca25c18",
+      "commit": "e2c47e6556ebbd35ac3dacb76c77fa96a0187f18",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -153,7 +153,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "832da1c13052827eedd3dcabd1f51636a92b433ecb35adff4bb261283b5dcf50"
+        "sha256": "f7ab3d9bbcb8f31210480675469be1b90ba2fac8471402d92f0f616df79e44b1"
       },
       {
         "path": "informal/notation.sty",
@@ -161,7 +161,7 @@
       },
       {
         "path": "informal/proofsteps.json",
-        "sha256": "69c0abf4d391cc5ff5181c425f8a43b3466bee5339d3c617e1a0f01fd3ab31ed"
+        "sha256": "f82f0d5318343b478d803fbcdfd875358c6f1edc9d79aa953c8a235fb761f209"
       },
       {
         "path": "informal/proofsteps.sty",
@@ -189,21 +189,21 @@
       },
       {
         "path": "informal/sections/04-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "5756f38d154a931bb08279aef0fa30982756055e3a722e40f4d79452b3feab96"
+        "sha256": "a2c7576957056e87d03753326e56d34c1f992032023e904e9f180a69bd68cb53"
       },
       {
         "path": "informal/sections/05-fundamental-group-of-a-cover.tex",
-        "sha256": "fe255a84954e03e1c9038c964787530eda9562b85d0fb2eb331d4bbe894f2c3f"
+        "sha256": "1c4336c5985caa850233852bcc177eb457b11d958a13f6d7ed6de2683d14ef9e"
       },
       {
         "path": "informal/sections/06-seifert-van-kampen.tex",
-        "sha256": "ebd66ecba934753cc1a2210c581f07841921ee17d8f5ac86fa0f2cc52b7885d8"
+        "sha256": "6e854162e23ff462264316147b79804f5359d4f89bbfac98a1153aa7f5ae0a9a"
       },
       {
         "path": "tools/proof_steps.py",
         "sha256": "680f082d99ddf50a6b8c27fd5e9a5fffa7da1eea6a7cb760776f8a037604a8e4"
       }
     ],
-    "manifest_sha256": "0329a5112a0b77b009a8f4f775d203b14bf36b45916b16a4243b51ce707fcb2d"
+    "manifest_sha256": "3fab8e35bcfa5507b5178e587a5fbf69886d27549c9fd5129f6204743abfe5f8"
   }
 }

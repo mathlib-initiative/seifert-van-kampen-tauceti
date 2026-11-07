@@ -1,0 +1,65 @@
+{
+  "id": "proof-4.2-s12-restrict",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Collapse the subdivision inside a single cover member",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.556818, 0.739217, 0.052084]
+      },
+      "title": "Collapse the subdivision inside a single cover member",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.850372, 0.556818, 0.869608, 0.556818, 0.869608, 0.574495, 0.850372, 0.574495],
+            [0.130391, 0.574495, 0.869608, 0.574495, 0.869608, 0.591225, 0.130391, 0.591225],
+            [0.130391, 0.591225, 0.214313, 0.591225, 0.214313, 0.608902, 0.130391, 0.608902]
+          ],
+          "region": "proof-4.2-s12-restrict@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [564, 567],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Collapse the subdivision inside a single cover member",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-4.2-s12-restrict-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L564-L567",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 564,
+            "text": "private lemma lift_eq_locVal {x y : X} (γ : Path x y) (i : ι) (hγ : ∀ t, γ t ∈ U i) :\n    lift hU F hF γ = locVal hU F hF i γ hγ := by\n  obtain ⟨N₀, hN₀⟩ := exists_isFine hU γ\n  rw [lift_eq_liftN hU F hF γ (hN₀ N₀ le_rfl).2 (hN₀ N₀ le_rfl).1, liftN_eq_locVal]"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

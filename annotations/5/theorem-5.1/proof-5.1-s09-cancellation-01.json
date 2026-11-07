@@ -1,5 +1,5 @@
 {
-  "id": "proof-5.1-s08-cancellation",
+  "id": "proof-5.1-s09-cancellation",
   "kind": "proof_step",
   "relation": "closeMatch",
   "note": "Cancel the basepoint transport",
@@ -7,15 +7,15 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.401871, 0.57347, 0.196259, 0.023192]
+        "rect": [0.401871, 0.594961, 0.196259, 0.023192]
       },
       "title": "Cancel the basepoint transport",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.401871, 0.57347, 0.59813, 0.57347, 0.59813, 0.596662, 0.401871, 0.596662]
+            [0.401871, 0.594961, 0.59813, 0.594961, 0.59813, 0.618153, 0.401871, 0.618153]
           ],
-          "region": "proof-5.1-s08-cancellation@p006"
+          "region": "proof-5.1-s09-cancellation@p006"
         }
       }
     }
@@ -31,7 +31,7 @@
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-5.1-s08-cancellation-1",
+            "id": "proof-5.1-s09-cancellation-1",
             "kind": "proof_step"
           },
           "destination": {

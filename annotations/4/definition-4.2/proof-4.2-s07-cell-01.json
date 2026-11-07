@@ -1,5 +1,5 @@
 {
-  "id": "proof-4.2-s05-cell",
+  "id": "proof-4.2-s07-cell",
   "kind": "proof_step",
   "relation": "closeMatch",
   "note": "The two routes around one cell have the same value",
@@ -7,17 +7,17 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.130391, 0.353851, 0.739218, 0.051452]
+        "rect": [0.130391, 0.403093, 0.739217, 0.051452]
       },
       "title": "The two routes around one cell have the same value",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.194039, 0.353851, 0.869609, 0.353851, 0.869609, 0.370896, 0.194039, 0.370896],
-            [0.130391, 0.370896, 0.869608, 0.370896, 0.869608, 0.387941, 0.130391, 0.387941],
-            [0.130391, 0.387942, 0.674899, 0.387942, 0.674899, 0.405303, 0.130391, 0.405303]
+            [0.194671, 0.403093, 0.869608, 0.403093, 0.869608, 0.420138, 0.194671, 0.420138],
+            [0.130391, 0.420139, 0.869608, 0.420139, 0.869608, 0.4375, 0.130391, 0.4375],
+            [0.130391, 0.4375, 0.488514, 0.4375, 0.488514, 0.454545, 0.130391, 0.454545]
           ],
-          "region": "proof-4.2-s05-cell@p005"
+          "region": "proof-4.2-s07-cell@p005"
         }
       }
     }
@@ -33,7 +33,7 @@
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.2-s05-cell-1",
+            "id": "proof-4.2-s07-cell-1",
             "kind": "proof_step"
           },
           "destination": {

@@ -23,7 +23,7 @@
   "object": [
     {
       "location": {
-        "lines": [123, 131],
+        "lines": [123, 124],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
       },
       "title": "Reassemble the original path class",
@@ -35,13 +35,13 @@
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L123-L131",
+            "fragment": "L123-L124",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
             "resolution": "exact"
           },
           "snippet": {
             "line": 123,
-            "text": "  have hsub := mk_concat_mem_iSup_im hU (γ ∘ t) (fun k ↦ γ.subpath (t k.castSucc) (t k.succ)) ht\n  rw [Path.Homotopic.Quotient.eq.2 (Path.Homotopic.concat_subpath γ t)] at hsub\n  have hγ : ∀ (a b : I) (ha : a = 0) (hb : b = 1),\n      γ = (γ.subpath a b).cast (by simp [ha]) (by simp [hb]) := by\n    rintro _ _ rfl rfl\n    rw [Path.subpath_zero_one]\n    rfl\n  rw [hγ _ _ ht0 htn, Path.Homotopic.Quotient.mk_cast]\n  exact (Path.Homotopic.Quotient.cast_mem_arrows_iff _ _ _).2 hsub"
+            "text": "  have hsub := mk_concat_mem_iSup_im hU (γ ∘ t) (fun k ↦ γ.subpath (t k.castSucc) (t k.succ)) ht\n  rw [Path.Homotopic.Quotient.eq.2 (Path.Homotopic.concat_subpath γ t)] at hsub"
           }
         }
       }

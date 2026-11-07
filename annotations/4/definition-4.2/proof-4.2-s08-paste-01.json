@@ -1,23 +1,22 @@
 {
-  "id": "proof-4.2-s02-indices",
+  "id": "proof-4.2-s08-paste",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Compatibility makes the local path value independent of the index",
+  "note": "Paste the commuting squares across one row",
   "subject": [
     {
       "location": {
         "page": 5,
-        "rect": [0.130391, 0.215593, 0.739218, 0.053189]
+        "rect": [0.130391, 0.454545, 0.739218, 0.034091]
       },
-      "title": "Compatibility makes the local path value independent of the index",
+      "title": "Paste the commuting squares across one row",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.600511, 0.215593, 0.869609, 0.215593, 0.869609, 0.234848, 0.600511, 0.234848],
-            [0.130391, 0.234848, 0.869608, 0.234848, 0.869608, 0.251262, 0.130391, 0.251262],
-            [0.130391, 0.251263, 0.270267, 0.251263, 0.270267, 0.268782, 0.130391, 0.268782]
+            [0.67786, 0.454545, 0.869609, 0.454545, 0.869609, 0.47159, 0.67786, 0.47159],
+            [0.130391, 0.471591, 0.55268, 0.471591, 0.55268, 0.488636, 0.130391, 0.488636]
           ],
-          "region": "proof-4.2-s02-indices@p005"
+          "region": "proof-4.2-s08-paste@p005"
         }
       }
     }
@@ -25,25 +24,25 @@
   "object": [
     {
       "location": {
-        "lines": [262, 265],
+        "lines": [676, 681],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
       },
-      "title": "Compatibility makes the local path value independent of the index",
+      "title": "Paste the commuting squares across one row",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.2-s02-indices-1",
+            "id": "proof-4.2-s08-paste-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L262-L265",
+            "fragment": "L676-L681",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 262,
-            "text": "  have hx : x ∈ U i ∩ U j := P.source ▸ ⟨hi 0, hj 0⟩\n  have hy : y ∈ U i ∩ U j := P.target ▸ ⟨hi 1, hj 1⟩\n  have h := Functor.congr_hom (hF i j) (Path.Homotopic.Quotient.mk\n    (P.codRestrict (x := ⟨x, hx⟩) (y := ⟨y, hy⟩) fun t ↦ ⟨hi t, hj t⟩) : mk _ ⟶ mk _)"
+            "line": 676,
+            "text": "      (NatTrans.ofSequence (F := Functor.ofSequence (segVal hU F hF _ (hrow l)))\n        (G := Functor.ofSequence (segVal hU F hF _ (hrow (l + 1))))\n        (fun k ↦ pathVal hU F hF (colSeg H N l k) (hcol l k)) fun k ↦ by\n          obtain ⟨i, hi⟩ := hcell l k\n          rw [Functor.ofSequence_map_homOfLE_succ, Functor.ofSequence_map_homOfLE_succ]\n          exact pathVal_cell hU F hF H N l k i hi _ _ _ _).naturality (homOfLE N.zero_le)"
           }
         }
       }

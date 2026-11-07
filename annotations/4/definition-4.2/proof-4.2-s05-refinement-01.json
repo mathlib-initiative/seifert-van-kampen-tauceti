@@ -1,22 +1,23 @@
 {
-  "id": "proof-4.2-s03-refinement",
+  "id": "proof-4.2-s05-refinement",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Compare subdivisions through a common refinement",
+  "note": "Compare equal subdivisions through their common refinement",
   "subject": [
     {
       "location": {
         "page": 5,
-        "rect": [0.130391, 0.268782, 0.739217, 0.032354]
+        "rect": [0.130391, 0.300979, 0.739217, 0.051294]
       },
-      "title": "Compare subdivisions through a common refinement",
+      "title": "Compare equal subdivisions through their common refinement",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.132842, 0.268782, 0.869608, 0.268782, 0.869608, 0.28567, 0.132842, 0.28567],
-            [0.130391, 0.285669, 0.309387, 0.285669, 0.309387, 0.301136, 0.130391, 0.301136]
+            [0.690951, 0.300979, 0.869608, 0.300979, 0.869608, 0.317709, 0.690951, 0.317709],
+            [0.130391, 0.317708, 0.869608, 0.317708, 0.869608, 0.334438, 0.130391, 0.334438],
+            [0.130391, 0.334438, 0.514905, 0.334438, 0.514905, 0.352273, 0.130391, 0.352273]
           ],
-          "region": "proof-4.2-s03-refinement@p005"
+          "region": "proof-4.2-s05-refinement@p005"
         }
       }
     }
@@ -27,12 +28,12 @@
         "lines": [554, 561],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
       },
-      "title": "Compare subdivisions through a common refinement",
+      "title": "Compare equal subdivisions through their common refinement",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.2-s03-refinement-1",
+            "id": "proof-4.2-s05-refinement-1",
             "kind": "proof_step"
           },
           "destination": {

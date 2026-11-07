@@ -1,22 +1,22 @@
 {
-  "id": "proof-5.1-s07-basepoint-loop",
+  "id": "proof-5.1-s05-middle",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "The chosen path at the basepoint belongs to the subgroup",
+  "note": "The middle loop lies in the generated subgroup",
   "subject": [
     {
       "location": {
         "page": 6,
-        "rect": [0.130391, 0.542614, 0.739218, 0.032039]
+        "rect": [0.130391, 0.47601, 0.739218, 0.037406]
       },
-      "title": "The chosen path at the basepoint belongs to the subgroup",
+      "title": "The middle loop lies in the generated subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.535038, 0.542614, 0.869609, 0.542614, 0.869609, 0.561396, 0.535038, 0.561396],
-            [0.130391, 0.561395, 0.22593, 0.561395, 0.22593, 0.574653, 0.130391, 0.574653]
+            [0.139267, 0.47601, 0.869609, 0.47601, 0.869609, 0.494792, 0.139267, 0.494792],
+            [0.130391, 0.494792, 0.428873, 0.494792, 0.428873, 0.513416, 0.130391, 0.513416]
           ],
-          "region": "proof-5.1-s07-basepoint-loop@p006"
+          "region": "proof-5.1-s05-middle@p006"
         }
       }
     }
@@ -24,25 +24,25 @@
   "object": [
     {
       "location": {
-        "lines": [173, 174],
+        "lines": [109, 115],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
       },
-      "title": "The chosen path at the basepoint belongs to the subgroup",
+      "title": "The middle loop lies in the generated subgroup",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-5.1-s07-basepoint-loop-1",
+            "id": "proof-5.1-s05-middle-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L173-L174",
+            "fragment": "L109-L115",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 173,
-            "text": "  have hτx : (End.of (τ (mk x)) : _root_.FundamentalGroup X x) ∈ H :=\n    fromPath_mem_iSup_range hx _ (hτ' x)"
+            "line": 109,
+            "text": "  have hmid : (End.of (σa ≫ _root_.FundamentalGroupoid.fromPath ⟦δ⟧ ≫ inv σb) :\n      _root_.FundamentalGroup X x) ∈ H := by\n    rw [← Groupoid.inv_eq_inv]\n    refine fromPath_mem_iSup_range hx (i := i) (hσa.somePath.trans (δ.trans hσb.somePath.symm)) ?_\n    rw [Path.trans_range, Path.trans_range, Path.symm_range]\n    exact union_subset (hσa'.trans inter_subset_right)\n      (union_subset hδ (hσb'.trans inter_subset_left))"
           }
         }
       }

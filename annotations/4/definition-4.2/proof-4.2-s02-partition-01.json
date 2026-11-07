@@ -1,0 +1,65 @@
+{
+  "id": "proof-4.2-s02-partition",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Choose a sufficiently fine equal subdivision",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.157513, 0.739218, 0.056818]
+      },
+      "title": "Choose a sufficiently fine equal subdivision",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.365293, 0.157513, 0.869609, 0.157513, 0.869609, 0.175505, 0.365293, 0.175505],
+            [0.130391, 0.175505, 0.869608, 0.175505, 0.869608, 0.192866, 0.130391, 0.192866],
+            [0.130391, 0.192866, 0.500363, 0.192866, 0.500363, 0.214331, 0.130391, 0.214331]
+          ],
+          "region": "proof-4.2-s02-partition@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [205, 216],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Choose a sufficiently fine equal subdivision",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-4.2-s02-partition-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L205-L216",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 205,
+            "text": "private lemma exists_isFine {x y : X} (γ : Path x y) :\n    ∃ N₀, ∀ N, N₀ ≤ N → N ≠ 0 ∧ IsFine U γ N := by\n  obtain ⟨δ, hδ, h⟩ := lebesgue_number_lemma_of_metric_of_mem_nhds isCompact_univ\n    (c := fun i ↦ γ ⁻¹' U i) fun t _ ↦\n      (hU (γ t)).imp fun _ ↦ γ.continuous.continuousAt.preimage_mem_nhds\n  obtain ⟨n, hn⟩ := exists_nat_one_div_lt hδ\n  refine ⟨n + 1, fun N hN ↦ ⟨by omega, fun k ↦ ?_⟩⟩\n  obtain ⟨i, hi⟩ := h (pt N k) (mem_univ _)\n  refine ⟨i, fun t ht ↦ hi ?_⟩\n  rw [mem_ball, Subtype.dist_eq, Real.dist_eq]\n  exact (abs_sub_pt_le ht).trans_lt <|\n    (one_div_le_one_div_of_le (by positivity) (by exact_mod_cast hN)).trans_lt hn"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

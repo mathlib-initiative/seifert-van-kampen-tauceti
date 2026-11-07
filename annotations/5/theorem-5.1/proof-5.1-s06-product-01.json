@@ -1,0 +1,64 @@
+{
+  "id": "proof-5.1-s06-product",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Multiply the three local loop classes",
+  "subject": [
+    {
+      "location": {
+        "page": 6,
+        "rect": [0.130391, 0.494792, 0.739217, 0.035511]
+      },
+      "title": "Multiply the three local loop classes",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.434834, 0.494792, 0.869608, 0.494792, 0.869608, 0.513416, 0.434834, 0.513416],
+            [0.130391, 0.513415, 0.864706, 0.513415, 0.864706, 0.530303, 0.130391, 0.530303]
+          ],
+          "region": "proof-5.1-s06-product@p006"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [116, 119],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
+      },
+      "title": "Multiply the three local loop classes",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-5.1-s06-product-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L116-L119",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 116,
+            "text": "  rw [hsplit]\n  -- In `End`, `f ≫ g` is the product `g * f`.\n  exact H.mul_mem (H.mul_mem (comp_inv_mem_iSup_range hx _ _ (hσb'.trans inter_subset_right) hβ)\n    hmid) (comp_inv_mem_iSup_range hx _ _ hα (hσa'.trans inter_subset_left))"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [6],
+        "printed": [6]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

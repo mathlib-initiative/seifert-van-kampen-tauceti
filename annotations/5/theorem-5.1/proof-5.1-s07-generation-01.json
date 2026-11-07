@@ -1,5 +1,5 @@
 {
-  "id": "proof-5.1-s06-generation",
+  "id": "proof-5.1-s07-generation",
   "kind": "proof_step",
   "relation": "closeMatch",
   "note": "Invoke generation of the fundamental groupoid",
@@ -7,16 +7,16 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.130391, 0.508996, 0.739217, 0.033618]
+        "rect": [0.130391, 0.530303, 0.739217, 0.033776]
       },
       "title": "Invoke generation of the fundamental groupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.277111, 0.508996, 0.869608, 0.508996, 0.869608, 0.526041, 0.277111, 0.526041],
-            [0.130391, 0.526042, 0.514301, 0.526042, 0.514301, 0.542614, 0.130391, 0.542614]
+            [0.132842, 0.530303, 0.869608, 0.530303, 0.869608, 0.547191, 0.132842, 0.547191],
+            [0.130391, 0.547191, 0.362613, 0.547191, 0.362613, 0.564079, 0.130391, 0.564079]
           ],
-          "region": "proof-5.1-s06-generation@p006"
+          "region": "proof-5.1-s07-generation@p006"
         }
       }
     }
@@ -32,7 +32,7 @@
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-5.1-s06-generation-1",
+            "id": "proof-5.1-s07-generation-1",
             "kind": "proof_step"
           },
           "destination": {

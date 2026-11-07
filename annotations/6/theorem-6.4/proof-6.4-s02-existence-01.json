@@ -2,14 +2,14 @@
   "id": "proof-6.4-s02-existence",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Invoke the induced homomorphism for an arbitrary cocone",
+  "note": "Construct a map for any compatible pair",
   "subject": [
     {
       "location": {
         "page": 8,
         "rect": [0.130391, 0.697917, 0.739217, 0.036301]
       },
-      "title": "Invoke the induced homomorphism for an arbitrary cocone",
+      "title": "Construct a map for any compatible pair",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
@@ -27,7 +27,7 @@
         "lines": [367, 369],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Invoke the induced homomorphism for an arbitrary cocone",
+      "title": "Construct a map for any compatible pair",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
