@@ -2,10 +2,8 @@ Let $\mathcal C$ be a \fcnotion{CategoryTheory.Category}{category} and $w$ an
 object of it.  Write \fcnotion{CategoryTheory.End}{$\End(w)$} for its monoid
 of endomorphisms; composition
 \fcnotion{CategoryTheory.CategoryStruct.comp}{$\circ$} is read from right to
-left.  For a \fcnotion{Monoid}{monoid} $M$,
-\fcnotion{CategoryTheory.SingleObj}{$\sobj{M}$} has one object, its
-endomorphisms are the elements of $M$, and composition is multiplication:
-$h\circ g=hg$.
+left.  Note that any \fcnotion{Monoid}{monoid} $M$ can be considered as a
+one-object category \fcnotion{CategoryTheory.SingleObj}{$\sobj{M}$}.
 
 \begin{definition}[id=3.1]{The functor picking out a chosen object}
 The functor from $\sobj{\End(w)}$ to $\mathcal C$ takes the unique object to
