@@ -15,16 +15,12 @@ Write \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}$} for the inclusion
 $S\longrightarrow X$.
 
 Write \fcnotion{Path.codRestrict}{$\codres{\gamma}{S}$} for $\gamma$ viewed as a
-path in $S$ when its image lies in $S$.
-
-For composable \fcnotion{Path}{paths} $\gamma$ and $\delta$, write
-\fcnotion{Path.trans}{$\gamma\ptrans\delta$} for their concatenation, with
-$\gamma$ traversed first.
-
-For a path $\gamma$ and parameters $r,s$, the subpath
-\fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} traverses $\gamma$ with its
-parameter running linearly from $r$ to $s$.  It runs backwards when $s<r$
-and is constant when $r=s$.
+path in $S$ when its image lies there, and
+\fcnotion{Path.trans}{$\gamma\ptrans\delta$} for the concatenation of
+composable \fcnotion{Path}{paths} $\gamma$ and $\delta$, with $\gamma$ first.
+The subpath \fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} traverses
+$\gamma$ with its parameter running linearly from $r$ to $s$, backwards when
+$s<r$ and constantly when $r=s$.
 
 A subdivision of \fcnotion{unitInterval}{$\uI$} is a finite \fcnotion{Monotone}{nondecreasing} sequence
 $0=t_0\le\cdots\le t_n=1$.
