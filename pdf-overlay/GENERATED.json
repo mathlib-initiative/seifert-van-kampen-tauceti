@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "bbdd3eb84b3d5ae1436ce7e6a58de6a6a540e52c"
+    "commit": "3f6558643bd33265f725e1cacc2ecfbbf17da285"
   },
   "format": {
     "package": "literature-links",
@@ -78,7 +78,7 @@
     },
     {
       "path": "tools/verso_extract.py",
-      "sha256": "2b74afdf0842701c80c76262b847a8361b6e9b84fa457e685f3e890a159d0c5f"
+      "sha256": "c4baa23e12490d771857287222520a59207b8d5fb7494037d1bb158b537bfaed"
     },
     {
       "path": "vendor/pdfjs/LICENSE",
@@ -121,7 +121,7 @@
     "count": 120,
     "directory": "annotations",
     "export": {
-      "commit": "93fe31579540f30c877f5f9fdcc4228c6cfb083d",
+      "commit": "3d6984b142095f906708f0b3357ab66763900f25",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -196,8 +196,12 @@
         "sha256": "ae2c2c44b9ed773cd48a8e913ce6888f81b5ff76f8b38a45aaec5de39531d0e4"
       },
       {
+        "path": "tools/mathlib_hovers.py",
+        "sha256": "f791e2ed3b6268752a79684d4e46df6f0d80fa2a4b837b188b193d0541bdf4db"
+      },
+      {
         "path": "tools/proof_steps.py",
-        "sha256": "b05ab792d689607b856420cb7e22d047bc9b04530b35d11e7bbd950a0f1b82df"
+        "sha256": "679e2f6f5ca659f64d9d645ea427226b37974039f8f1de8c72f7c073d6458e8d"
       }
     ],
     "manifest_sha256": "118547bd7445b8fd80a9582b9f9f9359f43b989941deea90074c67d83c723730"
