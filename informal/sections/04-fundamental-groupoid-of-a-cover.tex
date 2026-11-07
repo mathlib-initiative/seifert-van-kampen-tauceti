@@ -53,11 +53,12 @@ Call such a subdivision fine, and put
 The object equalities above make the factors composable.
 \proofstep{4.2-s03-indices}{Compatibility makes the local path value independent of the index}{If a piece lies in both $U_i$ and $U_j$, regard it as a path in their
 intersection; compatibility gives the same value under $F_i$ and $F_j$.}
-\proofstep{4.2-s04-refine-pieces}{Refining each interval preserves the composite}{Splitting each piece into $M$ equal pieces, for a positive integer $M$,
+\proofstep{4.2-s04-refine-pieces}{Refining each interval preserves the composite}{Splitting each piece into $m$ equal pieces, for a positive integer $m$,
 leaves its composite unchanged by \itemref{1.8} and functoriality.
-Thus $L_{MN}(\gamma)=L_N(\gamma)$.}
-\proofstep{4.2-s05-refinement}{Compare equal subdivisions through their common refinement}{Fine subdivisions with $N$ and $M$ pieces have a common refinement with
-$MN$ pieces, so $L_N(\gamma)=L_{MN}(\gamma)=L_M(\gamma)$.}
+Thus $L_{mN}(\gamma)=L_N(\gamma)$.}
+\proofstep{4.2-s05-refinement}{Compare equal subdivisions through their common refinement}{Fix a fine subdivision with $N_0$ pieces.  Any other fine subdivision,
+with $N$ pieces, has a common refinement with $NN_0$ pieces.  Hence
+$L_N(\gamma)=L_{NN_0}(\gamma)=L_{N_0}(\gamma)$.}
 Write $L(\gamma)$ for this common value.
 
 Let $H$ be a homotopy from $\gamma$ to $\delta$ fixing the endpoints.
