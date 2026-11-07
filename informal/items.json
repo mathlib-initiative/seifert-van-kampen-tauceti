@@ -101,20 +101,36 @@
     {
       "id": "1.3",
       "section": "1",
-      "kind": "lemma",
-      "title": "Mapping a restricted path back to the ambient space",
-      "gist": "Pushing the restriction of a path forward along the inclusion of the subspace returns the original path.",
+      "kind": "proposition",
+      "title": "Subdividing a path along a family of sets",
+      "gist": "If every parameter has a neighborhood that the path sends into some member of a family of sets, then the path can be cut at finitely many increasing parameters running from zero to one so that each consecutive subpath has its range inside a single member.",
       "parts": [],
       "in_v1": true,
       "reference": null,
       "departures": "",
       "declarations": [
         {
+          "name": "Path.exists_monotone_range_subpath_subset",
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "line": 224,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "an index type for the family",
+            "a family of subsets of the space indexed by the index type",
+            "two points of the space and a path between them",
+            "every parameter has a neighborhood whose image under the path lies in some member of the family"
+          ]
+        },
+        {
           "name": "Path.map_codRestrict",
           "module": "TauCeti.Topology.Homotopy.Path",
           "line": 89,
           "part": null,
-          "role": "key",
+          "role": "helper",
           "relation": "exactMatch",
           "junk": [],
           "hypotheses": [
@@ -157,37 +173,13 @@
             "every value of the path lies in the subset",
             "a parameter in the unit interval"
           ]
-        }
-      ]
-    },
-    {
-      "id": "1.4",
-      "section": "1",
-      "kind": "lemma",
-      "title": "The values of a concatenation of paths",
-      "gist": "A concatenation of two paths takes, at a parameter in the first or in the second half of the unit interval, a value of the first or of the second path at a rescaled parameter.",
-      "parts": [
-        {
-          "letter": "a",
-          "gist": "At a parameter whose value is at most one half, the concatenation agrees with the first path at any parameter whose value is twice as large.",
-          "reference": null
         },
-        {
-          "letter": "b",
-          "gist": "At a parameter whose value is at least one half, the concatenation agrees with the second path at any parameter whose value is twice as large, less one.",
-          "reference": null
-        }
-      ],
-      "in_v1": true,
-      "reference": null,
-      "departures": "The rescaled parameter is given as a point of the unit interval together with the equation its value satisfies, rather than computed from the original parameter.",
-      "declarations": [
         {
           "name": "Path.trans_apply_of_le",
           "module": "TauCeti.Topology.Homotopy.Path",
           "line": 101,
-          "part": "a",
-          "role": "key",
+          "part": null,
+          "role": "helper",
           "relation": "exactMatch",
           "junk": [],
           "hypotheses": [
@@ -202,8 +194,8 @@
           "name": "Path.trans_apply_of_ge",
           "module": "TauCeti.Topology.Homotopy.Path",
           "line": 108,
-          "part": "b",
-          "role": "key",
+          "part": null,
+          "role": "helper",
           "relation": "exactMatch",
           "junk": [],
           "hypotheses": [
@@ -213,26 +205,13 @@
             "a parameter in the unit interval whose value is at least one half",
             "a parameter in the unit interval whose value is twice that of the first, less one"
           ]
-        }
-      ]
-    },
-    {
-      "id": "1.5",
-      "section": "1",
-      "kind": "lemma",
-      "title": "A subpath of a path confined to a set",
-      "gist": "If a path sends every parameter of a closed interval into a set, then the subpath between any two parameters of that interval takes all of its values in the set.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
+        },
         {
           "name": "Path.subpath_apply_mem",
           "module": "TauCeti.Topology.Homotopy.Path",
           "line": 120,
           "part": null,
-          "role": "key",
+          "role": "helper",
           "relation": "exactMatch",
           "junk": [],
           "hypotheses": [
@@ -248,40 +227,11 @@
       ]
     },
     {
-      "id": "1.6",
-      "section": "1",
-      "kind": "proposition",
-      "title": "Subdividing a path along a family of sets",
-      "gist": "If every parameter has a neighborhood that the path sends into some member of a family of sets, then the path can be cut at finitely many increasing parameters running from zero to one so that each consecutive subpath has its range inside a single member.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
-        {
-          "name": "Path.exists_monotone_range_subpath_subset",
-          "module": "TauCeti.Topology.Homotopy.Path",
-          "line": 224,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "a topological space",
-            "an index type for the family",
-            "a family of subsets of the space indexed by the index type",
-            "two points of the space and a path between them",
-            "every parameter has a neighborhood whose image under the path lies in some member of the family"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1.7",
+      "id": "1.4",
       "section": "1",
       "kind": "lemma",
       "title": "Cutting a path class at an intermediate parameter",
-      "gist": "Concatenating the classes of two consecutive subpaths of one path, each with its endpoints renamed along equalities, gives the class of the subpath that spans both.",
+      "gist": "The homotopy class of the subpath from r to s followed by the subpath from s to t is the class of the subpath from r to t; endpoint identifications are implicit.",
       "parts": [],
       "in_v1": true,
       "reference": null,

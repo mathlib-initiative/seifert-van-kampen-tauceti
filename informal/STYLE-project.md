@@ -49,6 +49,18 @@ compact subset $K$ there. Introduce the general topological space $X$ only
 when the path results begin; do not impose a pseudometric or vector-space
 structure on it.
 
+## Editorial focus
+
+Communicate the constructions, key lemmas and deductions that explain why the
+Seifert--van Kampen theorem holds. The dependency closure is a source inventory,
+not a requirement to give every Lean declaration a numbered statement.
+Leave routine bookkeeping implicit: pointwise concatenation formulas,
+restriction followed by inclusion, subpath containment and endpoint transports
+need no standalone lemmas. Retain short notation introductions where needed.
+Keep the subdivision and homotopy-class reassembly results because they carry
+the passage from local paths to the global argument. Omitted implementation
+helpers may remain in the item table without creating PDF statements or links.
+
 ## Assumed background
 
 Assume basic familiarity with point-set topology. Do not explain neighborhoods,
@@ -85,7 +97,7 @@ and explain specialized notation next to its first use:
 
 - Section 1: the auxiliary pseudometric lemma and subdivision points, then
   the general topological space, paths and subpaths. Introduce the family of
-  subsets beside Proposition 1.6, then homotopy classes and endpoint renaming.
+  subsets beside Proposition 1.3, then homotopy classes and their composition.
 - Section 2: fundamental groupoids and induced functors, subgroupoids, then the
   fundamental group at a basepoint and its induced homomorphism.
 - Section 3: categories, endomorphisms and the one-object category, then the
@@ -105,13 +117,13 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep each retained notion link once. The constants are these 49,
-each copied from `declarations.json` (48 rows of its `references` from Mathlib and
+with its explanation; keep each retained notion link once. The constants are these 48,
+each copied from `declarations.json` (47 rows of its `references` from Mathlib and
 Lean's prelude, plus TauCeti's path restriction construction):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
 `ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
-`Path.trans`, `Path.subpath`, `Path.map`, `Path.cast`, `IsCompact`, `IsPathConnected`,
+`Path.trans`, `Path.subpath`, `Path.map`, `IsCompact`, `IsPathConnected`,
 `PathConnectedSpace`, `Path.Homotopic.Quotient`, `Path.Homotopic.Quotient.cast`,
 `Path.Homotopic.Quotient.trans`, `FundamentalGroupoid`, `FundamentalGroupoid.map`,
 `FundamentalGroup`, `FundamentalGroup.map`, `FundamentalGroup.fromPath`,

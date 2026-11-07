@@ -1,8 +1,8 @@
 # The item table, for the maintainer
 
-The text states the dependency closure of `TauCeti.isPushout_fundamentalGroup` at commit
-`37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`: 32 scope members, 24 items in 6 sections, 29 of
-the members as key declarations and 3 as helpers. The ids are provisional and contiguous
+The source inventory records the dependency closure of `TauCeti.isPushout_fundamentalGroup` at commit
+`37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`: 32 scope members, 21 selected items in 6 sections, 25 of
+the members as key declarations and 7 as helpers. The ids are provisional and contiguous
 within each section, in reading order.
 
 The six sections run from the interval and path lemmas, through the fundamental groupoid and
@@ -16,11 +16,8 @@ itself.
 |---|---|---|---|---|---|---|
 | 1.1 | lemma | A Lebesgue number for a family of neighborhoods | `TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds` | — | — | the members of the family need not be open, only neighborhoods of the points they cover |
 | 1.2 | definition | Subdivision points of an interval | `Set.Icc.coe_addNSMul` | — | — | the minimum formula is used as a definition; the related Lean lemma identifies it with Mathlib's interval-valued construction for nonnegative steps |
-| 1.3 | lemma | Mapping a restricted path back to the ambient space | `Path.map_codRestrict` | — | — | — |
-| 1.4 | lemma | The values of a concatenation of paths | (a) `Path.trans_apply_of_le`; (b) `Path.trans_apply_of_ge` | — | — | the rescaled parameter is given as a point of the unit interval with the equation its value satisfies |
-| 1.5 | lemma | A subpath of a path confined to a set | `Path.subpath_apply_mem` | — | — | — |
-| 1.6 | proposition | Subdividing a path along a family of sets | `Path.exists_monotone_range_subpath_subset` | — | — | — |
-| 1.7 | lemma | Cutting a path class at an intermediate parameter | `Path.Homotopic.Quotient.subpath_cast_trans` | — | — | — |
+| 1.3 | proposition | Subdividing a path along a family of sets | `Path.exists_monotone_range_subpath_subset` | — | — | — |
+| 1.4 | lemma | Cutting a path class at an intermediate parameter | `Path.Homotopic.Quotient.subpath_cast_trans` | — | — | — |
 | 2.1 | lemma | The fundamental groupoid of a path-connected space | `FundamentalGroupoid.nonempty_hom` | — | — | — |
 | 2.2 | lemma | An injective map is injective on objects | `ContinuousMap.fundamentalGroupoid_map_obj_injective` | — | — | — |
 | 2.3 | lemma | Recasting the endpoints of a path class | `Path.Homotopic.Quotient.cast_mem_arrows_iff` | — | — | — |
@@ -54,21 +51,23 @@ cited nowhere.
 
 ## Scope members that are no key declaration
 
-The path restriction construction and its pointwise formula are helpers on 1.3.
-Only the notation is introduced in the prose; its notion annotation links to the
-construction. The pointwise formula needs no separate statement or card.
+The six routine path constructions and lemmas below are helpers on 1.3. The
+paper introduces notation and uses their elementary properties implicitly;
+their presence in the source inventory does not require separate statements.
 
-- `Path.codRestrict` (helper on 1.3): the construction denoted by the linked notation
-  $\gamma^S$ preceding the lemma.
-- `Path.codRestrict_coe` (helper on 1.3): its pointwise formula is implicit in viewing
-  the same path in the subspace.
+- `Path.codRestrict`: linked from the notation $\gamma^S$ in the local prose.
+- `Path.codRestrict_coe`: the pointwise formula for that construction.
+- `Path.map_codRestrict`: recovering the ambient path under inclusion.
+- `Path.trans_apply_of_le` and `Path.trans_apply_of_ge`: the two formulas in
+  the definition of concatenation.
+- `Path.subpath_apply_mem`: containment of a subpath in the original segment.
 - `TauCeti.Groupoid.functorOfEndHom_map` (helper on 3.2): it states the formula for the value
   of the induced functor on a morphism, which is the content of the definition in 3.2.
 
 ## Notes on the shape of the table
 
-- Items 1.4, 4.5 and 6.2 have parts because the library splits a single statement by side: the
-  two halves of a concatenation, the two subsets of the cover, the two given homomorphisms.
+- Items 4.5 and 6.2 have parts because the library splits a single statement by side:
+  the two subsets of the cover and the two given homomorphisms.
 - Item 6.2 carries two key declarations per part: the library states each restriction both
   element by element and as an equality of homomorphisms, and the two are the same statement.
 - No statement in the closure relies on a junk value, so every `junk` list is empty. The

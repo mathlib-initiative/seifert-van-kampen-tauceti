@@ -34,49 +34,21 @@ $S\longrightarrow X$.
 Write \fcnotion{Path.codRestrict}{$\codres{\gamma}{S}$} for $\gamma$ viewed as a
 path in $S$ when its image lies in $S$.
 
-\begin{lemma}[id=1.3]{Mapping a restricted path back to the ambient space}
-Let $x$ and $y$ be points of $S$, and let $\gamma$ be a path in $X$ from $x$ to
-$y$ every value of which lies in $S$.  Then $\incl{S} \circ \codres{\gamma}{S} =
-\gamma$.
-\leanref{Path.map_codRestrict}
-\end{lemma}
-
 For composable \fcnotion{Path}{paths} $\gamma$ and $\delta$, write
 \fcnotion{Path.trans}{$\gamma\ptrans\delta$} for their concatenation, with
 $\gamma$ traversed first.
-
-\begin{lemma}[id=1.4]{The values of a concatenation of paths}
-Let $\gamma$ be a path from $x$ to $y$ and $\delta$ a path from $y$ to $z$ in
-$X$, and let $u$ and $v$ be parameters.
-\itempart{a}{%
-  If $u \le 1/2$ and $v = 2u$, then
-  $(\gamma \ptrans \delta)(u) = \gamma(v)$.
-  \leanref{Path.trans_apply_of_le}}
-\itempart{b}{%
-  If $1/2 \le u$ and $v = 2u - 1$, then
-  $(\gamma \ptrans \delta)(u) = \delta(v)$.
-  \leanref{Path.trans_apply_of_ge}}
-\end{lemma}
 
 For a path $\gamma$ and parameters $r,s$, the subpath
 \fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} traverses $\gamma$ with its
 parameter running linearly from $r$ to $s$.  It runs backwards when $s<r$
 and is constant when $r=s$.
 
-\begin{lemma}[id=1.5]{A subpath of a path confined to a set}
-Let $\gamma$ be a path in $X$, and let $r$ and $s$ be parameters.
-Suppose that $\gamma(t)$ lies in $S$ for every parameter $t$ with
-$r \le t \le s$.  Then, for all parameters $u$ and $v$ with $r \le u \le s$ and
-$r \le v \le s$, every value of $\subpath{\gamma}{u}{v}$ lies in $S$.
-\leanref{Path.subpath_apply_mem}
-\end{lemma}
-
 A subdivision of \fcnotion{unitInterval}{$\uI$} is a finite \fcnotion{Monotone}{nondecreasing} sequence
 $0=t_0\le\cdots\le t_n=1$.
 
 Let $(U_i)_{i\in I}$ be a family of subsets of $X$.
 
-\begin{proposition}[id=1.6]{Subdividing a path along a family of sets}
+\begin{proposition}[id=1.3]{Subdividing a path along a family of sets}
 Let $\gamma$ be a path in $X$.  Suppose that every parameter has a
 neighborhood that $\gamma$ maps into some $U_i$.  Then there is a subdivision
 $t_0,\dots,t_n$ of $\uI$ such that, for each $k$ less than $n$, the range of
@@ -84,18 +56,13 @@ $\subpath{\gamma}{t_k}{t_{k+1}}$ is contained in some $U_i$.
 \leanref{Path.exists_monotone_range_subpath_subset}
 \end{proposition}
 
-Two paths with the same endpoints are homotopic if a homotopy joins them while
-fixing the endpoints.  Write \fcnotion{Path.Homotopic.Quotient}{$\pcls{\gamma}$}
-for the class of $\gamma$; \fcnotion{Path.Homotopic.Quotient.trans}{composition
-of classes}, also written $\ptrans$, is induced by concatenation.  Equalities of endpoints allow a path
-to be \fcnotion{Path.cast}{read with the renamed endpoints}.
+Write \fcnotion{Path.Homotopic.Quotient}{$\pcls{\gamma}$} for the homotopy
+class of $\gamma$; \fcnotion{Path.Homotopic.Quotient.trans}{composition of
+classes}, also written $\ptrans$, is induced by concatenation.
 
-\begin{lemma}[id=1.7]{Cutting a path class at an intermediate parameter}
+\begin{lemma}[id=1.4]{Cutting a path class at an intermediate parameter}
 Let $\gamma$ be a path in $X$, and let $r,s,t$ be parameters.
-Let $x_0$, $x_1$ and $x_2$ be points of $X$ with $x_0 = \gamma(r)$,
-$x_1 = \gamma(s)$ and $x_2 = \gamma(t)$.  Rename the endpoints of
-$\subpath{\gamma}{r}{s}$, $\subpath{\gamma}{s}{t}$ and $\subpath{\gamma}{r}{t}$
-along these equalities.  Then
+Then
 \[
   \pcls{\subpath{\gamma}{r}{s}} \ptrans \pcls{\subpath{\gamma}{s}{t}}
     = \pcls{\subpath{\gamma}{r}{t}}.
