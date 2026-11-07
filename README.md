@@ -83,6 +83,23 @@ them: this revision uses Mathlib commit
 `1b1ccf4b088b32fa3f23f2de1127433254a81e1e`. The snippets are from Mathlib's
 Apache-2.0 source, with each card linking to the declaration at that revision.
 
+To rebuild Mathlib's token hovers, use the Verso workspace prepared for this
+TauCeti revision, with its original dependency pins and matching Verso package:
+
+```sh
+python3 tools/mathlib_hovers.py \
+  --formal-companion /path/to/formal-companion \
+  --verso-project /path/to/verso/libs/svk-tauceti-lib
+python3 pdf-overlay/tools/check_generated.py
+python3 pdf-overlay/tools/serve.py --build-only
+```
+
+This builds only the 32 Mathlib modules used by the cards and combines their
+hovers with the TauCeti pages. It checks source revisions before building and
+requires every Mathlib card to have a matching hover statement. Separate page
+builds have separate hover identifiers; the exporter remaps them when combining
+the results. The generated `pdf-overlay/verso.json` is committed with the overlay.
+
 The v2 PDF URL is the proposed destination for this revision; publishing it
 requires review of the new PDF and proof-step links. The published v1 remains
 available at its original URL.

@@ -290,7 +290,7 @@ def main():
     manifest['manifest_sha256'] = sync.manifest_sha256(found.files)
     inputs = {row['path']: row for row in manifest['inputs']}
     source_paths = list((ROOT / 'informal').rglob('*.tex')) + list((ROOT / 'informal').glob('*.sty'))
-    for rel in [CONFIG, 'tools/proof_steps.py', *[p.relative_to(ROOT).as_posix() for p in source_paths]]:
+    for rel in [CONFIG, 'tools/proof_steps.py', 'tools/mathlib_hovers.py', *[p.relative_to(ROOT).as_posix() for p in source_paths]]:
         inputs[rel] = {'path': rel, 'sha256': digest((ROOT / rel).read_bytes())}
     manifest['inputs'] = [inputs[k] for k in sorted(inputs)]
     sync.record_annotations(ROOT, manifest)
