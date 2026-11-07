@@ -23,11 +23,9 @@ Define $t_n := \min\{b,a+nd\}$.
 \leanref{Set.Icc.coe_addNSMul}
 \end{definition}
 
-These \fcnotion{Set.Icc.addNSMul}{subdivision points} start at $a$ and advance
-by steps of size $d$, stopping at $b$.
-For example, in $[0,1]$ with $d=2/5$, the points are
-$0,\,2/5,\,4/5,\,1,\,1,\ldots$: the third step would reach $6/5$, so we
-use $1$ instead and stay there.
+For example, in $[0,1]$ with $d=2/5$, the
+\fcnotion{Set.Icc.addNSMul}{subdivision points} are
+$0,\,2/5,\,4/5,\,1,\,1,\ldots$.
 
 Let $S$ be a subset of a \fcnotion{TopologicalSpace}{topological space} $X$.
 Write \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}$} for the inclusion
