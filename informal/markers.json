@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "daac4c74dfb64cdc2d857a228ddb7ebf9c530c40",
- "pdf_sha256": "4f176857cf8d6d03761a88aa12b730455534cd351e6ee451aaf82f0c1fbac9b7",
+ "source_commit": "c40da44d21d110c44c1382991072e48c059db58c",
+ "pdf_sha256": "53531ed53d7cf8bf804340b913eedaf8951d434542ca2192f8c3302d8d02d190",
  "pages": 8,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -26,29 +26,14 @@
     "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds"
    ],
    "boxes": [
-    [1, 0.130391, 0.390467, 0.739217, 0.072601]
+    [1, 0.130391, 0.395518, 0.739217, 0.072917]
    ]
   },
   {
    "id": "1.2",
-   "kind": "definition",
+   "kind": "proposition",
    "label": "item:1.2",
    "number": "1.2",
-   "section": "1",
-   "title": "Subdivision points of an interval",
-   "parts": [],
-   "decls": [
-    "Set.Icc.coe_addNSMul"
-   ],
-   "boxes": [
-    [1, 0.130391, 0.528725, 0.739217, 0.021465]
-   ]
-  },
-  {
-   "id": "1.3",
-   "kind": "proposition",
-   "label": "item:1.3",
-   "number": "1.3",
    "section": "1",
    "title": "Subdividing a path along a family of sets",
    "parts": [],
@@ -56,14 +41,14 @@
     "Path.exists_monotone_range_subpath_subset"
    ],
    "boxes": [
-    [1, 0.130391, 0.701389, 0.739217, 0.07197]
+    [1, 0.130391, 0.606692, 0.739217, 0.072285]
    ]
   },
   {
-   "id": "1.4",
+   "id": "1.3",
    "kind": "lemma",
-   "label": "item:1.4",
-   "number": "1.4",
+   "label": "item:1.3",
+   "number": "1.3",
    "section": "1",
    "title": "Cutting a path class at an intermediate parameter",
    "parts": [],
@@ -71,7 +56,7 @@
     "Path.Homotopic.Quotient.subpath_cast_trans"
    ],
    "boxes": [
-    [1, 0.130391, 0.822917, 0.739217, 0.057449]
+    [1, 0.130391, 0.732323, 0.739217, 0.057765]
    ]
   },
   {
@@ -393,7 +378,7 @@
    "label": "notion:1",
    "number": "n1",
    "boxes": [
-    [1, 0.267027, 0.363952, 0.099698, 0.021465]
+    [1, 0.267027, 0.367109, 0.099698, 0.021465]
    ]
   },
   {
@@ -403,7 +388,7 @@
    "label": "notion:2",
    "number": "n2",
    "boxes": [
-    [1, 0.454934, 0.363952, 0.160254, 0.021465]
+    [1, 0.454934, 0.367109, 0.160254, 0.021465]
    ]
   },
   {
@@ -413,175 +398,115 @@
    "label": "notion:3",
    "number": "n3",
    "boxes": [
-    [1, 0.62363, 0.363952, 0.056942, 0.021465]
-   ]
-  },
-  {
-   "id": "notion:AddCommGroup",
-   "notion": "AddCommGroup",
-   "words": "additive commutative group",
-   "label": "notion:4",
-   "number": "n4",
-   "boxes": [
-    [1, 0.487142, 0.46875, 0.223201, 0.018308]
-   ]
-  },
-  {
-   "id": "notion:LinearOrder",
-   "notion": "LinearOrder",
-   "words": "linear order",
-   "label": "notion:5",
-   "number": "n5",
-   "boxes": [
-    [1, 0.771315, 0.46875, 0.093391, 0.018308]
-   ]
-  },
-  {
-   "id": "notion:IsOrderedAddMonoid",
-   "notion": "IsOrderedAddMonoid",
-   "words": "preserved by addition",
-   "label": "notion:6",
-   "number": "n6",
-   "boxes": [
-    [1, 0.132842, 0.487058, 0.170573, 0.017677]
-   ]
-  },
-  {
-   "id": "notion:Set.Icc",
-   "notion": "Set.Icc",
-   "words": "$\\cint{a}{b}$",
-   "label": "notion:7",
-   "number": "n7",
-   "boxes": [
-    [1, 0.611214, 0.487058, 0.037438, 0.017677]
-   ]
-  },
-  {
-   "id": "notion:Nat",
-   "notion": "Nat",
-   "words": "nonnegative integer",
-   "label": "notion:8",
-   "number": "n8",
-   "boxes": [
-    [1, 0.447125, 0.504735, 0.154511, 0.018308]
-   ]
-  },
-  {
-   "id": "notion:Set.Icc.addNSMul",
-   "notion": "Set.Icc.addNSMul",
-   "words": "subdivision points",
-   "label": "notion:9",
-   "number": "n9",
-   "boxes": [
-    [1, 0.471725, 0.554924, 0.14337, 0.019571]
+    [1, 0.62363, 0.367109, 0.056942, 0.021465]
    ]
   },
   {
    "id": "notion:TopologicalSpace",
    "notion": "TopologicalSpace",
    "words": "topological space",
-   "label": "notion:10",
-   "number": "n10",
+   "label": "notion:4",
+   "number": "n4",
    "boxes": [
-    [1, 0.33929, 0.574495, 0.134755, 0.015625]
+    [1, 0.33929, 0.47601, 0.134755, 0.017361]
    ]
   },
   {
    "id": "notion:ContinuousMap.subtypeVal",
    "notion": "ContinuousMap.subtypeVal",
    "words": "$\\incl{S}$",
-   "label": "notion:11",
-   "number": "n11",
+   "label": "notion:5",
+   "number": "n5",
    "boxes": [
-    [1, 0.55614, 0.574495, 0.018717, 0.015625]
+    [1, 0.55614, 0.47601, 0.018717, 0.017361]
    ]
   },
   {
    "id": "notion:Path.codRestrict",
    "notion": "Path.codRestrict",
    "words": "$\\codres{\\gamma}{S}$",
-   "label": "notion:12",
-   "number": "n12",
+   "label": "notion:6",
+   "number": "n6",
    "boxes": [
-    [1, 0.210081, 0.59012, 0.022627, 0.018466]
+    [1, 0.210081, 0.493371, 0.022627, 0.018624]
    ]
   },
   {
    "id": "notion:Path",
    "notion": "Path",
    "words": "paths",
-   "label": "notion:13",
-   "number": "n13",
+   "label": "notion:7",
+   "number": "n7",
    "boxes": [
-    [1, 0.288165, 0.608586, 0.045133, 0.017203]
+    [1, 0.288165, 0.511995, 0.045133, 0.017203]
    ]
   },
   {
    "id": "notion:Path.trans",
    "notion": "Path.trans",
    "words": "$\\gamma\\ptrans\\delta$",
-   "label": "notion:14",
-   "number": "n14",
+   "label": "notion:8",
+   "number": "n8",
    "boxes": [
-    [1, 0.452702, 0.608586, 0.034141, 0.017203]
+    [1, 0.452702, 0.511995, 0.034141, 0.017203]
    ]
   },
   {
    "id": "notion:Path.subpath",
    "notion": "Path.subpath",
    "words": "$\\subpath{\\gamma}{r}{s}$",
-   "label": "notion:15",
-   "number": "n15",
+   "label": "notion:9",
+   "number": "n9",
    "boxes": [
-    [1, 0.523003, 0.625789, 0.03633, 0.018308]
+    [1, 0.523003, 0.529198, 0.03633, 0.018308]
    ]
   },
   {
    "id": "notion:unitInterval",
    "notion": "unitInterval",
    "words": "$\\uI$",
-   "label": "notion:16",
-   "number": "n16",
+   "label": "notion:10",
+   "number": "n10",
    "boxes": [
-    [1, 0.293414, 0.659722, 0.038191, 0.017361]
+    [1, 0.293414, 0.563131, 0.038191, 0.017361]
    ]
   },
   {
    "id": "notion:Monotone",
    "notion": "Monotone",
    "words": "nondecreasing",
-   "label": "notion:17",
-   "number": "n17",
+   "label": "notion:11",
+   "number": "n11",
    "boxes": [
-    [1, 0.413427, 0.659722, 0.111532, 0.017361]
+    [1, 0.413427, 0.563131, 0.111532, 0.017361]
    ]
   },
   {
    "id": "notion:Path.Homotopic.Quotient",
    "notion": "Path.Homotopic.Quotient",
    "words": "$\\pcls{\\gamma}$",
-   "label": "notion:18",
-   "number": "n18",
+   "label": "notion:12",
+   "number": "n12",
    "boxes": [
-    [1, 0.210252, 0.779356, 0.022662, 0.019886]
+    [1, 0.210252, 0.686869, 0.022662, 0.019886]
    ]
   },
   {
    "id": "notion:Path.Homotopic.Quotient.trans",
    "notion": "Path.Homotopic.Quotient.trans",
    "words": "composition of classes",
-   "label": "notion:19",
-   "number": "n19",
+   "label": "notion:13",
+   "number": "n13",
    "boxes": [
-    [1, 0.462059, 0.779356, 0.17352, 0.019886]
+    [1, 0.462059, 0.686869, 0.17352, 0.019886]
    ]
   },
   {
    "id": "notion:FundamentalGroupoid",
    "notion": "FundamentalGroupoid",
    "words": "$\\fgpd{X}$",
-   "label": "notion:20",
-   "number": "n20",
+   "label": "notion:14",
+   "number": "n14",
    "boxes": [
     [2, 0.590447, 0.134785, 0.053583, 0.019571]
    ]
@@ -590,8 +515,8 @@
    "id": "notion:PathConnectedSpace",
    "notion": "PathConnectedSpace",
    "words": "path-connected space",
-   "label": "notion:21",
-   "number": "n21",
+   "label": "notion:15",
+   "number": "n15",
    "boxes": [
     [2, 0.820663, 0.154356, 0.048945, 0.01673],
     [2, 0.130391, 0.171086, 0.129778, 0.018624]
@@ -601,8 +526,8 @@
    "id": "notion:ContinuousMap",
    "notion": "ContinuousMap",
    "words": "continuous map",
-   "label": "notion:22",
-   "number": "n22",
+   "label": "notion:16",
+   "number": "n16",
    "boxes": [
     [2, 0.343654, 0.243687, 0.126428, 0.018308]
    ]
@@ -611,8 +536,8 @@
    "id": "notion:CategoryTheory.Functor",
    "notion": "CategoryTheory.Functor",
    "words": "functor",
-   "label": "notion:23",
-   "number": "n23",
+   "label": "notion:17",
+   "number": "n17",
    "boxes": [
     [2, 0.806255, 0.243687, 0.058452, 0.018308]
    ]
@@ -621,8 +546,8 @@
    "id": "notion:FundamentalGroupoid.map",
    "notion": "FundamentalGroupoid.map",
    "words": "$\\fgpd{f}$",
-   "label": "notion:24",
-   "number": "n24",
+   "label": "notion:18",
+   "number": "n18",
    "boxes": [
     [2, 0.132842, 0.261995, 0.048063, 0.017677]
    ]
@@ -631,8 +556,8 @@
    "id": "notion:Path.map",
    "notion": "Path.map",
    "words": "$f\\circ\\gamma$",
-   "label": "notion:25",
-   "number": "n25",
+   "label": "notion:19",
+   "number": "n19",
    "boxes": [
     [2, 0.153955, 0.279672, 0.040151, 0.018624]
    ]
@@ -641,8 +566,8 @@
    "id": "notion:CategoryTheory.Subgroupoid",
    "notion": "CategoryTheory.Subgroupoid",
    "words": "subgroupoid",
-   "label": "notion:26",
-   "number": "n26",
+   "label": "notion:20",
+   "number": "n20",
    "boxes": [
     [2, 0.179848, 0.35101, 0.098162, 0.019729]
    ]
@@ -651,8 +576,8 @@
    "id": "notion:Path.Homotopic.Quotient.cast",
    "notion": "Path.Homotopic.Quotient.cast",
    "words": "rename the endpoints of a path class",
-   "label": "notion:27",
-   "number": "n27",
+   "label": "notion:21",
+   "number": "n21",
    "boxes": [
     [2, 0.56055, 0.370739, 0.289487, 0.018466]
    ]
@@ -661,8 +586,8 @@
    "id": "notion:FundamentalGroup",
    "notion": "FundamentalGroup",
    "words": "fundamental group",
-   "label": "notion:28",
-   "number": "n28",
+   "label": "notion:22",
+   "number": "n22",
    "boxes": [
     [2, 0.381788, 0.45928, 0.151291, 0.019255]
    ]
@@ -671,8 +596,8 @@
    "id": "notion:FundamentalGroup.fromPath",
    "notion": "FundamentalGroup.fromPath",
    "words": "class of a loop at $x$",
-   "label": "notion:29",
-   "number": "n29",
+   "label": "notion:23",
+   "number": "n23",
    "boxes": [
     [2, 0.132842, 0.495581, 0.149837, 0.017203]
    ]
@@ -681,8 +606,8 @@
    "id": "notion:FundamentalGroup.map",
    "notion": "FundamentalGroup.map",
    "words": "$\\fgrp{f}{x}$",
-   "label": "notion:30",
-   "number": "n30",
+   "label": "notion:24",
+   "number": "n24",
    "boxes": [
     [2, 0.802732, 0.495581, 0.061974, 0.017203]
    ]
@@ -691,8 +616,8 @@
    "id": "notion:CategoryTheory.Category",
    "notion": "CategoryTheory.Category",
    "words": "category",
-   "label": "notion:31",
-   "number": "n31",
+   "label": "notion:25",
+   "number": "n25",
    "boxes": [
     [2, 0.213924, 0.630366, 0.068356, 0.019571]
    ]
@@ -701,8 +626,8 @@
    "id": "notion:CategoryTheory.End",
    "notion": "CategoryTheory.End",
    "words": "$\\End(w)$",
-   "label": "notion:32",
-   "number": "n32",
+   "label": "notion:26",
+   "number": "n26",
    "boxes": [
     [2, 0.500848, 0.630366, 0.061493, 0.019571]
    ]
@@ -711,8 +636,8 @@
    "id": "notion:CategoryTheory.CategoryStruct.comp",
    "notion": "CategoryTheory.CategoryStruct.comp",
    "words": "$\\circ$",
-   "label": "notion:33",
-   "number": "n33",
+   "label": "notion:27",
+   "number": "n27",
    "boxes": [
     [2, 0.200566, 0.649937, 0.011364, 0.01673]
    ]
@@ -721,8 +646,8 @@
    "id": "notion:Monoid",
    "notion": "Monoid",
    "words": "monoid",
-   "label": "notion:34",
-   "number": "n34",
+   "label": "notion:28",
+   "number": "n28",
    "boxes": [
     [2, 0.463271, 0.649937, 0.059887, 0.01673]
    ]
@@ -731,8 +656,8 @@
    "id": "notion:CategoryTheory.SingleObj",
    "notion": "CategoryTheory.SingleObj",
    "words": "$\\sobj{M}$",
-   "label": "notion:35",
-   "number": "n35",
+   "label": "notion:29",
+   "number": "n29",
    "boxes": [
     [2, 0.5564, 0.649937, 0.034561, 0.01673]
    ]
@@ -741,8 +666,8 @@
    "id": "notion:CategoryTheory.Groupoid",
    "notion": "CategoryTheory.Groupoid",
    "words": "groupoid",
-   "label": "notion:36",
-   "number": "n36",
+   "label": "notion:30",
+   "number": "n30",
    "boxes": [
     [2, 0.197042, 0.739268, 0.071326, 0.018624]
    ]
@@ -751,8 +676,8 @@
    "id": "notion:CategoryTheory.inv",
    "notion": "CategoryTheory.inv",
    "words": "inverse",
-   "label": "notion:37",
-   "number": "n37",
+   "label": "notion:31",
+   "number": "n31",
    "boxes": [
     [2, 0.462312, 0.739268, 0.055581, 0.018624]
    ]
@@ -761,8 +686,8 @@
    "id": "notion:MonoidHom",
    "notion": "MonoidHom",
    "words": "Homomorphisms of monoids",
-   "label": "notion:38",
-   "number": "n38",
+   "label": "notion:32",
+   "number": "n32",
    "boxes": [
     [2, 0.528214, 0.739268, 0.22302, 0.018624]
    ]
@@ -771,8 +696,8 @@
    "id": "notion:CategoryTheory.Subgroupoid.im",
    "notion": "CategoryTheory.Subgroupoid.im",
    "words": "$\\im\\fgpd{\\incl{U_i}}$",
-   "label": "notion:39",
-   "number": "n39",
+   "label": "notion:33",
+   "number": "n33",
    "boxes": [
     [3, 0.132842, 0.171086, 0.081976, 0.017519]
    ]
@@ -781,8 +706,8 @@
    "id": "notion:iSup",
    "notion": "iSup",
    "words": "the smallest subgroupoid containing them",
-   "label": "notion:40",
-   "number": "n40",
+   "label": "notion:34",
+   "number": "n34",
    "boxes": [
     [3, 0.23646, 0.188605, 0.329593, 0.019097]
    ]
@@ -791,8 +716,8 @@
    "id": "notion:ContinuousMap.inclusion",
    "notion": "ContinuousMap.inclusion",
    "words": "$\\inclin{S}{T}$",
-   "label": "notion:41",
-   "number": "n41",
+   "label": "notion:35",
+   "number": "n35",
    "boxes": [
     [3, 0.561385, 0.47096, 0.03177, 0.019097]
    ]
@@ -801,8 +726,8 @@
    "id": "notion:CategoryTheory.Functor.comp",
    "notion": "CategoryTheory.Functor.comp",
    "words": "$F\\circ G$",
-   "label": "notion:42",
-   "number": "n42",
+   "label": "notion:36",
+   "number": "n36",
    "boxes": [
     [3, 0.232465, 0.490057, 0.047239, 0.01815]
    ]
@@ -811,8 +736,8 @@
    "id": "notion:MonoidHom.range",
    "notion": "MonoidHom.range",
    "words": "image",
-   "label": "notion:43",
-   "number": "n43",
+   "label": "notion:37",
+   "number": "n37",
    "boxes": [
     [4, 0.606107, 0.768308, 0.048004, 0.01673]
    ]
@@ -821,8 +746,8 @@
    "id": "notion:Subgroup",
    "notion": "Subgroup",
    "words": "subgroup",
-   "label": "notion:44",
-   "number": "n44",
+   "label": "notion:38",
+   "number": "n38",
    "boxes": [
     [4, 0.180679, 0.785038, 0.0739, 0.017045]
    ]
@@ -831,8 +756,8 @@
    "id": "notion:IsPathConnected",
    "notion": "IsPathConnected",
    "words": "path-connected subsets",
-   "label": "notion:45",
-   "number": "n45",
+   "label": "notion:39",
+   "number": "n39",
    "boxes": [
     [4, 0.331594, 0.802083, 0.182982, 0.018624]
    ]
@@ -841,8 +766,8 @@
    "id": "notion:MonoidHom.comp",
    "notion": "MonoidHom.comp",
    "words": "$\\circ$",
-   "label": "notion:46",
-   "number": "n46",
+   "label": "notion:40",
+   "number": "n40",
    "boxes": [
     [5, 0.751383, 0.750316, 0.011364, 0.017519]
    ]
@@ -851,8 +776,8 @@
    "id": "notion:CategoryTheory.IsPushout",
    "notion": "CategoryTheory.IsPushout",
    "words": "pushout",
-   "label": "notion:47",
-   "number": "n47",
+   "label": "notion:41",
+   "number": "n41",
    "boxes": [
     [7, 0.198925, 0.549874, 0.064938, 0.018308]
    ]
@@ -861,8 +786,8 @@
    "id": "notion:GrpCat",
    "notion": "GrpCat",
    "words": "category of groups",
-   "label": "notion:48",
-   "number": "n48",
+   "label": "notion:42",
+   "number": "n42",
    "boxes": [
     [7, 0.404153, 0.549874, 0.149778, 0.018308]
    ]
