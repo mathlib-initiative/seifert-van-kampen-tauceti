@@ -243,8 +243,12 @@ def main():
                            check=True, capture_output=True)
     manifest = json.loads((ROOT / 'pdf-overlay/GENERATED.json').read_text())['annotations']
     # Preserve the existing statement records; place steps beside an unambiguous owner.
-    owner_kinds = {'4.1':'theorem', '4.2':'definition', '5.1':'theorem',
-                   '6.1':'definition', '6.3':'proposition', '6.4':'theorem'}
+    owner_items = {step['item'] for step in config['steps']}
+    owner_kinds = {item['id']: item['kind']
+                   for item in json.loads((ROOT / 'informal/items.json').read_text())['items']
+                   if item['id'] in owner_items}
+    if owner_kinds.keys() != owner_items:
+        raise ValueError('proof steps refer to an item absent from items.json')
     for item, kind in owner_kinds.items():
         section = item.split('.')[0]
         aid = kind + '-' + item

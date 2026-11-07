@@ -60,18 +60,19 @@ need no standalone lemmas. Retain short notation introductions where needed.
 Keep the subdivision and homotopy-class reassembly results because they carry
 the passage from local paths to the global argument. Omitted implementation
 helpers may remain in the item table without creating PDF statements or links.
-Section 2 introduces the fundamental groupoid, its functoriality, subgroupoids
-and fundamental groups in prose. Leave immediate consequences of these
-definitions implicit: existence of morphisms under path connectedness,
-injectivity of the object map and the image of a loop class. Endpoint
-transports also stay implicit.
+Introduce fundamental groupoids, their functoriality and subgroupoids in the
+cover argument in Section 3. Introduce fundamental groups and their induced
+homomorphisms in Section 4. Keep these local introductions short. Leave
+immediate consequences implicit: existence of morphisms under path
+connectedness, injectivity of the object map and the image of a loop class.
+Endpoint transports also stay implicit.
 
 ## Assumed background
 
 Assume basic familiarity with point-set topology. Do not explain neighborhoods,
 interiors, compactness, subspace topologies, set membership or the range of a map.
 Introduce notation when it is needed, and keep conventions that affect the
-mathematics, such as the nonemptiness of path-connected spaces and subsets.
+mathematics, such as the nonemptiness of path-connected subsets.
 Do not retain introductory prose solely to create a notion annotation.
 Treat paths in a subspace as familiar: introduce $\gamma^S$ only as notation,
 without a numbered definition or an explanation of its pointwise construction.
@@ -103,15 +104,13 @@ and explain specialized notation next to its first use:
 - Section 1: the auxiliary pseudometric lemma, then the general topological
   space, paths and subpaths. Introduce subdivisions and the family of subsets
   beside Proposition 1.2, then homotopy classes and their composition.
-- Section 2: fundamental groupoids and induced functors, subgroupoids, then the
-  fundamental group at a basepoint and its induced homomorphism.
-- Section 3: categories, endomorphisms and the one-object category, then the
-  connecting morphisms needed by Definition 3.2.
-- Section 4: a family of subsets, image subgroupoids and generation, then the
-  target category and the two-set specialization where each is needed.
-- Section 5: a basepoint and a family of subsets, images of homomorphisms and
-  generation, then the two-set specialization.
-- Section 6: the space, two subsets and basepoint, inclusions and the target
+- Section 2: categories, endomorphisms and the one-object category, then the
+  connecting morphisms needed by Definition 2.2.
+- Section 3: the fundamental groupoid and induced functors, subgroupoids and
+  a family of subsets, then image subgroupoids, generation and gluing.
+- Section 4: the fundamental group, loop classes and induced homomorphisms,
+  then a family of subsets and generation by their images.
+- Section 5: the space, two subsets and basepoint, inclusions and the target
   monoid; explain the pushout condition beside the final theorem.
 
 Repeat enough ambient data and notation to make a section readable on its own.
@@ -122,14 +121,14 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep each retained notion link once. The constants are these 41,
-each copied from `declarations.json` (40 rows of its `references` from Mathlib, plus TauCeti's path restriction
+with its explanation; keep each retained notion link once. The constants are these 40,
+each copied from `declarations.json` (39 rows of its `references` from Mathlib, plus TauCeti's path restriction
 construction):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
 `ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
 `Path.trans`, `Path.subpath`, `Path.map`, `IsCompact`, `IsPathConnected`,
-`PathConnectedSpace`, `Path.Homotopic.Quotient`,
+`Path.Homotopic.Quotient`,
 `Path.Homotopic.Quotient.trans`, `FundamentalGroupoid`, `FundamentalGroupoid.map`,
 `FundamentalGroup`, `FundamentalGroup.map`, `FundamentalGroup.fromPath`,
 `CategoryTheory.Subgroupoid`, `CategoryTheory.Subgroupoid.im`, `MonoidHom.range`,
@@ -170,9 +169,9 @@ The text cites A. Hatcher, Algebraic Topology, Cambridge University Press, 2002 
 
 Every number this text cites comes from a module docstring, so every `\fcref` is unstarred
 and no dagger is printed anywhere. `items.json` gives `Theorem 1.20` for the four items
-that carry a reference, two of them in section 4 and one each in sections 5 and 6, and no
-number anywhere else. The four are items `4.1` and `4.2`, item `5.1` and item `6.4`; a
-drafter of section 4 writes two `\fcref`, one on each of those two items. Every one of the
+that carry a reference, two of them in section 3 and one each in sections 4 and 5, and no
+number anywhere else. The four are items `3.1` and `3.2`, item `4.1` and item `5.4`; a
+drafter of section 3 writes two `\fcref`, one on each of those two items. Every one of the
 four numbers belongs to the item as a whole, so no part of an item carries a number of its
 own.
 
@@ -190,13 +189,13 @@ sentences with `\proofstep` and individual displayed equations with
 `proofsteps.json`. Never mark a whole proof as one region. Lean names remain
 in the annotations.
 
-In the proof of 5.1, use $H$ for the generated subgroup and $S$ for the
+In the proof of 4.1, use $H$ for the generated subgroup and $S$ for the
 subgroupoid defined by transporting morphisms to the basepoint, matching
 the local names in Lean. Here $S=\top$ means that this subgroupoid is the
 whole fundamental groupoid. This use of $S$ is local to the proof; section 1 introduces its own subset $S$.
 
 Prefer mathematical notation that makes a linked argument easy to recognize:
-use the chosen index $i_0$ in 5.1, and introduce the equal-subdivision value
+use the chosen index $i_0$ in 4.1, and introduce the equal-subdivision value
 $L_N$ before its common value $L$ in 4.2. There $N$ counts the pieces, $N_0$ is one fixed fine choice, and $m$ is
 a positive integer refining each piece. Introduce intermediate objects by their mathematical meaning, and
 separate deductions when they have different proof-step links. Keep tactic
