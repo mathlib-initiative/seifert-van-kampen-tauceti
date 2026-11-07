@@ -1,10 +1,8 @@
-Let $X$ be a topological space, let $A,B\subseteq X$, and let $x\in X$.
-Subspaces carry the inherited topology.  For a subspace $S$ containing $x$,
-write $\fgrp{S}{x}$ for its fundamental group at $x$ and $\fgpd{S}$ for its
-fundamental groupoid.  Write $\incl{S}:S\longrightarrow X$ and
-$\inclin{S}{T}:S\longrightarrow T$ for the inclusions, the latter when
-$S\subseteq T$.  Let $M$ be a monoid; composition of homomorphisms
-\fcnotion{MonoidHom.comp}{$\circ$} is read from right to left.
+Let $A$ and $B$ be subsets of a topological space $X$, let $x\in X$, and let
+$M$ be a monoid.  Write $\fgrp{S}{x}$ for the fundamental group of a subspace
+$S$ at $x\in S$.  Inclusion maps are denoted $\incl{S}:S\longrightarrow X$
+and $\inclin{S}{T}:S\longrightarrow T$ for $S\subseteq T$.  Composition of
+homomorphisms \fcnotion{MonoidHom.comp}{$\circ$} is read from right to left.
 
 \begin{definition}[id=6.1]{The homomorphism out of the fundamental group of the space}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
@@ -29,7 +27,7 @@ $\rho_y$ on $C$.}  In particular, $\tau^A_x$ and $\tau^B_x$ are identities.
 
 Send every object to the unique object of $\sobj M$, the one-object category
 of $M$.  For a morphism
-$g:y\longrightarrow z$ in $\fgpd A$, set
+$g:y\longrightarrow z$ in the fundamental groupoid $\fgpd A$, set
 \[
  F_A(g)=\varphi_A\bigl((\tau^A_z)^{-1}\circ g\circ\tau^A_y\bigr),
 \]

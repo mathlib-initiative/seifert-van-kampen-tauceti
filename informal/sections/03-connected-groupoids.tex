@@ -3,9 +3,9 @@ object of it.  Write \fcnotion{CategoryTheory.End}{$\End(w)$} for its monoid
 of endomorphisms; composition
 \fcnotion{CategoryTheory.CategoryStruct.comp}{$\circ$} is read from right to
 left.  For a \fcnotion{Monoid}{monoid} $M$,
-\fcnotion{CategoryTheory.SingleObj}{$\sobj{M}$} is the category with one object
-and endomorphisms $M$, where an element followed by a second composes to the
-product of the second with the first.
+\fcnotion{CategoryTheory.SingleObj}{$\sobj{M}$} has one object, its
+endomorphisms are the elements of $M$, and composition is multiplication:
+$h\circ g=hg$.
 
 \begin{definition}[id=3.1]{The functor picking out a chosen object}
 The functor from $\sobj{\End(w)}$ to $\mathcal C$ takes the unique object to
