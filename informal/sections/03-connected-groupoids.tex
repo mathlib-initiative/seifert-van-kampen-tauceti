@@ -1,14 +1,30 @@
+Let $\mathcal C$ be a \fcnotion{CategoryTheory.Category}{category} and $w$ an
+object of it.  Write \fcnotion{CategoryTheory.End}{$\End(w)$} for its monoid
+of endomorphisms; composition
+\fcnotion{CategoryTheory.CategoryStruct.comp}{$\circ$} is read from right to
+left.  For a \fcnotion{Monoid}{monoid} $M$,
+\fcnotion{CategoryTheory.SingleObj}{$\sobj{M}$} is the category with one object
+and endomorphisms $M$, where an element followed by a second composes to the
+product of the second with the first.
+
 \begin{definition}[id=3.1]{The functor picking out a chosen object}
-The functor from $\sobj{\End(w)}$ to $\mathcal{C}$ takes the unique object to
+The functor from $\sobj{\End(w)}$ to $\mathcal C$ takes the unique object to
 $w$ and each element of $\End(w)$ to itself.
 \leanref{TauCeti.Groupoid.singleObjFunctor}
 \end{definition}
 
+In a \fcnotion{CategoryTheory.Groupoid}{groupoid}, every morphism has an
+\fcnotion{CategoryTheory.inv}{inverse}.
+\fcnotion{MonoidHom}{Homomorphisms of monoids} preserve identities and
+multiplication.
+
 \begin{definition}[id=3.2]{The functor induced by a homomorphism out of a vertex group}
-Suppose that $\mathcal{C}$ is a groupoid, and let $\varphi$ be a homomorphism
-from $\End(w)$ to $M$.  The functor from $\mathcal{C}$ to $\sobj{M}$ induced by
-$\tau$ and $\varphi$ takes a morphism $g$ from $c$ to $c'$ to
-$\varphi(\tau_{c'}^{-1} \circ g \circ \tau_{c})$.
+Suppose that $\mathcal C$ is a groupoid and that a morphism
+$\tau_c:w\longrightarrow c$ has been chosen for each object $c$.  Let $M$ be
+a monoid and $\varphi:\End(w)\longrightarrow M$ a homomorphism.
+The functor from $\mathcal C$ to $\sobj{M}$ induced by $\tau$ and $\varphi$
+takes a morphism $g$ from $c$ to $c'$ to
+$\varphi(\tau_{c'}^{-1}\circ g\circ\tau_c)$.
 \leanref{TauCeti.Groupoid.functorOfEndHom}
 \leanref{TauCeti.Groupoid.functorOfEndHom_map}
 \end{definition}

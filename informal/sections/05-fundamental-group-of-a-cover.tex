@@ -1,5 +1,14 @@
-% Section 5: the fundamental group of a cover.  The heading comes from
-% sections.tex.
+Let $X$ be a topological space, $x\in X$, and $(U_i)_{i\in I}$ a family of
+subsets of $X$.  Subspaces have the inherited topology, and
+$\incl{S}:S\longrightarrow X$ denotes inclusion.  Write $\fgpd{X}$ for the
+fundamental groupoid and $\fgrp{X}{x}$ for the group of loop classes at $x$.
+Path concatenation $\ptrans$ is read from left to right; group multiplication
+traverses the right factor first.  The
+\fcnotion{MonoidHom.range}{image} of a group homomorphism is the
+\fcnotion{Subgroup}{subgroup} of its values.  Subgroups generate a group when
+the smallest subgroup containing them is the whole group.  A subset is
+\fcnotion{IsPathConnected}{path connected} if it is nonempty and any two of
+its points are joined by a path in it.
 
 \begin{theorem}[id=5.1]{Covers generate the fundamental group}
 \fcref{Theorem 1.20}
@@ -47,11 +56,13 @@ For a loop class $\omega$ at $x$ we now have $T(\omega)\in H$.
 \proofstep{5.1-s08-basepoint-loop}{The chosen path at the basepoint belongs to the subgroup}{The class $\tau_x$ is itself a loop inside $U_{i_0(x)}$, so it lies in $H$.}
 Hence
 \proofequation{5.1-s09-cancellation}{Cancel the basepoint transport}{  \omega=\tau_x^{-1}\ptrans T(\omega)\ptrans\tau_x\in H.}
-Thus $H=\fgrp{X}{x}$, as required.  For the two-set case, the hypotheses of
-\itemref{5.2} give the hypotheses just used for the family $A,B$; its
-pairwise intersections are $A$, $B$, $A\cap B$ and $B\cap A$.  This proves
-that corollary as well.
+Thus $H=\fgrp{X}{x}$, as required.  For a two-member family, the pairwise
+intersections are its two members and their intersection in either order.
+The hypotheses of \itemref{5.2} therefore give those just used, proving that
+corollary as well.
 \end{proofpassage}
+
+For the two-set case, let $A$ and $B$ be subsets of $X$.
 
 \begin{corollary}[id=5.2]{Two sets generate the fundamental group}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.

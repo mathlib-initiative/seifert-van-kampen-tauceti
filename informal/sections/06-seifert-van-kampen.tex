@@ -1,4 +1,10 @@
-% Section 6: The Seifert--van Kampen theorem.  Items 6.1 to 6.4.
+Let $X$ be a topological space, let $A,B\subseteq X$, and let $x\in X$.
+Subspaces carry the inherited topology.  For a subspace $S$ containing $x$,
+write $\fgrp{S}{x}$ for its fundamental group at $x$ and $\fgpd{S}$ for its
+fundamental groupoid.  Write $\incl{S}:S\longrightarrow X$ and
+$\inclin{S}{T}:S\longrightarrow T$ for the inclusions, the latter when
+$S\subseteq T$.  Let $M$ be a monoid; composition of homomorphisms
+\fcnotion{MonoidHom.comp}{$\circ$} is read from right to left.
 
 \begin{definition}[id=6.1]{The homomorphism out of the fundamental group of the space}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
@@ -21,7 +27,8 @@ are the images of these $\rho_y$; choose the other classes using path
 connectedness of $A$.  Make the same choices in $B$, with the same
 $\rho_y$ on $C$.}  In particular, $\tau^A_x$ and $\tau^B_x$ are identities.
 
-Send every object to the unique object of $\sobj M$.  For a morphism
+Send every object to the unique object of $\sobj M$, the one-object category
+of $M$.  For a morphism
 $g:y\longrightarrow z$ in $\fgpd A$, set
 \[
  F_A(g)=\varphi_A\bigl((\tau^A_z)^{-1}\circ g\circ\tau^A_y\bigr),
@@ -137,6 +144,11 @@ the square
 whose homomorphisms are induced by the inclusions is a pushout square.
 \leanref{TauCeti.isPushout_fundamentalGroup}
 \end{theorem}
+
+The \fcnotion{CategoryTheory.IsPushout}{pushout} condition in the
+\fcnotion{GrpCat}{category of groups} means that two homomorphisms from
+$\fgrp{A}{x}$ and $\fgrp{B}{x}$ agreeing on $\fgrp{A\cap B}{x}$ extend
+uniquely to a homomorphism from $\fgrp{X}{x}$.
 
 \begin{proofpassage}{6.4-pushout}{Proof}{The pushout universal property}
 Write $C=A\cap B$, and denote the inclusion-induced maps by

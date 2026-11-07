@@ -1,15 +1,44 @@
+Let $S$ be a subset of a \fcnotion{TopologicalSpace}{topological space} $X$,
+and let $(U_i)_{i\in I}$ be a family of subsets of $X$.  A
+\fcnotion{nhds}{neighborhood} of a point is a set containing that point in its
+\fcnotion{interior}{interior}.  We first use a consequence of
+\fcnotion{IsCompact}{compactness}.  When $X$ carries a
+\fcnotion{PseudoMetricSpace}{pseudometric},
+\fcnotion{Metric.ball}{$\ball{x}{\rho}$} denotes the open ball of radius
+$\rho$ about $x$.
+
 \begin{lemma}[id=1.1]{A Lebesgue number for a family of neighborhoods}
-Suppose that $S$ is compact and that each point of $S$ has some $U_{i}$ as a
-neighborhood.  Then there is a positive radius $\rho$ such that for each point
-$x$ of $S$ some $U_{i}$ contains $\ball{x}{\rho}$.
+Suppose that $X$ is a pseudometric space, that $S$ is compact and that each
+point of $S$ has some $U_i$ as a neighborhood.  Then there is a positive radius
+$\rho$ such that for each point $x$ of $S$ some $U_i$ contains
+$\ball{x}{\rho}$.
 \leanref{TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds}
 \end{lemma}
+
+For the subdivision formula, let $G$ be an
+\fcnotion{AddCommGroup}{additive commutative group} with a
+\fcnotion{LinearOrder}{linear order}
+\fcnotion{IsOrderedAddMonoid}{preserved by addition}, and let $a\le b$ be
+elements of $G$.  Write \fcnotion{Set.Icc}{$\cint{a}{b}$} for the closed
+interval from $a$ to $b$.  For $d\in G$ and a \fcnotion{Nat}{nonnegative integer} $n$,
+\fcnotion{Set.Icc.addNSMul}{the point reached from $a$ by $n$ steps of size $d$}
+is $a+nd$, replaced by $a$ if it is below $a$ and by $b$ if it is above $b$;
+$nd$ is the sum of $n$ copies of $d$.
 
 \begin{lemma}[id=1.2]{Equally spaced subdivision points of an interval}
 Let $d$ be nonnegative.  Then the point reached from $a$ by $n$ steps of size
 $d$ is the smaller of $b$ and $a + nd$.
 \leanref{Set.Icc.coe_addNSMul}
 \end{lemma}
+
+Give $S$ \fcnotion{instTopologicalSpaceSubtype}{the topology inherited from $X$},
+and regard \fcnotion{Set.Elem}{points of $S$} as points of $X$ lying in $S$.
+Write \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}$} for the inclusion
+$S\longrightarrow X$.  A \fcnotion{Path}{path} from $x$ to $y$ in $X$ is a
+\fcnotion{ContinuousMap}{continuous map} from the unit interval
+\fcnotion{unitInterval}{$\uI$} of \fcnotion{Real}{real numbers} to $X$, with values
+$x$ at $0$ and $y$ at $1$.  Points of $\uI$ are called parameters, and the
+\fcnotion{Set.range}{range} of a path is the set of its values.
 
 \begin{definition}[id=1.3]{The restriction of a path to a subspace}
 Let $x$ and $y$ be points of $S$, and let $\gamma$ be a path in $X$ from $x$ to
@@ -26,8 +55,13 @@ $y$ every value of which lies in $S$.  Then $\incl{S} \circ \codres{\gamma}{S} =
 \leanref{Path.map_codRestrict}
 \end{lemma}
 
+For composable paths $\gamma$ and $\delta$, the concatenation
+\fcnotion{Path.trans}{$\gamma\ptrans\delta$} traverses $\gamma$ and then
+$\delta$, each at twice its original speed.
+
 \begin{lemma}[id=1.5]{The values of a concatenation of paths}
-Let $u$ and $v$ be parameters.
+Let $\gamma$ be a path from $x$ to $y$ and $\delta$ a path from $y$ to $z$ in
+$X$, and let $u$ and $v$ be parameters.
 \itempart{a}{%
   If $u \le 1/2$ and $v = 2u$, then
   $(\gamma \ptrans \delta)(u) = \gamma(v)$.
@@ -38,24 +72,40 @@ Let $u$ and $v$ be parameters.
   \leanref{Path.trans_apply_of_ge}}
 \end{lemma}
 
+For a path $\gamma$ and parameters $r,s$, the subpath
+\fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} traverses $\gamma$ from
+$\gamma(r)$ to $\gamma(s)$ at constant speed.  It runs backwards when $s<r$
+and is constant when $r=s$.
+
 \begin{lemma}[id=1.6]{A subpath of a path confined to a set}
+Let $\gamma$ be a path in $X$, and let $r$ and $s$ be parameters.
 Suppose that $\gamma(t)$ lies in $S$ for every parameter $t$ with
 $r \le t \le s$.  Then, for all parameters $u$ and $v$ with $r \le u \le s$ and
 $r \le v \le s$, every value of $\subpath{\gamma}{u}{v}$ lies in $S$.
 \leanref{Path.subpath_apply_mem}
 \end{lemma}
 
+A subdivision of $\uI$ is a finite \fcnotion{Monotone}{nondecreasing} sequence
+$0=t_0\le\cdots\le t_n=1$.
+
 \begin{proposition}[id=1.7]{Subdividing a path along a family of sets}
-Suppose that every parameter has a neighborhood that $\gamma$ maps into some
-$U_{i}$.  Then there is a subdivision $t_{0}, \dots, t_{n}$ of $\uI$ with
-$t_{0} = 0$ and $t_{n} = 1$ such that, for each $k$ less than $n$, the range of
-$\subpath{\gamma}{t_{k}}{t_{k+1}}$ is contained in some $U_{i}$.
+Let $\gamma$ be a path in $X$.  Suppose that every parameter has a
+neighborhood that $\gamma$ maps into some $U_i$.  Then there is a subdivision
+$t_0,\dots,t_n$ of $\uI$ such that, for each $k$ less than $n$, the range of
+$\subpath{\gamma}{t_k}{t_{k+1}}$ is contained in some $U_i$.
 \leanref{Path.exists_monotone_range_subpath_subset}
 \end{proposition}
 
+Two paths with the same endpoints are homotopic if a homotopy joins them while
+fixing the endpoints.  Write \fcnotion{Path.Homotopic.Quotient}{$\pcls{\gamma}$}
+for the class of $\gamma$; \fcnotion{Path.Homotopic.Quotient.trans}{composition
+of classes}, also written $\ptrans$, is induced by concatenation.  Equalities of endpoints allow a path
+to be \fcnotion{Path.cast}{read with the renamed endpoints}.
+
 \begin{lemma}[id=1.8]{Cutting a path class at an intermediate parameter}
-Let $x_{0}$, $x_{1}$ and $x_{2}$ be points of $X$ with $x_{0} = \gamma(r)$,
-$x_{1} = \gamma(s)$ and $x_{2} = \gamma(t)$.  Rename the endpoints of
+Let $\gamma$ be a path in $X$, and let $r,s,t$ be parameters.
+Let $x_0$, $x_1$ and $x_2$ be points of $X$ with $x_0 = \gamma(r)$,
+$x_1 = \gamma(s)$ and $x_2 = \gamma(t)$.  Rename the endpoints of
 $\subpath{\gamma}{r}{s}$, $\subpath{\gamma}{s}{t}$ and $\subpath{\gamma}{r}{t}$
 along these equalities.  Then
 \[

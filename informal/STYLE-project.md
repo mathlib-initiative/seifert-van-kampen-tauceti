@@ -2,9 +2,9 @@
 
 The rules `STYLE.md` does not fix, for The Seifert--van Kampen theorem, after TauCeti: the library
 TauCeti at commit `37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`, and the theorem
-`TauCeti.isPushout_fundamentalGroup`. `cf informalize init` wrote this file from formal-companion's template;
-the conventions task fills it in, and the editor keeps it. Every drafter, attacker, judge
-and editor reads it beside `STYLE.md`.
+`TauCeti.isPushout_fundamentalGroup`. Every drafter, attacker, judge and editor reads this file beside `STYLE.md`.
+The local introduction rules below supersede that file's requirement to put all
+ambient variables and notion markers into a separate conventions section.
 
 ## Notation
 
@@ -33,43 +33,18 @@ The macros of `notation.sty`, one row each.
 Nothing else is a global macro. A section that needs more writes it out in plain LaTeX and
 says so in its report.
 
-## Letters
+## Local introductions
 
-Each letter keeps one meaning in the whole text.
+Introduce spaces, subsets, basepoints and families in the section that uses them.
+Introduce specialized objects, such as the ordered group for the subdivision
+formula or the chosen connecting morphisms, beside the result that needs them.
+Use direct mathematical sentences: "Let S be a subset of a topological space X."
+Do not reserve a catalogue of letters for the whole text.
 
-| letter | meaning |
-|---|---|
-| `X` | the ambient topological space, pseudometric where a distance is needed |
-| `Y` | a second topological space |
-| `f` | a continuous map |
-| `x`, `y`, `z` | points of `X`; `x` is the basepoint wherever one is chosen |
-| `x_0`, `x_1`, `x_2` | further points of `X` |
-| `x'`, `y'` | points of `X` tied to `x` and `y` by an equation |
-| `A`, `B` | the two subsets of `X` whose interiors cover it |
-| `S` | a subset of `X` when only one is in play |
-| `T` | a subset of `X` containing `S` |
-| `I` | the index type of a family of subsets |
-| `i`, `j` | elements of `I` |
-| `U`, `U_i` | the family of subsets indexed by `I`, and its member at `i` |
-| `r`, `s`, `t`, `u`, `v` | parameters, that is, points of the unit interval |
-| `t_0, ..., t_n` | the points of a subdivision of the unit interval |
-| `\gamma`, `\delta` | paths in `X` |
-| `\omega` | a homotopy class of paths: a morphism of a fundamental groupoid, or an element of a fundamental group |
-| `\mathcal{H}`, `\mathcal{H}_i` | a subgroupoid of the fundamental groupoid of `X`, and a family of them |
-| `\mathcal{C}` | a category, a groupoid where that is said |
-| `\mathcal{D}` | a category used as the common target of glued functors |
-| `w` | a chosen object of `\mathcal{C}` |
-| `c`, `c'` | further objects of `\mathcal{C}` |
-| `g` | a morphism of `\mathcal{C}` |
-| `\tau`, `\tau_c` | a family of morphisms out of `w`, and its member at `c` |
-| `M` | a monoid |
-| `\varphi`, `\psi` | homomorphisms of monoids; `\varphi_A`, `\varphi_B` the ones given on `A` and on `B` |
-| `F` | a functor; `F_i`, `F_A`, `F_B` the ones given on `U_i`, on `A` and on `B` |
-| `G` | a linearly ordered additive commutative group whose addition respects the order |
-| `a`, `b` | elements of `G`, with `a` at most `b` |
-| `d` | a step size in `G` |
-| `n`, `k` | natural numbers |
-| `\rho` | a positive radius |
+Keep a letter's meaning fixed within an argument. A later section may use the
+same letter for a different object when it introduces that object explicitly.
+State every extra assumption where it is used: the pseudometric assumption in
+Lemma 1.1, for example, is local to that lemma.
 
 ## Standing hypotheses
 
@@ -90,35 +65,33 @@ the item or part binds the hypothesis. The pairwise condition of the indexed sta
 lemma's neighborhood condition, `∀ x ∈ s, ∃ i, c i ∈ nhds x`, covers a subset rather than
 the whole space, so it too is stated in words.
 
-## What the conventions carry
+## Where notation is introduced
 
-`sections/00-conventions.tex` fixes all of the following, and no item repeats any of it:
-the ambient space `X` and a second space `Y`; the pseudometric and the open ball; the
-subsets `A`, `B`, `S`, `T` and the family `U`, with their index type; that a subset is a
-space with the inherited topology and that a point of a subset is a point of `X` lying in
-it; the inclusions; the interior; that a neighborhood of a point is a set whose interior
-contains the point, so the sets of a cover need not be open; the unit interval, parameters,
-paths, their range, concatenation, subpaths, `\codres{\gamma}{S}`, the image of a path
-under a continuous map, and the renaming of a path's endpoints along equalities;
-compactness and path connectedness, which for a subset includes nonemptiness; homotopy of
-paths, classes of paths and the renaming of their endpoints; the fundamental groupoid, the
-fundamental group, the functor and the homomorphism a continuous map induces, the product
-of two loop classes, and the class of a loop as an element of the fundamental group;
-subgroupoids, images and generation; categories, groupoids, inverses, `\End(w)`, the
-composition of two morphisms, the family `\tau`, monoids, `\sobj{M}`,
-functors and homomorphisms, and the composition of two functors and of two
-homomorphisms, all three compositions written `\circ`; pushout squares in the category of
-groups; the number systems and the closed interval; and the two junk values below.
+There is no separate conventions section. Give each section a short local setup,
+and explain specialized notation next to its first use:
 
-An item names only what is particular to it. Typeclass binders, universe variables, the
-index type of a family and the side conditions the library discharges inside a statement
-(that an inclusion is injective, that the basepoint lies where it must) are never written
-in an item.
+- Section 1: subsets and neighborhoods, subdivision points, paths and subpaths,
+  then homotopy classes and endpoint renaming.
+- Section 2: fundamental groupoids and induced functors, subgroupoids, then the
+  fundamental group at a basepoint and its induced homomorphism.
+- Section 3: categories, endomorphisms and the one-object category, then the
+  connecting morphisms needed by Definition 3.2.
+- Section 4: a family of subsets, image subgroupoids and generation, then the
+  target category and the two-set specialization where each is needed.
+- Section 5: a basepoint and a family of subsets, images of homomorphisms and
+  generation, then the two-set specialization.
+- Section 6: the space, two subsets and basepoint, inclusions and the target
+  monoid; explain the pushout condition beside the final theorem.
+
+Repeat enough ambient data and notation to make a section readable on its own.
+Keep typeclass syntax, universe variables and other Lean bookkeeping out of the
+printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 ## Marking notions
 
-Each notion the conventions fix carries one `\fcnotion{<constant>}{<words>}`, where the
-conventions introduce it and nowhere else; items mark nothing. The constants are these 54,
+Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
+where it is explained, outside the numbered item environments. Move the marker
+with its explanation; keep every existing notion link once. The constants are these 54,
 each copied from `declarations.json` (all of them rows of its `references`, the constants
 of Mathlib and of Lean's prelude that the library's statements are built from):
 
@@ -139,7 +112,7 @@ of Mathlib and of Lean's prelude that the library's statements are built from):
 `Set.Icc.addNSMul`.
 
 The constants the items state are marked nowhere: an item records its declaration with
-`\leanref`, so `Path.codRestrict`, which the conventions write as `\codres{\gamma}{S}`, and
+`\leanref`, so `Path.codRestrict`, written as `\codres{\gamma}{S}`, and
 every other entry of the `declarations` list belong to their items, not to a `\fcnotion`.
 
 ## Numbers, coercions and junk values
@@ -153,7 +126,7 @@ basepoint of `S` in `\fgrp{S}{x}`. The points of a subdivision are nondecreasing
 strictly increasing.
 
 Two constructions are total where the mathematics is partial, as
-`sections/00-conventions.tex` states: the point reached from `a` by `n` steps of size `d`
+section 1 explains where each is introduced: the point reached from `a` by `n` steps of size `d`
 is pushed into the closed interval from `a` to `b`, taking the value `a` below it and `b`
 above it; and `\subpath{\gamma}{r}{s}` is formed for every pair of parameters, running
 backwards when `s` is smaller than `r` and constant when `r` and `s` agree. `items.json`
@@ -189,8 +162,7 @@ in the annotations.
 In the proof of 5.1, use $H$ for the generated subgroup and $S$ for the
 subgroupoid defined by transporting morphisms to the basepoint, matching
 the local names in Lean. Here $S=\top$ means that this subgroupoid is the
-whole fundamental groupoid. This is a local exception to the global use of
-$S$ for a subset of $X$.
+whole fundamental groupoid. This use of $S$ is local to the proof; section 1 introduces its own subset $S$.
 
 Prefer mathematical notation that makes a linked argument easy to recognize:
 use the chosen index $i_0$ in 5.1, and introduce the equal-subdivision value
