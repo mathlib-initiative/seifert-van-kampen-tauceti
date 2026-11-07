@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "87e50e4bdf3264ad9946c239a99ca3db3a4800b18ed03811b2398fddee72f1dc"
+      "sha256": "c6b1ead1e45299c83ffbc9e38f546153738dbfb5c6550618a5b14719ff5e14fb"
     },
     "count": 100,
     "directory": "annotations",
     "export": {
-      "commit": "00b21fec8fa143a93f2508898048af23a2075cc7",
+      "commit": "d4a59341099a687f07ec5310fdef7db482626fa8",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -145,7 +145,7 @@
       },
       {
         "path": "informal/items.json",
-        "sha256": "d80f730a1675b897fa90be5ac9a5c7356a10084d83e8945636d804351b3146f4"
+        "sha256": "57d621f520cb3c53be3bcb1cf96bb21ab96a2538c4c09d8c53af538d4ade6304"
       },
       {
         "path": "informal/main.tex",
@@ -153,7 +153,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "ffb9fb32ed85b67c17aad5437ce8c08242437da3d1facd30ad72d75f94814c81"
+        "sha256": "2a24247806bcc85f294b4b02ff2fa1740630a74ccb715629889a8f8c66b04af3"
       },
       {
         "path": "informal/notation.sty",
@@ -177,7 +177,7 @@
       },
       {
         "path": "informal/sections/02-connected-groupoids.tex",
-        "sha256": "6050170ed890c93c1df810a964373680db28cebfe85844dc9282a999828ce3dd"
+        "sha256": "7a02aed9949190a78892f0ff7e7fdbd0acaa8b098d77cd9d4118db624a0aae16"
       },
       {
         "path": "informal/sections/03-fundamental-groupoid-of-a-cover.tex",
@@ -189,7 +189,7 @@
       },
       {
         "path": "informal/sections/05-seifert-van-kampen.tex",
-        "sha256": "c3fde6cf4b8eba3da700624844748124f92302430098e9b3e083c4ccc5ed19a7"
+        "sha256": "e3696958d9633dfb9a6b12c82127bb975f5fb16ec4ce8561f7987ace94c13929"
       },
       {
         "path": "tools/mathlib_hovers.py",
@@ -200,6 +200,6 @@
         "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "574a6a4c5b18a9c348e0e34c54457bb88e34d1971ae8d3165d4675aaf2744da4"
+    "manifest_sha256": "c40e6996c4912c978e06d5bea15e7e5857d742b2fa157fd430661b5c73982b1a"
   }
 }
