@@ -136,13 +136,16 @@ statement is about it; so is the reading of a basepoint `x` of `X` lying in `S` 
 basepoint of `S` in `\fgrp{S}{x}`. The points of a subdivision are nondecreasing, not
 strictly increasing.
 
-Two constructions are total where the mathematics is partial, as
-section 1 explains where each is introduced: the point reached from `a` by `n` steps of size `d`
-is pushed into the closed interval from `a` to `b`, taking the value `a` below it and `b`
-above it; and `\subpath{\gamma}{r}{s}` is formed for every pair of parameters, running
-backwards when `s` is smaller than `r` and constant when `r` and `s` agree. `items.json`
-records no `junk` entry for any key declaration, so no item needs a junk sentence of its
-own.
+Definition 1.2 defines subdivision points directly by `t_n = min{b, a + nd}`
+for a nonnegative step size. Do not restate this formula as a separate lemma.
+Its annotation links to the Lean lemma identifying Mathlib's interval-valued
+construction with that formula. The unused negative-step case, where Mathlib
+also clips at the left endpoint, need not appear in the text.
+
+The subpath `\subpath{\gamma}{r}{s}` is formed for every pair of parameters,
+running backwards when `s` is smaller than `r` and constant when they agree.
+`items.json` records no `junk` entry for any key declaration, so no item needs
+a junk sentence of its own.
 
 ## The reference work
 

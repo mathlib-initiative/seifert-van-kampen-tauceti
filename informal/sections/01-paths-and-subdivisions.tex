@@ -15,18 +15,22 @@ For the subdivision formula, let $G$ be an
 \fcnotion{LinearOrder}{linear order}
 \fcnotion{IsOrderedAddMonoid}{preserved by addition}, and let $a\le b$ be
 elements of $G$.  Write \fcnotion{Set.Icc}{$\cint{a}{b}$} for the closed
-interval from $a$ to $b$.  Choose $d\in G$.  Starting at $a$, repeatedly
-add $d$, stopping at an endpoint whenever a step would leave $\cint{a}{b}$.
-For a \fcnotion{Nat}{nonnegative integer} $n$, let $t_n$ be the resulting
-\fcnotion{Set.Icc.addNSMul}{subdivision point} after $n$ steps.
+interval from $a$ to $b$.  Let $d\ge0$ be a step size and $n$ a
+\fcnotion{Nat}{nonnegative integer}.
+
+\begin{definition}[id=1.2]{Subdivision points of an interval}
+Define
+\[
+  t_n := \min\{b,a+nd\}.
+\]
+\leanref{Set.Icc.coe_addNSMul}
+\end{definition}
+
+These \fcnotion{Set.Icc.addNSMul}{subdivision points} start at $a$ and advance
+by steps of size $d$, stopping at $b$.
 For example, in $[0,1]$ with $d=2/5$, the points are
 $0,\,2/5,\,4/5,\,1,\,1,\ldots$: the third step would reach $6/5$, so we
 use $1$ instead and stay there.
-
-\begin{lemma}[id=1.2]{Equally spaced subdivision points of an interval}
-If $d\ge0$, then $t_n=\min\{b,a+nd\}$.
-\leanref{Set.Icc.coe_addNSMul}
-\end{lemma}
 
 Let $S$ be a subset of a \fcnotion{TopologicalSpace}{topological space} $X$.
 Write \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}$} for the inclusion

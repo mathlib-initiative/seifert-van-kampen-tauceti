@@ -15,7 +15,7 @@ itself.
 | id | kind | title | key declarations | reference | source | departures |
 |---|---|---|---|---|---|---|
 | 1.1 | lemma | A Lebesgue number for a family of neighborhoods | `TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds` | — | — | the members of the family need not be open, only neighborhoods of the points they cover |
-| 1.2 | lemma | Equally spaced subdivision points of an interval | `Set.Icc.coe_addNSMul` | — | — | the equality is between elements of the group, the left side being the element under a point of the interval |
+| 1.2 | definition | Subdivision points of an interval | `Set.Icc.coe_addNSMul` | — | — | the minimum formula is used as a definition; the related Lean lemma identifies it with Mathlib's interval-valued construction for nonnegative steps |
 | 1.3 | definition | The restriction of a path to a subspace | `Path.codRestrict` | — | — | — |
 | 1.4 | lemma | Mapping a restricted path back to the ambient space | `Path.map_codRestrict` | — | — | — |
 | 1.5 | lemma | The values of a concatenation of paths | (a) `Path.trans_apply_of_le`; (b) `Path.trans_apply_of_ge` | — | — | the rescaled parameter is given as a point of the unit interval with the equation its value satisfies |

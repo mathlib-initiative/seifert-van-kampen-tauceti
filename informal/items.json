@@ -72,13 +72,13 @@
     {
       "id": "1.2",
       "section": "1",
-      "kind": "lemma",
-      "title": "Equally spaced subdivision points of an interval",
-      "gist": "In a linearly ordered additive commutative group whose addition respects the order, the point reached from the left endpoint of a closed interval after a given number of nonnegative steps, clipped to the interval, is the smaller of the right endpoint and the left endpoint plus that many steps.",
+      "kind": "definition",
+      "title": "Subdivision points of an interval",
+      "gist": "For a nonnegative step size d, define the nth subdivision point of [a,b] by t_n = min{b, a + nd}.",
       "parts": [],
       "in_v1": true,
       "reference": null,
-      "departures": "The equality is one between elements of the group: the left-hand side is the element underlying a point of the interval, and clipping at the left endpoint is what the nonnegative step makes redundant.",
+      "departures": "The text uses the minimum formula as the definition of the underlying interval point. The linked Lean lemma proves that Mathlib's clipped-step construction has this value for a nonnegative step size.",
       "declarations": [
         {
           "name": "Set.Icc.coe_addNSMul",
@@ -86,7 +86,7 @@
           "line": 64,
           "part": null,
           "role": "key",
-          "relation": "exactMatch",
+          "relation": "relatedMatch",
           "junk": [],
           "hypotheses": [
             "an additive commutative group that is linearly ordered and whose addition respects the order",
