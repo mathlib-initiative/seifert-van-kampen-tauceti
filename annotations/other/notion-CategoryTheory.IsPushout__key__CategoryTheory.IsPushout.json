@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.799768, 0.550821, 0.064938, 0.017361]
+        "page": 8,
+        "rect": [0.198925, 0.263573, 0.064938, 0.018308]
       },
       "title": "pushout",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:CategoryTheory.IsPushout@p002"
+          "region": "notion:CategoryTheory.IsPushout@p008"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [8],
+        "printed": [8]
       }
     }
   }

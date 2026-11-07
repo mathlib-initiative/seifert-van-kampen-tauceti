@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.132842, 0.704545, 0.037438, 0.017835]
+        "page": 1,
+        "rect": [0.611214, 0.528725, 0.037438, 0.017677]
       },
       "title": "[a, b]",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Set.Icc@p002"
+          "region": "notion:Set.Icc@p001"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

@@ -4,25 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.731145, 0.533775, 0.138463, 0.017045]
+        "page": 6,
+        "rect": [0.751383, 0.391414, 0.011364, 0.017203]
       },
-      "title": "the composite of two homomorphisms",
+      "title": "∘",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:MonoidHom.comp@p002"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 2,
-        "rect": [0.130391, 0.550821, 0.16518, 0.017361]
-      },
-      "title": "the composite of two homomorphisms",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:MonoidHom.comp@p002#2"
+          "region": "notion:MonoidHom.comp@p006"
         }
       }
     }
@@ -51,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [6],
+        "printed": [6]
       }
     }
   }

@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 1,
-        "rect": [0.461161, 0.556503, 0.03177, 0.017519]
+        "page": 4,
+        "rect": [0.561385, 0.104798, 0.03177, 0.019097]
       },
       "title": "ιS,T",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:ContinuousMap.inclusion@p001"
+          "region": "notion:ContinuousMap.inclusion@p004"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [1],
-        "printed": [1]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }

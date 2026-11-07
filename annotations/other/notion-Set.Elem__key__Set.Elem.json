@@ -5,9 +5,9 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.132842, 0.539457, 0.099122, 0.017045]
+        "rect": [0.564919, 0.652778, 0.0896, 0.018466]
       },
-      "title": "a point of S",
+      "title": "points of S",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Set.Elem@p001"

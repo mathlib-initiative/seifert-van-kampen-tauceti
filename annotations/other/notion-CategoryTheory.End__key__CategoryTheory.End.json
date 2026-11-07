@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.237634, 0.39678, 0.061493, 0.017677]
+        "page": 3,
+        "rect": [0.500848, 0.324495, 0.061493, 0.019571]
       },
       "title": "End(w)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:CategoryTheory.End@p002"
+          "region": "notion:CategoryTheory.End@p003"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

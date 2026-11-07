@@ -3,13 +3,13 @@
   "kind": "definition",
   "subject": {
     "location": {
-      "page": 3,
-      "rect": [0.130391, 0.278409, 0.739217, 0.054766]
+      "page": 1,
+      "rect": [0.130391, 0.731692, 0.739217, 0.056503]
     },
     "title": "Definition 1.3 (The restriction of a path to a subspace)",
     "extensions": {
       "org.mathlib-initiative.formal-companion.overlay": {
-        "region": "definition-1.3@p003"
+        "region": "definition-1.3@p001"
       }
     }
   },
@@ -25,8 +25,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

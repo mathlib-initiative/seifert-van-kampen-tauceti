@@ -5,9 +5,9 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.213109, 0.574021, 0.040082, 0.016572]
+        "rect": [0.589844, 0.386837, 0.059492, 0.016572]
       },
-      "title": "int A",
+      "title": "interior",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:interior@p001"

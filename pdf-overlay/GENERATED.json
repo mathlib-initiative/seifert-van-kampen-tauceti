@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "15ee5a468589f4e65394fcd275bb9187b468efe06bfd64ca8c38ed02328403fa"
+      "sha256": "e0dc5fe5b336da2599047e08b76dd27892ee1d21eaf8341d2a4e4c2910c05325"
     },
     "count": 125,
     "directory": "annotations",
     "export": {
-      "commit": "06522df95bf1d66d5304e4d8d3d23c4aad72ade4",
+      "commit": "b4c171ed2b3514d36c6427c78c571e08b4604d6a",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -149,11 +149,11 @@
       },
       {
         "path": "informal/main.tex",
-        "sha256": "84e140ec11a199915c0e674ff68c9a5d8b7098ee747544ccf5f7e389e901e688"
+        "sha256": "bec290f2bf1cc64ee9fa4f857f0d67189aa80779f0c527fa5c56774ce1a70342"
       },
       {
         "path": "informal/markers.json",
-        "sha256": "510d03b5226efadd36b5bace2c2f7c783e1a5682f971de9b57e31a9029b5c04f"
+        "sha256": "f79b2fbeec2981b740ee744fbd47e59c1f4628d6409466b03666f3ef33a817c3"
       },
       {
         "path": "informal/notation.sty",
@@ -172,38 +172,34 @@
         "sha256": "2b36a569932d88f3673e9cdb1bf20406a79e61f2726d1ec640f13c15e6ed96e0"
       },
       {
-        "path": "informal/sections/00-conventions.tex",
-        "sha256": "cbb0812927dc751da13921e11525815a6d3bff96d56ab920e3d090bc8361d405"
-      },
-      {
         "path": "informal/sections/01-paths-and-subdivisions.tex",
-        "sha256": "41011fa6b11dc38619d8d230eb3cff4067a357cd7d2e2c7e13044bd9e586106c"
+        "sha256": "9522db49cdaaa3ac7e5b8c6b5632e76bb509f90e8389929d4b009dc4c957bfb0"
       },
       {
         "path": "informal/sections/02-fundamental-groupoids-and-groups.tex",
-        "sha256": "f1ca4059755a05afb6f4649a440e9aa8fa1726658f3185d66024ddffb81dd0a0"
+        "sha256": "643f01cab149419f0c6136bbe3635e8a6874d24db9505865730daf79cab3165c"
       },
       {
         "path": "informal/sections/03-connected-groupoids.tex",
-        "sha256": "d93504f14d47d7336c05217eaa0d484df9d18f0940856558ccef79a1420d38d0"
+        "sha256": "ff46d635eb1b316ea0510acb732d727ac09919992d24593fec87d04347b85c02"
       },
       {
         "path": "informal/sections/04-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "a2c7576957056e87d03753326e56d34c1f992032023e904e9f180a69bd68cb53"
+        "sha256": "962e6c6a5496b98650952b094739d749d0bbb651fda0ee92d5845b589b83556e"
       },
       {
         "path": "informal/sections/05-fundamental-group-of-a-cover.tex",
-        "sha256": "1c4336c5985caa850233852bcc177eb457b11d958a13f6d7ed6de2683d14ef9e"
+        "sha256": "8f7d9321c2e0f5823c0f6ea7f6af704c7a43dcd461f6aba487b05d4cedb40f90"
       },
       {
         "path": "informal/sections/06-seifert-van-kampen.tex",
-        "sha256": "6e854162e23ff462264316147b79804f5359d4f89bbfac98a1153aa7f5ae0a9a"
+        "sha256": "ae2c2c44b9ed773cd48a8e913ce6888f81b5ff76f8b38a45aaec5de39531d0e4"
       },
       {
         "path": "tools/proof_steps.py",
         "sha256": "680f082d99ddf50a6b8c27fd5e9a5fffa7da1eea6a7cb760776f8a037604a8e4"
       }
     ],
-    "manifest_sha256": "2d2b8b724c9b4dc42b60788d0dc2310cdcd527ada2aeec7f2bd07c81c9397062"
+    "manifest_sha256": "980aaa3152b5a0ce1dfef8c8cfa39c9f39c6c6d0d20fe15be71be3527a3c3c22"
   }
 }

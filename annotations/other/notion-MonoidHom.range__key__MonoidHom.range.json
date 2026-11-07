@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.1697, 0.277462, 0.03702, 0.01673]
+        "page": 5,
+        "rect": [0.132842, 0.388258, 0.048004, 0.01673]
       },
-      "title": "im φ",
+      "title": "image",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:MonoidHom.range@p002"
+          "region": "notion:MonoidHom.range@p005"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [5],
+        "printed": [5]
       }
     }
   }

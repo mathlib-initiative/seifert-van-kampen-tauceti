@@ -7,31 +7,17 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.690951, 0.883681, 0.178657, 0.018782]
+        "rect": [0.130391, 0.468434, 0.739217, 0.051452]
       },
       "title": "Compare equal subdivisions through their common refinement",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.690951, 0.883681, 0.869608, 0.883681, 0.869608, 0.902463, 0.690951, 0.902463]
+            [0.690951, 0.468434, 0.869608, 0.468434, 0.869608, 0.485322, 0.690951, 0.485322],
+            [0.130391, 0.485322, 0.869608, 0.485322, 0.869608, 0.501894, 0.130391, 0.501894],
+            [0.130391, 0.501894, 0.514905, 0.501894, 0.514905, 0.519886, 0.130391, 0.519886]
           ],
           "region": "proof-4.2-s05-refinement@p004"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.104482, 0.739217, 0.036301]
-      },
-      "title": "Compare equal subdivisions through their common refinement",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "quads": [
-            [0.130391, 0.104482, 0.869608, 0.104482, 0.869608, 0.123106, 0.130391, 0.123106],
-            [0.130391, 0.123106, 0.514905, 0.123106, 0.514905, 0.140783, 0.130391, 0.140783]
-          ],
-          "region": "proof-4.2-s05-refinement@p005"
         }
       }
     }
@@ -66,8 +52,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4, 5],
-        "printed": [4, 5]
+        "physical": [4],
+        "printed": [4]
       },
       "provenance": {
         "actor": "agent",

@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.504383, 0.294192, 0.289598, 0.017361]
+        "page": 3,
+        "rect": [0.23646, 0.639205, 0.329593, 0.018939]
       },
-      "title": "the smallest one containing every ℋᵢ",
+      "title": "the smallest subgroupoid containing them",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:iSup@p002"
+          "region": "notion:iSup@p003"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

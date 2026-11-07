@@ -5,9 +5,9 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.365348, 0.522254, 0.249517, 0.017203]
+        "rect": [0.221447, 0.652778, 0.242677, 0.018466]
       },
-      "title": "the topology it inherits from X",
+      "title": "the topology inherited from X",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:instTopologicalSpaceSubtype@p001"

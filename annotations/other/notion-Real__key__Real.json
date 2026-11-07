@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.487096, 0.619476, 0.015325, 0.017045]
+        "page": 1,
+        "rect": [0.302136, 0.688131, 0.104478, 0.017677]
       },
-      "title": "ℝ",
+      "title": "real numbers",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Real@p002"
+          "region": "notion:Real@p001"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

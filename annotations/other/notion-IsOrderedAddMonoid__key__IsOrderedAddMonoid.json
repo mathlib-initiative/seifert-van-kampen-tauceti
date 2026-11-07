@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.297867, 0.67077, 0.275382, 0.017045]
+        "page": 1,
+        "rect": [0.132842, 0.528725, 0.170573, 0.017677]
       },
-      "title": "whose addition respects that order",
+      "title": "preserved by addition",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:IsOrderedAddMonoid@p002"
+          "region": "notion:IsOrderedAddMonoid@p001"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

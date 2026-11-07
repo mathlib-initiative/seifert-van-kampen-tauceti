@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.130391, 0.359217, 0.739217, 0.035669]
+        "page": 5,
+        "rect": [0.130391, 0.821338, 0.739217, 0.035511]
       },
       "title": "Multiply the three local loop classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.434834, 0.359217, 0.869608, 0.359217, 0.869608, 0.377841, 0.434834, 0.377841],
-            [0.130391, 0.377841, 0.864706, 0.377841, 0.864706, 0.394886, 0.130391, 0.394886]
+            [0.434834, 0.821338, 0.869608, 0.821338, 0.869608, 0.839804, 0.434834, 0.839804],
+            [0.130391, 0.839804, 0.864706, 0.839804, 0.864706, 0.856849, 0.130391, 0.856849]
           ],
-          "region": "proof-5.1-s06-product@p006"
+          "region": "proof-5.1-s06-product@p005"
         }
       }
     }
@@ -51,8 +51,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [5],
+        "printed": [5]
       },
       "provenance": {
         "actor": "agent",

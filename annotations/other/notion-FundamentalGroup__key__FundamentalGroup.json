@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.286094, 0.140467, 0.067495, 0.017045]
+        "page": 3,
+        "rect": [0.381788, 0.160669, 0.151291, 0.019255]
       },
-      "title": "π₁(X, x)",
+      "title": "fundamental group",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroup@p002"
+          "region": "notion:FundamentalGroup@p003"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.130391, 0.340593, 0.739218, 0.037248]
+        "page": 5,
+        "rect": [0.130391, 0.802715, 0.739218, 0.037089]
       },
       "title": "The middle loop lies in the generated subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.139267, 0.340593, 0.869609, 0.340593, 0.869609, 0.359217, 0.139267, 0.359217],
-            [0.130391, 0.359217, 0.428873, 0.359217, 0.428873, 0.377841, 0.130391, 0.377841]
+            [0.139267, 0.802715, 0.869609, 0.802715, 0.869609, 0.821339, 0.139267, 0.821339],
+            [0.130391, 0.821338, 0.428873, 0.821338, 0.428873, 0.839804, 0.130391, 0.839804]
           ],
-          "region": "proof-5.1-s05-middle@p006"
+          "region": "proof-5.1-s05-middle@p005"
         }
       }
     }
@@ -51,8 +51,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [5],
+        "printed": [5]
       },
       "provenance": {
         "actor": "agent",

@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.130391, 0.574653, 0.739217, 0.074337]
+        "page": 2,
+        "rect": [0.130391, 0.464646, 0.739217, 0.089331]
       },
       "title": "Lemma 1.8 (Cutting a path class at an intermediate parameter)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-1.8@p003"
+          "region": "lemma-1.8@p002"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

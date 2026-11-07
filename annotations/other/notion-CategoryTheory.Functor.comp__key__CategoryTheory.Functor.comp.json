@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.452243, 0.533775, 0.238478, 0.017045]
+        "page": 4,
+        "rect": [0.232465, 0.123895, 0.047239, 0.01815]
       },
-      "title": "the composite of two functors",
+      "title": "F ∘ G",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:CategoryTheory.Functor.comp@p002"
+          "region": "notion:CategoryTheory.Functor.comp@p004"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }

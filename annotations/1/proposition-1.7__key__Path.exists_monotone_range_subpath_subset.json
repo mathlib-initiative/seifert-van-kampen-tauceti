@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.130391, 0.499369, 0.739217, 0.070234]
+        "page": 2,
+        "rect": [0.130391, 0.321654, 0.739217, 0.072285]
       },
       "title": "Proposition 1.7 (Subdividing a path along a family of sets)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proposition-1.7@p003"
+          "region": "proposition-1.7@p002"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.627106, 0.157513, 0.061974, 0.017045]
+        "page": 3,
+        "rect": [0.802732, 0.19697, 0.061974, 0.017045]
       },
       "title": "π₁(f, x)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroup.map@p002"
+          "region": "notion:FundamentalGroup.map@p003"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

@@ -4,13 +4,25 @@
   "subject": [
     {
       "location": {
-        "page": 1,
-        "rect": [0.152153, 0.797506, 0.16892, 0.017361]
+        "page": 2,
+        "rect": [0.74342, 0.655145, 0.126188, 0.017045]
       },
       "title": "path-connected space",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:PathConnectedSpace@p001"
+          "region": "notion:PathConnectedSpace@p002"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.130391, 0.672191, 0.046594, 0.018782]
+      },
+      "title": "path-connected space",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:PathConnectedSpace@p002#2"
         }
       }
     }
@@ -38,8 +50,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [1],
-        "printed": [1]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

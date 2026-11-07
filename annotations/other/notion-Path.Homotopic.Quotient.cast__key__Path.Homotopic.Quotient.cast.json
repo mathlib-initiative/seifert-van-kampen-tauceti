@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 1,
-        "rect": [0.132842, 0.849432, 0.074791, 0.016414]
+        "page": 2,
+        "rect": [0.56055, 0.871843, 0.289487, 0.018308]
       },
-      "title": "renaming",
+      "title": "rename the endpoints of a path class",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Path.Homotopic.Quotient.cast@p001"
+          "region": "notion:Path.Homotopic.Quotient.cast@p002"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [1],
-        "printed": [1]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

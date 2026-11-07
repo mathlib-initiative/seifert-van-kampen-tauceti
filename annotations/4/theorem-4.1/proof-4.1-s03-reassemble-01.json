@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.393078, 0.476847, 0.213844, 0.02135]
+        "page": 3,
+        "rect": [0.393078, 0.840533, 0.213844, 0.02135]
       },
       "title": "Reassemble the original path class",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.393078, 0.476847, 0.606922, 0.476847, 0.606922, 0.498197, 0.393078, 0.498197]
+            [0.393078, 0.840533, 0.606922, 0.840533, 0.606922, 0.861883, 0.393078, 0.861883]
           ],
-          "region": "proof-4.1-s03-reassemble@p004"
+          "region": "proof-4.1-s03-reassemble@p003"
         }
       }
     }
@@ -50,8 +50,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       },
       "provenance": {
         "actor": "agent",

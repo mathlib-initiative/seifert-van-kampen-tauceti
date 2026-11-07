@@ -3,13 +3,13 @@
   "kind": "definition",
   "subject": {
     "location": {
-      "page": 4,
-      "rect": [0.130391, 0.179609, 0.739217, 0.058081]
+      "page": 3,
+      "rect": [0.130391, 0.459912, 0.739217, 0.075126]
     },
     "title": "Definition 3.2 (The functor induced by a homomorphism out of a vertex group)",
     "extensions": {
       "org.mathlib-initiative.formal-companion.overlay": {
-        "region": "definition-3.2@p004"
+        "region": "definition-3.2@p003"
       }
     }
   },
@@ -25,8 +25,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

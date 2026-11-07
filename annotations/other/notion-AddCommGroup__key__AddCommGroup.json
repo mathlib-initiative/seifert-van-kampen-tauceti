@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.586242, 0.653725, 0.221884, 0.017045]
+        "page": 1,
+        "rect": [0.487142, 0.510417, 0.223201, 0.018308]
       },
       "title": "additive commutative group",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:AddCommGroup@p002"
+          "region": "notion:AddCommGroup@p001"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

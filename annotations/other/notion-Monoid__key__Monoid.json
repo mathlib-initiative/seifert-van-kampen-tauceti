@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.60656, 0.448232, 0.059887, 0.017203]
+        "page": 3,
+        "rect": [0.463271, 0.344066, 0.059887, 0.01673]
       },
       "title": "monoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Monoid@p002"
+          "region": "notion:Monoid@p003"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.39301, 0.585227, 0.015325, 0.01673]
+        "page": 1,
+        "rect": [0.318034, 0.546402, 0.153721, 0.01673]
       },
-      "title": "ℕ",
+      "title": "nonnegative integer",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Nat@p002"
+          "region": "notion:Nat@p001"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

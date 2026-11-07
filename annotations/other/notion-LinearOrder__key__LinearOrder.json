@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.132842, 0.67077, 0.125559, 0.017045]
+        "page": 1,
+        "rect": [0.771315, 0.510417, 0.093391, 0.018308]
       },
-      "title": "linearly ordered",
+      "title": "linear order",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:LinearOrder@p002"
+          "region": "notion:LinearOrder@p001"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

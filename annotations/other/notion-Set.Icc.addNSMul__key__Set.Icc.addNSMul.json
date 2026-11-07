@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.315497, 0.738952, 0.364676, 0.017677]
+        "page": 1,
+        "rect": [0.525325, 0.546402, 0.135548, 0.01673]
       },
-      "title": "The point reached from a by n steps of size d",
+      "title": "subdivision point",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Set.Icc.addNSMul@p002"
+          "region": "notion:Set.Icc.addNSMul@p001"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

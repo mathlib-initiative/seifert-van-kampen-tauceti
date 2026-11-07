@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 1,
-        "rect": [0.429814, 0.728062, 0.039734, 0.018308]
+        "page": 2,
+        "rect": [0.153955, 0.780619, 0.040151, 0.018624]
       },
       "title": "f ∘ γ",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Path.map@p001"
+          "region": "notion:Path.map@p002"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [1],
-        "printed": [1]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.160516, 0.311553, 0.70419, 0.017203]
+        "page": 4,
+        "rect": [0.160516, 0.690499, 0.70419, 0.017361]
       },
       "title": "Descend the path value to homotopy classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.160516, 0.311553, 0.864706, 0.311553, 0.864706, 0.328756, 0.160516, 0.328756]
+            [0.160516, 0.690499, 0.864706, 0.690499, 0.864706, 0.70786, 0.160516, 0.70786]
           ],
-          "region": "proof-4.2-s11-quotient@p005"
+          "region": "proof-4.2-s11-quotient@p004"
         }
       }
     }
@@ -50,8 +50,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4],
+        "printed": [4]
       },
       "provenance": {
         "actor": "agent",

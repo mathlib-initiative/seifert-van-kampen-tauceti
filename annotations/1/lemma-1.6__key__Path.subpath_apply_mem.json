@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.130391, 0.439236, 0.739217, 0.055082]
+        "page": 2,
+        "rect": [0.130391, 0.229482, 0.739217, 0.057449]
       },
       "title": "Lemma 1.6 (A subpath of a path confined to a set)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-1.6@p003"
+          "region": "lemma-1.6@p002"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.325019, 0.362374, 0.055581, 0.017519]
+        "page": 3,
+        "rect": [0.462312, 0.421086, 0.055581, 0.018624]
       },
       "title": "inverse",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:CategoryTheory.inv@p002"
+          "region": "notion:CategoryTheory.inv@p003"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

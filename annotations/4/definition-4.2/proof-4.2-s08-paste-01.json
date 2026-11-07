@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.243056, 0.739218, 0.03409]
+        "page": 4,
+        "rect": [0.130391, 0.622159, 0.739218, 0.034091]
       },
       "title": "Paste the commuting squares across one row",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.67786, 0.243056, 0.869609, 0.243056, 0.869609, 0.260101, 0.67786, 0.260101],
-            [0.130391, 0.260101, 0.55268, 0.260101, 0.55268, 0.277146, 0.130391, 0.277146]
+            [0.67786, 0.622159, 0.869609, 0.622159, 0.869609, 0.639204, 0.67786, 0.639204],
+            [0.130391, 0.639205, 0.55268, 0.639205, 0.55268, 0.65625, 0.130391, 0.65625]
           ],
-          "region": "proof-4.2-s08-paste@p005"
+          "region": "proof-4.2-s08-paste@p004"
         }
       }
     }
@@ -51,8 +51,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4],
+        "printed": [4]
       },
       "provenance": {
         "actor": "agent",
