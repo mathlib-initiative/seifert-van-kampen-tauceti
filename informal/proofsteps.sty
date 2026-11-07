@@ -11,6 +11,7 @@
   \expandafter\global\expandafter\let\csname svk@seen@#1\endcsname\@empty
   \fc@auxwrite{\string\svk@auxstep{#1}{\detokenize{#2}}}%
   \postdisplaypenalty\@M
+  \interlinepenalty\@M
   \noindent\fc@above{\svk@marker}\fc@savepos{\svk@marker:start}%
   \textit{Proof idea: #2.}\enspace\ignorespaces
 }{%

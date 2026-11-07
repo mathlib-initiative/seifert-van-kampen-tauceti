@@ -22,3 +22,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check the generated overlay
         run: python3 pdf-overlay/tools/check_generated.py
+      - name: Check selected proof-step links
+        run: python3 tools/proof_steps.py --check
+      - name: Test proof-step range validation
+        run: python3 -m unittest discover -s tools -p 'test_*.py'

@@ -64,8 +64,11 @@ python3 tools/proof_steps.py \
   --build-dir build/proof-ideas/a \
   --pdf-url https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v2/svk-tauceti.pdf
 python3 pdf-overlay/tools/check_generated.py
+python3 tools/proof_steps.py --check
 python3 pdf-overlay/tools/serve.py --build
 ```
+
+In the viewer, enable **Proof steps** to highlight the proof ideas.
 
 The v2 PDF URL is the proposed destination for this revision; publishing it
 requires review of the new PDF and proof-step links. The published v1 remains

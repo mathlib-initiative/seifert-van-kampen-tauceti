@@ -38,7 +38,7 @@
     {
       "id": "4.2-homotopy",
       "item": "4.2",
-      "title": "Make the glued value independent of the path",
+      "title": "Descend to homotopy classes",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",

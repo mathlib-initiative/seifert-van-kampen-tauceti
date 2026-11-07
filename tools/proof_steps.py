@@ -88,14 +88,60 @@ def proof_boxes(build, config, fc, markers):
     return rows
 
 
+
+def check_export(root=ROOT):
+    config = json.loads((root / CONFIG).read_text())
+    bundle = json.loads((root / 'pdf-overlay/annotations.bundle.json').read_text())
+    rows = [r['annotation'] for r in bundle['annotations'] if r['annotation'].get('kind') == 'proof_step']
+    expected = {}
+    for step in config['steps']:
+        for n, target in enumerate(step['targets'], 1):
+            expected[(f'proof-{step["id"]}', f'proof-{step["id"]}-{n}')] = target
+    seen = set()
+    for row in rows:
+        for end in row['object']:
+            ext = end['extensions'][NS]
+            key = (row['id'], ext['declaration']['id'])
+            if key not in expected or key in seen:
+                raise ValueError(f'unexpected or repeated proof-step target: {key}')
+            seen.add(key)
+            target = expected[key]
+            location = {'module': target['module'], 'lines': target['lines']}
+            if target.get('declaration'):
+                location['declaration'] = target['declaration']
+            if end['location'] != location or end['version'] != config['library']['commit'] or end['uri'] != config['library']['url']:
+                raise ValueError(f'{key}: wrong Lean source location')
+            code = ext['snippet']['text']
+            if digest((code+'\n').encode()) != target['sha256'] or ext['snippet']['line'] != target['lines'][0]:
+                raise ValueError(f'{key}: exported snippet differs from the pinned range')
+            first, last = target['lines']
+            if ext['destination']['fragment'] != f'L{first}-L{last}':
+                raise ValueError(f'{key}: destination does not select the full range')
+            if row['relation'] != ('relatedMatch' if target['role']=='support' else 'closeMatch'):
+                raise ValueError(f'{key}: wrong proof-step relation')
+            for subject in row['subject']:
+                rect = subject['location']['rect']
+                if len(rect)!=4 or any(x < 0 for x in rect) or rect[2] <= 0 or rect[3] <= 0 or rect[0]+rect[2]>1 or rect[1]+rect[3]>1:
+                    raise ValueError(f'{key}: invalid PDF box')
+    if seen != set(expected):
+        raise ValueError('missing proof-step targets')
+    print(f'PASS {len(config["steps"])} proof ideas, {len(seen)} pinned Lean ranges')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--formal-companion', required=True, type=Path)
-    parser.add_argument('--library-src', required=True, type=Path)
+    parser.add_argument('--check', action='store_true', help='check exported snippets and ranges offline')
+    parser.add_argument('--formal-companion', type=Path)
+    parser.add_argument('--library-src', type=Path)
     parser.add_argument('--packages-src', type=Path)
-    parser.add_argument('--build-dir', required=True, type=Path)
-    parser.add_argument('--pdf-url', required=True)
+    parser.add_argument('--build-dir', type=Path)
+    parser.add_argument('--pdf-url')
     args = parser.parse_args()
+    if args.check:
+        check_export()
+        return
+    if not all([args.formal_companion, args.library_src, args.build_dir, args.pdf_url]):
+        parser.error('export requires --formal-companion, --library-src, --build-dir and --pdf-url')
     config = json.loads((ROOT / CONFIG).read_text())
     targets = read_targets(config, args.library_src)
     informal = json.loads((ROOT / 'informal/informalize.json').read_text())
@@ -170,8 +216,11 @@ def main():
         raise ValueError('; '.join(found.problems))
     manifest['count'] = sync.annotation_count(found.files)
     manifest['manifest_sha256'] = sync.manifest_sha256(found.files)
-    for rel in [CONFIG, 'informal/proofsteps.sty', 'tools/proof_steps.py']:
-        manifest['inputs'].append({'path': rel, 'sha256': digest((ROOT / rel).read_bytes())})
+    inputs = {row['path']: row for row in manifest['inputs']}
+    source_paths = list((ROOT / 'informal').rglob('*.tex')) + list((ROOT / 'informal').glob('*.sty'))
+    for rel in [CONFIG, 'tools/proof_steps.py', *[p.relative_to(ROOT).as_posix() for p in source_paths]]:
+        inputs[rel] = {'path': rel, 'sha256': digest((ROOT / rel).read_bytes())}
+    manifest['inputs'] = [inputs[k] for k in sorted(inputs)]
     sync.record_annotations(ROOT, manifest)
     sync.sync(ROOT)
     cache = ROOT / '.lake/overlay-pdf'
