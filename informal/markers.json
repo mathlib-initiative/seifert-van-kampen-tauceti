@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "94089974bf639b839a6cc7447455bd20289a0d37",
- "pdf_sha256": "9777171fea680c07e5585c70e6304eaf554920329a82101565d09fe5533d7418",
+ "source_commit": "19adc268133cd7aad9ba7c4cc0120064ebe8ff86",
+ "pdf_sha256": "fa7f153a8a1077fb1413e7e3ed13cb15d433d35522b28a72fd48cd1d9fbdfb3c",
  "pages": 8,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -922,7 +922,7 @@
    "label": "notion:45",
    "number": "n45",
    "boxes": [
-    [3, 0.221095, 0.621843, 0.081976, 0.017361]
+    [3, 0.132842, 0.621843, 0.081976, 0.017361]
    ]
   },
   {
@@ -932,7 +932,7 @@
    "label": "notion:46",
    "number": "n46",
    "boxes": [
-    [3, 0.307811, 0.639205, 0.329593, 0.018939]
+    [3, 0.23646, 0.639205, 0.329593, 0.018939]
    ]
   },
   {
