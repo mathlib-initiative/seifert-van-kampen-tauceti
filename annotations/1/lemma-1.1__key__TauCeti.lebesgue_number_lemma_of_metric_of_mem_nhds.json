@@ -1,12 +1,11 @@
 {
   "id": "lemma-1.1",
   "kind": "lemma",
-  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.390467, 0.739217, 0.072601]
+        "rect": [0.130391, 0.395518, 0.739217, 0.072917]
       },
       "title": "Lemma 1.1 (A Lebesgue number for a family of neighborhoods)",
       "extensions": {

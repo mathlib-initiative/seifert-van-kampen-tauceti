@@ -1,12 +1,11 @@
 {
   "id": "notion:unitInterval",
   "kind": "passage",
-  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.293414, 0.659722, 0.038191, 0.017361]
+        "rect": [0.293414, 0.563131, 0.038191, 0.017361]
       },
       "title": "[0, 1]",
       "extensions": {

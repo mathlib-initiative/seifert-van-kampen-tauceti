@@ -1,12 +1,11 @@
 {
   "id": "notion:Path.Homotopic.Quotient",
   "kind": "passage",
-  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.210252, 0.779356, 0.022662, 0.019886]
+        "rect": [0.210252, 0.686869, 0.022662, 0.019886]
       },
       "title": "[γ]",
       "extensions": {

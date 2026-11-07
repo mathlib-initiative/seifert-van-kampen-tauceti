@@ -1,12 +1,11 @@
 {
   "id": "notion:Path.subpath",
   "kind": "passage",
-  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.523003, 0.625789, 0.03633, 0.018308]
+        "rect": [0.523003, 0.529198, 0.03633, 0.018308]
       },
       "title": "γ[r,s]",
       "extensions": {

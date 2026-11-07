@@ -1,12 +1,11 @@
 {
   "id": "notion:Path.Homotopic.Quotient.trans",
   "kind": "passage",
-  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.462059, 0.779356, 0.17352, 0.019886]
+        "rect": [0.462059, 0.686869, 0.17352, 0.019886]
       },
       "title": "composition of classes",
       "extensions": {

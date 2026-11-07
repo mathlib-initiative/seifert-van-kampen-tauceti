@@ -1,12 +1,11 @@
 {
   "id": "notion:Path.codRestrict",
   "kind": "passage",
-  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.210081, 0.59012, 0.022627, 0.018466]
+        "rect": [0.210081, 0.493371, 0.022627, 0.018624]
       },
       "title": "S γ",
       "extensions": {
