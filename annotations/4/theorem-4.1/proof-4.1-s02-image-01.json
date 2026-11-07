@@ -7,35 +7,16 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.739694, 0.64536, 0.129915, 0.018782]
+        "rect": [0.130391, 0.64536, 0.739218, 0.059502]
       },
       "title": "Each piece lies in an image subgroupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.1-s02-image@p004"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 4,
-        "rect": [0.130391, 0.664141, 0.739217, 0.022885]
-      },
-      "title": "Each piece lies in an image subgroupoid",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.1-s02-image@p004"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 4,
-        "rect": [0.130391, 0.687027, 0.13005, 0.017835]
-      },
-      "title": "Each piece lies in an image subgroupoid",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.739694, 0.64536, 0.869609, 0.64536, 0.869609, 0.664142, 0.739694, 0.664142],
+            [0.130391, 0.664141, 0.869608, 0.664141, 0.869608, 0.687026, 0.130391, 0.687026],
+            [0.130391, 0.687027, 0.260441, 0.687027, 0.260441, 0.704862, 0.130391, 0.704862]
+          ],
           "region": "proof-4.1-s02-image@p004"
         }
       }

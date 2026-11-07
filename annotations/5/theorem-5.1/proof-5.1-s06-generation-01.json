@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.277111, 0.508996, 0.592497, 0.017045]
+        "rect": [0.130391, 0.508996, 0.739217, 0.033618]
       },
       "title": "Invoke generation of the fundamental groupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-5.1-s06-generation@p006"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 6,
-        "rect": [0.130391, 0.526042, 0.38391, 0.016572]
-      },
-      "title": "Invoke generation of the fundamental groupoid",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.277111, 0.508996, 0.869608, 0.508996, 0.869608, 0.526041, 0.277111, 0.526041],
+            [0.130391, 0.526042, 0.514301, 0.526042, 0.514301, 0.542614, 0.130391, 0.542614]
+          ],
           "region": "proof-5.1-s06-generation@p006"
         }
       }

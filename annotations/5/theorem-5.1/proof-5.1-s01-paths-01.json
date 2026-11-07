@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.223673, 0.219066, 0.645935, 0.018466]
+        "rect": [0.130391, 0.219066, 0.739217, 0.035985]
       },
       "title": "Choose paths from the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-5.1-s01-paths@p006"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 6,
-        "rect": [0.130391, 0.237532, 0.095048, 0.017519]
-      },
-      "title": "Choose paths from the basepoint",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.223673, 0.219066, 0.869608, 0.219066, 0.869608, 0.237532, 0.223673, 0.237532],
+            [0.130391, 0.237532, 0.225439, 0.237532, 0.225439, 0.255051, 0.130391, 0.255051]
+          ],
           "region": "proof-5.1-s01-paths@p006"
         }
       }

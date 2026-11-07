@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 8,
-        "rect": [0.132842, 0.352588, 0.736766, 0.017677]
+        "rect": [0.130391, 0.352588, 0.739217, 0.036301]
       },
       "title": "Invoke generation and conclude that the homomorphisms agree",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.3-s02-generation@p008"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 8,
-        "rect": [0.130391, 0.370265, 0.057532, 0.018624]
-      },
-      "title": "Invoke generation and conclude that the homomorphisms agree",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.132842, 0.352588, 0.869608, 0.352588, 0.869608, 0.370265, 0.132842, 0.370265],
+            [0.130391, 0.370265, 0.187923, 0.370265, 0.187923, 0.388889, 0.130391, 0.388889]
+          ],
           "region": "proof-6.3-s02-generation@p008"
         }
       }

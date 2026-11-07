@@ -12,6 +12,9 @@
       "title": "Invoke the two restriction equations",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.377786, 0.747999, 0.622214, 0.747999, 0.622214, 0.764375, 0.377786, 0.764375]
+          ],
           "region": "proof-6.4-s03-factorization@p008"
         }
       }

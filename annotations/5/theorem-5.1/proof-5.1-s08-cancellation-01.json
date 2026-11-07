@@ -12,6 +12,9 @@
       "title": "Cancel the basepoint transport",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.401871, 0.57347, 0.59813, 0.57347, 0.59813, 0.596662, 0.401871, 0.596662]
+          ],
           "region": "proof-5.1-s08-cancellation@p006"
         }
       }

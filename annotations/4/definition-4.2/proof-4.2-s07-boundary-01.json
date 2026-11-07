@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.437524, 0.439394, 0.432085, 0.01673]
+        "rect": [0.130391, 0.439394, 0.739218, 0.034249]
       },
       "title": "The endpoint boundary paths contribute identities",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s07-boundary@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.456124, 0.317341, 0.017519]
-      },
-      "title": "The endpoint boundary paths contribute identities",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.437524, 0.439394, 0.869609, 0.439394, 0.869609, 0.456124, 0.437524, 0.456124],
+            [0.130391, 0.456124, 0.447732, 0.456124, 0.447732, 0.473643, 0.130391, 0.473643]
+          ],
           "region": "proof-4.2-s07-boundary@p005"
         }
       }

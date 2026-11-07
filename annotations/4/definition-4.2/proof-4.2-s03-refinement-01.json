@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.132842, 0.268782, 0.736766, 0.016888]
+        "rect": [0.130391, 0.268782, 0.739217, 0.032354]
       },
       "title": "Compare subdivisions through a common refinement",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s03-refinement@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.285669, 0.178996, 0.015467]
-      },
-      "title": "Compare subdivisions through a common refinement",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.132842, 0.268782, 0.869608, 0.268782, 0.869608, 0.28567, 0.132842, 0.28567],
+            [0.130391, 0.285669, 0.309387, 0.285669, 0.309387, 0.301136, 0.130391, 0.301136]
+          ],
           "region": "proof-4.2-s03-refinement@p005"
         }
       }

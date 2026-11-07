@@ -12,6 +12,9 @@
       "title": "Apply the right restriction in the same way",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.132842, 0.876736, 0.714473, 0.876736, 0.714473, 0.895833, 0.132842, 0.895833]
+          ],
           "region": "proof-6.2-s03-right@p007"
         }
       }

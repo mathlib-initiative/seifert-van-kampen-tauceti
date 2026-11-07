@@ -12,6 +12,9 @@
       "title": "Pass from pointwise equality to equality of homomorphisms",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.405369, 0.855429, 0.864707, 0.855429, 0.864707, 0.876736, 0.405369, 0.876736]
+          ],
           "region": "proof-6.2-s02-pointwise@p007"
         }
       }

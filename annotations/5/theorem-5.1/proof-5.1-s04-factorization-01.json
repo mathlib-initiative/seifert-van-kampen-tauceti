@@ -12,6 +12,9 @@
       "title": "Factor the transported loop into three local loops",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.373373, 0.43188, 0.626627, 0.43188, 0.626627, 0.480566, 0.373373, 0.480566]
+          ],
           "region": "proof-5.1-s04-factorization@p006"
         }
       }

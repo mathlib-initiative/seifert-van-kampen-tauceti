@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 7,
-        "rect": [0.774354, 0.486427, 0.095254, 0.019413]
+        "rect": [0.130391, 0.486427, 0.739217, 0.038668]
       },
       "title": "Invoke gluing of the two local functors",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.1-s04-glue@p007"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 7,
-        "rect": [0.130391, 0.50584, 0.467374, 0.019255]
-      },
-      "title": "Invoke gluing of the two local functors",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.774354, 0.486427, 0.869608, 0.486427, 0.869608, 0.50584, 0.774354, 0.50584],
+            [0.130391, 0.50584, 0.597765, 0.50584, 0.597765, 0.525095, 0.130391, 0.525095]
+          ],
           "region": "proof-6.1-s04-glue@p007"
         }
       }

@@ -12,6 +12,9 @@
       "title": "Use a single cover member to recover the local functor",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.132842, 0.524937, 0.820436, 0.524937, 0.820436, 0.54214, 0.132842, 0.54214]
+          ],
           "region": "proof-4.2-s09-restrict@p005"
         }
       }

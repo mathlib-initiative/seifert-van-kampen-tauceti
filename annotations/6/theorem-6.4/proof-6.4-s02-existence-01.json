@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 8,
-        "rect": [0.27892, 0.697917, 0.590688, 0.016572]
+        "rect": [0.130391, 0.697917, 0.739217, 0.036301]
       },
       "title": "Invoke the induced homomorphism for an arbitrary cocone",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.4-s02-existence@p008"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 8,
-        "rect": [0.130391, 0.714489, 0.154991, 0.019729]
-      },
-      "title": "Invoke the induced homomorphism for an arbitrary cocone",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.27892, 0.697917, 0.869608, 0.697917, 0.869608, 0.714489, 0.27892, 0.714489],
+            [0.130391, 0.714489, 0.285382, 0.714489, 0.285382, 0.734218, 0.130391, 0.734218]
+          ],
           "region": "proof-6.4-s02-existence@p008"
         }
       }

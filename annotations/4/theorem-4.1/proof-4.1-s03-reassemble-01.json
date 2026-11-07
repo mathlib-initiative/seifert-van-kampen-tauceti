@@ -12,6 +12,9 @@
       "title": "Reassemble the original path class",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.393078, 0.712999, 0.606922, 0.712999, 0.606922, 0.734349, 0.393078, 0.734349]
+          ],
           "region": "proof-4.1-s03-reassemble@p004"
         }
       }

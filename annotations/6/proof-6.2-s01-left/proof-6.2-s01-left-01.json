@@ -12,6 +12,9 @@
       "title": "Apply the left restriction and evaluate at the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.330249, 0.801998, 0.669751, 0.801998, 0.669751, 0.850667, 0.330249, 0.850667]
+          ],
           "region": "proof-6.2-s01-left@p007"
         }
       }

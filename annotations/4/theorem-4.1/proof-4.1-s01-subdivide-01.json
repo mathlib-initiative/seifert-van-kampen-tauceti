@@ -7,35 +7,16 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.775334, 0.610953, 0.094275, 0.017519]
+        "rect": [0.130391, 0.610953, 0.739218, 0.053189]
       },
       "title": "Choose a subdivision subordinate to the cover",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.1-s01-subdivide@p004"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 4,
-        "rect": [0.130391, 0.628472, 0.739217, 0.016888]
-      },
-      "title": "Choose a subdivision subordinate to the cover",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.1-s01-subdivide@p004"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 4,
-        "rect": [0.130391, 0.64536, 0.598981, 0.018782]
-      },
-      "title": "Choose a subdivision subordinate to the cover",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.775334, 0.610953, 0.869609, 0.610953, 0.869609, 0.628472, 0.775334, 0.628472],
+            [0.130391, 0.628472, 0.869608, 0.628472, 0.869608, 0.64536, 0.130391, 0.64536],
+            [0.130391, 0.64536, 0.729372, 0.64536, 0.729372, 0.664142, 0.130391, 0.664142]
+          ],
           "region": "proof-4.1-s01-subdivide@p004"
         }
       }

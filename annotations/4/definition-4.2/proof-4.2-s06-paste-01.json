@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.132842, 0.422348, 0.736766, 0.017045]
+        "rect": [0.130391, 0.422348, 0.739217, 0.033776]
       },
       "title": "Paste the commuting cell squares",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s06-paste@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.439394, 0.299649, 0.01673]
-      },
-      "title": "Paste the commuting cell squares",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.132842, 0.422348, 0.869608, 0.422348, 0.869608, 0.439393, 0.132842, 0.439393],
+            [0.130391, 0.439394, 0.43004, 0.439394, 0.43004, 0.456124, 0.130391, 0.456124]
+          ],
           "region": "proof-4.2-s06-paste@p005"
         }
       }

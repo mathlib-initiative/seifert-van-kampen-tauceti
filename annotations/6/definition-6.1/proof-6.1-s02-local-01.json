@@ -12,6 +12,9 @@
       "title": "Invoke the functor construction from a homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.386298, 0.232008, 0.700911, 0.232008, 0.700911, 0.249527, 0.386298, 0.249527]
+          ],
           "region": "proof-6.1-s02-local@p007"
         }
       }

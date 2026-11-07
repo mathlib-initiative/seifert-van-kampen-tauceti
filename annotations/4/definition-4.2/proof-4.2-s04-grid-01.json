@@ -7,47 +7,17 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.598881, 0.301136, 0.270728, 0.017677]
+        "rect": [0.130391, 0.301136, 0.739218, 0.06976]
       },
       "title": "Choose a fine grid for the homotopy",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s04-grid@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.318813, 0.739217, 0.018308]
-      },
-      "title": "Choose a fine grid for the homotopy",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s04-grid@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.337121, 0.739217, 0.01673]
-      },
-      "title": "Choose a fine grid for the homotopy",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s04-grid@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.353851, 0.058689, 0.017045]
-      },
-      "title": "Choose a fine grid for the homotopy",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.598881, 0.301136, 0.869609, 0.301136, 0.869609, 0.318813, 0.598881, 0.318813],
+            [0.130391, 0.318813, 0.869608, 0.318813, 0.869608, 0.337121, 0.130391, 0.337121],
+            [0.130391, 0.337121, 0.869608, 0.337121, 0.869608, 0.353851, 0.130391, 0.353851],
+            [0.130391, 0.353851, 0.18908, 0.353851, 0.18908, 0.370896, 0.130391, 0.370896]
+          ],
           "region": "proof-4.2-s04-grid@p005"
         }
       }

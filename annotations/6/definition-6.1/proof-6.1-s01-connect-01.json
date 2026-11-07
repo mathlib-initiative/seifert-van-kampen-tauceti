@@ -7,35 +7,16 @@
     {
       "location": {
         "page": 7,
-        "rect": [0.502271, 0.12279, 0.367337, 0.019886]
+        "rect": [0.130391, 0.12279, 0.739217, 0.054609]
       },
       "title": "Choose connecting paths compatibly on the intersection",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.1-s01-connect@p007"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 7,
-        "rect": [0.130391, 0.142677, 0.739217, 0.016098]
-      },
-      "title": "Choose connecting paths compatibly on the intersection",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.1-s01-connect@p007"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 7,
-        "rect": [0.130391, 0.158775, 0.369344, 0.018624]
-      },
-      "title": "Choose connecting paths compatibly on the intersection",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.502271, 0.12279, 0.869608, 0.12279, 0.869608, 0.142676, 0.502271, 0.142676],
+            [0.130391, 0.142677, 0.869608, 0.142677, 0.869608, 0.158775, 0.130391, 0.158775],
+            [0.130391, 0.158775, 0.499735, 0.158775, 0.499735, 0.177399, 0.130391, 0.177399]
+          ],
           "region": "proof-6.1-s01-connect@p007"
         }
       }

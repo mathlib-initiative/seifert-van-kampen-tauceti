@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.13901, 0.488952, 0.730598, 0.020044]
+        "rect": [0.130391, 0.488952, 0.739217, 0.037089]
       },
       "title": "The three local loops lie in the generated subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-5.1-s05-membership@p006"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 6,
-        "rect": [0.130391, 0.508996, 0.139219, 0.017045]
-      },
-      "title": "The three local loops lie in the generated subgroup",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.13901, 0.488952, 0.869608, 0.488952, 0.869608, 0.508996, 0.13901, 0.508996],
+            [0.130391, 0.508996, 0.26961, 0.508996, 0.26961, 0.526041, 0.130391, 0.526041]
+          ],
           "region": "proof-5.1-s05-membership@p006"
         }
       }

@@ -7,35 +7,16 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.278686, 0.315341, 0.590922, 0.018939]
+        "rect": [0.130391, 0.315341, 0.739217, 0.054608]
       },
       "title": "The transported classes define a subgroupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-5.1-s02-subgroupoid@p006"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 6,
-        "rect": [0.130391, 0.33428, 0.739217, 0.019413]
-      },
-      "title": "The transported classes define a subgroupoid",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-5.1-s02-subgroupoid@p006"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 6,
-        "rect": [0.130391, 0.353693, 0.246037, 0.016256]
-      },
-      "title": "The transported classes define a subgroupoid",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.278686, 0.315341, 0.869608, 0.315341, 0.869608, 0.33428, 0.278686, 0.33428],
+            [0.130391, 0.33428, 0.869608, 0.33428, 0.869608, 0.353693, 0.130391, 0.353693],
+            [0.130391, 0.353693, 0.376428, 0.353693, 0.376428, 0.369949, 0.130391, 0.369949]
+          ],
           "region": "proof-5.1-s02-subgroupoid@p006"
         }
       }

@@ -7,35 +7,16 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.600511, 0.215593, 0.269098, 0.019255]
+        "rect": [0.130391, 0.215593, 0.739218, 0.053189]
       },
       "title": "Compatibility makes the local path value independent of the index",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s02-indices@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.234848, 0.739217, 0.016414]
-      },
-      "title": "Compatibility makes the local path value independent of the index",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s02-indices@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.251263, 0.139876, 0.017519]
-      },
-      "title": "Compatibility makes the local path value independent of the index",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.600511, 0.215593, 0.869609, 0.215593, 0.869609, 0.234848, 0.600511, 0.234848],
+            [0.130391, 0.234848, 0.869608, 0.234848, 0.869608, 0.251262, 0.130391, 0.251262],
+            [0.130391, 0.251263, 0.270267, 0.251263, 0.270267, 0.268782, 0.130391, 0.268782]
+          ],
           "region": "proof-4.2-s02-indices@p005"
         }
       }

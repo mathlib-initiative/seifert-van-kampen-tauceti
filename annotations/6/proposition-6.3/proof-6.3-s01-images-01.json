@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 8,
-        "rect": [0.160516, 0.31834, 0.709092, 0.017677]
+        "rect": [0.130391, 0.31834, 0.739217, 0.034248]
       },
       "title": "Both generating images lie in the equalizer subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.3-s01-images@p008"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 8,
-        "rect": [0.130391, 0.336016, 0.734315, 0.016572]
-      },
-      "title": "Both generating images lie in the equalizer subgroup",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.160516, 0.31834, 0.869608, 0.31834, 0.869608, 0.336017, 0.160516, 0.336017],
+            [0.130391, 0.336016, 0.864706, 0.336016, 0.864706, 0.352588, 0.130391, 0.352588]
+          ],
           "region": "proof-6.3-s01-images@p008"
         }
       }

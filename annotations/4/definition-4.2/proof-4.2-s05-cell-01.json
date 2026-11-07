@@ -7,35 +7,16 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.194039, 0.353851, 0.67557, 0.017045]
+        "rect": [0.130391, 0.353851, 0.739218, 0.051452]
       },
       "title": "The two routes around one cell have the same value",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s05-cell@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.370896, 0.739217, 0.017045]
-      },
-      "title": "The two routes around one cell have the same value",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-s05-cell@p005"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.387942, 0.544508, 0.017361]
-      },
-      "title": "The two routes around one cell have the same value",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.194039, 0.353851, 0.869609, 0.353851, 0.869609, 0.370896, 0.194039, 0.370896],
+            [0.130391, 0.370896, 0.869608, 0.370896, 0.869608, 0.387941, 0.130391, 0.387941],
+            [0.130391, 0.387942, 0.674899, 0.387942, 0.674899, 0.405303, 0.130391, 0.405303]
+          ],
           "region": "proof-4.2-s05-cell@p005"
         }
       }

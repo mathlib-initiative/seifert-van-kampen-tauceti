@@ -7,23 +7,15 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.615621, 0.369949, 0.253988, 0.017203]
+        "rect": [0.130391, 0.369949, 0.739218, 0.035512]
       },
       "title": "Choose the two paths in pairwise intersections",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-5.1-s03-intersections@p006"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 6,
-        "rect": [0.130391, 0.387153, 0.356753, 0.018308]
-      },
-      "title": "Choose the two paths in pairwise intersections",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.615621, 0.369949, 0.869609, 0.369949, 0.869609, 0.387152, 0.615621, 0.387152],
+            [0.130391, 0.387153, 0.487144, 0.387153, 0.487144, 0.405461, 0.130391, 0.405461]
+          ],
           "region": "proof-5.1-s03-intersections@p006"
         }
       }
