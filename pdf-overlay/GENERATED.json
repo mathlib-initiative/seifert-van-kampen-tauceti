@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "92625e117a77c8f0d8cbe4b421d3e2ffaa9046becd3c6a33de190962dddda30f"
+      "sha256": "d61dff68c6492fb0328ef10aaf9679e08cad9ab09e546d40f5dc7c94a11118f5"
     },
     "count": 106,
     "directory": "annotations",
     "export": {
-      "commit": "96ae7a3efbb66b2a7c07e459a0804f74d5b83054",
+      "commit": "1955b1f8d3eb59154b91ad05bf4ed48594d3002e",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -153,7 +153,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "71fedc3694a170d282ccc9efc1ac4fd60428c64bb43ee6d48fe828c2304dafc5"
+        "sha256": "59fdbb99467aa67d2ade97d2d6981f9ecfda7461958b7b789b6796f86cfb42b2"
       },
       {
         "path": "informal/notation.sty",
@@ -173,7 +173,7 @@
       },
       {
         "path": "informal/sections/01-paths-and-subdivisions.tex",
-        "sha256": "f2021d9c7154251af80854a1d1223c63e9fa1e99887566a13f239c592a529e8e"
+        "sha256": "dc7344399d4ada3daa2c866e7fcd35b21d36267944a153b776e0a0ca61c95a7f"
       },
       {
         "path": "informal/sections/02-fundamental-groupoids-and-groups.tex",
@@ -204,6 +204,6 @@
         "sha256": "679e2f6f5ca659f64d9d645ea427226b37974039f8f1de8c72f7c073d6458e8d"
       }
     ],
-    "manifest_sha256": "765d788520e932f6a6156fa061fe8c25baa58f0c208051228452de2da0c8e562"
+    "manifest_sha256": "e17c50e1f8f3cbf215c09ecde23e40745c3fad91959057ca59c02156e3a0ff24"
   }
 }

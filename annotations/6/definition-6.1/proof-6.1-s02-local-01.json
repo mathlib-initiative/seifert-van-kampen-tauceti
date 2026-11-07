@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.386298, 0.241162, 0.314613, 0.017361]
+        "rect": [0.386298, 0.182449, 0.314613, 0.017361]
       },
       "title": "Invoke the functor construction from a homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.386298, 0.241162, 0.700911, 0.241162, 0.700911, 0.258523, 0.386298, 0.258523]
+            [0.386298, 0.182449, 0.700911, 0.182449, 0.700911, 0.19981, 0.386298, 0.19981]
           ],
           "region": "proof-6.1-s02-local@p006"
         }

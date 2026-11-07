@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.123422, 0.739218, 0.035669]
+        "page": 4,
+        "rect": [0.130391, 0.761837, 0.739218, 0.035827]
       },
       "title": "Choose paths from the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.222459, 0.123422, 0.869609, 0.123422, 0.869609, 0.141888, 0.222459, 0.141888],
-            [0.130391, 0.141888, 0.232244, 0.141888, 0.232244, 0.159091, 0.130391, 0.159091]
+            [0.222459, 0.761837, 0.869609, 0.761837, 0.869609, 0.780461, 0.222459, 0.780461],
+            [0.130391, 0.780461, 0.232244, 0.780461, 0.232244, 0.797664, 0.130391, 0.797664]
           ],
-          "region": "proof-5.1-s01-paths@p005"
+          "region": "proof-5.1-s01-paths@p004"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4],
+        "printed": [4]
       },
       "provenance": {
         "actor": "agent",

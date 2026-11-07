@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.23646, 0.188605, 0.329593, 0.019097]
+        "page": 2,
+        "rect": [0.23646, 0.871054, 0.329593, 0.019097]
       },
       "title": "the smallest subgroupoid containing them",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:iSup@p003"
+          "region": "notion:iSup@p002"
         }
       }
     }
@@ -42,8 +42,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

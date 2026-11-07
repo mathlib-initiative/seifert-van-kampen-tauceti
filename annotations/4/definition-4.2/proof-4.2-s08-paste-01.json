@@ -6,15 +6,29 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.208965, 0.739218, 0.03409]
+        "page": 3,
+        "rect": [0.67786, 0.883207, 0.191749, 0.018624]
       },
       "title": "Paste the commuting squares across one row",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.67786, 0.208965, 0.869609, 0.208965, 0.869609, 0.22601, 0.67786, 0.22601],
-            [0.130391, 0.22601, 0.55268, 0.22601, 0.55268, 0.243055, 0.130391, 0.243055]
+            [0.67786, 0.883207, 0.869609, 0.883207, 0.869609, 0.901831, 0.67786, 0.901831]
+          ],
+          "region": "proof-4.2-s08-paste@p003"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 4,
+        "rect": [0.130391, 0.104798, 0.422289, 0.018624]
+      },
+      "title": "Paste the commuting squares across one row",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.130391, 0.104798, 0.55268, 0.104798, 0.55268, 0.123422, 0.130391, 0.123422]
           ],
           "region": "proof-4.2-s08-paste@p004"
         }
@@ -54,8 +68,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3, 4],
+        "printed": [3, 4]
       },
       "provenance": {
         "actor": "agent",
