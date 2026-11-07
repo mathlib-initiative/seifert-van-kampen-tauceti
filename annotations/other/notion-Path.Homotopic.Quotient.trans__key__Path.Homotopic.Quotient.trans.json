@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.235079, 0.208649, 0.127818, 0.017361]
+        "page": 1,
+        "rect": [0.235079, 0.865846, 0.127818, 0.017361]
       },
       "title": "the composition",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Path.Homotopic.Quotient.trans@p002"
+          "region": "notion:Path.Homotopic.Quotient.trans@p001"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

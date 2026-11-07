@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.282828, 0.739217, 0.038826]
+        "page": 3,
+        "rect": [0.130391, 0.864741, 0.739217, 0.037721]
       },
       "title": "Lemma 2.4 (The image of the class of a loop)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-2.4@p004"
+          "region": "lemma-2.4@p003"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

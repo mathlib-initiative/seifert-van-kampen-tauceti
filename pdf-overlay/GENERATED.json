@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "a755026c6cdff6d29703fa77c768e66a1eafae41d9e969dc626349404b260cd6"
+      "sha256": "15ee5a468589f4e65394fcd275bb9187b468efe06bfd64ca8c38ed02328403fa"
     },
     "count": 125,
     "directory": "annotations",
     "export": {
-      "commit": "e2c47e6556ebbd35ac3dacb76c77fa96a0187f18",
+      "commit": "06522df95bf1d66d5304e4d8d3d23c4aad72ade4",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -149,11 +149,11 @@
       },
       {
         "path": "informal/main.tex",
-        "sha256": "dd85cab38cb5aeee427e0fdb1155cdd49903f942b083d5133a6d0d2a60b28f46"
+        "sha256": "84e140ec11a199915c0e674ff68c9a5d8b7098ee747544ccf5f7e389e901e688"
       },
       {
         "path": "informal/markers.json",
-        "sha256": "f7ab3d9bbcb8f31210480675469be1b90ba2fac8471402d92f0f616df79e44b1"
+        "sha256": "510d03b5226efadd36b5bace2c2f7c783e1a5682f971de9b57e31a9029b5c04f"
       },
       {
         "path": "informal/notation.sty",
@@ -204,6 +204,6 @@
         "sha256": "680f082d99ddf50a6b8c27fd5e9a5fffa7da1eea6a7cb760776f8a037604a8e4"
       }
     ],
-    "manifest_sha256": "3fab8e35bcfa5507b5178e587a5fbf69886d27549c9fd5129f6204743abfe5f8"
+    "manifest_sha256": "2d2b8b724c9b4dc42b60788d0dc2310cdcd527ada2aeec7f2bd07c81c9397062"
   }
 }

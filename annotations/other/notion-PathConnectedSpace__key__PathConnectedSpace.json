@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.152153, 0.140309, 0.16892, 0.017203]
+        "page": 1,
+        "rect": [0.152153, 0.797506, 0.16892, 0.017361]
       },
       "title": "path-connected space",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:PathConnectedSpace@p002"
+          "region": "notion:PathConnectedSpace@p001"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.388108, 0.104482, 0.06781, 0.018939]
+        "page": 1,
+        "rect": [0.388108, 0.763573, 0.06781, 0.017045]
       },
       "title": "compact",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:IsCompact@p002"
+          "region": "notion:IsCompact@p001"
         }
       }
     }
@@ -38,8 +38,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

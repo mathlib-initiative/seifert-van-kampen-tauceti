@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.132842, 0.192077, 0.074791, 0.016572]
+        "page": 1,
+        "rect": [0.132842, 0.849432, 0.074791, 0.016414]
       },
       "title": "renaming",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Path.Homotopic.Quotient.cast@p002"
+          "region": "notion:Path.Homotopic.Quotient.cast@p001"
         }
       }
     }
@@ -39,8 +39,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

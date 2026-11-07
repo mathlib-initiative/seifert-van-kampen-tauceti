@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.222222, 0.739298, 0.054924]
+        "page": 3,
+        "rect": [0.130391, 0.806029, 0.739298, 0.053662]
       },
       "title": "Lemma 2.3 (Recasting the endpoints of a path class)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-2.3@p004"
+          "region": "lemma-2.3@p003"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }
