@@ -14,13 +14,14 @@ Let $S$ be a subset of a \fcnotion{TopologicalSpace}{topological space} $X$.
 Write \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}$} for the inclusion
 $S\longrightarrow X$.
 
-Write \fcnotion{Path.codRestrict}{$\codres{\gamma}{S}$} for $\gamma$ viewed as a
-path in $S$ when its image lies there, and
-\fcnotion{Path.trans}{$\gamma\ptrans\delta$} for the concatenation of
-composable \fcnotion{Path}{paths} $\gamma$ and $\delta$, with $\gamma$ first.
-The subpath \fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} traverses
-$\gamma$ with its parameter running linearly from $r$ to $s$, backwards when
-$s<r$ and constantly when $r=s$.
+Let $\gamma$ be a \fcnotion{Path}{path} in $X$.  When its image lies in $S$,
+write \fcnotion{Path.codRestrict}{$\codres{\gamma}{S}$} for the same path in
+$S$.  For a path $\delta$ starting where $\gamma$ ends, write
+\fcnotion{Path.trans}{$\gamma\ptrans\delta$} for their concatenation, with
+$\gamma$ first.  For parameters $r,s\in[0,1]$, the subpath
+\fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} traverses $\gamma$ with its
+parameter running linearly from $r$ to $s$, backwards when $s<r$ and
+constantly when $r=s$.
 
 A subdivision of \fcnotion{unitInterval}{$\uI$} is a finite \fcnotion{Monotone}{nondecreasing} sequence
 $0=t_0\le\cdots\le t_n=1$.
