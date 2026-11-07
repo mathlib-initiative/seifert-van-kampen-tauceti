@@ -180,6 +180,8 @@ STYLE.md. A selected proof must give its construction, the equalities or
 closure arguments it needs, and the deduction of the stated conclusion.
 Use earlier numbered results explicitly; do not replace an argument with a
 statement of its intended strategy. Additional notation is local to the proof
-where it is introduced. The project-owned `proofpassage` environment and
-`proofsteps.json` record the PDF passages and the corresponding pinned Lean
-ranges. Lean names remain in the annotations.
+where it is introduced. The `proofpassage` environment only formats the argument. Mark selected
+sentences with `\proofstep` and individual displayed equations with
+`\proofequation`; each must name exactly one matching Lean range in
+`proofsteps.json`. Never mark a whole proof as one region. Lean names remain
+in the annotations.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export selected proof passages and invocation ranges alongside the statement annotations.
+"""Export individual proof sentences/equations and their exact Lean ranges alongside the statement annotations.
 
 Project adapter for this exposition, using the existing PDF-marker geometry and
 Literature Links format. It does not modify TauCeti or the generated runtimes.
@@ -30,7 +30,7 @@ def digest(raw):
 
 def read_targets(config, library):
     """Refuse stale ranges before generating or replacing any annotation."""
-    if config.get('schema') != 'svk-tauceti/proof-steps' or config.get('schema_version') != 1:
+    if config.get('schema') != 'svk-tauceti/proof-steps' or config.get('schema_version') != 2:
         raise ValueError('unsupported proofsteps.json schema')
     if not re.fullmatch(r'[0-9a-f]{40}', config.get('library', {}).get('commit', '')):
         raise ValueError('proof steps need a pinned library commit')
@@ -39,6 +39,10 @@ def read_targets(config, library):
         sid = step['id']
         if not re.fullmatch(r'[1-9][0-9]*\.[1-9][0-9]*-[a-z][a-z0-9-]*', sid) or sid in result:
             raise ValueError(f'invalid or repeated proof-step id: {sid}')
+        if step.get('span') not in ('inline', 'display'):
+            raise ValueError(f'{sid}: proof step must mark a sentence or equation')
+        if len(step['targets']) > 1:
+            raise ValueError(f'{sid}: split steps with different Lean targets')
         if not step['targets']:
             raise ValueError(f'{sid}: no Lean target')
         targets = []
@@ -60,32 +64,54 @@ def read_targets(config, library):
     return result
 
 
+def equation_box(geo, start, end, dimensions, pad, sp_per_bp):
+    """Bound just the measured math box, never the surrounding paragraph."""
+    width, height, depth = [int(n) / sp_per_bp for n in dimensions]
+    if start['abspage'] != end['abspage'] or abs(start['posy'] - end['posy']) > 2:
+        raise ValueError('equation markers must share one baseline and page')
+    left = start['posx'] / sp_per_bp
+    if abs((end['posx'] - start['posx']) / sp_per_bp - width) > .02:
+        raise ValueError('equation width differs from its measured math box')
+    baseline = geo.from_top(start)
+    return [start['abspage'], left-pad, baseline-height-pad,
+            width+2*pad, height+depth+2*pad]
+
+
 def proof_boxes(build, config, fc, markers):
     aux = fc.read_aux(build.aux)
     raw = build.aux.read_text()
-    actual = []
-    for match in re.finditer(r'\\svk@auxstep(?![A-Za-z@])', raw):
-        groups = fc._groups(raw, match.end(), 3)
-        if groups is None:
-            raise ValueError('malformed proof-passage marker')
-        actual.append(tuple(groups[0]))
-    expected = [(s['id'], s['label'], s['title']) for s in config['steps']]
+    actual, dimensions = [], {}
+    for command, count in [('step', 3), ('math', 4)]:
+        for match in re.finditer(r'\\svk@aux'+command+r'(?![A-Za-z@])', raw):
+            groups = fc._groups(raw, match.end(), count)
+            if groups is None:
+                raise ValueError('malformed proof-step marker')
+            values = groups[0]
+            if command == 'step':
+                actual.append(tuple(values))
+            else:
+                if values[0] in dimensions:
+                    raise ValueError('duplicate equation dimensions')
+                dimensions[values[0]] = values[1:]
+    expected = [(s['id'], s['span'], s['title']) for s in config['steps']]
     if actual != expected:
-        raise ValueError('proof-passage markers do not match proofsteps.json in order and title')
+        raise ValueError('sentence/equation markers do not match proofsteps.json in order and title')
+    if set(dimensions) != {s['id'] for s in config['steps'] if s['span']=='display'}:
+        raise ValueError('equation dimensions do not match the marked equations')
     geo = markers.Geometry(aux.geometry, fc.pdf_pages(build.pdf))
     params = markers.Params.of(build.config.boxes)
     ink = markers.render_pages(build.pdf, geo, params)
     rows = []
     for step in config['steps']:
         name = 'fc:proof:' + step['id']
-        start = aux.positions[name + ':start']
-        above = aux.positions[name + ':above']
-        end = aux.positions.get(name + ':below', aux.positions[name + ':end'])
-        finish = markers.effective_end(geo, start, end, None)
-        upper = geo.from_top(above) if above['abspage'] == start['abspage'] else None
-        spans = markers.region_spans(geo, ink, params, start, upper, finish, None, step['id'])
-        rows.append({'id': step['id'], 'title': step['title'],
-                     'boxes': markers.to_fractions(geo, [s.box() for s in spans])})
+        start, end = aux.positions[name + ':start'], aux.positions[name + ':end']
+        if step['span'] == 'inline':
+            spans = markers.notion_spans(geo, ink, params, start, end, step['id'])
+            boxes = [s.box() for s in spans]
+        else:
+            boxes = [equation_box(geo, start, end, dimensions[step['id']], params.pad_bp, fc.SP_PER_BP)]
+        rows.append({'id': step['id'], 'title': step['title'], 'span': step['span'],
+                     'boxes': markers.to_fractions(geo, boxes)})
     return rows
 
 
@@ -127,7 +153,7 @@ def check_export(root=ROOT):
                     raise ValueError(f'{key}: invalid PDF box')
     if seen != set(expected):
         raise ValueError('missing proof-step targets')
-    print(f'PASS {len(config["steps"])} proof passages, {len(seen)} pinned Lean ranges')
+    print(f'PASS {len(config["steps"])} sentence/equation steps, {len(seen)} pinned Lean ranges')
 
 
 def main():
@@ -241,7 +267,7 @@ def main():
     cache.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(build.pdf, cache / 'svk-tauceti.pdf')
     report = {'pdf_sha256': digest(build.pdf.read_bytes()), 'library': config['library'],
-              'proof_passages': len(boxes), 'lean_ranges': sum(map(len, targets.values())),
+              'proof_steps': len(boxes), 'lean_ranges': sum(map(len, targets.values())),
               'annotations': manifest['count'], 'steps': boxes, 'confirmed_by_human': False}
     (args.build_dir / 'proof-steps-report.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps({k:v for k,v in report.items() if k!='steps'}, indent=2))

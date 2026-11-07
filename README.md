@@ -48,12 +48,14 @@ for gluing, the local functor equations, and the pushout universal property.
 They use the earlier numbered results and omit routine endpoint renaming and
 path reparametrizations.
 
-Eight linked passages carry 17 pinned Lean ranges, including selected
-invocations later in the proof. Click a proof or construction to inspect its
-code. The project-owned `informal/proofsteps.sty` records its PDF regions;
-`informal/proofsteps.json` records the Lean ranges and their hashes. The
-exporter rejects changed ranges and records these passages as agent-authored
-and awaiting human review.
+The eight arguments have 34 selected sentence or equation links. Each opens
+one pinned Lean range for that specific step, including explicit invocations of
+earlier results. Unmarked prose and proof headings carry no proof-wide link.
+The project-owned `informal/proofsteps.sty` records word positions or the exact
+dimensions of a displayed equation; `informal/proofsteps.json` records the
+corresponding Lean ranges and their hashes. The exporter rejects changed ranges,
+whole-proof markers, and steps with multiple code targets. These new links are
+agent-authored and await human review.
 
 To regenerate this revision, build the PDF twice with
 `bash informal/tools/canonical_pdf.sh --source-commit COMMIT build/proof-ideas`,
@@ -71,8 +73,7 @@ python3 tools/proof_steps.py --check
 python3 pdf-overlay/tools/serve.py --build
 ```
 
-In the viewer, click a proof or construction or its entry beneath the statement
-to open the Lean ranges.
+In the viewer, click a marked sentence or equation to open its corresponding Lean lines.
 
 The v2 PDF URL is the proposed destination for this revision; publishing it
 requires review of the new PDF and proof-step links. The published v1 remains

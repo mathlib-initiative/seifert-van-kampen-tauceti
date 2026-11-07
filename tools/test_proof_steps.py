@@ -19,8 +19,8 @@ class RangeValidation(unittest.TestCase):
         self.source = self.root / 'TauCeti/Example.lean'
         self.source.parent.mkdir()
         self.source.write_text('theorem sample : True := by\n  trivial\n')
-        self.config = {'schema':'svk-tauceti/proof-steps', 'schema_version':1,
-            'library': {'commit':'a'*40}, 'steps':[{'id':'1.1-test', 'targets':[
+        self.config = {'schema':'svk-tauceti/proof-steps', 'schema_version':2,
+            'library': {'commit':'a'*40}, 'steps':[{'id':'1.1-test', 'span':'inline', 'targets':[
                 {'module':'TauCeti.Example', 'lines':[2,2],
                  'sha256':hashlib.sha256(b'  trivial\n').hexdigest(), 'role':'key'}]}]}
 
@@ -69,6 +69,35 @@ class RangeValidation(unittest.TestCase):
         self.config['steps'][0]['targets'][0]['role']='proof'
         with self.assertRaisesRegex(ValueError, 'target role'):
             self.check()
+
+    def test_whole_proof_region_is_rejected(self):
+        self.config['steps'][0]['span']='proof'
+        with self.assertRaisesRegex(ValueError, 'sentence or equation'):
+            self.check()
+
+    def test_different_targets_must_be_separate_steps(self):
+        step=self.config['steps'][0]
+        step['targets'].append(copy.deepcopy(step['targets'][0]))
+        with self.assertRaisesRegex(ValueError, 'split steps'):
+            self.check()
+
+
+class EquationGeometry(unittest.TestCase):
+    class Page:
+        def from_top(self, pos):
+            return 800-pos['posy']/100
+
+    def test_equation_uses_its_width_and_full_height(self):
+        start={'abspage':2, 'posx':20000, 'posy':50000}
+        end={'abspage':2, 'posx':38000, 'posy':50000}
+        self.assertEqual(proof_steps.equation_box(self.Page(),start,end,[18000,2000,1500],2,100),
+                         [2,198,278,184,39])
+
+    def test_misaligned_equation_markers_are_rejected(self):
+        start={'abspage':2, 'posx':20000, 'posy':50000}
+        end={'abspage':3, 'posx':38000, 'posy':50000}
+        with self.assertRaisesRegex(ValueError, 'baseline and page'):
+            proof_steps.equation_box(self.Page(),start,end,[18000,2000,1500],2,100)
 
 
 class ExportIntegrity(unittest.TestCase):

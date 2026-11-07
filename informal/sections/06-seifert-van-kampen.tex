@@ -16,18 +16,18 @@ $\fgrp{X}{x}$ to $M$.
 \begin{proofpassage}{6.1-connect}{Construction}{The local functors}
 Put $C=A\cap B$.  For each $y\in C$ choose a path class
 $\rho_y:x\longrightarrow y$ in $C$, taking $\rho_x$ to be the identity.
-In $A$, choose classes $\tau^A_y:x\longrightarrow y$ whose values on $C$
+\proofstep{6.1-s01-connect}{Choose connecting paths compatibly on the intersection}{In $A$, choose classes $\tau^A_y:x\longrightarrow y$ whose values on $C$
 are the images of these $\rho_y$; choose the other classes using path
 connectedness of $A$.  Make the same choices in $B$, with the same
-$\rho_y$ on $C$.  In particular, $\tau^A_x$ and $\tau^B_x$ are identities.
+$\rho_y$ on $C$.}  In particular, $\tau^A_x$ and $\tau^B_x$ are identities.
 
 Send every object to the unique object of $\sobj M$.  For a morphism
 $g:y\longrightarrow z$ in $\fgpd A$, set
 \[
  F_A(g)=\varphi_A\bigl((\tau^A_z)^{-1}\circ g\circ\tau^A_y\bigr),
 \]
-and define $F_B$ in the same way.  These are the functors of
-\itemref{3.2}.  Explicitly, the value of an identity is $1$.  For
+and define $F_B$ in the same way.  \proofstep{6.1-s02-local}{Invoke the functor construction from a homomorphism}{These are the functors of
+\itemref{3.2}.}  Explicitly, the value of an identity is $1$.  For
 $g:y\longrightarrow z$ and $h:z\longrightarrow c$, insert
 $\tau^A_z\circ(\tau^A_z)^{-1}=1_z$ to obtain
 \[
@@ -49,19 +49,15 @@ For a morphism $g:y\longrightarrow z$ in $\fgpd C$, the loop
 $\eta=\rho_z^{-1}\circ g\circ\rho_y$ is based at $x$ in $C$.
 The choices in the preceding construction and the compatibility of the
 given homomorphisms yield
-\[
- F_A(\fgpd{\inclin{C}{A}}(g))
+\proofequation{6.1-s03-compatibility}{Apply compatibility to the transported loop in the intersection}{ F_A(\fgpd{\inclin{C}{A}}(g))
    =\varphi_A(j_A(\eta))
    =\varphi_B(j_B(\eta))
-   =F_B(\fgpd{\inclin{C}{B}}(g)).
-\]
+   =F_B(\fgpd{\inclin{C}{B}}(g)).}
 The object assignments also agree, so the two functors agree on all of
-$\fgpd C$.  Apply \itemref{4.4} to obtain a glued functor
-$F:\fgpd X\longrightarrow\sobj M$.  Restrict it to endomorphisms of $x$:
-\[
-  \varphi:\fgrp{X}{x}\longrightarrow M,\qquad
-  \varphi(\omega)=F(\omega).
-\]
+$\fgpd C$.  \proofstep{6.1-s04-glue}{Invoke gluing of the two local functors}{Apply \itemref{4.4} to obtain a glued functor
+$F:\fgpd X\longrightarrow\sobj M$.}  Restrict it to endomorphisms of $x$:
+\proofequation{6.1-s05-endomorphisms}{Restrict the glued functor to loops at the basepoint}{  \varphi:\fgrp{X}{x}\longrightarrow M,\qquad
+  \varphi(\omega)=F(\omega).}
 A functor preserves identities and composition, which are precisely the
 identity and multiplication here.  Thus $\varphi$ is a homomorphism of
 monoids, giving the construction asserted in \itemref{6.1}.
@@ -86,17 +82,15 @@ as in \itemref{6.1}, and let $\varphi$ be the homomorphism they induce.
 Let $\omega\in\fgrp{A}{x}$ be arbitrary.  Write $p_A=\fgrp{\incl{A}}{x}$.
 By the definition of $\varphi$ and the restriction property in
 \itemref[a]{4.5},
-\[
-\begin{aligned}
+\proofequation{6.2-s01-left}{Apply the left restriction and evaluate at the basepoint}{\begin{aligned}
  \varphi(p_A(\omega))
    &=F(\fgpd{\incl{A}}(\omega))=F_A(\omega)\\
    &=\varphi_A\bigl((\tau^A_x)^{-1}\circ\omega\circ\tau^A_x\bigr)
      =\varphi_A(\omega).
-\end{aligned}
-\]
-The last equality uses $\tau^A_x=1_x$.  Since this holds for every
-$\omega$, it proves \itemref[a]{6.2}.  Replacing $A$ by $B$ and using
-\itemref[b]{4.5} proves \itemref[b]{6.2}.
+\end{aligned}}
+The last equality uses $\tau^A_x=1_x$.  \proofstep{6.2-s02-pointwise}{Pass from pointwise equality to equality of homomorphisms}{Since this holds for every
+$\omega$, it proves \itemref[a]{6.2}.}  \proofstep{6.2-s03-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ and using
+\itemref[b]{4.5} proves \itemref[b]{6.2}.}
 \end{proofpassage}
 
 \begin{proposition}[id=6.3]{Uniqueness of the induced homomorphism}
@@ -120,12 +114,12 @@ $\psi(\omega^{-1})$ are two-sided inverses of the same element of $M$,
 and a two-sided inverse is unique.  Thus $E$ is a subgroup even though
 $M$ is only assumed to be a monoid.
 
-For every $\eta\in\fgrp{A}{x}$, the first hypothesis says
+\proofstep{6.3-s01-images}{Both generating images lie in the equalizer subgroup}{For every $\eta\in\fgrp{A}{x}$, the first hypothesis says
 $\varphi(\fgrp{\incl{A}}{x}(\eta))=\psi(\fgrp{\incl{A}}{x}(\eta))$;
 hence $E$ contains the image from $A$.  The second hypothesis puts the
-image from $B$ in $E$ as well.  These two images generate $\fgrp{X}{x}$ by
+image from $B$ in $E$ as well.}  \proofstep{6.3-s02-generation}{Invoke generation and conclude that the homomorphisms agree}{These two images generate $\fgrp{X}{x}$ by
 \itemref{5.2}.  Therefore $E=\fgrp{X}{x}$, which is exactly
-$\varphi=\psi$.
+$\varphi=\psi$.}
 \end{proofpassage}
 
 \begin{theorem}[id=6.4]{The based Seifert--van Kampen theorem}
@@ -153,21 +147,19 @@ Write $C=A\cap B$, and denote the inclusion-induced maps by
  p_B&:\fgrp{B}{x}\longrightarrow\fgrp{X}{x}.
 \end{aligned}
 \]
-For a loop in $C$, either composite inclusion gives the same loop in $X$.
+\proofstep{6.4-s01-commutes}{The two inclusions give the same loop class}{For a loop in $C$, either composite inclusion gives the same loop in $X$.
 Passing to classes proves $p_A\circ j_A=p_B\circ j_B$, so the square
-commutes.
+commutes.}
 
 Let $K$ be any group, and let $u_A:\fgrp{A}{x}\longrightarrow K$ and
 $u_B:\fgrp{B}{x}\longrightarrow K$ satisfy
-$u_A\circ j_A=u_B\circ j_B$.  The construction of \itemref{6.1}, with
-$M=K$, supplies a homomorphism $u:\fgrp{X}{x}\longrightarrow K$.
+$u_A\circ j_A=u_B\circ j_B$.  \proofstep{6.4-s02-existence}{Invoke the induced homomorphism for an arbitrary cocone}{The construction of \itemref{6.1}, with
+$M=K$, supplies a homomorphism $u:\fgrp{X}{x}\longrightarrow K$.}
 By \itemref{6.2} it satisfies
-\[
-  u\circ p_A=u_A,\qquad u\circ p_B=u_B.
-\]
+\proofequation{6.4-s03-factorization}{Invoke the two restriction equations}{  u\circ p_A=u_A,\qquad u\circ p_B=u_B.}
 If $v:\fgrp{X}{x}\longrightarrow K$ satisfies the same equations, then
 $u\circ p_A=v\circ p_A$ and $u\circ p_B=v\circ p_B$.
-\itemref{6.3} gives $u=v$.  Thus every compatible pair $u_A,u_B$ factors
+\proofstep{6.4-s04-uniqueness}{Invoke uniqueness for the mediating homomorphism}{\itemref{6.3} gives $u=v$.}  Thus every compatible pair $u_A,u_B$ factors
 through exactly one homomorphism from $\fgrp{X}{x}$.  This is the universal
 property of the displayed pushout in the category of groups.
 \end{proofpassage}

@@ -1,56 +1,208 @@
 {
   "schema": "svk-tauceti/proof-steps",
-  "schema_version": 1,
+  "schema_version": 2,
   "library": {
     "url": "https://github.com/TauCetiProject/TauCeti",
     "commit": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85"
   },
   "steps": [
     {
-      "id": "4.1-subdivide",
+      "id": "4.1-s01-subdivide",
       "item": "4.1",
-      "title": "Subdivide and reassemble",
+      "label": "Step",
+      "title": "Choose a subdivision subordinate to the cover",
+      "span": "inline",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
           "lines": [
             120,
-            131
+            122
           ],
-          "sha256": "87c6461916125c884b06dd15737499d337a39e4dc5f96a1cd3afa53a6e92f12a",
-          "title": "Subdivision and concatenation",
-          "role": "key",
-          "declaration": "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
-        },
-        {
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
-          "lines": [
-            159,
-            161
-          ],
-          "sha256": "6d67808d3f848949ff989a6b15fe0f27253abf0aad3b3c68267412dc67429c56",
-          "title": "Invoked to generate based loops",
-          "role": "support",
-          "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
+          "sha256": "15ec3bb07a5a355217277f32b2d218b90f4afcd2584058026ab08faf39aa9bdc",
+          "title": "Choose a subdivision subordinate to the cover",
+          "role": "key"
         }
-      ],
-      "label": "Proof"
+      ]
     },
     {
-      "id": "4.2-homotopy",
+      "id": "4.1-s02-image",
+      "item": "4.1",
+      "label": "Step",
+      "title": "Each piece lies in an image subgroupoid",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "lines": [
+            76,
+            84
+          ],
+          "sha256": "9b06f492c46f0a9e0a050e32ae6a02506116c7c75caa5af984aa42f9497a2410",
+          "title": "Each piece lies in an image subgroupoid",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.1-s03-reassemble",
+      "item": "4.1",
+      "label": "Step",
+      "title": "Reassemble the original path class",
+      "span": "display",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "lines": [
+            123,
+            131
+          ],
+          "sha256": "46edb6a6c32171c7d273c5e5c0df3c24dde25d386e3da0960ecef2113fb3aabf",
+          "title": "Reassemble the original path class",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s01-objects",
       "item": "4.2",
-      "title": "Gluing on homotopy classes",
+      "label": "Step",
+      "title": "The object value is independent of the cover member",
+      "span": "inline",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
           "lines": [
-            663,
-            681
+            247,
+            249
           ],
-          "sha256": "8927ad1527528551d40a3fc2748b86e9393eb2e5f0d41f96c5a7e2abeec68174",
-          "title": "Homotopy grid and cell relations",
+          "sha256": "e572fb8826f0157d444d257f597509b5714927bd3a7b684c22e212635b91c5cc",
+          "title": "The object value is independent of the cover member",
           "role": "key"
-        },
+        }
+      ]
+    },
+    {
+      "id": "4.2-s02-indices",
+      "item": "4.2",
+      "label": "Step",
+      "title": "Compatibility makes the local path value independent of the index",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            262,
+            265
+          ],
+          "sha256": "b436d4abde937cb9fcddc9440d4b2457a1ad304dc95b12ca7be981d958db1099",
+          "title": "Compatibility makes the local path value independent of the index",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s03-refinement",
+      "item": "4.2",
+      "label": "Step",
+      "title": "Compare subdivisions through a common refinement",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            554,
+            561
+          ],
+          "sha256": "d92773dc0cc63fe94e5e4428e4a92846d7ec36f07a9bb82a2cfcd7fa3a942a96",
+          "title": "Compare subdivisions through a common refinement",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s04-grid",
+      "item": "4.2",
+      "label": "Step",
+      "title": "Choose a fine grid for the homotopy",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            221,
+            231
+          ],
+          "sha256": "346980f07f085ba4336f4c4cad3bb9ef59ad48e6c5811546ec6479746bb656cc",
+          "title": "Choose a fine grid for the homotopy",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s05-cell",
+      "item": "4.2",
+      "label": "Step",
+      "title": "The two routes around one cell have the same value",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            647,
+            658
+          ],
+          "sha256": "91a0f367e0d1e06d72bda0cb43927d8928e3d2f82eb4176278a2cd26d6b33cbf",
+          "title": "The two routes around one cell have the same value",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s06-paste",
+      "item": "4.2",
+      "label": "Step",
+      "title": "Paste the commuting cell squares",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            676,
+            690
+          ],
+          "sha256": "df3587b3edf67d1cd9b8969e3a0ffd3378b660c574388e93dfbb02a56a43a9e2",
+          "title": "Paste the commuting cell squares",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s07-boundary",
+      "item": "4.2",
+      "label": "Step",
+      "title": "The endpoint boundary paths contribute identities",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            682,
+            686
+          ],
+          "sha256": "fcd6d0895bb0797fb7f3500649e6cc54673f56025d8c3a1ec57f5932bf89e118",
+          "title": "The endpoint boundary paths contribute identities",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s08-quotient",
+      "item": "4.2",
+      "label": "Step",
+      "title": "Descend the path value to homotopy classes",
+      "span": "inline",
+      "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
           "lines": [
@@ -58,68 +210,188 @@
             705
           ],
           "sha256": "c545c71f09458648e8ccf98f665c2ee548792c28eeb22bf47cf224b648532e50",
-          "title": "Invoked when descending to homotopy classes",
-          "role": "support",
-          "declaration": "TauCeti.FundamentalGroupoid.glue"
+          "title": "Descend the path value to homotopy classes",
+          "role": "key"
         }
-      ],
-      "label": "Construction"
+      ]
     },
     {
-      "id": "5.1-basepoint",
+      "id": "4.2-s09-restrict",
+      "item": "4.2",
+      "label": "Step",
+      "title": "Use a single cover member to recover the local functor",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            564,
+            567
+          ],
+          "sha256": "0d50aa2d662b3ef59d6528d4bb21428364aad72916d7422309257180ca9503f0",
+          "title": "Use a single cover member to recover the local functor",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "5.1-s01-paths",
       "item": "5.1",
-      "title": "Generation by based loops",
+      "label": "Step",
+      "title": "Choose paths from the basepoint",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            133,
+            140
+          ],
+          "sha256": "95c53424e2cf93bbdea1ac874cebd8badb1e0acd00321de8b73f97b1431e30c5",
+          "title": "Choose paths from the basepoint",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "5.1-s02-subgroupoid",
+      "item": "5.1",
+      "label": "Step",
+      "title": "The transported classes define a subgroupoid",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            144,
+            157
+          ],
+          "sha256": "303d1ed0eede8af5dbc629e6406da76928d2a8c8a39445d25292b6d54c84b0d6",
+          "title": "The transported classes define a subgroupoid",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "5.1-s03-intersections",
+      "item": "5.1",
+      "label": "Step",
+      "title": "Choose the two paths in pairwise intersections",
+      "span": "inline",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
           "lines": [
             97,
-            119
+            102
           ],
-          "sha256": "57445a5eff8181e2f657dd9f2c596439b16c390b622bde2ddd44a366d814683c",
-          "title": "Split into three loops",
+          "sha256": "bb224fddc399e05503babf63f1a6fec315ced85dc4be8989929764be505e7e18",
+          "title": "Choose the two paths in pairwise intersections",
           "role": "key"
-        },
-        {
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
-          "lines": [
-            166,
-            167
-          ],
-          "sha256": "ce6b5548545840e5d37b4dda91d32b9e779b2fcc86f856abb0b5f3df61be0b82",
-          "title": "Invoked on each local path piece",
-          "role": "support",
-          "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
-        },
-        {
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
-          "lines": [
-            143,
-            157
-          ],
-          "sha256": "015b9cfba58a318b8ee5b1ba7041110896a2c2a114fd842f9fc6030b9ce2ba3e",
-          "title": "Closure under inverses and composition",
-          "role": "key",
-          "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
-        },
-        {
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
-          "lines": [
-            168,
-            179
-          ],
-          "sha256": "c8938789bfc810cfb9312ac42a91907123f9fa35760330917f2e9e8ff1a3c90d",
-          "title": "Cancel the chosen basepoint loop",
-          "role": "key",
-          "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
         }
-      ],
-      "label": "Proof"
+      ]
     },
     {
-      "id": "6.1-connect",
+      "id": "5.1-s04-factorization",
+      "item": "5.1",
+      "label": "Step",
+      "title": "Factor the transported loop into three local loops",
+      "span": "display",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            103,
+            108
+          ],
+          "sha256": "3e082cf5619712d221d59a63bc9ec94c5ed067afd60650f34d24962ca8f8dba5",
+          "title": "Factor the transported loop into three local loops",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "5.1-s05-membership",
+      "item": "5.1",
+      "label": "Step",
+      "title": "The three local loops lie in the generated subgroup",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            109,
+            119
+          ],
+          "sha256": "6c847d29ec81cd96c82a0854ad6ffd641006d56c44b291c370344f44e7a799c4",
+          "title": "The three local loops lie in the generated subgroup",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "5.1-s06-generation",
+      "item": "5.1",
+      "label": "Step",
+      "title": "Invoke generation of the fundamental groupoid",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            159,
+            167
+          ],
+          "sha256": "81508f116d4c522c453abf61f254a1158b3e5544e298d729fdcd0ceda743fab1",
+          "title": "Invoke generation of the fundamental groupoid",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "5.1-s07-basepoint-loop",
+      "item": "5.1",
+      "label": "Step",
+      "title": "The chosen path at the basepoint belongs to the subgroup",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            173,
+            174
+          ],
+          "sha256": "5e059f624e5837b279453a32bb0325c947e31a64695864b5b185de5aaf99f943",
+          "title": "The chosen path at the basepoint belongs to the subgroup",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "5.1-s08-cancellation",
+      "item": "5.1",
+      "label": "Step",
+      "title": "Cancel the basepoint transport",
+      "span": "display",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            175,
+            179
+          ],
+          "sha256": "d81bfc6d9aa81c6bb6a6e1ef1910fe05f8bbfb352eb3504d15b75f477dcd1d63",
+          "title": "Cancel the basepoint transport",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.1-s01-connect",
       "item": "6.1",
-      "title": "The local functors",
+      "label": "Step",
+      "title": "Choose connecting paths compatibly on the intersection",
+      "span": "inline",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
@@ -128,9 +400,18 @@
             139
           ],
           "sha256": "e47cb5fda196efca62c61786610429f529338db482ed19bbd14eafa58a0ee2af",
-          "title": "Choose connecting paths in the intersection",
+          "title": "Choose connecting paths compatibly on the intersection",
           "role": "key"
-        },
+        }
+      ]
+    },
+    {
+      "id": "6.1-s02-local",
+      "item": "6.1",
+      "label": "Step",
+      "title": "Invoke the functor construction from a homomorphism",
+      "span": "inline",
+      "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "lines": [
@@ -138,16 +419,17 @@
             164
           ],
           "sha256": "a5441d7c60c19894cf994e9bc6846183a3b62e745fd332e7c9047e4254dd8ff9",
-          "title": "Turn the homomorphism into a functor",
+          "title": "Invoke the functor construction from a homomorphism",
           "role": "key"
         }
-      ],
-      "label": "Construction"
+      ]
     },
     {
-      "id": "6.1-glue",
+      "id": "6.1-s03-compatibility",
       "item": "6.1",
-      "title": "The induced homomorphism",
+      "label": "Step",
+      "title": "Apply compatibility to the transported loop in the intersection",
+      "span": "display",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
@@ -156,27 +438,55 @@
             217
           ],
           "sha256": "ec2ab6b65c1db2e89308cd3e7a1a429fe10d2db6fb5f1b84a9641fac80db2df9",
-          "title": "Agreement on the intersection",
+          "title": "Apply compatibility to the transported loop in the intersection",
           "role": "key"
-        },
+        }
+      ]
+    },
+    {
+      "id": "6.1-s04-glue",
+      "item": "6.1",
+      "label": "Step",
+      "title": "Invoke gluing of the two local functors",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            236,
+            239
+          ],
+          "sha256": "21b04e0984178a46faea6b5f5049da71d4f7f5c3bc38dedb2183f626c1dc3dcd",
+          "title": "Invoke gluing of the two local functors",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.1-s05-endomorphisms",
+      "item": "6.1",
+      "label": "Step",
+      "title": "Restrict the glued functor to loops at the basepoint",
+      "span": "display",
+      "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "lines": [
             235,
-            239
+            235
           ],
-          "sha256": "80dff83fff83ca7d24304407e00b8d9fa80dc3570769d51aed85a6d10c6af0b9",
-          "title": "Glue, then restrict to loops",
-          "role": "key",
-          "declaration": "TauCeti.vanKampenDesc"
+          "sha256": "7b7fa982e044860a5f4d67c2c06afdabb7fe603f9647b67afed674ad449a7858",
+          "title": "Restrict the glued functor to loops at the basepoint",
+          "role": "key"
         }
-      ],
-      "label": "Construction"
+      ]
     },
     {
-      "id": "6.2-restrict",
+      "id": "6.2-s01-left",
       "item": "6.2",
-      "title": "The restriction equations",
+      "label": "Step",
+      "title": "Apply the left restriction and evaluate at the basepoint",
+      "span": "display",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
@@ -185,10 +495,37 @@
             280
           ],
           "sha256": "7907a577c861301bd8d2578dc811d245c918ce531fe80da11ddb5eb644cba768",
-          "title": "Restriction on A",
-          "role": "key",
-          "declaration": "TauCeti.vanKampenDesc_map_left"
-        },
+          "title": "Apply the left restriction and evaluate at the basepoint",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.2-s02-pointwise",
+      "item": "6.2",
+      "label": "Step",
+      "title": "Pass from pointwise equality to equality of homomorphisms",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            310,
+            310
+          ],
+          "sha256": "fd239d63cf4074febb11a9e2895e6841ea6f893b054c7d0a02e3db87c48afa7a",
+          "title": "Pass from pointwise equality to equality of homomorphisms",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.2-s03-right",
+      "item": "6.2",
+      "label": "Step",
+      "title": "Apply the right restriction in the same way",
+      "span": "inline",
+      "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "lines": [
@@ -196,29 +533,113 @@
             296
           ],
           "sha256": "975a032c4b4aa7103419bbe72f86356a4deb5e9d69ff47549e1377cde0012683",
-          "title": "Restriction on B",
-          "role": "key",
-          "declaration": "TauCeti.vanKampenDesc_map_right"
+          "title": "Apply the right restriction in the same way",
+          "role": "key"
         }
-      ],
-      "label": "Proof"
+      ]
     },
     {
-      "id": "6.3-generate",
+      "id": "6.3-s01-images",
       "item": "6.3",
-      "title": "Uniqueness from generation",
+      "label": "Step",
+      "title": "Both generating images lie in the equalizer subgroup",
+      "span": "inline",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "lines": [
             337,
+            340
+          ],
+          "sha256": "c8d21f83a088264026743bda9c8e3e40944d5e99be0010b655731bfc4e937d8d",
+          "title": "Both generating images lie in the equalizer subgroup",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.3-s02-generation",
+      "item": "6.3",
+      "label": "Step",
+      "title": "Invoke generation and conclude that the homomorphisms agree",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            341,
             342
           ],
-          "sha256": "8982b5627836e7cd2041409b348f42392ddb97c6287ed166b7e3a0494056b506",
-          "title": "Agreement subgroup and generation",
-          "role": "key",
-          "declaration": "TauCeti.vanKampen_hom_ext"
-        },
+          "sha256": "2e16d7306a6c53e9e299817aca002d326855d721b1cefa069f46b0cbd61b509c",
+          "title": "Invoke generation and conclude that the homomorphisms agree",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.4-s01-commutes",
+      "item": "6.4",
+      "label": "Step",
+      "title": "The two inclusions give the same loop class",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            364,
+            366
+          ],
+          "sha256": "545dfdafec98e0092bdd97357e67d979ec1ba80984a51c8b55966999a058792b",
+          "title": "The two inclusions give the same loop class",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.4-s02-existence",
+      "item": "6.4",
+      "label": "Step",
+      "title": "Invoke the induced homomorphism for an arbitrary cocone",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            367,
+            369
+          ],
+          "sha256": "556aa6ad0fa012378967e6eab09ef061a34d4fb2d3c1c34abfee2579213e9b73",
+          "title": "Invoke the induced homomorphism for an arbitrary cocone",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.4-s03-factorization",
+      "item": "6.4",
+      "label": "Step",
+      "title": "Invoke the two restriction equations",
+      "span": "display",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            370,
+            373
+          ],
+          "sha256": "4a8855805f635b724e502970334912d76c110d2594cb5e616d3dc069e4db44b2",
+          "title": "Invoke the two restriction equations",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.4-s04-uniqueness",
+      "item": "6.4",
+      "label": "Step",
+      "title": "Invoke uniqueness for the mediating homomorphism",
+      "span": "inline",
+      "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "lines": [
@@ -226,31 +647,10 @@
             378
           ],
           "sha256": "e107e0640df6ee93bf4ee31cbe35109123e54e5e44eb7b77e7196c9a5048b195",
-          "title": "Invoked for uniqueness in the pushout",
-          "role": "support",
-          "declaration": "TauCeti.isPushout_fundamentalGroup"
+          "title": "Invoke uniqueness for the mediating homomorphism",
+          "role": "key"
         }
-      ],
-      "label": "Proof"
-    },
-    {
-      "id": "6.4-pushout",
-      "item": "6.4",
-      "title": "The pushout universal property",
-      "targets": [
-        {
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
-          "lines": [
-            359,
-            378
-          ],
-          "sha256": "2de86d772af9839481737e798ef198d0bae312f9db95295fb5a6422ecbad974a",
-          "title": "The pushout universal property",
-          "role": "key",
-          "declaration": "TauCeti.isPushout_fundamentalGroup"
-        }
-      ],
-      "label": "Proof"
+      ]
     }
   ]
 }

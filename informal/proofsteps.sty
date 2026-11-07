@@ -1,21 +1,33 @@
-% Project-authored position markers for proofs and constructions.
+% Project-authored markers for individual proof sentences and equations.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{proofsteps}[2026/11/06 Linked proofs and constructions]
+\ProvidesPackage{proofsteps}[2026/11/07 Sentence and equation proof links]
 \RequirePackage{fcmarkers}
 \makeatletter
 \def\svk@auxstep#1#2#3{}
+\def\svk@auxmath#1#2#3#4{}
+\newcommand*\svk@record[3]{%
+  \@ifundefined{svk@seen@#1}{}{\PackageError{proofsteps}{Duplicate proof step #1}{Use each id once.}}%
+  \expandafter\global\expandafter\let\csname svk@seen@#1\endcsname\@empty
+  \fc@auxwrite{\string\svk@auxstep{#1}{#2}{\detokenize{#3}}}}
+% Proof headings and the QED have no annotation: only explicitly marked steps link.
 \newenvironment{proofpassage}[3]{%
   \par\addvspace{.8\baselineskip}\begingroup
-  \edef\svk@marker{fc:proof:#1}%
-  \@ifundefined{svk@seen@#1}{}{\PackageError{proofsteps}{Duplicate proof passage #1}{Use each id once.}}%
-  \expandafter\global\expandafter\let\csname svk@seen@#1\endcsname\@empty
-  \fc@auxwrite{\string\svk@auxstep{#1}{\detokenize{#2}}{\detokenize{#3}}}%
-  \postdisplaypenalty\@M
-  \clubpenalty\@M\widowpenalty\@M
-  \noindent\fc@above{\svk@marker}\fc@savepos{\svk@marker:start}%
-  \textit{#2 (#3).}\enspace\ignorespaces
+  \postdisplaypenalty\@M\clubpenalty\@M\widowpenalty\@M
+  \noindent\textit{#2 (#3).}\enspace\ignorespaces
 }{%
-  \unskip\nobreak\hfill\ensuremath{\square}%
-  \fc@endmark{\svk@marker}\endgroup\smallskip
-}
+  \unskip\nobreak\hfill\ensuremath{\square}\par\endgroup\smallskip}
+% Save horizontal positions without adding text, spacing, or paragraph breaks.
+\newcommand{\proofstep}[3]{%
+  \begingroup\svk@record{#1}{inline}{#2}%
+  \leavevmode\fc@savepos{fc:proof:#1:start}%
+  #3\fc@savepos{fc:proof:#1:end}\endgroup}
+% Measure exactly one displayed equation, including tall fractions/aligned rows.
+% Its own dimensions bound the link; the surrounding proof is never measured.
+\newsavebox{\svk@equation}
+\newcommand{\proofequation}[3]{%
+  \begingroup\svk@record{#1}{display}{#2}%
+  \sbox{\svk@equation}{$\displaystyle #3$}%
+  \fc@auxwrite{\string\svk@auxmath{#1}{\number\wd\svk@equation}{\number\ht\svk@equation}{\number\dp\svk@equation}}%
+  \[\hbox{\fc@savepos{fc:proof:#1:start}\usebox{\svk@equation}\fc@savepos{fc:proof:#1:end}}\]%
+  \endgroup}
 \makeatother
