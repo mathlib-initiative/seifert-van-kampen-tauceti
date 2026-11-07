@@ -4,7 +4,7 @@
   "subject": {
     "type": "pdf",
     "uri": "https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v2/svk-tauceti.pdf",
-    "sha256": "feafb4ac1531f63f1e70d476042342cb5deb42d8e645112249805b5660a7733d",
+    "sha256": "e382a4acafc5cac2aafbb589413f2a522279d62acc4c43ffcd6916a82ba98773",
     "citation": {
       "type": "book",
       "URL": "https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v2/svk-tauceti.pdf",
@@ -13,7 +13,7 @@
     },
     "extensions": {
       "org.mathlib-initiative.formal-companion.overlay": {
-        "bytes": 316057,
+        "bytes": 316538,
         "physical_page_count": 8,
         "source_id": "svk-tauceti"
       }

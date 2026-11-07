@@ -5,9 +5,9 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.500043, 0.385101, 0.10559, 0.017361]
+        "rect": [0.454934, 0.367109, 0.160254, 0.021465]
       },
-      "title": "pseudometric",
+      "title": "pseudometric spaces",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:PseudoMetricSpace@p001"

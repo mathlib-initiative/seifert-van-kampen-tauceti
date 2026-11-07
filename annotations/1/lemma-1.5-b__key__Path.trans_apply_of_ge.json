@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.130391, 0.104167, 0.739217, 0.021465]
+        "page": 1,
+        "rect": [0.130391, 0.872001, 0.739217, 0.019413]
       },
       "title": "Lemma 1.5(b) (The values of a concatenation of paths)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-1.5-b@p002"
+          "region": "lemma-1.5-b@p001"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }
