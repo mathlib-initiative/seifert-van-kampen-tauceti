@@ -1,9 +1,10 @@
 # The Seifert–van Kampen theorem, after TauCeti
 
-An informal account, without proofs, of the definitions and results on which the theorem
-`TauCeti.isPushout_fundamentalGroup` depends in the Lean library [TauCeti](https://github.com/TauCetiProject/TauCeti) at
-commit `37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`. Each numbered statement, and each lettered part of one, is
-a box in the PDF linked to the Lean declaration that states it.
+An informal account of how the Seifert–van Kampen theorem is proved in the Lean library
+[TauCeti](https://github.com/TauCetiProject/TauCeti) at commit
+`37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`. Statements and selected proof steps
+are linked to the corresponding Lean declarations and lines. Variables and
+notation are introduced in the sections that use them.
 
 [Read the annotated text](https://mathlib-initiative.github.io/seifert-van-kampen-tauceti/pdf-overlay/viewer/index.html) ·
 [Download the PDF](https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v1/svk-tauceti.pdf) ·
