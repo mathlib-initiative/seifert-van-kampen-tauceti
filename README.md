@@ -67,6 +67,7 @@ Then export both the statements and proofs with the producer checkout:
 python3 tools/proof_steps.py \
   --formal-companion /path/to/formal-companion \
   --library-src /path/to/pinned/TauCeti/source \
+  --packages-src /path/to/pinned/TauCeti/.lake/packages \
   --build-dir build/proof-ideas/a \
   --pdf-url https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v2/svk-tauceti.pdf
 python3 pdf-overlay/tools/check_generated.py
@@ -75,6 +76,12 @@ python3 pdf-overlay/tools/serve.py --build
 ```
 
 In the viewer, click a marked sentence or equation to open its corresponding Lean lines.
+
+Mathlib notion cards also show their definitions and structure fields inline.
+Supply `--packages-src` from the same pinned TauCeti checkout when regenerating
+them: this revision uses Mathlib commit
+`1b1ccf4b088b32fa3f23f2de1127433254a81e1e`. The snippets are from Mathlib's
+Apache-2.0 source, with each card linking to the declaration at that revision.
 
 The v2 PDF URL is the proposed destination for this revision; publishing it
 requires review of the new PDF and proof-step links. The published v1 remains
