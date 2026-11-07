@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "44278ad980aae19b851b0b31d8b1b93fcc83cbbd",
- "pdf_sha256": "7781e941d1b79237ccf161585e8bcdb224d8d5af775a3e73063929637e2beb3c",
+ "source_commit": "83f82eff28c8f5012b597bcbb9ca3b5d0a9f175c",
+ "pdf_sha256": "9fe6b844e8b49f1811c61dc70fc49cfbb41d097d55da79c6aeb4c3fbdcf4b4f2",
  "pages": 7,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -235,7 +235,7 @@
     "TauCeti.vanKampenDesc"
    ],
    "boxes": [
-    [5, 0.130391, 0.284722, 0.739217, 0.102588]
+    [5, 0.130391, 0.285669, 0.739217, 0.104167]
    ]
   },
   {
@@ -691,7 +691,7 @@
    "label": "notion:38",
    "number": "n38",
    "boxes": [
-    [5, 0.751383, 0.247948, 0.011364, 0.017361]
+    [5, 0.751383, 0.248106, 0.011364, 0.017361]
    ]
   },
   {
