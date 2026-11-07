@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.466031, 0.248106, 0.172515, 0.017677]
+        "page": 1,
+        "rect": [0.462059, 0.779356, 0.17352, 0.019886]
       },
       "title": "composition of classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Path.Homotopic.Quotient.trans@p002"
+          "region": "notion:Path.Homotopic.Quotient.trans@p001"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

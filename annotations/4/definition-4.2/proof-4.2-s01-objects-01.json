@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.123422, 0.739217, 0.034091]
+        "page": 3,
+        "rect": [0.130391, 0.662879, 0.739217, 0.034249]
       },
       "title": "The object value is independent of the cover member",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.336438, 0.123422, 0.869608, 0.123422, 0.869608, 0.140783, 0.336438, 0.140783],
-            [0.130391, 0.140783, 0.509925, 0.140783, 0.509925, 0.157513, 0.130391, 0.157513]
+            [0.336438, 0.662879, 0.869608, 0.662879, 0.869608, 0.68024, 0.336438, 0.68024],
+            [0.130391, 0.68024, 0.509925, 0.68024, 0.509925, 0.697128, 0.130391, 0.697128]
           ],
-          "region": "proof-4.2-s01-objects@p004"
+          "region": "proof-4.2-s01-objects@p003"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       },
       "provenance": {
         "actor": "agent",

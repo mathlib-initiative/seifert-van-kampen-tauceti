@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.286301, 0.739218, 0.034248]
+        "page": 3,
+        "rect": [0.130391, 0.829545, 0.739218, 0.034407]
       },
       "title": "Refining each interval preserves the composite",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.169695, 0.286301, 0.869609, 0.286301, 0.869609, 0.30382, 0.169695, 0.30382],
-            [0.130391, 0.303819, 0.681981, 0.303819, 0.681981, 0.320549, 0.130391, 0.320549]
+            [0.169695, 0.829545, 0.869609, 0.829545, 0.869609, 0.847064, 0.169695, 0.847064],
+            [0.130391, 0.847064, 0.681981, 0.847064, 0.681981, 0.863952, 0.130391, 0.863952]
           ],
-          "region": "proof-4.2-s04-refine-pieces@p004"
+          "region": "proof-4.2-s04-refine-pieces@p003"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       },
       "provenance": {
         "actor": "agent",

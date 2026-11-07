@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.528214, 0.240846, 0.22302, 0.018624]
+        "page": 2,
+        "rect": [0.528214, 0.739268, 0.22302, 0.018624]
       },
       "title": "Homomorphisms of monoids",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:MonoidHom@p003"
+          "region": "notion:MonoidHom@p002"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

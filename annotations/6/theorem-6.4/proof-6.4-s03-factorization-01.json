@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 8,
-        "rect": [0.377786, 0.355843, 0.244428, 0.016376]
+        "page": 7,
+        "rect": [0.377786, 0.798723, 0.244428, 0.016376]
       },
       "title": "Invoke the two restriction equations",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.377786, 0.355843, 0.622214, 0.355843, 0.622214, 0.372219, 0.377786, 0.372219]
+            [0.377786, 0.798723, 0.622214, 0.798723, 0.622214, 0.815099, 0.377786, 0.815099]
           ],
-          "region": "proof-6.4-s03-factorization@p008"
+          "region": "proof-6.4-s03-factorization@p007"
         }
       }
     }
@@ -53,8 +53,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [8],
-        "printed": [8]
+        "physical": [7],
+        "printed": [7]
       },
       "provenance": {
         "actor": "agent",

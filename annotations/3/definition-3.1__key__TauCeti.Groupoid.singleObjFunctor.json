@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.130391, 0.196023, 0.739217, 0.03851]
+        "page": 2,
+        "rect": [0.130391, 0.692866, 0.739217, 0.03851]
       },
       "title": "Definition 3.1 (The functor picking out a chosen object)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "definition-3.1@p003"
+          "region": "definition-3.1@p002"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

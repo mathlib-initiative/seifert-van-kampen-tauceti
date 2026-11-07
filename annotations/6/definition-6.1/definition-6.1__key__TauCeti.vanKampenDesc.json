@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.130391, 0.214646, 0.739217, 0.117424]
+        "page": 5,
+        "rect": [0.130391, 0.791035, 0.739217, 0.111427]
       },
       "title": "Definition 6.1 (The homomorphism out of the fundamental group of the space)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "definition-6.1@p006"
+          "region": "definition-6.1@p005"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [5],
+        "printed": [5]
       }
     }
   }

@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 7,
-        "rect": [0.141468, 0.380997, 0.47162, 0.019255]
+        "page": 6,
+        "rect": [0.141468, 0.857955, 0.47162, 0.019255]
       },
       "title": "Pass from pointwise equality to equality of homomorphisms",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.141468, 0.380997, 0.613088, 0.380997, 0.613088, 0.400252, 0.141468, 0.400252]
+            [0.141468, 0.857955, 0.613088, 0.857955, 0.613088, 0.87721, 0.141468, 0.87721]
           ],
-          "region": "proof-6.2-s03-pointwise@p007"
+          "region": "proof-6.2-s03-pointwise@p006"
         }
       }
     }
@@ -53,8 +53,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [7],
-        "printed": [7]
+        "physical": [6],
+        "printed": [6]
       },
       "provenance": {
         "actor": "agent",

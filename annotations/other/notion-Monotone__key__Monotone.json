@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.413427, 0.104167, 0.111532, 0.019255]
+        "page": 1,
+        "rect": [0.413427, 0.659722, 0.111532, 0.017361]
       },
       "title": "nondecreasing",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Monotone@p002"
+          "region": "notion:Monotone@p001"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

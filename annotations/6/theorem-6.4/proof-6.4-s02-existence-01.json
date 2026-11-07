@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 8,
-        "rect": [0.130391, 0.305871, 0.739217, 0.035985]
+        "page": 7,
+        "rect": [0.130391, 0.750316, 0.739217, 0.035985]
       },
       "title": "Construct a map for any compatible pair",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.27892, 0.305871, 0.869608, 0.305871, 0.869608, 0.322285, 0.27892, 0.322285],
-            [0.130391, 0.322285, 0.285382, 0.322285, 0.285382, 0.341856, 0.130391, 0.341856]
+            [0.27892, 0.750316, 0.869608, 0.750316, 0.869608, 0.76673, 0.27892, 0.76673],
+            [0.130391, 0.76673, 0.285382, 0.76673, 0.285382, 0.786301, 0.130391, 0.786301]
           ],
-          "region": "proof-6.4-s02-existence@p008"
+          "region": "proof-6.4-s02-existence@p007"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [8],
-        "printed": [8]
+        "physical": [7],
+        "printed": [7]
       },
       "provenance": {
         "actor": "agent",

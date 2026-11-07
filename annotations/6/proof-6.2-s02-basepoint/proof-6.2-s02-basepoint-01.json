@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 7,
-        "rect": [0.341765, 0.347515, 0.316471, 0.02496]
+        "page": 6,
+        "rect": [0.341765, 0.831945, 0.316471, 0.02496]
       },
       "title": "Evaluate the local functor at the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.341765, 0.347515, 0.658236, 0.347515, 0.658236, 0.372475, 0.341765, 0.372475]
+            [0.341765, 0.831945, 0.658236, 0.831945, 0.658236, 0.856905, 0.341765, 0.856905]
           ],
-          "region": "proof-6.2-s02-basepoint@p007"
+          "region": "proof-6.2-s02-basepoint@p006"
         }
       }
     }
@@ -53,8 +53,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [7],
-        "printed": [7]
+        "physical": [6],
+        "printed": [6]
       },
       "provenance": {
         "actor": "agent",

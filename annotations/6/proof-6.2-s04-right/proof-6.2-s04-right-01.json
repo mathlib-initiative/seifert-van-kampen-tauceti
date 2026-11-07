@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 7,
-        "rect": [0.130391, 0.380997, 0.739217, 0.038511]
+        "page": 6,
+        "rect": [0.130391, 0.857955, 0.739217, 0.03851]
       },
       "title": "Apply the right restriction in the same way",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.62661, 0.380997, 0.869608, 0.380997, 0.869608, 0.400252, 0.62661, 0.400252],
-            [0.130391, 0.400253, 0.486303, 0.400253, 0.486303, 0.419508, 0.130391, 0.419508]
+            [0.62661, 0.857955, 0.869608, 0.857955, 0.869608, 0.87721, 0.62661, 0.87721],
+            [0.130391, 0.87721, 0.486303, 0.87721, 0.486303, 0.896465, 0.130391, 0.896465]
           ],
-          "region": "proof-6.2-s04-right@p007"
+          "region": "proof-6.2-s04-right@p006"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [7],
-        "printed": [7]
+        "physical": [6],
+        "printed": [6]
       },
       "provenance": {
         "actor": "agent",

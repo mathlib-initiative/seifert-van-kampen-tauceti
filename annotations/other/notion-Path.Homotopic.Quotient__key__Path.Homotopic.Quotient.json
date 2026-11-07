@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.300569, 0.248106, 0.022662, 0.017677]
+        "page": 1,
+        "rect": [0.210252, 0.779356, 0.022662, 0.019886]
       },
       "title": "[γ]",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Path.Homotopic.Quotient@p002"
+          "region": "notion:Path.Homotopic.Quotient@p001"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 7,
-        "rect": [0.356171, 0.285755, 0.287657, 0.02135]
+        "page": 6,
+        "rect": [0.356171, 0.78505, 0.287657, 0.02135]
       },
       "title": "Use the glued functor's restriction to A",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.356171, 0.285755, 0.643828, 0.285755, 0.643828, 0.307105, 0.356171, 0.307105]
+            [0.356171, 0.78505, 0.643828, 0.78505, 0.643828, 0.8064, 0.356171, 0.8064]
           ],
-          "region": "proof-6.2-s01-left@p007"
+          "region": "proof-6.2-s01-left@p006"
         }
       }
     }
@@ -53,8 +53,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [7],
-        "printed": [7]
+        "physical": [6],
+        "printed": [6]
       },
       "provenance": {
         "actor": "agent",

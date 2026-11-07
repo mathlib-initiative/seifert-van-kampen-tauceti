@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.273359, 0.739217, 0.056187]
+        "page": 4,
+        "rect": [0.130391, 0.828283, 0.739217, 0.056187]
       },
       "title": "Theorem 5.1 (Covers generate the fundamental group)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "theorem-5.1@p005"
+          "region": "theorem-5.1@p004"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }

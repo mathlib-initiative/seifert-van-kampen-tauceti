@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.751383, 0.171402, 0.011364, 0.017519]
+        "page": 5,
+        "rect": [0.751383, 0.750316, 0.011364, 0.017519]
       },
       "title": "∘",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:MonoidHom.comp@p006"
+          "region": "notion:MonoidHom.comp@p005"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [5],
+        "printed": [5]
       }
     }
   }

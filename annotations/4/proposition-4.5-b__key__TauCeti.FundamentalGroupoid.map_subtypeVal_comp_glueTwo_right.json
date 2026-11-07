@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.123422, 0.739217, 0.019255]
+        "page": 4,
+        "rect": [0.130391, 0.676768, 0.739298, 0.019255]
       },
       "title": "Proposition 4.5(b) (The functor glued from two restricts to each of them)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proposition-4.5-b@p005"
+          "region": "proposition-4.5-b@p004"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }
