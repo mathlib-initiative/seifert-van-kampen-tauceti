@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "821f3d0a1b049ab0a60607cc0e870ff6f7fb2d66",
- "pdf_sha256": "f8ea641f82464a4d657f32eec6aea2f68b4a4974390cd40e50f09af5aea5d971",
+ "source_commit": "0159c187fd159320591f0c50032241c1e565d872",
+ "pdf_sha256": "c3cf0b123a59b672e5bb00de403b7603b467aadd0e92057c820d7161c4007d81",
  "pages": 9,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -295,7 +295,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue"
    ],
    "boxes": [
-    [5, 0.130391, 0.642361, 0.739298, 0.073706]
+    [5, 0.130391, 0.635101, 0.739298, 0.072601]
    ]
   },
   {
@@ -310,7 +310,7 @@
     "TauCeti.FundamentalGroupoid.glueTwo"
    ],
    "boxes": [
-    [5, 0.130391, 0.716067, 0.739217, 0.09596]
+    [5, 0.130391, 0.712753, 0.739217, 0.095328]
    ]
   },
   {
@@ -326,7 +326,7 @@
    ],
    "decls": [],
    "boxes": [
-    [5, 0.130391, 0.812027, 0.739298, 0.090436]
+    [5, 0.130391, 0.813131, 0.739298, 0.089331]
    ]
   },
   {
