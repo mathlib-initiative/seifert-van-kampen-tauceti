@@ -55,9 +55,9 @@
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
           "lines": [
             123,
-            131
+            124
           ],
-          "sha256": "46edb6a6c32171c7d273c5e5c0df3c24dde25d386e3da0960ecef2113fb3aabf",
+          "sha256": "22d72cb100a9410c511be43dc004a4738b9ae8ab2d17e198528d190a6d6a0760",
           "title": "Reassemble the original path class",
           "role": "key"
         }
@@ -83,7 +83,26 @@
       ]
     },
     {
-      "id": "4.2-s02-indices",
+      "id": "4.2-s02-partition",
+      "item": "4.2",
+      "label": "Step",
+      "title": "Choose a sufficiently fine equal subdivision",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            205,
+            216
+          ],
+          "sha256": "1b957020f3759923a209fff34decc3e27955bd8d6588a14c5aeb3f4a6544ae84",
+          "title": "Choose a sufficiently fine equal subdivision",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s03-indices",
       "item": "4.2",
       "label": "Step",
       "title": "Compatibility makes the local path value independent of the index",
@@ -102,10 +121,29 @@
       ]
     },
     {
-      "id": "4.2-s03-refinement",
+      "id": "4.2-s04-refine-pieces",
       "item": "4.2",
       "label": "Step",
-      "title": "Compare subdivisions through a common refinement",
+      "title": "Refining each interval preserves the composite",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            535,
+            545
+          ],
+          "sha256": "edf59e0f91ec1bd0fe51a677c761b4e0f09894dfc1e0c759957bce6f4dfbdedb",
+          "title": "Refining each interval preserves the composite",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s05-refinement",
+      "item": "4.2",
+      "label": "Step",
+      "title": "Compare equal subdivisions through their common refinement",
       "span": "inline",
       "targets": [
         {
@@ -115,13 +153,13 @@
             561
           ],
           "sha256": "d92773dc0cc63fe94e5e4428e4a92846d7ec36f07a9bb82a2cfcd7fa3a942a96",
-          "title": "Compare subdivisions through a common refinement",
+          "title": "Compare equal subdivisions through their common refinement",
           "role": "key"
         }
       ]
     },
     {
-      "id": "4.2-s04-grid",
+      "id": "4.2-s06-grid",
       "item": "4.2",
       "label": "Step",
       "title": "Choose a fine grid for the homotopy",
@@ -140,7 +178,7 @@
       ]
     },
     {
-      "id": "4.2-s05-cell",
+      "id": "4.2-s07-cell",
       "item": "4.2",
       "label": "Step",
       "title": "The two routes around one cell have the same value",
@@ -159,29 +197,29 @@
       ]
     },
     {
-      "id": "4.2-s06-paste",
+      "id": "4.2-s08-paste",
       "item": "4.2",
       "label": "Step",
-      "title": "Paste the commuting cell squares",
+      "title": "Paste the commuting squares across one row",
       "span": "inline",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
           "lines": [
             676,
-            690
+            681
           ],
-          "sha256": "df3587b3edf67d1cd9b8969e3a0ffd3378b660c574388e93dfbb02a56a43a9e2",
-          "title": "Paste the commuting cell squares",
+          "sha256": "8bbb7d9cccca0141406f71edb1ca8dd1878c757b4c9c388b5e22d1abcd0cd8a7",
+          "title": "Paste the commuting squares across one row",
           "role": "key"
         }
       ]
     },
     {
-      "id": "4.2-s07-boundary",
+      "id": "4.2-s09-boundary",
       "item": "4.2",
       "label": "Step",
-      "title": "The endpoint boundary paths contribute identities",
+      "title": "Cancel the constant endpoint boundary paths",
       "span": "inline",
       "targets": [
         {
@@ -191,13 +229,32 @@
             686
           ],
           "sha256": "fcd6d0895bb0797fb7f3500649e6cc54673f56025d8c3a1ec57f5932bf89e118",
-          "title": "The endpoint boundary paths contribute identities",
+          "title": "Cancel the constant endpoint boundary paths",
           "role": "key"
         }
       ]
     },
     {
-      "id": "4.2-s08-quotient",
+      "id": "4.2-s10-rows",
+      "item": "4.2",
+      "label": "Step",
+      "title": "Repeat the row equality throughout the homotopy",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            687,
+            694
+          ],
+          "sha256": "d1d1df23270aa300896a8cd6ae9d432a26a156a91054b8c95861da12df423cd0",
+          "title": "Repeat the row equality throughout the homotopy",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "4.2-s11-quotient",
       "item": "4.2",
       "label": "Step",
       "title": "Descend the path value to homotopy classes",
@@ -216,10 +273,10 @@
       ]
     },
     {
-      "id": "4.2-s09-restrict",
+      "id": "4.2-s12-restrict",
       "item": "4.2",
       "label": "Step",
-      "title": "Use a single cover member to recover the local functor",
+      "title": "Collapse the subdivision inside a single cover member",
       "span": "inline",
       "targets": [
         {
@@ -229,7 +286,7 @@
             567
           ],
           "sha256": "0d50aa2d662b3ef59d6528d4bb21428364aad72916d7422309257180ca9503f0",
-          "title": "Use a single cover member to recover the local functor",
+          "title": "Collapse the subdivision inside a single cover member",
           "role": "key"
         }
       ]
@@ -311,26 +368,45 @@
       ]
     },
     {
-      "id": "5.1-s05-membership",
+      "id": "5.1-s05-middle",
       "item": "5.1",
       "label": "Step",
-      "title": "The three local loops lie in the generated subgroup",
+      "title": "The middle loop lies in the generated subgroup",
       "span": "inline",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
           "lines": [
             109,
-            119
+            115
           ],
-          "sha256": "6c847d29ec81cd96c82a0854ad6ffd641006d56c44b291c370344f44e7a799c4",
-          "title": "The three local loops lie in the generated subgroup",
+          "sha256": "b7c61855accf299e49d1dea50d6660b31973d7d84111b924fc2cc114b3efd70e",
+          "title": "The middle loop lies in the generated subgroup",
           "role": "key"
         }
       ]
     },
     {
-      "id": "5.1-s06-generation",
+      "id": "5.1-s06-product",
+      "item": "5.1",
+      "label": "Step",
+      "title": "Multiply the three local loop classes",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "lines": [
+            116,
+            119
+          ],
+          "sha256": "dc653ffb4b1fd5f75cf551c86f9f6b364e5d5e48affd3562ae1a4af9d0de0033",
+          "title": "Multiply the three local loop classes",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "5.1-s07-generation",
       "item": "5.1",
       "label": "Step",
       "title": "Invoke generation of the fundamental groupoid",
@@ -349,7 +425,7 @@
       ]
     },
     {
-      "id": "5.1-s07-basepoint-loop",
+      "id": "5.1-s08-basepoint-loop",
       "item": "5.1",
       "label": "Step",
       "title": "The chosen path at the basepoint belongs to the subgroup",
@@ -368,7 +444,7 @@
       ]
     },
     {
-      "id": "5.1-s08-cancellation",
+      "id": "5.1-s09-cancellation",
       "item": "5.1",
       "label": "Step",
       "title": "Cancel the basepoint transport",
@@ -485,23 +561,42 @@
       "id": "6.2-s01-left",
       "item": "6.2",
       "label": "Step",
-      "title": "Apply the left restriction and evaluate at the basepoint",
+      "title": "Use the glued functor's restriction to A",
       "span": "display",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "lines": [
             278,
-            280
+            279
           ],
-          "sha256": "7907a577c861301bd8d2578dc811d245c918ce531fe80da11ddb5eb644cba768",
-          "title": "Apply the left restriction and evaluate at the basepoint",
+          "sha256": "94f46eb9b14c8fe8f89a6d88bd79b6dc63abae8c75372d37df74ef69892df3bc",
+          "title": "Use the glued functor's restriction to A",
           "role": "key"
         }
       ]
     },
     {
-      "id": "6.2-s02-pointwise",
+      "id": "6.2-s02-basepoint",
+      "item": "6.2",
+      "label": "Step",
+      "title": "Evaluate the local functor at the basepoint",
+      "span": "display",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            280,
+            280
+          ],
+          "sha256": "d5b4b7b7e859b838a1717a1b2b16a6f4504509b24bac622f45c2e2315e9095be",
+          "title": "Evaluate the local functor at the basepoint",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "6.2-s03-pointwise",
       "item": "6.2",
       "label": "Step",
       "title": "Pass from pointwise equality to equality of homomorphisms",
@@ -520,7 +615,7 @@
       ]
     },
     {
-      "id": "6.2-s03-right",
+      "id": "6.2-s04-right",
       "item": "6.2",
       "label": "Step",
       "title": "Apply the right restriction in the same way",
@@ -599,7 +694,7 @@
       "id": "6.4-s02-existence",
       "item": "6.4",
       "label": "Step",
-      "title": "Invoke the induced homomorphism for an arbitrary cocone",
+      "title": "Construct a map for any compatible pair",
       "span": "inline",
       "targets": [
         {
@@ -609,7 +704,7 @@
             369
           ],
           "sha256": "556aa6ad0fa012378967e6eab09ef061a34d4fb2d3c1c34abfee2579213e9b73",
-          "title": "Invoke the induced homomorphism for an arbitrary cocone",
+          "title": "Construct a map for any compatible pair",
           "role": "key"
         }
       ]

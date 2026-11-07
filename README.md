@@ -48,7 +48,7 @@ for gluing, the local functor equations, and the pushout universal property.
 They use the earlier numbered results and omit routine endpoint renaming and
 path reparametrizations.
 
-The eight arguments have 34 selected sentence or equation links. Each opens
+The eight arguments have 39 selected sentence or equation links. Each opens
 one pinned Lean range for that specific step, including explicit invocations of
 earlier results. Unmarked prose and proof headings carry no proof-wide link.
 The project-owned `informal/proofsteps.sty` records word positions or the exact

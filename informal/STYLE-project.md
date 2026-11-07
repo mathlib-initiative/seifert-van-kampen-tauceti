@@ -191,3 +191,11 @@ subgroupoid defined by transporting morphisms to the basepoint, matching
 the local names in Lean. Here $S=\top$ means that this subgroupoid is the
 whole fundamental groupoid. This is a local exception to the global use of
 $S$ for a subset of $X$.
+
+Prefer mathematical notation that makes a linked argument easy to recognize:
+use the chosen index $i_0$ in 5.1, and introduce the equal-subdivision value
+$L_N$ before its common value $L$ in 4.2. There $N$ and $M$ are local positive
+integers. Introduce intermediate objects by their mathematical meaning, and
+separate deductions when they have different proof-step links. Keep tactic
+syntax, helper names, coercions and other Lean bookkeeping out of the printed
+proofs. Preserve familiar mathematical notation where it reads more naturally.

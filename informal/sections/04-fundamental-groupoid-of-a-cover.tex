@@ -41,43 +41,55 @@ $F(y)=F_i(y)$.  \proofstep{4.2-s01-objects}{The object value is independent of t
 the assumed equality of functors on the intersection gives
 $F_i(y)=F_j(y)$.}
 
-For a path $\gamma$ from $y$ to $z$, choose a subdivision as in
-\itemref{1.7}, with pieces $\gamma_k$ lying in $U_{i_k}$, and set
+For a path $\gamma$ from $y$ to $z$, \proofstep{4.2-s02-partition}{Choose a sufficiently fine equal subdivision}{apply \itemref{1.1} to the neighborhoods
+$\gamma^{-1}(U_i)$ in the compact interval $\uI$.  For every sufficiently
+large positive integer $N$, the equal subdivision $t_k=k/N$ has each piece
+$\gamma_k=\subpath{\gamma}{t_k}{t_{k+1}}$ lying in some $U_{i_k}$.}
+Call such a subdivision fine, and put
 \[
-  L(\gamma)=F_{i_{n-1}}([\gamma_{n-1}])\circ\cdots
-             \circ F_{i_0}([\gamma_0]).
+  L_N(\gamma)=F_{i_{N-1}}([\gamma_{N-1}])\circ\cdots
+                \circ F_{i_0}([\gamma_0]).
 \]
-The object equalities above make the factors composable.  \proofstep{4.2-s02-indices}{Compatibility makes the local path value independent of the index}{If a piece lies
-in both $U_i$ and $U_j$, regard it as a path in their intersection; the
-compatibility hypothesis gives the same value under $F_i$ and $F_j$.}
-Splitting a piece changes no value, by \itemref{1.8} and functoriality of
-$F_i$.  \proofstep{4.2-s03-refinement}{Compare subdivisions through a common refinement}{Two subdivisions have a common refinement, so $L(\gamma)$ is
-independent of both the subdivision and its chosen indices.}
+The object equalities above make the factors composable.
+\proofstep{4.2-s03-indices}{Compatibility makes the local path value independent of the index}{If a piece lies in both $U_i$ and $U_j$, regard it as a path in their
+intersection; compatibility gives the same value under $F_i$ and $F_j$.}
+\proofstep{4.2-s04-refine-pieces}{Refining each interval preserves the composite}{Splitting each piece into $M$ equal pieces, for a positive integer $M$,
+leaves its composite unchanged by \itemref{1.8} and functoriality.
+Thus $L_{MN}(\gamma)=L_N(\gamma)$.}
+\proofstep{4.2-s05-refinement}{Compare equal subdivisions through their common refinement}{Fine subdivisions with $N$ and $M$ pieces have a common refinement with
+$MN$ pieces, so $L_N(\gamma)=L_{MN}(\gamma)=L_M(\gamma)$.}
+Write $L(\gamma)$ for this common value.
 
 Let $H$ be a homotopy from $\gamma$ to $\delta$ fixing the endpoints.
-\proofstep{4.2-s04-grid}{Choose a fine grid for the homotopy}{Apply \itemref{1.1} to the compact square $\uI^2$ with its maximum metric
-and the neighborhoods $H^{-1}(U_i)$.  Choose a uniform square grid with
-mesh smaller than the resulting Lebesgue number.  Each closed cell maps
-into one $U_i$.}  \proofstep{4.2-s05-cell}{The two routes around one cell have the same value}{In that subspace the two routes between opposite vertices
-of the cell are homotopic: use the two boundary paths of the square and
-map their endpoint-preserving homotopy through $H$.  Applying $F_i$
-therefore makes the corresponding cell square commute.}  The values on a
-shared edge agree even when its adjacent cells use different indices,
-by compatibility on intersections.  \proofstep{4.2-s06-paste}{Paste the commuting cell squares}{Composing the cell squares across a
-row, and then over all rows, gives equality of the composites along the
-two outer boundary routes.}  \proofstep{4.2-s07-boundary}{The endpoint boundary paths contribute identities}{The outer vertical paths are constant because
-$H$ fixes its endpoints; their values are identities.}  Consequently
-$L(\gamma)=L(\delta)$.
+\proofstep{4.2-s06-grid}{Choose a fine grid for the homotopy}{Apply \itemref{1.1} to the compact square $\uI^2$ with its maximum metric
+and the neighborhoods $H^{-1}(U_i)$.  Choose an $N\times N$ grid whose mesh
+is smaller than the resulting Lebesgue number.  Each closed cell maps
+into one $U_i$.}
+\proofstep{4.2-s07-cell}{The two routes around one cell have the same value}{In that subspace the two routes between opposite vertices of a cell are
+homotopic: map the straight-line homotopy between the two boundary
+routes of the cell through $H$.  Applying $F_i$ therefore makes the
+cell square commute.}
+The values on a shared edge agree even when adjacent cells use different
+indices, by compatibility on intersections.
+\proofstep{4.2-s08-paste}{Paste the commuting squares across one row}{Pasting the commuting squares across one row equates the composites
+along its two outer boundary routes.}
+\proofstep{4.2-s09-boundary}{Cancel the constant endpoint boundary paths}{The outer vertical paths are constant because $H$ fixes its endpoints.
+Their values are identities, so the horizontal paths along the top and
+bottom of that row have the same value.}
+\proofstep{4.2-s10-rows}{Repeat the row equality throughout the homotopy}{Repeating this equality row by row gives $L_N(\gamma)=L_N(\delta)$,
+and hence $L(\gamma)=L(\delta)$.}
 
-\proofstep{4.2-s08-quotient}{Descend the path value to homotopy classes}{Define $F([\gamma])=L(\gamma)$.  The preceding equality makes this
-well defined on homotopy classes.}  A constant path has value an identity.
-For composable paths, subdivide each and concatenate the subdivisions;
-the defining composite gives
+\proofstep{4.2-s11-quotient}{Descend the path value to homotopy classes}{Define $F([\gamma])=L(\gamma)$.  The preceding equality makes this
+well defined on homotopy classes.}
+A constant path has value an identity.  For composable paths, choose the
+same sufficiently large $N$ for both.  Their concatenation has a fine
+equal subdivision into $2N$ pieces, giving
 $L(\gamma\ptrans\delta)=L(\delta)\circ L(\gamma)$.
-Thus $F$ is a functor.  \proofstep{4.2-s09-restrict}{Use a single cover member to recover the local functor}{For a path lying in $U_i$ use the single-piece
-subdivision with index $i$; its value is $F_i([\gamma])$.}  This also proves
-\itemref{4.3}.  Taking the two cover members $A$ and $B$ gives
-\itemref{4.4} and \itemref{4.5}.
+Thus $F$ is a functor.
+\proofstep{4.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If the whole path $\gamma$ lies in $U_i$, value every piece using $F_i$;
+functoriality collapses the composite to $F_i([\gamma])$.}
+This also proves \itemref{4.3}.  Taking the two cover members $A$ and $B$
+gives \itemref{4.4} and \itemref{4.5}.
 \end{proofpassage}
 
 \begin{proposition}[id=4.3]{The glued functor restricts to the given functors}

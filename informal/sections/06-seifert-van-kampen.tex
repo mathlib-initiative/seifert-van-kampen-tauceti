@@ -82,15 +82,16 @@ as in \itemref{6.1}, and let $\varphi$ be the homomorphism they induce.
 Let $\omega\in\fgrp{A}{x}$ be arbitrary.  Write $p_A=\fgrp{\incl{A}}{x}$.
 By the definition of $\varphi$ and the restriction property in
 \itemref[a]{4.5},
-\proofequation{6.2-s01-left}{Apply the left restriction and evaluate at the basepoint}{\begin{aligned}
- \varphi(p_A(\omega))
-   &=F(\fgpd{\incl{A}}(\omega))=F_A(\omega)\\
-   &=\varphi_A\bigl((\tau^A_x)^{-1}\circ\omega\circ\tau^A_x\bigr)
-     =\varphi_A(\omega).
-\end{aligned}}
-The last equality uses $\tau^A_x=1_x$.  \proofstep{6.2-s02-pointwise}{Pass from pointwise equality to equality of homomorphisms}{Since this holds for every
-$\omega$, it proves \itemref[a]{6.2}.}  \proofstep{6.2-s03-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ and using
-\itemref[b]{4.5} proves \itemref[b]{6.2}.}
+\proofequation{6.2-s01-left}{Use the glued functor's restriction to A}{
+ \varphi(p_A(\omega))=F(\fgpd{\incl{A}}(\omega))=F_A(\omega).
+}
+The chosen path $\tau^A_x$ is the identity at the basepoint, so
+\proofequation{6.2-s02-basepoint}{Evaluate the local functor at the basepoint}{
+ F_A(\omega)=\varphi_A\bigl((\tau^A_x)^{-1}\circ\omega\circ\tau^A_x\bigr)
+            =\varphi_A(\omega).
+}
+\proofstep{6.2-s03-pointwise}{Pass from pointwise equality to equality of homomorphisms}{Since this holds for every $\omega$, it proves \itemref[a]{6.2}.}
+\proofstep{6.2-s04-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ and using \itemref[b]{4.5} proves \itemref[b]{6.2}.}
 \end{proofpassage}
 
 \begin{proposition}[id=6.3]{Uniqueness of the induced homomorphism}
@@ -103,7 +104,7 @@ $\varphi = \psi$.
 \end{proposition}
 
 \begin{proofpassage}{6.3-generate}{Proof}{Uniqueness from generation}
-Consider
+Consider the set where the two homomorphisms agree:
 \[
  E=\{\omega\in\fgrp{X}{x}:\varphi(\omega)=\psi(\omega)\}.
 \]
@@ -111,15 +112,15 @@ It contains the identity and is closed under multiplication, since
 $\varphi$ and $\psi$ are homomorphisms.  It is also closed under inverses:
 if their values on $\omega$ agree, then $\varphi(\omega^{-1})$ and
 $\psi(\omega^{-1})$ are two-sided inverses of the same element of $M$,
-and a two-sided inverse is unique.  Thus $E$ is a subgroup even though
-$M$ is only assumed to be a monoid.
+and a two-sided inverse is unique.  Thus $E$ is a subgroup, the equalizer of $\varphi$ and $\psi$, even
+though $M$ is only assumed to be a monoid.
 
 \proofstep{6.3-s01-images}{Both generating images lie in the equalizer subgroup}{For every $\eta\in\fgrp{A}{x}$, the first hypothesis says
 $\varphi(\fgrp{\incl{A}}{x}(\eta))=\psi(\fgrp{\incl{A}}{x}(\eta))$;
 hence $E$ contains the image from $A$.  The second hypothesis puts the
 image from $B$ in $E$ as well.}  \proofstep{6.3-s02-generation}{Invoke generation and conclude that the homomorphisms agree}{These two images generate $\fgrp{X}{x}$ by
-\itemref{5.2}.  Therefore $E=\fgrp{X}{x}$, which is exactly
-$\varphi=\psi$.}
+\itemref{5.2}.  Therefore $E=\fgrp{X}{x}$: the homomorphisms agree on every loop class,
+so $\varphi=\psi$.}
 \end{proofpassage}
 
 \begin{theorem}[id=6.4]{The based Seifert--van Kampen theorem}
@@ -153,7 +154,7 @@ commutes.}
 
 Let $K$ be any group, and let $u_A:\fgrp{A}{x}\longrightarrow K$ and
 $u_B:\fgrp{B}{x}\longrightarrow K$ satisfy
-$u_A\circ j_A=u_B\circ j_B$.  \proofstep{6.4-s02-existence}{Invoke the induced homomorphism for an arbitrary cocone}{The construction of \itemref{6.1}, with
+$u_A\circ j_A=u_B\circ j_B$.  \proofstep{6.4-s02-existence}{Construct a map for any compatible pair}{The construction of \itemref{6.1}, with
 $M=K$, supplies a homomorphism $u:\fgrp{X}{x}\longrightarrow K$.}
 By \itemref{6.2} it satisfies
 \proofequation{6.4-s03-factorization}{Invoke the two restriction equations}{  u\circ p_A=u_A,\qquad u\circ p_B=u_B.}
