@@ -266,7 +266,11 @@ def main():
             if target.get('declaration'):
                 loc['declaration'] = target['declaration']
             start, end = target['lines']
-            obj = {'location': loc, 'title': target['title'], 'role': target['role'],
+            # Dependency cards can make the folder defaults name another library.
+            # Each proof range must explicitly retain its own pinned source.
+            obj = {'type': 'lean', 'uri': config['library']['url'],
+                'version': config['library']['commit'],
+                'location': loc, 'title': target['title'], 'role': target['role'],
                 'extensions': {NS: {
                     'declaration': {'id': f'{iid}-{n}', 'kind': 'proof_step'},
                     'destination': {'href': config['library']['url'] + '/blob/' + config['library']['commit'] + '/' + target['module'].replace('.', '/') + '.lean',
