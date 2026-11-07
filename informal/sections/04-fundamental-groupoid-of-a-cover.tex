@@ -72,19 +72,16 @@ routes of the cell through $H$.  Applying $F_i$ therefore makes the
 cell square commute.}
 The values on a shared edge agree even when adjacent cells use different
 indices, by compatibility on intersections.
-\proofstep{4.2-s08-paste}{Paste the commuting squares across one row}{Pasting the commuting squares across one row equates the composites
-along its two outer boundary routes.}
-\proofstep{4.2-s09-boundary}{Cancel the constant endpoint boundary paths}{The outer vertical paths are constant because $H$ fixes its endpoints.
-Their values are identities, so the horizontal paths along the top and
-bottom of that row have the same value.}
-\proofstep{4.2-s10-rows}{Repeat the row equality throughout the homotopy}{Repeating this equality row by row gives $L_N(\gamma)=L_N(\delta)$,
-and hence $L(\gamma)=L(\delta)$.}
+\proofstep{4.2-s08-paste}{Paste the commuting squares across one row}{Pasting the cell squares across one row equates its two boundary composites.}
+\proofstep{4.2-s09-boundary}{Cancel the constant endpoint boundary paths}{Since $H$ fixes the endpoints, the outer vertical paths are constant
+and have identity values.  Cancel them to equate the top and bottom row values.}
+\proofstep{4.2-s10-rows}{Repeat the row equality throughout the homotopy}{Repeat through all rows to obtain $L_N(\gamma)=L_N(\delta)$,
+hence $L(\gamma)=L(\delta)$.}
 
 \proofstep{4.2-s11-quotient}{Descend the path value to homotopy classes}{Define $F([\gamma])=L(\gamma)$.  The preceding equality makes this
 well defined on homotopy classes.}
-A constant path has value an identity.  For composable paths, choose the
-same sufficiently large $N$ for both.  Their concatenation has a fine
-equal subdivision into $2N$ pieces, giving
+A constant path has identity value.  For composable paths, choose the
+same fine $N$ for both; concatenation then uses $2N$ pieces and gives
 $L(\gamma\ptrans\delta)=L(\delta)\circ L(\gamma)$.
 Thus $F$ is a functor.
 \proofstep{4.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If the whole path $\gamma$ lies in $U_i$, value every piece using $F_i$;
