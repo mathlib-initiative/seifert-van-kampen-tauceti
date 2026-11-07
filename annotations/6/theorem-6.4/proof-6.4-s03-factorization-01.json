@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 7,
-        "rect": [0.377786, 0.514682, 0.244428, 0.016376]
+        "rect": [0.377786, 0.598207, 0.244428, 0.016376]
       },
       "title": "Invoke the two restriction equations",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.377786, 0.514682, 0.622214, 0.514682, 0.622214, 0.531058, 0.377786, 0.531058]
+            [0.377786, 0.598207, 0.622214, 0.598207, 0.622214, 0.614583, 0.377786, 0.614583]
           ],
           "region": "proof-6.4-s03-factorization@p007"
         }

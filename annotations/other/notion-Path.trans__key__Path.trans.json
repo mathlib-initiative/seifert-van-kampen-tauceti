@@ -5,9 +5,9 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.669539, 0.492424, 0.027947, 0.018466]
+        "rect": [0.41544, 0.511995, 0.034326, 0.016888]
       },
-      "title": "γ ·δ",
+      "title": "γ · δ",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Path.trans@p001"

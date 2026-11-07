@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 7,
-        "rect": [0.132842, 0.560764, 0.224099, 0.016572]
+        "rect": [0.132842, 0.644255, 0.224099, 0.016414]
       },
       "title": "Invoke uniqueness for the mediating homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.132842, 0.560764, 0.356941, 0.560764, 0.356941, 0.577336, 0.132842, 0.577336]
+            [0.132842, 0.644255, 0.356941, 0.644255, 0.356941, 0.660669, 0.132842, 0.660669]
           ],
           "region": "proof-6.4-s04-uniqueness@p007"
         }

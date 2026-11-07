@@ -7,16 +7,30 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.130391, 0.77399, 0.739218, 0.04072]
+        "rect": [0.711591, 0.874684, 0.158018, 0.026515]
       },
       "title": "Each piece lies in an image subgroupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.711591, 0.77399, 0.869609, 0.77399, 0.869609, 0.797822, 0.711591, 0.797822],
-            [0.130391, 0.797822, 0.864706, 0.797822, 0.864706, 0.81471, 0.130391, 0.81471]
+            [0.711591, 0.874684, 0.869609, 0.874684, 0.869609, 0.901199, 0.711591, 0.901199]
           ],
           "region": "proof-4.1-s02-image@p002"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.104167, 0.734315, 0.019571]
+      },
+      "title": "Each piece lies in an image subgroupoid",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.130391, 0.104167, 0.864706, 0.104167, 0.864706, 0.123738, 0.130391, 0.123738]
+          ],
+          "region": "proof-4.1-s02-image@p003"
         }
       }
     }
@@ -54,8 +68,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [2, 3],
+        "printed": [2, 3]
       },
       "provenance": {
         "actor": "agent",

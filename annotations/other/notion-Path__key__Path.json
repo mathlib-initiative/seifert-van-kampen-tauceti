@@ -5,9 +5,9 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.250353, 0.51089, 0.045133, 0.018308]
+        "rect": [0.250447, 0.493371, 0.038102, 0.018624]
       },
-      "title": "paths",
+      "title": "path",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Path@p001"
