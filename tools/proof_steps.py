@@ -16,6 +16,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[1]
@@ -115,7 +116,8 @@ def check_export(root=ROOT):
             if digest((code+'\n').encode()) != target['sha256'] or ext['snippet']['line'] != target['lines'][0]:
                 raise ValueError(f'{key}: exported snippet differs from the pinned range')
             first, last = target['lines']
-            if ext['destination']['fragment'] != f'L{first}-L{last}':
+            href = config['library']['url']+'/blob/'+config['library']['commit']+'/'+target['module'].replace('.', '/')+'.lean'
+            if ext['destination']['href'] != href or ext['destination']['fragment'] != f'L{first}-L{last}':
                 raise ValueError(f'{key}: destination does not select the full range')
             if row['relation'] != ('relatedMatch' if target['role']=='support' else 'closeMatch'):
                 raise ValueError(f'{key}: wrong proof-step relation')
@@ -165,10 +167,22 @@ def main():
              '--library-src', str(args.library_src), '--source-title', json.loads((ROOT / 'pdf-overlay/overlay.config.json').read_text())['title']]
     if args.packages_src:
         extra += ['--packages-src', str(args.packages_src)]
-    def runner(argv):
-        return subprocess.run([sys.executable, str(args.formal_companion / 'scripts/cf.py'), *argv],
-                              text=True, capture_output=True)
-    base_export.export(ROOT, convention='informal-markers', commit=head, extra=extra, runner=runner)
+    # Export the committed source from a clean snapshot: the previous generated
+    # annotations in ROOT may legitimately be dirty while regenerating them.
+    with tempfile.TemporaryDirectory(prefix='svk-proof-export-') as tmp:
+        snapshot = Path(tmp) / 'source'
+        subprocess.run(['git', '-C', str(ROOT), 'worktree', 'add', '--detach', str(snapshot), head],
+                       check=True, capture_output=True)
+        try:
+            def runner(argv):
+                argv = list(argv)
+                argv[2] = str(snapshot)
+                return subprocess.run([sys.executable, str(args.formal_companion / 'scripts/cf.py'), *argv],
+                                      text=True, capture_output=True)
+            base_export.export(ROOT, convention='informal-markers', commit=head, extra=extra, runner=runner)
+        finally:
+            subprocess.run(['git', '-C', str(ROOT), 'worktree', 'remove', str(snapshot)],
+                           check=True, capture_output=True)
     manifest = json.loads((ROOT / 'pdf-overlay/GENERATED.json').read_text())['annotations']
     # Preserve the existing statement records; place steps beside an unambiguous owner.
     owner_kinds = {'4.1':'theorem', '4.2':'definition', '5.1':'theorem',

@@ -1,6 +1,7 @@
 import copy
 import hashlib
 import importlib.util
+import json
 from pathlib import Path
 import tempfile
 import unittest
@@ -68,6 +69,38 @@ class RangeValidation(unittest.TestCase):
         self.config['steps'][0]['targets'][0]['role']='proof'
         with self.assertRaisesRegex(ValueError, 'target role'):
             self.check()
+
+
+class ExportIntegrity(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        (self.root/'informal').mkdir()
+        (self.root/'pdf-overlay').mkdir()
+        for rel in ['informal/proofsteps.json', 'pdf-overlay/annotations.bundle.json']:
+            (self.root/rel).write_bytes((proof_steps.ROOT/rel).read_bytes())
+
+    def test_exported_ranges_match_the_curation(self):
+        proof_steps.check_export(self.root)
+
+    def alter(self, what):
+        p=self.root/'pdf-overlay/annotations.bundle.json'
+        v=json.loads(p.read_text())
+        row=next(r['annotation'] for r in v['annotations'] if r['annotation'].get('kind')=='proof_step')
+        ext=row['object'][0]['extensions'][proof_steps.NS]
+        what(ext)
+        p.write_text(json.dumps(v))
+
+    def test_edited_snippet_is_rejected(self):
+        self.alter(lambda ext: ext['snippet'].update(text='  sorry'))
+        with self.assertRaisesRegex(ValueError, 'snippet differs'):
+            proof_steps.check_export(self.root)
+
+    def test_wrong_destination_is_rejected(self):
+        self.alter(lambda ext: ext['destination'].update(href='https://example.org/wrong'))
+        with self.assertRaisesRegex(ValueError, 'destination'):
+            proof_steps.check_export(self.root)
 
 
 if __name__ == '__main__':
