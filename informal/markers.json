@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "36afe40b4b169b052d7547f9d6d26cc4a47ce967",
- "pdf_sha256": "b7899b9466d86377e8f416cadcadd757878b0bea8a7a3f9e9f43ba7c3421d957",
+ "source_commit": "821f3d0a1b049ab0a60607cc0e870ff6f7fb2d66",
+ "pdf_sha256": "f8ea641f82464a4d657f32eec6aea2f68b4a4974390cd40e50f09af5aea5d971",
  "pages": 9,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -295,7 +295,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue"
    ],
    "boxes": [
-    [5, 0.130391, 0.589331, 0.739298, 0.073232]
+    [5, 0.130391, 0.642361, 0.739298, 0.073706]
    ]
   },
   {
@@ -310,7 +310,7 @@
     "TauCeti.FundamentalGroupoid.glueTwo"
    ],
    "boxes": [
-    [5, 0.130391, 0.668876, 0.739217, 0.098169]
+    [5, 0.130391, 0.716067, 0.739217, 0.09596]
    ]
   },
   {
@@ -326,7 +326,7 @@
    ],
    "decls": [],
    "boxes": [
-    [5, 0.130391, 0.77399, 0.739298, 0.089962]
+    [5, 0.130391, 0.812027, 0.739298, 0.090436]
    ]
   },
   {
@@ -339,7 +339,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left"
    ],
    "boxes": [
-    [5, 0.130391, 0.827178, 0.739298, 0.017519]
+    [5, 0.130391, 0.865846, 0.739298, 0.017361]
    ]
   },
   {
@@ -352,7 +352,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right"
    ],
    "boxes": [
-    [5, 0.130391, 0.844697, 0.739298, 0.019255]
+    [5, 0.130391, 0.883207, 0.739298, 0.019255]
    ]
   },
   {
@@ -382,7 +382,7 @@
     "TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top"
    ],
    "boxes": [
-    [6, 0.130391, 0.666667, 0.739217, 0.055871]
+    [6, 0.130391, 0.683396, 0.739217, 0.055871]
    ]
   },
   {
@@ -397,7 +397,7 @@
     "TauCeti.vanKampenDesc"
    ],
    "boxes": [
-    [6, 0.130391, 0.775253, 0.739217, 0.117424]
+    [6, 0.130391, 0.791351, 0.739217, 0.111111]
    ]
   },
   {
@@ -413,7 +413,7 @@
    ],
    "decls": [],
    "boxes": [
-    [7, 0.130391, 0.624369, 0.739217, 0.124369]
+    [7, 0.130391, 0.604798, 0.739217, 0.124053]
    ]
   },
   {
@@ -427,7 +427,7 @@
     "TauCeti.vanKampenDesc_comp_map_left"
    ],
    "boxes": [
-    [7, 0.130391, 0.711806, 0.739217, 0.017519]
+    [7, 0.130391, 0.692235, 0.739217, 0.017361]
    ]
   },
   {
@@ -441,7 +441,7 @@
     "TauCeti.vanKampenDesc_comp_map_right"
    ],
    "boxes": [
-    [7, 0.130391, 0.729324, 0.739217, 0.019413]
+    [7, 0.130391, 0.709596, 0.739217, 0.019255]
    ]
   },
   {
