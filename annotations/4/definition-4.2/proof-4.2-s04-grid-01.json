@@ -1,0 +1,96 @@
+{
+  "id": "proof-4.2-s04-grid",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Choose a fine grid for the homotopy",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.598881, 0.301136, 0.270728, 0.017677]
+      },
+      "title": "Choose a fine grid for the homotopy",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s04-grid@p005"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.318813, 0.739217, 0.018308]
+      },
+      "title": "Choose a fine grid for the homotopy",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s04-grid@p005"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.337121, 0.739217, 0.01673]
+      },
+      "title": "Choose a fine grid for the homotopy",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s04-grid@p005"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.353851, 0.058689, 0.017045]
+      },
+      "title": "Choose a fine grid for the homotopy",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s04-grid@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [221, 231],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Choose a fine grid for the homotopy",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-4.2-s04-grid-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L221-L231",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 221,
+            "text": "  obtain ⟨δ, hδ, h⟩ := lebesgue_number_lemma_of_metric_of_mem_nhds isCompact_univ\n    (c := fun i ↦ H ⁻¹' U i) fun ts _ ↦\n      (hU (H ts)).imp fun _ ↦ H.continuous.continuousAt.preimage_mem_nhds\n  obtain ⟨n, hn⟩ := exists_nat_one_div_lt hδ\n  have hN : (1 / ((n + 1 : ℕ) : ℝ)) < δ := by exact_mod_cast hn\n  refine ⟨n + 1, n.succ_ne_zero, fun l k ↦ ?_⟩\n  obtain ⟨i, hi⟩ := h (pt (n + 1) l, pt (n + 1) k) (mem_univ _)\n  refine ⟨i, fun t ht s hs ↦ hi ?_⟩\n  rw [mem_ball, Prod.dist_eq, max_lt_iff, Subtype.dist_eq, Subtype.dist_eq, Real.dist_eq,\n    Real.dist_eq]\n  exact ⟨(abs_sub_pt_le ht).trans_lt hN, (abs_sub_pt_le hs).trans_lt hN⟩"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

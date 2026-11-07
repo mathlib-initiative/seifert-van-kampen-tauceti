@@ -1,0 +1,72 @@
+{
+  "id": "proof-4.2-s07-boundary",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "The endpoint boundary paths contribute identities",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.437524, 0.439394, 0.432085, 0.01673]
+      },
+      "title": "The endpoint boundary paths contribute identities",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s07-boundary@p005"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.456124, 0.317341, 0.017519]
+      },
+      "title": "The endpoint boundary paths contribute identities",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s07-boundary@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [682, 686],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "The endpoint boundary paths contribute identities",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-4.2-s07-boundary-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L682-L686",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 682,
+            "text": "    rw [pathVal_eq_eqToHom hU F hF (colSeg H N l 0) _ fun t ↦ by simp [colSeg, pt_zero],\n      pathVal_eq_eqToHom hU F hF (colSeg H N l N) _ fun t ↦ by simp [colSeg, pt_self hN],\n      comp_eqToHom_iff] at hsq\n    rw [liftN, liftN, hsq]\n    simp"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

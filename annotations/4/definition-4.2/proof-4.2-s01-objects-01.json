@@ -1,0 +1,72 @@
+{
+  "id": "proof-4.2-s01-objects",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "The object value is independent of the cover member",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.336438, 0.123422, 0.53317, 0.017361]
+      },
+      "title": "The object value is independent of the cover member",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s01-objects@p005"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.140783, 0.379534, 0.017361]
+      },
+      "title": "The object value is independent of the cover member",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s01-objects@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [247, 249],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "The object value is independent of the cover member",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-4.2-s01-objects-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L247-L249",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 247,
+            "text": "private lemma obj_eq (i : ι) {x : X} (hx : x ∈ U i) :\n    (F i).obj (mk ⟨x, hx⟩) = glueObj hU F x :=\n  Functor.congr_obj (hF i (hU x).choose) (mk ⟨x, hx, mem_of_mem_nhds (hU x).choose_spec⟩)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

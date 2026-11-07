@@ -1,18 +1,30 @@
 {
-  "id": "proof-6.3-generate",
+  "id": "proof-6.4-s02-existence",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Agreement subgroup and generation",
+  "note": "Invoke the induced homomorphism for an arbitrary cocone",
   "subject": [
     {
       "location": {
         "page": 8,
-        "rect": [0.130391, 0.186237, 0.739217, 0.202652]
+        "rect": [0.27892, 0.697917, 0.590688, 0.016572]
       },
-      "title": "Proof: Uniqueness from generation",
+      "title": "Invoke the induced homomorphism for an arbitrary cocone",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.3-generate@p008"
+          "region": "proof-6.4-s02-existence@p008"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 8,
+        "rect": [0.130391, 0.714489, 0.154991, 0.019729]
+      },
+      "title": "Invoke the induced homomorphism for an arbitrary cocone",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.4-s02-existence@p008"
         }
       }
     }
@@ -20,26 +32,25 @@
   "object": [
     {
       "location": {
-        "declaration": "TauCeti.vanKampen_hom_ext",
-        "lines": [337, 342],
+        "lines": [367, 369],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Agreement subgroup and generation",
+      "title": "Invoke the induced homomorphism for an arbitrary cocone",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-6.3-generate-1",
+            "id": "proof-6.4-s02-existence-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L337-L342",
+            "fragment": "L367-L369",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 337,
-            "text": "  have hle : (FundamentalGroup.map (ContinuousMap.subtypeVal A) ⟨x, hxA⟩).range ⊔\n      (FundamentalGroup.map (ContinuousMap.subtypeVal B) ⟨x, hxB⟩).range ≤ f.eqLocus g := by\n    refine sup_le ?_ ?_ <;> rintro _ ⟨y, rfl⟩\n    exacts [DFunLike.congr_fun hfgA y, DFunLike.congr_fun hfgB y]\n  have htop := FundamentalGroup.range_map_subtypeVal_sup_eq_top hCover hA hB hAB hxA hxB\n  exact MonoidHom.eq_of_eqOn_top fun y _ ↦ (htop.ge.trans hle) (Subgroup.mem_top y)"
+            "line": 367,
+            "text": "  refine IsPushout.of_isColimit (PushoutCocone.IsColimit.mk (congrArg GrpCat.ofHom comm)\n    (fun s ↦ GrpCat.ofHom (vanKampenDesc hCover hA hB hAB hxA hxB s.inl.hom s.inr.hom\n      (congrArg GrpCat.Hom.hom s.condition))) (fun s ↦ ?_) (fun s ↦ ?_) fun s m h₁ h₂ ↦ ?_)"
           }
         }
       }

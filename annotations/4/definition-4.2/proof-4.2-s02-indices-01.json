@@ -1,0 +1,84 @@
+{
+  "id": "proof-4.2-s02-indices",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Compatibility makes the local path value independent of the index",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.600511, 0.215593, 0.269098, 0.019255]
+      },
+      "title": "Compatibility makes the local path value independent of the index",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s02-indices@p005"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.234848, 0.739217, 0.016414]
+      },
+      "title": "Compatibility makes the local path value independent of the index",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s02-indices@p005"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.251263, 0.139876, 0.017519]
+      },
+      "title": "Compatibility makes the local path value independent of the index",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-4.2-s02-indices@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [262, 265],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Compatibility makes the local path value independent of the index",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-4.2-s02-indices-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L262-L265",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 262,
+            "text": "  have hx : x ∈ U i ∩ U j := P.source ▸ ⟨hi 0, hj 0⟩\n  have hy : y ∈ U i ∩ U j := P.target ▸ ⟨hi 1, hj 1⟩\n  have h := Functor.congr_hom (hF i j) (Path.Homotopic.Quotient.mk\n    (P.codRestrict (x := ⟨x, hx⟩) (y := ⟨y, hy⟩) fun t ↦ ⟨hi t, hj t⟩) : mk _ ⟶ mk _)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

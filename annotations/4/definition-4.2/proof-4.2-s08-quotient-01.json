@@ -1,18 +1,18 @@
 {
-  "id": "proof-4.2-homotopy",
+  "id": "proof-4.2-s08-quotient",
   "kind": "proof_step",
-  "relation": "relatedMatch",
-  "note": "Invoked when descending to homotopy classes",
+  "relation": "closeMatch",
+  "note": "Descend the path value to homotopy classes",
   "subject": [
     {
       "location": {
         "page": 5,
-        "rect": [0.130391, 0.104167, 0.739217, 0.473801]
+        "rect": [0.160516, 0.473643, 0.70419, 0.017361]
       },
-      "title": "Construction: Gluing on homotopy classes",
+      "title": "Descend the path value to homotopy classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-4.2-homotopy@p005"
+          "region": "proof-4.2-s08-quotient@p005"
         }
       }
     }
@@ -20,16 +20,15 @@
   "object": [
     {
       "location": {
-        "declaration": "TauCeti.FundamentalGroupoid.glue",
         "lines": [704, 705],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
       },
-      "title": "Invoked when descending to homotopy classes",
-      "role": "support",
+      "title": "Descend the path value to homotopy classes",
+      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.2-homotopy-2",
+            "id": "proof-4.2-s08-quotient-1",
             "kind": "proof_step"
           },
           "destination": {

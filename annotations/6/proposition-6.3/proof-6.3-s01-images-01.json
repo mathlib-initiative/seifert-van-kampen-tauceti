@@ -1,0 +1,72 @@
+{
+  "id": "proof-6.3-s01-images",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Both generating images lie in the equalizer subgroup",
+  "subject": [
+    {
+      "location": {
+        "page": 8,
+        "rect": [0.160516, 0.31834, 0.709092, 0.017677]
+      },
+      "title": "Both generating images lie in the equalizer subgroup",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.3-s01-images@p008"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 8,
+        "rect": [0.130391, 0.336016, 0.734315, 0.016572]
+      },
+      "title": "Both generating images lie in the equalizer subgroup",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.3-s01-images@p008"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [337, 340],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "Both generating images lie in the equalizer subgroup",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-6.3-s01-images-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L337-L340",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 337,
+            "text": "  have hle : (FundamentalGroup.map (ContinuousMap.subtypeVal A) ⟨x, hxA⟩).range ⊔\n      (FundamentalGroup.map (ContinuousMap.subtypeVal B) ⟨x, hxB⟩).range ≤ f.eqLocus g := by\n    refine sup_le ?_ ?_ <;> rintro _ ⟨y, rfl⟩\n    exacts [DFunLike.congr_fun hfgA y, DFunLike.congr_fun hfgB y]"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [8],
+        "printed": [8]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

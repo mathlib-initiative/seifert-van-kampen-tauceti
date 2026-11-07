@@ -1,18 +1,18 @@
 {
-  "id": "proof-5.1-basepoint",
+  "id": "proof-5.1-s08-cancellation",
   "kind": "proof_step",
-  "relation": "relatedMatch",
-  "note": "Invoked on each local path piece",
+  "relation": "closeMatch",
+  "note": "Cancel the basepoint transport",
   "subject": [
     {
       "location": {
         "page": 6,
-        "rect": [0.130391, 0.199811, 0.739217, 0.455492]
+        "rect": [0.401871, 0.57347, 0.196259, 0.023192]
       },
-      "title": "Proof: Generation by based loops",
+      "title": "Cancel the basepoint transport",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-5.1-basepoint@p006"
+          "region": "proof-5.1-s08-cancellation@p006"
         }
       }
     }
@@ -20,26 +20,25 @@
   "object": [
     {
       "location": {
-        "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top",
-        "lines": [166, 167],
+        "lines": [175, 179],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
       },
-      "title": "Invoked on each local path piece",
-      "role": "support",
+      "title": "Cancel the basepoint transport",
+      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-5.1-basepoint-2",
+            "id": "proof-5.1-s08-cancellation-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L166-L167",
+            "fragment": "L175-L179",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 166,
-            "text": "    exact comp_comp_inv_mem_iSup_range hx hpc (hτ a).somePath (δ.map continuous_subtype_val)\n      (hτ b).somePath (hτ' a) (by rintro _ ⟨t, rfl⟩; exact (δ t).2) (hτ' b)"
+            "line": 175,
+            "text": "  have h := H.mul_mem hτx (H.mul_mem hγ (H.inv_mem hτx))\n  rw [hinv] at h\n  convert h using 1\n  ext\n  simp"
           }
         }
       }

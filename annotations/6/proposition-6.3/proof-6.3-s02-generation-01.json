@@ -1,0 +1,72 @@
+{
+  "id": "proof-6.3-s02-generation",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Invoke generation and conclude that the homomorphisms agree",
+  "subject": [
+    {
+      "location": {
+        "page": 8,
+        "rect": [0.132842, 0.352588, 0.736766, 0.017677]
+      },
+      "title": "Invoke generation and conclude that the homomorphisms agree",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.3-s02-generation@p008"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 8,
+        "rect": [0.130391, 0.370265, 0.057532, 0.018624]
+      },
+      "title": "Invoke generation and conclude that the homomorphisms agree",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-6.3-s02-generation@p008"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [341, 342],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "Invoke generation and conclude that the homomorphisms agree",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-6.3-s02-generation-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L341-L342",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 341,
+            "text": "  have htop := FundamentalGroup.range_map_subtypeVal_sup_eq_top hCover hA hB hAB hxA hxB\n  exact MonoidHom.eq_of_eqOn_top fun y _ ↦ (htop.ge.trans hle) (Subgroup.mem_top y)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [8],
+        "printed": [8]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

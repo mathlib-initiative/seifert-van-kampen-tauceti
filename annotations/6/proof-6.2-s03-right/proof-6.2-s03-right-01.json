@@ -1,18 +1,18 @@
 {
-  "id": "proof-6.1-connect",
+  "id": "proof-6.2-s03-right",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Turn the homomorphism into a functor",
+  "note": "Apply the right restriction in the same way",
   "subject": [
     {
       "location": {
         "page": 7,
-        "rect": [0.130391, 0.104167, 0.739217, 0.261679]
+        "rect": [0.132842, 0.876736, 0.581631, 0.019097]
       },
-      "title": "Construction: The local functors",
+      "title": "Apply the right restriction in the same way",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.1-connect@p007"
+          "region": "proof-6.2-s03-right@p007"
         }
       }
     }
@@ -20,25 +20,25 @@
   "object": [
     {
       "location": {
-        "lines": [164, 164],
+        "lines": [294, 296],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Turn the homomorphism into a functor",
+      "title": "Apply the right restriction in the same way",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-6.1-connect-2",
+            "id": "proof-6.2-s03-right-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L164-L164",
+            "fragment": "L294-L296",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 164,
-            "text": "  Groupoid.functorOfEndHom _ (connect hST hS hT s₀) f"
+            "line": 294,
+            "text": "  (vanKampenDesc_map_subtypeVal hCover hA hB hAB hxA hxB fA fB h hxB _\n    (FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right hCover _ _ _) g).trans\n    (localFunctor_map_base inter_subset_right hAB hB (interBase hxA hxB) fB g)"
           }
         }
       }

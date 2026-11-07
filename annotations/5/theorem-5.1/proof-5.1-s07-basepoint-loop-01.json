@@ -1,0 +1,72 @@
+{
+  "id": "proof-5.1-s07-basepoint-loop",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "The chosen path at the basepoint belongs to the subgroup",
+  "subject": [
+    {
+      "location": {
+        "page": 6,
+        "rect": [0.535038, 0.542929, 0.334571, 0.018466]
+      },
+      "title": "The chosen path at the basepoint belongs to the subgroup",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-5.1-s07-basepoint-loop@p006"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 6,
+        "rect": [0.130391, 0.561395, 0.095539, 0.013258]
+      },
+      "title": "The chosen path at the basepoint belongs to the subgroup",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "proof-5.1-s07-basepoint-loop@p006"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "location": {
+        "lines": [173, 174],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
+      },
+      "title": "The chosen path at the basepoint belongs to the subgroup",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-5.1-s07-basepoint-loop-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L173-L174",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 173,
+            "text": "  have hτx : (End.of (τ (mk x)) : _root_.FundamentalGroup X x) ∈ H :=\n    fromPath_mem_iSup_range hx _ (hτ' x)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [6],
+        "printed": [6]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

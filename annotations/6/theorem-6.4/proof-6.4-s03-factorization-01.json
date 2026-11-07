@@ -1,18 +1,18 @@
 {
-  "id": "proof-6.2-restrict",
+  "id": "proof-6.4-s03-factorization",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Restriction on A",
+  "note": "Invoke the two restriction equations",
   "subject": [
     {
       "location": {
-        "page": 7,
-        "rect": [0.130391, 0.757891, 0.739217, 0.137942]
+        "page": 8,
+        "rect": [0.377786, 0.747999, 0.244428, 0.016376]
       },
-      "title": "Proof: The restriction equations",
+      "title": "Invoke the two restriction equations",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proof-6.2-restrict@p007"
+          "region": "proof-6.4-s03-factorization@p008"
         }
       }
     }
@@ -20,26 +20,25 @@
   "object": [
     {
       "location": {
-        "declaration": "TauCeti.vanKampenDesc_map_left",
-        "lines": [278, 280],
+        "lines": [370, 373],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Restriction on A",
+      "title": "Invoke the two restriction equations",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-6.2-restrict-1",
+            "id": "proof-6.4-s03-factorization-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L278-L280",
+            "fragment": "L370-L373",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 278,
-            "text": "  (vanKampenDesc_map_subtypeVal hCover hA hB hAB hxA hxB fA fB h hxA _\n    (FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left hCover _ _ _) g).trans\n    (localFunctor_map_base inter_subset_left hAB hA (interBase hxA hxB) fA g)"
+            "line": 370,
+            "text": "  · exact GrpCat.hom_ext (vanKampenDesc_comp_map_left hCover hA hB hAB hxA hxB _ _\n      (congrArg GrpCat.Hom.hom s.condition))\n  · exact GrpCat.hom_ext (vanKampenDesc_comp_map_right hCover hA hB hAB hxA hxB _ _\n      (congrArg GrpCat.Hom.hom s.condition))"
           }
         }
       }
@@ -48,8 +47,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [7],
-        "printed": [7]
+        "physical": [8],
+        "printed": [8]
       },
       "provenance": {
         "actor": "agent",
