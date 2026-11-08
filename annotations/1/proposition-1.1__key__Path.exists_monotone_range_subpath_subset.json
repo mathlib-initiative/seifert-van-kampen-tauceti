@@ -1,16 +1,16 @@
 {
-  "id": "lemma-1.3",
-  "kind": "lemma",
+  "id": "proposition-1.1",
+  "kind": "proposition",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.570076, 0.739217, 0.057449]
+        "rect": [0.130391, 0.42803, 0.739217, 0.074811]
       },
-      "title": "Lemma 1.3 (Composing subpath classes)",
+      "title": "Proposition 1.1 (Subdividing a path)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-1.3@p001"
+          "region": "proposition-1.1@p001"
         }
       }
     }
@@ -21,24 +21,24 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "declaration": "Path.Homotopic.Quotient.subpath_cast_trans",
+        "declaration": "Path.exists_monotone_range_subpath_subset",
         "module": "TauCeti.Topology.Homotopy.Path"
       },
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "Path.Homotopic.Quotient.subpath_cast_trans",
+            "id": "Path.exists_monotone_range_subpath_subset",
             "kind": "theorem"
           },
           "destination": {
-            "fragment": "L325",
+            "fragment": "L224",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean",
             "resolution": "exact"
           },
           "snippet": {
-            "line": 325,
-            "text": "theorem subpath_cast_trans {x y : X} (p : Path x y) (a b c : unitInterval) {x₀ x₁ x₂ : X}\n    (h₀ : x₀ = p a) (h₁ : x₁ = p b) (h₂ : x₂ = p c) :\n    trans (mk ((p.subpath a b).cast h₀ h₁)) (mk ((p.subpath b c).cast h₁ h₂)) =\n      mk ((p.subpath a c).cast h₀ h₂) := by"
+            "line": 224,
+            "text": "theorem exists_monotone_range_subpath_subset {ι : Type*} {U : ι → Set X} {x y : X}\n    (γ : Path x y) (hU : ∀ s, ∃ i, γ ⁻¹' U i ∈ 𝓝 s) :\n    ∃ (n : ℕ) (t : Fin (n + 1) → I), t 0 = 0 ∧ t (Fin.last n) = 1 ∧ Monotone t ∧\n      ∀ k : Fin n, ∃ i, range (γ.subpath (t k.castSucc) (t k.succ)) ⊆ U i := by"
           }
         }
       }

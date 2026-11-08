@@ -120,12 +120,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "7621e1b13e034ab1cc6c3cee59431aa11f6dbe8813d8926b97d01a3e909dd66a"
+      "sha256": "3f20b341c6547ea347a8cc157e9c360d2ef984d26682d8bebd1cc8cd3129d278"
     },
     "count": 94,
     "directory": "annotations",
     "export": {
-      "commit": "92ac6bc35ca6d298b2fa7cb11bd49a464002f027",
+      "commit": "37fe3b78e43712bb4e37d247c1d468e1dfde9fb1",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -149,7 +149,7 @@
       },
       {
         "path": "informal/items.json",
-        "sha256": "83bfd4b45f3197e81200554ae800b311eb2a80561017dbaf809818290cdb7998"
+        "sha256": "8ac8621e68a11d04ce3d37e84d9d7c4bacdb87852c04ea7c3eadfcf8dbd46b8a"
       },
       {
         "path": "informal/main.tex",
@@ -157,7 +157,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "8532138a0d802244e6fa9b972d3933e93e5dd72fe8d426c6ab67e9a67a5ec6e3"
+        "sha256": "c1a6272707187370773b3bca15190f66fbe6d59bada06c08a5b1f14b4a584207"
       },
       {
         "path": "informal/notation.sty",
@@ -177,11 +177,11 @@
       },
       {
         "path": "informal/sections/01-paths-and-subdivisions.tex",
-        "sha256": "f299c59c1afb6fa819db6b51b06396ec7867cb79494dcae3711a0455daec7575"
+        "sha256": "69cd2297b545454b498c5d77d705c817e6149aa376e765da422d47df62a63074"
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "7e4294d6834c2e9b8baa5387093b975792e06c9128ceec10bae070f0ef73349a"
+        "sha256": "b882d5edc243334438515119364552c2f2a43e77bce2630cabbc8caeacc97f74"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
@@ -200,6 +200,6 @@
         "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "9cffcdf19ae44067c61051cd0ab9ed2086daabc32486af6ccd56ec33595bd069"
+    "manifest_sha256": "3949247b4838c61a488841c84a2dc79503c3544a8aa47e6571068d8d224cff8f"
   }
 }

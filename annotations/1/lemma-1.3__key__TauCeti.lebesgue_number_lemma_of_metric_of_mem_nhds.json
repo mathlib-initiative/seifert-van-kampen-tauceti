@@ -1,16 +1,16 @@
 {
-  "id": "lemma-1.1",
+  "id": "lemma-1.3",
   "kind": "lemma",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.330808, 0.739217, 0.056503]
+        "rect": [0.130391, 0.594697, 0.739217, 0.056503]
       },
-      "title": "Lemma 1.1 (A Lebesgue number)",
+      "title": "Lemma 1.3 (A Lebesgue number)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "lemma-1.1@p001"
+          "region": "lemma-1.3@p001"
         }
       }
     }
