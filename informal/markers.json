@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "c0010ef30599170147d9ee6b2600719bac7ac518",
- "pdf_sha256": "7ed00b5044290c60786854ee9635042344b599ce2b49be432cb4a33e2fd23389",
+ "source_commit": "9f06e3b13c3cc5a851e2a58482fa14c770d00fe9",
+ "pdf_sha256": "1e20ed295bb6afefa4c2d6b8f8ff970a1e04a71c1fa96d717ec515429f862d5f",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -101,7 +101,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue"
    ],
    "boxes": [
-    [3, 0.130391, 0.496212, 0.739217, 0.054924]
+    [3, 0.130391, 0.510101, 0.739217, 0.038194]
    ]
   },
   {
@@ -116,7 +116,7 @@
     "TauCeti.FundamentalGroupoid.glueTwo"
    ],
    "boxes": [
-    [3, 0.130391, 0.556187, 0.739217, 0.093592]
+    [3, 0.130391, 0.553346, 0.739217, 0.095486]
    ]
   },
   {
@@ -132,7 +132,7 @@
    ],
    "decls": [],
    "boxes": [
-    [3, 0.130391, 0.65483, 0.739217, 0.088857]
+    [3, 0.130391, 0.653883, 0.739217, 0.089489]
    ]
   },
   {
@@ -145,7 +145,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left"
    ],
    "boxes": [
-    [3, 0.130391, 0.706913, 0.739217, 0.017519]
+    [3, 0.130391, 0.706755, 0.739217, 0.017361]
    ]
   },
   {
@@ -158,7 +158,7 @@
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right"
    ],
    "boxes": [
-    [3, 0.130391, 0.724432, 0.739217, 0.019255]
+    [3, 0.130391, 0.724116, 0.739217, 0.019255]
    ]
   },
   {
