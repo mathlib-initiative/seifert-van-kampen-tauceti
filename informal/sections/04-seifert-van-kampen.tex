@@ -19,7 +19,7 @@ $g:c\longrightarrow c'$ to $f(\tau_{c'}^{-1}\circ g\circ\tau_c)$.
 \leanref{TauCeti.Groupoid.functorOfEndHom_map}
 \end{definition}
 
-\begin{definition}[id=4.3]{The descent homomorphism}
+\begin{corollary}[id=4.3]{The descent homomorphism}
 Let $A,B\subseteq X$ for a topological space $X$, let $x\in X$, and let
 $M$ be a monoid.  Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
 $\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
@@ -31,36 +31,26 @@ $\fgrp{B}{x}$ with
 Then $\varphi_{A}$ and $\varphi_{B}$ induce a homomorphism $\varphi$ from
 $\fgrp{X}{x}$ to $M$.
 \leanref{TauCeti.vanKampenDesc}
-\end{definition}
+\end{corollary}
 
-\begin{proofpassage}{4.3-descent}{Construction}{Descent from the two subspaces}
-Put $C=A\cap B$.  For each $y\in C$ choose a path class
-$\rho_y:x\longrightarrow y$ in $C$, taking $\rho_x$ to be the identity.
-\proofstep{4.3-s01-connect}{Choose connecting paths compatibly on the intersection}{In $A$, choose classes $\tau^A_y:x\longrightarrow y$ whose values on $C$
-are the images of these $\rho_y$; choose the other classes using path
-connectedness of $A$.  Make the same choices in $B$, with the same
-$\rho_y$ on $C$.}  In particular, $\tau^A_x$ and $\tau^B_x$ are identities.
+\begin{proofpassage}{4.3-descent}{Proof}{Descent from groupoid gluing}
+Put $C=A\cap B$.  \proofstep{4.3-s01-connect}{Choose connecting paths compatibly on the intersection}{Choose path classes $\rho_y:x\longrightarrow y$ in $C$, and extend these
+to choices $\tau^A_y$ in $A$ and $\tau^B_y$ in $B$, taking the class at
+$x$ to be the identity.  Path connectedness makes these choices possible.}
+\proofstep{4.3-s02-local}{Invoke the functor construction from a homomorphism}{By \itemref{4.2}, the homomorphisms $\varphi_A,\varphi_B$ give functors
+$F_A:\fgpd A\longrightarrow\sobj M$ and
+$F_B:\fgpd B\longrightarrow\sobj M$.}
 
-For $g:y\longrightarrow z$ in $\fgpd A$, define
-$F_A:\fgpd A\longrightarrow\sobj M$ by
-\[
- F_A(g)=\varphi_A\bigl((\tau^A_z)^{-1}\circ g\circ\tau^A_y\bigr),
-\]
-and define $F_B$ in the same way.  \proofstep{4.3-s02-local}{Invoke the functor construction from a homomorphism}{These are the functors of
-\itemref{4.2}.}
-
-Let $j_A$ and $j_B$ be the maps from $\fgrp{C}{x}$ induced by the
-inclusions of $C$ into $A$ and $B$, respectively.
-For a morphism $g:y\longrightarrow z$ in $\fgpd C$, the loop
-$\eta=\rho_z^{-1}\circ g\circ\rho_y$ is based at $x$ in $C$.
-The choices in the preceding construction and the compatibility of the
-given homomorphisms yield
+Let $j_A,j_B$ be the inclusion-induced maps from $\fgrp{C}{x}$.
+For $g:y\longrightarrow z$ in $\fgpd C$, put
+$\eta=\rho_z^{-1}\circ g\circ\rho_y$.  The shared choices on $C$ give
 \proofequation{4.3-s03-compatibility}{Apply compatibility to the transported loop in the intersection}{ F_A(\fgpd{\inclin{C}{A}}(g))
    =\varphi_A(j_A(\eta))
    =\varphi_B(j_B(\eta))
    =F_B(\fgpd{\inclin{C}{B}}(g)).}
-Thus the two functors agree on $\fgpd C$.  \proofstep{4.3-s04-glue}{Invoke gluing of the two local functors}{Apply \itemref{2.2} to the cover $\{A,B\}$ to obtain a glued functor
-$F:\fgpd X\longrightarrow\sobj M$.}  Restrict it along $J_x$ from \itemref{4.1} to obtain
+\proofstep{4.3-s04-glue}{Invoke gluing of the two local functors}{Thus \itemref{2.2} glues $F_A,F_B$ to a functor
+$F:\fgpd X\longrightarrow\sobj M$.}
+Restricting to loops at $x$ gives
 \proofequation{4.3-s05-endomorphisms}{Restrict the glued functor to loops at the basepoint}{  \varphi:\fgrp{X}{x}\longrightarrow M,\qquad
   \varphi(\omega)=F(\omega).}
 \end{proofpassage}

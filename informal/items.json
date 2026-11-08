@@ -588,13 +588,13 @@
     {
       "id": "4.3",
       "section": "4",
-      "kind": "definition",
+      "kind": "corollary",
       "title": "The descent homomorphism",
       "gist": "Homomorphisms to a monoid out of the fundamental groups of two subsets, whose interiors cover the space and which are path connected along with their intersection, and which agree after restriction to the fundamental group of the intersection, induce a homomorphism out of the fundamental group of the space.",
       "parts": [],
       "in_v1": true,
       "reference": null,
-      "departures": "The target is only assumed to be a monoid, and the two subsets need not be open: only their interiors have to cover the space.",
+      "departures": "The target is only assumed to be a monoid, and the two subsets need not be open: only their interiors have to cover the space. Presented as a corollary of groupoid gluing (2.2) and the vertex-group functor construction (4.2); the proof checks compatibility using connecting paths chosen in the intersection.",
       "declarations": [
         {
           "name": "TauCeti.vanKampenDesc",

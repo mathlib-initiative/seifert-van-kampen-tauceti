@@ -257,3 +257,9 @@ two-subspace specialization as a separate definition or proposition. Apply
 Definition 2.2 directly to the cover $\{A,B\}$ where the descent construction
 needs it, and use its restriction equations there. Keep the corresponding
 Lean declarations as source helpers.
+
+Corollary 4.3 derives the descent homomorphism from 4.2 and 2.2. Its proof
+focuses on choosing connecting paths compatibly on the intersection and the
+resulting equality of local functors. Invoke the earlier functor construction
+and gluing result directly; keep the overlap equation and the precise proof-step
+links, without repeating the formula of 4.2.
