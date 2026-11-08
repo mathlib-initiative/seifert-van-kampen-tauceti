@@ -140,12 +140,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "4ecaf187a0ee0439d57b3e5834713cead1c1a6086a32f2a33f6d815e428e12e1"
+      "sha256": "e354561c7e0e3b2d8840dfed3d7581d7a25f64f6471acacd288d610ede48521b"
     },
     "count": 88,
     "directory": "annotations",
     "export": {
-      "commit": "00d8b843a3684e1ade8d838973585338bc2ec0a0",
+      "commit": "b9004104d304af639dee368be09048de711359b9",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -169,7 +169,7 @@
       },
       {
         "path": "informal/items.json",
-        "sha256": "eab5149beab21d615743ef68820dafbe37548aff8de188d75ddffb4264987343"
+        "sha256": "298fa7ee6b80800847a9e549b05e89c6c0d00dccac9669823c6730c2acc9cfd9"
       },
       {
         "path": "informal/main.tex",
@@ -177,7 +177,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "5fe7abfb6c190eba14a092f08d962c8f551fcc74f11b56e2532628effa847b00"
+        "sha256": "4b9e2a94ad3a48d29bd34af5fc723109ddfc8c1afad421d94931c5c855f80aa3"
       },
       {
         "path": "informal/notation.sty",
@@ -201,11 +201,11 @@
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "70cc257a6c24bf48a48dfa9600eea83cc525c31d37e8d354cbf2faf0ace20ef9"
+        "sha256": "e6476c36b83f0812078b00d326ff726fc670ee569f1d7cfed063d317fae55c4d"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
-        "sha256": "c1a4a0cce2114bdb258d6842a9c76a7bd7ecfe38b0cc280b8bae1876013c4a52"
+        "sha256": "d2502db23d37406eb4832bf3f3d65590e7f497043ceecfebb48c4976bfa7390f"
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
@@ -220,6 +220,6 @@
         "sha256": "391de48ffe62c257bd88c847c005a4dda10f033a5a083398b44aaff8d1575177"
       }
     ],
-    "manifest_sha256": "bab193742cb96ef49ec8a9a6f0ccb32d75a2eb39a4245f5c33c859e1c3689750"
+    "manifest_sha256": "c555f07e0a1ec5ced22f6f8f8f7153f7ce6fbdcf174239632c903f47a231a8e5"
   }
 }
