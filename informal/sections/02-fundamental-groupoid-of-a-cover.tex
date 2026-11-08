@@ -1,4 +1,6 @@
+\begin{fcassumptions}
 Let $(U_i)_{i\in I}$ be a family of subsets of a topological space $X$.
+For the results about this family, assume throughout that \hypCoverFamily.
 Write \fcnotion{FundamentalGroupoid}{$\fgpd{X}$} for its fundamental groupoid.
 A \fcnotion{ContinuousMap}{continuous map} $f:X\longrightarrow Y$ induces a
 \fcnotion{CategoryTheory.Functor}{functor}
@@ -11,7 +13,7 @@ inclusion.
 
 \begin{theorem}[id=2.1]{Generation by a cover}
 \fcref{Theorem 1.20}
-Suppose that \hypCoverFamily.  Then the
+The
 \fcnotion{CategoryTheory.Subgroupoid}{subgroupoids}
 \fcnotion{CategoryTheory.Subgroupoid.im}{$\im\fgpd{\incl{U_i}}$}
 generate $\fgpd{X}$.
@@ -36,7 +38,7 @@ morphism therefore lies in $\mathcal H$, which proves the claim.
 
 \begin{definition}[id=2.2]{The gluing functor}
 \fcref{Theorem 1.20}
-Let $\mathcal D$ be a category and suppose that \hypCoverFamily.  For each
+Let $\mathcal D$ be a category.  For each
 $i$ let $F_{i}$ be a functor from
 $\fgpd{U_{i}}$ to $\mathcal{D}$, and suppose that for all $i$ and $j$
 \[
@@ -99,12 +101,14 @@ their composite is $F_i([\gamma])$.}
 \end{proofpassage}
 
 \begin{proposition}[id=2.3]{Restriction to a cover member}
-Suppose that \hypCoverFamily, let the $F_{i}$ agree after restriction along the
+Let the $F_{i}$ agree after restriction along the
 inclusions of the pairwise intersections, and let $F$ be the functor of
 \itemref{2.2} glued from them.  Then $F \circ \fgpd{\incl{U_{i}}} = F_{i}$ for
 every $i$.
 \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue}
 \end{proposition}
+
+\end{fcassumptions}
 
 \begin{definition}[id=2.4]{Gluing over two subspaces}
 Let $A,B\subseteq X$ and let $\mathcal D$ be a category.  Suppose that

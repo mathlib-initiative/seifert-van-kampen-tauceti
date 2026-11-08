@@ -1,4 +1,6 @@
-Let $X$ be a topological space and $x\in X$.  The
+\begin{fcassumptions}
+Let $X$ be a topological space, $x\in X$, and $(U_i)_{i\in I}$ a family of
+subsets of $X$ such that \hypCoverFamily.  The
 \fcnotion{FundamentalGroup}{fundamental group} $\fgrp{X}{x}$ is the group
 of morphisms from $x$ to itself in $\fgpd{X}$; multiplication is composition,
 with the right factor traversed first.  A
@@ -12,8 +14,7 @@ nonempty.
 
 \begin{theorem}[id=3.1]{Generation by subspace groups}
 \fcref{Theorem 1.20}
-Let $(U_i)_{i\in I}$ be a family of subsets of $X$.  Suppose that
-\hypCoverFamily, that $x$ lies in every $U_i$, and that
+Suppose that $x$ lies in every $U_i$ and that
 $U_{i} \cap U_{j}$ is path connected for all $i$ and $j$.  Then the
 \fcnotion{Subgroup}{subgroups}
 \fcnotion{MonoidHom.range}{$\im\fgrp{\incl{U_i}}{x}$} generate $\fgrp{X}{x}$.
@@ -56,6 +57,8 @@ Hence
 \proofequation{3.1-s09-cancellation}{Cancel the basepoint transport}{  \omega=\tau_x^{-1}\ptrans T(\omega)\ptrans\tau_x\in H.}
 Thus $H=\fgrp{X}{x}$, as required.
 \end{proofpassage}
+
+\end{fcassumptions}
 
 \begin{corollary}[id=3.2]{Generation from two subspaces}
 Let $A,B\subseteq X$.  Suppose that \hypCoverTwo, that \hypPathConnected,

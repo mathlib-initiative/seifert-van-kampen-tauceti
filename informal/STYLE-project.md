@@ -94,8 +94,13 @@ it stands for.
 | `\hypPathConnected` | `A`, `B` and `A ∩ B` are path connected | the printed types `IsPathConnected A`, `IsPathConnected B` and `IsPathConnected (A ∩ B)`, which always appear together |
 | `\hypBasepoint` | `x` lies in `A` and in `B` | the printed types `x ∈ A` and `x ∈ B` |
 
-Write the macro, never the words by hand, and write it only where the key declaration of
-the item or part binds the hypothesis. The pairwise condition of the indexed statements,
+Write the macro, never the words by hand. In Sections 2 and 3, state
+`\hypCoverFamily` once in the opening prose of an `fcassumptions` block;
+following items in that block inherit the assumption. End each block before
+the separate two-subspace results. Keep the quantifier order: each point has
+some cover member as a neighborhood, and the member may depend on the point.
+Other hypothesis macros stay in the item or part whose key declaration binds
+them. The pairwise condition of the indexed statements,
 `∀ (i j : I), IsPathConnected (U i ∩ U j)`, and the indexed basepoint condition,
 `∀ (i : I), x ∈ U i`, are not among these four: state them in words. The Lebesgue number
 lemma's neighborhood condition, `∀ x ∈ s, ∃ i, c i ∈ nhds x`, covers a subset rather than

@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "2d4cff280881ece8f6b7b62768fe75dd232dd0e2"
+    "commit": "00d902c0f3be73aca7d1612f42b3d2cba8ed9979"
   },
   "instance_files": [
     "informalize.json"
@@ -16,11 +16,11 @@
     },
     {
       "path": "STYLE.md",
-      "sha256": "570364d75ebc455353379948ac9a3d776c82d1d6694c1b09689aeade89acf748"
+      "sha256": "7e6f6724b54a2a67f4fc4a0de532e007c5f1d7bf2a6f21da1dd726e1bb59f4ca"
     },
     {
       "path": "fcmarkers.sty",
-      "sha256": "7e6922973461fd7fbbfd2f7a61645eaffac54f892f624877e666dcf06e97d163"
+      "sha256": "5afdeed53b3a3278471065b46fc2ce06a28989f07a16d7fd27e00b856827f551"
     },
     {
       "path": "tools/build_pdf.sh",
