@@ -47,6 +47,48 @@
       ]
     },
     {
+      "id": "1.1-s01-subdivision",
+      "item": "1.1",
+      "label": "Step",
+      "title": "Choose a finite subdivision with sufficiently short intervals",
+      "span": "inline",
+      "targets": [
+        {
+          "package": "mathlib",
+          "module": "Mathlib.Topology.UnitInterval",
+          "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
+          "lines": [
+            478,
+            480
+          ],
+          "sha256": "8bd848392cd48cea73b525c5c7195019b07f90380f11cd1cd65decd08855526c",
+          "title": "Construct subdivision points with step size half the Lebesgue radius",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "1.1-s01-containment",
+      "item": "1.1",
+      "label": "Step",
+      "title": "Each interval lies in a member of the open cover",
+      "span": "inline",
+      "targets": [
+        {
+          "package": "mathlib",
+          "module": "Mathlib.Topology.UnitInterval",
+          "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
+          "lines": [
+            481,
+            482
+          ],
+          "sha256": "ab0226d0667e521becc14071458e7428b91373814be329195bdfeef45526aa6e",
+          "title": "Bound each interval by a ball contained in one cover member",
+          "role": "key"
+        }
+      ]
+    },
+    {
       "id": "1.1-s02-subpaths",
       "item": "1.1",
       "label": "Step",

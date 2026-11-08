@@ -187,6 +187,11 @@ Use the subdivision-existence proposition directly in the exposition. Do not
 introduce the general clipped-step construction, its ordered-group setup or
 its numerical example. These are implementation details of the Lean library.
 When the gluing proof needs equal subdivisions, introduce $t_k=k/N$ there.
+In the proof of Proposition 1.1, choose a finite subdivision with interval
+lengths at most half the Lebesgue radius, matching the Mathlib helper used by
+TauCeti. Link the mesh choice and interval-containment argument separately
+to that helper. Keep its clipped-step implementation implicit; do not claim
+that it chooses reciprocal-integer step sizes.
 
 The subpath `\subpath{\gamma}{r}{s}` is formed for every pair of parameters,
 running backwards when `s` is smaller than `r` and constant when they agree.
