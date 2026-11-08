@@ -120,12 +120,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "adc29e45e3a4e1e572b107ef2fcff4af52d618d7a097036bf7895b52b47231e3"
+      "sha256": "cc78dc054a745a07730afe07195dfdb4967681df5fbe8852047b699d5adf07d5"
     },
-    "count": 96,
+    "count": 95,
     "directory": "annotations",
     "export": {
-      "commit": "7b07d94f92d540c39bfa516ec608273e20af20ce",
+      "commit": "cbc551cbb111684624c1c41304fa569bb08d2414",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -157,11 +157,11 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "d932360e10a6ede72bd694a41b9538aab29b539a40f34b5bac3079451aaedd7d"
+        "sha256": "a74138147046bd18a61f82be82ece222eea71a4f39b292f8f52c3717965c8037"
       },
       {
         "path": "informal/notation.sty",
-        "sha256": "716661c204fd21d56c2847249e0cf484f5fca25a033b61f394fc43c554f914b7"
+        "sha256": "f7c2a706c8385eba49b9bafa4f071353fb87edf0e9cfa2ea98cdee06f7ddb036"
       },
       {
         "path": "informal/proofsteps.json",
@@ -177,11 +177,11 @@
       },
       {
         "path": "informal/sections/01-paths-and-subdivisions.tex",
-        "sha256": "f72e20bfe02de935d3bf369fd6fd8979c7298b73b11065ccdbdf45c3e7e8f475"
+        "sha256": "481b1e9a33fcd518de19a293c0223deedbe20bd097331278551885e6a06ccdbb"
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "b882d5edc243334438515119364552c2f2a43e77bce2630cabbc8caeacc97f74"
+        "sha256": "081c5876fb4131bfc6d97bc13272bdb23901c8495dc5c4904e844d8100cf55ce"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
@@ -200,6 +200,6 @@
         "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "489aae2a4ba1753add59137c44f6a4afa6d10c360e00e7c3f64170afff45ab86"
+    "manifest_sha256": "11200fd683f8d627e5acf1ce5b52f910ae2204429b1f98e124383bc82dace149"
   }
 }

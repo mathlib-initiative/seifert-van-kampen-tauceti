@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.560371, 0.877841, 0.309238, 0.018624]
+        "rect": [0.560371, 0.876894, 0.309238, 0.018624]
       },
       "title": "Cancel the constant endpoint boundary paths",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.560371, 0.877841, 0.869609, 0.877841, 0.869609, 0.896465, 0.560371, 0.896465]
+            [0.560371, 0.876894, 0.869609, 0.876894, 0.869609, 0.895518, 0.560371, 0.895518]
           ],
           "region": "proof-2.2-s09-boundary@p002"
         }
