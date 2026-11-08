@@ -98,8 +98,7 @@ Write the macro, never the words by hand. In Sections 2 and 3, state
 following items in that block inherit the assumption. In Section 2, introduce
 the fundamental groupoid and induced functors before this cover assumption.
 Use $y$ for its quantified point to distinguish it from the basepoint $x$ in
-Section 3. End each block before
-the separate two-subspace results. Keep the quantifier order: each point has
+Section 3. End each block before unrelated results. Keep the quantifier order: each point has
 some cover member as a neighborhood, and the member may depend on the point.
 Other hypothesis macros stay in the item or part whose key declaration binds
 them. The pairwise condition of the indexed statements,
@@ -239,5 +238,8 @@ Definition 2.2 characterizes the gluing functor by its restriction equations
 and uniqueness, combining the construction with its two corresponding Lean
 theorems. Begin its proof with uniqueness from generation, then verify that
 the prescribed path values are well defined. Do not give restriction to a
-single cover member a separate numbered proposition. The two-subspace
-construction and its restrictions are now Definition 2.3 and Proposition 2.4.
+single cover member a separate numbered proposition. Do not restate the
+two-subspace specialization as a separate definition or proposition. Apply
+Definition 2.2 directly to the cover $\{A,B\}$ where the descent construction
+needs it, and use its restriction equations there. Keep the corresponding
+Lean declarations as source helpers.

@@ -59,7 +59,7 @@ given homomorphisms yield
    =\varphi_A(j_A(\eta))
    =\varphi_B(j_B(\eta))
    =F_B(\fgpd{\inclin{C}{B}}(g)).}
-Thus the two functors agree on $\fgpd C$.  \proofstep{4.3-s04-glue}{Invoke gluing of the two local functors}{Apply \itemref{2.3} to obtain a glued functor
+Thus the two functors agree on $\fgpd C$.  \proofstep{4.3-s04-glue}{Invoke gluing of the two local functors}{Apply \itemref{2.2} to the cover $\{A,B\}$ to obtain a glued functor
 $F:\fgpd X\longrightarrow\sobj M$.}  Restrict it along $J_x$ from \itemref{4.1} to obtain
 \proofequation{4.3-s05-endomorphisms}{Restrict the glued functor to loops at the basepoint}{  \varphi:\fgrp{X}{x}\longrightarrow M,\qquad
   \varphi(\omega)=F(\omega).}
@@ -83,7 +83,7 @@ as in \itemref{4.3}, and let $\varphi$ be the homomorphism they induce.
 \begin{proofpassage}{4.4-restrict}{Proof}{The restriction equations}
 Let $\omega\in\fgrp{A}{x}$ be arbitrary.  Write $p_A=\fgrp{\incl{A}}{x}$.
 By the definition of $\varphi$ and the restriction property in
-\itemref[a]{2.4},
+\itemref{2.2},
 \proofequation{4.4-s01-left}{Use the glued functor's restriction to A}{
  \varphi(p_A(\omega))=F(\fgpd{\incl{A}}(\omega))=F_A(\omega).
 }
@@ -93,7 +93,7 @@ The chosen path $\tau^A_x$ is the identity at the basepoint, so
             =\varphi_A(\omega).
 }
 \proofstep{4.4-s03-pointwise}{Pass from pointwise equality to equality of homomorphisms}{Since this holds for every $\omega$, it proves \itemref[a]{4.4}.}
-\proofstep{4.4-s04-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ and using \itemref[b]{2.4} proves \itemref[b]{4.4}.}
+\proofstep{4.4-s04-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ gives \itemref[b]{4.4} in the same way.}
 \end{proofpassage}
 
 \begin{proposition}[id=4.5]{Uniqueness of the descent homomorphism}

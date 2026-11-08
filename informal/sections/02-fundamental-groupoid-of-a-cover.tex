@@ -132,29 +132,3 @@ their composite is $F_i([\gamma])$, proving the required restriction equations.}
 \end{proofpassage}
 
 \end{fcassumptions}
-
-\begin{definition}[id=2.3]{Gluing over two subspaces}
-Let $A,B\subseteq X$ and let $\mathcal D$ be a category.  Suppose that
-\hypCoverTwo.  Let $F_{A}$ and $F_{B}$ be functors from
-$\fgpd{A}$ and $\fgpd{B}$ to $\mathcal{D}$, and suppose that
-\[
-  F_{A} \circ \fgpd{\inclin{A \cap B}{A}}
-    = F_{B} \circ \fgpd{\inclin{A \cap B}{B}}.
-\]
-Then $F_{A}$ and $F_{B}$ glue to a functor $F$ from $\fgpd{X}$ to
-$\mathcal{D}$.
-\leanref{TauCeti.FundamentalGroupoid.glueTwo}
-\end{definition}
-
-\begin{proposition}[id=2.4]{Restriction to the two subspaces}
-Let $A,B\subseteq X$.  Suppose that \hypCoverTwo, let $F_{A}$ and $F_{B}$
-agree after restriction along
-the inclusions of $A \cap B$, and let $F$ be the functor of \itemref{2.3} glued
-from them.
-\itempart{a}{%
-  $F \circ \fgpd{\incl{A}} = F_{A}$.
-  \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left}}
-\itempart{b}{%
-  $F \circ \fgpd{\incl{B}} = F_{B}$.
-  \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right}}
-\end{proposition}

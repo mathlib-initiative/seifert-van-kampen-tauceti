@@ -307,7 +307,7 @@
         "source": "module docstring",
         "declaration": "TauCeti.FundamentalGroupoid.glue"
       },
-      "departures": "The target is an arbitrary category, the members of the family are not assumed to be open, and neither they nor their intersections are assumed connected. The definition combines glue, its restriction equations, and eq_glue into the characterization of the unique extension.",
+      "departures": "The target is an arbitrary category, the members of the family are not assumed to be open, and neither they nor their intersections are assumed connected. The definition combines glue, its restriction equations, and eq_glue into the characterization of the unique extension. The two-subspace construction and its restriction lemmas are retained as source helpers; the text applies the general result directly to the cover {A, B}.",
       "declarations": [
         {
           "name": "TauCeti.FundamentalGroupoid.glue",
@@ -364,27 +364,14 @@
             "for every two members, the two functors agree after restriction along the inclusions of the intersection",
             "any other functor from the fundamental groupoid of the space to the target category whose restriction to each cover member is the prescribed functor"
           ]
-        }
-      ]
-    },
-    {
-      "id": "2.3",
-      "section": "2",
-      "kind": "definition",
-      "title": "Gluing over two subspaces",
-      "gist": "When the interiors of two subsets cover the space, two functors out of the fundamental groupoids of those subsets which agree after restriction to the fundamental groupoid of their intersection glue to a functor out of the fundamental groupoid of the space.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "The two subsets need not be open: only their interiors have to cover the space, and no connectedness is assumed.",
-      "declarations": [
+        },
         {
           "name": "TauCeti.FundamentalGroupoid.glueTwo",
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
           "line": 131,
           "part": null,
-          "role": "key",
-          "relation": "exactMatch",
+          "role": "helper",
+          "relation": "relatedMatch",
           "junk": [],
           "hypotheses": [
             "a topological space",
@@ -394,38 +381,14 @@
             "a functor out of the fundamental groupoid of each of the two subsets",
             "the two functors agree after restriction along the inclusions of the intersection"
           ]
-        }
-      ]
-    },
-    {
-      "id": "2.4",
-      "section": "2",
-      "kind": "proposition",
-      "title": "Restriction to the two subspaces",
-      "gist": "Composing the functor induced by the inclusion of either of the two subsets with the glued functor returns the functor given on that subset.",
-      "parts": [
-        {
-          "letter": "a",
-          "gist": "Restricting the glued functor along the inclusion of the first subset returns the functor given on the first subset.",
-          "reference": null
         },
-        {
-          "letter": "b",
-          "gist": "Restricting the glued functor along the inclusion of the second subset returns the functor given on the second subset.",
-          "reference": null
-        }
-      ],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
         {
           "name": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left",
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
           "line": 138,
-          "part": "a",
-          "role": "key",
-          "relation": "exactMatch",
+          "part": null,
+          "role": "helper",
+          "relation": "relatedMatch",
           "junk": [],
           "hypotheses": [
             "a topological space",
@@ -440,9 +403,9 @@
           "name": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right",
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
           "line": 145,
-          "part": "b",
-          "role": "key",
-          "relation": "exactMatch",
+          "part": null,
+          "role": "helper",
+          "relation": "relatedMatch",
           "junk": [],
           "hypotheses": [
             "a topological space",
