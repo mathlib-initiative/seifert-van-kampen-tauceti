@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "f33568d75e63db797344eb109055841d633654a7"
+    "commit": "0fe94d23e3d8de4cbb9ee42c6cf901f99770f807"
   },
   "format": {
     "package": "literature-links",
@@ -110,11 +110,15 @@
     },
     {
       "path": "viewer/index.html",
-      "sha256": "dca277b17bd0953ac02eaabdf716ffc55d4b43be41aa8dcc0baefd5dfc96e995"
+      "sha256": "4e1e956dd58da0d40d7596ce4dac64ca13b8e0f0d23e637208e0422e949d4729"
     },
     {
       "path": "viewer/viewer-core.js",
       "sha256": "647f943a47cb7190f8aa302e0b89ecad726fab773e3db7cea692d1ea12e4471a"
+    },
+    {
+      "path": "viewer/viewer-layout.js",
+      "sha256": "94437a5ea896bb52b253f0c9ca49fdc0c2d7f1e55cb78ed9ee52a2fe1f1f6c3e"
     },
     {
       "path": "viewer/viewer-math.js",
@@ -126,11 +130,11 @@
     },
     {
       "path": "viewer/viewer.css",
-      "sha256": "8d2e9dc02fe0767df725d9afb9a21ff5b6d01d184dcc9a52c7d8edef87507c17"
+      "sha256": "4f30508067c9c9f3bbd1fef2df27501a4090a836fc0223ebf81bcac10efeb9e4"
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "216354b9615229d8d298d76c7d580d0794fc76b1005959b40a162fa7c3a11dd9"
+      "sha256": "85db4f6dce5d33b2bd8a9dfe86489e806677c0d3e2bee856f9eec9b8aaa397e5"
     }
   ],
   "annotations": {
