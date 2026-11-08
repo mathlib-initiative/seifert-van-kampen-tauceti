@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "d8a7a407725ff73780c428e92445617fd9603e0c",
- "pdf_sha256": "516dd7219f299e3ab817d1bc270bd87c1301c3fecc30524baea3581af11ea647",
+ "source_commit": "ceaf165433c1bb59dbe2003544d7c1e86848486d",
+ "pdf_sha256": "b05f30c7fa430a7cc372bed143ac7151e5019827299ba8e5c652d4a9d49e06c2",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -56,7 +56,7 @@
     "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds"
    ],
    "boxes": [
-    [1, 0.130391, 0.660985, 0.739298, 0.056503]
+    [1, 0.130391, 0.660985, 0.739298, 0.055871]
    ]
   },
   {
