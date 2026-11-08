@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "00d902c0f3be73aca7d1612f42b3d2cba8ed9979"
+    "commit": "4ea36966497f602c59b8749e488a0b18e39ef744"
   },
   "format": {
     "package": "literature-links",
@@ -98,19 +98,23 @@
     },
     {
       "path": "viewer/index.html",
-      "sha256": "87f79bb3cbb83e630ecf065dfcfa16acf41797f17cd7a0f92f3e0bafbd28012b"
+      "sha256": "dca277b17bd0953ac02eaabdf716ffc55d4b43be41aa8dcc0baefd5dfc96e995"
     },
     {
       "path": "viewer/viewer-core.js",
       "sha256": "203bc200016d58d691b4a43e509d46d3560f602b207db46794525e0525e52cac"
     },
     {
+      "path": "viewer/viewer-search.js",
+      "sha256": "ce9c6a0dafef98986f26545c1bfec467dc41cb8bcdebcd7b41be64b62dad028c"
+    },
+    {
       "path": "viewer/viewer.css",
-      "sha256": "1c92e015f46978b7e1cf396e12f680d7d8bf0b2eefa7c4ebc1aca0fd8690000b"
+      "sha256": "bfa1132a8a85d858dc92f74038f5bbe1a75ad0f881263cf077d3525be7c52f60"
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "1cd837ea009ce067aa62e9b010f84fbbc6062812d97997e3af30681075f8b3e4"
+      "sha256": "87c696a9635cb66da2a9b17e725072c9fe8ceaabf373c1fcea407169a2ef94ff"
     }
   ],
   "annotations": {
