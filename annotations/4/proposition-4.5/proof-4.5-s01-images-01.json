@@ -2,7 +2,6 @@
   "id": "proof-4.5-s01-images",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Both generating images lie in the equalizer subgroup",
   "subject": [
     {
       "location": {

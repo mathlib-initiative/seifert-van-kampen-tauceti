@@ -2,7 +2,6 @@
   "id": "proof-4.3-s04-glue",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Invoke gluing of the two local functors",
   "subject": [
     {
       "location": {

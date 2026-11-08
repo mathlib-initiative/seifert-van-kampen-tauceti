@@ -2,7 +2,6 @@
   "id": "proof-2.1-s03-reassemble",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Reassemble the original path class",
   "subject": [
     {
       "location": {

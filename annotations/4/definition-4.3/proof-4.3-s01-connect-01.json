@@ -2,7 +2,6 @@
   "id": "proof-4.3-s01-connect",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Choose connecting paths compatibly on the intersection",
   "subject": [
     {
       "location": {

@@ -2,7 +2,6 @@
   "id": "proof-2.2-s04-refine-pieces",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Refining each interval preserves the composite",
   "subject": [
     {
       "location": {

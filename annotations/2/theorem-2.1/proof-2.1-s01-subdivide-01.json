@@ -2,7 +2,6 @@
   "id": "proof-2.1-s01-subdivide",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Choose a subdivision subordinate to the cover",
   "subject": [
     {
       "location": {

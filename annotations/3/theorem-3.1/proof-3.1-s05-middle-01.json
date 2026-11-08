@@ -2,7 +2,6 @@
   "id": "proof-3.1-s05-middle",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "The middle loop lies in the generated subgroup",
   "subject": [
     {
       "location": {

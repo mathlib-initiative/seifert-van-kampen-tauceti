@@ -2,7 +2,6 @@
   "id": "proof-4.4-s03-pointwise",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Pass from pointwise equality to equality of homomorphisms",
   "subject": [
     {
       "location": {

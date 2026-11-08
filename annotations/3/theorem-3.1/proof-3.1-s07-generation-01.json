@@ -2,7 +2,6 @@
   "id": "proof-3.1-s07-generation",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Invoke generation of the fundamental groupoid",
   "subject": [
     {
       "location": {

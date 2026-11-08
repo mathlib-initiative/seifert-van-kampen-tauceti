@@ -2,7 +2,6 @@
   "id": "proof-2.2-s06-grid",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Choose a fine grid for the homotopy",
   "subject": [
     {
       "location": {

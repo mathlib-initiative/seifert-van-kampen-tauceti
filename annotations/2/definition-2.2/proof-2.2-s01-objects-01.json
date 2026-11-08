@@ -2,7 +2,6 @@
   "id": "proof-2.2-s01-objects",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "The object value is independent of the cover member",
   "subject": [
     {
       "location": {

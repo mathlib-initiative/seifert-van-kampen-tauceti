@@ -2,7 +2,6 @@
   "id": "proof-4.5-s02-generation",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Invoke generation and conclude that the homomorphisms agree",
   "subject": [
     {
       "location": {

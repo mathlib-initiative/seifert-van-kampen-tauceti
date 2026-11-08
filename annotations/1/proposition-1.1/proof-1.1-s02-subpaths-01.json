@@ -2,7 +2,6 @@
   "id": "proof-1.1-s02-subpaths",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Pass from parameter intervals to subpaths",
   "subject": [
     {
       "location": {

@@ -2,7 +2,6 @@
   "id": "proof-3.1-s06-product",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Multiply the three local loop classes",
   "subject": [
     {
       "location": {

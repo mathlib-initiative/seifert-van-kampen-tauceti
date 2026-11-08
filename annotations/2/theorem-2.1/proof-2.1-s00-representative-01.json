@@ -2,7 +2,6 @@
   "id": "proof-2.1-s00-representative",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Choose a representative path",
   "subject": [
     {
       "location": {

@@ -2,7 +2,6 @@
   "id": "proof-2.2-s05-refinement",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Compare equal subdivisions through their common refinement",
   "subject": [
     {
       "location": {

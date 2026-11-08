@@ -2,7 +2,6 @@
   "id": "proof-2.1-s02-image",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Each piece lies in an image subgroupoid",
   "subject": [
     {
       "location": {

@@ -2,7 +2,6 @@
   "id": "proof-4.3-s02-local",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Invoke the functor construction from a homomorphism",
   "subject": [
     {
       "location": {

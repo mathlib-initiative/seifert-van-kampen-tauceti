@@ -2,7 +2,6 @@
   "id": "proof-4.3-s05-endomorphisms",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Restrict the glued functor to loops at the basepoint",
   "subject": [
     {
       "location": {

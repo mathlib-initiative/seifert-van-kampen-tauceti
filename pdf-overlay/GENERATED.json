@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "0beda3585b4d21bfa5f54022f7c848afb09ab026"
+    "commit": "faf671ba0d9faf0f25dde809d3a81b9ba5bb86c8"
   },
   "format": {
     "package": "literature-links",
@@ -134,18 +134,18 @@
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "ac0bc14fbae82a3031ecbb16b88b6f014ee232cf5a9d2030382c0cf590574175"
+      "sha256": "d936718e03fe8680ecf71de9951227e7b3e6ad6e66d7a97ce6c4897d28aa9250"
     }
   ],
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "2504d0074f60c7b17f691e546400ad27b7d6e51c6cc80887cb12c5692be48179"
+      "sha256": "a09ea3e1240f81638dc54b65821e0988b668d0bf61ef10079373c89e91154cd0"
     },
     "count": 90,
     "directory": "annotations",
     "export": {
-      "commit": "f3ebf4b07894bec0f11dfbbd3280fec7394eab15",
+      "commit": "0d87ed338d16c02cc46298bf8a9e1d5d8a0dcd0a",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -217,9 +217,9 @@
       },
       {
         "path": "tools/proof_steps.py",
-        "sha256": "391de48ffe62c257bd88c847c005a4dda10f033a5a083398b44aaff8d1575177"
+        "sha256": "79a9111605484c32a20ecccc06ca9676c661b522c6ac9b41e4d3e452332c7b53"
       }
     ],
-    "manifest_sha256": "59a7d1083be3d4723f71cafa7223267707f82d83a848caa3b9d563a722a4830a"
+    "manifest_sha256": "9897390b63d660b91bfa035cbef94dc1d09456cf98ff01e06fa88470ade3f3c8"
   }
 }

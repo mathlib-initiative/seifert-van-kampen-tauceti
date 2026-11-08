@@ -2,7 +2,6 @@
   "id": "proof-2.2-s11-quotient",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Descend the path value to homotopy classes",
   "subject": [
     {
       "location": {

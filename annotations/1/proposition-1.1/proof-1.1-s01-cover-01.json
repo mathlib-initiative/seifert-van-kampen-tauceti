@@ -2,7 +2,6 @@
   "id": "proof-1.1-s01-cover",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "The preimage interiors form an open cover",
   "subject": [
     {
       "location": {

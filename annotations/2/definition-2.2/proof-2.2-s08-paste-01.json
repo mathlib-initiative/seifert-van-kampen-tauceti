@@ -2,7 +2,6 @@
   "id": "proof-2.2-s08-paste",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Paste the commuting squares across one row",
   "subject": [
     {
       "location": {

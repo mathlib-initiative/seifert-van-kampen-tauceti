@@ -2,7 +2,6 @@
   "id": "proof-4.4-s04-right",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Apply the right restriction in the same way",
   "subject": [
     {
       "location": {

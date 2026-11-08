@@ -2,7 +2,6 @@
   "id": "proof-4.3-s03-compatibility",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Apply compatibility to the transported loop in the intersection",
   "subject": [
     {
       "location": {

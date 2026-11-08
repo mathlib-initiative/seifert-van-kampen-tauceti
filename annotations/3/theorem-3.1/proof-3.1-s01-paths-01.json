@@ -2,7 +2,6 @@
   "id": "proof-3.1-s01-paths",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Choose paths from the basepoint",
   "subject": [
     {
       "location": {

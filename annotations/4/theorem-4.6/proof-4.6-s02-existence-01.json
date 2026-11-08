@@ -2,7 +2,6 @@
   "id": "proof-4.6-s02-existence",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Construct a map for any compatible pair",
   "subject": [
     {
       "location": {

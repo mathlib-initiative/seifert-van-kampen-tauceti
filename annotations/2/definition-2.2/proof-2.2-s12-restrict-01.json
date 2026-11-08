@@ -2,7 +2,6 @@
   "id": "proof-2.2-s12-restrict",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Collapse the subdivision inside a single cover member",
   "subject": [
     {
       "location": {

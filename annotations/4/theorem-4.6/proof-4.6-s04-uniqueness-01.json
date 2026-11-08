@@ -2,7 +2,6 @@
   "id": "proof-4.6-s04-uniqueness",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Invoke uniqueness for the mediating homomorphism",
   "subject": [
     {
       "location": {

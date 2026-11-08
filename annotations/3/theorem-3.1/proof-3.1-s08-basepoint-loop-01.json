@@ -2,7 +2,6 @@
   "id": "proof-3.1-s08-basepoint-loop",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "The chosen path at the basepoint belongs to the subgroup",
   "subject": [
     {
       "location": {

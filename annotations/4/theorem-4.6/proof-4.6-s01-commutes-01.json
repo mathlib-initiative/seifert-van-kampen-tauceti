@@ -2,7 +2,6 @@
   "id": "proof-4.6-s01-commutes",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "The two inclusions give the same loop class",
   "subject": [
     {
       "location": {

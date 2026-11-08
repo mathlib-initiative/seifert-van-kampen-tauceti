@@ -2,7 +2,6 @@
   "id": "proof-2.2-s07-cell",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "The two routes around one cell have the same value",
   "subject": [
     {
       "location": {

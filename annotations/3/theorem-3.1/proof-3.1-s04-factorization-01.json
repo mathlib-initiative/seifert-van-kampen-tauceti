@@ -2,7 +2,6 @@
   "id": "proof-3.1-s04-factorization",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Factor the transported loop into three local loops",
   "subject": [
     {
       "location": {

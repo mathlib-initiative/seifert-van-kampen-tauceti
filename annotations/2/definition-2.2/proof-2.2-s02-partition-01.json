@@ -2,7 +2,6 @@
   "id": "proof-2.2-s02-partition",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Choose a sufficiently fine equal subdivision",
   "subject": [
     {
       "location": {

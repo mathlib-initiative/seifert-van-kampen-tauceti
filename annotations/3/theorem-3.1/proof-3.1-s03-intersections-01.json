@@ -2,7 +2,6 @@
   "id": "proof-3.1-s03-intersections",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Choose the two paths in pairwise intersections",
   "subject": [
     {
       "location": {

@@ -2,7 +2,6 @@
   "id": "proof-2.2-s03-indices",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Compatibility makes the local path value independent of the index",
   "subject": [
     {
       "location": {

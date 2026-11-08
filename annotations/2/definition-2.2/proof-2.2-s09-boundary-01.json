@@ -2,7 +2,6 @@
   "id": "proof-2.2-s09-boundary",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Fixed endpoints make the boundary arrows identities",
   "subject": [
     {
       "location": {
