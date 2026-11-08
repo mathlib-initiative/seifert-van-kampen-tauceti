@@ -3,10 +3,9 @@ with inclusion \fcnotion[Inclusion map]{ContinuousMap.subtypeVal}{$\incl{S}:S\lo
 For a \fcnotion{Path}{path} $\gamma$ in $X$, write
 \fcnotion[Path concatenation]{Path.trans}{$\gamma\ptrans\delta$} for its concatenation
 with a composable path $\delta$.
-For $r,s\in[0,1]$, the subpath
-\fcnotion[Subpath $\gamma_{[r,s]}$]{Path.subpath}{$\subpath{\gamma}{r}{s}$} traverses $\gamma$ with
-its parameter running from $r$ to $s$:
-$\subpath{\gamma}{r}{s}(t)=\gamma((1-t)r+ts)$ for $t\in[0,1]$.
+For $r,s\in[0,1]$, let
+\fcnotion[Subpath $\gamma_{[r,s]}$]{Path.subpath}{$\subpath{\gamma}{r}{s}(t)=\gamma((1-t)r+ts)$}
+be the subpath from $\gamma(r)$ to $\gamma(s)$.
 Write \fcnotion[Homotopy class]{Path.Homotopic.Quotient}{$\pcls{\gamma}$} for its homotopy
 class, with \fcnotion[Composition of path classes]{Path.Homotopic.Quotient.trans}{composition} again
 denoted $\ptrans$.
