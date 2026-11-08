@@ -297,8 +297,8 @@
       "id": "2.2-s09-boundary",
       "item": "2.2",
       "label": "Step",
-      "title": "Cancel the constant endpoint boundary paths",
-      "span": "inline",
+      "title": "Fixed endpoints make the boundary arrows identities",
+      "span": "display",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
@@ -307,7 +307,7 @@
             686
           ],
           "sha256": "fcd6d0895bb0797fb7f3500649e6cc54673f56025d8c3a1ec57f5932bf89e118",
-          "title": "Cancel the constant endpoint boundary paths",
+          "title": "Fixed endpoints make the boundary arrows identities",
           "role": "key"
         }
       ]
@@ -317,7 +317,7 @@
       "item": "2.2",
       "label": "Step",
       "title": "Repeat the row equality throughout the homotopy",
-      "span": "inline",
+      "span": "display",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",

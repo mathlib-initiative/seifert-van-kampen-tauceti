@@ -225,3 +225,12 @@ a positive integer refining each piece. Introduce intermediate objects by their 
 separate deductions when they have different proof-step links. Keep tactic
 syntax, helper names, coercions and other Lean bookkeeping out of the printed
 proofs. Preserve familiar mathematical notation where it reads more naturally.
+
+For the homotopy-invariance argument in 2.2, write the horizontal paths as
+$\gamma_j(t)=H(j/N,t)$. Show a strip of commuting squares in $\mathcal D$,
+with horizontal composites $L_N(\gamma_j)$ and $L_N(\gamma_{j+1})$.
+Use displayed equalities to pass from fixed endpoint arrows to equality of
+adjacent rows, then from the first row to the last. Keep the cell-containment
+argument implicit in the compactness result; do not expand routine metric
+bookkeeping. Link the cell relation, pasting step and displayed deductions
+separately to their Lean ranges.
