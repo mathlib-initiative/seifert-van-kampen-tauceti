@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.130391, 0.104167, 0.739218, 0.0363]
+        "page": 2,
+        "rect": [0.130391, 0.862847, 0.739218, 0.036774]
       },
       "title": "Repeat the row equality throughout the homotopy",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.454073, 0.104167, 0.869609, 0.104167, 0.869609, 0.123422, 0.454073, 0.123422],
-            [0.130391, 0.123422, 0.284334, 0.123422, 0.284334, 0.140467, 0.130391, 0.140467]
+            [0.454073, 0.862847, 0.869609, 0.862847, 0.869609, 0.880366, 0.454073, 0.880366],
+            [0.130391, 0.880366, 0.284334, 0.880366, 0.284334, 0.899621, 0.130391, 0.899621]
           ],
-          "region": "proof-2.2-s10-rows@p003"
+          "region": "proof-2.2-s10-rows@p002"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [2],
+        "printed": [2]
       },
       "provenance": {
         "actor": "agent",

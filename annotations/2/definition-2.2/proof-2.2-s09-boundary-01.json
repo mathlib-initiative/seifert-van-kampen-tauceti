@@ -7,31 +7,17 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.130391, 0.866162, 0.739217, 0.035669]
+        "rect": [0.130391, 0.828914, 0.739217, 0.051452]
       },
       "title": "Cancel the constant endpoint boundary paths",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.757174, 0.866162, 0.869608, 0.866162, 0.869608, 0.883207, 0.757174, 0.883207],
-            [0.130391, 0.883207, 0.869608, 0.883207, 0.869608, 0.901831, 0.130391, 0.901831]
+            [0.757174, 0.828914, 0.869608, 0.828914, 0.869608, 0.845959, 0.757174, 0.845959],
+            [0.130391, 0.84596, 0.869608, 0.84596, 0.869608, 0.862848, 0.130391, 0.862848],
+            [0.130391, 0.862847, 0.445224, 0.862847, 0.445224, 0.880366, 0.130391, 0.880366]
           ],
           "region": "proof-2.2-s09-boundary@p002"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 3,
-        "rect": [0.130391, 0.104167, 0.314833, 0.019255]
-      },
-      "title": "Cancel the constant endpoint boundary paths",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "quads": [
-            [0.130391, 0.104167, 0.445224, 0.104167, 0.445224, 0.123422, 0.130391, 0.123422]
-          ],
-          "region": "proof-2.2-s09-boundary@p003"
         }
       }
     }
@@ -69,8 +55,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2, 3],
-        "printed": [2, 3]
+        "physical": [2],
+        "printed": [2]
       },
       "provenance": {
         "actor": "agent",
