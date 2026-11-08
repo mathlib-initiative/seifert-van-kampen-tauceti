@@ -10,11 +10,14 @@ $V_j$ contains \fcnotion{Metric.ball}{$\ball{z}{\rho}$}.
 Let $X$ be a \fcnotion{TopologicalSpace}{topological space} and $S\subseteq X$,
 with inclusion \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}:S\longrightarrow X$}.
 For a \fcnotion{Path}{path} $\gamma$ in $X$, write
-\fcnotion{Path.codRestrict}{$\codres{\gamma}{S}$} when its image lies in $S$,
-\fcnotion{Path.trans}{$\gamma\ptrans\delta$} for concatenation with a
-composable path $\delta$, and
-\fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} for its linearly parametrized subpath from
-$r$ to $s$, with $r,s\in[0,1]$.
+\fcnotion{Path.codRestrict}{$\codres{\gamma}{S}$} for the same path regarded
+as a path in $S$ whenever its image lies in $S$.
+Write \fcnotion{Path.trans}{$\gamma\ptrans\delta$} for its concatenation
+with a composable path $\delta$.
+For $r,s\in[0,1]$, the subpath
+\fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} traverses $\gamma$ with
+its parameter running from $r$ to $s$:
+$\subpath{\gamma}{r}{s}(t)=\gamma((1-t)r+ts)$ for $t\in[0,1]$.
 Write \fcnotion{Path.Homotopic.Quotient}{$\pcls{\gamma}$} for its homotopy
 class, with \fcnotion{Path.Homotopic.Quotient.trans}{composition} again
 denoted $\ptrans$.

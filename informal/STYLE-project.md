@@ -77,6 +77,10 @@ mathematics, such as the nonemptiness of path-connected subsets.
 Do not retain introductory prose solely to create a notion annotation.
 Treat paths in a subspace as familiar: introduce $\gamma^S$ only as notation,
 without a numbered definition or an explanation of its pointwise construction.
+Say explicitly that this is the same path regarded as a path in $S$.
+Define subpath parametrization by its affine parameter formula. Describe the
+action of the induced fundamental-groupoid functor on points and path classes.
+Check adjacent section openings for duplicate introductions of inclusion notation.
 
 ## Standing hypotheses
 
