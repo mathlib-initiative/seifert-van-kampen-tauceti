@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "8ca1c9a9bba330446060884136064a98f8206065",
- "pdf_sha256": "986bb8b9a0d1533486cf844f3ad46724034f48026c690b15ba8e0e395da1b3d8",
+ "source_commit": "f889cc48ddecc6417611c72e8967566188ad22e4",
+ "pdf_sha256": "a7de80fd0210700fb7f207759695a1961d9d144a3f0a25cc2fcc98043abdf73a",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -71,7 +71,7 @@
     "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
    ],
    "boxes": [
-    [1, 0.130391, 0.863952, 0.739217, 0.039141]
+    [1, 0.130391, 0.863952, 0.739217, 0.03851]
    ]
   },
   {
@@ -88,7 +88,7 @@
     "TauCeti.FundamentalGroupoid.eq_glue"
    ],
    "boxes": [
-    [2, 0.130391, 0.286932, 0.739217, 0.18971]
+    [2, 0.130391, 0.284091, 0.739217, 0.18971]
    ]
   },
   {
