@@ -8,7 +8,7 @@
         "page": 1,
         "rect": [0.590232, 0.329545, 0.106975, 0.018466]
       },
-      "title": "ι_{S} : S −→ X",
+      "title": "Inclusion map",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:ContinuousMap.subtypeVal@p001"

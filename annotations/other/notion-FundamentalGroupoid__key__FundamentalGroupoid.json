@@ -8,7 +8,7 @@
         "page": 1,
         "rect": [0.457713, 0.769255, 0.053583, 0.019255]
       },
-      "title": "Π₁(X)",
+      "title": "Fundamental groupoid $\\Pi_1(X)$",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:FundamentalGroupoid@p001"

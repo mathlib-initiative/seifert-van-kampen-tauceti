@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "d40657e1a3f13f5d16a7bb8e73a97f136c423f61"
+    "commit": "f33568d75e63db797344eb109055841d633654a7"
   },
   "format": {
     "package": "literature-links",
@@ -81,6 +81,18 @@
       "sha256": "ea285ea7084dbbc714cbdfa7e976227105586be768671e2e285dd8577407f0f8"
     },
     {
+      "path": "vendor/katex/LICENSE",
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "path": "vendor/katex/README.md",
+      "sha256": "2e2b60e1f93a18e1881be2e213ae36a92302dee75712536cecbb226a8be13390"
+    },
+    {
+      "path": "vendor/katex/katex.mjs",
+      "sha256": "5f0c3749f8b28ce1a63b68de34d3950bb4aa1a9e0130865e4b09ecc9a250c8b7"
+    },
+    {
       "path": "vendor/pdfjs/LICENSE",
       "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
     },
@@ -105,27 +117,31 @@
       "sha256": "647f943a47cb7190f8aa302e0b89ecad726fab773e3db7cea692d1ea12e4471a"
     },
     {
+      "path": "viewer/viewer-math.js",
+      "sha256": "ef0fc8e4283e134628ab94a1bf9ad17eea0c04bf8acdf91eabba5753ffc73266"
+    },
+    {
       "path": "viewer/viewer-search.js",
       "sha256": "ce9c6a0dafef98986f26545c1bfec467dc41cb8bcdebcd7b41be64b62dad028c"
     },
     {
       "path": "viewer/viewer.css",
-      "sha256": "bfa1132a8a85d858dc92f74038f5bbe1a75ad0f881263cf077d3525be7c52f60"
+      "sha256": "8d2e9dc02fe0767df725d9afb9a21ff5b6d01d184dcc9a52c7d8edef87507c17"
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "455e71901564107c567858fd3b4de67f86201877d3c933d49ebf4afc638f09db"
+      "sha256": "216354b9615229d8d298d76c7d580d0794fc76b1005959b40a162fa7c3a11dd9"
     }
   ],
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "86a269b4559f0e726ae1e054ccf5d0f421a9639b829e1bcaa7f736818b6d245a"
+      "sha256": "af7236f5e8dd2f3f5344dcf062b8b8c49004c9292386b38173e6163bddce8d8f"
     },
     "count": 94,
     "directory": "annotations",
     "export": {
-      "commit": "32f114ad164ee6a62e89475dc40f1d6a9acea7d6",
+      "commit": "ed4d82d6e4da4e74380df486044056ba85053323",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -141,7 +157,7 @@
       },
       {
         "path": "informal/fcmarkers.sty",
-        "sha256": "5afdeed53b3a3278471065b46fc2ce06a28989f07a16d7fd27e00b856827f551"
+        "sha256": "09cad45b9349de1fbb5ccf82c1ddf05e351ffec1e79f5dd25e7a4410b683b963"
       },
       {
         "path": "informal/informalize.json",
@@ -157,7 +173,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "45fb04ddd0368e1ca1b17eda7404d26de5898316868db7d9bbb08c340e10e746"
+        "sha256": "597733d67dbc39d37182d44aeea04012ba771994a493c041812afe9e0654f032"
       },
       {
         "path": "informal/notation.sty",
@@ -177,15 +193,15 @@
       },
       {
         "path": "informal/sections/01-paths-and-subdivisions.tex",
-        "sha256": "922f244290ccf580e57e63aed334e0305f3b0213caa6001b1abedc2d6ddc084c"
+        "sha256": "76977d0fa7cfba9cfd236c4fcce8c93de3f6084a83c8f50015d3268271bf9c09"
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "a156e5884efdacc5e5471865cc541a4a31ddca89507a8382d497c9afafd7c182"
+        "sha256": "4290d1dc020e70ae6f4b54594e5d86619f332ce561c0556f57fbb3064796360f"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
-        "sha256": "fea35450e912241644c23ffad0d4797c846d40e00ac2c37b13103ccf15e31b0c"
+        "sha256": "c1a4a0cce2114bdb258d6842a9c76a7bd7ecfe38b0cc280b8bae1876013c4a52"
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
@@ -200,6 +216,6 @@
         "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "182effc17f4b5f64a271d50c8d0e74a805749130158ddce78f91bb66d5469fc2"
+    "manifest_sha256": "72888e9be7951f2a9a0816fdbb3213ac270ea7ced54a1a7e75b6d57696512f98"
   }
 }

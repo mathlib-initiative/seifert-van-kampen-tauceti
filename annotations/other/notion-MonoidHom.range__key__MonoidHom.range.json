@@ -8,7 +8,7 @@
         "page": 3,
         "rect": [0.767829, 0.584754, 0.096878, 0.017519]
       },
-      "title": "im π₁(ι_{Uᵢ}, x)",
+      "title": "Image subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:MonoidHom.range@p003"

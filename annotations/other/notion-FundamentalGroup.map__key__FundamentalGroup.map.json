@@ -8,7 +8,7 @@
         "page": 3,
         "rect": [0.332412, 0.52762, 0.266211, 0.017835]
       },
-      "title": "π₁(f, x) : π₁(X, x) −→ π₁(Y, f (x))",
+      "title": "Induced homomorphism $\\pi_1(f,x)$",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:FundamentalGroup.map@p003"

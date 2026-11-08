@@ -8,7 +8,7 @@
         "page": 1,
         "rect": [0.520406, 0.698074, 0.093162, 0.019729]
       },
-      "title": "K ∩ B(z, ρ)",
+      "title": "Relative metric ball",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Metric.ball@p001"

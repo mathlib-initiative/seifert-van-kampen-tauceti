@@ -8,7 +8,7 @@
         "page": 1,
         "rect": [0.178863, 0.348011, 0.034697, 0.018782]
       },
-      "title": "γ · δ",
+      "title": "Path concatenation",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Path.trans@p001"

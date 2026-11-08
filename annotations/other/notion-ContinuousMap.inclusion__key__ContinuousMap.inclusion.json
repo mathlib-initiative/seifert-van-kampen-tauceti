@@ -8,7 +8,7 @@
         "page": 1,
         "rect": [0.578314, 0.805556, 0.110096, 0.017519]
       },
-      "title": "ι_{S,T} : S −→ T",
+      "title": "Inclusion between subspaces",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:ContinuousMap.inclusion@p001"

@@ -8,7 +8,7 @@
         "page": 1,
         "rect": [0.431227, 0.384943, 0.096261, 0.018782]
       },
-      "title": "composition",
+      "title": "Composition of path classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Path.Homotopic.Quotient.trans@p001"

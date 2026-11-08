@@ -8,7 +8,7 @@
         "page": 1,
         "rect": [0.415758, 0.78851, 0.203369, 0.017045]
       },
-      "title": "Π₁(f) : Π₁(X) −→ Π₁(Y )",
+      "title": "Induced functor $\\Pi_1(f)$",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:FundamentalGroupoid.map@p001"
