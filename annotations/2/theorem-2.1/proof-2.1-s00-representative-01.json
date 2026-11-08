@@ -1,0 +1,66 @@
+{
+  "id": "proof-2.1-s00-representative",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Choose a representative path",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.511261, 0.849116, 0.257045, 0.017361]
+      },
+      "title": "Choose a representative path",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.511261, 0.849116, 0.768306, 0.849116, 0.768306, 0.866477, 0.511261, 0.866477]
+          ],
+          "region": "proof-2.1-s00-representative@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [119, 119],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
+      },
+      "title": "Choose a representative path",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.1-s00-representative-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L119-L119",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 119,
+            "text": "  induction f using Path.Homotopic.Quotient.ind with | mk γ =>"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}
