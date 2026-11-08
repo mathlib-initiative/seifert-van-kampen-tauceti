@@ -1,0 +1,36 @@
+{
+  "id": "definition-2.2",
+  "kind": "definition",
+  "relation": "exactMatch",
+  "subject": {
+    "location": {
+      "page": 2,
+      "rect": [0.130391, 0.286932, 0.739217, 0.18971]
+    },
+    "title": "Definition 2.2 (The gluing functor)",
+    "extensions": {
+      "org.mathlib-initiative.formal-companion.overlay": {
+        "region": "definition-2.2@p002"
+      }
+    }
+  },
+  "object": {
+    "uri": "https://github.com/TauCetiProject/TauCeti",
+    "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+    "extensions": {
+      "org.mathlib-initiative.formal-companion.overlay": {
+        "destination": {
+          "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean"
+        }
+      }
+    }
+  },
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      }
+    }
+  }
+}

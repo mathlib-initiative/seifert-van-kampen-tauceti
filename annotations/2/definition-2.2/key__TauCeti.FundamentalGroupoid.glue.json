@@ -1,0 +1,25 @@
+{
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.FundamentalGroupoid.glue",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.FundamentalGroupoid.glue",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "L702"
+          },
+          "snippet": {
+            "line": 702,
+            "text": "def glue : _root_.FundamentalGroupoid X ⥤ D where\n  obj x := glueObj hU F x.as\n  map {x y} := Quotient.lift (lift hU F hF (x := x.as) (y := y.as))\n    fun _ _ h ↦ lift_eq_of_homotopy hU F hF h.some\n  map_id x := lift_refl hU F hF x.as\n  map_comp := by\n    rintro _ _ _ ⟨γ⟩ ⟨δ⟩\n    exact lift_trans hU F hF γ δ"
+          }
+        }
+      }
+    }
+  ]
+}

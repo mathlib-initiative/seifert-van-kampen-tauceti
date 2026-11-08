@@ -1,0 +1,25 @@
+{
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L712"
+          },
+          "snippet": {
+            "line": 712,
+            "text": "@[simp] theorem map_subtypeVal_comp_glue (i : ι) :\n    map (ContinuousMap.subtypeVal (U i)) ⋙ glue hU F hF = F i := by"
+          }
+        }
+      }
+    }
+  ]
+}

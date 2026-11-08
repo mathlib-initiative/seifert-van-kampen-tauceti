@@ -1,0 +1,25 @@
+{
+  "object": [
+    {
+      "location": {
+        "declaration": "TauCeti.FundamentalGroupoid.eq_glue",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.FundamentalGroupoid.eq_glue",
+            "kind": "theorem"
+          },
+          "destination": {
+            "fragment": "L736"
+          },
+          "snippet": {
+            "line": 736,
+            "text": "theorem eq_glue {G : _root_.FundamentalGroupoid X ⥤ D}\n    (hG : ∀ i, map (ContinuousMap.subtypeVal (U i)) ⋙ G = F i) : G = glue hU F hF :="
+          }
+        }
+      }
+    }
+  ]
+}
