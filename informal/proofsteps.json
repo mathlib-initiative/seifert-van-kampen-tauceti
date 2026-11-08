@@ -7,6 +7,25 @@
   },
   "steps": [
     {
+      "id": "2.1-s00-representative",
+      "item": "2.1",
+      "label": "Step",
+      "title": "Choose a representative path",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "lines": [
+            119,
+            119
+          ],
+          "sha256": "1f5b5b02a6b93dd020678c78458a817a2fe6b6f27f2b2f0a10b34b3128cde781",
+          "title": "Choose a representative path",
+          "role": "key"
+        }
+      ]
+    },
+    {
       "id": "2.1-s01-subdivide",
       "item": "2.1",
       "label": "Step",
