@@ -28,7 +28,21 @@ def digest(raw):
     return hashlib.sha256(raw).hexdigest()
 
 
-def read_targets(config, library):
+def target_library(config, target):
+    """The target's explicitly pinned dependency, or the exposition's own library."""
+    package = target.get('package')
+    if package is None:
+        return config['library']
+    if package != 'mathlib':
+        raise ValueError('unsupported proof-step package')
+    pin = config.get('dependencies', {}).get(package, {})
+    if (pin.get('url') != 'https://github.com/leanprover-community/mathlib4'
+            or not re.fullmatch(r'[0-9a-f]{40}', pin.get('commit', ''))):
+        raise ValueError('proof-step dependency needs its pinned repository and commit')
+    return pin
+
+
+def read_targets(config, library, packages=None):
     """Refuse stale ranges before generating or replacing any annotation."""
     if config.get('schema') != 'svk-tauceti/proof-steps' or config.get('schema_version') != 2:
         raise ValueError('unsupported proofsteps.json schema')
@@ -48,10 +62,25 @@ def read_targets(config, library):
         targets = []
         for target in step['targets']:
             module = target['module']
-            if not re.fullmatch(r'TauCeti(?:\.[A-Za-z_][A-Za-z0-9_]*)+', module):
+            pin = target_library(config, target)
+            package = target.get('package')
+            prefix = 'Mathlib' if package else 'TauCeti'
+            if not re.fullmatch(prefix + r'(?:\.[A-Za-z_][A-Za-z0-9_]*)+', module):
                 raise ValueError(f'{sid}: invalid module')
+            relative = module.replace('.', '/') + '.lean'
+            source = library
+            if package:
+                if packages is None:
+                    raise ValueError(f'{sid}: dependency range requires --packages-src')
+                source = packages / package
+                head = subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD'], text=True).strip()
+                if head != pin['commit']:
+                    raise ValueError(f'{sid}: dependency checkout is not at its pinned revision')
+                pinned = subprocess.check_output(['git', '-C', str(source), 'show', pin['commit'] + ':' + relative])
+                if (source / relative).read_bytes() != pinned:
+                    raise ValueError(f'{sid}: dependency source differs from its pinned revision')
             bounds = target['lines']
-            raw = (library / (module.replace('.', '/') + '.lean')).read_bytes().splitlines(keepends=True)
+            raw = (source / relative).read_bytes().splitlines(keepends=True)
             if len(bounds) != 2 or any(type(n) is not int for n in bounds) or not 1 <= bounds[0] <= bounds[1] <= len(raw):
                 raise ValueError(f'{sid}: invalid Lean range')
             code = b''.join(raw[bounds[0] - 1:bounds[1]])
@@ -156,13 +185,14 @@ def check_export(root=ROOT):
             location = {'module': target['module'], 'lines': target['lines']}
             if target.get('declaration'):
                 location['declaration'] = target['declaration']
-            if end['location'] != location or end['version'] != config['library']['commit'] or end['uri'] != config['library']['url']:
+            pin = target_library(config, target)
+            if end['location'] != location or end['version'] != pin['commit'] or end['uri'] != pin['url']:
                 raise ValueError(f'{key}: wrong Lean source location')
             code = ext['snippet']['text']
             if digest((code+'\n').encode()) != target['sha256'] or ext['snippet']['line'] != target['lines'][0]:
                 raise ValueError(f'{key}: exported snippet differs from the pinned range')
             first, last = target['lines']
-            href = config['library']['url']+'/blob/'+config['library']['commit']+'/'+target['module'].replace('.', '/')+'.lean'
+            href = pin['url']+'/blob/'+pin['commit']+'/'+target['module'].replace('.', '/')+'.lean'
             if ext['destination']['href'] != href or ext['destination']['fragment'] != f'L{first}-L{last}':
                 raise ValueError(f'{key}: destination does not select the full range')
             if row['relation'] != ('relatedMatch' if target['role']=='support' else 'closeMatch'):
@@ -203,7 +233,13 @@ def main():
     if not all([args.formal_companion, args.library_src, args.build_dir, args.pdf_url]):
         parser.error('export requires --formal-companion, --library-src, --build-dir and --pdf-url')
     config = json.loads((ROOT / CONFIG).read_text())
-    targets = read_targets(config, args.library_src)
+    declarations = json.loads((ROOT / 'informal/declarations.json').read_text())
+    for package, pin in config.get('dependencies', {}).items():
+        known = {(r.get('repo'), r.get('commit')) for r in declarations['references']
+                 if r.get('package') == package}
+        if (pin['url'].removeprefix('https://'), pin['commit']) not in known:
+            raise ValueError('proof-step dependency differs from the pinned source inventory')
+    targets = read_targets(config, args.library_src, args.packages_src)
     informal = json.loads((ROOT / 'informal/informalize.json').read_text())
     if config['library']['commit'] != informal['library']['commit']:
         raise ValueError('proof-step library differs from the exposition')
@@ -272,12 +308,13 @@ def main():
             start, end = target['lines']
             # Dependency cards can make the folder defaults name another library.
             # Each proof range must explicitly retain its own pinned source.
-            obj = {'type': 'lean', 'uri': config['library']['url'],
-                'version': config['library']['commit'],
+            pin = target_library(config, target)
+            obj = {'type': 'lean', 'uri': pin['url'],
+                'version': pin['commit'],
                 'location': loc, 'title': target['title'], 'role': target['role'],
                 'extensions': {NS: {
                     'declaration': {'id': f'{iid}-{n}', 'kind': 'proof_step'},
-                    'destination': {'href': config['library']['url'] + '/blob/' + config['library']['commit'] + '/' + target['module'].replace('.', '/') + '.lean',
+                    'destination': {'href': pin['url'] + '/blob/' + pin['commit'] + '/' + target['module'].replace('.', '/') + '.lean',
                                     'fragment': f'L{start}-L{end}', 'resolution': 'exact'},
                     'snippet': {'line': start, 'text': code}}}}
             record = {'id': iid, 'kind': 'proof_step',

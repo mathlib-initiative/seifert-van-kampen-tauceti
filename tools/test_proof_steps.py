@@ -4,6 +4,7 @@ import importlib.util
 import json
 from pathlib import Path
 import tempfile
+import subprocess
 import unittest
 
 spec = importlib.util.spec_from_file_location('proof_steps', Path(__file__).with_name('proof_steps.py'))
@@ -79,6 +80,60 @@ class RangeValidation(unittest.TestCase):
         step=self.config['steps'][0]
         step['targets'].append(copy.deepcopy(step['targets'][0]))
         with self.assertRaisesRegex(ValueError, 'split steps'):
+            self.check()
+
+
+class DependencyRangeValidation(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.packages = self.root / 'packages'
+        self.repo = self.packages / 'mathlib'
+        self.source = self.repo / 'Mathlib/Example.lean'
+        self.source.parent.mkdir(parents=True)
+        self.source.write_text('theorem sample : True := by\n  trivial\n')
+        subprocess.run(['git', 'init', '-q', str(self.repo)], check=True)
+        subprocess.run(['git', '-C', str(self.repo), 'add', 'Mathlib/Example.lean'], check=True)
+        subprocess.run(['git', '-C', str(self.repo), '-c', 'user.name=Test', '-c',
+                        'user.email=test@example.invalid', '-c', 'commit.gpgsign=false',
+                        'commit', '-qm', 'fixture'], check=True)
+        commit = subprocess.check_output(['git', '-C', str(self.repo), 'rev-parse', 'HEAD'], text=True).strip()
+        self.config = {'schema': 'svk-tauceti/proof-steps', 'schema_version': 2,
+            'library': {'commit': 'a'*40}, 'dependencies': {'mathlib': {
+                'url': 'https://github.com/leanprover-community/mathlib4', 'commit': commit}},
+            'steps': [{'id': '1.1-test', 'span': 'inline', 'targets': [{
+                'package': 'mathlib', 'module': 'Mathlib.Example', 'lines': [2, 2],
+                'sha256': hashlib.sha256(b'  trivial\n').hexdigest(), 'role': 'key'}]}]}
+
+    def check(self):
+        return proof_steps.read_targets(self.config, self.root, self.packages)
+
+    def test_exact_dependency_range(self):
+        self.assertEqual(self.check()['1.1-test'][0][1], '  trivial')
+
+    def test_wrong_dependency_revision(self):
+        self.config['dependencies']['mathlib']['commit'] = 'b'*40
+        with self.assertRaisesRegex(ValueError, 'pinned revision'):
+            self.check()
+
+    def test_edited_dependency_even_outside_snippet(self):
+        self.source.write_text('theorem another : True := by\n  trivial\n')
+        with self.assertRaisesRegex(ValueError, 'differs from its pinned revision'):
+            self.check()
+
+    def test_missing_packages_directory(self):
+        with self.assertRaisesRegex(ValueError, 'packages-src'):
+            proof_steps.read_targets(self.config, self.root)
+
+    def test_unknown_package_and_wrong_module(self):
+        target = self.config['steps'][0]['targets'][0]
+        target['package'] = '../escape'
+        with self.assertRaisesRegex(ValueError, 'unsupported proof-step package'):
+            self.check()
+        target['package'] = 'mathlib'
+        target['module'] = 'TauCeti.Example'
+        with self.assertRaisesRegex(ValueError, 'invalid module'):
             self.check()
 
 

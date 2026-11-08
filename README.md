@@ -76,6 +76,13 @@ python3 pdf-overlay/tools/serve.py --build
 ```
 
 In the viewer, click a marked sentence or equation to open its corresponding Lean lines.
+Proof steps may also point into the pinned Mathlib dependency: their target names
+`package: mathlib` and the matching pin is recorded in `proofsteps.json`.
+The Lebesgue-radius step in Proposition 1.1 links directly to the lemma call
+inside Mathlib's interval-subdivision helper, which TauCeti invokes through
+`exists_monotone_Icc_subset_open_cover_unitInterval`. Dependency ranges are checked
+against the source inventory and the exact committed source before export.
+
 
 Mathlib notion cards also show their definitions and structure fields inline.
 Supply `--packages-src` from the same pinned TauCeti checkout when regenerating

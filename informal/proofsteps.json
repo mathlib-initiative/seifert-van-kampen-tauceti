@@ -26,6 +26,27 @@
       ]
     },
     {
+      "id": "1.1-s01-lebesgue",
+      "item": "1.1",
+      "label": "Step",
+      "title": "Obtain a Lebesgue radius",
+      "span": "inline",
+      "targets": [
+        {
+          "package": "mathlib",
+          "module": "Mathlib.Topology.UnitInterval",
+          "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
+          "lines": [
+            477,
+            477
+          ],
+          "sha256": "daa56e0b366ea941938f5269e85abc4d6be8325f8c2cbd96400e0ccd6766dd49",
+          "title": "Apply the Lebesgue number lemma inside the interval-subdivision helper",
+          "role": "key"
+        }
+      ]
+    },
+    {
       "id": "1.1-s02-subpaths",
       "item": "1.1",
       "label": "Step",
@@ -804,5 +825,11 @@
         }
       ]
     }
-  ]
+  ],
+  "dependencies": {
+    "mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4",
+      "commit": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e"
+    }
+  }
 }
