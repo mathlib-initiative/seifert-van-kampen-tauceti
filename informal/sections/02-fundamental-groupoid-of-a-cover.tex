@@ -115,9 +115,15 @@ Repeating across the strips gives
 If $\gamma$ is constant at $y$, every subdivision piece represents an identity.
 Each $F_i$ sends that identity to $\mathrm{id}_{F(y)}$, so
 $F([\gamma])=L_N(\gamma)=\mathrm{id}_{F(y)}$.
-For composable paths, a common fine $N$
-gives $L(\gamma\ptrans\delta)=L(\delta)\circ L(\gamma)$ using $2N$ pieces,
-so $F$ is a functor.
+
+For composable paths $\gamma$ and $\delta$, choose $N$ fine enough for both.
+Subdividing $\gamma\ptrans\delta$ into $2N$ equal pieces gives first the $N$
+pieces of $\gamma$, then the $N$ pieces of $\delta$. Thus
+\[
+  L(\gamma\ptrans\delta)=L_{2N}(\gamma\ptrans\delta)
+    =L_N(\delta)\circ L_N(\gamma)=L(\delta)\circ L(\gamma).
+\]
+Together with the identity calculation, this proves that $F$ is a functor.
 \proofstep{2.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If $\gamma$ lies in $U_i$, evaluate all pieces using $F_i$;
 their composite is $F_i([\gamma])$.}
 \end{proofpassage}
