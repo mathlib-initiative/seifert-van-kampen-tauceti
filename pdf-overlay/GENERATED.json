@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "03eee7a564eae426fd7fbd672717677377eccbea"
+    "commit": "97379a56ec28db0b970cb9f505da3787db64e7c7"
   },
   "format": {
     "package": "literature-links",
@@ -78,7 +78,7 @@
     },
     {
       "path": "tools/verso_extract.py",
-      "sha256": "c4baa23e12490d771857287222520a59207b8d5fb7494037d1bb158b537bfaed"
+      "sha256": "ea285ea7084dbbc714cbdfa7e976227105586be768671e2e285dd8577407f0f8"
     },
     {
       "path": "vendor/pdfjs/LICENSE",
@@ -102,7 +102,7 @@
     },
     {
       "path": "viewer/viewer-core.js",
-      "sha256": "52fc747da317edd3880a4012b3cd365fcdf74b7fd85c65bdf8e3dbdf59b866f8"
+      "sha256": "203bc200016d58d691b4a43e509d46d3560f602b207db46794525e0525e52cac"
     },
     {
       "path": "viewer/viewer.css",
@@ -110,7 +110,7 @@
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "e4bd7c91b107d619d0c51944280cfb269e7129da8b332e6a4ad150bb2f83f063"
+      "sha256": "1cd837ea009ce067aa62e9b010f84fbbc6062812d97997e3af30681075f8b3e4"
     }
   ],
   "annotations": {
