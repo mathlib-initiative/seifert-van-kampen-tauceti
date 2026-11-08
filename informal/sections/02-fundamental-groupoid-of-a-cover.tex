@@ -112,7 +112,10 @@ Repeating across the strips gives
 }
 
 \proofstep{2.2-s11-quotient}{Descend the path value to homotopy classes}{Define $F([\gamma])=L(\gamma)$; homotopy invariance makes this well defined.}
-Constant paths give identities.  For composable paths, a common fine $N$
+If $\gamma$ is constant at $y$, every subdivision piece represents an identity.
+Each $F_i$ sends that identity to $\mathrm{id}_{F(y)}$, so
+$F([\gamma])=L_N(\gamma)=\mathrm{id}_{F(y)}$.
+For composable paths, a common fine $N$
 gives $L(\gamma\ptrans\delta)=L(\delta)\circ L(\gamma)$ using $2N$ pieces,
 so $F$ is a functor.
 \proofstep{2.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If $\gamma$ lies in $U_i$, evaluate all pieces using $F_i$;
