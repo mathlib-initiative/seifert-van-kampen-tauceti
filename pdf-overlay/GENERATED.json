@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "88d0f72de009fb696b2c5fd5ef45aaccb1c3c7e1"
+    "commit": "d40657e1a3f13f5d16a7bb8e73a97f136c423f61"
   },
   "format": {
     "package": "literature-links",
@@ -102,7 +102,7 @@
     },
     {
       "path": "viewer/viewer-core.js",
-      "sha256": "203bc200016d58d691b4a43e509d46d3560f602b207db46794525e0525e52cac"
+      "sha256": "647f943a47cb7190f8aa302e0b89ecad726fab773e3db7cea692d1ea12e4471a"
     },
     {
       "path": "viewer/viewer-search.js",
@@ -114,18 +114,18 @@
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "87c696a9635cb66da2a9b17e725072c9fe8ceaabf373c1fcea407169a2ef94ff"
+      "sha256": "455e71901564107c567858fd3b4de67f86201877d3c933d49ebf4afc638f09db"
     }
   ],
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "cc78dc054a745a07730afe07195dfdb4967681df5fbe8852047b699d5adf07d5"
+      "sha256": "150f67e08ae339cc8bf1daeb314956c4906410fe891938f577b219aa2aa5ecd9"
     },
     "count": 95,
     "directory": "annotations",
     "export": {
-      "commit": "cbc551cbb111684624c1c41304fa569bb08d2414",
+      "commit": "0bda8c81d64dedb9e751f3d68637dbf027bfae1a",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -157,7 +157,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "a74138147046bd18a61f82be82ece222eea71a4f39b292f8f52c3717965c8037"
+        "sha256": "627159041d2d62a49acc9ea3c177e3b280568e7f01b675efd9d7199c60fd02bb"
       },
       {
         "path": "informal/notation.sty",
@@ -200,6 +200,6 @@
         "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "11200fd683f8d627e5acf1ce5b52f910ae2204429b1f98e124383bc82dace149"
+    "manifest_sha256": "9793950d0afc5d3e43f2079cc8faa4f7b5817191320483d09feba93ac5f7cb6f"
   }
 }

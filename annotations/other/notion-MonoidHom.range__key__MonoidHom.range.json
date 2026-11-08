@@ -7,7 +7,7 @@
         "page": 3,
         "rect": [0.767829, 0.648043, 0.096878, 0.017677]
       },
-      "title": "im π₁(ιUi, x)",
+      "title": "im π₁(ι_{Uᵢ}, x)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:MonoidHom.range@p003"

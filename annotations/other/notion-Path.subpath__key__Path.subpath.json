@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.828376, 0.35101, 0.03633, 0.018624]
       },
-      "title": "γ[r,s]",
+      "title": "γ_{[r,s]}",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Path.subpath@p001"

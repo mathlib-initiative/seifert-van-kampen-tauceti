@@ -7,7 +7,7 @@
         "page": 1,
         "rect": [0.132842, 0.86774, 0.110096, 0.019571]
       },
-      "title": "ιS,T : S −→ T",
+      "title": "ι_{S,T} : S −→ T",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:ContinuousMap.inclusion@p001"

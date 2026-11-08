@@ -7,7 +7,7 @@
         "page": 2,
         "rect": [0.289539, 0.123422, 0.081976, 0.019571]
       },
-      "title": "im Π₁(ιUi)",
+      "title": "im Π₁(ι_{Uᵢ})",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:CategoryTheory.Subgroupoid.im@p002"
