@@ -42,6 +42,23 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "bookkeeping": "Lean first chooses one eligible cover member at each point. The compatibility equality identifies every other local object value with this chosen one.",
+            "conclusion": "For compatible local functors, $F_i(y)$ equals the chosen global object value whenever $y\\in U_i$.",
+            "declaration": "obj_eq",
+            "explanation": "Apply compatibility on an intersection to the object represented by $y$. This compares any eligible index with the index selected in `glueObj`.",
+            "lines": [247, 249],
+            "notation": [
+              {
+                "lean": "glueObj hU F x",
+                "math": "$F(y)$"
+              },
+              {
+                "lean": "hF",
+                "math": "Compatibility on intersections"
+              }
+            ]
+          },
           "snippet": {
             "line": 247,
             "text": "private lemma obj_eq (i : ι) {x : X} (hx : x ∈ U i) :\n    (F i).obj (mk ⟨x, hx⟩) = glueObj hU F x :=\n  Functor.congr_obj (hF i (hU x).choose) (mk ⟨x, hx, mem_of_mem_nhds (hU x).choose_spec⟩)"
@@ -55,6 +72,10 @@
       "locator": {
         "physical": [2],
         "printed": [2]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

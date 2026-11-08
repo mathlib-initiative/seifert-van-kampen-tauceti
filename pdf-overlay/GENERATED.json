@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "825970cf39e612c4681937c2248acbab49b293ff"
+    "commit": "8af07d40395fd303b278c0e86a2f4a5133ee98c7"
   },
   "format": {
     "package": "literature-links",
@@ -114,7 +114,7 @@
     },
     {
       "path": "viewer/viewer-core.js",
-      "sha256": "647f943a47cb7190f8aa302e0b89ecad726fab773e3db7cea692d1ea12e4471a"
+      "sha256": "08695c6a7f3bfdacf05508b13b7e9db55d29a18d709b9b6934d4271abc1378ee"
     },
     {
       "path": "viewer/viewer-layout.js",
@@ -130,22 +130,22 @@
     },
     {
       "path": "viewer/viewer.css",
-      "sha256": "cf2a3989b7d9ca7d4595465d1211350f07091d19e92a909050ac539f09df50b6"
+      "sha256": "7bfbf9d574124f80c588049bca67d8ceb4ffda921057c9fdcd4bd92697f14713"
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "d936718e03fe8680ecf71de9951227e7b3e6ad6e66d7a97ce6c4897d28aa9250"
+      "sha256": "d02c1e842e30461cff91420f817d22dd8fe984063bc5b4c9f8956c16de115224"
     }
   ],
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "00a5937be5d4d74895bd02365cf7c9cf41528b5612f475802b2a80854ee3eb8b"
+      "sha256": "1cb5678a37596c0d161870e315b35c8846a669c0102b436d89750b0f5de553e8"
     },
     "count": 90,
     "directory": "annotations",
     "export": {
-      "commit": "e63c0cc4e60dc622ea65ce7a046140569654c854",
+      "commit": "9ea2af2ee382af7ffc3eaff197f3cf86779710ee",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -177,7 +177,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "4a9442bda99eb2d82a401c7821e2764a8cc20472cd8004c11996c779cb16871f"
+        "sha256": "e564da842e6ae0f3a1e35c0917f3ca330892635a59a2e4d3f45c52c1d0bd5966"
       },
       {
         "path": "informal/notation.sty",
@@ -185,7 +185,7 @@
       },
       {
         "path": "informal/proofsteps.json",
-        "sha256": "536f9503d4df55166d46df0185723d58d78a4fe5c05891dbf8c1ddb92bc4253b"
+        "sha256": "9fd0a0a582a9771c652f0a6df6cd005018488d8ade738b18de5e8d2a6346774e"
       },
       {
         "path": "informal/proofsteps.sty",
@@ -217,9 +217,9 @@
       },
       {
         "path": "tools/proof_steps.py",
-        "sha256": "79a9111605484c32a20ecccc06ca9676c661b522c6ac9b41e4d3e452332c7b53"
+        "sha256": "af12d0730921f9370450e6bc2f13e64b4242c85289c1fbba41c913b15a788e18"
       }
     ],
-    "manifest_sha256": "4d7c14484b67f4a167c6217757586cf03dbb709175f93d59d021000d1cc97d2b"
+    "manifest_sha256": "daf8cc2dc87668e329165dbb53ba0260f25b21b7e9da5e49319433858c452999"
   }
 }

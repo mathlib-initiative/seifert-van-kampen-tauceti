@@ -41,6 +41,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "A homomorphism on the basepoint group determines a functor to the one-object category.",
+            "declaration": "localFunctor",
+            "explanation": "`functorOfEndHom` is the earlier construction using connecting morphisms. Applying it with `connect` produces the local functor used in the descent construction.",
+            "lines": [160, 164]
+          },
           "snippet": {
             "line": 164,
             "text": "  Groupoid.functorOfEndHom _ (connect hST hS hT s₀) f"
@@ -54,6 +60,10 @@
       "locator": {
         "physical": [5],
         "printed": [5]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

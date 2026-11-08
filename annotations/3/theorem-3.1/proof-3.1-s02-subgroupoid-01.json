@@ -43,6 +43,13 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "bookkeeping": "`End.of` regards a groupoid endomorphism at the basepoint as an element of its vertex group. Composition and group multiplication have reversed notation: `f ≫ g` is the product `g * f`.",
+            "conclusion": "The morphisms with transported loop class in $H$ form a subgroupoid $S$.",
+            "declaration": "iSup_range_map_subtypeVal_eq_top",
+            "explanation": "The inverse and composition fields use closure of $H$ under inverses and multiplication. In the composition case, the connecting path at the middle object cancels with its inverse.",
+            "lines": [126, 179]
+          },
           "snippet": {
             "line": 144,
             "text": "  let S : Subgroupoid (_root_.FundamentalGroupoid X) :=\n    { arrows := fun c d ↦ {f | (End.of (τ c ≫ f ≫ inv (τ d)) : _root_.FundamentalGroup X x) ∈ H}\n      inv := fun {c d f} hf ↦ by\n        have h := H.inv_mem hf\n        rw [hinv] at h\n        simpa [Groupoid.inv_eq_inv] using h\n      mul := fun {c d e f} hf {g} hg ↦ by\n        have h := H.mul_mem hg hf\n        -- This constructs `S`, so no membership lemma for its arrow predicate exists yet.\n        -- Expose that predicate on the composite before comparing it with the product in `H`.\n        change (End.of (τ c ≫ (f ≫ g) ≫ inv (τ e)) : _root_.FundamentalGroup X x) ∈ H\n        convert h using 1\n        ext\n        simp }"
@@ -56,6 +63,10 @@
       "locator": {
         "physical": [3],
         "printed": [3]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

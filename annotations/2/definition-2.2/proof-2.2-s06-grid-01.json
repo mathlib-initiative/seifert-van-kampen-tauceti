@@ -42,6 +42,22 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "A sufficiently fine square grid has each cell mapped by $H$ into one $U_i$.",
+            "declaration": "exists_isFine_homotopy",
+            "explanation": "Apply the Lebesgue lemma to the preimages under the homotopy. Lean uses the maximum metric on the square: bounding both coordinate distances bounds the cell diameter.",
+            "lines": [218, 231],
+            "notation": [
+              {
+                "lean": "H",
+                "math": "$H$"
+              },
+              {
+                "lean": "δ",
+                "math": "$\\rho$"
+              }
+            ]
+          },
           "snippet": {
             "line": 221,
             "text": "  obtain ⟨δ, hδ, h⟩ := lebesgue_number_lemma_of_metric_of_mem_nhds isCompact_univ\n    (c := fun i ↦ H ⁻¹' U i) fun ts _ ↦\n      (hU (H ts)).imp fun _ ↦ H.continuous.continuousAt.preimage_mem_nhds\n  obtain ⟨n, hn⟩ := exists_nat_one_div_lt hδ\n  have hN : (1 / ((n + 1 : ℕ) : ℝ)) < δ := by exact_mod_cast hn\n  refine ⟨n + 1, n.succ_ne_zero, fun l k ↦ ?_⟩\n  obtain ⟨i, hi⟩ := h (pt (n + 1) l, pt (n + 1) k) (mem_univ _)\n  refine ⟨i, fun t ht s hs ↦ hi ?_⟩\n  rw [mem_ball, Prod.dist_eq, max_lt_iff, Subtype.dist_eq, Subtype.dist_eq, Real.dist_eq,\n    Real.dist_eq]\n  exact ⟨(abs_sub_pt_le ht).trans_lt hN, (abs_sub_pt_le hs).trans_lt hN⟩"
@@ -55,6 +71,10 @@
       "locator": {
         "physical": [2],
         "printed": [2]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

@@ -2,7 +2,6 @@
   "id": "proof-1.1-s01-lebesgue",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Apply the Lebesgue number lemma inside the interval-subdivision helper",
   "subject": [
     {
       "location": {
@@ -44,6 +43,22 @@
             "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/UnitInterval.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "The open cover of the compact interval has a Lebesgue radius $\\rho>0$.",
+            "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
+            "explanation": "This is inside the Mathlib subdivision helper called by TauCeti. The application of `lebesgue_number_lemma_of_metric` supplies both a positive radius and the ball-containment property.",
+            "lines": [474, 482],
+            "notation": [
+              {
+                "lean": "δ",
+                "math": "$\\rho$"
+              },
+              {
+                "lean": "ball_subset",
+                "math": "Ball containment"
+              }
+            ]
+          },
           "snippet": {
             "line": 477,
             "text": "  obtain ⟨δ, δ_pos, ball_subset⟩ := lebesgue_number_lemma_of_metric isCompact_univ hc₁ hc₂"
@@ -57,6 +72,10 @@
       "locator": {
         "physical": [1],
         "printed": [1]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

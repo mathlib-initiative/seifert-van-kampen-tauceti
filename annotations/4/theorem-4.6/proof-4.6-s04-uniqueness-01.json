@@ -41,6 +41,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "Any other mediator with those restrictions equals the chosen one.",
+            "declaration": "isPushout_fundamentalGroup",
+            "explanation": "`vanKampen_hom_ext` reduces equality to the two restrictions. The candidate mediator and `vanKampenDesc` have the same restrictions, completing the pushout universal property.",
+            "lines": [349, 378]
+          },
           "snippet": {
             "line": 374,
             "text": "  · refine GrpCat.hom_ext (vanKampen_hom_ext hCover hA hB hAB hxA hxB ?_ ?_)\n    · exact (congrArg GrpCat.Hom.hom h₁).trans (vanKampenDesc_comp_map_left hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm\n    · exact (congrArg GrpCat.Hom.hom h₂).trans (vanKampenDesc_comp_map_right hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm"
@@ -54,6 +60,10 @@
       "locator": {
         "physical": [6],
         "printed": [6]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

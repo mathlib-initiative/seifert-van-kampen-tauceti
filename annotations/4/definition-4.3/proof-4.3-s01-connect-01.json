@@ -43,6 +43,22 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "Connecting paths in each larger subspace agree with the chosen paths on the intersection.",
+            "declaration": "connect",
+            "explanation": "For a point in the smaller subspace, `connect` uses its chosen path and includes it in the larger subspace. Otherwise it chooses a path in the larger subspace. Both local constructions use the same smaller-space choice.",
+            "lines": [132, 139],
+            "notation": [
+              {
+                "lean": "S",
+                "math": "The intersection"
+              },
+              {
+                "lean": "T",
+                "math": "Either larger subspace"
+              }
+            ]
+          },
           "snippet": {
             "line": 136,
             "text": "  exact if hz : z.as.1 ∈ S then\n    (FundamentalGroupoid.map (ContinuousMap.inclusion hST)).map\n      (baseHom hS s₀ (FundamentalGroupoid.mk ⟨z.as.1, hz⟩))\n  else baseHom hT _ z"
@@ -56,6 +72,10 @@
       "locator": {
         "physical": [4],
         "printed": [4]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

@@ -2,7 +2,6 @@
   "id": "proof-1.1-s01-segments",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Bound each interval by a ball contained in one cover member",
   "subject": [
     {
       "location": {
@@ -44,6 +43,18 @@
             "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/UnitInterval.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "Each subdivision interval lies in one open-cover member.",
+            "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
+            "explanation": "Choose the cover member containing the ball at the left endpoint. The distance bound is at most $\\rho/2<\\rho$, so the entire interval lies in that ball.",
+            "lines": [474, 482],
+            "notation": [
+              {
+                "lean": "δ",
+                "math": "$\\rho$"
+              }
+            ]
+          },
           "snippet": {
             "line": 481,
             "text": "  obtain ⟨i, hsub⟩ := ball_subset (addNSMul h (δ / 2) n) trivial\n  exact ⟨i, fun t ht ↦ hsub ((abs_sub_addNSMul_le h hδ.le n ht).trans_lt <| half_lt_self δ_pos)⟩"
@@ -57,6 +68,10 @@
       "locator": {
         "physical": [1],
         "printed": [1]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

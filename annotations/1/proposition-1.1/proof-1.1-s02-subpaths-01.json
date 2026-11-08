@@ -42,6 +42,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "Each corresponding subpath has image in some $U_i$.",
+            "declaration": "exists_monotone_range_subpath_subset",
+            "explanation": "The image of a nondecreasing subpath is the image of its parameter interval. The chosen interval lies in the interior of a preimage, hence in the preimage itself.",
+            "lines": [224, 244]
+          },
           "snippet": {
             "line": 237,
             "text": "  obtain ⟨i, hi⟩ := ht_cover k\n  refine ⟨i, ?_⟩\n  rw [range_subpath_of_le _ _ _ (ht_mono (by simp))]\n  rintro _ ⟨s, hs, rfl⟩\n  have hs' : s ∈ γ ⁻¹' U i := interior_subset (hi (by simpa using hs))\n  exact hs'"
@@ -55,6 +61,10 @@
       "locator": {
         "physical": [1],
         "printed": [1]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

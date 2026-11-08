@@ -41,6 +41,27 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "bookkeeping": "A natural transformation encodes the vertical arrows and commuting cell squares. Naturality for the long arrow from the first to the last grid point is the statement that the outside square commutes.",
+            "conclusion": "Composing the cell squares makes the outside square of a row commute.",
+            "declaration": "lift_eq_of_homotopy",
+            "explanation": "`NatTrans.ofSequence` assembles the vertical edge values into a natural transformation between the two horizontal sequences. Its naturality for the entire row is exactly the pasted-square equation; line 681 uses `pathVal_cell` for each small square.",
+            "lines": [661, 694],
+            "notation": [
+              {
+                "lean": "segVal",
+                "math": "A horizontal edge value"
+              },
+              {
+                "lean": "colSeg",
+                "math": "A vertical edge path"
+              },
+              {
+                "lean": "Functor.ofSequence",
+                "math": "Composition along a row"
+              }
+            ]
+          },
           "snippet": {
             "line": 676,
             "text": "      (NatTrans.ofSequence (F := Functor.ofSequence (segVal hU F hF _ (hrow l)))\n        (G := Functor.ofSequence (segVal hU F hF _ (hrow (l + 1))))\n        (fun k ↦ pathVal hU F hF (colSeg H N l k) (hcol l k)) fun k ↦ by\n          obtain ⟨i, hi⟩ := hcell l k\n          rw [Functor.ofSequence_map_homOfLE_succ, Functor.ofSequence_map_homOfLE_succ]\n          exact pathVal_cell hU F hF H N l k i hi _ _ _ _).naturality (homOfLE N.zero_le)"
@@ -54,6 +75,10 @@
       "locator": {
         "physical": [3],
         "printed": [3]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

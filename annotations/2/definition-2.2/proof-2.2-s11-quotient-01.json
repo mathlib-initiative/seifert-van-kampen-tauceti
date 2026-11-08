@@ -41,6 +41,26 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "The assignment $[\\gamma]\\mapsto L(\\gamma)$ is well defined on homotopy classes.",
+            "declaration": "glue",
+            "explanation": "`Quotient.lift` defines the morphism map. Its second argument is `lift_eq_of_homotopy`, the preceding grid argument, which shows the value is independent of the representative.",
+            "lines": [702, 709],
+            "notation": [
+              {
+                "lean": "glue hU F hF",
+                "math": "The global functor $F$"
+              },
+              {
+                "lean": "F i",
+                "math": "The local functors $F_i$"
+              },
+              {
+                "lean": "lift",
+                "math": "$L$"
+              }
+            ]
+          },
           "snippet": {
             "line": 704,
             "text": "  map {x y} := Quotient.lift (lift hU F hF (x := x.as) (y := y.as))\n    fun _ _ h ↦ lift_eq_of_homotopy hU F hF h.some"
@@ -54,6 +74,10 @@
       "locator": {
         "physical": [3],
         "printed": [3]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

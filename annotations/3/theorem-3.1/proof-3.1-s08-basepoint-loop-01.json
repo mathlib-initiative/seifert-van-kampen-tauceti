@@ -42,6 +42,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "The connecting class $\\tau_x$ itself belongs to $H$.",
+            "declaration": "iSup_range_map_subtypeVal_eq_top",
+            "explanation": "At the basepoint the chosen connecting path is a loop in a cover member. The same local-loop membership lemma used earlier therefore applies.",
+            "lines": [126, 179]
+          },
           "snippet": {
             "line": 173,
             "text": "  have hτx : (End.of (τ (mk x)) : _root_.FundamentalGroup X x) ∈ H :=\n    fromPath_mem_iSup_range hx _ (hτ' x)"
@@ -55,6 +61,10 @@
       "locator": {
         "physical": [4],
         "printed": [4]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

@@ -733,10 +733,36 @@ function card(record, end, context) {
       ? recordExt.provenance.confirmed_by_human : null,
     resolution: text(destination?.resolution),
     role: text(end.role),
+    proofContext: proofContext(ext.proof_context, href, end.title),
     snippet,
     target: ours ? cardTarget(end) : null,
     verdict,
   };
+}
+
+/** Optional, authored explanations. Source links stay on the card's already validated URL. */
+function proofContext(value, href, title) {
+  if (!isObject(value) || !text(value.declaration) || !text(value.conclusion)) return null;
+  const lines = lineRange(value.lines);
+  let enclosingHref = null;
+  if (href && lines) {
+    const url = new URL(href);
+    url.hash = `L${lines[0]}-L${lines[1]}`;
+    enclosingHref = url.href;
+  }
+  return {
+    declaration: text(value.declaration), lines, href: enclosingHref,
+    label: text(title) || text(value.conclusion),
+    conclusion: text(value.conclusion), explanation: text(value.explanation),
+    bookkeeping: text(value.bookkeeping),
+    notation: asArray(value.notation).filter(isObject)
+      .map(row => ({ math: text(row.math), lean: text(row.lean) })).filter(row => row.math && row.lean),
+  };
+}
+
+function proofGuide(value) {
+  if (!isObject(value) || !["direct", "helper", "chain"].includes(value.kind)) return null;
+  return { kind: value.kind, summary: text(value.summary) };
 }
 
 /**
@@ -917,6 +943,7 @@ export function buildIndex(files, config, { pageOrigin = "", siteUrl = null } = 
           label: title || itemId,
           locator: locatorText(ext.locator),
           place: null,
+          proofGuide: proofGuide(ext.proof),
           relations: [],
           stepOf: null,
           steps: [],
@@ -1205,6 +1232,17 @@ export function stepParts(item, items) {
  */
 export function stepRelation(item, { minimal = false } = {}) {
   const shown = asArray(item?.relations).filter((relation) => !minimal || relation !== "exactMatch");
+  // The guide describes the correspondence, not a stronger claim of formal equivalence.
+  // Absence and broader/narrower claims must never be hidden by an authored guide.
+  const guide = isStep(item) && item.proofGuide;
+  if (guide && asArray(item.relations).every(r => ["exactMatch", "closeMatch"].includes(r))) {
+    const count = stepCards(item).length;
+    return {
+      word: guide.kind === "chain" ? `${count} linked lemmas`
+        : guide.kind === "helper" ? "Helper lemma" : "Proof excerpt",
+      title: [guide.summary, ...shown.map(r => RELATION_SUMMARIES[r] ?? "")].filter(Boolean).join(" "),
+    };
+  }
   return {
     title: shown.map((relation) => RELATION_SUMMARIES[relation] ?? "").filter(Boolean).join(" "),
     word: shown.map((relation) => RELATION_WORDS[relation] ?? relation).join(", "),

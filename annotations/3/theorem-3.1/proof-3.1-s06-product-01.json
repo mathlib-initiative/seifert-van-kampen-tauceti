@@ -43,6 +43,13 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "bookkeeping": "Lean writes categorical composition in traversal order and group multiplication in the opposite order. This accounts for the order of the arguments to `H.mul_mem`.",
+            "conclusion": "All three factors lie in $H$, hence so does the transported loop.",
+            "declaration": "comp_comp_inv_mem_iSup_range",
+            "explanation": "`comp_inv_mem_iSup_range` handles the outer factors; `hmid` handles the middle one. Two uses of closure under multiplication finish the helper, which is invoked in the generation step at line 166.",
+            "lines": [87, 119]
+          },
           "snippet": {
             "line": 116,
             "text": "  rw [hsplit]\n  -- In `End`, `f ≫ g` is the product `g * f`.\n  exact H.mul_mem (H.mul_mem (comp_inv_mem_iSup_range hx _ _ (hσb'.trans inter_subset_right) hβ)\n    hmid) (comp_inv_mem_iSup_range hx _ _ hα (hσa'.trans inter_subset_left))"
@@ -56,6 +63,10 @@
       "locator": {
         "physical": [4],
         "printed": [4]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

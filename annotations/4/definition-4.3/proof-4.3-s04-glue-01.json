@@ -42,6 +42,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "The two local functors glue to a functor on $\\Pi_1(X)$.",
+            "declaration": "vanKampenDesc",
+            "explanation": "`glueTwo` is the two-set specialization of the gluing construction. Its last argument is the compatibility theorem proved immediately before this definition.",
+            "lines": [226, 239]
+          },
           "snippet": {
             "line": 236,
             "text": "    FundamentalGroupoid.glueTwo hCover\n      (localFunctor inter_subset_left hAB hA (interBase hxA hxB) fA)\n      (localFunctor inter_subset_right hAB hB (interBase hxA hxB) fB)\n      (localFunctor_compatibility hA hB hAB hxA hxB fA fB h))"
@@ -55,6 +61,10 @@
       "locator": {
         "physical": [5],
         "printed": [5]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

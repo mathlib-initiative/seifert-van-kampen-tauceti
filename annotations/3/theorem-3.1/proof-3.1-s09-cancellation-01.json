@@ -41,6 +41,13 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "bookkeeping": "`End.of` and the rewrite `hinv` convert between groupoid composition/inversion and the group operations. The cancellation is the same one displayed in the PDF.",
+            "conclusion": "Cancelling the basepoint transport shows that the original loop class belongs to $H$.",
+            "declaration": "iSup_range_map_subtypeVal_eq_top",
+            "explanation": "Combine the transported loop with the connecting loop and its inverse inside $H$. The final simplification cancels those connecting factors.",
+            "lines": [126, 179]
+          },
           "snippet": {
             "line": 175,
             "text": "  have h := H.mul_mem hτx (H.mul_mem hγ (H.inv_mem hτx))\n  rw [hinv] at h\n  convert h using 1\n  ext\n  simp"
@@ -54,6 +61,10 @@
       "locator": {
         "physical": [4],
         "printed": [4]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

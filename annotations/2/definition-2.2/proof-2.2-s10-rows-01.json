@@ -41,6 +41,26 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "Equalities of consecutive rows imply $L(\\gamma)=L(\\delta)$.",
+            "declaration": "lift_eq_of_homotopy",
+            "explanation": "Induction in `hall` compares row zero with each later row. The final calculation identifies the first and last rows with the endpoints of the homotopy and uses independence of subdivision.",
+            "lines": [661, 694],
+            "notation": [
+              {
+                "lean": "p, q",
+                "math": "The two paths $\\gamma,\\delta$"
+              },
+              {
+                "lean": "lift",
+                "math": "$L$"
+              },
+              {
+                "lean": "hall",
+                "math": "Equality with row zero"
+              }
+            ]
+          },
           "snippet": {
             "line": 687,
             "text": "  have hall : ∀ l, liftN hU F hF _ (hrow 0) hN = liftN hU F hF _ (hrow l) hN := fun l ↦ by\n    induction l with\n    | zero => rfl\n    | succ l ih => exact ih.trans (hstep l)\n  calc lift hU F hF p = lift hU F hF (H.eval (pt N 0)) := by rw [pt_zero, Path.Homotopy.eval_zero]\n    _ = lift hU F hF (H.eval (pt N N)) := by\n      rw [lift_eq_liftN hU F hF _ (hrow 0) hN, lift_eq_liftN hU F hF _ (hrow N) hN, hall N]\n    _ = lift hU F hF q := by rw [pt_self hN, Path.Homotopy.eval_one]"
@@ -54,6 +74,10 @@
       "locator": {
         "physical": [3],
         "printed": [3]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

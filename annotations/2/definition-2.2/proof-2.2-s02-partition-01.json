@@ -43,6 +43,22 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "Every sufficiently large positive $N$ gives a fine equal subdivision of $\\gamma$.",
+            "declaration": "exists_isFine",
+            "explanation": "The Lebesgue lemma supplies a radius for the preimages of the cover. `exists_nat_one_div_lt` chooses a threshold with $1/N<\\rho$; each interval then lies in one preimage.",
+            "lines": [205, 216],
+            "notation": [
+              {
+                "lean": "pt N k",
+                "math": "$t_k=k/N$ for $k\\leq N$"
+              },
+              {
+                "lean": "IsFine U γ N",
+                "math": "Fine subdivision"
+              }
+            ]
+          },
           "snippet": {
             "line": 205,
             "text": "private lemma exists_isFine {x y : X} (γ : Path x y) :\n    ∃ N₀, ∀ N, N₀ ≤ N → N ≠ 0 ∧ IsFine U γ N := by\n  obtain ⟨δ, hδ, h⟩ := lebesgue_number_lemma_of_metric_of_mem_nhds isCompact_univ\n    (c := fun i ↦ γ ⁻¹' U i) fun t _ ↦\n      (hU (γ t)).imp fun _ ↦ γ.continuous.continuousAt.preimage_mem_nhds\n  obtain ⟨n, hn⟩ := exists_nat_one_div_lt hδ\n  refine ⟨n + 1, fun N hN ↦ ⟨by omega, fun k ↦ ?_⟩⟩\n  obtain ⟨i, hi⟩ := h (pt N k) (mem_univ _)\n  refine ⟨i, fun t ht ↦ hi ?_⟩\n  rw [mem_ball, Subtype.dist_eq, Real.dist_eq]\n  exact (abs_sub_pt_le ht).trans_lt <|\n    (one_div_le_one_div_of_le (by positivity) (by exact_mod_cast hN)).trans_lt hn"
@@ -56,6 +72,10 @@
       "locator": {
         "physical": [2],
         "printed": [2]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

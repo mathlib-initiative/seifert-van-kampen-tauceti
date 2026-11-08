@@ -41,6 +41,22 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "The relative interiors $c_i=\\operatorname{int}_{[0,1]}(\\gamma^{-1}(U_i))$ cover $[0,1]$.",
+            "declaration": "exists_monotone_range_subpath_subset",
+            "explanation": "The neighborhood hypothesis puts each parameter in one of these interiors. These lines supply the open-cover hypotheses to the interval-subdivision theorem.",
+            "lines": [224, 244],
+            "notation": [
+              {
+                "lean": "c",
+                "math": "$c_i$"
+              },
+              {
+                "lean": "hU",
+                "math": "The neighborhood hypothesis"
+              }
+            ]
+          },
           "snippet": {
             "line": 230,
             "text": "      (c := fun i ↦ interior (γ ⁻¹' U i))\n      (fun i ↦ isOpen_interior)\n      (fun s _ ↦ by\n        obtain ⟨i, hi⟩ := hU s\n        exact mem_iUnion.2 ⟨i, mem_interior_iff_mem_nhds.2 hi⟩)"
@@ -54,6 +70,10 @@
       "locator": {
         "physical": [1],
         "printed": [1]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

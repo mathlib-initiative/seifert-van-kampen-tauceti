@@ -26,10 +26,10 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [564, 567],
+        "lines": [508, 514],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
       },
-      "title": "Collapse the subdivision inside a single cover member",
+      "title": "Collapse a subdivision in one cover member",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
@@ -38,9 +38,69 @@
             "kind": "proof_step"
           },
           "destination": {
+            "fragment": "L508-L514",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "proof_context": {
+            "conclusion": "If the whole path lies in $U_i$, every fine subdivision has value $F_i([\\gamma])$.",
+            "declaration": "liftN_eq_locVal",
+            "explanation": "Use `map_segVal_eq`, the finite-composition lemma from refinement, with the whole parameter interval. After combining all pieces, the resulting subpath from 0 to 1 is the original path.",
+            "lines": [507, 514],
+            "notation": [
+              {
+                "lean": "lift hU F hF γ",
+                "math": "$L(\\gamma)$"
+              },
+              {
+                "lean": "locVal hU F hF i γ hγ",
+                "math": "The local value $F_i([\\gamma])$"
+              }
+            ]
+          },
+          "snippet": {
+            "line": 508,
+            "text": "    (i : ι) (hγ : ∀ t, γ t ∈ U i) : liftN hU F hF γ h hN = locVal hU F hF i γ hγ := by\n  have hmem : ∀ t, γ.subpath (pt N 0) (pt N N) t ∈ U i := fun _ ↦ hγ _\n  rw [liftN, map_segVal_eq hU F hF γ h i (lo := 0) (hi := 1) (fun t _ ↦ hγ t) (Nat.zero_le N)\n    fun j _ _ ↦ ⟨unitInterval.nonneg', unitInterval.le_one'⟩, pathVal_eq hU F hF i _ _ hmem,\n    locVal_congr hU F hF i _ γ (by rw [pt_zero, γ.source]) (by rw [pt_self hN, γ.target])\n      (fun t ↦ by simp [Path.subpath, pt_zero, pt_self hN]) hmem hγ]\n  simp"
+          }
+        }
+      }
+    },
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [564, 567],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Collapse the subdivision inside a single cover member",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s12-restrict-2",
+            "kind": "proof_step"
+          },
+          "destination": {
             "fragment": "L564-L567",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
+          },
+          "proof_context": {
+            "conclusion": "For a path in $U_i$, its global value is $F_i([\\gamma])$.",
+            "declaration": "lift_eq_locVal",
+            "explanation": "Choose a fine subdivision and rewrite its value using `lift_eq_liftN`. Then `liftN_eq_locVal` collapses that subdivision inside $U_i$ to the single local functor value.",
+            "lines": [564, 567],
+            "notation": [
+              {
+                "lean": "lift hU F hF γ",
+                "math": "$L(\\gamma)$"
+              },
+              {
+                "lean": "locVal hU F hF i γ hγ",
+                "math": "The local value $F_i([\\gamma])$"
+              }
+            ]
           },
           "snippet": {
             "line": 564,
@@ -55,6 +115,10 @@
       "locator": {
         "physical": [3],
         "printed": [3]
+      },
+      "proof": {
+        "kind": "chain",
+        "summary": "First collapse any fine subdivision of a path contained in one cover member. Then use independence of subdivision to obtain the restriction equation for the global value."
       },
       "provenance": {
         "actor": "agent",

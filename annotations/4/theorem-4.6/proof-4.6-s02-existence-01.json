@@ -42,6 +42,22 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "Every compatible pair of homomorphisms admits a mediating homomorphism.",
+            "declaration": "isPushout_fundamentalGroup",
+            "explanation": "For an arbitrary pushout cocone, choose `vanKampenDesc` as its mediator. The remaining arguments of `IsColimit.mk` are the two restriction equations and uniqueness, supplied by the next tagged steps.",
+            "lines": [349, 378],
+            "notation": [
+              {
+                "lean": "s.inl.hom, s.inr.hom",
+                "math": "An arbitrary compatible pair"
+              },
+              {
+                "lean": "s.condition",
+                "math": "Its compatibility equation"
+              }
+            ]
+          },
           "snippet": {
             "line": 367,
             "text": "  refine IsPushout.of_isColimit (PushoutCocone.IsColimit.mk (congrArg GrpCat.ofHom comm)\n    (fun s ↦ GrpCat.ofHom (vanKampenDesc hCover hA hB hAB hxA hxB s.inl.hom s.inr.hom\n      (congrArg GrpCat.Hom.hom s.condition))) (fun s ↦ ?_) (fun s ↦ ?_) fun s m h₁ h₂ ↦ ?_)"
@@ -55,6 +71,10 @@
       "locator": {
         "physical": [6],
         "printed": [6]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

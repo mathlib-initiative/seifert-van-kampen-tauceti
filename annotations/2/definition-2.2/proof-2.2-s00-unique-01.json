@@ -2,7 +2,6 @@
   "id": "proof-2.2-s00-unique",
   "kind": "proof_step",
   "relation": "closeMatch",
-  "note": "Use generation to identify any compatible extension with the glued functor",
   "subject": [
     {
       "location": {
@@ -44,6 +43,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "A functor with the prescribed restrictions equals the glued functor.",
+            "declaration": "eq_glue",
+            "explanation": "`functor_ext` is the consequence of generation used here. The given restriction equations and those of `glue` show that the two functors agree on every cover member.",
+            "lines": [736, 738]
+          },
           "snippet": {
             "line": 738,
             "text": "  functor_ext hU fun i ↦ (hG i).trans (map_subtypeVal_comp_glue hU F hF i).symm"
@@ -57,6 +62,10 @@
       "locator": {
         "physical": [2],
         "printed": [2]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

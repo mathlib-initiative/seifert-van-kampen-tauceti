@@ -42,6 +42,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "Choose $\\tau_c:x\\to c$ within a cover member containing $c$.",
+            "declaration": "iSup_range_map_subtypeVal_eq_top",
+            "explanation": "First choose a covering neighborhood of each point. Applying the intersection hypothesis with the same index twice gives path connectedness of that cover member, so a path from the basepoint exists.",
+            "lines": [126, 179]
+          },
           "snippet": {
             "line": 133,
             "text": "  choose i₀ hi₀ using hU\n  have hτ : ∀ y, JoinedIn (U (i₀ y)) x y := fun y ↦\n    ((hpc (i₀ y) (i₀ y)).joinedIn x ⟨hx _, hx _⟩ y\n      ⟨mem_of_mem_nhds (hi₀ y), mem_of_mem_nhds (hi₀ y)⟩).mono inter_subset_left\n  have hτ' : ∀ y, range (hτ y).somePath ⊆ U (i₀ y) := fun y ↦\n    range_subset_iff.2 (hτ y).somePath_mem\n  let τ : ∀ c : _root_.FundamentalGroupoid X, mk x ⟶ c := fun c ↦\n    _root_.FundamentalGroupoid.fromPath ⟦(hτ c.as).somePath⟧"
@@ -55,6 +61,10 @@
       "locator": {
         "physical": [3],
         "printed": [3]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

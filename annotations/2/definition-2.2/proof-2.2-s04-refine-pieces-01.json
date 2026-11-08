@@ -26,10 +26,10 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [535, 545],
+        "lines": [459, 463],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
       },
-      "title": "Refining each interval preserves the composite",
+      "title": "Compose two subpaths",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
@@ -38,9 +38,124 @@
             "kind": "proof_step"
           },
           "destination": {
+            "fragment": "L459-L463",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "proof_context": {
+            "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
+            "conclusion": "Inside one $U_i$, two consecutive subpath values compose.",
+            "declaration": "pathVal_subpath_trans",
+            "explanation": "Apply Lemma 1.2 to the three subpaths in $U_i$, then apply functoriality: $F_i([\\gamma_{[a,c]}])=F_i([\\gamma_{[b,c]}])\\circ F_i([\\gamma_{[a,b]}])$. Line 462 supplies the path-class identity; line 463 applies the local-functor composition lemma.",
+            "lines": [394, 463],
+            "notation": [
+              {
+                "lean": "qab, qbc, qac",
+                "math": "The three subpaths in the subspace"
+              },
+              {
+                "lean": "hquot",
+                "math": "The identity of path classes"
+              }
+            ]
+          },
+          "snippet": {
+            "line": 459,
+            "text": "  have hquot : Path.Homotopic.Quotient.trans (Path.Homotopic.Quotient.mk qab)\n      (Path.Homotopic.Quotient.mk qbc) = Path.Homotopic.Quotient.mk qac := by\n    rw [← hab', ← hbc', ← hac']\n    exact Path.Homotopic.Quotient.subpath_cast_trans p a' b' c' hpa hpb hpc\n  exact locVal_comp_eq_of_trans hU F hF i _ _ _ _ _ _ hquot"
+          }
+        }
+      }
+    },
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [487, 497],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Combine a finite sequence of pieces",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s04-refine-pieces-2",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L487-L497",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "proof_context": {
+            "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
+            "conclusion": "Inside one $U_i$, any finite sequence of consecutive pieces combines to the whole subpath.",
+            "declaration": "map_segVal_eq",
+            "explanation": "Induct on the number of pieces. The empty composite is an identity; the induction step at line 496 invokes `pathVal_subpath_trans`, the preceding result, to append one more piece.",
+            "lines": [481, 497],
+            "notation": [
+              {
+                "lean": "segVal",
+                "math": "The value of one subdivision piece"
+              },
+              {
+                "lean": "Functor.OfSequence.map",
+                "math": "The composite from index a to index b"
+              },
+              {
+                "lean": "pathVal",
+                "math": "A local subpath value"
+              }
+            ]
+          },
+          "snippet": {
+            "line": 487,
+            "text": "  induction b, hab using Nat.le_induction with\n  | base =>\n    rw [Functor.OfSequence.map_id, pathVal_eq hU F hF i _ _\n      (Path.subpath_apply_mem hγ (hpt a le_rfl le_rfl) (hpt a le_rfl le_rfl)),\n      locVal_eq_eqToHom hU F hF i _ _ fun t ↦ by simp]\n    simp\n  | succ b hab ih =>\n    rw [Functor.OfSequence.map_comp _ a b (b + 1) hab b.le_succ,\n      ih fun j hj hj' ↦ hpt j hj (by omega), Functor.OfSequence.map_le_succ, segVal,\n      pathVal_subpath_trans hU F hF γ i hγ (hpt a le_rfl (by omega)) (hpt b hab (by omega))\n        (hpt (b + 1) (by omega) le_rfl)]"
+          }
+        }
+      }
+    },
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [535, 545],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Refining each interval preserves the composite",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s04-refine-pieces-3",
+            "kind": "proof_step"
+          },
+          "destination": {
             "fragment": "L535-L545",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
+          },
+          "proof_context": {
+            "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
+            "conclusion": "Replacing every piece by $m$ equal pieces gives $L_{mN}(\\gamma)=L_N(\\gamma)$.",
+            "declaration": "liftN_mul",
+            "explanation": "For each coarse interval, line 538 invokes `map_segVal_eq` to combine its fine pieces. Induction over the coarse intervals gives the equality of the full composites; lines 546–547 conclude the lemma.",
+            "lines": [523, 547],
+            "notation": [
+              {
+                "lean": "liftN hU F hF γ h hN",
+                "math": "$L_N(\\gamma)$"
+              },
+              {
+                "lean": "M",
+                "math": "$m$"
+              },
+              {
+                "lean": "pathVal",
+                "math": "A local subpath value"
+              }
+            ]
           },
           "snippet": {
             "line": 535,
@@ -55,6 +170,10 @@
       "locator": {
         "physical": [2],
         "printed": [2]
+      },
+      "proof": {
+        "kind": "chain",
+        "summary": "This sentence combines three lemmas. First compose two subpaths, then a finite sequence inside one cover member, and finally apply that result to every interval of the coarse subdivision."
       },
       "provenance": {
         "actor": "agent",

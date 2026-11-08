@@ -41,6 +41,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "The composite of the subdivision classes is the original path class.",
+            "declaration": "iSup_im_map_subtypeVal_eq_top",
+            "explanation": "`mk_concat_mem_iSup_im` places the finite composite in the generated subgroupoid. `concat_subpath` identifies that composite with the original path up to homotopy.",
+            "lines": [113, 131]
+          },
           "snippet": {
             "line": 123,
             "text": "  have hsub := mk_concat_mem_iSup_im hU (γ ∘ t) (fun k ↦ γ.subpath (t k.castSucc) (t k.succ)) ht\n  rw [Path.Homotopic.Quotient.eq.2 (Path.Homotopic.concat_subpath γ t)] at hsub"
@@ -54,6 +60,10 @@
       "locator": {
         "physical": [2],
         "printed": [2]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

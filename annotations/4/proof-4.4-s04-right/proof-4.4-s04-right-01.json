@@ -42,6 +42,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "The right restriction is the original homomorphism on $\\pi_1(B,x)$.",
+            "declaration": "vanKampenDesc_map_right",
+            "explanation": "The same two steps use the right restriction of `glueTwo`, followed by evaluation of the local functor at the basepoint.",
+            "lines": [283, 296]
+          },
           "snippet": {
             "line": 294,
             "text": "  (vanKampenDesc_map_subtypeVal hCover hA hB hAB hxA hxB fA fB h hxB _\n    (FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right hCover _ _ _) g).trans\n    (localFunctor_map_base inter_subset_right hAB hB (interBase hxA hxB) fB g)"
@@ -55,6 +61,10 @@
       "locator": {
         "physical": [5],
         "printed": [5]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

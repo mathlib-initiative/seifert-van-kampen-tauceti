@@ -42,6 +42,13 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "bookkeeping": "`codRestrict` regards the same path in a subspace. The pairs carrying membership proofs specify its endpoints there; mapping back along inclusion recovers the original path.",
+            "conclusion": "A path lying in $U_i$ represents a morphism in the image of $\\Pi_1(U_i)\\to\\Pi_1(X)$.",
+            "declaration": "mk_mem_iSup_im",
+            "explanation": "Regard the same path as a path in the subspace, then apply the inclusion functor. The rewrites identify its image with the original path. The enclosing helper then puts this image in the generated subgroupoid.",
+            "lines": [64, 87]
+          },
           "snippet": {
             "line": 76,
             "text": "  have h := Subgroupoid.Map.Arrows.im (φ := map (ContinuousMap.subtypeVal (U i)))\n    (hφ := ContinuousMap.fundamentalGroupoid_map_obj_injective\n      (ContinuousMap.subtypeVal (U i)) Subtype.val_injective) (S := ⊤)\n    (Path.Homotopic.Quotient.mk (γ.codRestrict (x := ⟨x, hx⟩) (y := ⟨y, hy⟩) hmem)) trivial\n  rw [map_map, ← Path.Homotopic.Quotient.mk_map] at h\n  have hp : (γ.codRestrict (x := ⟨x, hx⟩) (y := ⟨y, hy⟩) hmem).map\n      (ContinuousMap.subtypeVal (U i)).continuous = γ :=\n    Path.map_codRestrict (x := ⟨x, hx⟩) (y := ⟨y, hy⟩) γ hmem\n  rw [hp] at h"
@@ -55,6 +62,10 @@
       "locator": {
         "physical": [2],
         "printed": [2]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

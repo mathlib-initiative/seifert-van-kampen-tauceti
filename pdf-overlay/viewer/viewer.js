@@ -1146,6 +1146,14 @@ export async function bootstrapViewer({
       ? make("code", "", value) : value)));
   }
 
+  /** Authored mathematics and backticked Lean names, without accepting HTML. */
+  function proofText(tag, className, value) {
+    const node = make(tag, className);
+    node.append(...docBlocks(value).flatMap(block => block.parts.map(([kind, part]) =>
+      kind === "code" ? make("code", "", part) : makeTitle("span", "", part))));
+    return node;
+  }
+
   /** A fallback title or detail note adds nothing when the heading already says it. */
   function repeatsHeading(item, value) {
     const normalize = text => (text ?? "").trim().replace(/\s+/gu, " ");
@@ -1274,9 +1282,60 @@ export async function bootstrapViewer({
     const name = nameNode(card.name, "decl-name");
     name.title = card.fullName;
     li.append(eyebrow(card));
-    if (!repeatsHeading(item, card.fullName)) li.append(name);
+    const context = card.proofContext;
+    if (context) {
+      const enclosing = make("p", "proof-enclosing", "In ");
+      const link = make(context.href ? "a" : "span", "", context.declaration);
+      if (context.href) link.setAttribute("href", context.href);
+      enclosing.append(link);
+      if (context.lines) enclosing.append(` · ${linesText(context.lines).toLowerCase()}`);
+      li.append(enclosing, proofText("p", "proof-conclusion", context.conclusion));
+      if (context.explanation) li.append(proofText("p", "proof-explanation", context.explanation));
+    } else if (!repeatsHeading(item, card.fullName)) li.append(name);
     li.append(...card.ranges.flatMap(rangeNodes));
+    if (context && (context.notation.length || context.bookkeeping)) {
+      const details = make("details", "proof-details");
+      details.append(make("summary", "", "Reading the Lean notation"));
+      if (context.notation.length) {
+        const list = make("dl", "proof-notation");
+        for (const row of context.notation) {
+          list.append(makeTitle("dt", "", row.math), proofText("dd", "", `\`${row.lean}\``));
+        }
+        details.append(list);
+      }
+      if (context.bookkeeping) details.append(proofText("p", "", context.bookkeeping));
+      li.append(details);
+    }
     return li;
+  }
+
+  /** Keep the complete dependency chain above the selected excerpt. */
+  function proofChain(cards, item) {
+    const row = make("li", "proof-chain");
+    if (item.proofGuide.summary) row.append(proofText("p", "proof-explanation", item.proofGuide.summary));
+    const links = make("ol", "proof-chain-links");
+    links.setAttribute("aria-label", "Linked lemmas in argument order");
+    const excerpt = make("ul", "key-list proof-chain-excerpt");
+    const buttons = [];
+    const select = index => {
+      hideHover();
+      buttons.forEach((button, i) => button.setAttribute("aria-pressed", String(i === index)));
+      excerpt.replaceChildren(stepCard(cards[index], item));
+    };
+    cards.forEach((card, index) => {
+      const entry = make("li", "");
+      const button = make("button", "proof-chain-link");
+      button.type = "button";
+      button.append(make("span", "proof-chain-number", `${index + 1}. `),
+        makeTitle("span", "", card.proofContext?.label || card.name));
+      button.addEventListener("click", () => select(index));
+      buttons.push(button);
+      entry.append(button);
+      links.append(entry);
+    });
+    row.append(links, excerpt);
+    select(0);
+    return row;
   }
 
   /** A declaration or module a checked absence looked in, on one line. */
@@ -1380,8 +1439,10 @@ export async function bootstrapViewer({
     const shownRelated = cardsMatching(related, { query });
 
     renderKeyNote(item, keys);
-    const capped = state.keysAll ? shownKeys : shownKeys.slice(0, KEY_CARDS);
-    ui["key-list"].replaceChildren(...capped.map(card => step ? stepCard(card, item) : keyCard(card)));
+    const chain = step && item.proofGuide?.kind === "chain" && shownKeys.length > 1;
+    const capped = chain || state.keysAll ? shownKeys : shownKeys.slice(0, KEY_CARDS);
+    ui["key-list"].replaceChildren(...(chain ? [proofChain(capped, item)]
+      : capped.map(card => step ? stepCard(card, item) : keyCard(card))));
     ui["key-list"].hidden = !capped.length;
     // A neutral count, only when there is more than one: no heading says what the cards state.
     ui["key-count"].hidden = keys.length < 2 || state.config.minimal;

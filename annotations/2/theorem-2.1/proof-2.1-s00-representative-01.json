@@ -41,6 +41,22 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "Every morphism of $\\Pi_1(X)$ can be represented by a path $\\gamma$.",
+            "declaration": "iSup_im_map_subtypeVal_eq_top",
+            "explanation": "Quotient induction reduces the membership claim for an arbitrary homotopy class to the class of an actual path. No choice of representative needs to be independent of the class for this argument.",
+            "lines": [113, 131],
+            "notation": [
+              {
+                "lean": "f",
+                "math": "$\\omega$"
+              },
+              {
+                "lean": "γ",
+                "math": "$\\gamma$"
+              }
+            ]
+          },
           "snippet": {
             "line": 119,
             "text": "  induction f using Path.Homotopic.Quotient.ind with | mk γ =>"
@@ -54,6 +70,10 @@
       "locator": {
         "physical": [2],
         "printed": [2]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

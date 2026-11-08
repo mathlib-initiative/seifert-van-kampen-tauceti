@@ -41,6 +41,12 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "conclusion": "The local functor at the basepoint evaluates a loop using the original homomorphism.",
+            "declaration": "vanKampenDesc_map_left",
+            "explanation": "The invocation of `localFunctor_map_base` completes the pointwise restriction calculation. That helper reduces the connecting-path construction at its basepoint.",
+            "lines": [267, 280]
+          },
           "snippet": {
             "line": 280,
             "text": "    (localFunctor_map_base inter_subset_left hAB hA (interBase hxA hxB) fA g)"
@@ -54,6 +60,10 @@
       "locator": {
         "physical": [5],
         "printed": [5]
+      },
+      "proof": {
+        "kind": "direct",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

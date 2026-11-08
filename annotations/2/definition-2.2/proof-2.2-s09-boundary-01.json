@@ -41,6 +41,23 @@
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
+          "proof_context": {
+            "bookkeeping": "A constant path with differently written but equal endpoints produces `eqToHom`. Once those endpoints are identified, this is the identity arrow in the informal diagram.",
+            "conclusion": "The outer vertical paths are constant, so $L_N(\\gamma_j)=L_N(\\gamma_{j+1})$.",
+            "declaration": "lift_eq_of_homotopy",
+            "explanation": "The two applications of `pathVal_eq_eqToHom` replace the left and right boundary values by identity transports. After aligning endpoints, the pasted-square equation is the equality of row composites.",
+            "lines": [661, 694],
+            "notation": [
+              {
+                "lean": "hsq",
+                "math": "The pasted-square equation"
+              },
+              {
+                "lean": "liftN",
+                "math": "$L_N$"
+              }
+            ]
+          },
           "snippet": {
             "line": 682,
             "text": "    rw [pathVal_eq_eqToHom hU F hF (colSeg H N l 0) _ fun t ↦ by simp [colSeg, pt_zero],\n      pathVal_eq_eqToHom hU F hF (colSeg H N l N) _ fun t ↦ by simp [colSeg, pt_self hN],\n      comp_eqToHom_iff] at hsq\n    rw [liftN, liftN, hsq]\n    simp"
@@ -54,6 +71,10 @@
       "locator": {
         "physical": [3],
         "printed": [3]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",
