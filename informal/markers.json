@@ -2,9 +2,9 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "10f4ab9e2479632536b89512f6b75946570f9823",
- "pdf_sha256": "e6ab3cc12e76ee269820606082b26ae3d7d840b17d8534d521894246d683dbb2",
- "pages": 7,
+ "source_commit": "f9e7eb374a50eacdf0cf942474d153d8f4f17641",
+ "pdf_sha256": "11d8426c409b005a9e3a394dc6e73199e2e97661504975bff25ba6e94d6f09b9",
+ "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
   "res_dpi": 288,
@@ -20,13 +20,13 @@
    "label": "item:1.1",
    "number": "1.1",
    "section": "1",
-   "title": "A Lebesgue number for a family of neighborhoods",
+   "title": "A Lebesgue number",
    "parts": [],
    "decls": [
     "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds"
    ],
    "boxes": [
-    [1, 0.130391, 0.388889, 0.739217, 0.072917]
+    [1, 0.130391, 0.331755, 0.739217, 0.056503]
    ]
   },
   {
@@ -35,13 +35,13 @@
    "label": "item:1.2",
    "number": "1.2",
    "section": "1",
-   "title": "Subdividing a path along a family of sets",
+   "title": "Subdividing a path",
    "parts": [],
    "decls": [
     "Path.exists_monotone_range_subpath_subset"
    ],
    "boxes": [
-    [1, 0.130391, 0.594697, 0.739217, 0.072285]
+    [1, 0.130391, 0.475379, 0.739217, 0.074811]
    ]
   },
   {
@@ -50,28 +50,28 @@
    "label": "item:1.3",
    "number": "1.3",
    "section": "1",
-   "title": "Cutting a path class at an intermediate parameter",
+   "title": "Composing subpath classes",
    "parts": [],
    "decls": [
     "Path.Homotopic.Quotient.subpath_cast_trans"
    ],
    "boxes": [
-    [1, 0.130391, 0.715278, 0.739217, 0.057449]
+    [1, 0.130391, 0.556503, 0.739217, 0.057449]
    ]
   },
   {
    "id": "2.1",
-   "kind": "definition",
+   "kind": "theorem",
    "label": "item:2.1",
    "number": "2.1",
    "section": "2",
-   "title": "The functor picking out a chosen object",
+   "title": "Generation by a cover",
    "parts": [],
    "decls": [
-    "TauCeti.Groupoid.singleObjFunctor"
+    "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
    ],
    "boxes": [
-    [2, 0.130391, 0.104167, 0.739217, 0.03851]
+    [1, 0.130391, 0.752841, 0.739217, 0.038826]
    ]
   },
   {
@@ -80,14 +80,85 @@
    "label": "item:2.2",
    "number": "2.2",
    "section": "2",
-   "title": "The functor induced by a homomorphism out of a vertex group",
+   "title": "The gluing functor",
    "parts": [],
    "decls": [
-    "TauCeti.Groupoid.functorOfEndHom",
-    "TauCeti.Groupoid.functorOfEndHom_map"
+    "TauCeti.FundamentalGroupoid.glue"
    ],
    "boxes": [
-    [2, 0.130391, 0.149621, 0.739217, 0.075126]
+    [2, 0.130391, 0.214331, 0.739217, 0.117424]
+   ]
+  },
+  {
+   "id": "2.3",
+   "kind": "proposition",
+   "label": "item:2.3",
+   "number": "2.3",
+   "section": "2",
+   "title": "Restriction to a cover member",
+   "parts": [],
+   "decls": [
+    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue"
+   ],
+   "boxes": [
+    [2, 0.130391, 0.829861, 0.739217, 0.07197]
+   ]
+  },
+  {
+   "id": "2.4",
+   "kind": "definition",
+   "label": "item:2.4",
+   "number": "2.4",
+   "section": "2",
+   "title": "Gluing over two subspaces",
+   "parts": [],
+   "decls": [
+    "TauCeti.FundamentalGroupoid.glueTwo"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.104167, 0.739217, 0.097854]
+   ]
+  },
+  {
+   "id": "2.5",
+   "kind": "proposition",
+   "label": "item:2.5",
+   "number": "2.5",
+   "section": "2",
+   "title": "Restriction to the two subspaces",
+   "parts": [
+    "2.5(a)",
+    "2.5(b)"
+   ],
+   "decls": [],
+   "boxes": [
+    [3, 0.130391, 0.208965, 0.739217, 0.089962]
+   ]
+  },
+  {
+   "id": "2.5(a)",
+   "parent": "2.5",
+   "part": "a",
+   "label": "item:2.5:a",
+   "number": "2.5(a)",
+   "decls": [
+    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.262311, 0.739217, 0.017361]
+   ]
+  },
+  {
+   "id": "2.5(b)",
+   "parent": "2.5",
+   "part": "b",
+   "label": "item:2.5:b",
+   "number": "2.5(b)",
+   "decls": [
+    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right"
+   ],
+   "boxes": [
+    [3, 0.130391, 0.279672, 0.739217, 0.019255]
    ]
   },
   {
@@ -96,240 +167,168 @@
    "label": "item:3.1",
    "number": "3.1",
    "section": "3",
-   "title": "Covers generate the fundamental groupoid",
-   "parts": [],
-   "decls": [
-    "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
-   ],
-   "boxes": [
-    [2, 0.130391, 0.458649, 0.739217, 0.055556]
-   ]
-  },
-  {
-   "id": "3.2",
-   "kind": "definition",
-   "label": "item:3.2",
-   "number": "3.2",
-   "section": "3",
-   "title": "Gluing functors out of fundamental groupoids",
-   "parts": [],
-   "decls": [
-    "TauCeti.FundamentalGroupoid.glue"
-   ],
-   "boxes": [
-    [2, 0.130391, 0.759785, 0.739217, 0.118371]
-   ]
-  },
-  {
-   "id": "3.3",
-   "kind": "proposition",
-   "label": "item:3.3",
-   "number": "3.3",
-   "section": "3",
-   "title": "The glued functor restricts to the given functors",
-   "parts": [],
-   "decls": [
-    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue"
-   ],
-   "boxes": [
-    [3, 0.130391, 0.63952, 0.739298, 0.073232]
-   ]
-  },
-  {
-   "id": "3.4",
-   "kind": "definition",
-   "label": "item:3.4",
-   "number": "3.4",
-   "section": "3",
-   "title": "Gluing two functors out of fundamental groupoids",
-   "parts": [],
-   "decls": [
-    "TauCeti.FundamentalGroupoid.glueTwo"
-   ],
-   "boxes": [
-    [3, 0.130391, 0.744318, 0.739217, 0.097222]
-   ]
-  },
-  {
-   "id": "3.5",
-   "kind": "proposition",
-   "label": "item:3.5",
-   "number": "3.5",
-   "section": "3",
-   "title": "The functor glued from two restricts to each of them",
-   "parts": [
-    "3.5(a)",
-    "3.5(b)"
-   ],
-   "decls": [],
-   "boxes": [
-    [3, 0.130391, 0.846907, 0.739298, 0.054924],
-    [4, 0.130391, 0.104167, 0.739217, 0.03851]
-   ]
-  },
-  {
-   "id": "3.5(a)",
-   "parent": "3.5",
-   "part": "a",
-   "label": "item:3.5:a",
-   "number": "3.5(a)",
-   "decls": [
-    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left"
-   ],
-   "boxes": [
-    [4, 0.130391, 0.104167, 0.739217, 0.019255]
-   ]
-  },
-  {
-   "id": "3.5(b)",
-   "parent": "3.5",
-   "part": "b",
-   "label": "item:3.5:b",
-   "number": "3.5(b)",
-   "decls": [
-    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right"
-   ],
-   "boxes": [
-    [4, 0.130391, 0.123422, 0.739217, 0.019255]
-   ]
-  },
-  {
-   "id": "4.1",
-   "kind": "theorem",
-   "label": "item:4.1",
-   "number": "4.1",
-   "section": "4",
-   "title": "Covers generate the fundamental group",
+   "title": "Generation by subspace groups",
    "parts": [],
    "decls": [
     "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
    ],
    "boxes": [
-    [4, 0.130391, 0.340278, 0.739217, 0.056187]
+    [3, 0.130391, 0.448548, 0.739217, 0.072601]
    ]
   },
   {
-   "id": "4.2",
+   "id": "3.2",
    "kind": "corollary",
-   "label": "item:4.2",
-   "number": "4.2",
-   "section": "4",
-   "title": "Two sets generate the fundamental group",
+   "label": "item:3.2",
+   "number": "3.2",
+   "section": "3",
+   "title": "Generation from two subspaces",
    "parts": [],
    "decls": [
     "TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top"
    ],
    "boxes": [
-    [5, 0.130391, 0.104167, 0.739217, 0.055556]
+    [4, 0.130391, 0.186553, 0.739217, 0.055556]
    ]
   },
   {
-   "id": "5.1",
+   "id": "4.1",
    "kind": "definition",
-   "label": "item:5.1",
-   "number": "5.1",
-   "section": "5",
-   "title": "The homomorphism out of the fundamental group of the space",
+   "label": "item:4.1",
+   "number": "4.1",
+   "section": "4",
+   "title": "The endomorphism functor",
+   "parts": [],
+   "decls": [
+    "TauCeti.Groupoid.singleObjFunctor"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.33428, 0.739217, 0.039299]
+   ]
+  },
+  {
+   "id": "4.2",
+   "kind": "definition",
+   "label": "item:4.2",
+   "number": "4.2",
+   "section": "4",
+   "title": "Extending a vertex-group homomorphism",
+   "parts": [],
+   "decls": [
+    "TauCeti.Groupoid.functorOfEndHom",
+    "TauCeti.Groupoid.functorOfEndHom_map"
+   ],
+   "boxes": [
+    [4, 0.130391, 0.37358, 0.739217, 0.076862]
+   ]
+  },
+  {
+   "id": "4.3",
+   "kind": "definition",
+   "label": "item:4.3",
+   "number": "4.3",
+   "section": "4",
+   "title": "The descent homomorphism",
    "parts": [],
    "decls": [
     "TauCeti.vanKampenDesc"
    ],
    "boxes": [
-    [5, 0.130391, 0.285669, 0.739217, 0.104167]
+    [4, 0.130391, 0.450442, 0.739217, 0.122475]
    ]
   },
   {
-   "id": "5.2",
+   "id": "4.4",
    "kind": "proposition",
-   "label": "item:5.2",
-   "number": "5.2",
-   "section": "5",
-   "title": "The induced homomorphism restricts to the given ones",
+   "label": "item:4.4",
+   "number": "4.4",
+   "section": "4",
+   "title": "Restriction of the descent homomorphism",
    "parts": [
-    "5.2(a)",
-    "5.2(b)"
+    "4.4(a)",
+    "4.4(b)"
    ],
    "decls": [],
    "boxes": [
-    [6, 0.130391, 0.104167, 0.739217, 0.124053]
+    [5, 0.130391, 0.104167, 0.739217, 0.107008]
    ]
   },
   {
-   "id": "5.2(a)",
-   "parent": "5.2",
+   "id": "4.4(a)",
+   "parent": "4.4",
    "part": "a",
-   "label": "item:5.2:a",
-   "number": "5.2(a)",
+   "label": "item:4.4:a",
+   "number": "4.4(a)",
    "decls": [
     "TauCeti.vanKampenDesc_map_left",
     "TauCeti.vanKampenDesc_comp_map_left"
    ],
    "boxes": [
-    [6, 0.130391, 0.191446, 0.739217, 0.017519]
+    [5, 0.130391, 0.1744, 0.739217, 0.017361]
    ]
   },
   {
-   "id": "5.2(b)",
-   "parent": "5.2",
+   "id": "4.4(b)",
+   "parent": "4.4",
    "part": "b",
-   "label": "item:5.2:b",
-   "number": "5.2(b)",
+   "label": "item:4.4:b",
+   "number": "4.4(b)",
    "decls": [
     "TauCeti.vanKampenDesc_map_right",
     "TauCeti.vanKampenDesc_comp_map_right"
    ],
    "boxes": [
-    [6, 0.130391, 0.208965, 0.739217, 0.019255]
+    [5, 0.130391, 0.191761, 0.739217, 0.019413]
    ]
   },
   {
-   "id": "5.3",
+   "id": "4.5",
    "kind": "proposition",
-   "label": "item:5.3",
-   "number": "5.3",
-   "section": "5",
-   "title": "Uniqueness of the induced homomorphism",
+   "label": "item:4.5",
+   "number": "4.5",
+   "section": "4",
+   "title": "Uniqueness of the descent homomorphism",
    "parts": [],
    "decls": [
     "TauCeti.vanKampen_hom_ext"
    ],
    "boxes": [
-    [6, 0.130391, 0.43024, 0.739298, 0.072917]
+    [5, 0.130391, 0.413194, 0.739298, 0.072917]
    ]
   },
   {
-   "id": "5.4",
+   "id": "4.6",
    "kind": "theorem",
-   "label": "item:5.4",
-   "number": "5.4",
-   "section": "5",
+   "label": "item:4.6",
+   "number": "4.6",
+   "section": "4",
    "title": "The based Seifert--van Kampen theorem",
    "parts": [],
    "decls": [
     "TauCeti.isPushout_fundamentalGroup"
    ],
    "boxes": [
-    [6, 0.130391, 0.726326, 0.739217, 0.151199]
-   ]
-  },
-  {
-   "id": "notion:IsCompact",
-   "notion": "IsCompact",
-   "words": "compactness",
-   "label": "notion:1",
-   "number": "n1",
-   "boxes": [
-    [1, 0.267027, 0.363005, 0.099698, 0.021465]
+    [5, 0.130391, 0.70928, 0.739217, 0.151199]
    ]
   },
   {
    "id": "notion:PseudoMetricSpace",
    "notion": "PseudoMetricSpace",
-   "words": "pseudometric spaces",
+   "words": "pseudometric space",
+   "label": "notion:1",
+   "number": "n1",
+   "boxes": [
+    [1, 0.504004, 0.331755, 0.151239, 0.019413]
+   ]
+  },
+  {
+   "id": "notion:IsCompact",
+   "notion": "IsCompact",
+   "words": "compact",
    "label": "notion:2",
    "number": "n2",
    "boxes": [
-    [1, 0.454934, 0.363005, 0.160254, 0.021465]
+    [1, 0.701285, 0.331755, 0.066083, 0.019413]
    ]
   },
   {
@@ -339,7 +338,7 @@
    "label": "notion:3",
    "number": "n3",
    "boxes": [
-    [1, 0.62363, 0.363005, 0.056942, 0.021465]
+    [1, 0.684517, 0.368687, 0.056942, 0.019571]
    ]
   },
   {
@@ -349,17 +348,17 @@
    "label": "notion:4",
    "number": "n4",
    "boxes": [
-    [1, 0.33929, 0.466856, 0.134755, 0.017361]
+    [1, 0.253755, 0.395202, 0.134774, 0.017519]
    ]
   },
   {
    "id": "notion:ContinuousMap.subtypeVal",
    "notion": "ContinuousMap.subtypeVal",
-   "words": "$\\incl{S}$",
+   "words": "$\\incl{S}:S\\longrightarrow X$",
    "label": "notion:5",
    "number": "n5",
    "boxes": [
-    [1, 0.55614, 0.466856, 0.018717, 0.017361]
+    [1, 0.604599, 0.395202, 0.100444, 0.017519]
    ]
   },
   {
@@ -369,7 +368,7 @@
    "label": "notion:6",
    "number": "n6",
    "boxes": [
-    [1, 0.250447, 0.484217, 0.038102, 0.01815]
+    [1, 0.762403, 0.395202, 0.03823, 0.017519]
    ]
   },
   {
@@ -379,7 +378,7 @@
    "label": "notion:7",
    "number": "n7",
    "boxes": [
-    [1, 0.598584, 0.484217, 0.022627, 0.01815]
+    [1, 0.178489, 0.412721, 0.022627, 0.019729]
    ]
   },
   {
@@ -389,7 +388,7 @@
    "label": "notion:8",
    "number": "n8",
    "boxes": [
-    [1, 0.417664, 0.502367, 0.034735, 0.017519]
+    [1, 0.40226, 0.412721, 0.034198, 0.019729]
    ]
   },
   {
@@ -399,289 +398,257 @@
    "label": "notion:9",
    "number": "n9",
    "boxes": [
-    [1, 0.231178, 0.519886, 0.03633, 0.01815]
-   ]
-  },
-  {
-   "id": "notion:unitInterval",
-   "notion": "unitInterval",
-   "words": "$\\uI$",
-   "label": "notion:10",
-   "number": "n10",
-   "boxes": [
-    [1, 0.293414, 0.553662, 0.038191, 0.017361]
-   ]
-  },
-  {
-   "id": "notion:Monotone",
-   "notion": "Monotone",
-   "words": "nondecreasing",
-   "label": "notion:11",
-   "number": "n11",
-   "boxes": [
-    [1, 0.413427, 0.553662, 0.111532, 0.017361]
+    [1, 0.828376, 0.412721, 0.03633, 0.019729]
    ]
   },
   {
    "id": "notion:Path.Homotopic.Quotient",
    "notion": "Path.Homotopic.Quotient",
    "words": "$\\pcls{\\gamma}$",
-   "label": "notion:12",
-   "number": "n12",
+   "label": "notion:10",
+   "number": "n10",
    "boxes": [
-    [1, 0.210252, 0.672348, 0.022662, 0.019886]
+    [1, 0.706869, 0.432449, 0.022662, 0.017045]
    ]
   },
   {
    "id": "notion:Path.Homotopic.Quotient.trans",
    "notion": "Path.Homotopic.Quotient.trans",
-   "words": "composition of classes",
+   "words": "composition",
+   "label": "notion:11",
+   "number": "n11",
+   "boxes": [
+    [1, 0.220186, 0.449495, 0.096261, 0.018308]
+   ]
+  },
+  {
+   "id": "notion:Monotone",
+   "notion": "Monotone",
+   "words": "nondecreasing",
+   "label": "notion:12",
+   "number": "n12",
+   "boxes": [
+    [1, 0.216268, 0.511521, 0.111173, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:unitInterval",
+   "notion": "unitInterval",
+   "words": "$\\uI$",
    "label": "notion:13",
    "number": "n13",
    "boxes": [
-    [1, 0.462059, 0.672348, 0.17352, 0.019886]
-   ]
-  },
-  {
-   "id": "notion:CategoryTheory.Category",
-   "notion": "CategoryTheory.Category",
-   "words": "category",
-   "label": "notion:14",
-   "number": "n14",
-   "boxes": [
-    [1, 0.223765, 0.846907, 0.068356, 0.019571]
-   ]
-  },
-  {
-   "id": "notion:CategoryTheory.End",
-   "notion": "CategoryTheory.End",
-   "words": "$\\End(w)$",
-   "label": "notion:15",
-   "number": "n15",
-   "boxes": [
-    [1, 0.531064, 0.846907, 0.061493, 0.019571]
-   ]
-  },
-  {
-   "id": "notion:CategoryTheory.CategoryStruct.comp",
-   "notion": "CategoryTheory.CategoryStruct.comp",
-   "words": "$\\circ$",
-   "label": "notion:16",
-   "number": "n16",
-   "boxes": [
-    [1, 0.234213, 0.866477, 0.011364, 0.01673]
-   ]
-  },
-  {
-   "id": "notion:Monoid",
-   "notion": "Monoid",
-   "words": "monoid",
-   "label": "notion:17",
-   "number": "n17",
-   "boxes": [
-    [1, 0.588177, 0.866477, 0.059887, 0.01673]
-   ]
-  },
-  {
-   "id": "notion:CategoryTheory.SingleObj",
-   "notion": "CategoryTheory.SingleObj",
-   "words": "$\\sobj{M}$",
-   "label": "notion:18",
-   "number": "n18",
-   "boxes": [
-    [1, 0.290845, 0.883207, 0.034561, 0.018624]
+    [1, 0.612786, 0.511521, 0.038191, 0.017519]
    ]
   },
   {
    "id": "notion:FundamentalGroupoid",
    "notion": "FundamentalGroupoid",
    "words": "$\\fgpd{X}$",
-   "label": "notion:19",
-   "number": "n19",
+   "label": "notion:14",
+   "number": "n14",
    "boxes": [
-    [2, 0.811123, 0.276199, 0.053583, 0.019571]
+    [1, 0.655267, 0.690025, 0.053583, 0.019255]
    ]
   },
   {
    "id": "notion:ContinuousMap",
    "notion": "ContinuousMap",
    "words": "continuous map",
-   "label": "notion:20",
-   "number": "n20",
+   "label": "notion:15",
+   "number": "n15",
    "boxes": [
-    [2, 0.343654, 0.328283, 0.126428, 0.01815]
+    [1, 0.236982, 0.70928, 0.126116, 0.017519]
    ]
   },
   {
    "id": "notion:CategoryTheory.Functor",
    "notion": "CategoryTheory.Functor",
    "words": "functor",
-   "label": "notion:21",
-   "number": "n21",
+   "label": "notion:16",
+   "number": "n16",
    "boxes": [
-    [2, 0.806255, 0.328283, 0.058452, 0.01815]
+    [1, 0.553679, 0.70928, 0.058454, 0.017519]
    ]
   },
   {
    "id": "notion:FundamentalGroupoid.map",
    "notion": "FundamentalGroupoid.map",
-   "words": "$\\fgpd{f}$",
-   "label": "notion:22",
-   "number": "n22",
+   "words": "$\\fgpd{f}:\\fgpd{X}\\longrightarrow\\fgpd{Y}$",
+   "label": "notion:17",
+   "number": "n17",
    "boxes": [
-    [2, 0.132842, 0.346433, 0.048063, 0.017519]
+    [1, 0.616394, 0.70928, 0.207083, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:ContinuousMap.inclusion",
+   "notion": "ContinuousMap.inclusion",
+   "words": "$\\inclin{S}{T}:S\\longrightarrow T$",
+   "label": "notion:18",
+   "number": "n18",
+   "boxes": [
+    [1, 0.338424, 0.726799, 0.110096, 0.019413]
    ]
   },
   {
    "id": "notion:CategoryTheory.Subgroupoid",
    "notion": "CategoryTheory.Subgroupoid",
-   "words": "subgroupoid",
-   "label": "notion:23",
-   "number": "n23",
+   "words": "subgroupoids",
+   "label": "notion:19",
+   "number": "n19",
    "boxes": [
-    [2, 0.179848, 0.363952, 0.098162, 0.017361]
+    [1, 0.430006, 0.772096, 0.099928, 0.019571]
    ]
   },
   {
    "id": "notion:CategoryTheory.Subgroupoid.im",
    "notion": "CategoryTheory.Subgroupoid.im",
    "words": "$\\im\\fgpd{\\incl{U_i}}$",
-   "label": "notion:24",
-   "number": "n24",
+   "label": "notion:20",
+   "number": "n20",
    "boxes": [
-    [2, 0.5086, 0.397727, 0.081976, 0.017677]
+    [1, 0.533861, 0.772096, 0.081976, 0.019571]
    ]
   },
   {
    "id": "notion:iSup",
    "notion": "iSup",
-   "words": "the smallest subgroupoid containing them",
-   "label": "notion:25",
-   "number": "n25",
+   "words": "generate",
+   "label": "notion:21",
+   "number": "n21",
    "boxes": [
-    [2, 0.584041, 0.415404, 0.285568, 0.016888],
-    [2, 0.130391, 0.432292, 0.044513, 0.019413]
-   ]
-  },
-  {
-   "id": "notion:ContinuousMap.inclusion",
-   "notion": "ContinuousMap.inclusion",
-   "words": "$\\inclin{S}{T}$",
-   "label": "notion:26",
-   "number": "n26",
-   "boxes": [
-    [2, 0.561385, 0.714962, 0.03177, 0.019097]
-   ]
-  },
-  {
-   "id": "notion:CategoryTheory.Functor.comp",
-   "notion": "CategoryTheory.Functor.comp",
-   "words": "$F\\circ G$",
-   "label": "notion:27",
-   "number": "n27",
-   "boxes": [
-    [2, 0.232465, 0.734059, 0.047239, 0.01815]
+    [1, 0.619764, 0.772096, 0.067546, 0.019571]
    ]
   },
   {
    "id": "notion:FundamentalGroup",
    "notion": "FundamentalGroup",
    "words": "fundamental group",
-   "label": "notion:28",
-   "number": "n28",
+   "label": "notion:22",
+   "number": "n22",
    "boxes": [
-    [4, 0.765208, 0.19476, 0.104401, 0.019255],
-    [4, 0.130391, 0.214015, 0.049514, 0.017361]
+    [3, 0.532095, 0.351641, 0.152532, 0.019255]
    ]
   },
   {
    "id": "notion:FundamentalGroup.fromPath",
    "notion": "FundamentalGroup.fromPath",
-   "words": "class of a loop at $x$",
-   "label": "notion:29",
-   "number": "n29",
+   "words": "loop class at $x$",
+   "label": "notion:23",
+   "number": "n23",
    "boxes": [
-    [4, 0.539705, 0.231376, 0.155946, 0.016572]
+    [3, 0.274093, 0.3881, 0.116096, 0.01673]
    ]
   },
   {
    "id": "notion:MonoidHom",
    "notion": "MonoidHom",
    "words": "homomorphism",
-   "label": "notion:30",
-   "number": "n30",
+   "label": "notion:24",
+   "number": "n24",
    "boxes": [
-    [4, 0.536914, 0.247948, 0.122423, 0.017519]
+    [3, 0.207968, 0.40483, 0.122556, 0.017835]
    ]
   },
   {
    "id": "notion:FundamentalGroup.map",
    "notion": "FundamentalGroup.map",
-   "words": "$\\fgrp{f}{x}$",
-   "label": "notion:31",
-   "number": "n31",
+   "words": "$\\fgrp{f}{x}:\\fgrp{X}{x}\\longrightarrow\\fgrp{Y}{f(x)}$",
+   "label": "notion:25",
+   "number": "n25",
    "boxes": [
-    [4, 0.664077, 0.247948, 0.061974, 0.017519]
-   ]
-  },
-  {
-   "id": "notion:MonoidHom.range",
-   "notion": "MonoidHom.range",
-   "words": "image",
-   "label": "notion:32",
-   "number": "n32",
-   "boxes": [
-    [4, 0.463271, 0.282828, 0.048004, 0.01673]
-   ]
-  },
-  {
-   "id": "notion:Subgroup",
-   "notion": "Subgroup",
-   "words": "subgroup",
-   "label": "notion:33",
-   "number": "n33",
-   "boxes": [
-    [4, 0.771069, 0.282828, 0.0739, 0.01673]
+    [3, 0.332412, 0.40483, 0.266211, 0.017835]
    ]
   },
   {
    "id": "notion:IsPathConnected",
    "notion": "IsPathConnected",
    "words": "path-connected subsets",
-   "label": "notion:34",
-   "number": "n34",
+   "label": "notion:26",
+   "number": "n26",
    "boxes": [
-    [4, 0.17498, 0.316604, 0.182982, 0.018624]
+    [3, 0.236872, 0.422664, 0.182982, 0.018308]
    ]
   },
   {
-   "id": "notion:MonoidHom.comp",
-   "notion": "MonoidHom.comp",
-   "words": "$\\circ$",
-   "label": "notion:35",
-   "number": "n35",
+   "id": "notion:Subgroup",
+   "notion": "Subgroup",
+   "words": "subgroups",
+   "label": "notion:27",
+   "number": "n27",
    "boxes": [
-    [5, 0.751383, 0.248106, 0.011364, 0.017361]
+    [3, 0.686507, 0.484533, 0.077152, 0.017835]
+   ]
+  },
+  {
+   "id": "notion:MonoidHom.range",
+   "notion": "MonoidHom.range",
+   "words": "$\\im\\fgrp{\\incl{U_i}}{x}$",
+   "label": "notion:28",
+   "number": "n28",
+   "boxes": [
+    [3, 0.767829, 0.484533, 0.096878, 0.017835]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.Category",
+   "notion": "CategoryTheory.Category",
+   "words": "category",
+   "label": "notion:29",
+   "number": "n29",
+   "boxes": [
+    [4, 0.222167, 0.293876, 0.068498, 0.019571]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.End",
+   "notion": "CategoryTheory.End",
+   "words": "$\\End(w)$",
+   "label": "notion:30",
+   "number": "n30",
+   "boxes": [
+    [4, 0.525614, 0.293876, 0.061493, 0.019571]
+   ]
+  },
+  {
+   "id": "notion:CategoryTheory.SingleObj",
+   "notion": "CategoryTheory.SingleObj",
+   "words": "$\\sobj{M}$",
+   "label": "notion:31",
+   "number": "n31",
+   "boxes": [
+    [4, 0.132842, 0.313447, 0.034561, 0.018308]
+   ]
+  },
+  {
+   "id": "notion:Monoid",
+   "notion": "Monoid",
+   "words": "monoid",
+   "label": "notion:32",
+   "number": "n32",
+   "boxes": [
+    [4, 0.508388, 0.313447, 0.059887, 0.018308]
    ]
   },
   {
    "id": "notion:CategoryTheory.IsPushout",
    "notion": "CategoryTheory.IsPushout",
    "words": "pushout",
-   "label": "notion:36",
-   "number": "n36",
+   "label": "notion:33",
+   "number": "n33",
    "boxes": [
-    [7, 0.198925, 0.104798, 0.064938, 0.018308]
+    [5, 0.582454, 0.840278, 0.06335, 0.020202]
    ]
   },
   {
    "id": "notion:GrpCat",
    "notion": "GrpCat",
    "words": "category of groups",
-   "label": "notion:37",
-   "number": "n37",
+   "label": "notion:34",
+   "number": "n34",
    "boxes": [
-    [7, 0.404153, 0.104798, 0.149778, 0.018308]
+    [5, 0.701205, 0.840278, 0.143431, 0.020202]
    ]
   }
  ]
