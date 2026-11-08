@@ -7,8 +7,8 @@
   },
   "steps": [
     {
-      "id": "3.1-s01-subdivide",
-      "item": "3.1",
+      "id": "2.1-s01-subdivide",
+      "item": "2.1",
       "label": "Step",
       "title": "Choose a subdivision subordinate to the cover",
       "span": "inline",
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "id": "3.1-s02-image",
-      "item": "3.1",
+      "id": "2.1-s02-image",
+      "item": "2.1",
       "label": "Step",
       "title": "Each piece lies in an image subgroupoid",
       "span": "inline",
@@ -45,8 +45,8 @@
       ]
     },
     {
-      "id": "3.1-s03-reassemble",
-      "item": "3.1",
+      "id": "2.1-s03-reassemble",
+      "item": "2.1",
       "label": "Step",
       "title": "Reassemble the original path class",
       "span": "display",
@@ -64,8 +64,8 @@
       ]
     },
     {
-      "id": "3.2-s01-objects",
-      "item": "3.2",
+      "id": "2.2-s01-objects",
+      "item": "2.2",
       "label": "Step",
       "title": "The object value is independent of the cover member",
       "span": "inline",
@@ -83,8 +83,8 @@
       ]
     },
     {
-      "id": "3.2-s02-partition",
-      "item": "3.2",
+      "id": "2.2-s02-partition",
+      "item": "2.2",
       "label": "Step",
       "title": "Choose a sufficiently fine equal subdivision",
       "span": "inline",
@@ -102,8 +102,8 @@
       ]
     },
     {
-      "id": "3.2-s03-indices",
-      "item": "3.2",
+      "id": "2.2-s03-indices",
+      "item": "2.2",
       "label": "Step",
       "title": "Compatibility makes the local path value independent of the index",
       "span": "inline",
@@ -121,8 +121,8 @@
       ]
     },
     {
-      "id": "3.2-s04-refine-pieces",
-      "item": "3.2",
+      "id": "2.2-s04-refine-pieces",
+      "item": "2.2",
       "label": "Step",
       "title": "Refining each interval preserves the composite",
       "span": "inline",
@@ -140,8 +140,8 @@
       ]
     },
     {
-      "id": "3.2-s05-refinement",
-      "item": "3.2",
+      "id": "2.2-s05-refinement",
+      "item": "2.2",
       "label": "Step",
       "title": "Compare equal subdivisions through their common refinement",
       "span": "inline",
@@ -159,8 +159,8 @@
       ]
     },
     {
-      "id": "3.2-s06-grid",
-      "item": "3.2",
+      "id": "2.2-s06-grid",
+      "item": "2.2",
       "label": "Step",
       "title": "Choose a fine grid for the homotopy",
       "span": "inline",
@@ -178,8 +178,8 @@
       ]
     },
     {
-      "id": "3.2-s07-cell",
-      "item": "3.2",
+      "id": "2.2-s07-cell",
+      "item": "2.2",
       "label": "Step",
       "title": "The two routes around one cell have the same value",
       "span": "inline",
@@ -197,8 +197,8 @@
       ]
     },
     {
-      "id": "3.2-s08-paste",
-      "item": "3.2",
+      "id": "2.2-s08-paste",
+      "item": "2.2",
       "label": "Step",
       "title": "Paste the commuting squares across one row",
       "span": "inline",
@@ -216,8 +216,8 @@
       ]
     },
     {
-      "id": "3.2-s09-boundary",
-      "item": "3.2",
+      "id": "2.2-s09-boundary",
+      "item": "2.2",
       "label": "Step",
       "title": "Cancel the constant endpoint boundary paths",
       "span": "inline",
@@ -235,8 +235,8 @@
       ]
     },
     {
-      "id": "3.2-s10-rows",
-      "item": "3.2",
+      "id": "2.2-s10-rows",
+      "item": "2.2",
       "label": "Step",
       "title": "Repeat the row equality throughout the homotopy",
       "span": "inline",
@@ -254,8 +254,8 @@
       ]
     },
     {
-      "id": "3.2-s11-quotient",
-      "item": "3.2",
+      "id": "2.2-s11-quotient",
+      "item": "2.2",
       "label": "Step",
       "title": "Descend the path value to homotopy classes",
       "span": "inline",
@@ -273,8 +273,8 @@
       ]
     },
     {
-      "id": "3.2-s12-restrict",
-      "item": "3.2",
+      "id": "2.2-s12-restrict",
+      "item": "2.2",
       "label": "Step",
       "title": "Collapse the subdivision inside a single cover member",
       "span": "inline",
@@ -292,8 +292,8 @@
       ]
     },
     {
-      "id": "4.1-s01-paths",
-      "item": "4.1",
+      "id": "3.1-s01-paths",
+      "item": "3.1",
       "label": "Step",
       "title": "Choose paths from the basepoint",
       "span": "inline",
@@ -311,8 +311,8 @@
       ]
     },
     {
-      "id": "4.1-s02-subgroupoid",
-      "item": "4.1",
+      "id": "3.1-s02-subgroupoid",
+      "item": "3.1",
       "label": "Step",
       "title": "The transported classes define a subgroupoid",
       "span": "inline",
@@ -330,8 +330,8 @@
       ]
     },
     {
-      "id": "4.1-s03-intersections",
-      "item": "4.1",
+      "id": "3.1-s03-intersections",
+      "item": "3.1",
       "label": "Step",
       "title": "Choose the two paths in pairwise intersections",
       "span": "inline",
@@ -349,8 +349,8 @@
       ]
     },
     {
-      "id": "4.1-s04-factorization",
-      "item": "4.1",
+      "id": "3.1-s04-factorization",
+      "item": "3.1",
       "label": "Step",
       "title": "Factor the transported loop into three local loops",
       "span": "display",
@@ -368,8 +368,8 @@
       ]
     },
     {
-      "id": "4.1-s05-middle",
-      "item": "4.1",
+      "id": "3.1-s05-middle",
+      "item": "3.1",
       "label": "Step",
       "title": "The middle loop lies in the generated subgroup",
       "span": "inline",
@@ -387,8 +387,8 @@
       ]
     },
     {
-      "id": "4.1-s06-product",
-      "item": "4.1",
+      "id": "3.1-s06-product",
+      "item": "3.1",
       "label": "Step",
       "title": "Multiply the three local loop classes",
       "span": "inline",
@@ -406,8 +406,8 @@
       ]
     },
     {
-      "id": "4.1-s07-generation",
-      "item": "4.1",
+      "id": "3.1-s07-generation",
+      "item": "3.1",
       "label": "Step",
       "title": "Invoke generation of the fundamental groupoid",
       "span": "inline",
@@ -425,8 +425,8 @@
       ]
     },
     {
-      "id": "4.1-s08-basepoint-loop",
-      "item": "4.1",
+      "id": "3.1-s08-basepoint-loop",
+      "item": "3.1",
       "label": "Step",
       "title": "The chosen path at the basepoint belongs to the subgroup",
       "span": "inline",
@@ -444,8 +444,8 @@
       ]
     },
     {
-      "id": "4.1-s09-cancellation",
-      "item": "4.1",
+      "id": "3.1-s09-cancellation",
+      "item": "3.1",
       "label": "Step",
       "title": "Cancel the basepoint transport",
       "span": "display",
@@ -463,8 +463,8 @@
       ]
     },
     {
-      "id": "5.1-s01-connect",
-      "item": "5.1",
+      "id": "4.3-s01-connect",
+      "item": "4.3",
       "label": "Step",
       "title": "Choose connecting paths compatibly on the intersection",
       "span": "inline",
@@ -482,8 +482,8 @@
       ]
     },
     {
-      "id": "5.1-s02-local",
-      "item": "5.1",
+      "id": "4.3-s02-local",
+      "item": "4.3",
       "label": "Step",
       "title": "Invoke the functor construction from a homomorphism",
       "span": "inline",
@@ -501,8 +501,8 @@
       ]
     },
     {
-      "id": "5.1-s03-compatibility",
-      "item": "5.1",
+      "id": "4.3-s03-compatibility",
+      "item": "4.3",
       "label": "Step",
       "title": "Apply compatibility to the transported loop in the intersection",
       "span": "display",
@@ -520,8 +520,8 @@
       ]
     },
     {
-      "id": "5.1-s04-glue",
-      "item": "5.1",
+      "id": "4.3-s04-glue",
+      "item": "4.3",
       "label": "Step",
       "title": "Invoke gluing of the two local functors",
       "span": "inline",
@@ -539,8 +539,8 @@
       ]
     },
     {
-      "id": "5.1-s05-endomorphisms",
-      "item": "5.1",
+      "id": "4.3-s05-endomorphisms",
+      "item": "4.3",
       "label": "Step",
       "title": "Restrict the glued functor to loops at the basepoint",
       "span": "display",
@@ -558,8 +558,8 @@
       ]
     },
     {
-      "id": "5.2-s01-left",
-      "item": "5.2",
+      "id": "4.4-s01-left",
+      "item": "4.4",
       "label": "Step",
       "title": "Use the glued functor's restriction to A",
       "span": "display",
@@ -577,8 +577,8 @@
       ]
     },
     {
-      "id": "5.2-s02-basepoint",
-      "item": "5.2",
+      "id": "4.4-s02-basepoint",
+      "item": "4.4",
       "label": "Step",
       "title": "Evaluate the local functor at the basepoint",
       "span": "display",
@@ -596,8 +596,8 @@
       ]
     },
     {
-      "id": "5.2-s03-pointwise",
-      "item": "5.2",
+      "id": "4.4-s03-pointwise",
+      "item": "4.4",
       "label": "Step",
       "title": "Pass from pointwise equality to equality of homomorphisms",
       "span": "inline",
@@ -615,8 +615,8 @@
       ]
     },
     {
-      "id": "5.2-s04-right",
-      "item": "5.2",
+      "id": "4.4-s04-right",
+      "item": "4.4",
       "label": "Step",
       "title": "Apply the right restriction in the same way",
       "span": "inline",
@@ -634,8 +634,8 @@
       ]
     },
     {
-      "id": "5.3-s01-images",
-      "item": "5.3",
+      "id": "4.5-s01-images",
+      "item": "4.5",
       "label": "Step",
       "title": "Both generating images lie in the equalizer subgroup",
       "span": "inline",
@@ -653,8 +653,8 @@
       ]
     },
     {
-      "id": "5.3-s02-generation",
-      "item": "5.3",
+      "id": "4.5-s02-generation",
+      "item": "4.5",
       "label": "Step",
       "title": "Invoke generation and conclude that the homomorphisms agree",
       "span": "inline",
@@ -672,8 +672,8 @@
       ]
     },
     {
-      "id": "5.4-s01-commutes",
-      "item": "5.4",
+      "id": "4.6-s01-commutes",
+      "item": "4.6",
       "label": "Step",
       "title": "The two inclusions give the same loop class",
       "span": "inline",
@@ -691,8 +691,8 @@
       ]
     },
     {
-      "id": "5.4-s02-existence",
-      "item": "5.4",
+      "id": "4.6-s02-existence",
+      "item": "4.6",
       "label": "Step",
       "title": "Construct a map for any compatible pair",
       "span": "inline",
@@ -710,8 +710,8 @@
       ]
     },
     {
-      "id": "5.4-s03-factorization",
-      "item": "5.4",
+      "id": "4.6-s03-factorization",
+      "item": "4.6",
       "label": "Step",
       "title": "Invoke the two restriction equations",
       "span": "display",
@@ -729,8 +729,8 @@
       ]
     },
     {
-      "id": "5.4-s04-uniqueness",
-      "item": "5.4",
+      "id": "4.6-s04-uniqueness",
+      "item": "4.6",
       "label": "Step",
       "title": "Invoke uniqueness for the mediating homomorphism",
       "span": "inline",

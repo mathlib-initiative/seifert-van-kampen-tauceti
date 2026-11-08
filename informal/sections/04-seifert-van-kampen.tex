@@ -1,0 +1,170 @@
+Let $\mathcal C$ be a \fcnotion{CategoryTheory.Category}{category} and $w$ an
+object of it.  Write \fcnotion{CategoryTheory.End}{$\End(w)$} for its
+endomorphism monoid, and \fcnotion{CategoryTheory.SingleObj}{$\sobj{M}$}
+for the one-object category associated to a \fcnotion{Monoid}{monoid} $M$.
+
+\begin{definition}[id=4.1]{The functor picking out a chosen object}
+The functor $J_w:\sobj{\End(w)}\longrightarrow\mathcal C$ takes the unique
+object to $w$ and each element of $\End(w)$ to itself.
+\leanref{TauCeti.Groupoid.singleObjFunctor}
+\end{definition}
+
+\begin{definition}[id=4.2]{The functor induced by a homomorphism out of a vertex group}
+Suppose that $\mathcal C$ is a groupoid and that a morphism
+$\tau_c:w\longrightarrow c$ has been chosen for each object $c$.  Let $M$ be
+a monoid and $f:\End(w)\longrightarrow M$ a homomorphism.
+The induced functor $F_{\tau,f}:\mathcal C\longrightarrow\sobj{M}$ sends
+$g:c\longrightarrow c'$ to $f(\tau_{c'}^{-1}\circ g\circ\tau_c)$.
+\leanref{TauCeti.Groupoid.functorOfEndHom}
+\leanref{TauCeti.Groupoid.functorOfEndHom_map}
+\end{definition}
+
+Let $A$ and $B$ be subsets of a topological space $X$, let $x\in X$, and
+let $M$ be a monoid.
+
+\begin{definition}[id=4.3]{The homomorphism out of the fundamental group of the space}
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
+$\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
+$\fgrp{B}{x}$ with
+\[
+  \varphi_{A} \circ \fgrp{\inclin{A \cap B}{A}}{x}
+    = \varphi_{B} \circ \fgrp{\inclin{A \cap B}{B}}{x}.
+\]
+Then $\varphi_{A}$ and $\varphi_{B}$ induce a homomorphism $\varphi$ from
+$\fgrp{X}{x}$ to $M$.
+\leanref{TauCeti.vanKampenDesc}
+\end{definition}
+
+\begin{proofpassage}{4.3-descent}{Construction}{Descent from the two subspaces}
+Put $C=A\cap B$.  For each $y\in C$ choose a path class
+$\rho_y:x\longrightarrow y$ in $C$, taking $\rho_x$ to be the identity.
+\proofstep{4.3-s01-connect}{Choose connecting paths compatibly on the intersection}{In $A$, choose classes $\tau^A_y:x\longrightarrow y$ whose values on $C$
+are the images of these $\rho_y$; choose the other classes using path
+connectedness of $A$.  Make the same choices in $B$, with the same
+$\rho_y$ on $C$.}  In particular, $\tau^A_x$ and $\tau^B_x$ are identities.
+
+For $g:y\longrightarrow z$ in $\fgpd A$, define
+$F_A:\fgpd A\longrightarrow\sobj M$ by
+\[
+ F_A(g)=\varphi_A\bigl((\tau^A_z)^{-1}\circ g\circ\tau^A_y\bigr),
+\]
+and define $F_B$ in the same way.  \proofstep{4.3-s02-local}{Invoke the functor construction from a homomorphism}{These are the functors of
+\itemref{4.2}.}
+
+Let $j_A$ and $j_B$ be the maps from $\fgrp{C}{x}$ induced by the
+inclusions of $C$ into $A$ and $B$, respectively.
+For a morphism $g:y\longrightarrow z$ in $\fgpd C$, the loop
+$\eta=\rho_z^{-1}\circ g\circ\rho_y$ is based at $x$ in $C$.
+The choices in the preceding construction and the compatibility of the
+given homomorphisms yield
+\proofequation{4.3-s03-compatibility}{Apply compatibility to the transported loop in the intersection}{ F_A(\fgpd{\inclin{C}{A}}(g))
+   =\varphi_A(j_A(\eta))
+   =\varphi_B(j_B(\eta))
+   =F_B(\fgpd{\inclin{C}{B}}(g)).}
+Thus the two functors agree on $\fgpd C$.  \proofstep{4.3-s04-glue}{Invoke gluing of the two local functors}{Apply \itemref{2.4} to obtain a glued functor
+$F:\fgpd X\longrightarrow\sobj M$.}  Restrict it along $J_x$ from \itemref{4.1} to obtain
+\proofequation{4.3-s05-endomorphisms}{Restrict the glued functor to loops at the basepoint}{  \varphi:\fgrp{X}{x}\longrightarrow M,\qquad
+  \varphi(\omega)=F(\omega).}
+\end{proofpassage}
+
+\begin{proposition}[id=4.4]{The induced homomorphism restricts to the given ones}
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
+$\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
+$\fgrp{B}{x}$ that agree after restriction along the inclusions of $A \cap B$,
+as in \itemref{4.3}, and let $\varphi$ be the homomorphism they induce.
+\itempart{a}{%
+  $\varphi \circ \fgrp{\incl{A}}{x} = \varphi_{A}$.
+  \leanref{TauCeti.vanKampenDesc_map_left}%
+  \leanref{TauCeti.vanKampenDesc_comp_map_left}}
+\itempart{b}{%
+  $\varphi \circ \fgrp{\incl{B}}{x} = \varphi_{B}$.
+  \leanref{TauCeti.vanKampenDesc_map_right}%
+  \leanref{TauCeti.vanKampenDesc_comp_map_right}}
+\end{proposition}
+
+\begin{proofpassage}{4.4-restrict}{Proof}{The restriction equations}
+Let $\omega\in\fgrp{A}{x}$ be arbitrary.  Write $p_A=\fgrp{\incl{A}}{x}$.
+By the definition of $\varphi$ and the restriction property in
+\itemref[a]{2.5},
+\proofequation{4.4-s01-left}{Use the glued functor's restriction to A}{
+ \varphi(p_A(\omega))=F(\fgpd{\incl{A}}(\omega))=F_A(\omega).
+}
+The chosen path $\tau^A_x$ is the identity at the basepoint, so
+\proofequation{4.4-s02-basepoint}{Evaluate the local functor at the basepoint}{
+ F_A(\omega)=\varphi_A\bigl((\tau^A_x)^{-1}\circ\omega\circ\tau^A_x\bigr)
+            =\varphi_A(\omega).
+}
+\proofstep{4.4-s03-pointwise}{Pass from pointwise equality to equality of homomorphisms}{Since this holds for every $\omega$, it proves \itemref[a]{4.4}.}
+\proofstep{4.4-s04-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ and using \itemref[b]{2.5} proves \itemref[b]{4.4}.}
+\end{proofpassage}
+
+\begin{proposition}[id=4.5]{Uniqueness of the induced homomorphism}
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
+$\varphi$ and $\psi$ be homomorphisms from $\fgrp{X}{x}$ to $M$ such that
+$\varphi \circ \fgrp{\incl{A}}{x} = \psi \circ \fgrp{\incl{A}}{x}$ and
+$\varphi \circ \fgrp{\incl{B}}{x} = \psi \circ \fgrp{\incl{B}}{x}$.  Then
+$\varphi = \psi$.
+\leanref{TauCeti.vanKampen_hom_ext}
+\end{proposition}
+
+\begin{proofpassage}{4.5-generate}{Proof}{Uniqueness from generation}
+Consider the set where the two homomorphisms agree:
+\[
+ E=\{\omega\in\fgrp{X}{x}:\varphi(\omega)=\psi(\omega)\}.
+\]
+It contains the identity and is closed under multiplication, since
+$\varphi$ and $\psi$ are homomorphisms.  It is also closed under inverses:
+if their values on $\omega$ agree, then $\varphi(\omega^{-1})$ and
+$\psi(\omega^{-1})$ are two-sided inverses of the same element of $M$,
+and a two-sided inverse is unique.  Thus $E$ is a subgroup, the equalizer of $\varphi$ and $\psi$, even
+though $M$ is only assumed to be a monoid.
+
+\proofstep{4.5-s01-images}{Both generating images lie in the equalizer subgroup}{For every $\eta\in\fgrp{A}{x}$, the first hypothesis says
+$\varphi(\fgrp{\incl{A}}{x}(\eta))=\psi(\fgrp{\incl{A}}{x}(\eta))$;
+hence $E$ contains the image from $A$.  The second hypothesis puts the
+image from $B$ in $E$ as well.}  \proofstep{4.5-s02-generation}{Invoke generation and conclude that the homomorphisms agree}{These two images generate $\fgrp{X}{x}$ by
+\itemref{3.2}.  Therefore $E=\fgrp{X}{x}$: the homomorphisms agree on every loop class,
+so $\varphi=\psi$.}
+\end{proofpassage}
+
+\begin{theorem}[id=4.6]{The based Seifert--van Kampen theorem}
+\fcref{Theorem 1.20}
+Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Then
+the square
+\[
+  \begin{array}{ccc}
+    \fgrp{A \cap B}{x} & \longrightarrow & \fgrp{A}{x} \\
+    \downarrow & & \downarrow \\
+    \fgrp{B}{x} & \longrightarrow & \fgrp{X}{x}
+  \end{array}
+\]
+whose homomorphisms are induced by the inclusions is a
+\fcnotion{CategoryTheory.IsPushout}{pushout} in the
+\fcnotion{GrpCat}{category of groups}.
+\leanref{TauCeti.isPushout_fundamentalGroup}
+\end{theorem}
+
+\begin{proofpassage}{4.6-pushout}{Proof}{The pushout universal property}
+Write $C=A\cap B$, and denote the inclusion-induced maps by
+\[
+\begin{aligned}
+ j_A&:\fgrp{C}{x}\longrightarrow\fgrp{A}{x},&
+ j_B&:\fgrp{C}{x}\longrightarrow\fgrp{B}{x},\\
+ p_A&:\fgrp{A}{x}\longrightarrow\fgrp{X}{x},&
+ p_B&:\fgrp{B}{x}\longrightarrow\fgrp{X}{x}.
+\end{aligned}
+\]
+\proofstep{4.6-s01-commutes}{The two inclusions give the same loop class}{For a loop in $C$, either composite inclusion gives the same loop in $X$.
+Passing to classes proves $p_A\circ j_A=p_B\circ j_B$, so the square
+commutes.}
+
+Let $K$ be any group, and let $u_A:\fgrp{A}{x}\longrightarrow K$ and
+$u_B:\fgrp{B}{x}\longrightarrow K$ satisfy
+$u_A\circ j_A=u_B\circ j_B$.  \proofstep{4.6-s02-existence}{Construct a map for any compatible pair}{The construction of \itemref{4.3}, with
+$M=K$, supplies a homomorphism $u:\fgrp{X}{x}\longrightarrow K$.}
+By \itemref{4.4} it satisfies
+\proofequation{4.6-s03-factorization}{Invoke the two restriction equations}{  u\circ p_A=u_A,\qquad u\circ p_B=u_B.}
+If $v:\fgrp{X}{x}\longrightarrow K$ satisfies the same equations, then
+$u\circ p_A=v\circ p_A$ and $u\circ p_B=v\circ p_B$.
+\proofstep{4.6-s04-uniqueness}{Invoke uniqueness for the mediating homomorphism}{\itemref{4.5} gives $u=v$.}
+\end{proofpassage}

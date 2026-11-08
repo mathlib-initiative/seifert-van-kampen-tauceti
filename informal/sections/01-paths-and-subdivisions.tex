@@ -1,48 +1,35 @@
-We begin with a \fcnotion{IsCompact}{compactness} lemma for
-\fcnotion{PseudoMetricSpace}{pseudometric spaces};
-\fcnotion{Metric.ball}{$\ball{z}{\rho}$} denotes an open ball.
-
 \begin{lemma}[id=1.1]{A Lebesgue number for a family of neighborhoods}
-Let $Z$ be a pseudometric space, $K$ a compact subset of $Z$, and
-$(V_j)_{j\in J}$ a family of subsets of $Z$.  If each point of $K$ has some
-$V_j$ as a neighborhood, then there is a positive radius $\rho$ such that for
-each $z\in K$ some $V_j$ contains $\ball{z}{\rho}$.
+Let $Z$ be a \fcnotion{PseudoMetricSpace}{pseudometric space}, $K$ a
+\fcnotion{IsCompact}{compact} subset of $Z$, and $(V_j)_{j\in J}$ a family
+of subsets of $Z$.  If each point of $K$ has some $V_j$ as a neighborhood,
+then there is a positive radius $\rho$ such that for each $z\in K$ some
+$V_j$ contains \fcnotion{Metric.ball}{$\ball{z}{\rho}$}.
 \leanref{TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds}
 \end{lemma}
 
-Let $S$ be a subset of a \fcnotion{TopologicalSpace}{topological space} $X$.
-Write \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}$} for the inclusion
-$S\longrightarrow X$.
-
-Let $\gamma$ be a \fcnotion{Path}{path} in $X$.  When its image lies in $S$,
-write \fcnotion{Path.codRestrict}{$\codres{\gamma}{S}$} for the same path in
-$S$.  For a path $\delta$ starting where $\gamma$ ends, write
-\fcnotion{Path.trans}{$\gamma\ptrans\delta$} for their concatenation.
-For parameters $r,s\in[0,1]$, the subpath
-\fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} traverses $\gamma$ with its
-parameter running linearly from $r$ to $s$, backwards when $s<r$ and
-constantly when $r=s$.
-
-A subdivision of \fcnotion{unitInterval}{$\uI$} is a finite \fcnotion{Monotone}{nondecreasing} sequence
-$0=t_0\le\cdots\le t_n=1$.
-
-Let $(U_i)_{i\in I}$ be a family of subsets of $X$.
+Let $X$ be a \fcnotion{TopologicalSpace}{topological space} and $S\subseteq X$,
+with inclusion \fcnotion{ContinuousMap.subtypeVal}{$\incl{S}:S\longrightarrow X$}.
+For a \fcnotion{Path}{path} $\gamma$ in $X$, write
+\fcnotion{Path.codRestrict}{$\codres{\gamma}{S}$} when its image lies in $S$,
+\fcnotion{Path.trans}{$\gamma\ptrans\delta$} for concatenation with a
+composable path $\delta$, and
+\fcnotion{Path.subpath}{$\subpath{\gamma}{r}{s}$} for its linearly parametrized subpath from
+$r$ to $s$, with $r,s\in[0,1]$.
+Write \fcnotion{Path.Homotopic.Quotient}{$\pcls{\gamma}$} for its homotopy
+class, with \fcnotion{Path.Homotopic.Quotient.trans}{composition} again
+denoted $\ptrans$.
 
 \begin{proposition}[id=1.2]{Subdividing a path along a family of sets}
-Let $\gamma$ be a path in $X$.  Suppose that every parameter has a
-neighborhood that $\gamma$ maps into some $U_i$.  Then there is a subdivision
-$t_0,\dots,t_n$ of $\uI$ such that, for each $k$ less than $n$, the range of
-$\subpath{\gamma}{t_k}{t_{k+1}}$ is contained in some $U_i$.
+Let $\gamma$ be a path in $X$ and $(U_i)_{i\in I}$ a family of subsets of $X$.
+Suppose that every parameter has a neighborhood that $\gamma$ maps into
+some $U_i$.  Then there is a finite \fcnotion{Monotone}{nondecreasing}
+sequence $0=t_0\le\cdots\le t_n=1$ in \fcnotion{unitInterval}{$\uI$} such
+that each subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in some $U_i$.
 \leanref{Path.exists_monotone_range_subpath_subset}
 \end{proposition}
 
-Write \fcnotion{Path.Homotopic.Quotient}{$\pcls{\gamma}$} for the homotopy
-class of $\gamma$; \fcnotion{Path.Homotopic.Quotient.trans}{composition of
-classes}, also written $\ptrans$, is induced by concatenation.
-
 \begin{lemma}[id=1.3]{Cutting a path class at an intermediate parameter}
-Let $\gamma$ be a path in $X$, and let $r,s,t$ be parameters.
-Then
+Let $\gamma$ be a path in $X$, and let $r,s,t$ be parameters.  Then
 \[
   \pcls{\subpath{\gamma}{r}{s}} \ptrans \pcls{\subpath{\gamma}{s}{t}}
     = \pcls{\subpath{\gamma}{r}{t}}.

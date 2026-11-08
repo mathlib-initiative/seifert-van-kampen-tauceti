@@ -3,8 +3,7 @@
 The rules `STYLE.md` does not fix, for The Seifert--van Kampen theorem, after TauCeti: the library
 TauCeti at commit `37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`, and the theorem
 `TauCeti.isPushout_fundamentalGroup`. Every drafter, attacker, judge and editor reads this file beside `STYLE.md`.
-The local introduction rules below supersede that file's requirement to put all
-ambient variables and notion markers into a separate conventions section.
+The text follows the shared editorial guide, with the local choices below.
 
 ## Notation
 
@@ -60,12 +59,12 @@ need no standalone lemmas. Retain short notation introductions where needed.
 Keep the subdivision and homotopy-class reassembly results because they carry
 the passage from local paths to the global argument. Omitted implementation
 helpers may remain in the item table without creating PDF statements or links.
-Introduce fundamental groupoids, their functoriality and subgroupoids in the
-cover argument in Section 3. Introduce fundamental groups and their induced
-homomorphisms in Section 4. Keep these local introductions short. Leave
-immediate consequences implicit: existence of morphisms under path
-connectedness, injectivity of the object map and the image of a loop class.
-Endpoint transports also stay implicit.
+Introduce fundamental groupoids and gluing in Section 2, fundamental-group
+generation in Section 3, and the constructions relating groupoids to their vertex
+groups beside their use in Section 4. A section must advance the argument, rather
+than collect notation used much later. Put one-use variables in their result;
+combine repeated setup into a connected paragraph. Remove special-case announcements,
+background definitions and repeated verification of earlier constructions.
 
 ## Assumed background
 
@@ -103,17 +102,10 @@ the whole space, so it too is stated in words.
 There is no separate conventions section. Give each section a short local setup,
 and explain specialized notation next to its first use:
 
-- Section 1: the auxiliary pseudometric lemma, then the general topological
-  space, paths and subpaths. Introduce subdivisions and the family of subsets
-  beside Proposition 1.2, then homotopy classes and their composition.
-- Section 2: categories, endomorphisms and the one-object category, then the
-  connecting morphisms needed by Definition 2.2.
-- Section 3: the fundamental groupoid and induced functors, subgroupoids and
-  a family of subsets, then image subgroupoids, generation and gluing.
-- Section 4: the fundamental group, loop classes and induced homomorphisms,
-  then a family of subsets and generation by their images.
-- Section 5: the space, two subsets and basepoint, inclusions and the target
-  monoid; explain the pushout condition beside the final theorem.
+- Section 1: the auxiliary pseudometric lemma, then path notation and subdivision.
+- Section 2: fundamental groupoids, inclusion functors, generation and gluing.
+- Section 3: fundamental groups and generation by subspaces.
+- Section 4: the two vertex-group functors, then descent and the pushout proof.
 
 Repeat enough ambient data and notation to make a section readable on its own.
 Keep typeclass syntax, universe variables and other Lean bookkeeping out of the
@@ -122,9 +114,9 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 ## Marking notions
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
-where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep each retained notion link once. The constants are these 37,
-each copied from `declarations.json` (36 rows of its `references` from Mathlib, plus TauCeti's path restriction
+where it is explained, including inside numbered items and parts. Mark useful existing text; never add
+a sentence just to host a link. Keep each retained notion link once. The constants are these 34,
+each copied from `declarations.json` (33 rows of its `references` from Mathlib, plus TauCeti's path restriction
 construction):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
@@ -135,9 +127,8 @@ construction):
 `FundamentalGroup`, `FundamentalGroup.map`, `FundamentalGroup.fromPath`,
 `CategoryTheory.Subgroupoid`, `CategoryTheory.Subgroupoid.im`, `MonoidHom.range`,
 `Subgroup`, `iSup`, `CategoryTheory.Category`,
-`CategoryTheory.End`, `CategoryTheory.CategoryStruct.comp`, `Monoid`,
+`CategoryTheory.End`, `Monoid`,
 `CategoryTheory.SingleObj`, `MonoidHom`, `CategoryTheory.Functor`,
-`CategoryTheory.Functor.comp`, `MonoidHom.comp`,
 `CategoryTheory.IsPushout`, `GrpCat`, `Monotone`, `Path.codRestrict`.
 
 A numbered item records its key declarations with `\leanref`. The helper
@@ -171,17 +162,16 @@ The text cites A. Hatcher, Algebraic Topology, Cambridge University Press, 2002 
 
 Every number this text cites comes from a module docstring, so every `\fcref` is unstarred
 and no dagger is printed anywhere. `items.json` gives `Theorem 1.20` for the four items
-that carry a reference, two of them in section 3 and one each in sections 4 and 5, and no
-number anywhere else. The four are items `3.1` and `3.2`, item `4.1` and item `5.4`; a
-drafter of section 3 writes two `\fcref`, one on each of those two items. Every one of the
+that carry a reference, two of them in section 2 and one each in sections 3 and 4, and no
+number anywhere else. The four are items `2.1` and `2.2`, item `3.1` and item `4.6`; a
+drafter of section 2 writes two `\fcref`, one on each of those two items. Every one of the
 four numbers belongs to the item as a whole, so no part of an item carries a number of its
 own.
 
 ## Proofs and constructions
 
 The maintainer requested actual proofs, allowing concise proof sketches, on
-2026-11-06. This overrides the statements-only and no-proof-sketch rules of
-STYLE.md. A selected proof must give its construction, the equalities or
+2026-11-06. This specializes the shared proof-writing rules. A selected proof must give its construction, the equalities or
 closure arguments it needs, and the deduction of the stated conclusion.
 Use earlier numbered results explicitly; do not replace an argument with a
 statement of its intended strategy. Additional notation is local to the proof
@@ -191,14 +181,14 @@ sentences with `\proofstep` and individual displayed equations with
 `proofsteps.json`. Never mark a whole proof as one region. Lean names remain
 in the annotations.
 
-In the proof of 4.1, use $H$ for the generated subgroup and $S$ for the
+In the proof of 3.1, use $H$ for the generated subgroup and $S$ for the
 subgroupoid defined by transporting morphisms to the basepoint, matching
 the local names in Lean. Here $S=\top$ means that this subgroupoid is the
 whole fundamental groupoid. This use of $S$ is local to the proof; section 1 introduces its own subset $S$.
 
 Prefer mathematical notation that makes a linked argument easy to recognize:
-use the chosen index $i_0$ in 4.1, and introduce the equal-subdivision value
-$L_N$ before its common value $L$ in 4.2. There $N$ counts the pieces, $N_0$ is one fixed fine choice, and $m$ is
+use the chosen index $i_0$ in 3.1, and introduce the equal-subdivision value
+$L_N$ before its common value $L$ in 2.2. There $N$ counts the pieces, $N_0$ is one fixed fine choice, and $m$ is
 a positive integer refining each piece. Introduce intermediate objects by their mathematical meaning, and
 separate deductions when they have different proof-step links. Keep tactic
 syntax, helper names, coercions and other Lean bookkeeping out of the printed

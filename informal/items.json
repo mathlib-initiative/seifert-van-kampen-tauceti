@@ -9,26 +9,21 @@
   "sections": [
     {
       "number": "1",
-      "title": "Paths, subpaths and subdivisions",
+      "title": "Paths and subdivisions",
       "slug": "paths-and-subdivisions"
     },
     {
       "number": "2",
-      "title": "Functors out of a connected groupoid",
-      "slug": "connected-groupoids"
-    },
-    {
-      "number": "3",
-      "title": "The fundamental groupoid of a cover",
+      "title": "Gluing fundamental groupoids",
       "slug": "fundamental-groupoid-of-a-cover"
     },
     {
-      "number": "4",
-      "title": "Covers generate the fundamental group",
+      "number": "3",
+      "title": "Generating the fundamental group",
       "slug": "fundamental-group-of-a-cover"
     },
     {
-      "number": "5",
+      "number": "4",
       "title": "The Seifert--van Kampen theorem",
       "slug": "seifert-van-kampen"
     }
@@ -240,78 +235,6 @@
     {
       "id": "2.1",
       "section": "2",
-      "kind": "definition",
-      "title": "The functor picking out a chosen object",
-      "gist": "For a chosen object w of a category C, J_w denotes the functor from the one-object category of its monoid of endomorphisms to C, sending the unique object to w and each endomorphism to itself.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
-        {
-          "name": "TauCeti.Groupoid.singleObjFunctor",
-          "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
-          "line": 66,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "a category",
-            "a chosen object of the category"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2.2",
-      "section": "2",
-      "kind": "definition",
-      "title": "The functor induced by a homomorphism out of a vertex group",
-      "gist": "A homomorphism from the endomorphism group of a chosen object of a groupoid to a monoid, together with a morphism from that object to every object, induces a functor from the groupoid to the one-object category of the monoid which sends a morphism to the image of the loop obtained by conjugating it with the two chosen morphisms.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
-        {
-          "name": "TauCeti.Groupoid.functorOfEndHom",
-          "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
-          "line": 128,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "a groupoid",
-            "a chosen object of the groupoid",
-            "a morphism from the chosen object to every object",
-            "a monoid",
-            "a homomorphism from the endomorphism group of the chosen object to the monoid"
-          ]
-        },
-        {
-          "name": "TauCeti.Groupoid.functorOfEndHom_map",
-          "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
-          "line": 147,
-          "part": null,
-          "role": "helper",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "a groupoid",
-            "a chosen object of the groupoid",
-            "a morphism from the chosen object to every object",
-            "a monoid",
-            "a homomorphism from the endomorphism group of the chosen object to the monoid",
-            "two objects of the groupoid and a morphism between them"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "3.1",
-      "section": "3",
       "kind": "theorem",
       "title": "Covers generate the fundamental groupoid",
       "gist": "If every point of the space has some member of a family of subsets as a neighborhood, then the images of the functors induced by the inclusions of the members generate the whole fundamental groupoid as a subgroupoid.",
@@ -372,8 +295,8 @@
       ]
     },
     {
-      "id": "3.2",
-      "section": "3",
+      "id": "2.2",
+      "section": "2",
       "kind": "definition",
       "title": "Gluing functors out of fundamental groupoids",
       "gist": "Functors to a fixed category out of the fundamental groupoids of the members of such a family, agreeing after restriction to every pairwise intersection, glue to a single functor out of the fundamental groupoid of the whole space.",
@@ -407,8 +330,8 @@
       ]
     },
     {
-      "id": "3.3",
-      "section": "3",
+      "id": "2.3",
+      "section": "2",
       "kind": "proposition",
       "title": "The glued functor restricts to the given functors",
       "gist": "Composing the functor induced by the inclusion of a member with the glued functor returns the functor given on that member.",
@@ -439,8 +362,8 @@
       ]
     },
     {
-      "id": "3.4",
-      "section": "3",
+      "id": "2.4",
+      "section": "2",
       "kind": "definition",
       "title": "Gluing two functors out of fundamental groupoids",
       "gist": "When the interiors of two subsets cover the space, two functors out of the fundamental groupoids of those subsets which agree after restriction to the fundamental groupoid of their intersection glue to a functor out of the fundamental groupoid of the space.",
@@ -469,8 +392,8 @@
       ]
     },
     {
-      "id": "3.5",
-      "section": "3",
+      "id": "2.5",
+      "section": "2",
       "kind": "proposition",
       "title": "The functor glued from two restricts to each of them",
       "gist": "Composing the functor induced by the inclusion of either of the two subsets with the glued functor returns the functor given on that subset.",
@@ -527,8 +450,8 @@
       ]
     },
     {
-      "id": "4.1",
-      "section": "4",
+      "id": "3.1",
+      "section": "3",
       "kind": "theorem",
       "title": "Covers generate the fundamental group",
       "gist": "If every point of the space has some member of a family of subsets as a neighborhood, every member contains the basepoint, and every intersection of two members is path connected, then the images of the fundamental groups of the members generate the fundamental group of the space.",
@@ -591,8 +514,8 @@
       ]
     },
     {
-      "id": "4.2",
-      "section": "4",
+      "id": "3.2",
+      "section": "3",
       "kind": "corollary",
       "title": "Two sets generate the fundamental group",
       "gist": "If the interiors of two subsets cover the space, the two subsets and their intersection are path connected, and both subsets contain the basepoint, then the images of the two fundamental groups generate the fundamental group of the space.",
@@ -622,8 +545,80 @@
       ]
     },
     {
-      "id": "5.1",
-      "section": "5",
+      "id": "4.1",
+      "section": "4",
+      "kind": "definition",
+      "title": "The functor picking out a chosen object",
+      "gist": "For a chosen object w of a category C, J_w denotes the functor from the one-object category of its monoid of endomorphisms to C, sending the unique object to w and each endomorphism to itself.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "TauCeti.Groupoid.singleObjFunctor",
+          "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "line": 66,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a category",
+            "a chosen object of the category"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.2",
+      "section": "4",
+      "kind": "definition",
+      "title": "The functor induced by a homomorphism out of a vertex group",
+      "gist": "The functor F_{tau,f} induced by a homomorphism f out of a vertex group sends a morphism to the value of f on the loop formed using the chosen connecting morphisms.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "",
+      "declarations": [
+        {
+          "name": "TauCeti.Groupoid.functorOfEndHom",
+          "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "line": 128,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a groupoid",
+            "a chosen object of the groupoid",
+            "a morphism from the chosen object to every object",
+            "a monoid",
+            "a homomorphism from the endomorphism group of the chosen object to the monoid"
+          ]
+        },
+        {
+          "name": "TauCeti.Groupoid.functorOfEndHom_map",
+          "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "line": 147,
+          "part": null,
+          "role": "helper",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a groupoid",
+            "a chosen object of the groupoid",
+            "a morphism from the chosen object to every object",
+            "a monoid",
+            "a homomorphism from the endomorphism group of the chosen object to the monoid",
+            "two objects of the groupoid and a morphism between them"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.3",
+      "section": "4",
       "kind": "definition",
       "title": "The homomorphism out of the fundamental group of the space",
       "gist": "Homomorphisms to a monoid out of the fundamental groups of two subsets, whose interiors cover the space and which are path connected along with their intersection, and which agree after restriction to the fundamental group of the intersection, induce a homomorphism out of the fundamental group of the space.",
@@ -656,8 +651,8 @@
       ]
     },
     {
-      "id": "5.2",
-      "section": "5",
+      "id": "4.4",
+      "section": "4",
       "kind": "proposition",
       "title": "The induced homomorphism restricts to the given ones",
       "gist": "The induced homomorphism agrees with each of the two given homomorphisms after restriction along the inclusion of the corresponding subset.",
@@ -766,8 +761,8 @@
       ]
     },
     {
-      "id": "5.3",
-      "section": "5",
+      "id": "4.5",
+      "section": "4",
       "kind": "proposition",
       "title": "Uniqueness of the induced homomorphism",
       "gist": "Two homomorphisms to a monoid out of the fundamental group of the space are equal as soon as they agree after restriction along the inclusions of both subsets.",
@@ -801,8 +796,8 @@
       ]
     },
     {
-      "id": "5.4",
-      "section": "5",
+      "id": "4.6",
+      "section": "4",
       "kind": "theorem",
       "title": "The based Seifert--van Kampen theorem",
       "gist": "If the interiors of two subsets cover the space, the two subsets and their intersection are path connected, and all three contain the basepoint, then the square of fundamental groups formed by the four homomorphisms induced by the inclusions is a pushout in the category of groups.",

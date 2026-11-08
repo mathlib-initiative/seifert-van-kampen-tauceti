@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "1743b877ad8091c43ffa24fed49cd4bd5e2ed7e5"
+    "commit": "c31affc85f3cca77d5d2d317ee242cff9328488a"
   },
   "instance_files": [
     "informalize.json"
@@ -16,11 +16,11 @@
     },
     {
       "path": "STYLE.md",
-      "sha256": "e7ca894d980073828da1d586d5b478a420dc54b85ecfac4b930e2064bcaa317e"
+      "sha256": "570364d75ebc455353379948ac9a3d776c82d1d6694c1b09689aeade89acf748"
     },
     {
       "path": "fcmarkers.sty",
-      "sha256": "91a21f6225840def572500b762cc7296dca30cb5ebd89788f2678bb35dc3955a"
+      "sha256": "db462c7a23bb1e5e7a2210031ce4987b00e03f175def94f07e16ec60e3c0f823"
     },
     {
       "path": "tools/build_pdf.sh",
@@ -32,7 +32,7 @@
     },
     {
       "path": "tools/check_items.py",
-      "sha256": "a67fae4779529da36ff31104bce83d8c5121d17869dd93fe6ab501b68e42995f"
+      "sha256": "ba2f0672164fe5d578989467d415a0c17bd4825133a4655904632a8e316a9027"
     },
     {
       "path": "tools/extract_markers.py",
@@ -40,7 +40,7 @@
     },
     {
       "path": "tools/fccommon.py",
-      "sha256": "717b532c4d1bd76dfa0475d03366cd7e4157e95458def16aa6437d7e7eb95d53"
+      "sha256": "9cb16832646384582c259a3ab80f4b3159fa772baf6406ffcd2c366e7cf38442"
     },
     {
       "path": "tools/fcitems.py",
