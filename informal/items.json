@@ -32,36 +32,6 @@
     {
       "id": "1.1",
       "section": "1",
-      "kind": "lemma",
-      "title": "A Lebesgue number",
-      "gist": "For a compact subset of a pseudometric space and a family of sets one of which is a neighborhood of each point of that subset, there is a positive radius such that every ball of that radius around a point of the subset lies in a single member of the family.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "The members of the family are not assumed to be open; each is only required to be a neighborhood of the points it has to cover.",
-      "declarations": [
-        {
-          "name": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
-          "module": "TauCeti.Topology.MetricSpace.Lebesgue",
-          "line": 33,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "a pseudometric space",
-            "an index type for the family",
-            "a subset of the space",
-            "a family of subsets of the space indexed by the index type",
-            "the subset is compact",
-            "every point of the subset has some member of the family as a neighborhood"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1.2",
-      "section": "1",
       "kind": "proposition",
       "title": "Subdividing a path",
       "gist": "If every parameter has a neighborhood that the path sends into some member of a family of sets, then the path can be cut at finitely many increasing parameters running from zero to one so that each consecutive subpath has its range inside a single member.",
@@ -204,7 +174,7 @@
       ]
     },
     {
-      "id": "1.3",
+      "id": "1.2",
       "section": "1",
       "kind": "lemma",
       "title": "Composing subpath classes",
@@ -228,6 +198,36 @@
             "three parameters in the unit interval",
             "three points of the space",
             "each of the three points equals the value of the path at the corresponding parameter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.3",
+      "section": "1",
+      "kind": "lemma",
+      "title": "A Lebesgue number",
+      "gist": "For a compact subset of a pseudometric space and a family of sets one of which is a neighborhood of each point of that subset, there is a positive radius such that every ball of that radius around a point of the subset lies in a single member of the family.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "The members of the family are not assumed to be open; each is only required to be a neighborhood of the points it has to cover.",
+      "declarations": [
+        {
+          "name": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
+          "module": "TauCeti.Topology.MetricSpace.Lebesgue",
+          "line": 33,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a pseudometric space",
+            "an index type for the family",
+            "a subset of the space",
+            "a family of subsets of the space indexed by the index type",
+            "the subset is compact",
+            "every point of the subset has some member of the family as a neighborhood"
           ]
         }
       ]

@@ -43,7 +43,7 @@ Do not reserve a catalogue of letters for the whole text.
 Keep a letter's meaning fixed within an argument. A later section may use the
 same letter for a different object when it introduces that object explicitly.
 State every extra assumption where it is used: the pseudometric assumption in
-Lemma 1.1, for example, is local to that lemma. Use a separate space $Z$ and
+Lemma 1.3, for example, is local to that lemma. Use a separate space $Z$ and
 compact subset $K$ there. Introduce the general topological space $X$ only
 when the path results begin; do not impose a pseudometric or vector-space
 structure on it.
@@ -111,7 +111,8 @@ the whole space, so it too is stated in words.
 There is no separate conventions section. Give each section a short local setup,
 and explain specialized notation next to its first use:
 
-- Section 1: the auxiliary pseudometric lemma, then path notation and subdivision.
+- Section 1: path notation, subdivision and subpath composition, followed by the
+  compactness lemma used for uniform subdivisions in the gluing construction.
 - Section 2: fundamental groupoids, inclusion functors, generation and gluing.
 - Section 3: fundamental groups and generation by subspaces.
 - Section 4: the two vertex-group functors, then descent and the pushout proof.
