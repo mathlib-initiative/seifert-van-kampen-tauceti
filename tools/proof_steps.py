@@ -55,11 +55,20 @@ def read_targets(config, library, packages=None):
             raise ValueError(f'invalid or repeated proof-step id: {sid}')
         if step.get('span') not in ('inline', 'display'):
             raise ValueError(f'{sid}: proof step must mark a sentence or equation')
-        if len(step['targets']) > 1:
-            raise ValueError(f'{sid}: split steps with different Lean targets')
+        guide = step.get('proof')
+        if guide and (guide.get('kind') not in ('direct', 'helper', 'chain')
+                      or not isinstance(guide.get('summary', ''), str)):
+            raise ValueError(f'{sid}: invalid proof correspondence')
+        if len(step['targets']) > 1 and (not guide or guide['kind'] != 'chain'):
+            raise ValueError(f'{sid}: multiple targets require an explicit helper chain')
+        if guide and guide['kind'] == 'chain' and len(step['targets']) < 2:
+            raise ValueError(f'{sid}: a helper chain needs at least two targets')
         if not step['targets']:
             raise ValueError(f'{sid}: no Lean target')
+        if len({t['role'] for t in step['targets']}) != 1:
+            raise ValueError(f'{sid}: a chain must use one relation for its targets')
         targets = []
+        seen = set()
         for target in step['targets']:
             module = target['module']
             pin = target_library(config, target)
@@ -88,9 +97,43 @@ def read_targets(config, library, packages=None):
                 raise ValueError(f'{sid}: Lean range changed in {module}:{bounds}')
             if target['role'] not in ('key', 'support'):
                 raise ValueError(f'{sid}: unsupported target role')
+            key = (package, module, *bounds)
+            if key in seen:
+                raise ValueError(f'{sid}: duplicate Lean range')
+            seen.add(key)
+            if target.get('context'):
+                validate_context(target, raw, sid)
             targets.append((target, code.decode('utf-8').rstrip('\n')))
         result[sid] = targets
     return result
+
+
+def validate_context(target, raw, sid):
+    """Bind the explanation to a named enclosing declaration at the pinned source."""
+    context = target['context']
+    bounds = context.get('lines', [])
+    if (len(bounds) != 2 or any(type(n) is not int for n in bounds)
+            or not 1 <= bounds[0] <= target['lines'][0] <= target['lines'][1] <= bounds[1] <= len(raw)):
+        raise ValueError(f'{sid}: context does not enclose the selected range')
+    source = b''.join(raw[bounds[0]-1:bounds[1]])
+    if digest(source) != context.get('sha256'):
+        raise ValueError(f'{sid}: enclosing declaration changed')
+    declaration = re.compile(r'(?:(?:private|noncomputable|protected|unsafe) )*(?:theorem|lemma|def|abbrev) ([^\s:{(]+)')
+    match = declaration.match(raw[bounds[0]-1].decode())
+    if not match or match[1] != context.get('declaration'):
+        raise ValueError(f'{sid}: wrong enclosing declaration name')
+    if any(declaration.match(line.decode()) for line in raw[bounds[0]:bounds[1]]):
+        raise ValueError(f'{sid}: context crosses into another declaration')
+    if not all(isinstance(context.get(k), str) and context[k].strip()
+               for k in ('conclusion', 'explanation')):
+        raise ValueError(f'{sid}: context needs a mathematical conclusion and explanation')
+    for row in context.get('notation', []):
+        if not all(isinstance(row.get(k), str) and row[k].strip() for k in ('math', 'lean')):
+            raise ValueError(f'{sid}: invalid notation correspondence')
+
+
+def exported_context(target):
+    return {k: v for k, v in target.get('context', {}).items() if k != 'sha256'}
 
 
 def equation_box(geo, start, end, dimensions, pad, sp_per_bp):
@@ -182,6 +225,11 @@ def check_export(root=ROOT):
                 raise ValueError(f'unexpected or repeated proof-step target: {key}')
             seen.add(key)
             target = expected[key]
+            if ext.get('proof_context', {}) != exported_context(target):
+                raise ValueError(f'{key}: exported proof context differs from its curation')
+            step = next(s for s in config['steps'] if 'proof-' + s['id'] == row['id'])
+            if row['extensions'][NS].get('proof') != step.get('proof'):
+                raise ValueError(f'{key}: exported proof correspondence differs from its curation')
             location = {'module': target['module'], 'lines': target['lines']}
             if target.get('declaration'):
                 location['declaration'] = target['declaration']
@@ -299,6 +347,7 @@ def main():
         dirname = kind + '-' + step['item'] if kind else 'proof-' + step['id']
         directory = ROOT / 'annotations' / section / dirname
         directory.mkdir(exist_ok=True)
+        objects = []
         for n, (target, code) in enumerate(targets[step['id']], 1):
             iid = 'proof-' + step['id']
             subjects = pdf_subjects(step, region['boxes'])
@@ -317,16 +366,20 @@ def main():
                     'destination': {'href': pin['url'] + '/blob/' + pin['commit'] + '/' + target['module'].replace('.', '/') + '.lean',
                                     'fragment': f'L{start}-L{end}', 'resolution': 'exact'},
                     'snippet': {'line': start, 'text': code}}}}
-            record = {'id': iid, 'kind': 'proof_step',
-                'relation': 'relatedMatch' if target['role'] == 'support' else 'closeMatch',
-                'subject': subjects, 'object': [obj],
-                'extensions': {NS: {'provenance': {'actor': 'agent', 'method': 'agent_annotation',
-                    'confirmed_by_human': False}, 'locator': {'physical': sorted({b[0] for b in region['boxes']}),
-                                                            'printed': sorted({b[0] for b in region['boxes']})}}}}
-            # Detail should add information, not repeat the source-region heading.
-            if ' '.join(target['title'].split()) != ' '.join(step['title'].split()):
-                record['note'] = target['title']
-            (directory / f'proof-{step["id"]}-{n:02d}.json').write_bytes(defaults.dumps(record))
+            if target.get('context'):
+                obj['extensions'][NS]['proof_context'] = exported_context(target)
+            objects.append(obj)
+        record = {'id': iid, 'kind': 'proof_step',
+            'relation': 'relatedMatch' if target['role'] == 'support' else 'closeMatch',
+            'subject': subjects, 'object': objects,
+            'extensions': {NS: {'provenance': {'actor': 'agent', 'method': 'agent_annotation',
+                'confirmed_by_human': False}, 'locator': {'physical': sorted({b[0] for b in region['boxes']}),
+                                                        'printed': sorted({b[0] for b in region['boxes']})}}}}
+        if step.get('proof'):
+            record['extensions'][NS]['proof'] = step['proof']
+        elif ' '.join(target['title'].split()) != ' '.join(step['title'].split()):
+            record['note'] = target['title']
+        (directory / f'proof-{step["id"]}-01.json').write_bytes(defaults.dumps(record))
     found = sync.read_annotations(ROOT)
     if found.problems:
         raise ValueError('; '.join(found.problems))

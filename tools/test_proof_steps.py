@@ -76,10 +76,39 @@ class RangeValidation(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'sentence or equation'):
             self.check()
 
-    def test_different_targets_must_be_separate_steps(self):
+    def test_multiple_targets_need_an_explicit_chain(self):
         step=self.config['steps'][0]
         step['targets'].append(copy.deepcopy(step['targets'][0]))
-        with self.assertRaisesRegex(ValueError, 'split steps'):
+        with self.assertRaisesRegex(ValueError, 'explicit helper chain'):
+            self.check()
+
+    def test_chain_order_and_duplicate_ranges(self):
+        step=self.config['steps'][0]
+        step['proof']={'kind':'chain','summary':'Use the statement, then its proof.'}
+        target=copy.deepcopy(step['targets'][0])
+        target.update(lines=[1,1], sha256=hashlib.sha256(b'theorem sample : True := by\n').hexdigest())
+        step['targets'].insert(0,target)
+        self.assertEqual([t['lines'] for t,_ in self.check()['1.1-test']], [[1,1],[2,2]])
+        step['targets'].append(copy.deepcopy(target))
+        with self.assertRaisesRegex(ValueError,'duplicate Lean range'):
+            self.check()
+
+    def test_enclosing_declaration_must_be_named_pinned_and_contain_the_excerpt(self):
+        target=self.config['steps'][0]['targets'][0]
+        target['context']={'declaration':'sample','lines':[1,2],
+            'sha256':hashlib.sha256(self.source.read_bytes()).hexdigest(),
+            'conclusion':'Truth holds.','explanation':'The constructor proves it.'}
+        self.check()
+        target['context']['declaration']='unrelated'
+        with self.assertRaisesRegex(ValueError,'wrong enclosing declaration'):
+            self.check()
+        target['context']['declaration']='sample'
+        target['context']['lines']=[1,1]
+        with self.assertRaisesRegex(ValueError,'does not enclose'):
+            self.check()
+        target['context']['lines']=[1,2]
+        self.source.write_text('theorem sample : False := by\n  trivial\n')
+        with self.assertRaisesRegex(ValueError,'enclosing declaration changed'):
             self.check()
 
 
@@ -200,6 +229,11 @@ class ExportIntegrity(unittest.TestCase):
     def test_wrong_destination_is_rejected(self):
         self.alter(lambda ext: ext['destination'].update(href='https://example.org/wrong'))
         with self.assertRaisesRegex(ValueError, 'destination'):
+            proof_steps.check_export(self.root)
+
+    def test_edited_mathematical_context_is_rejected(self):
+        self.alter(lambda ext: ext['proof_context'].update(conclusion='An unsupported claim.'))
+        with self.assertRaisesRegex(ValueError, 'proof context differs'):
             proof_steps.check_export(self.root)
 
     def test_repeated_region_that_discards_a_line_is_rejected(self):
