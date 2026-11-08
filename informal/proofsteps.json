@@ -7,6 +7,44 @@
   },
   "steps": [
     {
+      "id": "1.1-s01-cover",
+      "item": "1.1",
+      "label": "Step",
+      "title": "The preimage interiors form an open cover",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "lines": [
+            230,
+            234
+          ],
+          "sha256": "67ae615cf4ca4dfe64cf9b522bc5b114a8e45e6ac36a6eff388f4672789beaba",
+          "title": "The preimage interiors form an open cover",
+          "role": "key"
+        }
+      ]
+    },
+    {
+      "id": "1.1-s02-subpaths",
+      "item": "1.1",
+      "label": "Step",
+      "title": "Pass from parameter intervals to subpaths",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.Topology.Homotopy.Path",
+          "lines": [
+            237,
+            242
+          ],
+          "sha256": "2e8756e2352bfbfa4a4be6d574349012bbc36148d6e943e27b77ce783a24c206",
+          "title": "Pass from parameter intervals to subpaths",
+          "role": "key"
+        }
+      ]
+    },
+    {
       "id": "2.1-s00-representative",
       "item": "2.1",
       "label": "Step",
