@@ -44,9 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Connecting paths in each larger subspace agree with the chosen paths on the intersection.",
+            "conclusion": "Reuse the intersection's chosen paths inside $A$ and $B$; choose other connecting paths independently.",
             "declaration": "connect",
-            "explanation": "For a point in the smaller subspace, `connect` uses its chosen path and includes it in the larger subspace. Otherwise it chooses a path in the larger subspace. Both local constructions use the same smaller-space choice.",
             "lines": [132, 139],
             "notation": [
               {

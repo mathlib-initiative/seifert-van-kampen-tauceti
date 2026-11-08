@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "A sufficiently fine square grid has each cell mapped by $H$ into one $U_i$.",
+            "conclusion": "The Lebesgue lemma gives a square grid whose cells map into cover members.",
             "declaration": "exists_isFine_homotopy",
-            "explanation": "Apply the Lebesgue lemma to the preimages under the homotopy. Lean uses the maximum metric on the square: bounding both coordinate distances bounds the cell diameter.",
             "lines": [218, 231],
             "notation": [
               {

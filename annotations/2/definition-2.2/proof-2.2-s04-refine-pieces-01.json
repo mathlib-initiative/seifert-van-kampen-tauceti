@@ -44,9 +44,8 @@
           },
           "proof_context": {
             "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
-            "conclusion": "Inside one $U_i$, two consecutive subpath values compose.",
+            "conclusion": "Lemma 1.2 and functoriality combine consecutive subpath values.",
             "declaration": "pathVal_subpath_trans",
-            "explanation": "Apply Lemma 1.2 to the three subpaths in $U_i$, then apply functoriality: $F_i([\\gamma_{[a,c]}])=F_i([\\gamma_{[b,c]}])\\circ F_i([\\gamma_{[a,b]}])$. Line 462 supplies the path-class identity; line 463 applies the local-functor composition lemma.",
             "lines": [394, 463],
             "notation": [
               {
@@ -89,9 +88,8 @@
           },
           "proof_context": {
             "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
-            "conclusion": "Inside one $U_i$, any finite sequence of consecutive pieces combines to the whole subpath.",
+            "conclusion": "Induction repeatedly applies `pathVal_subpath_trans` to combine all pieces inside one $U_i$.",
             "declaration": "map_segVal_eq",
-            "explanation": "Induct on the number of pieces. The empty composite is an identity; the induction step at line 496 invokes `pathVal_subpath_trans`, the preceding result, to append one more piece.",
             "lines": [481, 497],
             "notation": [
               {
@@ -138,9 +136,8 @@
           },
           "proof_context": {
             "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
-            "conclusion": "Replacing every piece by $m$ equal pieces gives $L_{mN}(\\gamma)=L_N(\\gamma)$.",
+            "conclusion": "Apply `map_segVal_eq` on each coarse interval to obtain $L_{mN}(\\gamma)=L_N(\\gamma)$.",
             "declaration": "liftN_mul",
-            "explanation": "For each coarse interval, line 538 invokes `map_segVal_eq` to combine its fine pieces. Induction over the coarse intervals gives the equality of the full composites; lines 546–547 conclude the lemma.",
             "lines": [523, 547],
             "notation": [
               {
@@ -173,7 +170,7 @@
       },
       "proof": {
         "kind": "chain",
-        "summary": "This sentence combines three lemmas. First compose two subpaths, then a finite sequence inside one cover member, and finally apply that result to every interval of the coarse subdivision."
+        "summary": "Combine two pieces, then finitely many, then refine every coarse interval."
       },
       "provenance": {
         "actor": "agent",

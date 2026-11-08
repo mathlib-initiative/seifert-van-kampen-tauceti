@@ -44,9 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Each subdivision interval lies in one open-cover member.",
+            "conclusion": "Intervals of length at most $\\rho/2$ lie in the chosen balls, hence in cover members.",
             "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
-            "explanation": "Choose the cover member containing the ball at the left endpoint. The distance bound is at most $\\rho/2<\\rho$, so the entire interval lies in that ball.",
             "lines": [474, 482],
             "notation": [
               {

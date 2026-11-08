@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The relative interiors $c_i=\\operatorname{int}_{[0,1]}(\\gamma^{-1}(U_i))$ cover $[0,1]$.",
+            "conclusion": "The neighborhood hypothesis makes the preimage interiors an open cover of $[0,1]$.",
             "declaration": "exists_monotone_range_subpath_subset",
-            "explanation": "The neighborhood hypothesis puts each parameter in one of these interiors. These lines supply the open-cover hypotheses to the interval-subdivision theorem.",
             "lines": [224, 244],
             "notation": [
               {

@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "A homomorphism on the basepoint group determines a functor to the one-object category.",
+            "conclusion": "`functorOfEndHom` turns the homomorphism and chosen connecting paths into a local functor.",
             "declaration": "localFunctor",
-            "explanation": "`functorOfEndHom` is the earlier construction using connecting morphisms. Applying it with `connect` produces the local functor used in the descent construction.",
             "lines": [160, 164]
           },
           "snippet": {

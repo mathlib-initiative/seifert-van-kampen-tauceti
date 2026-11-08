@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "30cc5de1a1584a945db3bc95cd0347bae6d040db"
+    "commit": "61d83c5b0e0870b3dc4ef611223c185e391b36cc"
   },
   "format": {
     "package": "literature-links",
@@ -140,12 +140,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "1cb5678a37596c0d161870e315b35c8846a669c0102b436d89750b0f5de553e8"
+      "sha256": "429856ecef7376551185c57716bb81ec2467d0264cfe180fd7aeb150b3436183"
     },
     "count": 90,
     "directory": "annotations",
     "export": {
-      "commit": "9ea2af2ee382af7ffc3eaff197f3cf86779710ee",
+      "commit": "44c440421cde09c713c914df3f89e28e0bde90f4",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -177,7 +177,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "e564da842e6ae0f3a1e35c0917f3ca330892635a59a2e4d3f45c52c1d0bd5966"
+        "sha256": "492db0a54e5d3592578c7b53ad6f770f984a1360aab23f2217f75c04f9d959a5"
       },
       {
         "path": "informal/notation.sty",
@@ -185,7 +185,7 @@
       },
       {
         "path": "informal/proofsteps.json",
-        "sha256": "9fd0a0a582a9771c652f0a6df6cd005018488d8ade738b18de5e8d2a6346774e"
+        "sha256": "ff224812b1a3144f9eacabd4d5641b2e56f8be9f818db0e37c0d5fca8201f221"
       },
       {
         "path": "informal/proofsteps.sty",
@@ -217,9 +217,9 @@
       },
       {
         "path": "tools/proof_steps.py",
-        "sha256": "af12d0730921f9370450e6bc2f13e64b4242c85289c1fbba41c913b15a788e18"
+        "sha256": "f9ca13a2cc00bece7edc7ebf80669015eac99203952eef4cffacb3b239c27cba"
       }
     ],
-    "manifest_sha256": "daf8cc2dc87668e329165dbb53ba0260f25b21b7e9da5e49319433858c452999"
+    "manifest_sha256": "69c29f6c89db42f1c1faf66fba00bd3714214e07135300c0e412c46f3ed110f8"
   }
 }

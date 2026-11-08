@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The two inclusions of the intersection induce the same map to $\\pi_1(X,x)$.",
+            "conclusion": "Quotient induction reduces the claim to a loop; both composites include that same loop into $X$.",
             "declaration": "isPushout_fundamentalGroup",
-            "explanation": "Quotient induction reduces the claim to a represented loop. Both composites include exactly the same underlying loop into $X$, so the equality is reflexive.",
             "lines": [349, 378]
           },
           "snippet": {

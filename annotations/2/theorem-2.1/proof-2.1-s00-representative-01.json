@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Every morphism of $\\Pi_1(X)$ can be represented by a path $\\gamma$.",
+            "conclusion": "Quotient induction reduces an arbitrary morphism to the homotopy class of a path $\\gamma$.",
             "declaration": "iSup_im_map_subtypeVal_eq_top",
-            "explanation": "Quotient induction reduces the membership claim for an arbitrary homotopy class to the class of an actual path. No choice of representative needs to be independent of the class for this argument.",
             "lines": [113, 131],
             "notation": [
               {

@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Every fine positive subdivision computes the same $L(\\gamma)$.",
+            "conclusion": "Apply `liftN_mul` twice to compare the two subdivisions through their common refinement.",
             "declaration": "lift_eq_liftN",
-            "explanation": "Apply `liftN_mul` twice, comparing the chosen subdivision and the supplied one through their product. Commutativity of multiplication identifies the two common-refinement counts.",
             "lines": [554, 561],
             "notation": [
               {

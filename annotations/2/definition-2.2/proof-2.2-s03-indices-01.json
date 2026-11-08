@@ -44,9 +44,8 @@
           },
           "proof_context": {
             "bookkeeping": "`locVal` includes endpoint transports to the chosen global object values. The rest of this lemma checks that the inclusions recover the same underlying path and that those transports agree. The equality is not complete at the end of the displayed excerpt.",
-            "conclusion": "A path in $U_i\\cap U_j$ has the same local value using $F_i$ or $F_j$.",
+            "conclusion": "Apply `hF i j` to the path class in the intersection; the remaining lines align its endpoint objects.",
             "declaration": "locVal_congr_index",
-            "explanation": "The selected lines apply the compatibility equation `hF i j` to the path class in the intersection. Lines 266–288 identify the two inclusion images and align their endpoint objects to finish `locVal_congr_index`.",
             "lines": [260, 288],
             "notation": [
               {

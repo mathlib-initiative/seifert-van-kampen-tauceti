@@ -44,9 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Subdivision points with spacing $\\rho/2$ eventually reach the endpoint.",
+            "conclusion": "`addNSMul_eq_right` shows that steps of size $\\rho/2$ eventually reach the endpoint.",
             "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
-            "explanation": "Mathlib constructs a nondecreasing sequence, clipped at the right endpoint. `addNSMul_eq_right` proves that the sequence eventually stays there, giving a finite subdivision. This construction does not choose an equal partition with spacing $1/N$.",
             "lines": [474, 482],
             "notation": [
               {

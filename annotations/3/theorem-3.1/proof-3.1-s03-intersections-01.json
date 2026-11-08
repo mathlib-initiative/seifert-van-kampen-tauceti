@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The connecting paths $\\sigma_c$ and $\\sigma_d$ can be chosen in the respective intersections.",
+            "conclusion": "Path connectedness supplies $\\sigma_c$ and $\\sigma_d$ inside the respective intersections.",
             "declaration": "comp_comp_inv_mem_iSup_range",
-            "explanation": "This is inside the helper for a single transported local path. Path connectedness of each intersection supplies a path from the common basepoint to the appropriate endpoint.",
             "lines": [87, 119],
             "notation": [
               {

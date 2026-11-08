@@ -44,9 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The representative path admits a finite subdivision with each piece inside one $U_i$.",
+            "conclusion": "Proposition 1.1 applies because continuity pulls covering neighborhoods back along $\\gamma$.",
             "declaration": "iSup_im_map_subtypeVal_eq_top",
-            "explanation": "This invokes Proposition 1.1. Continuity pulls the covering neighborhoods in $X$ back to neighborhoods of parameters in $[0,1]$.",
             "lines": [113, 131]
           },
           "snippet": {

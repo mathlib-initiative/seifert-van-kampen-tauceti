@@ -43,9 +43,8 @@
           },
           "proof_context": {
             "bookkeeping": "`GrpCat.ofHom` packages a group homomorphism as a category arrow; `GrpCat.hom_ext` transfers equality of the underlying homomorphisms to those arrows.",
-            "conclusion": "The mediating homomorphism has both prescribed restrictions.",
+            "conclusion": "The two restriction theorems give the factorization equations; `GrpCat.hom_ext` transfers them to categorical arrows.",
             "declaration": "isPushout_fundamentalGroup",
-            "explanation": "The left and right restriction theorems provide the two factorization obligations. `GrpCat.hom_ext` expresses those homomorphism equalities as equalities of arrows in the category of groups.",
             "lines": [349, 378]
           },
           "snippet": {

@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Insert $\\sigma_c^{-1}\\sigma_c$ and $\\sigma_d^{-1}\\sigma_d$ to split the transported loop into three local loops.",
+            "conclusion": "`hsplit` inserts cancelling inverse pairs to express the transported loop as three local loops.",
             "declaration": "comp_comp_inv_mem_iSup_range",
-            "explanation": "`hsplit` is the displayed factorization. Associativity and cancellation of inverse morphisms prove it; the outer paths are called `α` and `β` in this helper.",
             "lines": [87, 119],
             "notation": [
               {

@@ -45,9 +45,8 @@
           },
           "proof_context": {
             "bookkeeping": "Lean writes categorical composition in traversal order and group multiplication in the opposite order. This accounts for the order of the arguments to `H.mul_mem`.",
-            "conclusion": "All three factors lie in $H$, hence so does the transported loop.",
+            "conclusion": "The outer factors lie in $H$ by `comp_inv_mem_iSup_range`; multiply them with the middle factor.",
             "declaration": "comp_comp_inv_mem_iSup_range",
-            "explanation": "`comp_inv_mem_iSup_range` handles the outer factors; `hmid` handles the middle one. Two uses of closure under multiplication finish the helper, which is invoked in the generation step at line 166.",
             "lines": [87, 119]
           },
           "snippet": {

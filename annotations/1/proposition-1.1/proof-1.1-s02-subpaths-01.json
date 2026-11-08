@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Each corresponding subpath has image in some $U_i$.",
+            "conclusion": "Each subpath has the same image as its parameter interval, which lies in one preimage $\\gamma^{-1}(U_i)$.",
             "declaration": "exists_monotone_range_subpath_subset",
-            "explanation": "The image of a nondecreasing subpath is the image of its parameter interval. The chosen interval lies in the interior of a preimage, hence in the preimage itself.",
             "lines": [224, 244]
           },
           "snippet": {

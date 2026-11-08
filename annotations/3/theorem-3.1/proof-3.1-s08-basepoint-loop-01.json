@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The connecting class $\\tau_x$ itself belongs to $H$.",
+            "conclusion": "The chosen $\\tau_x$ is a loop in a cover member, so its class lies in $H$.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
-            "explanation": "At the basepoint the chosen connecting path is a loop in a cover member. The same local-loop membership lemma used earlier therefore applies.",
             "lines": [126, 179]
           },
           "snippet": {

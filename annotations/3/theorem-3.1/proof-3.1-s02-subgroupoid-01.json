@@ -45,9 +45,8 @@
           },
           "proof_context": {
             "bookkeeping": "`End.of` regards a groupoid endomorphism at the basepoint as an element of its vertex group. Composition and group multiplication have reversed notation: `f ≫ g` is the product `g * f`.",
-            "conclusion": "The morphisms with transported loop class in $H$ form a subgroupoid $S$.",
+            "conclusion": "Closure of $H$ under inverses and multiplication makes the transported morphisms a subgroupoid $S$.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
-            "explanation": "The inverse and composition fields use closure of $H$ under inverses and multiplication. In the composition case, the connecting path at the middle object cancels with its inverse.",
             "lines": [126, 179]
           },
           "snippet": {

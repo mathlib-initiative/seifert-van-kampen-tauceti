@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The local functor at the basepoint evaluates a loop using the original homomorphism.",
+            "conclusion": "`localFunctor_map_base` evaluates that local value using the original homomorphism.",
             "declaration": "vanKampenDesc_map_left",
-            "explanation": "The invocation of `localFunctor_map_base` completes the pointwise restriction calculation. That helper reduces the connecting-path construction at its basepoint.",
             "lines": [267, 280]
           },
           "snippet": {

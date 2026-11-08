@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Any other mediator with those restrictions equals the chosen one.",
+            "conclusion": "`vanKampen_hom_ext` identifies the two mediators because their restrictions agree.",
             "declaration": "isPushout_fundamentalGroup",
-            "explanation": "`vanKampen_hom_ext` reduces equality to the two restrictions. The candidate mediator and `vanKampenDesc` have the same restrictions, completing the pushout universal property.",
             "lines": [349, 378]
           },
           "snippet": {

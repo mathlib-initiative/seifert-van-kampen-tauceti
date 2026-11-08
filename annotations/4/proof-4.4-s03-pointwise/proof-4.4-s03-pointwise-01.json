@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The pointwise calculation gives equality of the two homomorphisms.",
+            "conclusion": "`MonoidHom.ext` turns the pointwise calculation into equality of homomorphisms.",
             "declaration": "vanKampenDesc_comp_map_left",
-            "explanation": "`MonoidHom.ext` turns equality on every loop, established by `vanKampenDesc_map_left`, into the left restriction equation.",
             "lines": [300, 310]
           },
           "snippet": {

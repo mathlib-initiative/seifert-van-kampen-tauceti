@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The composite of the subdivision classes is the original path class.",
+            "conclusion": "`concat_subpath` identifies the composite of the subdivision classes with $[\\gamma]$.",
             "declaration": "iSup_im_map_subtypeVal_eq_top",
-            "explanation": "`mk_concat_mem_iSup_im` places the finite composite in the generated subgroupoid. `concat_subpath` identifies that composite with the original path up to homotopy.",
             "lines": [113, 131]
           },
           "snippet": {

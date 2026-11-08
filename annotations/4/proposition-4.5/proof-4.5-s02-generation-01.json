@@ -44,9 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The two generating images fill $\\pi_1(X,x)$, so the homomorphisms agree everywhere.",
+            "conclusion": "Generation makes the equalizer the whole group, so the homomorphisms agree everywhere.",
             "declaration": "vanKampen_hom_ext",
-            "explanation": "`range_map_subtypeVal_sup_eq_top` is the two-set generation corollary. Together with containment in the equalizer, it makes that equalizer the whole group.",
             "lines": [329, 342]
           },
           "snippet": {

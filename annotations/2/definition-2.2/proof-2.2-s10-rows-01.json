@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Equalities of consecutive rows imply $L(\\gamma)=L(\\delta)$.",
+            "conclusion": "Induction on the rows gives $L(\\gamma)=L(\\delta)$, using independence of subdivision at the two ends.",
             "declaration": "lift_eq_of_homotopy",
-            "explanation": "Induction in `hall` compares row zero with each later row. The final calculation identifies the first and last rows with the endpoints of the homotopy and uses independence of subdivision.",
             "lines": [661, 694],
             "notation": [
               {

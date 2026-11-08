@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The assignment $[\\gamma]\\mapsto L(\\gamma)$ is well defined on homotopy classes.",
+            "conclusion": "`Quotient.lift` uses `lift_eq_of_homotopy` to make $[\\gamma]\\mapsto L(\\gamma)$ independent of the representative.",
             "declaration": "glue",
-            "explanation": "`Quotient.lift` defines the morphism map. Its second argument is `lift_eq_of_homotopy`, the preceding grid argument, which shows the value is independent of the representative.",
             "lines": [702, 709],
             "notation": [
               {

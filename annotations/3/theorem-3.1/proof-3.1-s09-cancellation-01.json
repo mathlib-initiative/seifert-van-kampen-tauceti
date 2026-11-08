@@ -43,9 +43,8 @@
           },
           "proof_context": {
             "bookkeeping": "`End.of` and the rewrite `hinv` convert between groupoid composition/inversion and the group operations. The cancellation is the same one displayed in the PDF.",
-            "conclusion": "Cancelling the basepoint transport shows that the original loop class belongs to $H$.",
+            "conclusion": "Multiply by $\\tau_x$ and its inverse inside $H$, then cancel the basepoint transport.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
-            "explanation": "Combine the transported loop with the connecting loop and its inverse inside $H$. The final simplification cancels those connecting factors.",
             "lines": [126, 179]
           },
           "snippet": {

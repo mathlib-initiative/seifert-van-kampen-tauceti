@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The two local functors glue to a functor on $\\Pi_1(X)$.",
+            "conclusion": "`glueTwo` glues the compatible local functors to a functor on $\\Pi_1(X)$.",
             "declaration": "vanKampenDesc",
-            "explanation": "`glueTwo` is the two-set specialization of the gluing construction. Its last argument is the compatibility theorem proved immediately before this definition.",
             "lines": [226, 239]
           },
           "snippet": {

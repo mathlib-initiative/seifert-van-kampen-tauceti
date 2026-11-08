@@ -44,9 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "A functor with the prescribed restrictions equals the glued functor.",
+            "conclusion": "`functor_ext` uses generation to identify functors with the same restrictions.",
             "declaration": "eq_glue",
-            "explanation": "`functor_ext` is the consequence of generation used here. The given restriction equations and those of `glue` show that the two functors agree on every cover member.",
             "lines": [736, 738]
           },
           "snippet": {

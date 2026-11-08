@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The middle loop lies in $U_i$, so its class belongs to $H$.",
+            "conclusion": "`fromPath_mem_iSup_range` puts the middle loop in $H$ because it lies in $U_i$.",
             "declaration": "comp_comp_inv_mem_iSup_range",
-            "explanation": "`fromPath_mem_iSup_range` places a loop in the generated subgroup once its image lies in a cover member. The following lines verify containment for the three concatenated paths.",
             "lines": [87, 119]
           },
           "snippet": {

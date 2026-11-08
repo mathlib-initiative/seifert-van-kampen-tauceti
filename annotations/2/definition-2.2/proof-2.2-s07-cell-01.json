@@ -58,9 +58,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Paths with the same endpoints in a simply connected space give equal local values after mapping into $U_i$.",
+            "conclusion": "Simple connectedness makes the source paths homotopic, so their images in $U_i$ have equal local values.",
             "declaration": "locVal_eq_of_simplyConnected",
-            "explanation": "Regard the map as taking values in $U_i$. Simple connectedness makes the two source paths homotopic; mapping that homotopy into $U_i$ identifies their classes, so $F_i$ gives equal values.",
             "lines": [334, 354],
             "notation": [
               {
@@ -102,9 +101,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The two boundary routes across a cell have equal values.",
+            "conclusion": "Apply `locVal_eq_of_simplyConnected` to the two boundary routes in the unit square.",
             "declaration": "pathVal_cell",
-            "explanation": "Parametrize the cell by the unit square and map its two routes through $H$. Line 652 invokes `locVal_eq_of_simplyConnected`; simple connectedness of the square supplies the homotopy between the routes.",
             "lines": [625, 658],
             "notation": [
               {
@@ -133,7 +131,7 @@
       },
       "proof": {
         "kind": "chain",
-        "summary": "The cell argument applies a general helper to the unit square. The two excerpts show why mapped routes have equal values and where that result is used for the cell."
+        "summary": "Apply the simply connected source lemma to a square."
       },
       "provenance": {
         "actor": "agent",

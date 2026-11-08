@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The right restriction is the original homomorphism on $\\pi_1(B,x)$.",
+            "conclusion": "Apply the right restriction equation for `glueTwo`, then `localFunctor_map_base`.",
             "declaration": "vanKampenDesc_map_right",
-            "explanation": "The same two steps use the right restriction of `glueTwo`, followed by evaluation of the local functor at the basepoint.",
             "lines": [283, 296]
           },
           "snippet": {

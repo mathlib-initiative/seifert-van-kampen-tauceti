@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "If the whole path lies in $U_i$, every fine subdivision has value $F_i([\\gamma])$.",
+            "conclusion": "`map_segVal_eq` combines all subdivision pieces inside $U_i$ to recover $F_i([\\gamma])$.",
             "declaration": "liftN_eq_locVal",
-            "explanation": "Use `map_segVal_eq`, the finite-composition lemma from refinement, with the whole parameter interval. After combining all pieces, the resulting subpath from 0 to 1 is the original path.",
             "lines": [507, 514],
             "notation": [
               {
@@ -87,9 +86,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "For a path in $U_i$, its global value is $F_i([\\gamma])$.",
+            "conclusion": "Choose a fine subdivision, then apply `liftN_eq_locVal` to obtain $L(\\gamma)=F_i([\\gamma])$.",
             "declaration": "lift_eq_locVal",
-            "explanation": "Choose a fine subdivision and rewrite its value using `lift_eq_liftN`. Then `liftN_eq_locVal` collapses that subdivision inside $U_i$ to the single local functor value.",
             "lines": [564, 567],
             "notation": [
               {
@@ -118,7 +116,7 @@
       },
       "proof": {
         "kind": "chain",
-        "summary": "First collapse any fine subdivision of a path contained in one cover member. Then use independence of subdivision to obtain the restriction equation for the global value."
+        "summary": "Collapse the subdivision, then use independence of subdivision."
       },
       "provenance": {
         "actor": "agent",

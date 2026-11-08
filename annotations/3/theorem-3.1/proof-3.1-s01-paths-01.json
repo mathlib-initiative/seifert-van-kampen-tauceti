@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Choose $\\tau_c:x\\to c$ within a cover member containing $c$.",
+            "conclusion": "Each cover member is path connected by the intersection hypothesis, so choose $\\tau_c:x\\to c$ inside it.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
-            "explanation": "First choose a covering neighborhood of each point. Applying the intersection hypothesis with the same index twice gives path connectedness of that cover member, so a path from the basepoint exists.",
             "lines": [126, 179]
           },
           "snippet": {

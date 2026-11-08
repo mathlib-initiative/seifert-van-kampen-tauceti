@@ -44,9 +44,8 @@
           },
           "proof_context": {
             "bookkeeping": "`codRestrict` regards the same path in a subspace. The pairs carrying membership proofs specify its endpoints there; mapping back along inclusion recovers the original path.",
-            "conclusion": "A path lying in $U_i$ represents a morphism in the image of $\\Pi_1(U_i)\\to\\Pi_1(X)$.",
+            "conclusion": "`codRestrict` views the path inside $U_i$; inclusion recovers the original path, placing its class in the image subgroupoid.",
             "declaration": "mk_mem_iSup_im",
-            "explanation": "Regard the same path as a path in the subspace, then apply the inclusion functor. The rewrites identify its image with the original path. The enclosing helper then puts this image in the generated subgroupoid.",
             "lines": [64, 87]
           },
           "snippet": {

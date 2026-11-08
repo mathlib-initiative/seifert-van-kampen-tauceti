@@ -43,9 +43,8 @@
           },
           "proof_context": {
             "bookkeeping": "A constant path with differently written but equal endpoints produces `eqToHom`. Once those endpoints are identified, this is the identity arrow in the informal diagram.",
-            "conclusion": "The outer vertical paths are constant, so $L_N(\\gamma_j)=L_N(\\gamma_{j+1})$.",
+            "conclusion": "Constant outer edges give identity arrows, reducing the pasted square to $L_N(\\gamma_j)=L_N(\\gamma_{j+1})$.",
             "declaration": "lift_eq_of_homotopy",
-            "explanation": "The two applications of `pathVal_eq_eqToHom` replace the left and right boundary values by identity transports. After aligning endpoints, the pasted-square equation is the equality of row composites.",
             "lines": [661, 694],
             "notation": [
               {

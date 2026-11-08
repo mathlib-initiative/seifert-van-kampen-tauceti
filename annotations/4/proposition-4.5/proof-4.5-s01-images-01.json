@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The equalizer subgroup of the two homomorphisms contains both generating images.",
+            "conclusion": "The two restriction equations place both generating images in the equalizer subgroup `f.eqLocus g`.",
             "declaration": "vanKampen_hom_ext",
-            "explanation": "Membership in `f.eqLocus g` means the two homomorphisms agree. The assumed left and right restriction equations give agreement on the two image subgroups.",
             "lines": [329, 342],
             "notation": [
               {

@@ -44,9 +44,8 @@
           },
           "proof_context": {
             "bookkeeping": "Lean first chooses one eligible cover member at each point. The compatibility equality identifies every other local object value with this chosen one.",
-            "conclusion": "For compatible local functors, $F_i(y)$ equals the chosen global object value whenever $y\\in U_i$.",
+            "conclusion": "Compatibility on intersections identifies $F_i(y)$ with the chosen global object value.",
             "declaration": "obj_eq",
-            "explanation": "Apply compatibility on an intersection to the object represented by $y$. This compares any eligible index with the index selected in `glueObj`.",
             "lines": [247, 249],
             "notation": [
               {

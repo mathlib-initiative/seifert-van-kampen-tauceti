@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "On loops from $A$, the glued construction reduces to the local functor for $A$.",
+            "conclusion": "`map_subtypeVal_comp_glueTwo_left` reduces the glued value on a loop in $A$ to its local value.",
             "declaration": "vanKampenDesc_map_left",
-            "explanation": "`map_subtypeVal_comp_glueTwo_left` supplies the functor restriction equation. `vanKampenDesc_map_subtypeVal` applies that equation to the basepoint loop in question.",
             "lines": [267, 280]
           },
           "snippet": {

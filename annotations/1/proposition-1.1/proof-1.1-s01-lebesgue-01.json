@@ -44,9 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The open cover of the compact interval has a Lebesgue radius $\\rho>0$.",
+            "conclusion": "`lebesgue_number_lemma_of_metric` supplies $\\rho>0$ and the ball-containment property.",
             "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
-            "explanation": "This is inside the Mathlib subdivision helper called by TauCeti. The application of `lebesgue_number_lemma_of_metric` supplies both a positive radius and the ball-containment property.",
             "lines": [474, 482],
             "notation": [
               {

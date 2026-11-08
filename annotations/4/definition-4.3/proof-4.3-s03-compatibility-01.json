@@ -42,9 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Compatible homomorphisms give local functors that agree on the intersection.",
+            "conclusion": "Both local functors use the same intersection paths, so compatibility of the homomorphisms identifies their restrictions.",
             "declaration": "localFunctor_compatibility",
-            "explanation": "The two restriction lemmas rewrite both local functors using the same intersection connecting paths. Applying `functorOfEndHom` to the given equality of homomorphisms then identifies them.",
             "lines": [204, 217]
           },
           "snippet": {

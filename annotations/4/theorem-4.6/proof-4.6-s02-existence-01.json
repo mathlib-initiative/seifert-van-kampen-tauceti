@@ -43,9 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Every compatible pair of homomorphisms admits a mediating homomorphism.",
+            "conclusion": "Choose `vanKampenDesc` as the mediator for the compatible pair of homomorphisms.",
             "declaration": "isPushout_fundamentalGroup",
-            "explanation": "For an arbitrary pushout cocone, choose `vanKampenDesc` as its mediator. The remaining arguments of `IsColimit.mk` are the two restriction equations and uniqueness, supplied by the next tagged steps.",
             "lines": [349, 378],
             "notation": [
               {
