@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.686223, 0.123422, 0.077152, 0.017361]
+        "page": 3,
+        "rect": [0.686223, 0.705492, 0.077152, 0.017361]
       },
       "title": "subgroups",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:Subgroup@p004"
+          "region": "notion:Subgroup@p003"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.767829, 0.123422, 0.096878, 0.017361]
+        "page": 3,
+        "rect": [0.767829, 0.705492, 0.096878, 0.017361]
       },
       "title": "Image subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:MonoidHom.range@p004"
+          "region": "notion:MonoidHom.range@p003"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

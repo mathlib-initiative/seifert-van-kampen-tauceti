@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.104167, 0.739217, 0.133207]
+        "page": 4,
+        "rect": [0.130391, 0.666982, 0.739217, 0.134785]
       },
       "title": "Definition 4.3 (The descent homomorphism)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "definition-4.3@p005"
+          "region": "definition-4.3@p004"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }
