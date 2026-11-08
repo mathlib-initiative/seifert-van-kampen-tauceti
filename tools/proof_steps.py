@@ -124,9 +124,10 @@ def validate_context(target, raw, sid):
         raise ValueError(f'{sid}: wrong enclosing declaration name')
     if any(declaration.match(line.decode()) for line in raw[bounds[0]:bounds[1]]):
         raise ValueError(f'{sid}: context crosses into another declaration')
-    if not all(isinstance(context.get(k), str) and context[k].strip()
-               for k in ('conclusion', 'explanation')):
-        raise ValueError(f'{sid}: context needs a mathematical conclusion and explanation')
+    if not isinstance(context.get('conclusion'), str) or not context['conclusion'].strip():
+        raise ValueError(f'{sid}: context needs a mathematical conclusion')
+    if 'explanation' in context and not isinstance(context['explanation'], str):
+        raise ValueError(f'{sid}: optional explanation must be text')
     for row in context.get('notation', []):
         if not all(isinstance(row.get(k), str) and row[k].strip() for k in ('math', 'lean')):
             raise ValueError(f'{sid}: invalid notation correspondence')

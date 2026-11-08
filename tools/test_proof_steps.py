@@ -111,6 +111,20 @@ class RangeValidation(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'enclosing declaration changed'):
             self.check()
 
+    def test_concise_context_does_not_require_a_second_explanation(self):
+        context = {'declaration':'sample', 'lines':[1,2],
+            'sha256':hashlib.sha256(self.source.read_bytes()).hexdigest(),
+            'conclusion':'The constructor proves truth.'}
+        self.config['steps'][0]['targets'][0]['context'] = context
+        self.check()
+        context['explanation'] = []
+        with self.assertRaisesRegex(ValueError, 'optional explanation must be text'):
+            self.check()
+        del context['explanation']
+        context['conclusion'] = ''
+        with self.assertRaisesRegex(ValueError, 'needs a mathematical conclusion'):
+            self.check()
+
 
 class DependencyRangeValidation(unittest.TestCase):
     def setUp(self):

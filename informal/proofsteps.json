@@ -29,8 +29,7 @@
               244
             ],
             "sha256": "55ca2a3a8af4a909d3b9863cee51a52ead520a4f9942d62ea07e29af894b72e2",
-            "conclusion": "The relative interiors $c_i=\\operatorname{int}_{[0,1]}(\\gamma^{-1}(U_i))$ cover $[0,1]$.",
-            "explanation": "The neighborhood hypothesis puts each parameter in one of these interiors. These lines supply the open-cover hypotheses to the interval-subdivision theorem.",
+            "conclusion": "The neighborhood hypothesis makes the preimage interiors an open cover of $[0,1]$.",
             "notation": [
               {
                 "math": "$c_i$",
@@ -74,8 +73,7 @@
               482
             ],
             "sha256": "8f64f8440ea5a554d35747139bd4f7e1c33cf33e09d6f1d64b6fbd8b0dc4c5de",
-            "conclusion": "The open cover of the compact interval has a Lebesgue radius $\\rho>0$.",
-            "explanation": "This is inside the Mathlib subdivision helper called by TauCeti. The application of `lebesgue_number_lemma_of_metric` supplies both a positive radius and the ball-containment property.",
+            "conclusion": "`lebesgue_number_lemma_of_metric` supplies $\\rho>0$ and the ball-containment property.",
             "notation": [
               {
                 "math": "$\\rho$",
@@ -119,8 +117,7 @@
               482
             ],
             "sha256": "8f64f8440ea5a554d35747139bd4f7e1c33cf33e09d6f1d64b6fbd8b0dc4c5de",
-            "conclusion": "Subdivision points with spacing $\\rho/2$ eventually reach the endpoint.",
-            "explanation": "Mathlib constructs a nondecreasing sequence, clipped at the right endpoint. `addNSMul_eq_right` proves that the sequence eventually stays there, giving a finite subdivision. This construction does not choose an equal partition with spacing $1/N$.",
+            "conclusion": "`addNSMul_eq_right` shows that steps of size $\\rho/2$ eventually reach the endpoint.",
             "notation": [
               {
                 "math": "$\\rho$",
@@ -164,8 +161,7 @@
               482
             ],
             "sha256": "8f64f8440ea5a554d35747139bd4f7e1c33cf33e09d6f1d64b6fbd8b0dc4c5de",
-            "conclusion": "Each subdivision interval lies in one open-cover member.",
-            "explanation": "Choose the cover member containing the ball at the left endpoint. The distance bound is at most $\\rho/2<\\rho$, so the entire interval lies in that ball.",
+            "conclusion": "Intervals of length at most $\\rho/2$ lie in the chosen balls, hence in cover members.",
             "notation": [
               {
                 "math": "$\\rho$",
@@ -203,8 +199,7 @@
               244
             ],
             "sha256": "55ca2a3a8af4a909d3b9863cee51a52ead520a4f9942d62ea07e29af894b72e2",
-            "conclusion": "Each corresponding subpath has image in some $U_i$.",
-            "explanation": "The image of a nondecreasing subpath is the image of its parameter interval. The chosen interval lies in the interior of a preimage, hence in the preimage itself."
+            "conclusion": "Each subpath has the same image as its parameter interval, which lies in one preimage $\\gamma^{-1}(U_i)$."
           }
         }
       ],
@@ -236,8 +231,7 @@
               131
             ],
             "sha256": "e47f20978871cdd034e43736461b410652491cdaae7a78547117a14c309626b4",
-            "conclusion": "Every morphism of $\\Pi_1(X)$ can be represented by a path $\\gamma$.",
-            "explanation": "Quotient induction reduces the membership claim for an arbitrary homotopy class to the class of an actual path. No choice of representative needs to be independent of the class for this argument.",
+            "conclusion": "Quotient induction reduces an arbitrary morphism to the homotopy class of a path $\\gamma$.",
             "notation": [
               {
                 "math": "$\\omega$",
@@ -279,8 +273,7 @@
               131
             ],
             "sha256": "e47f20978871cdd034e43736461b410652491cdaae7a78547117a14c309626b4",
-            "conclusion": "The representative path admits a finite subdivision with each piece inside one $U_i$.",
-            "explanation": "This invokes Proposition 1.1. Continuity pulls the covering neighborhoods in $X$ back to neighborhoods of parameters in $[0,1]$."
+            "conclusion": "Proposition 1.1 applies because continuity pulls covering neighborhoods back along $\\gamma$."
           }
         }
       ],
@@ -312,8 +305,7 @@
               87
             ],
             "sha256": "b61ab690aa4d6a683053d456320546bded2e23f8271d55c851774616e35cf18b",
-            "conclusion": "A path lying in $U_i$ represents a morphism in the image of $\\Pi_1(U_i)\\to\\Pi_1(X)$.",
-            "explanation": "Regard the same path as a path in the subspace, then apply the inclusion functor. The rewrites identify its image with the original path. The enclosing helper then puts this image in the generated subgroupoid.",
+            "conclusion": "`codRestrict` views the path inside $U_i$; inclusion recovers the original path, placing its class in the image subgroupoid.",
             "bookkeeping": "`codRestrict` regards the same path in a subspace. The pairs carrying membership proofs specify its endpoints there; mapping back along inclusion recovers the original path."
           }
         }
@@ -346,8 +338,7 @@
               131
             ],
             "sha256": "e47f20978871cdd034e43736461b410652491cdaae7a78547117a14c309626b4",
-            "conclusion": "The composite of the subdivision classes is the original path class.",
-            "explanation": "`mk_concat_mem_iSup_im` places the finite composite in the generated subgroupoid. `concat_subpath` identifies that composite with the original path up to homotopy."
+            "conclusion": "`concat_subpath` identifies the composite of the subdivision classes with $[\\gamma]$."
           }
         }
       ],
@@ -380,8 +371,7 @@
               738
             ],
             "sha256": "add2fcf7dd449ac45fe4452a7869103b8e40e30f7e0be1ca10a0135fa31caa75",
-            "conclusion": "A functor with the prescribed restrictions equals the glued functor.",
-            "explanation": "`functor_ext` is the consequence of generation used here. The given restriction equations and those of `glue` show that the two functors agree on every cover member."
+            "conclusion": "`functor_ext` uses generation to identify functors with the same restrictions."
           }
         }
       ],
@@ -413,8 +403,7 @@
               249
             ],
             "sha256": "e572fb8826f0157d444d257f597509b5714927bd3a7b684c22e212635b91c5cc",
-            "conclusion": "For compatible local functors, $F_i(y)$ equals the chosen global object value whenever $y\\in U_i$.",
-            "explanation": "Apply compatibility on an intersection to the object represented by $y$. This compares any eligible index with the index selected in `glueObj`.",
+            "conclusion": "Compatibility on intersections identifies $F_i(y)$ with the chosen global object value.",
             "notation": [
               {
                 "math": "$F(y)$",
@@ -457,8 +446,7 @@
               216
             ],
             "sha256": "1b957020f3759923a209fff34decc3e27955bd8d6588a14c5aeb3f4a6544ae84",
-            "conclusion": "Every sufficiently large positive $N$ gives a fine equal subdivision of $\\gamma$.",
-            "explanation": "The Lebesgue lemma supplies a radius for the preimages of the cover. `exists_nat_one_div_lt` chooses a threshold with $1/N<\\rho$; each interval then lies in one preimage.",
+            "conclusion": "`exists_nat_one_div_lt` chooses a threshold with $1/N<\\rho$, so all larger $N$ give fine subdivisions.",
             "notation": [
               {
                 "math": "$t_k=k/N$ for $k\\leq N$",
@@ -500,8 +488,7 @@
               288
             ],
             "sha256": "4250833a7c01bcd48f4770e06e72136771ed9065b61a54b40126b79e6b366d3f",
-            "conclusion": "A path in $U_i\\cap U_j$ has the same local value using $F_i$ or $F_j$.",
-            "explanation": "The selected lines apply the compatibility equation `hF i j` to the path class in the intersection. Lines 266–288 identify the two inclusion images and align their endpoint objects to finish `locVal_congr_index`.",
+            "conclusion": "Apply `hF i j` to the path class in the intersection; the remaining lines align its endpoint objects.",
             "notation": [
               {
                 "math": "The local value $F_i([P])$",
@@ -544,8 +531,7 @@
               463
             ],
             "sha256": "bc89ca626c8fd31f3d392d6269df47f292867bad9069342207bfc07836701050",
-            "conclusion": "Inside one $U_i$, two consecutive subpath values compose.",
-            "explanation": "Apply Lemma 1.2 to the three subpaths in $U_i$, then apply functoriality: $F_i([\\gamma_{[a,c]}])=F_i([\\gamma_{[b,c]}])\\circ F_i([\\gamma_{[a,b]}])$. Line 462 supplies the path-class identity; line 463 applies the local-functor composition lemma.",
+            "conclusion": "Lemma 1.2 and functoriality combine consecutive subpath values.",
             "notation": [
               {
                 "math": "The three subpaths in the subspace",
@@ -575,8 +561,7 @@
               497
             ],
             "sha256": "b3514f07c80bef20d6568774f7f2ec563ba13bc9d90a016a41c428bcbea83900",
-            "conclusion": "Inside one $U_i$, any finite sequence of consecutive pieces combines to the whole subpath.",
-            "explanation": "Induct on the number of pieces. The empty composite is an identity; the induction step at line 496 invokes `pathVal_subpath_trans`, the preceding result, to append one more piece.",
+            "conclusion": "Induction repeatedly applies `pathVal_subpath_trans` to combine all pieces inside one $U_i$.",
             "notation": [
               {
                 "math": "The value of one subdivision piece",
@@ -610,8 +595,7 @@
               547
             ],
             "sha256": "16455df979903d3ff783b396cb771725e3b8047978a504e70cb2835f8e090124",
-            "conclusion": "Replacing every piece by $m$ equal pieces gives $L_{mN}(\\gamma)=L_N(\\gamma)$.",
-            "explanation": "For each coarse interval, line 538 invokes `map_segVal_eq` to combine its fine pieces. Induction over the coarse intervals gives the equality of the full composites; lines 546–547 conclude the lemma.",
+            "conclusion": "Apply `map_segVal_eq` on each coarse interval to obtain $L_{mN}(\\gamma)=L_N(\\gamma)$.",
             "notation": [
               {
                 "math": "$L_N(\\gamma)$",
@@ -632,7 +616,7 @@
       ],
       "proof": {
         "kind": "chain",
-        "summary": "This sentence combines three lemmas. First compose two subpaths, then a finite sequence inside one cover member, and finally apply that result to every interval of the coarse subdivision."
+        "summary": "Combine two pieces, then finitely many, then refine every coarse interval."
       }
     },
     {
@@ -658,8 +642,7 @@
               561
             ],
             "sha256": "d92773dc0cc63fe94e5e4428e4a92846d7ec36f07a9bb82a2cfcd7fa3a942a96",
-            "conclusion": "Every fine positive subdivision computes the same $L(\\gamma)$.",
-            "explanation": "Apply `liftN_mul` twice, comparing the chosen subdivision and the supplied one through their product. Commutativity of multiplication identifies the two common-refinement counts.",
+            "conclusion": "Apply `liftN_mul` twice to compare the two subdivisions through their common refinement.",
             "notation": [
               {
                 "math": "$L(\\gamma)$",
@@ -701,8 +684,7 @@
               231
             ],
             "sha256": "180cce67419ae980bd775c7758411e1ede6d826bdbe017d76d32f8868c31d0e3",
-            "conclusion": "A sufficiently fine square grid has each cell mapped by $H$ into one $U_i$.",
-            "explanation": "Apply the Lebesgue lemma to the preimages under the homotopy. Lean uses the maximum metric on the square: bounding both coordinate distances bounds the cell diameter.",
+            "conclusion": "The Lebesgue lemma gives a square grid whose cells map into cover members.",
             "notation": [
               {
                 "math": "$H$",
@@ -744,8 +726,7 @@
               354
             ],
             "sha256": "081a87d958614c222366d647c9754d46e258c9e902fd05375706738ccc77e804",
-            "conclusion": "Paths with the same endpoints in a simply connected space give equal local values after mapping into $U_i$.",
-            "explanation": "Regard the map as taking values in $U_i$. Simple connectedness makes the two source paths homotopic; mapping that homotopy into $U_i$ identifies their classes, so $F_i$ gives equal values.",
+            "conclusion": "Simple connectedness makes the source paths homotopic, so their images in $U_i$ have equal local values.",
             "notation": [
               {
                 "math": "The map from the simply connected space",
@@ -774,8 +755,7 @@
               658
             ],
             "sha256": "3e7f21b32f127b90f12c1cd616f1aa264b22f0f0d7d496bd8c218ada0e2dcda7",
-            "conclusion": "The two boundary routes across a cell have equal values.",
-            "explanation": "Parametrize the cell by the unit square and map its two routes through $H$. Line 652 invokes `locVal_eq_of_simplyConnected`; simple connectedness of the square supplies the homotopy between the routes.",
+            "conclusion": "Apply `locVal_eq_of_simplyConnected` to the two boundary routes in the unit square.",
             "notation": [
               {
                 "math": "The cell parametrization followed by $H$",
@@ -791,7 +771,7 @@
       ],
       "proof": {
         "kind": "chain",
-        "summary": "The cell argument applies a general helper to the unit square. The two excerpts show why mapped routes have equal values and where that result is used for the cell."
+        "summary": "Apply the simply connected source lemma to a square."
       }
     },
     {
@@ -817,8 +797,7 @@
               694
             ],
             "sha256": "df5de9f550449409d51dec643f3fc059632131c7ce6f827ff7aff40f163b1abe",
-            "conclusion": "Composing the cell squares makes the outside square of a row commute.",
-            "explanation": "`NatTrans.ofSequence` assembles the vertical edge values into a natural transformation between the two horizontal sequences. Its naturality for the entire row is exactly the pasted-square equation; line 681 uses `pathVal_cell` for each small square.",
+            "conclusion": "`NatTrans.ofSequence` packages the cell squares; its naturality gives the commuting outside square.",
             "notation": [
               {
                 "math": "A horizontal edge value",
@@ -865,8 +844,7 @@
               694
             ],
             "sha256": "df5de9f550449409d51dec643f3fc059632131c7ce6f827ff7aff40f163b1abe",
-            "conclusion": "The outer vertical paths are constant, so $L_N(\\gamma_j)=L_N(\\gamma_{j+1})$.",
-            "explanation": "The two applications of `pathVal_eq_eqToHom` replace the left and right boundary values by identity transports. After aligning endpoints, the pasted-square equation is the equality of row composites.",
+            "conclusion": "Constant outer edges give identity arrows, reducing the pasted square to $L_N(\\gamma_j)=L_N(\\gamma_{j+1})$.",
             "notation": [
               {
                 "math": "The pasted-square equation",
@@ -909,8 +887,7 @@
               694
             ],
             "sha256": "df5de9f550449409d51dec643f3fc059632131c7ce6f827ff7aff40f163b1abe",
-            "conclusion": "Equalities of consecutive rows imply $L(\\gamma)=L(\\delta)$.",
-            "explanation": "Induction in `hall` compares row zero with each later row. The final calculation identifies the first and last rows with the endpoints of the homotopy and uses independence of subdivision.",
+            "conclusion": "Induction on the rows gives $L(\\gamma)=L(\\delta)$, using independence of subdivision at the two ends.",
             "notation": [
               {
                 "math": "The two paths $\\gamma,\\delta$",
@@ -956,8 +933,7 @@
               709
             ],
             "sha256": "f42a13c605cc46c364fbc80fe4c3cb251b9c59182e367e5892cc661f9e95588d",
-            "conclusion": "The assignment $[\\gamma]\\mapsto L(\\gamma)$ is well defined on homotopy classes.",
-            "explanation": "`Quotient.lift` defines the morphism map. Its second argument is `lift_eq_of_homotopy`, the preceding grid argument, which shows the value is independent of the representative.",
+            "conclusion": "`Quotient.lift` uses `lift_eq_of_homotopy` to make $[\\gamma]\\mapsto L(\\gamma)$ independent of the representative.",
             "notation": [
               {
                 "math": "The global functor $F$",
@@ -1003,8 +979,7 @@
               514
             ],
             "sha256": "a46e2f8a18b9d32fd86599e522cbbf69b16a12d5cd4332698ba5610b2d7db628",
-            "conclusion": "If the whole path lies in $U_i$, every fine subdivision has value $F_i([\\gamma])$.",
-            "explanation": "Use `map_segVal_eq`, the finite-composition lemma from refinement, with the whole parameter interval. After combining all pieces, the resulting subpath from 0 to 1 is the original path.",
+            "conclusion": "`map_segVal_eq` combines all subdivision pieces inside $U_i$ to recover $F_i([\\gamma])$.",
             "notation": [
               {
                 "math": "$L(\\gamma)$",
@@ -1033,8 +1008,7 @@
               567
             ],
             "sha256": "0d50aa2d662b3ef59d6528d4bb21428364aad72916d7422309257180ca9503f0",
-            "conclusion": "For a path in $U_i$, its global value is $F_i([\\gamma])$.",
-            "explanation": "Choose a fine subdivision and rewrite its value using `lift_eq_liftN`. Then `liftN_eq_locVal` collapses that subdivision inside $U_i$ to the single local functor value.",
+            "conclusion": "Choose a fine subdivision, then apply `liftN_eq_locVal` to obtain $L(\\gamma)=F_i([\\gamma])$.",
             "notation": [
               {
                 "math": "$L(\\gamma)$",
@@ -1050,7 +1024,7 @@
       ],
       "proof": {
         "kind": "chain",
-        "summary": "First collapse any fine subdivision of a path contained in one cover member. Then use independence of subdivision to obtain the restriction equation for the global value."
+        "summary": "Collapse the subdivision, then use independence of subdivision."
       }
     },
     {
@@ -1076,8 +1050,7 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "Choose $\\tau_c:x\\to c$ within a cover member containing $c$.",
-            "explanation": "First choose a covering neighborhood of each point. Applying the intersection hypothesis with the same index twice gives path connectedness of that cover member, so a path from the basepoint exists."
+            "conclusion": "Each cover member is path connected by the intersection hypothesis, so choose $\\tau_c:x\\to c$ inside it."
           }
         }
       ],
@@ -1109,8 +1082,7 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "The morphisms with transported loop class in $H$ form a subgroupoid $S$.",
-            "explanation": "The inverse and composition fields use closure of $H$ under inverses and multiplication. In the composition case, the connecting path at the middle object cancels with its inverse.",
+            "conclusion": "Closure of $H$ under inverses and multiplication makes the transported morphisms a subgroupoid $S$.",
             "bookkeeping": "`End.of` regards a groupoid endomorphism at the basepoint as an element of its vertex group. Composition and group multiplication have reversed notation: `f ≫ g` is the product `g * f`."
           }
         }
@@ -1143,8 +1115,7 @@
               119
             ],
             "sha256": "a8de7066f82c8cfe35ebbfb3d7e693ff9d4e3809f59348b6d8456ca45dd6be1c",
-            "conclusion": "The connecting paths $\\sigma_c$ and $\\sigma_d$ can be chosen in the respective intersections.",
-            "explanation": "This is inside the helper for a single transported local path. Path connectedness of each intersection supplies a path from the common basepoint to the appropriate endpoint.",
+            "conclusion": "Path connectedness supplies $\\sigma_c$ and $\\sigma_d$ inside the respective intersections.",
             "notation": [
               {
                 "math": "$\\tau_c,\\omega,\\tau_d$",
@@ -1190,8 +1161,7 @@
               119
             ],
             "sha256": "a8de7066f82c8cfe35ebbfb3d7e693ff9d4e3809f59348b6d8456ca45dd6be1c",
-            "conclusion": "Insert $\\sigma_c^{-1}\\sigma_c$ and $\\sigma_d^{-1}\\sigma_d$ to split the transported loop into three local loops.",
-            "explanation": "`hsplit` is the displayed factorization. Associativity and cancellation of inverse morphisms prove it; the outer paths are called `α` and `β` in this helper.",
+            "conclusion": "`hsplit` inserts cancelling inverse pairs to express the transported loop as three local loops.",
             "notation": [
               {
                 "math": "$\\tau_c,\\omega,\\tau_d$",
@@ -1233,8 +1203,7 @@
               119
             ],
             "sha256": "a8de7066f82c8cfe35ebbfb3d7e693ff9d4e3809f59348b6d8456ca45dd6be1c",
-            "conclusion": "The middle loop lies in $U_i$, so its class belongs to $H$.",
-            "explanation": "`fromPath_mem_iSup_range` places a loop in the generated subgroup once its image lies in a cover member. The following lines verify containment for the three concatenated paths."
+            "conclusion": "`fromPath_mem_iSup_range` puts the middle loop in $H$ because it lies in $U_i$."
           }
         }
       ],
@@ -1266,8 +1235,7 @@
               119
             ],
             "sha256": "a8de7066f82c8cfe35ebbfb3d7e693ff9d4e3809f59348b6d8456ca45dd6be1c",
-            "conclusion": "All three factors lie in $H$, hence so does the transported loop.",
-            "explanation": "`comp_inv_mem_iSup_range` handles the outer factors; `hmid` handles the middle one. Two uses of closure under multiplication finish the helper, which is invoked in the generation step at line 166.",
+            "conclusion": "The outer factors lie in $H$ by `comp_inv_mem_iSup_range`; multiply them with the middle factor.",
             "bookkeeping": "Lean writes categorical composition in traversal order and group multiplication in the opposite order. This accounts for the order of the arguments to `H.mul_mem`."
           }
         }
@@ -1300,8 +1268,7 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "Every local path class lies in $S$, so generation of the groupoid gives $S=\\top$.",
-            "explanation": "Line 160 invokes groupoid generation. Line 166 applies `comp_comp_inv_mem_iSup_range`, the helper proved by the preceding intersection paths and three-loop factorization.",
+            "conclusion": "`comp_comp_inv_mem_iSup_range` puts every local class in $S$; groupoid generation gives $S=\\top$.",
             "notation": [
               {
                 "math": "The subgroupoid $S$",
@@ -1343,8 +1310,7 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "The connecting class $\\tau_x$ itself belongs to $H$.",
-            "explanation": "At the basepoint the chosen connecting path is a loop in a cover member. The same local-loop membership lemma used earlier therefore applies."
+            "conclusion": "The chosen $\\tau_x$ is a loop in a cover member, so its class lies in $H$."
           }
         }
       ],
@@ -1376,8 +1342,7 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "Cancelling the basepoint transport shows that the original loop class belongs to $H$.",
-            "explanation": "Combine the transported loop with the connecting loop and its inverse inside $H$. The final simplification cancels those connecting factors.",
+            "conclusion": "Multiply by $\\tau_x$ and its inverse inside $H$, then cancel the basepoint transport.",
             "bookkeeping": "`End.of` and the rewrite `hinv` convert between groupoid composition/inversion and the group operations. The cancellation is the same one displayed in the PDF."
           }
         }
@@ -1410,8 +1375,7 @@
               139
             ],
             "sha256": "89620571f39b57132c21378a34dd2a5618e5673a5660900382a52046912594f2",
-            "conclusion": "Connecting paths in each larger subspace agree with the chosen paths on the intersection.",
-            "explanation": "For a point in the smaller subspace, `connect` uses its chosen path and includes it in the larger subspace. Otherwise it chooses a path in the larger subspace. Both local constructions use the same smaller-space choice.",
+            "conclusion": "Reuse the intersection's chosen paths inside $A$ and $B$; choose other connecting paths independently.",
             "notation": [
               {
                 "math": "The intersection",
@@ -1453,8 +1417,7 @@
               164
             ],
             "sha256": "9e8d983b531f7d110198ac4d6537e983ebccfad9e405a92cad5d6aaa391e2870",
-            "conclusion": "A homomorphism on the basepoint group determines a functor to the one-object category.",
-            "explanation": "`functorOfEndHom` is the earlier construction using connecting morphisms. Applying it with `connect` produces the local functor used in the descent construction."
+            "conclusion": "`functorOfEndHom` turns the homomorphism and chosen connecting paths into a local functor."
           }
         }
       ],
@@ -1486,8 +1449,7 @@
               217
             ],
             "sha256": "e46b2a6fb1b00807a05cdc66406e964e5af8a04ef77d7992db05c9e85123b5de",
-            "conclusion": "Compatible homomorphisms give local functors that agree on the intersection.",
-            "explanation": "The two restriction lemmas rewrite both local functors using the same intersection connecting paths. Applying `functorOfEndHom` to the given equality of homomorphisms then identifies them."
+            "conclusion": "Both local functors use the same intersection paths, so compatibility of the homomorphisms identifies their restrictions."
           }
         }
       ],
@@ -1519,8 +1481,7 @@
               239
             ],
             "sha256": "5971fa8a79548860d8f97e184de6ef57d224404fff086e9da2385178abae7284",
-            "conclusion": "The two local functors glue to a functor on $\\Pi_1(X)$.",
-            "explanation": "`glueTwo` is the two-set specialization of the gluing construction. Its last argument is the compatibility theorem proved immediately before this definition."
+            "conclusion": "`glueTwo` glues the compatible local functors to a functor on $\\Pi_1(X)$."
           }
         }
       ],
@@ -1552,8 +1513,7 @@
               239
             ],
             "sha256": "5971fa8a79548860d8f97e184de6ef57d224404fff086e9da2385178abae7284",
-            "conclusion": "Restricting the glued functor to loops at $x$ gives the mediating homomorphism.",
-            "explanation": "The selected line is the outer operation surrounding the gluing expression in lines 236–239. `singleObjFunctor` restricts to the vertex group, and `SingleObj.mapHom` converts the resulting one-object functor to a homomorphism.",
+            "conclusion": "`singleObjFunctor` restricts to loops at $x$; `SingleObj.mapHom` yields the mediating homomorphism.",
             "notation": [
               {
                 "math": "The mediating homomorphism",
@@ -1592,8 +1552,7 @@
               280
             ],
             "sha256": "0f5da162c1031f3bed36f91bf77a66f65faa89379fcd96aaab4fbfa79bf0707f",
-            "conclusion": "On loops from $A$, the glued construction reduces to the local functor for $A$.",
-            "explanation": "`map_subtypeVal_comp_glueTwo_left` supplies the functor restriction equation. `vanKampenDesc_map_subtypeVal` applies that equation to the basepoint loop in question."
+            "conclusion": "`map_subtypeVal_comp_glueTwo_left` reduces the glued value on a loop in $A$ to its local value."
           }
         }
       ],
@@ -1625,8 +1584,7 @@
               280
             ],
             "sha256": "0f5da162c1031f3bed36f91bf77a66f65faa89379fcd96aaab4fbfa79bf0707f",
-            "conclusion": "The local functor at the basepoint evaluates a loop using the original homomorphism.",
-            "explanation": "The invocation of `localFunctor_map_base` completes the pointwise restriction calculation. That helper reduces the connecting-path construction at its basepoint."
+            "conclusion": "`localFunctor_map_base` evaluates that local value using the original homomorphism."
           }
         }
       ],
@@ -1658,8 +1616,7 @@
               310
             ],
             "sha256": "7edf45390390dbe022ed3e36406502c25f46466686737e14d7fe7fcbb44a252b",
-            "conclusion": "The pointwise calculation gives equality of the two homomorphisms.",
-            "explanation": "`MonoidHom.ext` turns equality on every loop, established by `vanKampenDesc_map_left`, into the left restriction equation."
+            "conclusion": "`MonoidHom.ext` turns the pointwise calculation into equality of homomorphisms."
           }
         }
       ],
@@ -1691,8 +1648,7 @@
               296
             ],
             "sha256": "69873075f5d92418a47f475586a028ab7830384faa2e248de7e510134cd514c3",
-            "conclusion": "The right restriction is the original homomorphism on $\\pi_1(B,x)$.",
-            "explanation": "The same two steps use the right restriction of `glueTwo`, followed by evaluation of the local functor at the basepoint."
+            "conclusion": "Apply the right restriction equation for `glueTwo`, then `localFunctor_map_base`."
           }
         }
       ],
@@ -1724,8 +1680,7 @@
               342
             ],
             "sha256": "09567fdc7b4ea02c6f2fafa17bd851c3d2cd6c7a2039c536c74f4a838a56f451",
-            "conclusion": "The equalizer subgroup of the two homomorphisms contains both generating images.",
-            "explanation": "Membership in `f.eqLocus g` means the two homomorphisms agree. The assumed left and right restriction equations give agreement on the two image subgroups.",
+            "conclusion": "The two restriction equations place both generating images in the equalizer subgroup `f.eqLocus g`.",
             "notation": [
               {
                 "math": "The equalizer subgroup",
@@ -1763,8 +1718,7 @@
               342
             ],
             "sha256": "09567fdc7b4ea02c6f2fafa17bd851c3d2cd6c7a2039c536c74f4a838a56f451",
-            "conclusion": "The two generating images fill $\\pi_1(X,x)$, so the homomorphisms agree everywhere.",
-            "explanation": "`range_map_subtypeVal_sup_eq_top` is the two-set generation corollary. Together with containment in the equalizer, it makes that equalizer the whole group."
+            "conclusion": "Generation makes the equalizer the whole group, so the homomorphisms agree everywhere."
           }
         }
       ],
@@ -1796,8 +1750,7 @@
               378
             ],
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "The two inclusions of the intersection induce the same map to $\\pi_1(X,x)$.",
-            "explanation": "Quotient induction reduces the claim to a represented loop. Both composites include exactly the same underlying loop into $X$, so the equality is reflexive."
+            "conclusion": "Quotient induction reduces the claim to a loop; both composites include that same loop into $X$."
           }
         }
       ],
@@ -1829,8 +1782,7 @@
               378
             ],
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "Every compatible pair of homomorphisms admits a mediating homomorphism.",
-            "explanation": "For an arbitrary pushout cocone, choose `vanKampenDesc` as its mediator. The remaining arguments of `IsColimit.mk` are the two restriction equations and uniqueness, supplied by the next tagged steps.",
+            "conclusion": "Choose `vanKampenDesc` as the mediator for the compatible pair of homomorphisms.",
             "notation": [
               {
                 "math": "An arbitrary compatible pair",
@@ -1872,8 +1824,7 @@
               378
             ],
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "The mediating homomorphism has both prescribed restrictions.",
-            "explanation": "The left and right restriction theorems provide the two factorization obligations. `GrpCat.hom_ext` expresses those homomorphism equalities as equalities of arrows in the category of groups.",
+            "conclusion": "The two restriction theorems give the factorization equations; `GrpCat.hom_ext` transfers them to categorical arrows.",
             "bookkeeping": "`GrpCat.ofHom` packages a group homomorphism as a category arrow; `GrpCat.hom_ext` transfers equality of the underlying homomorphisms to those arrows."
           }
         }
@@ -1906,8 +1857,7 @@
               378
             ],
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "Any other mediator with those restrictions equals the chosen one.",
-            "explanation": "`vanKampen_hom_ext` reduces equality to the two restrictions. The candidate mediator and `vanKampenDesc` have the same restrictions, completing the pushout universal property."
+            "conclusion": "`vanKampen_hom_ext` identifies the two mediators because their restrictions agree."
           }
         }
       ],
