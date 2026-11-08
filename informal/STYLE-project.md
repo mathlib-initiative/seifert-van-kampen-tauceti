@@ -123,9 +123,12 @@ Repeat enough ambient data and notation to make a section readable on its own.
 Keep typeclass syntax, universe variables and other Lean bookkeeping out of the
 printed text. Mathematical hypotheses remain those of the declarations, except
 for an explicitly recorded specialization. Lemma 1.3 specializes the linked
-pseudometric theorem to a compact metric subspace $K$ of Euclidean space,
-with relative neighborhoods and balls. Its link is `broadMatch`, because the
-Lean theorem is more general. Only the interval and square are used. With the
+pseudometric theorem to Euclidean space with compact subset $K$. The family
+members, neighborhoods and balls are ambient in Euclidean space, just as in
+the Lean theorem; the conclusion needs no intersection with $K$. Its link is
+`broadMatch`, because the Lean theorem is more general. For the interval and
+square applications, choose ambient open sets whose intersections with the
+parameter domain lie in the relevant preimages. With the
 Euclidean metric, choose the homotopy grid by cell diameter, not side length;
 the Lean proof instead uses the equivalent maximum metric.
 

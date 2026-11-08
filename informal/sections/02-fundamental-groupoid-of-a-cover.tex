@@ -59,9 +59,9 @@ $F(y)=F_i(y)$.  \proofstep{2.2-s01-objects}{The object value is independent of t
 the assumed equality of functors on the intersection gives
 $F_i(y)=F_j(y)$.}
 
-For a path $\gamma$ from $y$ to $z$, \proofstep{2.2-s02-partition}{Choose a sufficiently fine equal subdivision}{apply \itemref{1.3} to the neighborhoods
-$\gamma^{-1}(U_i)$ in the compact interval $\uI$.  For every sufficiently
-large positive integer $N$, the equal subdivision $t_k=k/N$ has each piece
+For a path $\gamma$ from $y$ to $z$, \proofstep{2.2-s02-partition}{Choose a sufficiently fine equal subdivision}{the compactness argument in the proof of
+\itemref{1.1} gives, for every sufficiently large positive integer $N$, an equal
+subdivision $t_k=k/N$ with each piece
 $\gamma_k=\subpath{\gamma}{t_k}{t_{k+1}}$ lying in some $U_{i_k}$.}
 For such a fine subdivision, put
 \[
@@ -80,8 +80,9 @@ $L_N(\gamma)=L_{NN_0}(\gamma)=L_{N_0}(\gamma)$.}
 Write $L(\gamma)$ for this common value.
 
 Let $H$ be a homotopy from $\gamma$ to $\delta$ fixing the endpoints.
-\proofstep{2.2-s06-grid}{Choose a fine grid for the homotopy}{Apply \itemref{1.3} to the compact square $\uI^2$
-and the neighborhoods $H^{-1}(U_i)$.  Choose an $N\times N$ grid whose cells
+\proofstep{2.2-s06-grid}{Choose a fine grid for the homotopy}{Choose open sets $V_i\subseteq\R^2$ covering
+$\uI^2$ with $V_i\cap\uI^2\subseteq H^{-1}(U_i)$, and apply \itemref{1.3}.
+Choose an $N\times N$ grid whose cells
 have diameter smaller than the resulting Lebesgue radius.  Each closed cell
 lies in a ball of that radius about a corner, so it maps into one $U_i$.}
 \proofstep{2.2-s07-cell}{The two routes around one cell have the same value}{In that subspace the two routes between opposite vertices of a cell are
