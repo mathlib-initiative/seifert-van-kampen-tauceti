@@ -5,12 +5,24 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.339194, 0.833333, 0.125806, 0.017045]
+        "rect": [0.778972, 0.797033, 0.090636, 0.019255]
       },
       "title": "continuous map",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:ContinuousMap@p001"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.130391, 0.816288, 0.038571, 0.017045]
+      },
+      "title": "continuous map",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:ContinuousMap@p001#2"
         }
       }
     }
