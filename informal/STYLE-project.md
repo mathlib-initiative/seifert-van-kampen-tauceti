@@ -90,13 +90,16 @@ it stands for.
 | macro | prints | stands for |
 |---|---|---|
 | `\hypCoverTwo` | the interiors of `A` and `B` cover `X` | the printed type `interior A ∪ interior B = Set.univ` |
-| `\hypCoverFamily` | each point of `X` has some `U_i` as a neighborhood | a printed type `∀ (y : X), ∃ i, U i ∈ nhds y`, for any one name `y` |
+| `\hypCoverFamily` | for each `y ∈ X`, some `U_i` is a neighborhood of `y` | a printed type `∀ (y : X), ∃ i, U i ∈ nhds y`, for any one name `y` |
 | `\hypPathConnected` | `A`, `B` and `A ∩ B` are path connected | the printed types `IsPathConnected A`, `IsPathConnected B` and `IsPathConnected (A ∩ B)`, which always appear together |
 | `\hypBasepoint` | `x` lies in `A` and in `B` | the printed types `x ∈ A` and `x ∈ B` |
 
 Write the macro, never the words by hand. In Sections 2 and 3, state
 `\hypCoverFamily` once in the opening prose of an `fcassumptions` block;
-following items in that block inherit the assumption. End each block before
+following items in that block inherit the assumption. In Section 2, introduce
+the fundamental groupoid and induced functors before this cover assumption.
+Use $y$ for its quantified point to distinguish it from the basepoint $x$ in
+Section 3. End each block before
 the separate two-subspace results. Keep the quantifier order: each point has
 some cover member as a neighborhood, and the member may depend on the point.
 Other hypothesis macros stay in the item or part whose key declaration binds

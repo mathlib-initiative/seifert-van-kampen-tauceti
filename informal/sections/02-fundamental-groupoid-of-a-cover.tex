@@ -1,7 +1,5 @@
-\begin{fcassumptions}
-Let $(U_i)_{i\in I}$ be a family of subsets of a topological space $X$.
-For the results about this family, assume throughout that \hypCoverFamily.
-Write \fcnotion{FundamentalGroupoid}{$\fgpd{X}$} for its fundamental groupoid.
+Let $X$ be a topological space, and write
+\fcnotion{FundamentalGroupoid}{$\fgpd{X}$} for its fundamental groupoid.
 A \fcnotion{ContinuousMap}{continuous map} $f:X\longrightarrow Y$ induces a
 \fcnotion{CategoryTheory.Functor}{functor}
 \fcnotion{FundamentalGroupoid.map}{$\fgpd{f}:\fgpd{X}\longrightarrow\fgpd{Y}$},
@@ -10,6 +8,10 @@ $\pcls{f\circ\gamma}$.
 For subsets $S\subseteq T\subseteq X$, write
 \fcnotion{ContinuousMap.inclusion}{$\inclin{S}{T}:S\longrightarrow T$} for
 inclusion.
+
+\begin{fcassumptions}
+Let $(U_i)_{i\in I}$ be a family of subsets of $X$, and suppose that
+\hypCoverFamily.
 
 \begin{theorem}[id=2.1]{Generation by a cover}
 \fcref{Theorem 1.20}
