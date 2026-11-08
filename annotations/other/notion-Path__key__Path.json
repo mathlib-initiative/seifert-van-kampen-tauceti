@@ -1,6 +1,7 @@
 {
   "id": "notion:Path",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

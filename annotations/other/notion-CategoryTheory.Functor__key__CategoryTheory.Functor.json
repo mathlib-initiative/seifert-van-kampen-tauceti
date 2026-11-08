@@ -1,11 +1,12 @@
 {
   "id": "notion:CategoryTheory.Functor",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.3536, 0.816288, 0.058454, 0.017045]
+        "rect": [0.3536, 0.815972, 0.058454, 0.017203]
       },
       "title": "functor",
       "extensions": {

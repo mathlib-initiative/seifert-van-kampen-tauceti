@@ -1,11 +1,12 @@
 {
   "id": "notion:ContinuousMap",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.778972, 0.797033, 0.090636, 0.019255]
+        "rect": [0.778972, 0.796717, 0.090636, 0.019255]
       },
       "title": "continuous map",
       "extensions": {
@@ -17,7 +18,7 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.816288, 0.038571, 0.017045]
+        "rect": [0.130391, 0.815972, 0.038571, 0.017203]
       },
       "title": "continuous map",
       "extensions": {

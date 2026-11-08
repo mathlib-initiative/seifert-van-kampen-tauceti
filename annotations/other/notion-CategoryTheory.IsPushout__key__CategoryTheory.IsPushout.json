@@ -1,6 +1,7 @@
 {
   "id": "notion:CategoryTheory.IsPushout",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

@@ -1,6 +1,7 @@
 {
   "id": "notion:TopologicalSpace",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

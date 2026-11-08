@@ -1,6 +1,7 @@
 {
   "id": "proposition-4.4-a",
   "kind": "proposition",
+  "relation": "exactMatch",
   "subject": {
     "location": {
       "page": 5,

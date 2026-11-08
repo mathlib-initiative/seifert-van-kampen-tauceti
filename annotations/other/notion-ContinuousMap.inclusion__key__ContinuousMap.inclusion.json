@@ -1,11 +1,12 @@
 {
   "id": "notion:ContinuousMap.inclusion",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.578314, 0.833333, 0.110096, 0.017361]
+        "rect": [0.578314, 0.833176, 0.110096, 0.017361]
       },
       "title": "ι_{S,T} : S −→ T",
       "extensions": {

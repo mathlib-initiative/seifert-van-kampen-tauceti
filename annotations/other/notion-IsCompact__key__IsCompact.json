@@ -1,11 +1,12 @@
 {
   "id": "notion:IsCompact",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.701285, 0.688447, 0.066083, 0.019255]
+        "rect": [0.552282, 0.688447, 0.066083, 0.020044]
       },
       "title": "compact",
       "extensions": {

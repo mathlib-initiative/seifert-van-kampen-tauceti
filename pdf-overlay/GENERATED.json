@@ -120,12 +120,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "c9e805174c808381449de5bdc6ff1f09d2fa540cd99da5fea99813e2864fc048"
+      "sha256": "470e3e016503c2ee4cd048c5aaa2acc491326b4a29bfba55116ee6fb1cbccbb7"
     },
-    "count": 95,
+    "count": 94,
     "directory": "annotations",
     "export": {
-      "commit": "e34171ee8e1177979b3da1569c20c8b9e6e80668",
+      "commit": "7f56cecfbb8e056f1fa56d3fb5434b1402b1fa18",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -149,7 +149,7 @@
       },
       {
         "path": "informal/items.json",
-        "sha256": "8ac8621e68a11d04ce3d37e84d9d7c4bacdb87852c04ea7c3eadfcf8dbd46b8a"
+        "sha256": "d5f1cbc5be351b18b017ead35edbca5c983879bf2f66c36b8955f4afcffa9eab"
       },
       {
         "path": "informal/main.tex",
@@ -157,7 +157,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "ca94a5906206631e91302c0f92adf1da075c73405959046b9344b28e595561d1"
+        "sha256": "bd5634537ce11a3dac3f4499baf3c7eadb03108363acf6aaadbb15f4f500392d"
       },
       {
         "path": "informal/notation.sty",
@@ -177,11 +177,11 @@
       },
       {
         "path": "informal/sections/01-paths-and-subdivisions.tex",
-        "sha256": "481b1e9a33fcd518de19a293c0223deedbe20bd097331278551885e6a06ccdbb"
+        "sha256": "ce0e415ea7a89aa57cc9384e4e889bb6a8f2607801d7cc5f135f764cab0d3e54"
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "cae65c9e074f79aa0c82de5329ffe5e2d58ee9fd10982eb61ca0e5952c8e0153"
+        "sha256": "a156e5884efdacc5e5471865cc541a4a31ddca89507a8382d497c9afafd7c182"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
@@ -200,6 +200,6 @@
         "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "c90b739466d27dad3e14166394c8966247c1f5cfeb0631f455491c63e64f6f72"
+    "manifest_sha256": "12748294b76e3d21406f46f4b898d197d76903dba2aa48632f178bafc2fc8936"
   }
 }

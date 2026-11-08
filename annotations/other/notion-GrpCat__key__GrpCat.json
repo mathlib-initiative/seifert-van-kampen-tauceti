@@ -1,6 +1,7 @@
 {
   "id": "notion:GrpCat",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

@@ -1,6 +1,7 @@
 {
   "id": "notion:Path.Homotopic.Quotient",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

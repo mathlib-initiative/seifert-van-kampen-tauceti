@@ -1,11 +1,12 @@
 {
   "id": "definition-2.2",
   "kind": "definition",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 2,
-        "rect": [0.130391, 0.334912, 0.739217, 0.15846]
+        "rect": [0.130391, 0.330492, 0.739217, 0.154987]
       },
       "title": "Definition 2.2 (The gluing functor)",
       "extensions": {

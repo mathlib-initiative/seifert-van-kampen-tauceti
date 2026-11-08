@@ -1,11 +1,12 @@
 {
   "id": "notion:FundamentalGroupoid",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.457713, 0.797033, 0.053583, 0.019255]
+        "rect": [0.457713, 0.796717, 0.053583, 0.019255]
       },
       "title": "Π₁(X)",
       "extensions": {

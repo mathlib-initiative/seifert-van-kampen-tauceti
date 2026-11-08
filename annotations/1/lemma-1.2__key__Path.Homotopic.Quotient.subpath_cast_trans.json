@@ -1,11 +1,12 @@
 {
   "id": "lemma-1.2",
   "kind": "lemma",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.600694, 0.739217, 0.057449]
+        "rect": [0.130391, 0.600379, 0.739217, 0.057765]
       },
       "title": "Lemma 1.2 (Composing subpath classes)",
       "extensions": {

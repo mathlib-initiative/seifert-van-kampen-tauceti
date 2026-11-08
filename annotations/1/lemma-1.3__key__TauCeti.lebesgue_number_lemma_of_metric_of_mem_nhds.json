@@ -1,11 +1,12 @@
 {
   "id": "lemma-1.3",
   "kind": "lemma",
+  "relation": "broadMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.688447, 0.739217, 0.056503]
+        "rect": [0.130391, 0.688447, 0.739298, 0.056503]
       },
       "title": "Lemma 1.3 (A Lebesgue number)",
       "extensions": {

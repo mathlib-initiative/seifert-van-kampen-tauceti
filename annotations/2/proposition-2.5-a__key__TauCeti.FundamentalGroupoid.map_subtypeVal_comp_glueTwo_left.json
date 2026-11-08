@@ -1,6 +1,7 @@
 {
   "id": "proposition-2.5-a",
   "kind": "proposition",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {

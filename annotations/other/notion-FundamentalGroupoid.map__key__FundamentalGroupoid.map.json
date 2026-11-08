@@ -1,11 +1,12 @@
 {
   "id": "notion:FundamentalGroupoid.map",
   "kind": "passage",
+  "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.415758, 0.816288, 0.203369, 0.017045]
+        "rect": [0.415758, 0.815972, 0.203369, 0.017203]
       },
       "title": "Π₁(f) : Π₁(X) −→ Π₁(Y )",
       "extensions": {
