@@ -39,11 +39,15 @@ morphism therefore lies in $\mathcal H$, which proves the claim.
 \fcref{Theorem 1.20}
 Let $\mathcal D$ be a category.  For each
 $i$ let $F_{i}$ be a functor from
-$\fgpd{U_{i}}$ to $\mathcal{D}$, and suppose that for all $i$ and $j$
+$\fgpd{U_{i}}$ to $\mathcal{D}$, and suppose that for every $i,j$ the square
 \[
-  F_{i} \circ \fgpd{\inclin{U_{i} \cap U_{j}}{U_{i}}}
-    = F_{j} \circ \fgpd{\inclin{U_{i} \cap U_{j}}{U_{j}}}.
+  \begin{array}{ccc}
+    \fgpd{U_i\cap U_j} & \longrightarrow & \fgpd{U_i} \\
+    \big\downarrow && \big\downarrow\rlap{$\scriptstyle\,F_i$} \\
+    \fgpd{U_j} & \xrightarrow{\ F_j\ } & \mathcal D
+  \end{array}
 \]
+commutes, where the unlabelled arrows are induced by inclusion.
 Then the $F_{i}$ glue to a functor $F$ from $\fgpd{X}$ to $\mathcal{D}$.
 \leanref{TauCeti.FundamentalGroupoid.glue}
 \end{definition}
