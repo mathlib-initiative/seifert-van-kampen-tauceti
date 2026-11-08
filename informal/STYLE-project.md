@@ -136,20 +136,24 @@ where it is explained, including inside numbered items and parts. Mark useful ex
 a sentence just to host a link. Keep each retained notion link once. Give formula annotations a descriptive optional viewer title, such as
 "Inclusion map" or "Image subgroupoid", rather than repeating the full formula.
 When notation helps identify the object, include standard LaTeX math in the
-title; these labels are independent of the printed words and box geometry. The constants are these 31,
+title; these labels are independent of the printed words and box geometry. The constants are these 25,
 each copied from the Mathlib `references` in `declarations.json`:
 
-`TopologicalSpace`, `ContinuousMap`, `Metric.ball`,
-`ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
-`Path.trans`, `Path.subpath`, `IsCompact`, `IsPathConnected`,
+`TopologicalSpace`, `ContinuousMap`,
+`ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `Path`,
+`Path.trans`, `Path.subpath`, `IsPathConnected`,
 `Path.Homotopic.Quotient`,
 `Path.Homotopic.Quotient.trans`, `FundamentalGroupoid`, `FundamentalGroupoid.map`,
 `FundamentalGroup`, `FundamentalGroup.map`, `FundamentalGroup.fromPath`,
-`CategoryTheory.Subgroupoid`, `CategoryTheory.Subgroupoid.im`, `MonoidHom.range`,
+`MonoidHom.range`,
 `Subgroup`, `CategoryTheory.Category`,
 `CategoryTheory.End`, `Monoid`,
 `CategoryTheory.SingleObj`, `MonoidHom`, `CategoryTheory.Functor`,
-`CategoryTheory.IsPushout`, `GrpCat`, `Monotone`.
+`CategoryTheory.IsPushout`, `GrpCat`.
+
+Keep the opening page focused: do not add notion tags for nondecreasing
+sequences, the unit interval, compactness, relative metric balls, subgroupoids
+or their images. Their words and notation remain in the text.
 
 A notion link must explain the mathematical meaning of its marked words.
 Do not link "generate" to the generic indexed-supremum operator `iSup`:
