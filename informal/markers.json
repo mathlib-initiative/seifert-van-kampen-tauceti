@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "9f06e3b13c3cc5a851e2a58482fa14c770d00fe9",
- "pdf_sha256": "1e20ed295bb6afefa4c2d6b8f8ff970a1e04a71c1fa96d717ec515429f862d5f",
+ "source_commit": "289daf4410589a9365ebb07d764940fcb0abaa62",
+ "pdf_sha256": "38ba6925ead90d732c4b14aef05bb13a207e88962311b2e53d5939eb2f1b84e9",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -83,32 +83,19 @@
    "title": "The gluing functor",
    "parts": [],
    "decls": [
-    "TauCeti.FundamentalGroupoid.glue"
+    "TauCeti.FundamentalGroupoid.glue",
+    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+    "TauCeti.FundamentalGroupoid.eq_glue"
    ],
    "boxes": [
-    [2, 0.130391, 0.286932, 0.739217, 0.15846]
+    [2, 0.130391, 0.286932, 0.739217, 0.18971]
    ]
   },
   {
    "id": "2.3",
-   "kind": "proposition",
+   "kind": "definition",
    "label": "item:2.3",
    "number": "2.3",
-   "section": "2",
-   "title": "Restriction to a cover member",
-   "parts": [],
-   "decls": [
-    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue"
-   ],
-   "boxes": [
-    [3, 0.130391, 0.510101, 0.739217, 0.038194]
-   ]
-  },
-  {
-   "id": "2.4",
-   "kind": "definition",
-   "label": "item:2.4",
-   "number": "2.4",
    "section": "2",
    "title": "Gluing over two subspaces",
    "parts": [],
@@ -116,49 +103,49 @@
     "TauCeti.FundamentalGroupoid.glueTwo"
    ],
    "boxes": [
-    [3, 0.130391, 0.553346, 0.739217, 0.095486]
+    [3, 0.130391, 0.539141, 0.739217, 0.098169]
    ]
   },
   {
-   "id": "2.5",
+   "id": "2.4",
    "kind": "proposition",
-   "label": "item:2.5",
-   "number": "2.5",
+   "label": "item:2.4",
+   "number": "2.4",
    "section": "2",
    "title": "Restriction to the two subspaces",
    "parts": [
-    "2.5(a)",
-    "2.5(b)"
+    "2.4(a)",
+    "2.4(b)"
    ],
    "decls": [],
    "boxes": [
-    [3, 0.130391, 0.653883, 0.739217, 0.089489]
+    [3, 0.130391, 0.644255, 0.739217, 0.089962]
    ]
   },
   {
-   "id": "2.5(a)",
-   "parent": "2.5",
+   "id": "2.4(a)",
+   "parent": "2.4",
    "part": "a",
-   "label": "item:2.5:a",
-   "number": "2.5(a)",
+   "label": "item:2.4:a",
+   "number": "2.4(a)",
    "decls": [
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left"
    ],
    "boxes": [
-    [3, 0.130391, 0.706755, 0.739217, 0.017361]
+    [3, 0.130391, 0.697285, 0.739217, 0.017519]
    ]
   },
   {
-   "id": "2.5(b)",
-   "parent": "2.5",
+   "id": "2.4(b)",
+   "parent": "2.4",
    "part": "b",
-   "label": "item:2.5:b",
-   "number": "2.5(b)",
+   "label": "item:2.4:b",
+   "number": "2.4(b)",
    "decls": [
     "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right"
    ],
    "boxes": [
-    [3, 0.130391, 0.724116, 0.739217, 0.019255]
+    [3, 0.130391, 0.714804, 0.739217, 0.019413]
    ]
   },
   {
@@ -447,7 +434,7 @@
    "label": "notion:13",
    "number": "n13",
    "boxes": [
-    [3, 0.539366, 0.814867, 0.151078, 0.017203]
+    [3, 0.539366, 0.806187, 0.151078, 0.017045]
    ]
   },
   {
@@ -457,7 +444,7 @@
    "label": "notion:14",
    "number": "n14",
    "boxes": [
-    [3, 0.274093, 0.849274, 0.116096, 0.016572]
+    [3, 0.274093, 0.840436, 0.116096, 0.016572]
    ]
   },
   {
@@ -467,7 +454,7 @@
    "label": "notion:15",
    "number": "n15",
    "boxes": [
-    [3, 0.207968, 0.865846, 0.122556, 0.017677]
+    [3, 0.207968, 0.857008, 0.122556, 0.017835]
    ]
   },
   {
@@ -478,7 +465,7 @@
    "number": "n16",
    "title": "Induced homomorphism $\\pi_1(f,x)$",
    "boxes": [
-    [3, 0.332412, 0.865846, 0.266211, 0.017677]
+    [3, 0.332412, 0.857008, 0.266211, 0.017835]
    ]
   },
   {
@@ -488,7 +475,7 @@
    "label": "notion:17",
    "number": "n17",
    "boxes": [
-    [3, 0.236872, 0.883523, 0.182982, 0.018308]
+    [3, 0.236872, 0.874842, 0.182982, 0.018466]
    ]
   },
   {
