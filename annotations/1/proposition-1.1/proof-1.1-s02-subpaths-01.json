@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.37673, 0.547664, 0.358298, 0.021149]
+        "rect": [0.307806, 0.547664, 0.358298, 0.021149]
       },
       "title": "Pass from parameter intervals to subpaths",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.37673, 0.547664, 0.735028, 0.547664, 0.735028, 0.568813, 0.37673, 0.568813]
+            [0.307806, 0.547664, 0.666104, 0.547664, 0.666104, 0.568813, 0.307806, 0.568813]
           ],
           "region": "proof-1.1-s02-subpaths@p001"
         }
