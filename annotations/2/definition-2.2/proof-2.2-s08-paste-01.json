@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 3,
-        "rect": [0.132842, 0.208333, 0.502734, 0.018782]
+        "rect": [0.132842, 0.21149, 0.502734, 0.018624]
       },
       "title": "Paste the commuting squares across one row",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.132842, 0.208333, 0.635576, 0.208333, 0.635576, 0.227115, 0.132842, 0.227115]
+            [0.132842, 0.21149, 0.635576, 0.21149, 0.635576, 0.230114, 0.132842, 0.230114]
           ],
           "region": "proof-2.2-s08-paste@p003"
         }
