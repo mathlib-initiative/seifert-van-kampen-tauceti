@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "00d902c0f3be73aca7d1612f42b3d2cba8ed9979"
+    "commit": "d40657e1a3f13f5d16a7bb8e73a97f136c423f61"
   },
   "instance_files": [
     "informalize.json"
@@ -32,7 +32,7 @@
     },
     {
       "path": "tools/check_items.py",
-      "sha256": "ba2f0672164fe5d578989467d415a0c17bd4825133a4655904632a8e316a9027"
+      "sha256": "6dda8b49ac80fb9a1679d22b8aeef5f18a288edf9b1c83e3369bebfb51fefcdd"
     },
     {
       "path": "tools/extract_markers.py",
