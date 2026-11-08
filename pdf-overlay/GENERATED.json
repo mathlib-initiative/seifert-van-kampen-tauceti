@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "2d4cff280881ece8f6b7b62768fe75dd232dd0e2"
+    "commit": "db82350c26377aec25cfd27338260430132e116a"
   },
   "format": {
     "package": "literature-links",
@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "c678cceab5caef787f60958cfd8ea4fc1ccb4c57eb4f76987b12b97bb67fce48"
+      "sha256": "d64c736017ee8f1e8c068850b2f3487ddcf612f446b9133f956649fe333e0b7c"
     },
     "count": 94,
     "directory": "annotations",
     "export": {
-      "commit": "689db79be38c796792addd0e219e5a36b49aeef6",
+      "commit": "dd8d68c8702e288c3a6866866d1380202538fb77",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -153,7 +153,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "4ae85a18259dad492ec0e2bb8c1fbb81ad7bf13c653c182737b59753b5b2e193"
+        "sha256": "9834b3fe2da485cef1d9023ebb93f669820fe8aba1fcf6351054b5aee9bd7f76"
       },
       {
         "path": "informal/notation.sty",
@@ -173,11 +173,11 @@
       },
       {
         "path": "informal/sections/01-paths-and-subdivisions.tex",
-        "sha256": "6d0c0f6a70e85407102033a815773cf128fc58a638a27a25fcbe5b11fb03dce9"
+        "sha256": "f299c59c1afb6fa819db6b51b06396ec7867cb79494dcae3711a0455daec7575"
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "4a35831412f0ca3f661b25798880841303a75d6f58e074576b1eeccb5440dd86"
+        "sha256": "b0465d480dbf2527ad99ea58bca44dadaf0caf16780134e5afbefaa215929798"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
@@ -196,6 +196,6 @@
         "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "dcb7fd6245f071fe724b91b0a11d65b6db1c5772c34b481c74018314d938c619"
+    "manifest_sha256": "aab48482e74e4677348d6392697921a73c7da6df2cb652b27a71d323e8be8808"
   }
 }

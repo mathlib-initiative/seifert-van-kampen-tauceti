@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.705868, 0.854009, 0.16374, 0.021938]
+        "rect": [0.705868, 0.883049, 0.16374, 0.021938]
       },
       "title": "Each piece lies in an image subgroupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.705868, 0.854009, 0.869608, 0.854009, 0.869608, 0.875947, 0.705868, 0.875947]
+            [0.705868, 0.883049, 0.869608, 0.883049, 0.869608, 0.904987, 0.705868, 0.904987]
           ],
           "region": "proof-2.1-s02-image@p001"
         }
