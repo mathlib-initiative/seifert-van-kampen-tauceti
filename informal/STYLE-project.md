@@ -69,6 +69,8 @@ Endpoint transports also stay implicit.
 
 ## Assumed background
 
+Assume familiarity with categories, groupoids and monoid homomorphisms; do not
+add standalone reminders of their defining properties.
 Assume basic familiarity with point-set topology. Do not explain neighborhoods,
 interiors, compactness, subspace topologies, set membership or the range of a map.
 Introduce notation when it is needed, and keep conventions that affect the
@@ -121,8 +123,8 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep each retained notion link once. The constants are these 40,
-each copied from `declarations.json` (39 rows of its `references` from Mathlib, plus TauCeti's path restriction
+with its explanation; keep each retained notion link once. The constants are these 38,
+each copied from `declarations.json` (37 rows of its `references` from Mathlib, plus TauCeti's path restriction
 construction):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
@@ -132,8 +134,8 @@ construction):
 `Path.Homotopic.Quotient.trans`, `FundamentalGroupoid`, `FundamentalGroupoid.map`,
 `FundamentalGroup`, `FundamentalGroup.map`, `FundamentalGroup.fromPath`,
 `CategoryTheory.Subgroupoid`, `CategoryTheory.Subgroupoid.im`, `MonoidHom.range`,
-`Subgroup`, `iSup`, `CategoryTheory.Category`, `CategoryTheory.Groupoid`,
-`CategoryTheory.inv`, `CategoryTheory.End`, `CategoryTheory.CategoryStruct.comp`, `Monoid`,
+`Subgroup`, `iSup`, `CategoryTheory.Category`,
+`CategoryTheory.End`, `CategoryTheory.CategoryStruct.comp`, `Monoid`,
 `CategoryTheory.SingleObj`, `MonoidHom`, `CategoryTheory.Functor`,
 `CategoryTheory.Functor.comp`, `MonoidHom.comp`,
 `CategoryTheory.IsPushout`, `GrpCat`, `Monotone`, `Path.codRestrict`.
