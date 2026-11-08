@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.356171, 0.268647, 0.287657, 0.02135]
+        "rect": [0.356171, 0.439345, 0.287657, 0.02135]
       },
       "title": "Use the glued functor's restriction to A",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.356171, 0.268647, 0.643828, 0.268647, 0.643828, 0.289997, 0.356171, 0.289997]
+            [0.356171, 0.439345, 0.643828, 0.439345, 0.643828, 0.460695, 0.356171, 0.460695]
           ],
           "region": "proof-4.4-s01-left@p005"
         }

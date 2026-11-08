@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.227069, 0.755682, 0.555113, 0.017361]
+        "rect": [0.227069, 0.8125, 0.555113, 0.017361]
       },
       "title": "Repeat the row equality throughout the homotopy",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.227069, 0.755682, 0.782182, 0.755682, 0.782182, 0.773043, 0.227069, 0.773043]
+            [0.227069, 0.8125, 0.782182, 0.8125, 0.782182, 0.829861, 0.227069, 0.829861]
           ],
           "region": "proof-2.2-s10-rows@p002"
         }

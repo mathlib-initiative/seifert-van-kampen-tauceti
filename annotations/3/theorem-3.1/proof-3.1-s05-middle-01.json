@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 3,
-        "rect": [0.139457, 0.799558, 0.419897, 0.018624]
+        "rect": [0.139457, 0.862058, 0.419897, 0.018624]
       },
       "title": "The middle loop lies in the generated subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.139457, 0.799558, 0.559354, 0.799558, 0.559354, 0.818182, 0.139457, 0.818182]
+            [0.139457, 0.862058, 0.559354, 0.862058, 0.559354, 0.880682, 0.139457, 0.880682]
           ],
           "region": "proof-3.1-s05-middle@p003"
         }

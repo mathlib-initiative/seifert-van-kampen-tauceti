@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "4ea36966497f602c59b8749e488a0b18e39ef744"
+    "commit": "88d0f72de009fb696b2c5fd5ef45aaccb1c3c7e1"
   },
   "format": {
     "package": "literature-links",
@@ -120,12 +120,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "317cfeb826a6384b10b2c538ca4e9857982d92d44945524a099b89fb1bd5bb35"
+      "sha256": "7621e1b13e034ab1cc6c3cee59431aa11f6dbe8813d8926b97d01a3e909dd66a"
     },
     "count": 94,
     "directory": "annotations",
     "export": {
-      "commit": "6b7589b6135cd5619b3b23a3d2ab299fadb54fd3",
+      "commit": "92ac6bc35ca6d298b2fa7cb11bd49a464002f027",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -153,11 +153,11 @@
       },
       {
         "path": "informal/main.tex",
-        "sha256": "de38078e1cbd82ce97780097e3e711c8d6d9f1351fb72c6b635fa3267a767af6"
+        "sha256": "cc587cb2be205f36c59283f5c92a069fd833c240ed3aa2b54f39d4098c7b3ab6"
       },
       {
         "path": "informal/markers.json",
-        "sha256": "df96d30b0e91d8815a3a558be455e14c8951be8d15fda40668810a1190f6b178"
+        "sha256": "8532138a0d802244e6fa9b972d3933e93e5dd72fe8d426c6ab67e9a67a5ec6e3"
       },
       {
         "path": "informal/notation.sty",
@@ -181,7 +181,7 @@
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "e2e9a6161be03aba942f42c8f644da4baa98c7783da00e5fb3bb10159b93176b"
+        "sha256": "7e4294d6834c2e9b8baa5387093b975792e06c9128ceec10bae070f0ef73349a"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
@@ -200,6 +200,6 @@
         "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "09cf026b7e6a91f35bfc87b9e4ee1cdbbc5c200b56cd006901178479dbc7e16e"
+    "manifest_sha256": "9cffcdf19ae44067c61051cd0ab9ed2086daabc32486af6ccd56ec33595bd069"
   }
 }

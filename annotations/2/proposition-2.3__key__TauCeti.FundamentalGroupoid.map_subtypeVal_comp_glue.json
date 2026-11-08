@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.130391, 0.837121, 0.739217, 0.056503]
+        "page": 3,
+        "rect": [0.130391, 0.104167, 0.739217, 0.056187]
       },
       "title": "Proposition 2.3 (Restriction to a cover member)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proposition-2.3@p002"
+          "region": "proposition-2.3@p003"
         }
       }
     }
@@ -47,8 +47,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }
