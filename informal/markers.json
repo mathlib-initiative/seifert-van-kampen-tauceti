@@ -2,7 +2,7 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "b8592d2d22855d44e306c4b666a3e1ddf08a66e3",
+ "source_commit": "cb3814c95cef37438aa5a2c76472bb0355bb24bd",
  "pdf_sha256": "46a26eaa2717ceab464e5490aa2c5fe7a59c3d9e9ade7ef62a3b8d416f1d1212",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
@@ -327,6 +327,7 @@
    "words": "$\\incl{S}:S\\longrightarrow X$",
    "label": "notion:2",
    "number": "n2",
+   "title": "Inclusion map",
    "boxes": [
     [1, 0.590232, 0.329545, 0.106975, 0.018466]
    ]
@@ -347,6 +348,7 @@
    "words": "$\\gamma\\ptrans\\delta$",
    "label": "notion:4",
    "number": "n4",
+   "title": "Path concatenation",
    "boxes": [
     [1, 0.178863, 0.348011, 0.034697, 0.018782]
    ]
@@ -357,6 +359,7 @@
    "words": "$\\subpath{\\gamma}{r}{s}$",
    "label": "notion:5",
    "number": "n5",
+   "title": "Subpath $\\gamma_{[r,s]}$",
    "boxes": [
     [1, 0.828376, 0.348011, 0.03633, 0.018782]
    ]
@@ -367,6 +370,7 @@
    "words": "$\\pcls{\\gamma}$",
    "label": "notion:6",
    "number": "n6",
+   "title": "Homotopy class",
    "boxes": [
     [1, 0.182407, 0.384943, 0.022662, 0.018782]
    ]
@@ -377,6 +381,7 @@
    "words": "composition",
    "label": "notion:7",
    "number": "n7",
+   "title": "Composition of path classes",
    "boxes": [
     [1, 0.431227, 0.384943, 0.096261, 0.018782]
    ]
@@ -397,6 +402,7 @@
    "words": "$\\uI$",
    "label": "notion:9",
    "number": "n9",
+   "title": "Unit interval",
    "boxes": [
     [1, 0.612786, 0.444918, 0.038191, 0.017519]
    ]
@@ -417,6 +423,7 @@
    "words": "$K\\cap\\ball{z}{\\rho}$",
    "label": "notion:11",
    "number": "n11",
+   "title": "Relative metric ball",
    "boxes": [
     [1, 0.520406, 0.698074, 0.093162, 0.019729]
    ]
@@ -427,6 +434,7 @@
    "words": "$\\fgpd{X}$",
    "label": "notion:12",
    "number": "n12",
+   "title": "Fundamental groupoid $\\Pi_1(X)$",
    "boxes": [
     [1, 0.457713, 0.769255, 0.053583, 0.019255]
    ]
@@ -458,6 +466,7 @@
    "words": "$\\fgpd{f}:\\fgpd{X}\\longrightarrow\\fgpd{Y}$",
    "label": "notion:15",
    "number": "n15",
+   "title": "Induced functor $\\Pi_1(f)$",
    "boxes": [
     [1, 0.415758, 0.78851, 0.203369, 0.017045]
    ]
@@ -468,6 +477,7 @@
    "words": "$\\inclin{S}{T}:S\\longrightarrow T$",
    "label": "notion:16",
    "number": "n16",
+   "title": "Inclusion between subspaces",
    "boxes": [
     [1, 0.578314, 0.805556, 0.110096, 0.017519]
    ]
@@ -488,6 +498,7 @@
    "words": "$\\im\\fgpd{\\incl{U_i}}$",
    "label": "notion:18",
    "number": "n18",
+   "title": "Image subgroupoid",
    "boxes": [
     [1, 0.289539, 0.883207, 0.081976, 0.019886]
    ]
@@ -528,6 +539,7 @@
    "words": "$\\fgrp{f}{x}:\\fgrp{X}{x}\\longrightarrow\\fgrp{Y}{f(x)}$",
    "label": "notion:22",
    "number": "n22",
+   "title": "Induced homomorphism $\\pi_1(f,x)$",
    "boxes": [
     [3, 0.332412, 0.52762, 0.266211, 0.017835]
    ]
@@ -558,6 +570,7 @@
    "words": "$\\im\\fgrp{\\incl{U_i}}{x}$",
    "label": "notion:25",
    "number": "n25",
+   "title": "Image subgroup",
    "boxes": [
     [3, 0.767829, 0.584754, 0.096878, 0.017519]
    ]
