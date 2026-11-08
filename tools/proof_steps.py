@@ -319,10 +319,13 @@ def main():
                     'snippet': {'line': start, 'text': code}}}}
             record = {'id': iid, 'kind': 'proof_step',
                 'relation': 'relatedMatch' if target['role'] == 'support' else 'closeMatch',
-                'note': target['title'], 'subject': subjects, 'object': [obj],
+                'subject': subjects, 'object': [obj],
                 'extensions': {NS: {'provenance': {'actor': 'agent', 'method': 'agent_annotation',
                     'confirmed_by_human': False}, 'locator': {'physical': sorted({b[0] for b in region['boxes']}),
                                                             'printed': sorted({b[0] for b in region['boxes']})}}}}
+            # Detail should add information, not repeat the source-region heading.
+            if ' '.join(target['title'].split()) != ' '.join(step['title'].split()):
+                record['note'] = target['title']
             (directory / f'proof-{step["id"]}-{n:02d}.json').write_bytes(defaults.dumps(record))
     found = sync.read_annotations(ROOT)
     if found.problems:
