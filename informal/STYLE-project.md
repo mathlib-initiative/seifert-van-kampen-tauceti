@@ -109,9 +109,9 @@ some cover member as a neighborhood, and the member may depend on the point.
 Other hypothesis macros stay in the item or part whose key declaration binds
 them. The pairwise condition of the indexed statements,
 `∀ (i j : I), IsPathConnected (U i ∩ U j)`, and the indexed basepoint condition,
-`∀ (i : I), x ∈ U i`, are not among these four: state them in words. The Lebesgue number
-lemma's neighborhood condition, `∀ x ∈ s, ∃ i, c i ∈ nhds x`, covers a subset rather than
-the whole space, so it too is stated in words.
+`∀ (i : I), x ∈ U i`, are not among these four: state them in words. Lemma 1.3 uses an open cover of the compact subspace K. This implies the
+neighborhood condition of its more general linked theorem; no hypothesis
+macro is needed for this specialization.
 
 ## Where notation is introduced
 
@@ -127,15 +127,18 @@ and explain specialized notation next to its first use:
 Repeat enough ambient data and notation to make a section readable on its own.
 Keep typeclass syntax, universe variables and other Lean bookkeeping out of the
 printed text. Mathematical hypotheses remain those of the declarations, except
-for an explicitly recorded specialization. Lemma 1.3 specializes the linked
-pseudometric theorem to Euclidean space with compact subset $K$. The family
-members, neighborhoods and balls are ambient in Euclidean space, just as in
-the Lean theorem; the conclusion needs no intersection with $K$. Its link is
-`broadMatch`, because the Lean theorem is more general. For the interval and
-square applications, choose ambient open sets whose intersections with the
-parameter domain lie in the relevant preimages. With the
-Euclidean metric, choose the homotopy grid by cell diameter, not side length;
-the Lean proof instead uses the equivalent maximum metric.
+for an explicitly recorded specialization. Lemma 1.3 concerns an open cover
+of a compact Euclidean subspace $K$, with balls $B_K(z,\rho)$ taken in $K$.
+Specialize the linked TauCeti theorem by taking its underlying pseudometric
+space to be $K$ and its compact subset to be the whole space; openness and
+the covering property imply its neighborhood hypothesis. Retain the
+broadMatch relation because the linked theorem is more general.
+For Proposition 1.1, use $c_i=\operatorname{int}_{[0,1]}(\gamma^{-1}(U_i))$
+directly as relatively open subsets of the interval, matching the Lean
+family c. Use the corresponding relative preimage interiors for the homotopy
+square. Do not introduce ambient open extensions in either proof.
+With the Euclidean metric, choose the homotopy grid by cell diameter, not
+side length; the Lean proof instead uses the equivalent maximum metric.
 
 ## Marking notions
 

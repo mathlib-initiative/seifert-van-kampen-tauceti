@@ -20,14 +20,13 @@ that each consecutive subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in some
 \end{proposition}
 
 \begin{proofpassage}{1.1-subdivide}{Proof}{Compactness}
-\proofstep{1.1-s01-cover}{The preimage interiors form an open cover}{Choose open sets
-$V_i\subseteq\R$ with $V_i\cap\uI=\operatorname{int}_{\uI}(\gamma^{-1}(U_i))$;
-these cover $\uI$.}
+\proofstep{1.1-s01-cover}{The preimage interiors form an open cover}{The sets
+$c_i=\operatorname{int}_{\uI}(\gamma^{-1}(U_i))$ form an open cover of $\uI$.}
 \proofstep{1.1-s01-lebesgue}{Obtain a Lebesgue radius}{Since $\uI$ is compact, \itemref{1.3} gives a Lebesgue radius $\rho>0$.}
 \proofstep{1.1-s01-partition}{Choose a finite subdivision with sufficiently short intervals}{Choose a finite subdivision
 $0=t_0\le\cdots\le t_N=1$ with each interval of length at most $\rho/2$.}
-\proofstep{1.1-s01-segments}{Each interval lies in a member of the open cover}{Each interval $[t_k,t_{k+1}]$ lies in $\ball{t_k}{\rho}$,
-which is contained in some $V_i$.}
+\proofstep{1.1-s01-segments}{Each interval lies in a member of the open cover}{Each interval $[t_k,t_{k+1}]$ lies in the ball $B_{\uI}(t_k,\rho)$
+in $\uI$, which is contained in some $c_i$.}
 \proofstep{1.1-s02-subpaths}{Pass from parameter intervals to subpaths}{Hence each
 subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in $U_i$.}
 \end{proofpassage}
@@ -42,9 +41,8 @@ Let $\gamma$ be a path in $X$, and let $r,s,t$ be parameters.  Then
 \end{lemma}
 
 \begin{lemma}[id=1.3]{A Lebesgue number}
-Let $K\subseteq\R^n$ be compact, and let
-$(V_i)_{i\in I}$ be a family of subsets of $\R^n$.  If each point of $K$ has
-some $V_i$ as a neighborhood in $\R^n$, then there is a radius $\rho>0$ such
-that for each $z\in K$ some $V_i$ contains $\ball{z}{\rho}$.
+Let $K\subseteq\R^n$ be compact and $(V_i)_{i\in I}$ an open cover of $K$.
+There is a radius $\rho>0$ such that for every $z\in K$, some $V_i$
+contains $B_K(z,\rho)$, the ball of radius $\rho$ about $z$ in $K$.
 \leanref{TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds}
 \end{lemma}

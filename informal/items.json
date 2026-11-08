@@ -207,11 +207,11 @@
       "section": "1",
       "kind": "lemma",
       "title": "A Lebesgue number",
-      "gist": "For a compact subset K of Euclidean space and a family of subsets of the ambient Euclidean space, one of which is an ambient neighborhood of each point of K, there is a positive radius such that every ambient ball of that radius centered in K lies in a single member of the family.",
+      "gist": "For a compact subset K of Euclidean space and an open cover of K in its subspace topology, there is a positive radius such that every ball of that radius in K is contained in a single member of the cover.",
       "parts": [],
       "in_v1": true,
       "reference": null,
-      "departures": "The text specializes the linked pseudometric theorem to Euclidean space, with K as its compact subset. Family members, neighborhoods and balls are all ambient in Euclidean space, matching the roles of the Lean binders. The applications only need K = [0,1] and K = [0,1]^2, using ambient open sets whose intersections with K lie in the relevant preimages. The family members in the lemma need not be open.",
+      "departures": "Specialize the linked pseudometric theorem to the metric subspace K, with s the whole of K and the family an open cover of K. Compactness of K supplies compactness of this whole space, and each open cover member is a neighborhood of its points. The balls are intrinsic to K, not ambient balls in Euclidean space. The applications need only K = [0,1] and K = [0,1]^2; they use the interiors of the preimages directly in those parameter spaces, as in Lean. The linked TauCeti neighborhood theorem is more general; the interval proof's Lebesgue-radius step links directly to Mathlib's open-cover lemma call.",
       "declarations": [
         {
           "name": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
