@@ -1,0 +1,86 @@
+{
+  "id": "proof-4.3-s01-connect",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "subject": [
+    {
+      "location": {
+        "page": 4,
+        "rect": [0.130391, 0.810922, 0.739218, 0.055082]
+      },
+      "title": "Choose connecting paths compatibly on the intersection",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.567131, 0.810922, 0.869609, 0.810922, 0.869609, 0.830493, 0.567131, 0.830493],
+            [0.130391, 0.830492, 0.869608, 0.830492, 0.869608, 0.850221, 0.130391, 0.850221],
+            [0.130391, 0.850221, 0.481726, 0.850221, 0.481726, 0.866004, 0.130391, 0.866004]
+          ],
+          "region": "proof-4.3-s01-connect@p004"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [136, 139],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "Choose connecting paths compatibly on the intersection",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-4.3-s01-connect-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L136-L139",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "proof_context": {
+            "conclusion": "Reuse the intersection's chosen paths inside $A$ and $B$; choose other connecting paths independently.",
+            "declaration": "connect",
+            "lines": [132, 139],
+            "notation": [
+              {
+                "lean": "S",
+                "math": "The intersection"
+              },
+              {
+                "lean": "T",
+                "math": "Either larger subspace"
+              }
+            ]
+          },
+          "snippet": {
+            "line": 136,
+            "text": "  exact if hz : z.as.1 ∈ S then\n    (FundamentalGroupoid.map (ContinuousMap.inclusion hST)).map\n      (baseHom hS s₀ (FundamentalGroupoid.mk ⟨z.as.1, hz⟩))\n  else baseHom hT _ z"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [4],
+        "printed": [4]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "id": "definition-4.3",
-  "kind": "definition",
+  "id": "corollary-4.3",
+  "kind": "corollary",
   "relation": "exactMatch",
   "subject": [
     {
@@ -8,10 +8,10 @@
         "page": 4,
         "rect": [0.130391, 0.666982, 0.739217, 0.134785]
       },
-      "title": "Definition 4.3 (The descent homomorphism)",
+      "title": "Corollary 4.3 (The descent homomorphism)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "definition-4.3@p004"
+          "region": "corollary-4.3@p004"
         }
       }
     }
