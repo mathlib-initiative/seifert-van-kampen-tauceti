@@ -173,6 +173,17 @@
       "source_url": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean#L185"
     },
     {
+      "name": "TauCeti.FundamentalGroupoid.eq_glue",
+      "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+      "line": 736,
+      "start_line": 734,
+      "end_line": 738,
+      "kind": "theorem",
+      "signature": "∀ {X : Type u_1} [inst : TopologicalSpace X] {ι : Type u_2} {U : ι → Set X} {D : Type u_3} [inst_1 : CategoryTheory.Category.{u_4, u_3} D] (hU : ∀ (x : X), ∃ i, U i ∈ nhds x) (F : (i : ι) → CategoryTheory.Functor (FundamentalGroupoid ↑(U i)) D) (hF : ∀ (i j : ι), (FundamentalGroupoid.map (ContinuousMap.inclusion ⋯)).comp (F i) = (FundamentalGroupoid.map (ContinuousMap.inclusion ⋯)).comp (F j)) {G : CategoryTheory.Functor (FundamentalGroupoid X) D}, (∀ (i : ι), (FundamentalGroupoid.map (ContinuousMap.subtypeVal (U i))).comp G = F i) → G = TauCeti.FundamentalGroupoid.glue hU F hF",
+      "source_url": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean#L736"
+    },
+    {
       "name": "TauCeti.FundamentalGroupoid.glue",
       "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
       "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",

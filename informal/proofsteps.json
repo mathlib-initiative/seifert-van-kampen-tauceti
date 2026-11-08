@@ -142,6 +142,26 @@
       ]
     },
     {
+      "id": "2.2-s00-unique",
+      "item": "2.2",
+      "label": "Step",
+      "title": "Generation makes the extension unique",
+      "span": "inline",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "declaration": "TauCeti.FundamentalGroupoid.eq_glue",
+          "lines": [
+            738,
+            738
+          ],
+          "sha256": "a8ffc8f2f77fe0a158f2f5edc5ac99f7b970a36cce38644b46eaad05467c8835",
+          "title": "Use generation to identify any compatible extension with the glued functor",
+          "role": "key"
+        }
+      ]
+    },
+    {
       "id": "2.2-s01-objects",
       "item": "2.2",
       "label": "Step",

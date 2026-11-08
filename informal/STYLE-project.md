@@ -220,7 +220,7 @@ whole fundamental groupoid. This use of $S$ is local to the proof; section 1 int
 
 Prefer mathematical notation that makes a linked argument easy to recognize:
 use the chosen index $i_0$ in 3.1, and introduce the equal-subdivision value
-$L_N$ before its common value $L$ in 2.2. There $N$ counts the pieces, $N_0$ is one fixed fine choice, and $m$ is
+$L_N$ before its common value $L$ in 2.2. There $N$ counts the pieces, $N_0$ is another fine choice, and $m$ is
 a positive integer refining each piece. Introduce intermediate objects by their mathematical meaning, and
 separate deductions when they have different proof-step links. Keep tactic
 syntax, helper names, coercions and other Lean bookkeeping out of the printed
@@ -234,3 +234,10 @@ adjacent rows, then from the first row to the last. Keep the cell-containment
 argument implicit in the compactness result; do not expand routine metric
 bookkeeping. Link the cell relation, pasting step and displayed deductions
 separately to their Lean ranges.
+
+Definition 2.2 characterizes the gluing functor by its restriction equations
+and uniqueness, combining the construction with its two corresponding Lean
+theorems. Begin its proof with uniqueness from generation, then verify that
+the prescribed path values are well defined. Do not give restriction to a
+single cover member a separate numbered proposition. The two-subspace
+construction and its restrictions are now Definition 2.3 and Proposition 2.4.

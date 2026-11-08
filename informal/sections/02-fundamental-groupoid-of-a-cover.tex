@@ -49,34 +49,37 @@ $\fgpd{U_{i}}$ to $\mathcal{D}$, and suppose that for every $i,j$ the square
   \end{array}
 \]
 commutes, where the unlabelled arrows are induced by inclusion.
-Then the $F_{i}$ glue to a functor $F$ from $\fgpd{X}$ to $\mathcal{D}$.
+Then there is a unique functor $F:\fgpd{X}\longrightarrow\mathcal D$ satisfying
+\[
+  F\circ\fgpd{\incl{U_i}}=F_i\qquad\text{for every }i.
+\]
 \leanref{TauCeti.FundamentalGroupoid.glue}
+\leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue}
+\leanref{TauCeti.FundamentalGroupoid.eq_glue}
 \end{definition}
 
-\begin{proofpassage}{2.2-homotopy}{Construction}{Gluing on homotopy classes}
-For a point $y$, choose a cover member containing it and put
-$F(y)=F_i(y)$.  \proofstep{2.2-s01-objects}{The object value is independent of the cover member}{This does not depend on $i$: if $y\in U_i\cap U_j$,
-the assumed equality of functors on the intersection gives
-$F_i(y)=F_j(y)$.}
+\begin{proofpassage}{2.2-homotopy}{Proof}{Uniqueness and existence}
+\proofstep{2.2-s00-unique}{Generation makes the extension unique}{By \itemref{2.1}, the images of the inclusion functors generate $\fgpd X$.
+Any two functors with the prescribed restrictions therefore agree.}
+For existence, it remains to show that the prescribed values are well defined.
+On objects, the restrictions require $F(y)=F_i(y)$ whenever $y\in U_i$.
+\proofstep{2.2-s01-objects}{The object value is independent of the cover member}{Compatibility gives $F_i(y)=F_j(y)$ on $U_i\cap U_j$, so this is independent
+of the choice of $i$.}
 
-For a path $\gamma$ from $y$ to $z$, \proofstep{2.2-s02-partition}{Choose a sufficiently fine equal subdivision}{the compactness argument in the proof of
-\itemref{1.1} gives, for every sufficiently large positive integer $N$, an equal
-subdivision $t_k=k/N$ with each piece
+For a path $\gamma$ from $y$ to $z$, \proofstep{2.2-s02-partition}{Choose a sufficiently fine equal subdivision}{the compactness argument of \itemref{1.1} gives, for every sufficiently
+large integer $N$, a subdivision $t_k=k/N$ with each piece
 $\gamma_k=\subpath{\gamma}{t_k}{t_{k+1}}$ lying in some $U_{i_k}$.}
-For such a fine subdivision, put
+The restriction equations prescribe the composite
 \[
   L_N(\gamma)=F_{i_{N-1}}([\gamma_{N-1}])\circ\cdots
                 \circ F_{i_0}([\gamma_0]).
 \]
-The object equalities above make the factors composable.
 \proofstep{2.2-s03-indices}{Compatibility makes the local path value independent of the index}{If a piece lies in both $U_i$ and $U_j$, regard it as a path in their
 intersection; compatibility gives the same value under $F_i$ and $F_j$.}
-\proofstep{2.2-s04-refine-pieces}{Refining each interval preserves the composite}{Splitting each piece into $m$ equal pieces, for a positive integer $m$,
-leaves its composite unchanged by \itemref{1.2} and functoriality.
-Thus $L_{mN}(\gamma)=L_N(\gamma)$.}
-\proofstep{2.2-s05-refinement}{Compare equal subdivisions through their common refinement}{Fix a fine subdivision with $N_0$ pieces.  Any other fine subdivision,
-with $N$ pieces, has a common refinement with $NN_0$ pieces.  Hence
-$L_N(\gamma)=L_{NN_0}(\gamma)=L_{N_0}(\gamma)$.}
+\proofstep{2.2-s04-refine-pieces}{Refining each interval preserves the composite}{Refining each piece into $m\ge1$ equal pieces preserves its value by
+\itemref{1.2} and functoriality, so $L_{mN}(\gamma)=L_N(\gamma)$.}
+\proofstep{2.2-s05-refinement}{Compare equal subdivisions through their common refinement}{Any two fine choices $N,N_0$ have a common refinement with $NN_0$ pieces;
+hence $L_N(\gamma)=L_{NN_0}(\gamma)=L_{N_0}(\gamma)$.}
 Write $L(\gamma)$ for this common value.
 
 Let $H$ be a homotopy from $\gamma$ to $\delta$ fixing the endpoints.
@@ -125,19 +128,12 @@ pieces of $\gamma$, then the $N$ pieces of $\delta$. Thus
 \]
 Together with the identity calculation, this proves that $F$ is a functor.
 \proofstep{2.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If $\gamma$ lies in $U_i$, evaluate all pieces using $F_i$;
-their composite is $F_i([\gamma])$.}
+their composite is $F_i([\gamma])$, proving the required restriction equations.}
 \end{proofpassage}
-
-\begin{proposition}[id=2.3]{Restriction to a cover member}
-Let the $F_i$ make the square in \itemref{2.2} commute for every $i,j$,
-and let $F$ be their glued functor. Then $F \circ \fgpd{\incl{U_i}}=F_i$
-for every $i$.
-\leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue}
-\end{proposition}
 
 \end{fcassumptions}
 
-\begin{definition}[id=2.4]{Gluing over two subspaces}
+\begin{definition}[id=2.3]{Gluing over two subspaces}
 Let $A,B\subseteq X$ and let $\mathcal D$ be a category.  Suppose that
 \hypCoverTwo.  Let $F_{A}$ and $F_{B}$ be functors from
 $\fgpd{A}$ and $\fgpd{B}$ to $\mathcal{D}$, and suppose that
@@ -150,10 +146,10 @@ $\mathcal{D}$.
 \leanref{TauCeti.FundamentalGroupoid.glueTwo}
 \end{definition}
 
-\begin{proposition}[id=2.5]{Restriction to the two subspaces}
+\begin{proposition}[id=2.4]{Restriction to the two subspaces}
 Let $A,B\subseteq X$.  Suppose that \hypCoverTwo, let $F_{A}$ and $F_{B}$
 agree after restriction along
-the inclusions of $A \cap B$, and let $F$ be the functor of \itemref{2.4} glued
+the inclusions of $A \cap B$, and let $F$ be the functor of \itemref{2.3} glued
 from them.
 \itempart{a}{%
   $F \circ \fgpd{\incl{A}} = F_{A}$.

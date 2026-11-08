@@ -3,7 +3,7 @@
   "schema_version": 1,
   "library": {
     "commit": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
-    "declarations_sha256": "05273d1d18c383c25f3d4f32344a2d0103a0db7135c0cdd07581f8af5e990a81"
+    "declarations_sha256": "a6409ca71b7c5354f6a1063e39c5c82fad51f1c612f8345dd82da3fad5d70ab2"
   },
   "reference_work": "A. Hatcher, Algebraic Topology, Cambridge University Press, 2002",
   "sections": [
@@ -299,7 +299,7 @@
       "section": "2",
       "kind": "definition",
       "title": "The gluing functor",
-      "gist": "Functors to a fixed category out of the fundamental groupoids of the members of such a family, agreeing after restriction to every pairwise intersection, glue to a single functor out of the fundamental groupoid of the whole space.",
+      "gist": "Compatible functors out of the fundamental groupoids of the cover members extend uniquely to a functor F on the whole space, characterized by F composed with each inclusion-induced functor being F_i.",
       "parts": [],
       "in_v1": true,
       "reference": {
@@ -307,7 +307,7 @@
         "source": "module docstring",
         "declaration": "TauCeti.FundamentalGroupoid.glue"
       },
-      "departures": "The target is an arbitrary category, the members of the family are not assumed to be open, and neither they nor their intersections are assumed connected.",
+      "departures": "The target is an arbitrary category, the members of the family are not assumed to be open, and neither they nor their intersections are assumed connected. The definition combines glue, its restriction equations, and eq_glue into the characterization of the unique extension.",
       "declarations": [
         {
           "name": "TauCeti.FundamentalGroupoid.glue",
@@ -326,20 +326,7 @@
             "a functor out of the fundamental groupoid of each member",
             "for every two members, the two functors agree after restriction along the inclusions of the intersection"
           ]
-        }
-      ]
-    },
-    {
-      "id": "2.3",
-      "section": "2",
-      "kind": "proposition",
-      "title": "Restriction to a cover member",
-      "gist": "Composing the functor induced by the inclusion of a member with the glued functor returns the functor given on that member.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "",
-      "declarations": [
+        },
         {
           "name": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
@@ -358,11 +345,30 @@
             "for every two members, the two functors agree after restriction along the inclusions of the intersection",
             "a member of the family"
           ]
+        },
+        {
+          "name": "TauCeti.FundamentalGroupoid.eq_glue",
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "line": 736,
+          "part": null,
+          "role": "key",
+          "relation": "exactMatch",
+          "junk": [],
+          "hypotheses": [
+            "a topological space",
+            "an index type for the family",
+            "a family of subsets of the space indexed by the index type",
+            "a category as the common target",
+            "every point of the space has some member of the family as a neighborhood",
+            "a functor out of the fundamental groupoid of each member",
+            "for every two members, the two functors agree after restriction along the inclusions of the intersection",
+            "any other functor from the fundamental groupoid of the space to the target category whose restriction to each cover member is the prescribed functor"
+          ]
         }
       ]
     },
     {
-      "id": "2.4",
+      "id": "2.3",
       "section": "2",
       "kind": "definition",
       "title": "Gluing over two subspaces",
@@ -392,7 +398,7 @@
       ]
     },
     {
-      "id": "2.5",
+      "id": "2.4",
       "section": "2",
       "kind": "proposition",
       "title": "Restriction to the two subspaces",
