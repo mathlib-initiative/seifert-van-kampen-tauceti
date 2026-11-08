@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.393078, 0.204162, 0.213844, 0.02135]
+        "rect": [0.393078, 0.252064, 0.213844, 0.02135]
       },
       "title": "Reassemble the original path class",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.393078, 0.204162, 0.606922, 0.204162, 0.606922, 0.225512, 0.393078, 0.225512]
+            [0.393078, 0.252064, 0.606922, 0.252064, 0.606922, 0.273414, 0.393078, 0.273414]
           ],
           "region": "proof-2.1-s03-reassemble@p002"
         }

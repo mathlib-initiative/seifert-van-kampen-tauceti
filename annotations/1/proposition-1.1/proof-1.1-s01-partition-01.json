@@ -1,0 +1,68 @@
+{
+  "id": "proof-1.1-s01-partition",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Construct subdivision points with step size half the Lebesgue radius",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.130391, 0.517992, 0.739218, 0.033775]
+      },
+      "title": "Choose a finite subdivision with sufficiently short intervals",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.741574, 0.517992, 0.869609, 0.517992, 0.869609, 0.534722, 0.741574, 0.534722],
+            [0.130391, 0.534722, 0.748728, 0.534722, 0.748728, 0.551767, 0.130391, 0.551767]
+          ],
+          "region": "proof-1.1-s01-partition@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/leanprover-community/mathlib4",
+      "version": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+      "location": {
+        "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
+        "lines": [478, 480],
+        "module": "Mathlib.Topology.UnitInterval"
+      },
+      "title": "Construct subdivision points with step size half the Lebesgue radius",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-1.1-s01-partition-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L478-L480",
+            "href": "https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/UnitInterval.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 478,
+            "text": "  have hδ := half_pos δ_pos\n  refine ⟨addNSMul h (δ/2), addNSMul_zero h,\n    monotone_addNSMul h hδ.le, addNSMul_eq_right h hδ, fun n ↦ ?_⟩"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}
