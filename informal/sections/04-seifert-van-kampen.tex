@@ -3,13 +3,13 @@ object of it.  Write \fcnotion{CategoryTheory.End}{$\End(w)$} for its
 endomorphism monoid, and \fcnotion{CategoryTheory.SingleObj}{$\sobj{M}$}
 for the one-object category associated to a \fcnotion{Monoid}{monoid} $M$.
 
-\begin{definition}[id=4.1]{The functor picking out a chosen object}
+\begin{definition}[id=4.1]{The endomorphism functor}
 The functor $J_w:\sobj{\End(w)}\longrightarrow\mathcal C$ takes the unique
 object to $w$ and each element of $\End(w)$ to itself.
 \leanref{TauCeti.Groupoid.singleObjFunctor}
 \end{definition}
 
-\begin{definition}[id=4.2]{The functor induced by a homomorphism out of a vertex group}
+\begin{definition}[id=4.2]{Extending a vertex-group homomorphism}
 Suppose that $\mathcal C$ is a groupoid and that a morphism
 $\tau_c:w\longrightarrow c$ has been chosen for each object $c$.  Let $M$ be
 a monoid and $f:\End(w)\longrightarrow M$ a homomorphism.
@@ -22,7 +22,7 @@ $g:c\longrightarrow c'$ to $f(\tau_{c'}^{-1}\circ g\circ\tau_c)$.
 Let $A$ and $B$ be subsets of a topological space $X$, let $x\in X$, and
 let $M$ be a monoid.
 
-\begin{definition}[id=4.3]{The homomorphism out of the fundamental group of the space}
+\begin{definition}[id=4.3]{The descent homomorphism}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
 $\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
 $\fgrp{B}{x}$ with
@@ -67,7 +67,7 @@ $F:\fgpd X\longrightarrow\sobj M$.}  Restrict it along $J_x$ from \itemref{4.1} 
   \varphi(\omega)=F(\omega).}
 \end{proofpassage}
 
-\begin{proposition}[id=4.4]{The induced homomorphism restricts to the given ones}
+\begin{proposition}[id=4.4]{Restriction of the descent homomorphism}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
 $\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
 $\fgrp{B}{x}$ that agree after restriction along the inclusions of $A \cap B$,
@@ -98,7 +98,7 @@ The chosen path $\tau^A_x$ is the identity at the basepoint, so
 \proofstep{4.4-s04-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ and using \itemref[b]{2.5} proves \itemref[b]{4.4}.}
 \end{proofpassage}
 
-\begin{proposition}[id=4.5]{Uniqueness of the induced homomorphism}
+\begin{proposition}[id=4.5]{Uniqueness of the descent homomorphism}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
 $\varphi$ and $\psi$ be homomorphisms from $\fgrp{X}{x}$ to $M$ such that
 $\varphi \circ \fgrp{\incl{A}}{x} = \psi \circ \fgrp{\incl{A}}{x}$ and

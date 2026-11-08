@@ -1,4 +1,4 @@
-\begin{lemma}[id=1.1]{A Lebesgue number for a family of neighborhoods}
+\begin{lemma}[id=1.1]{A Lebesgue number}
 Let $Z$ be a \fcnotion{PseudoMetricSpace}{pseudometric space}, $K$ a
 \fcnotion{IsCompact}{compact} subset of $Z$, and $(V_j)_{j\in J}$ a family
 of subsets of $Z$.  If each point of $K$ has some $V_j$ as a neighborhood,
@@ -19,7 +19,7 @@ Write \fcnotion{Path.Homotopic.Quotient}{$\pcls{\gamma}$} for its homotopy
 class, with \fcnotion{Path.Homotopic.Quotient.trans}{composition} again
 denoted $\ptrans$.
 
-\begin{proposition}[id=1.2]{Subdividing a path along a family of sets}
+\begin{proposition}[id=1.2]{Subdividing a path}
 Let $\gamma$ be a path in $X$ and $(U_i)_{i\in I}$ a family of subsets of $X$.
 Suppose that every parameter has a neighborhood that $\gamma$ maps into
 some $U_i$.  Then there is a finite \fcnotion{Monotone}{nondecreasing}
@@ -28,7 +28,7 @@ that each consecutive subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in some
 \leanref{Path.exists_monotone_range_subpath_subset}
 \end{proposition}
 
-\begin{lemma}[id=1.3]{Cutting a path class at an intermediate parameter}
+\begin{lemma}[id=1.3]{Composing subpath classes}
 Let $\gamma$ be a path in $X$, and let $r,s,t$ be parameters.  Then
 \[
   \pcls{\subpath{\gamma}{r}{s}} \ptrans \pcls{\subpath{\gamma}{s}{t}}

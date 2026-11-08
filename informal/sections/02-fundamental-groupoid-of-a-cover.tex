@@ -7,7 +7,7 @@ For subsets $S\subseteq T\subseteq X$, write
 \fcnotion{ContinuousMap.inclusion}{$\inclin{S}{T}:S\longrightarrow T$} for
 inclusion, and $\incl{S}:S\longrightarrow X$ when the target is $X$.
 
-\begin{theorem}[id=2.1]{Covers generate the fundamental groupoid}
+\begin{theorem}[id=2.1]{Generation by a cover}
 \fcref{Theorem 1.20}
 Suppose that \hypCoverFamily.  Then the
 \fcnotion{CategoryTheory.Subgroupoid}{subgroupoids}
@@ -31,7 +31,7 @@ The right side lies in $\mathcal H$ by closure under composition.  Every
 morphism therefore lies in $\mathcal H$, which proves the claim.
 \end{proofpassage}
 
-\begin{definition}[id=2.2]{Gluing functors out of fundamental groupoids}
+\begin{definition}[id=2.2]{The gluing functor}
 \fcref{Theorem 1.20}
 Let $\mathcal D$ be a category and suppose that \hypCoverFamily.  For each
 $i$ let $F_{i}$ be a functor from
@@ -87,19 +87,15 @@ and have identity values.  Cancel them to equate the top and bottom row values.}
 \proofstep{2.2-s10-rows}{Repeat the row equality throughout the homotopy}{Repeat through all rows to obtain $L_N(\gamma)=L_N(\delta)$,
 hence $L(\gamma)=L(\delta)$.}
 
-\proofstep{2.2-s11-quotient}{Descend the path value to homotopy classes}{Define $F([\gamma])=L(\gamma)$.  The preceding equality makes this
-well defined on homotopy classes.}
-A constant path has identity value.  For composable paths, choose the
-same fine $N$ for both; concatenation then uses $2N$ pieces and gives
-$L(\gamma\ptrans\delta)=L(\delta)\circ L(\gamma)$.
-Thus $F$ is a functor.
-\proofstep{2.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If the whole path $\gamma$ lies in $U_i$, value every piece using $F_i$;
-functoriality collapses the composite to $F_i([\gamma])$.}
-This also proves \itemref{2.3}.  Specializing to a cover with two members
-gives \itemref{2.4} and \itemref{2.5}.
+\proofstep{2.2-s11-quotient}{Descend the path value to homotopy classes}{Define $F([\gamma])=L(\gamma)$; homotopy invariance makes this well defined.}
+Constant paths give identities.  For composable paths, a common fine $N$
+gives $L(\gamma\ptrans\delta)=L(\delta)\circ L(\gamma)$ using $2N$ pieces,
+so $F$ is a functor.
+\proofstep{2.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If $\gamma$ lies in $U_i$, evaluate all pieces using $F_i$;
+their composite is $F_i([\gamma])$.}
 \end{proofpassage}
 
-\begin{proposition}[id=2.3]{The glued functor restricts to the given functors}
+\begin{proposition}[id=2.3]{Restriction to a cover member}
 Suppose that \hypCoverFamily, let the $F_{i}$ agree after restriction along the
 inclusions of the pairwise intersections, and let $F$ be the functor of
 \itemref{2.2} glued from them.  Then $F \circ \fgpd{\incl{U_{i}}} = F_{i}$ for
@@ -107,7 +103,7 @@ every $i$.
 \leanref{TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue}
 \end{proposition}
 
-\begin{definition}[id=2.4]{Gluing two functors out of fundamental groupoids}
+\begin{definition}[id=2.4]{Gluing over two subspaces}
 Let $A,B\subseteq X$ and let $\mathcal D$ be a category.  Suppose that
 \hypCoverTwo.  Let $F_{A}$ and $F_{B}$ be functors from
 $\fgpd{A}$ and $\fgpd{B}$ to $\mathcal{D}$, and suppose that
@@ -120,7 +116,7 @@ $\mathcal{D}$.
 \leanref{TauCeti.FundamentalGroupoid.glueTwo}
 \end{definition}
 
-\begin{proposition}[id=2.5]{The functor glued from two restricts to each of them}
+\begin{proposition}[id=2.5]{Restriction to the two subspaces}
 Let $A,B\subseteq X$.  Suppose that \hypCoverTwo, let $F_{A}$ and $F_{B}$
 agree after restriction along
 the inclusions of $A \cap B$, and let $F$ be the functor of \itemref{2.4} glued
