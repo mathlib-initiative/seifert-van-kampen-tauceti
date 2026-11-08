@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "d50cc498425c1e43c0ead87a67dcba05c9693fb5",
- "pdf_sha256": "1a4f94387bf9c6f1a9afd07d7f10086d5783c5250acae44dd25541053486360c",
+ "source_commit": "3920c9608d27ee789352ac68e94dbce1feef5885",
+ "pdf_sha256": "aae1363d479337dd56b68af59ee4c05a934eb84eed92e91445456d08beda3ef5",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -16,24 +16,9 @@
  "entries": [
   {
    "id": "1.1",
-   "kind": "lemma",
+   "kind": "proposition",
    "label": "item:1.1",
    "number": "1.1",
-   "section": "1",
-   "title": "A Lebesgue number",
-   "parts": [],
-   "decls": [
-    "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds"
-   ],
-   "boxes": [
-    [1, 0.130391, 0.330808, 0.739217, 0.056503]
-   ]
-  },
-  {
-   "id": "1.2",
-   "kind": "proposition",
-   "label": "item:1.2",
-   "number": "1.2",
    "section": "1",
    "title": "Subdividing a path",
    "parts": [],
@@ -41,7 +26,22 @@
     "Path.exists_monotone_range_subpath_subset"
    ],
    "boxes": [
-    [1, 0.130391, 0.489899, 0.739217, 0.074811]
+    [1, 0.130391, 0.42803, 0.739217, 0.074811]
+   ]
+  },
+  {
+   "id": "1.2",
+   "kind": "lemma",
+   "label": "item:1.2",
+   "number": "1.2",
+   "section": "1",
+   "title": "Composing subpath classes",
+   "parts": [],
+   "decls": [
+    "Path.Homotopic.Quotient.subpath_cast_trans"
+   ],
+   "boxes": [
+    [1, 0.130391, 0.508207, 0.739217, 0.057449]
    ]
   },
   {
@@ -50,13 +50,13 @@
    "label": "item:1.3",
    "number": "1.3",
    "section": "1",
-   "title": "Composing subpath classes",
+   "title": "A Lebesgue number",
    "parts": [],
    "decls": [
-    "Path.Homotopic.Quotient.subpath_cast_trans"
+    "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds"
    ],
    "boxes": [
-    [1, 0.130391, 0.570076, 0.739217, 0.057449]
+    [1, 0.130391, 0.594697, 0.739217, 0.056503]
    ]
   },
   {
@@ -312,133 +312,133 @@
    ]
   },
   {
-   "id": "notion:PseudoMetricSpace",
-   "notion": "PseudoMetricSpace",
-   "words": "pseudometric space",
-   "label": "notion:1",
-   "number": "n1",
-   "boxes": [
-    [1, 0.504004, 0.330808, 0.151239, 0.019255]
-   ]
-  },
-  {
-   "id": "notion:IsCompact",
-   "notion": "IsCompact",
-   "words": "compact",
-   "label": "notion:2",
-   "number": "n2",
-   "boxes": [
-    [1, 0.701285, 0.330808, 0.066083, 0.019255]
-   ]
-  },
-  {
-   "id": "notion:Metric.ball",
-   "notion": "Metric.ball",
-   "words": "$\\ball{z}{\\rho}$",
-   "label": "notion:3",
-   "number": "n3",
-   "boxes": [
-    [1, 0.684517, 0.367582, 0.056942, 0.019729]
-   ]
-  },
-  {
    "id": "notion:TopologicalSpace",
    "notion": "TopologicalSpace",
    "words": "topological space",
-   "label": "notion:4",
-   "number": "n4",
+   "label": "notion:1",
+   "number": "n1",
    "boxes": [
-    [1, 0.253755, 0.392992, 0.134774, 0.017677]
+    [1, 0.229999, 0.331439, 0.135753, 0.017519]
    ]
   },
   {
    "id": "notion:ContinuousMap.subtypeVal",
    "notion": "ContinuousMap.subtypeVal",
    "words": "$\\incl{S}:S\\longrightarrow X$",
-   "label": "notion:5",
-   "number": "n5",
+   "label": "notion:2",
+   "number": "n2",
    "boxes": [
-    [1, 0.604599, 0.392992, 0.100444, 0.017677]
+    [1, 0.590232, 0.331439, 0.106975, 0.017519]
    ]
   },
   {
    "id": "notion:Path",
    "notion": "Path",
    "words": "path",
-   "label": "notion:6",
-   "number": "n6",
+   "label": "notion:3",
+   "number": "n3",
    "boxes": [
-    [1, 0.762403, 0.392992, 0.03823, 0.017677]
+    [1, 0.759464, 0.331439, 0.03823, 0.017519]
    ]
   },
   {
    "id": "notion:Path.codRestrict",
    "notion": "Path.codRestrict",
    "words": "$\\codres{\\gamma}{S}$",
-   "label": "notion:7",
-   "number": "n7",
+   "label": "notion:4",
+   "number": "n4",
    "boxes": [
-    [1, 0.178926, 0.410669, 0.022627, 0.01815]
+    [1, 0.178926, 0.348958, 0.022627, 0.017992]
    ]
   },
   {
    "id": "notion:Path.trans",
    "notion": "Path.trans",
    "words": "$\\gamma\\ptrans\\delta$",
-   "label": "notion:8",
-   "number": "n8",
+   "label": "notion:5",
+   "number": "n5",
    "boxes": [
-    [1, 0.829925, 0.410669, 0.034781, 0.01815]
+    [1, 0.829925, 0.348958, 0.034781, 0.017992]
    ]
   },
   {
    "id": "notion:Path.subpath",
    "notion": "Path.subpath",
    "words": "$\\subpath{\\gamma}{r}{s}$",
-   "label": "notion:9",
-   "number": "n9",
+   "label": "notion:6",
+   "number": "n6",
    "boxes": [
-    [1, 0.737964, 0.428819, 0.03633, 0.018624]
+    [1, 0.737964, 0.366951, 0.03633, 0.018782]
    ]
   },
   {
    "id": "notion:Path.Homotopic.Quotient",
    "notion": "Path.Homotopic.Quotient",
    "words": "$\\pcls{\\gamma}$",
-   "label": "notion:10",
-   "number": "n10",
+   "label": "notion:7",
+   "number": "n7",
    "boxes": [
-    [1, 0.81447, 0.447443, 0.022662, 0.017992]
+    [1, 0.81447, 0.385732, 0.022662, 0.017835]
    ]
   },
   {
    "id": "notion:Path.Homotopic.Quotient.trans",
    "notion": "Path.Homotopic.Quotient.trans",
    "words": "composition",
-   "label": "notion:11",
-   "number": "n11",
+   "label": "notion:8",
+   "number": "n8",
    "boxes": [
-    [1, 0.328227, 0.465436, 0.096261, 0.017519]
+    [1, 0.328227, 0.403567, 0.096261, 0.017519]
    ]
   },
   {
    "id": "notion:Monotone",
    "notion": "Monotone",
    "words": "nondecreasing",
-   "label": "notion:12",
-   "number": "n12",
+   "label": "notion:9",
+   "number": "n9",
    "boxes": [
-    [1, 0.216268, 0.526042, 0.111173, 0.017519]
+    [1, 0.216268, 0.464173, 0.111173, 0.017519]
    ]
   },
   {
    "id": "notion:unitInterval",
    "notion": "unitInterval",
    "words": "$\\uI$",
+   "label": "notion:10",
+   "number": "n10",
+   "boxes": [
+    [1, 0.612786, 0.464173, 0.038191, 0.017519]
+   ]
+  },
+  {
+   "id": "notion:PseudoMetricSpace",
+   "notion": "PseudoMetricSpace",
+   "words": "pseudometric space",
+   "label": "notion:11",
+   "number": "n11",
+   "boxes": [
+    [1, 0.504004, 0.594697, 0.151239, 0.019255]
+   ]
+  },
+  {
+   "id": "notion:IsCompact",
+   "notion": "IsCompact",
+   "words": "compact",
+   "label": "notion:12",
+   "number": "n12",
+   "boxes": [
+    [1, 0.701285, 0.594697, 0.066083, 0.019255]
+   ]
+  },
+  {
+   "id": "notion:Metric.ball",
+   "notion": "Metric.ball",
+   "words": "$\\ball{z}{\\rho}$",
    "label": "notion:13",
    "number": "n13",
    "boxes": [
-    [1, 0.612786, 0.526042, 0.038191, 0.017519]
+    [1, 0.684517, 0.631629, 0.056942, 0.019571]
    ]
   },
   {
