@@ -123,13 +123,13 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, outside the numbered item environments. Move the marker
-with its explanation; keep each retained notion link once. The constants are these 38,
-each copied from `declarations.json` (37 rows of its `references` from Mathlib, plus TauCeti's path restriction
+with its explanation; keep each retained notion link once. The constants are these 37,
+each copied from `declarations.json` (36 rows of its `references` from Mathlib, plus TauCeti's path restriction
 construction):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
 `ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
-`Path.trans`, `Path.subpath`, `Path.map`, `IsCompact`, `IsPathConnected`,
+`Path.trans`, `Path.subpath`, `IsCompact`, `IsPathConnected`,
 `Path.Homotopic.Quotient`,
 `Path.Homotopic.Quotient.trans`, `FundamentalGroupoid`, `FundamentalGroupoid.map`,
 `FundamentalGroup`, `FundamentalGroup.map`, `FundamentalGroup.fromPath`,
