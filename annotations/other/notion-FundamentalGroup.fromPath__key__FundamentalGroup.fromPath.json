@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.539705, 0.231376, 0.155946, 0.016572]
+        "page": 3,
+        "rect": [0.274093, 0.3881, 0.116096, 0.01673]
       },
-      "title": "class of a loop at x",
+      "title": "loop class at x",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroup.fromPath@p004"
+          "region": "notion:FundamentalGroup.fromPath@p003"
         }
       }
     }
@@ -42,8 +42,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

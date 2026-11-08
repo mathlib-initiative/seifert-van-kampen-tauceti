@@ -1,0 +1,69 @@
+{
+  "id": "proof-2.2-s06-grid",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Choose a fine grid for the homotopy",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.130391, 0.595328, 0.739218, 0.067709]
+      },
+      "title": "Choose a fine grid for the homotopy",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.598881, 0.595328, 0.869609, 0.595328, 0.869609, 0.611111, 0.598881, 0.611111],
+            [0.130391, 0.611111, 0.869608, 0.611111, 0.869608, 0.629419, 0.130391, 0.629419],
+            [0.130391, 0.629419, 0.869608, 0.629419, 0.869608, 0.646149, 0.130391, 0.646149],
+            [0.130391, 0.646149, 0.189554, 0.646149, 0.189554, 0.663037, 0.130391, 0.663037]
+          ],
+          "region": "proof-2.2-s06-grid@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [221, 231],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Choose a fine grid for the homotopy",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s06-grid-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L221-L231",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 221,
+            "text": "  obtain ⟨δ, hδ, h⟩ := lebesgue_number_lemma_of_metric_of_mem_nhds isCompact_univ\n    (c := fun i ↦ H ⁻¹' U i) fun ts _ ↦\n      (hU (H ts)).imp fun _ ↦ H.continuous.continuousAt.preimage_mem_nhds\n  obtain ⟨n, hn⟩ := exists_nat_one_div_lt hδ\n  have hN : (1 / ((n + 1 : ℕ) : ℝ)) < δ := by exact_mod_cast hn\n  refine ⟨n + 1, n.succ_ne_zero, fun l k ↦ ?_⟩\n  obtain ⟨i, hi⟩ := h (pt (n + 1) l, pt (n + 1) k) (mem_univ _)\n  refine ⟨i, fun t ht s hs ↦ hi ?_⟩\n  rw [mem_ball, Prod.dist_eq, max_lt_iff, Subtype.dist_eq, Subtype.dist_eq, Real.dist_eq,\n    Real.dist_eq]\n  exact ⟨(abs_sub_pt_le ht).trans_lt hN, (abs_sub_pt_le hs).trans_lt hN⟩"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

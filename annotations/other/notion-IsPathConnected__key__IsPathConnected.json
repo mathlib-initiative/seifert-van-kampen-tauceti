@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.17498, 0.316604, 0.182982, 0.018624]
+        "page": 3,
+        "rect": [0.236872, 0.422664, 0.182982, 0.018308]
       },
       "title": "path-connected subsets",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:IsPathConnected@p004"
+          "region": "notion:IsPathConnected@p003"
         }
       }
     }
@@ -42,8 +42,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

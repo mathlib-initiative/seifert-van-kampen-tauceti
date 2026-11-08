@@ -1,0 +1,66 @@
+{
+  "id": "proof-2.2-s10-rows",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Repeat the row equality throughout the homotopy",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.227069, 0.748422, 0.555113, 0.017519]
+      },
+      "title": "Repeat the row equality throughout the homotopy",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.227069, 0.748422, 0.782182, 0.748422, 0.782182, 0.765941, 0.227069, 0.765941]
+          ],
+          "region": "proof-2.2-s10-rows@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [687, 694],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Repeat the row equality throughout the homotopy",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s10-rows-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L687-L694",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 687,
+            "text": "  have hall : ∀ l, liftN hU F hF _ (hrow 0) hN = liftN hU F hF _ (hrow l) hN := fun l ↦ by\n    induction l with\n    | zero => rfl\n    | succ l ih => exact ih.trans (hstep l)\n  calc lift hU F hF p = lift hU F hF (H.eval (pt N 0)) := by rw [pt_zero, Path.Homotopy.eval_zero]\n    _ = lift hU F hF (H.eval (pt N N)) := by\n      rw [lift_eq_liftN hU F hF _ (hrow 0) hN, lift_eq_liftN hU F hF _ (hrow N) hN, hall N]\n    _ = lift hU F hF q := by rw [pt_self hN, Path.Homotopy.eval_one]"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.806255, 0.328283, 0.058452, 0.01815]
+        "page": 1,
+        "rect": [0.553679, 0.70928, 0.058454, 0.017519]
       },
       "title": "functor",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:CategoryTheory.Functor@p002"
+          "region": "notion:CategoryTheory.Functor@p001"
         }
       }
     }
@@ -42,8 +42,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

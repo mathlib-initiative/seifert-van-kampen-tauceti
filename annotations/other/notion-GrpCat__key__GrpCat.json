@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 7,
-        "rect": [0.404153, 0.104798, 0.149778, 0.018308]
+        "page": 5,
+        "rect": [0.701205, 0.840278, 0.143431, 0.020202]
       },
       "title": "category of groups",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:GrpCat@p007"
+          "region": "notion:GrpCat@p005"
         }
       }
     }
@@ -42,8 +42,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [7],
-        "printed": [7]
+        "physical": [5],
+        "printed": [5]
       }
     }
   }

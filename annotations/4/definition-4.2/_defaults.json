@@ -1,0 +1,36 @@
+{
+  "id": "definition-4.2",
+  "kind": "definition",
+  "subject": {
+    "location": {
+      "page": 4,
+      "rect": [0.130391, 0.37358, 0.739217, 0.076862]
+    },
+    "title": "Definition 4.2 (Extending a vertex-group homomorphism)",
+    "extensions": {
+      "org.mathlib-initiative.formal-companion.overlay": {
+        "region": "definition-4.2@p004"
+      }
+    }
+  },
+  "object": {
+    "uri": "https://github.com/TauCetiProject/TauCeti",
+    "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+    "role": null,
+    "extensions": {
+      "org.mathlib-initiative.formal-companion.overlay": {
+        "destination": {
+          "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/CategoryTheory/Groupoid/SingleObj.lean"
+        }
+      }
+    }
+  },
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [4],
+        "printed": [4]
+      }
+    }
+  }
+}

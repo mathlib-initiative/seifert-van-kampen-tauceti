@@ -1,0 +1,67 @@
+{
+  "id": "proof-4.4-s04-right",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Apply the right restriction in the same way",
+  "subject": [
+    {
+      "location": {
+        "page": 5,
+        "rect": [0.130391, 0.363952, 0.739217, 0.03851]
+      },
+      "title": "Apply the right restriction in the same way",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.62661, 0.363952, 0.869608, 0.363952, 0.869608, 0.383207, 0.62661, 0.383207],
+            [0.130391, 0.383207, 0.486303, 0.383207, 0.486303, 0.402462, 0.130391, 0.402462]
+          ],
+          "region": "proof-4.4-s04-right@p005"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [294, 296],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "title": "Apply the right restriction in the same way",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-4.4-s04-right-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L294-L296",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 294,
+            "text": "  (vanKampenDesc_map_subtypeVal hCover hA hB hAB hxA hxB fA fB h hxB _\n    (FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right hCover _ _ _) g).trans\n    (localFunctor_map_base inter_subset_right hAB hB (interBase hxA hxB) fB g)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [5],
+        "printed": [5]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

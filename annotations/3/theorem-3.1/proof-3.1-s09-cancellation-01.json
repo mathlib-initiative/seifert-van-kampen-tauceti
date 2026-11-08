@@ -1,0 +1,66 @@
+{
+  "id": "proof-3.1-s09-cancellation",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Cancel the basepoint transport",
+  "subject": [
+    {
+      "location": {
+        "page": 4,
+        "rect": [0.401871, 0.136853, 0.196259, 0.023192]
+      },
+      "title": "Cancel the basepoint transport",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.401871, 0.136853, 0.59813, 0.136853, 0.59813, 0.160045, 0.401871, 0.160045]
+          ],
+          "region": "proof-3.1-s09-cancellation@p004"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [175, 179],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
+      },
+      "title": "Cancel the basepoint transport",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-3.1-s09-cancellation-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L175-L179",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 175,
+            "text": "  have h := H.mul_mem hτx (H.mul_mem hγ (H.inv_mem hτx))\n  rw [hinv] at h\n  convert h using 1\n  ext\n  simp"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [4],
+        "printed": [4]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

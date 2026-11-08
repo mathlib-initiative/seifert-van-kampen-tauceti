@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.5086, 0.397727, 0.081976, 0.017677]
+        "page": 1,
+        "rect": [0.533861, 0.772096, 0.081976, 0.019571]
       },
       "title": "im Π₁(ιUi)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:CategoryTheory.Subgroupoid.im@p002"
+          "region": "notion:CategoryTheory.Subgroupoid.im@p001"
         }
       }
     }
@@ -42,8 +42,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

@@ -1,0 +1,68 @@
+{
+  "id": "proof-2.2-s09-boundary",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Cancel the constant endpoint boundary paths",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.130391, 0.714646, 0.739218, 0.051295]
+      },
+      "title": "Cancel the constant endpoint boundary paths",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.560371, 0.714646, 0.869609, 0.714646, 0.869609, 0.731691, 0.560371, 0.731691],
+            [0.130391, 0.731692, 0.869608, 0.731692, 0.869608, 0.748422, 0.130391, 0.748422],
+            [0.130391, 0.748422, 0.221597, 0.748422, 0.221597, 0.765941, 0.130391, 0.765941]
+          ],
+          "region": "proof-2.2-s09-boundary@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [682, 686],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Cancel the constant endpoint boundary paths",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s09-boundary-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L682-L686",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 682,
+            "text": "    rw [pathVal_eq_eqToHom hU F hF (colSeg H N l 0) _ fun t ↦ by simp [colSeg, pt_zero],\n      pathVal_eq_eqToHom hU F hF (colSeg H N l N) _ fun t ↦ by simp [colSeg, pt_self hN],\n      comp_eqToHom_iff] at hsq\n    rw [liftN, liftN, hsq]\n    simp"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

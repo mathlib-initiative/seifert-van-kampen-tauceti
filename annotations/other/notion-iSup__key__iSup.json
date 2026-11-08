@@ -4,25 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.584041, 0.415404, 0.285568, 0.016888]
+        "page": 1,
+        "rect": [0.619764, 0.772096, 0.067546, 0.019571]
       },
-      "title": "the smallest subgroupoid containing them",
+      "title": "generate",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:iSup@p002"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 2,
-        "rect": [0.130391, 0.432292, 0.044513, 0.019413]
-      },
-      "title": "the smallest subgroupoid containing them",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:iSup@p002#2"
+          "region": "notion:iSup@p001"
         }
       }
     }
@@ -54,8 +42,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

@@ -1,0 +1,55 @@
+{
+  "id": "definition-4.3",
+  "kind": "definition",
+  "subject": [
+    {
+      "location": {
+        "page": 4,
+        "rect": [0.130391, 0.450442, 0.739217, 0.122475]
+      },
+      "title": "Definition 4.3 (The descent homomorphism)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "definition-4.3@p004"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "declaration": "TauCeti.vanKampenDesc",
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+      },
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "TauCeti.vanKampenDesc",
+            "kind": "def"
+          },
+          "destination": {
+            "fragment": "L226",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 226,
+            "text": "noncomputable def vanKampenDesc (hCover : interior A ∪ interior B = univ)\n    (hA : IsPathConnected A) (hB : IsPathConnected B) (hAB : IsPathConnected (A ∩ B))\n    (hxA : x ∈ A) (hxB : x ∈ B) (fA : FundamentalGroup A ⟨x, hxA⟩ →* K)\n    (fB : FundamentalGroup B ⟨x, hxB⟩ →* K)\n    (h : fA.comp (FundamentalGroup.map (ContinuousMap.inclusion inter_subset_left)\n        ⟨x, hxA, hxB⟩) =\n      fB.comp (FundamentalGroup.map (ContinuousMap.inclusion inter_subset_right)\n        ⟨x, hxA, hxB⟩)) :\n    FundamentalGroup X x →* K :=\n  (SingleObj.mapHom _ _).symm (Groupoid.singleObjFunctor (FundamentalGroupoid.mk x) ⋙\n    FundamentalGroupoid.glueTwo hCover\n      (localFunctor inter_subset_left hAB hA (interBase hxA hxB) fA)\n      (localFunctor inter_subset_right hAB hB (interBase hxA hxB) fB)\n      (localFunctor_compatibility hA hB hAB hxA hxB fA fB h))"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [4],
+        "printed": [4]
+      }
+    }
+  }
+}

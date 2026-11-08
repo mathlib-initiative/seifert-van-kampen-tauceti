@@ -1,0 +1,67 @@
+{
+  "id": "proof-2.2-s04-refine-pieces",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Refining each interval preserves the composite",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.130391, 0.526515, 0.739218, 0.034249]
+      },
+      "title": "Refining each interval preserves the composite",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.169695, 0.526515, 0.869609, 0.526515, 0.869609, 0.543876, 0.169695, 0.543876],
+            [0.130391, 0.543876, 0.681981, 0.543876, 0.681981, 0.560764, 0.130391, 0.560764]
+          ],
+          "region": "proof-2.2-s04-refine-pieces@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [535, 545],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Refining each interval preserves the composite",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s04-refine-pieces-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L535-L545",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 535,
+            "text": "      obtain ⟨i, hi⟩ := h k\n      rw [Functor.OfSequence.map_comp _ 0 (M * k) (M * (k + 1)) (M * k).zero_le\n          (Nat.mul_le_mul_left M k.le_succ),\n        map_segVal_eq hU F hF γ h' i hi (Nat.mul_le_mul_left M k.le_succ) fun j hj hj' ↦\n          ⟨pt_mul hM (k.le_succ.trans hk) ▸ pt_mono _ hj, pt_mul hM hk ▸ pt_mono _ hj'⟩,\n        ih (by omega), Functor.OfSequence.map_comp _ 0 k (k + 1) k.zero_le k.le_succ,\n        Functor.OfSequence.map_le_succ, segVal,\n        pathVal_congr hU F hF _ _ (by rw [pt_mul hM (k.le_succ.trans hk)])\n          (by rw [pt_mul hM hk]) (fun t ↦ by rw [pt_mul hM (k.le_succ.trans hk), pt_mul hM hk]) _\n          (h.subpath_mem k)]\n      simp"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

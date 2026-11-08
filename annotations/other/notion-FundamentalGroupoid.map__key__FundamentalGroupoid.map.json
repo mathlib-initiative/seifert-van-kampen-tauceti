@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.132842, 0.346433, 0.048063, 0.017519]
+        "page": 1,
+        "rect": [0.616394, 0.70928, 0.207083, 0.017519]
       },
-      "title": "Π₁(f)",
+      "title": "Π₁(f) : Π₁(X) −→ Π₁(Y )",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroupoid.map@p002"
+          "region": "notion:FundamentalGroupoid.map@p001"
         }
       }
     }
@@ -42,8 +42,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

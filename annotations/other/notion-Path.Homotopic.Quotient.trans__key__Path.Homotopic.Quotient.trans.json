@@ -5,9 +5,9 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.462059, 0.672348, 0.17352, 0.019886]
+        "rect": [0.220186, 0.449495, 0.096261, 0.018308]
       },
-      "title": "composition of classes",
+      "title": "composition",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Path.Homotopic.Quotient.trans@p001"

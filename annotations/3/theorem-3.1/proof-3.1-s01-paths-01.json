@@ -1,0 +1,67 @@
+{
+  "id": "proof-3.1-s01-paths",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Choose paths from the basepoint",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.549874, 0.739218, 0.036773]
+      },
+      "title": "Choose paths from the basepoint",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.222459, 0.549874, 0.869609, 0.549874, 0.869609, 0.568498, 0.222459, 0.568498],
+            [0.130391, 0.568497, 0.232068, 0.568497, 0.232068, 0.586647, 0.130391, 0.586647]
+          ],
+          "region": "proof-3.1-s01-paths@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [133, 140],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
+      },
+      "title": "Choose paths from the basepoint",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-3.1-s01-paths-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L133-L140",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 133,
+            "text": "  choose i₀ hi₀ using hU\n  have hτ : ∀ y, JoinedIn (U (i₀ y)) x y := fun y ↦\n    ((hpc (i₀ y) (i₀ y)).joinedIn x ⟨hx _, hx _⟩ y\n      ⟨mem_of_mem_nhds (hi₀ y), mem_of_mem_nhds (hi₀ y)⟩).mono inter_subset_left\n  have hτ' : ∀ y, range (hτ y).somePath ⊆ U (i₀ y) := fun y ↦\n    range_subset_iff.2 (hτ y).somePath_mem\n  let τ : ∀ c : _root_.FundamentalGroupoid X, mk x ⟶ c := fun c ↦\n    _root_.FundamentalGroupoid.fromPath ⟦(hτ c.as).somePath⟧"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

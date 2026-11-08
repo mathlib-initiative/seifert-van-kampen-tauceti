@@ -5,9 +5,9 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.388889, 0.739217, 0.072917]
+        "rect": [0.130391, 0.331755, 0.739217, 0.056503]
       },
-      "title": "Lemma 1.1 (A Lebesgue number for a family of neighborhoods)",
+      "title": "Lemma 1.1 (A Lebesgue number)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "lemma-1.1@p001"
