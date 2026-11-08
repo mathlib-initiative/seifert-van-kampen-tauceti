@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "cb3814c95cef37438aa5a2c76472bb0355bb24bd",
- "pdf_sha256": "46a26eaa2717ceab464e5490aa2c5fe7a59c3d9e9ade7ef62a3b8d416f1d1212",
+ "source_commit": "c43f097ba78294f4b628c7e509dde3cf7209157f",
+ "pdf_sha256": "07c69e15f12a57dee60e527b27c9c7610e8edd8fa845f1204378bc223d0090a9",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -387,53 +387,11 @@
    ]
   },
   {
-   "id": "notion:Monotone",
-   "notion": "Monotone",
-   "words": "nondecreasing",
-   "label": "notion:8",
-   "number": "n8",
-   "boxes": [
-    [1, 0.216268, 0.444918, 0.111173, 0.017519]
-   ]
-  },
-  {
-   "id": "notion:unitInterval",
-   "notion": "unitInterval",
-   "words": "$\\uI$",
-   "label": "notion:9",
-   "number": "n9",
-   "title": "Unit interval",
-   "boxes": [
-    [1, 0.612786, 0.444918, 0.038191, 0.017519]
-   ]
-  },
-  {
-   "id": "notion:IsCompact",
-   "notion": "IsCompact",
-   "words": "compact",
-   "label": "notion:10",
-   "number": "n10",
-   "boxes": [
-    [1, 0.552282, 0.661301, 0.066083, 0.020044]
-   ]
-  },
-  {
-   "id": "notion:Metric.ball",
-   "notion": "Metric.ball",
-   "words": "$K\\cap\\ball{z}{\\rho}$",
-   "label": "notion:11",
-   "number": "n11",
-   "title": "Relative metric ball",
-   "boxes": [
-    [1, 0.520406, 0.698074, 0.093162, 0.019729]
-   ]
-  },
-  {
    "id": "notion:FundamentalGroupoid",
    "notion": "FundamentalGroupoid",
    "words": "$\\fgpd{X}$",
-   "label": "notion:12",
-   "number": "n12",
+   "label": "notion:8",
+   "number": "n8",
    "title": "Fundamental groupoid $\\Pi_1(X)$",
    "boxes": [
     [1, 0.457713, 0.769255, 0.053583, 0.019255]
@@ -443,8 +401,8 @@
    "id": "notion:ContinuousMap",
    "notion": "ContinuousMap",
    "words": "continuous map",
-   "label": "notion:13",
-   "number": "n13",
+   "label": "notion:9",
+   "number": "n9",
    "boxes": [
     [1, 0.778972, 0.769255, 0.090636, 0.019255],
     [1, 0.130391, 0.78851, 0.038571, 0.017045]
@@ -454,8 +412,8 @@
    "id": "notion:CategoryTheory.Functor",
    "notion": "CategoryTheory.Functor",
    "words": "functor",
-   "label": "notion:14",
-   "number": "n14",
+   "label": "notion:10",
+   "number": "n10",
    "boxes": [
     [1, 0.3536, 0.78851, 0.058454, 0.017045]
    ]
@@ -464,8 +422,8 @@
    "id": "notion:FundamentalGroupoid.map",
    "notion": "FundamentalGroupoid.map",
    "words": "$\\fgpd{f}:\\fgpd{X}\\longrightarrow\\fgpd{Y}$",
-   "label": "notion:15",
-   "number": "n15",
+   "label": "notion:11",
+   "number": "n11",
    "title": "Induced functor $\\Pi_1(f)$",
    "boxes": [
     [1, 0.415758, 0.78851, 0.203369, 0.017045]
@@ -475,40 +433,19 @@
    "id": "notion:ContinuousMap.inclusion",
    "notion": "ContinuousMap.inclusion",
    "words": "$\\inclin{S}{T}:S\\longrightarrow T$",
-   "label": "notion:16",
-   "number": "n16",
+   "label": "notion:12",
+   "number": "n12",
    "title": "Inclusion between subspaces",
    "boxes": [
     [1, 0.578314, 0.805556, 0.110096, 0.017519]
    ]
   },
   {
-   "id": "notion:CategoryTheory.Subgroupoid",
-   "notion": "CategoryTheory.Subgroupoid",
-   "words": "subgroupoids",
-   "label": "notion:17",
-   "number": "n17",
-   "boxes": [
-    [1, 0.185684, 0.883207, 0.099928, 0.019886]
-   ]
-  },
-  {
-   "id": "notion:CategoryTheory.Subgroupoid.im",
-   "notion": "CategoryTheory.Subgroupoid.im",
-   "words": "$\\im\\fgpd{\\incl{U_i}}$",
-   "label": "notion:18",
-   "number": "n18",
-   "title": "Image subgroupoid",
-   "boxes": [
-    [1, 0.289539, 0.883207, 0.081976, 0.019886]
-   ]
-  },
-  {
    "id": "notion:FundamentalGroup",
    "notion": "FundamentalGroup",
    "words": "fundamental group",
-   "label": "notion:19",
-   "number": "n19",
+   "label": "notion:13",
+   "number": "n13",
    "boxes": [
     [3, 0.539366, 0.476641, 0.151078, 0.017045]
    ]
@@ -517,8 +454,8 @@
    "id": "notion:FundamentalGroup.fromPath",
    "notion": "FundamentalGroup.fromPath",
    "words": "loop class at $x$",
-   "label": "notion:20",
-   "number": "n20",
+   "label": "notion:14",
+   "number": "n14",
    "boxes": [
     [3, 0.274093, 0.51089, 0.116096, 0.01673]
    ]
@@ -527,8 +464,8 @@
    "id": "notion:MonoidHom",
    "notion": "MonoidHom",
    "words": "homomorphism",
-   "label": "notion:21",
-   "number": "n21",
+   "label": "notion:15",
+   "number": "n15",
    "boxes": [
     [3, 0.207968, 0.52762, 0.122556, 0.017835]
    ]
@@ -537,8 +474,8 @@
    "id": "notion:FundamentalGroup.map",
    "notion": "FundamentalGroup.map",
    "words": "$\\fgrp{f}{x}:\\fgrp{X}{x}\\longrightarrow\\fgrp{Y}{f(x)}$",
-   "label": "notion:22",
-   "number": "n22",
+   "label": "notion:16",
+   "number": "n16",
    "title": "Induced homomorphism $\\pi_1(f,x)$",
    "boxes": [
     [3, 0.332412, 0.52762, 0.266211, 0.017835]
@@ -548,8 +485,8 @@
    "id": "notion:IsPathConnected",
    "notion": "IsPathConnected",
    "words": "path-connected subsets",
-   "label": "notion:23",
-   "number": "n23",
+   "label": "notion:17",
+   "number": "n17",
    "boxes": [
     [3, 0.236872, 0.545455, 0.182982, 0.018308]
    ]
@@ -558,8 +495,8 @@
    "id": "notion:Subgroup",
    "notion": "Subgroup",
    "words": "subgroups",
-   "label": "notion:24",
-   "number": "n24",
+   "label": "notion:18",
+   "number": "n18",
    "boxes": [
     [3, 0.686223, 0.584754, 0.077152, 0.017519]
    ]
@@ -568,8 +505,8 @@
    "id": "notion:MonoidHom.range",
    "notion": "MonoidHom.range",
    "words": "$\\im\\fgrp{\\incl{U_i}}{x}$",
-   "label": "notion:25",
-   "number": "n25",
+   "label": "notion:19",
+   "number": "n19",
    "title": "Image subgroup",
    "boxes": [
     [3, 0.767829, 0.584754, 0.096878, 0.017519]
@@ -579,8 +516,8 @@
    "id": "notion:CategoryTheory.Category",
    "notion": "CategoryTheory.Category",
    "words": "category",
-   "label": "notion:26",
-   "number": "n26",
+   "label": "notion:20",
+   "number": "n20",
    "boxes": [
     [4, 0.222167, 0.356692, 0.068498, 0.019571]
    ]
@@ -589,8 +526,8 @@
    "id": "notion:CategoryTheory.End",
    "notion": "CategoryTheory.End",
    "words": "$\\End(w)$",
-   "label": "notion:27",
-   "number": "n27",
+   "label": "notion:21",
+   "number": "n21",
    "boxes": [
     [4, 0.525614, 0.356692, 0.061493, 0.019571]
    ]
@@ -599,8 +536,8 @@
    "id": "notion:CategoryTheory.SingleObj",
    "notion": "CategoryTheory.SingleObj",
    "words": "$\\sobj{M}$",
-   "label": "notion:28",
-   "number": "n28",
+   "label": "notion:22",
+   "number": "n22",
    "boxes": [
     [4, 0.132842, 0.376263, 0.034561, 0.018308]
    ]
@@ -609,8 +546,8 @@
    "id": "notion:Monoid",
    "notion": "Monoid",
    "words": "monoid",
-   "label": "notion:29",
-   "number": "n29",
+   "label": "notion:23",
+   "number": "n23",
    "boxes": [
     [4, 0.508388, 0.376263, 0.059887, 0.018308]
    ]
@@ -619,8 +556,8 @@
    "id": "notion:CategoryTheory.IsPushout",
    "notion": "CategoryTheory.IsPushout",
    "words": "pushout",
-   "label": "notion:30",
-   "number": "n30",
+   "label": "notion:24",
+   "number": "n24",
    "boxes": [
     [6, 0.582454, 0.235164, 0.06335, 0.020202]
    ]
@@ -629,8 +566,8 @@
    "id": "notion:GrpCat",
    "notion": "GrpCat",
    "words": "category of groups",
-   "label": "notion:31",
-   "number": "n31",
+   "label": "notion:25",
+   "number": "n25",
    "boxes": [
     [6, 0.701205, 0.235164, 0.143431, 0.020202]
    ]
