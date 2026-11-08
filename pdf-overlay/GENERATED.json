@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "30afc6f8b0f479b610bc54b6d2323764f0cdf1ae"
+    "commit": "00d902c0f3be73aca7d1612f42b3d2cba8ed9979"
   },
   "format": {
     "package": "literature-links",
@@ -116,12 +116,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "a25203b9b4f3552810d66e04a82a690cbe3cf0b442100a5ce3061850bb466614"
+      "sha256": "317cfeb826a6384b10b2c538ca4e9857982d92d44945524a099b89fb1bd5bb35"
     },
     "count": 94,
     "directory": "annotations",
     "export": {
-      "commit": "7e1b4706311a67a33647d0ef7f51b914eac42b98",
+      "commit": "6b7589b6135cd5619b3b23a3d2ab299fadb54fd3",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -137,7 +137,7 @@
       },
       {
         "path": "informal/fcmarkers.sty",
-        "sha256": "7e6922973461fd7fbbfd2f7a61645eaffac54f892f624877e666dcf06e97d163"
+        "sha256": "5afdeed53b3a3278471065b46fc2ce06a28989f07a16d7fd27e00b856827f551"
       },
       {
         "path": "informal/informalize.json",
@@ -153,7 +153,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "bf286e5b57bfd88c57d8a548cafa9dd64e05b7c403de73c475c5287a340b8ea4"
+        "sha256": "df96d30b0e91d8815a3a558be455e14c8951be8d15fda40668810a1190f6b178"
       },
       {
         "path": "informal/notation.sty",
@@ -177,11 +177,11 @@
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "4657637e7158cdb0644f964e993b15d7866002d7c45a937415d65b4ea4a69956"
+        "sha256": "e2e9a6161be03aba942f42c8f644da4baa98c7783da00e5fb3bb10159b93176b"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
-        "sha256": "e91678b4f1e43e7c3cb81656aae0840f8dc418c6a20bc2255a1fe6650e2bc9a8"
+        "sha256": "fea35450e912241644c23ffad0d4797c846d40e00ac2c37b13103ccf15e31b0c"
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
@@ -196,6 +196,6 @@
         "sha256": "a6ba77afc6c38522a1c387e423c51e9e1d8a05de246836e7445cf94ad296ff6c"
       }
     ],
-    "manifest_sha256": "7f5245103d8ae858e9c1c0ff4c2575cd4cd45025c7feb156e31ba185941f7db6"
+    "manifest_sha256": "09cf026b7e6a91f35bfc87b9e4ee1cdbbc5c200b56cd006901178479dbc7e16e"
   }
 }

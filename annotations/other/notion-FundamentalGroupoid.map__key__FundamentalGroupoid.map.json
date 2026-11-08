@@ -5,12 +5,24 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.594345, 0.722222, 0.201947, 0.017045]
+        "rect": [0.714683, 0.739268, 0.154925, 0.017203]
       },
       "title": "Π₁(f) : Π₁(X) −→ Π₁(Y )",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:FundamentalGroupoid.map@p001"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.130391, 0.756471, 0.054178, 0.017519]
+      },
+      "title": "Π₁(f) : Π₁(X) −→ Π₁(Y )",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:FundamentalGroupoid.map@p001#2"
         }
       }
     }

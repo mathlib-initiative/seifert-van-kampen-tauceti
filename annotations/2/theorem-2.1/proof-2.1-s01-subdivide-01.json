@@ -7,17 +7,31 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.849116, 0.739218, 0.055871]
+        "rect": [0.130391, 0.866162, 0.739218, 0.035985]
       },
       "title": "Choose a subdivision subordinate to the cover",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.775334, 0.849116, 0.869609, 0.849116, 0.869609, 0.866477, 0.775334, 0.866477],
-            [0.130391, 0.866477, 0.869608, 0.866477, 0.869608, 0.883049, 0.130391, 0.883049],
-            [0.130391, 0.883049, 0.699087, 0.883049, 0.699087, 0.904987, 0.130391, 0.904987]
+            [0.775334, 0.866162, 0.869609, 0.866162, 0.869609, 0.883523, 0.775334, 0.883523],
+            [0.130391, 0.883523, 0.869608, 0.883523, 0.869608, 0.902147, 0.130391, 0.902147]
           ],
           "region": "proof-2.1-s01-subdivide@p001"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.130391, 0.104167, 0.568696, 0.020991]
+      },
+      "title": "Choose a subdivision subordinate to the cover",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.130391, 0.104167, 0.699087, 0.104167, 0.699087, 0.125158, 0.130391, 0.125158]
+          ],
+          "region": "proof-2.1-s01-subdivide@p002"
         }
       }
     }
@@ -55,8 +69,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [1],
-        "printed": [1]
+        "physical": [1, 2],
+        "printed": [1, 2]
       },
       "provenance": {
         "actor": "agent",
