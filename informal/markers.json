@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "bcb395b2bd35b3e1892505edac8b4cc584e96993",
- "pdf_sha256": "f5df18eb9a10d77b19ea569897def636c546eddb027ba1f0837120ce962eb16e",
+ "source_commit": "cb47e9f7d921b7b7bae0aac9600be4a091e414cd",
+ "pdf_sha256": "aaee45d3b8a1de9ef51492216e257a4f79a224eb6bebde5de95bc39f34d56472",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -512,21 +512,11 @@
    ]
   },
   {
-   "id": "notion:iSup",
-   "notion": "iSup",
-   "words": "generate",
-   "label": "notion:21",
-   "number": "n21",
-   "boxes": [
-    [1, 0.619764, 0.801136, 0.067546, 0.019886]
-   ]
-  },
-  {
    "id": "notion:FundamentalGroup",
    "notion": "FundamentalGroup",
    "words": "fundamental group",
-   "label": "notion:22",
-   "number": "n22",
+   "label": "notion:21",
+   "number": "n21",
    "boxes": [
     [3, 0.532095, 0.351641, 0.152532, 0.019255]
    ]
@@ -535,8 +525,8 @@
    "id": "notion:FundamentalGroup.fromPath",
    "notion": "FundamentalGroup.fromPath",
    "words": "loop class at $x$",
-   "label": "notion:23",
-   "number": "n23",
+   "label": "notion:22",
+   "number": "n22",
    "boxes": [
     [3, 0.274093, 0.3881, 0.116096, 0.01673]
    ]
@@ -545,8 +535,8 @@
    "id": "notion:MonoidHom",
    "notion": "MonoidHom",
    "words": "homomorphism",
-   "label": "notion:24",
-   "number": "n24",
+   "label": "notion:23",
+   "number": "n23",
    "boxes": [
     [3, 0.207968, 0.40483, 0.122556, 0.017835]
    ]
@@ -555,8 +545,8 @@
    "id": "notion:FundamentalGroup.map",
    "notion": "FundamentalGroup.map",
    "words": "$\\fgrp{f}{x}:\\fgrp{X}{x}\\longrightarrow\\fgrp{Y}{f(x)}$",
-   "label": "notion:25",
-   "number": "n25",
+   "label": "notion:24",
+   "number": "n24",
    "boxes": [
     [3, 0.332412, 0.40483, 0.266211, 0.017835]
    ]
@@ -565,8 +555,8 @@
    "id": "notion:IsPathConnected",
    "notion": "IsPathConnected",
    "words": "path-connected subsets",
-   "label": "notion:26",
-   "number": "n26",
+   "label": "notion:25",
+   "number": "n25",
    "boxes": [
     [3, 0.236872, 0.422664, 0.182982, 0.018308]
    ]
@@ -575,8 +565,8 @@
    "id": "notion:Subgroup",
    "notion": "Subgroup",
    "words": "subgroups",
-   "label": "notion:27",
-   "number": "n27",
+   "label": "notion:26",
+   "number": "n26",
    "boxes": [
     [3, 0.686507, 0.484533, 0.077152, 0.017835]
    ]
@@ -585,8 +575,8 @@
    "id": "notion:MonoidHom.range",
    "notion": "MonoidHom.range",
    "words": "$\\im\\fgrp{\\incl{U_i}}{x}$",
-   "label": "notion:28",
-   "number": "n28",
+   "label": "notion:27",
+   "number": "n27",
    "boxes": [
     [3, 0.767829, 0.484533, 0.096878, 0.017835]
    ]
@@ -595,8 +585,8 @@
    "id": "notion:CategoryTheory.Category",
    "notion": "CategoryTheory.Category",
    "words": "category",
-   "label": "notion:29",
-   "number": "n29",
+   "label": "notion:28",
+   "number": "n28",
    "boxes": [
     [4, 0.222167, 0.293876, 0.068498, 0.019571]
    ]
@@ -605,8 +595,8 @@
    "id": "notion:CategoryTheory.End",
    "notion": "CategoryTheory.End",
    "words": "$\\End(w)$",
-   "label": "notion:30",
-   "number": "n30",
+   "label": "notion:29",
+   "number": "n29",
    "boxes": [
     [4, 0.525614, 0.293876, 0.061493, 0.019571]
    ]
@@ -615,8 +605,8 @@
    "id": "notion:CategoryTheory.SingleObj",
    "notion": "CategoryTheory.SingleObj",
    "words": "$\\sobj{M}$",
-   "label": "notion:31",
-   "number": "n31",
+   "label": "notion:30",
+   "number": "n30",
    "boxes": [
     [4, 0.132842, 0.313447, 0.034561, 0.018308]
    ]
@@ -625,8 +615,8 @@
    "id": "notion:Monoid",
    "notion": "Monoid",
    "words": "monoid",
-   "label": "notion:32",
-   "number": "n32",
+   "label": "notion:31",
+   "number": "n31",
    "boxes": [
     [4, 0.508388, 0.313447, 0.059887, 0.018308]
    ]
@@ -635,8 +625,8 @@
    "id": "notion:CategoryTheory.IsPushout",
    "notion": "CategoryTheory.IsPushout",
    "words": "pushout",
-   "label": "notion:33",
-   "number": "n33",
+   "label": "notion:32",
+   "number": "n32",
    "boxes": [
     [5, 0.582454, 0.840278, 0.06335, 0.020202]
    ]
@@ -645,8 +635,8 @@
    "id": "notion:GrpCat",
    "notion": "GrpCat",
    "words": "category of groups",
-   "label": "notion:34",
-   "number": "n34",
+   "label": "notion:33",
+   "number": "n33",
    "boxes": [
     [5, 0.701205, 0.840278, 0.143431, 0.020202]
    ]
