@@ -133,7 +133,10 @@ the Lean proof instead uses the equivalent maximum metric.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, including inside numbered items and parts. Mark useful existing text; never add
-a sentence just to host a link. Keep each retained notion link once. The constants are these 31,
+a sentence just to host a link. Keep each retained notion link once. Give formula annotations a descriptive optional viewer title, such as
+"Inclusion map" or "Image subgroupoid", rather than repeating the full formula.
+When notation helps identify the object, include standard LaTeX math in the
+title; these labels are independent of the printed words and box geometry. The constants are these 31,
 each copied from the Mathlib `references` in `declarations.json`:
 
 `TopologicalSpace`, `ContinuousMap`, `Metric.ball`,
