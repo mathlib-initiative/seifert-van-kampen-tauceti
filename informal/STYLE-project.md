@@ -20,7 +20,6 @@ The macros of `notation.sty`, one row each.
 | `\inclin{S}{T}` | the inclusion of `S` into a subset `T` containing it |
 | `\ptrans` | the concatenation of two paths, `\gamma \ptrans \delta`, and the composition of two homotopy classes, `\pcls{\gamma} \ptrans \pcls{\delta}` |
 | `\subpath{\gamma}{r}{s}` | the subpath of `\gamma` from the parameter `r` to the parameter `s` |
-| `\codres{\gamma}{S}` | a path whose values lie in `S`, read as a path in `S` |
 | `\pcls{\gamma}` | the homotopy class of the path `\gamma` |
 | `\fgpd{X}` | the fundamental groupoid; `\fgpd{f}` the functor a continuous map induces |
 | `\fgrp{X}{x}` | the fundamental group at a basepoint; `\fgrp{f}{x}` the induced homomorphism |
@@ -75,9 +74,10 @@ interiors, compactness, subspace topologies, set membership or the range of a ma
 Introduce notation when it is needed, and keep conventions that affect the
 mathematics, such as the nonemptiness of path-connected subsets.
 Do not retain introductory prose solely to create a notion annotation.
-Treat paths in a subspace as familiar: introduce $\gamma^S$ only as notation,
-without a numbered definition or an explanation of its pointwise construction.
-Say explicitly that this is the same path regarded as a path in $S$.
+Treat paths in a subspace as familiar. Do not introduce separate notation for
+regarding a path as a path in a subspace containing its image. In the generation
+proof, say directly that each piece's class lies in the image of the
+inclusion-induced fundamental-groupoid functor.
 Define subpath parametrization by its affine parameter formula. Describe the
 action of the induced fundamental-groupoid functor on points and path classes.
 Check adjacent section openings for duplicate introductions of inclusion notation.
@@ -125,9 +125,8 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, including inside numbered items and parts. Mark useful existing text; never add
-a sentence just to host a link. Keep each retained notion link once. The constants are these 33,
-each copied from `declarations.json` (32 rows of its `references` from Mathlib, plus TauCeti's path restriction
-construction):
+a sentence just to host a link. Keep each retained notion link once. The constants are these 32,
+each copied from the Mathlib `references` in `declarations.json`:
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
 `ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
@@ -139,7 +138,7 @@ construction):
 `Subgroup`, `CategoryTheory.Category`,
 `CategoryTheory.End`, `Monoid`,
 `CategoryTheory.SingleObj`, `MonoidHom`, `CategoryTheory.Functor`,
-`CategoryTheory.IsPushout`, `GrpCat`, `Monotone`, `Path.codRestrict`.
+`CategoryTheory.IsPushout`, `GrpCat`, `Monotone`.
 
 A notion link must explain the mathematical meaning of its marked words.
 Do not link "generate" to the generic indexed-supremum operator `iSup`:
@@ -147,17 +146,17 @@ the generation theorem already has the appropriate statement-level citation.
 Unused reference declarations may stay in the source inventory.
 
 A numbered item records its key declarations with `\leanref`. The helper
-`Path.codRestrict` is instead linked from the notation `\codres{\gamma}{S}`
-in the local prose; its elementary construction has no numbered definition.
-The other entries of the `declarations` list belong to their items.
+`Path.codRestrict` remains in the source inventory; its elementary construction
+needs no separate notation, numbered definition or notion link.
 
 ## Numbers, coercions and junk values
 
 `\N` starts at `0`. A parameter is a point of `\uI`; it is compared with and combined with
 real numbers through its value in `\R`, so an expression such as `2u - 1` is read in `\R`
 and no subtraction is taken in `\N`. The passage from a point of a subset `S` to the point
-of `X` under it, and back along `\codres{\gamma}{S}`, is left silent except where a
-statement is about it; so is the reading of a basepoint `x` of `X` lying in `S` as the
+of `X` under it, and regarding a path whose image lies in `S` as a path in `S`,
+are left implicit except where a statement is about them; so is the reading of
+a basepoint `x` of `X` lying in `S` as the
 basepoint of `S` in `\fgrp{S}{x}`. The points of a subdivision are nondecreasing, not
 strictly increasing.
 
