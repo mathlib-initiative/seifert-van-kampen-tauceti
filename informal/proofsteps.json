@@ -47,7 +47,7 @@
       ]
     },
     {
-      "id": "1.1-s01-subdivision",
+      "id": "1.1-s01-partition",
       "item": "1.1",
       "label": "Step",
       "title": "Choose a finite subdivision with sufficiently short intervals",
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "id": "1.1-s01-containment",
+      "id": "1.1-s01-segments",
       "item": "1.1",
       "label": "Step",
       "title": "Each interval lies in a member of the open cover",
