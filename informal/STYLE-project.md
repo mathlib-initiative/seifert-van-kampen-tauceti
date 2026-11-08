@@ -57,6 +57,12 @@ need no standalone lemmas. Retain short notation introductions where needed.
 Keep the subdivision and homotopy-class reassembly results because they carry
 the passage from local paths to the global argument. Omitted implementation
 helpers may remain in the item table without creating PDF statements or links.
+In generation statements and arguments, say that the fundamental groupoids
+of the cover members generate the ambient groupoid, leaving their inclusion
+images implicit after one short convention in Section 2. Retain "subgroupoid"
+for the groupoid argument. Never globally identify a subspace's fundamental
+groupoid with its image: inclusion can identify distinct path classes, and
+the gluing functors must have the actual subspace groupoids as their domains.
 Introduce fundamental groupoids and gluing in Section 2, fundamental-group
 generation in Section 3, and the constructions relating groupoids to their vertex
 groups beside their use in Section 4. A section must advance the argument, rather

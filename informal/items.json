@@ -245,7 +245,7 @@
         "source": "module docstring",
         "declaration": "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
       },
-      "departures": "The members of the family are not assumed to be open and no connectedness is assumed of them or of their intersections; each member is only required to be a neighborhood of the points it covers.",
+      "departures": "The members of the family are not assumed to be open and no connectedness is assumed of them or of their intersections; each member is only required to be a neighborhood of the points it covers. Generation by the fundamental groupoids of the cover members abbreviates generation by their inclusion images. This convention is limited to generation statements and arguments: the gluing domains remain the fundamental groupoids of the subspaces, since the inclusion functors need not be faithful.",
       "declarations": [
         {
           "name": "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top",
