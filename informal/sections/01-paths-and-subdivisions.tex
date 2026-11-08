@@ -42,10 +42,10 @@ Let $\gamma$ be a path in $X$, and let $r,s,t$ be parameters.  Then
 \end{lemma}
 
 \begin{lemma}[id=1.3]{A Lebesgue number}
-Let $Z$ be a \fcnotion{PseudoMetricSpace}{pseudometric space}, $K$ a
-\fcnotion{IsCompact}{compact} subset of $Z$, and $(V_j)_{j\in J}$ a family
-of subsets of $Z$.  If each point of $K$ has some $V_j$ as a neighborhood,
-then there is a positive radius $\rho$ such that for each $z\in K$ some
-$V_j$ contains \fcnotion{Metric.ball}{$\ball{z}{\rho}$}.
+Let $K\subseteq\R^n$ be \fcnotion{IsCompact}{compact}, and let
+$(V_j)_{j\in J}$ be a family of subsets of $K$.  If each point of $K$ has
+some $V_j$ as a neighborhood in $K$, then there is a radius $\rho>0$ such
+that for each $z\in K$ some $V_j$ contains
+\fcnotion{Metric.ball}{$K\cap\ball{z}{\rho}$}.
 \leanref{TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds}
 \end{lemma}

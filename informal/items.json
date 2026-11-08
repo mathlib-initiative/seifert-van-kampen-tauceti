@@ -207,11 +207,11 @@
       "section": "1",
       "kind": "lemma",
       "title": "A Lebesgue number",
-      "gist": "For a compact subset of a pseudometric space and a family of sets one of which is a neighborhood of each point of that subset, there is a positive radius such that every ball of that radius around a point of the subset lies in a single member of the family.",
+      "gist": "For a compact subset K of Euclidean space and a family of subsets of K one of which is a neighborhood in K of each point, there is a positive radius such that the intersection with K of every ball of that radius centered in K lies in a single member of the family.",
       "parts": [],
       "in_v1": true,
       "reference": null,
-      "departures": "The members of the family are not assumed to be open; each is only required to be a neighborhood of the points it has to cover.",
+      "departures": "The text specializes the linked pseudometric theorem to the metric subspace K of Euclidean space, taking the compact set in the Lean theorem to be all of K. Neighborhoods are relative to K, and the subspace ball is K intersected with the Euclidean ball. The applications only need K = [0,1] and K = [0,1]^2. The family members need not be open.",
       "declarations": [
         {
           "name": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
@@ -219,7 +219,7 @@
           "line": 33,
           "part": null,
           "role": "key",
-          "relation": "exactMatch",
+          "relation": "broadMatch",
           "junk": [],
           "hypotheses": [
             "a pseudometric space",

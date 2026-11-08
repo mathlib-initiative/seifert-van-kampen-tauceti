@@ -41,11 +41,10 @@ Do not reserve a catalogue of letters for the whole text.
 
 Keep a letter's meaning fixed within an argument. A later section may use the
 same letter for a different object when it introduces that object explicitly.
-State every extra assumption where it is used: the pseudometric assumption in
-Lemma 1.3, for example, is local to that lemma. Use a separate space $Z$ and
-compact subset $K$ there. Introduce the general topological space $X$ only
-when the path results begin; do not impose a pseudometric or vector-space
-structure on it.
+State every extra assumption where it is used. In Lemma 1.3, use a compact
+subset $K$ of Euclidean space; this assumption is local to the lemma. Introduce
+the general topological space $X$ only when the path results begin; do not
+impose a metric or vector-space structure on it.
 
 ## Editorial focus
 
@@ -122,16 +121,22 @@ and explain specialized notation next to its first use:
 
 Repeat enough ambient data and notation to make a section readable on its own.
 Keep typeclass syntax, universe variables and other Lean bookkeeping out of the
-printed text. Mathematical hypotheses remain exactly those of the declarations.
+printed text. Mathematical hypotheses remain those of the declarations, except
+for an explicitly recorded specialization. Lemma 1.3 specializes the linked
+pseudometric theorem to a compact metric subspace $K$ of Euclidean space,
+with relative neighborhoods and balls. Its link is `broadMatch`, because the
+Lean theorem is more general. Only the interval and square are used. With the
+Euclidean metric, choose the homotopy grid by cell diameter, not side length;
+the Lean proof instead uses the equivalent maximum metric.
 
 ## Marking notions
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, including inside numbered items and parts. Mark useful existing text; never add
-a sentence just to host a link. Keep each retained notion link once. The constants are these 32,
+a sentence just to host a link. Keep each retained notion link once. The constants are these 31,
 each copied from the Mathlib `references` in `declarations.json`:
 
-`TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
+`TopologicalSpace`, `ContinuousMap`, `Metric.ball`,
 `ContinuousMap.subtypeVal`, `ContinuousMap.inclusion`, `unitInterval`, `Path`,
 `Path.trans`, `Path.subpath`, `IsCompact`, `IsPathConnected`,
 `Path.Homotopic.Quotient`,
