@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.276262, 0.864268, 0.537661, 0.019255]
+        "page": 3,
+        "rect": [0.276262, 0.174558, 0.537661, 0.019255]
       },
       "title": "Collapse the subdivision inside a single cover member",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.276262, 0.864268, 0.813923, 0.864268, 0.813923, 0.883523, 0.276262, 0.883523]
+            [0.276262, 0.174558, 0.813923, 0.174558, 0.813923, 0.193813, 0.276262, 0.193813]
           ],
-          "region": "proof-2.2-s12-restrict@p002"
+          "region": "proof-2.2-s12-restrict@p003"
         }
       }
     }
@@ -53,8 +53,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [3],
+        "printed": [3]
       },
       "provenance": {
         "actor": "agent",

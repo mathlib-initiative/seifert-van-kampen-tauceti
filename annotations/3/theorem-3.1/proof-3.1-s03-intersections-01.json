@@ -6,17 +6,17 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.130391, 0.743213, 0.739218, 0.03567]
+        "page": 4,
+        "rect": [0.130391, 0.104798, 0.739218, 0.03709]
       },
       "title": "Choose the two paths in pairwise intersections",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.615621, 0.743213, 0.869609, 0.743213, 0.869609, 0.760416, 0.615621, 0.760416],
-            [0.130391, 0.760417, 0.481252, 0.760417, 0.481252, 0.778883, 0.130391, 0.778883]
+            [0.615621, 0.104798, 0.869609, 0.104798, 0.869609, 0.123422, 0.615621, 0.123422],
+            [0.130391, 0.123422, 0.481252, 0.123422, 0.481252, 0.141888, 0.130391, 0.141888]
           ],
-          "region": "proof-3.1-s03-intersections@p003"
+          "region": "proof-3.1-s03-intersections@p004"
         }
       }
     }
@@ -54,8 +54,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [4],
+        "printed": [4]
       },
       "provenance": {
         "actor": "agent",

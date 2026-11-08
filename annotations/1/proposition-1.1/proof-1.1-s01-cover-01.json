@@ -1,0 +1,67 @@
+{
+  "id": "proof-1.1-s01-cover",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "The preimage interiors form an open cover",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.130391, 0.513258, 0.739218, 0.03851]
+      },
+      "title": "The preimage interiors form an open cover",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.309732, 0.513258, 0.869609, 0.513258, 0.869609, 0.535196, 0.309732, 0.535196],
+            [0.130391, 0.535196, 0.246052, 0.535196, 0.246052, 0.551768, 0.130391, 0.551768]
+          ],
+          "region": "proof-1.1-s01-cover@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [230, 234],
+        "module": "TauCeti.Topology.Homotopy.Path"
+      },
+      "title": "The preimage interiors form an open cover",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-1.1-s01-cover-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L230-L234",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 230,
+            "text": "      (c := fun i ↦ interior (γ ⁻¹' U i))\n      (fun i ↦ isOpen_interior)\n      (fun s _ ↦ by\n        obtain ⟨i, hi⟩ := hU s\n        exact mem_iUnion.2 ⟨i, mem_interior_iff_mem_nhds.2 hi⟩)"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

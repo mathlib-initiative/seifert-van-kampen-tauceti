@@ -1,0 +1,67 @@
+{
+  "id": "proof-1.1-s02-subpaths",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "note": "Pass from parameter intervals to subpaths",
+  "subject": [
+    {
+      "location": {
+        "page": 1,
+        "rect": [0.130391, 0.569444, 0.739218, 0.035986]
+      },
+      "title": "Pass from parameter intervals to subpaths",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.503894, 0.569444, 0.869609, 0.569444, 0.869609, 0.587752, 0.503894, 0.587752],
+            [0.130391, 0.587753, 0.272517, 0.587753, 0.272517, 0.60543, 0.130391, 0.60543]
+          ],
+          "region": "proof-1.1-s02-subpaths@p001"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [237, 242],
+        "module": "TauCeti.Topology.Homotopy.Path"
+      },
+      "title": "Pass from parameter intervals to subpaths",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-1.1-s02-subpaths-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L237-L242",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean",
+            "resolution": "exact"
+          },
+          "snippet": {
+            "line": 237,
+            "text": "  obtain ⟨i, hi⟩ := ht_cover k\n  refine ⟨i, ?_⟩\n  rw [range_subpath_of_le _ _ _ (ht_mono (by simp))]\n  rintro _ ⟨s, hs, rfl⟩\n  have hs' : s ∈ γ ⁻¹' U i := interior_subset (hi (by simpa using hs))\n  exact hs'"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [1],
+        "printed": [1]
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

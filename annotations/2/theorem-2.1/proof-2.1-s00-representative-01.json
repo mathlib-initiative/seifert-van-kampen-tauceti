@@ -6,16 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 1,
-        "rect": [0.511261, 0.866162, 0.257045, 0.017361]
+        "page": 2,
+        "rect": [0.511261, 0.171086, 0.257045, 0.017519]
       },
       "title": "Choose a representative path",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.511261, 0.866162, 0.768306, 0.866162, 0.768306, 0.883523, 0.511261, 0.883523]
+            [0.511261, 0.171086, 0.768306, 0.171086, 0.768306, 0.188605, 0.511261, 0.188605]
           ],
-          "region": "proof-2.1-s00-representative@p001"
+          "region": "proof-2.1-s00-representative@p002"
         }
       }
     }
@@ -53,8 +53,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [1],
-        "printed": [1]
+        "physical": [2],
+        "printed": [2]
       },
       "provenance": {
         "actor": "agent",

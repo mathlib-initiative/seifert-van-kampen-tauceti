@@ -4,13 +4,13 @@
   "subject": [
     {
       "location": {
-        "page": 1,
-        "rect": [0.185684, 0.818182, 0.099928, 0.019886]
+        "page": 2,
+        "rect": [0.185684, 0.123422, 0.099928, 0.019571]
       },
       "title": "subgroupoids",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:CategoryTheory.Subgroupoid@p001"
+          "region": "notion:CategoryTheory.Subgroupoid@p002"
         }
       }
     }
@@ -42,8 +42,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [1],
-        "printed": [1]
+        "physical": [2],
+        "printed": [2]
       }
     }
   }

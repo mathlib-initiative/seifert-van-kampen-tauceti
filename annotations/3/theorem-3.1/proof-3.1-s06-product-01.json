@@ -6,30 +6,16 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.130391, 0.862058, 0.739218, 0.039773]
-      },
-      "title": "Multiply the three local loop classes",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "quads": [
-            [0.566845, 0.862058, 0.869609, 0.862058, 0.869609, 0.880682, 0.566845, 0.880682],
-            [0.130391, 0.880682, 0.869608, 0.880682, 0.869608, 0.901831, 0.130391, 0.901831]
-          ],
-          "region": "proof-3.1-s06-product@p003"
-        }
-      }
-    },
-    {
-      "location": {
         "page": 4,
-        "rect": [0.130391, 0.104167, 0.134432, 0.019571]
+        "rect": [0.130391, 0.225063, 0.739218, 0.054293]
       },
       "title": "Multiply the three local loop classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.130391, 0.104167, 0.264823, 0.104167, 0.264823, 0.123738, 0.130391, 0.123738]
+            [0.566845, 0.225063, 0.869609, 0.225063, 0.869609, 0.243687, 0.566845, 0.243687],
+            [0.130391, 0.243687, 0.869608, 0.243687, 0.869608, 0.262311, 0.130391, 0.262311],
+            [0.130391, 0.262311, 0.264823, 0.262311, 0.264823, 0.279356, 0.130391, 0.279356]
           ],
           "region": "proof-3.1-s06-product@p004"
         }
@@ -69,8 +55,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3, 4],
-        "printed": [3, 4]
+        "physical": [4],
+        "printed": [4]
       },
       "provenance": {
         "actor": "agent",
