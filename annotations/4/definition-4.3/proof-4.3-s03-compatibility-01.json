@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.251143, 0.138479, 0.497713, 0.021995]
+        "rect": [0.251143, 0.324422, 0.497713, 0.021995]
       },
       "title": "Apply compatibility to the transported loop in the intersection",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.251143, 0.138479, 0.748856, 0.138479, 0.748856, 0.160474, 0.251143, 0.160474]
+            [0.251143, 0.324422, 0.748856, 0.324422, 0.748856, 0.346417, 0.251143, 0.346417]
           ],
           "region": "proof-4.3-s03-compatibility@p005"
         }

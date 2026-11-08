@@ -7,13 +7,13 @@
     {
       "location": {
         "page": 3,
-        "rect": [0.276262, 0.140467, 0.537661, 0.019255]
+        "rect": [0.276262, 0.393466, 0.537661, 0.019413]
       },
       "title": "Collapse the subdivision inside a single cover member",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.276262, 0.140467, 0.813923, 0.140467, 0.813923, 0.159722, 0.276262, 0.159722]
+            [0.276262, 0.393466, 0.813923, 0.393466, 0.813923, 0.412879, 0.276262, 0.412879]
           ],
           "region": "proof-2.2-s12-restrict@p003"
         }
