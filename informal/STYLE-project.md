@@ -119,8 +119,8 @@ printed text. Mathematical hypotheses remain exactly those of the declarations.
 
 Each notion carries one `\fcnotion{<constant>}{<words>}` in the local prose
 where it is explained, including inside numbered items and parts. Mark useful existing text; never add
-a sentence just to host a link. Keep each retained notion link once. The constants are these 34,
-each copied from `declarations.json` (33 rows of its `references` from Mathlib, plus TauCeti's path restriction
+a sentence just to host a link. Keep each retained notion link once. The constants are these 33,
+each copied from `declarations.json` (32 rows of its `references` from Mathlib, plus TauCeti's path restriction
 construction):
 
 `TopologicalSpace`, `ContinuousMap`, `PseudoMetricSpace`, `Metric.ball`,
@@ -130,10 +130,15 @@ construction):
 `Path.Homotopic.Quotient.trans`, `FundamentalGroupoid`, `FundamentalGroupoid.map`,
 `FundamentalGroup`, `FundamentalGroup.map`, `FundamentalGroup.fromPath`,
 `CategoryTheory.Subgroupoid`, `CategoryTheory.Subgroupoid.im`, `MonoidHom.range`,
-`Subgroup`, `iSup`, `CategoryTheory.Category`,
+`Subgroup`, `CategoryTheory.Category`,
 `CategoryTheory.End`, `Monoid`,
 `CategoryTheory.SingleObj`, `MonoidHom`, `CategoryTheory.Functor`,
 `CategoryTheory.IsPushout`, `GrpCat`, `Monotone`, `Path.codRestrict`.
+
+A notion link must explain the mathematical meaning of its marked words.
+Do not link "generate" to the generic indexed-supremum operator `iSup`:
+the generation theorem already has the appropriate statement-level citation.
+Unused reference declarations may stay in the source inventory.
 
 A numbered item records its key declarations with `\leanref`. The helper
 `Path.codRestrict` is instead linked from the notation `\codres{\gamma}{S}`
