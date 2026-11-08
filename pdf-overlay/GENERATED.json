@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "230fc6695c3a172dfa73dcb35594a64c2e6aa68b"
+    "commit": "30cc5de1a1584a945db3bc95cd0347bae6d040db"
   },
   "format": {
     "package": "literature-links",
@@ -110,7 +110,7 @@
     },
     {
       "path": "viewer/index.html",
-      "sha256": "2a67ac392ec8848af9ff8b926ca98bbea1cdda04299277623ee3a5d3b52e8902"
+      "sha256": "b3391d15483cdca420b48e89b316916bed960a25cfec1ea41d6a2130b6a87d8d"
     },
     {
       "path": "viewer/viewer-core.js",
@@ -134,7 +134,7 @@
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "438cd2e6a824a5883685709a827b8f91feb818753ef961627fa6f61ca3350484"
+      "sha256": "1a9a1319a5f8c3c97087b143b74c08439e44932ab50fe81a5989e7a85a30f6ca"
     }
   ],
   "annotations": {
