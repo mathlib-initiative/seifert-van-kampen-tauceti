@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.34634, 0.513515, 0.30732, 0.02135]
+        "rect": [0.34634, 0.549348, 0.30732, 0.02135]
       },
       "title": "Restrict the glued functor to loops at the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.34634, 0.513515, 0.65366, 0.513515, 0.65366, 0.534865, 0.34634, 0.534865]
+            [0.34634, 0.549348, 0.65366, 0.549348, 0.65366, 0.570698, 0.34634, 0.570698]
           ],
           "region": "proof-4.3-s05-endomorphisms@p005"
         }

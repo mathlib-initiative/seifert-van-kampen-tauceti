@@ -6,15 +6,13 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.130391, 0.374369, 0.739217, 0.054608]
+        "rect": [0.132842, 0.45202, 0.369433, 0.021307]
       },
       "title": "The transported classes define a subgroupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.132842, 0.374369, 0.869608, 0.374369, 0.869608, 0.392993, 0.132842, 0.392993],
-            [0.130391, 0.392992, 0.869608, 0.392992, 0.869608, 0.412721, 0.130391, 0.412721],
-            [0.130391, 0.412721, 0.2161, 0.412721, 0.2161, 0.428977, 0.130391, 0.428977]
+            [0.132842, 0.45202, 0.502275, 0.45202, 0.502275, 0.473327, 0.132842, 0.473327]
           ],
           "region": "proof-3.1-s02-subgroupoid@p004"
         }
@@ -44,8 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`End.of` regards a groupoid endomorphism at the basepoint as an element of its vertex group. Composition and group multiplication have reversed notation: `f ≫ g` is the product `g * f`.",
-            "conclusion": "Closure of $H$ under inverses and multiplication makes the transported morphisms a subgroupoid $S$.",
+            "bookkeeping": "Lean constructs `S` directly from the predicate $T(\\omega)\\in H$. `End.of` converts a basepoint endomorphism to a group element; `f ≫ g` corresponds to `g * f`.",
+            "conclusion": "$S=T^{-1}(H)$ is closed under inverses and composition.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
             "lines": [126, 179]
           },

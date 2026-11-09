@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.861111, 0.739217, 0.03851]
+        "page": 5,
+        "rect": [0.130391, 0.104167, 0.739217, 0.03851]
       },
       "title": "Definition 4.1 (The endomorphism functor)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "definition-4.1@p004"
+          "region": "definition-4.1@p005"
         }
       }
     }
@@ -48,8 +48,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [5],
+        "printed": [5]
       }
     }
   }
