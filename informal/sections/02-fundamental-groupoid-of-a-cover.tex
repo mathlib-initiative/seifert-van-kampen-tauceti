@@ -106,7 +106,6 @@ applying $H$ to the four edges of the highlighted cell in $\uI^2$.
   \node[left] at (0,1.5) {$y$};
   \node[right] at (3,1.5) {$z$};
   \draw[->,thick] (3.55,1.7) -- node[above] {$H$} (4.65,1.7);
-  \node at (1.5,-0.9) {Domain $\uI^2$};
   \node at (6.15,-0.9) {Paths in $U_i\subseteq X$};
   \fill[blue!6] (5.15,0.7) rectangle (7.15,2.7);
   \draw[blue!70!black,very thick,->] (5.15,2.7) -- node[above] {$\alpha$} (7.15,2.7);
@@ -125,9 +124,10 @@ Applying $F_i$ gives
 }
 The resulting square in $\mathcal D$ therefore commutes.
 
-When adjacent cells map into $U_i$ and $U_j$, their shared edge maps into
-$U_i\cap U_j$. By \eqref{eq:gluing-compatibility}, the two squares in
-$\mathcal D$ have the same arrow on their shared edge.
+For two cells lying side by side and mapping into $U_i$ and $U_j$, the
+right-edge path $\mu$ of the left cell is the left-edge path $\lambda$ of
+the right cell. This shared path lies in $U_i\cap U_j$, so
+\eqref{eq:gluing-compatibility} gives $F_i([\mu])=F_j([\lambda])$.
 Write $\gamma_j(t)=H(j/N,t)$, so $\gamma_0=\gamma$ and $\gamma_N=\delta$.
 Across a strip, replace the top and right sides of one cell by its left and
 bottom sides. Here is the sequence for a strip of three cells; each blue
