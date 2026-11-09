@@ -140,12 +140,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "1ca5d00a265cec87f9eda379ab354e72cf4b20f91bae36433789b0b51bf2fb8a"
+      "sha256": "5fee0c0e0431c26b0561b322371459bf28a82ff2d3ae7003673dae572cddea98"
     },
     "count": 86,
     "directory": "annotations",
     "export": {
-      "commit": "e573dc2f583c3e561525481ac5907a3a855b6066",
+      "commit": "32a7e5221d2b1095efde7097925509aa4ef340b4",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -177,7 +177,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "8e4a4a2b0f093e7da240853e512e0cd57ae93d571c68378a463fa5399625de97"
+        "sha256": "285365a328d4eec7e75080388ba3549f5e0186486e241773b454e4ba78c913fb"
       },
       {
         "path": "informal/notation.sty",
@@ -185,11 +185,11 @@
       },
       {
         "path": "informal/proofsteps.json",
-        "sha256": "df3699c34b06565da278df94150778114fd6a89f4b85a9382882794e21e442c3"
+        "sha256": "9a62d98c4056d57ae7e0bbb903c4048fb7a2344363fdc305c016c951cb3f5d2b"
       },
       {
         "path": "informal/proofsteps.sty",
-        "sha256": "b05a20cce542f64a28a19165153ace41d5762db921436a7f05c87b2c0eb1db88"
+        "sha256": "4f98aaa11920bb0b028f98d03e973b53f7f09d3070a3f19bd46ee604db81a17a"
       },
       {
         "path": "informal/sections.tex",
@@ -205,7 +205,7 @@
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
-        "sha256": "3a737eb27b8ce879490d3e867dddd297b5e7a8f193ee8202cd00266778bbbc2b"
+        "sha256": "acc2212dca4d46da24cf1ffab33f3cd6189a2960c7c9dfe9d4b7c7a49e2129cf"
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
@@ -220,6 +220,6 @@
         "sha256": "f9ca13a2cc00bece7edc7ebf80669015eac99203952eef4cffacb3b239c27cba"
       }
     ],
-    "manifest_sha256": "81f1b16e89cf781377bfab1a3e36a4bad5a74bd1f5a94c496e6eaca3da0eb33f"
+    "manifest_sha256": "c9da429f116b878f4b89f69330d8fbe308d85ef592267b37014ffc433e094301"
   }
 }
