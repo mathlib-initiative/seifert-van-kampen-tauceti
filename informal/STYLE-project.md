@@ -41,7 +41,7 @@ Do not reserve a catalogue of letters for the whole text.
 
 Keep a letter's meaning fixed within an argument. A later section may use the
 same letter for a different object when it introduces that object explicitly.
-State every extra assumption where it is used. In Lemma 1.3, use a compact
+State every extra assumption where it is used. In Lemma 1.1, use a compact
 subset $K$ of Euclidean space; this assumption is local to the lemma. Introduce
 the general topological space $X$ only when the path results begin; do not
 impose a metric or vector-space structure on it.
@@ -109,7 +109,7 @@ some cover member as a neighborhood, and the member may depend on the point.
 Other hypothesis macros stay in the item or part whose key declaration binds
 them. The pairwise condition of the indexed statements,
 `∀ (i j : I), IsPathConnected (U i ∩ U j)`, and the indexed basepoint condition,
-`∀ (i : I), x ∈ U i`, are not among these four: state them in words. Lemma 1.3 uses an open cover of the compact subspace K. This implies the
+`∀ (i : I), x ∈ U i`, are not among these four: state them in words. Lemma 1.1 uses an open cover of the compact subspace K. This implies the
 neighborhood condition of its more general linked theorem; no hypothesis
 macro is needed for this specialization.
 
@@ -127,13 +127,13 @@ and explain specialized notation next to its first use:
 Repeat enough ambient data and notation to make a section readable on its own.
 Keep typeclass syntax, universe variables and other Lean bookkeeping out of the
 printed text. Mathematical hypotheses remain those of the declarations, except
-for an explicitly recorded specialization. Lemma 1.3 concerns an open cover
+for an explicitly recorded specialization. Lemma 1.1 concerns an open cover
 of a compact Euclidean subspace $K$, with balls $B_K(z,\rho)$ taken in $K$.
 Specialize the linked TauCeti theorem by taking its underlying pseudometric
 space to be $K$ and its compact subset to be the whole space; openness and
 the covering property imply its neighborhood hypothesis. Retain the
 broadMatch relation because the linked theorem is more general.
-For Proposition 1.1, use $c_i=\operatorname{int}_{[0,1]}(\gamma^{-1}(U_i))$
+For Proposition 1.2, use $c_i=\operatorname{int}_{[0,1]}(\gamma^{-1}(U_i))$
 directly as relatively open subsets of the interval, matching the Lean
 family c. Use the corresponding relative preimage interiors for the homotopy
 square. Do not introduce ambient open extensions in either proof.
@@ -190,7 +190,7 @@ Use the subdivision-existence proposition directly in the exposition. Do not
 introduce the general clipped-step construction, its ordered-group setup or
 its numerical example. These are implementation details of the Lean library.
 When the gluing proof needs equal subdivisions, introduce $t_k=k/N$ there.
-In the proof of Proposition 1.1, choose a finite subdivision with interval
+In the proof of Proposition 1.2, choose a finite subdivision with interval
 lengths at most half the Lebesgue radius, matching the Mathlib helper used by
 TauCeti. Link the mesh choice and interval-containment argument separately
 to that helper. Keep its clipped-step implementation implicit; do not claim
@@ -263,3 +263,7 @@ focuses on choosing connecting paths compatibly on the intersection and the
 resulting equality of local functors. Invoke the earlier functor construction
 and gluing result directly; keep the overlap equation and the precise proof-step
 links, without repeating the formula of 4.2.
+
+State the Lebesgue number lemma before the subdivision proposition that uses it.
+Vary section openings: introduce the mathematical object directly when that reads
+more naturally than repeating a stock ambient-space sentence.

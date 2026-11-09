@@ -1,3 +1,10 @@
+\begin{lemma}[id=1.1]{A Lebesgue number}
+Let $K\subseteq\R^n$ be compact and $(V_i)_{i\in I}$ an open cover of $K$.
+There is a radius $\rho>0$ such that for every $z\in K$, some $V_i$
+contains $B_K(z,\rho)$, the ball of radius $\rho$ about $z$ in $K$.
+\leanref{TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds}
+\end{lemma}
+
 Let $X$ be a \fcnotion{TopologicalSpace}{topological space} and $S\subseteq X$,
 with inclusion \fcnotion[Inclusion map]{ContinuousMap.subtypeVal}{$\incl{S}:S\longrightarrow X$}.
 For a \fcnotion{Path}{path} $\gamma$ in $X$, write
@@ -10,7 +17,7 @@ Write \fcnotion[Homotopy class]{Path.Homotopic.Quotient}{$\pcls{\gamma}$} for it
 class, with \fcnotion[Composition of path classes]{Path.Homotopic.Quotient.trans}{composition} again
 denoted $\ptrans$.
 
-\begin{proposition}[id=1.1]{Subdividing a path}
+\begin{proposition}[id=1.2]{Subdividing a path}
 Let $\gamma$ be a path in $X$ and $(U_i)_{i\in I}$ a family of subsets of $X$.
 Suppose each point of $\uI$ has a neighborhood whose image under $\gamma$
 lies in some $U_i$.  Then there is a finite nondecreasing
@@ -19,30 +26,23 @@ that each consecutive subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in some
 \leanref{Path.exists_monotone_range_subpath_subset}
 \end{proposition}
 
-\begin{proofpassage}{1.1-subdivide}{Proof}{Compactness}
-\proofstep{1.1-s01-cover}{The preimage interiors form an open cover}{The sets
+\begin{proofpassage}{1.2-subdivide}{Proof}{Compactness}
+\proofstep{1.2-s01-cover}{The preimage interiors form an open cover}{The sets
 $c_i=\operatorname{int}_{\uI}(\gamma^{-1}(U_i))$ form an open cover of $\uI$.}
-\proofstep{1.1-s01-lebesgue}{Obtain a Lebesgue radius}{Since $\uI$ is compact, \itemref{1.3} gives a Lebesgue radius $\rho>0$.}
-\proofstep{1.1-s01-partition}{Choose a finite subdivision with sufficiently short intervals}{Choose a finite subdivision
+\proofstep{1.2-s01-lebesgue}{Obtain a Lebesgue radius}{Since $\uI$ is compact, \itemref{1.1} gives a Lebesgue radius $\rho>0$.}
+\proofstep{1.2-s01-partition}{Choose a finite subdivision with sufficiently short intervals}{Choose a finite subdivision
 $0=t_0\le\cdots\le t_N=1$ with each interval of length at most $\rho/2$.}
-\proofstep{1.1-s01-segments}{Each interval lies in a member of the open cover}{Each interval $[t_k,t_{k+1}]$ lies in the ball $B_{\uI}(t_k,\rho)$
+\proofstep{1.2-s01-segments}{Each interval lies in a member of the open cover}{Each interval $[t_k,t_{k+1}]$ lies in the ball $B_{\uI}(t_k,\rho)$
 in $\uI$, which is contained in some $c_i$.}
-\proofstep{1.1-s02-subpaths}{Pass from parameter intervals to subpaths}{Hence each
+\proofstep{1.2-s02-subpaths}{Pass from parameter intervals to subpaths}{Hence each
 subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in $U_i$.}
 \end{proofpassage}
 
-\begin{lemma}[id=1.2]{Composing subpath classes}
+\begin{lemma}[id=1.3]{Composing subpath classes}
 Let $\gamma$ be a path in $X$, and let $r,s,t$ be parameters.  Then
 \[
   \pcls{\subpath{\gamma}{r}{s}} \ptrans \pcls{\subpath{\gamma}{s}{t}}
     = \pcls{\subpath{\gamma}{r}{t}}.
 \]
 \leanref{Path.Homotopic.Quotient.subpath_cast_trans}
-\end{lemma}
-
-\begin{lemma}[id=1.3]{A Lebesgue number}
-Let $K\subseteq\R^n$ be compact and $(V_i)_{i\in I}$ an open cover of $K$.
-There is a radius $\rho>0$ such that for every $z\in K$, some $V_i$
-contains $B_K(z,\rho)$, the ball of radius $\rho$ about $z$ in $K$.
-\leanref{TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds}
 \end{lemma}

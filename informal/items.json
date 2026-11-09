@@ -32,6 +32,36 @@
     {
       "id": "1.1",
       "section": "1",
+      "kind": "lemma",
+      "title": "A Lebesgue number",
+      "gist": "For a compact subset K of Euclidean space and an open cover of K in its subspace topology, there is a positive radius such that every ball of that radius in K is contained in a single member of the cover.",
+      "parts": [],
+      "in_v1": true,
+      "reference": null,
+      "departures": "Specialize the linked pseudometric theorem to the metric subspace K, with s the whole of K and the family an open cover of K. Compactness of K supplies compactness of this whole space, and each open cover member is a neighborhood of its points. The balls are intrinsic to K, not ambient balls in Euclidean space. The applications need only K = [0,1] and K = [0,1]^2; they use the interiors of the preimages directly in those parameter spaces, as in Lean. The linked TauCeti neighborhood theorem is more general; the interval proof's Lebesgue-radius step links directly to Mathlib's open-cover lemma call.",
+      "declarations": [
+        {
+          "name": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
+          "module": "TauCeti.Topology.MetricSpace.Lebesgue",
+          "line": 33,
+          "part": null,
+          "role": "key",
+          "relation": "broadMatch",
+          "junk": [],
+          "hypotheses": [
+            "a pseudometric space",
+            "an index type for the family",
+            "a subset of the space",
+            "a family of subsets of the space indexed by the index type",
+            "the subset is compact",
+            "every point of the subset has some member of the family as a neighborhood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.2",
+      "section": "1",
       "kind": "proposition",
       "title": "Subdividing a path",
       "gist": "If every parameter has a neighborhood that the path sends into some member of a family of sets, then the path can be cut at finitely many increasing parameters running from zero to one so that each consecutive subpath has its range inside a single member.",
@@ -174,7 +204,7 @@
       ]
     },
     {
-      "id": "1.2",
+      "id": "1.3",
       "section": "1",
       "kind": "lemma",
       "title": "Composing subpath classes",
@@ -198,36 +228,6 @@
             "three parameters in the unit interval",
             "three points of the space",
             "each of the three points equals the value of the path at the corresponding parameter"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1.3",
-      "section": "1",
-      "kind": "lemma",
-      "title": "A Lebesgue number",
-      "gist": "For a compact subset K of Euclidean space and an open cover of K in its subspace topology, there is a positive radius such that every ball of that radius in K is contained in a single member of the cover.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "Specialize the linked pseudometric theorem to the metric subspace K, with s the whole of K and the family an open cover of K. Compactness of K supplies compactness of this whole space, and each open cover member is a neighborhood of its points. The balls are intrinsic to K, not ambient balls in Euclidean space. The applications need only K = [0,1] and K = [0,1]^2; they use the interiors of the preimages directly in those parameter spaces, as in Lean. The linked TauCeti neighborhood theorem is more general; the interval proof's Lebesgue-radius step links directly to Mathlib's open-cover lemma call.",
-      "declarations": [
-        {
-          "name": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
-          "module": "TauCeti.Topology.MetricSpace.Lebesgue",
-          "line": 33,
-          "part": null,
-          "role": "key",
-          "relation": "broadMatch",
-          "junk": [],
-          "hypotheses": [
-            "a pseudometric space",
-            "an index type for the family",
-            "a subset of the space",
-            "a family of subsets of the space indexed by the index type",
-            "the subset is compact",
-            "every point of the subset has some member of the family as a neighborhood"
           ]
         }
       ]
