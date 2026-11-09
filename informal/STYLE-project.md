@@ -193,7 +193,9 @@ and omit routine metric bookkeeping. Link the cell relation, row argument, and
 final deductions separately.
 
 Do not give the gluing restriction equations or two-set specialization separate
-numbered statements. In Corollary 4.3, apply 4.2 and 2.2 directly. Focus its
+numbered statements. Present the compatibility hypothesis of Corollary 4.3
+as a commuting square, with the inclusion-induced maps and the maps to $M$
+labelled. In its proof, apply 4.2 and 2.2 directly. Focus its
 proof on compatible connecting paths and equality of the local functors on the
 intersection; do not repeat the formula from 4.2.
 

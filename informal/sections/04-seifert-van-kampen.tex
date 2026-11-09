@@ -22,13 +22,16 @@ $g:c\longrightarrow c'$ to $f(\tau_{c'}^{-1}\circ g\circ\tau_c)$.
 \begin{corollary}[id=4.3]{The descent homomorphism}
 Let $A,B\subseteq X$ for a topological space $X$, let $x\in X$, and let
 $M$ be a monoid.  Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
-$\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
-$\fgrp{B}{x}$ with
+$\varphi_A$ and $\varphi_B$ be homomorphisms such that the square
 \[
-  \varphi_{A} \circ (\inclin{A \cap B}{A})_*
-    = \varphi_{B} \circ (\inclin{A \cap B}{B})_*,
+  \begin{array}{ccc}
+    \fgrp{A\cap B}{x} & \xrightarrow{\ (\inclin{A\cap B}{A})_*\ } & \fgrp{A}{x} \\
+    \llap{$\scriptstyle(\inclin{A\cap B}{B})_*\,$}\big\downarrow
+      && \big\downarrow\rlap{$\scriptstyle\,\varphi_A$} \\
+    \fgrp{B}{x} & \xrightarrow{\ \varphi_B\ } & M
+  \end{array}
 \]
-where \fcnotion[Inclusion between subspaces]{ContinuousMap.inclusion}{$\inclin{S}{T}:S\hookrightarrow T$} denotes inclusion.
+commutes, where \fcnotion[Inclusion between subspaces]{ContinuousMap.inclusion}{$\inclin{S}{T}:S\hookrightarrow T$} denotes inclusion.
 Then $\varphi_{A}$ and $\varphi_{B}$ induce a homomorphism $\varphi$ from
 $\fgrp{X}{x}$ to $M$.
 \leanref{TauCeti.vanKampenDesc}
