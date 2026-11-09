@@ -72,7 +72,8 @@ Use $S$ for the subgroupoid obtained by
 basepoint transport. For each point $c$, choose an index $i_c$ with
 $c\in U_{i_c}$, and use $U_{i_c}$ and $U_{i_d}$ throughout the proof.
 Explain the corresponding Lean choice function only in the reading notes. Explain $S=T^{-1}(H)$ as the inverse image under
-the transport functor $T$ to the one-object groupoid $\pi_1(X,x)$.
+the transport functor $T$ to the one-object groupoid $\pi_1(X,x)$. State its
+identity and composition laws inline, using $\ptrans$ for concatenation.
 Choose $\tau_x$ to be the constant loop class, so $T(\omega)=\omega$ for
 loops at $x$. The final proof link must explain that TauCeti instead leaves
 $\tau_x$ arbitrary and cancels it; do not present the normalization as a Lean step.

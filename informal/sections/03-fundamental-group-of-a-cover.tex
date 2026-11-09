@@ -24,11 +24,8 @@ For a morphism $\omega:c\longrightarrow d$ of $\fgpd X$, form the loop class
   T(\omega)=\tau_c\ptrans\omega\ptrans\tau_d^{-1}\in\fgrp{X}{x}.
 \]
 This defines a functor $T:\fgpd X\longrightarrow\fgrp{X}{x}$, viewing the target
-as a one-object groupoid: $T(\mathrm{id}_c)=1$, and for composable $\omega,\nu$,
-cancellation gives
-\[
-  T(\nu\circ\omega)=T(\nu)\circ T(\omega).
-\]
+as a one-object groupoid: $T(\mathrm{id}_c)=1$, and cancellation gives
+$T(\omega\ptrans\nu)=T(\omega)\ptrans T(\nu)$ for composable $\omega,\nu$.
 \proofstep{3.1-s02-subgroupoid}{The transported classes define a subgroupoid}{Hence $S=T^{-1}(H)$ is a subgroupoid of $\fgpd X$.}
 
 Suppose that $\omega$ is represented by a path in $U_i$ from $c$ to $d$.
