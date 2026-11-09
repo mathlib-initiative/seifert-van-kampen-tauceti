@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.401871, 0.650066, 0.196259, 0.023192]
+        "rect": [0.401871, 0.657575, 0.196259, 0.023192]
       },
       "title": "Cancel the basepoint transport",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.401871, 0.650066, 0.59813, 0.650066, 0.59813, 0.673258, 0.401871, 0.673258]
+            [0.401871, 0.657575, 0.59813, 0.657575, 0.59813, 0.680767, 0.401871, 0.680767]
           ],
           "region": "proof-3.1-s09-cancellation@p004"
         }

@@ -6,9 +6,9 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.332517, 0.251263, 0.077152, 0.019571]
+        "rect": [0.363677, 0.249053, 0.069654, 0.01673]
       },
-      "title": "subgroups",
+      "title": "subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:Subgroup@p004"
