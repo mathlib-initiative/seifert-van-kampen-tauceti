@@ -25,8 +25,8 @@ $M$ be a monoid.  Suppose that \hypCoverTwo, that \hypPathConnected, and that \h
 $\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
 $\fgrp{B}{x}$ with
 \[
-  \varphi_{A} \circ \fgrp{\inclin{A \cap B}{A}}{x}
-    = \varphi_{B} \circ \fgrp{\inclin{A \cap B}{B}}{x}.
+  \varphi_{A} \circ (\inclin{A \cap B}{A})_*
+    = \varphi_{B} \circ (\inclin{A \cap B}{B})_*.
 \]
 Then $\varphi_{A}$ and $\varphi_{B}$ induce a homomorphism $\varphi$ from
 $\fgrp{X}{x}$ to $M$.
@@ -61,17 +61,17 @@ $\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
 $\fgrp{B}{x}$ that agree after restriction along the inclusions of $A \cap B$,
 as in \itemref{4.3}, and let $\varphi$ be the homomorphism they induce.
 \itempart{a}{%
-  $\varphi \circ \fgrp{\incl{A}}{x} = \varphi_{A}$.
+  $\varphi \circ (\incl{A})_* = \varphi_{A}$.
   \leanref{TauCeti.vanKampenDesc_map_left}%
   \leanref{TauCeti.vanKampenDesc_comp_map_left}}
 \itempart{b}{%
-  $\varphi \circ \fgrp{\incl{B}}{x} = \varphi_{B}$.
+  $\varphi \circ (\incl{B})_* = \varphi_{B}$.
   \leanref{TauCeti.vanKampenDesc_map_right}%
   \leanref{TauCeti.vanKampenDesc_comp_map_right}}
 \end{proposition}
 
 \begin{proofpassage}{4.4-restrict}{Proof}{The restriction equations}
-Let $\omega\in\fgrp{A}{x}$ be arbitrary.  Write $p_A=\fgrp{\incl{A}}{x}$.
+Let $\omega\in\fgrp{A}{x}$ be arbitrary.  Write $p_A=(\incl{A})_*$.
 By the definition of $\varphi$ and the restriction property in
 \itemref{2.2},
 \proofequation{4.4-s01-left}{Use the glued functor's restriction to A}{
@@ -89,8 +89,8 @@ The chosen path $\tau^A_x$ is the identity at the basepoint, so
 \begin{proposition}[id=4.5]{Uniqueness of the descent homomorphism}
 Suppose that \hypCoverTwo, that \hypPathConnected, and that \hypBasepoint.  Let
 $\varphi$ and $\psi$ be homomorphisms from $\fgrp{X}{x}$ to $M$ such that
-$\varphi \circ \fgrp{\incl{A}}{x} = \psi \circ \fgrp{\incl{A}}{x}$ and
-$\varphi \circ \fgrp{\incl{B}}{x} = \psi \circ \fgrp{\incl{B}}{x}$.  Then
+$\varphi \circ (\incl{A})_* = \psi \circ (\incl{A})_*$ and
+$\varphi \circ (\incl{B})_* = \psi \circ (\incl{B})_*$.  Then
 $\varphi = \psi$.
 \leanref{TauCeti.vanKampen_hom_ext}
 \end{proposition}
@@ -108,7 +108,7 @@ and a two-sided inverse is unique.  Thus $E$ is a subgroup, the equalizer of $\v
 though $M$ is only assumed to be a monoid.
 
 \proofstep{4.5-s01-images}{Both generating images lie in the equalizer subgroup}{For every $\eta\in\fgrp{A}{x}$, the first hypothesis says
-$\varphi(\fgrp{\incl{A}}{x}(\eta))=\psi(\fgrp{\incl{A}}{x}(\eta))$;
+$\varphi((\incl{A})_*(\eta))=\psi((\incl{A})_*(\eta))$;
 hence $E$ contains the image from $A$.  The second hypothesis puts the
 image from $B$ in $E$ as well.}  \proofstep{4.5-s02-generation}{Invoke generation and conclude that the homomorphisms agree}{These two images generate $\fgrp{X}{x}$ by
 \itemref{3.2}.  Therefore $E=\fgrp{X}{x}$: the homomorphisms agree on every loop class,

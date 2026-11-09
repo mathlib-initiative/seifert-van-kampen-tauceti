@@ -22,7 +22,7 @@ The macros of `notation.sty`, one row each.
 | `\subpath{\gamma}{r}{s}` | the subpath of `\gamma` from the parameter `r` to the parameter `s` |
 | `\pcls{\gamma}` | the homotopy class of the path `\gamma` |
 | `\fgpd{X}` | the fundamental groupoid; `\fgpd{f}` the functor a continuous map induces |
-| `\fgrp{X}{x}` | the fundamental group at a basepoint; `\fgrp{f}{x}` the induced homomorphism |
+| `\fgrp{X}{x}` | the fundamental group at a basepoint; write $f_*$ for the induced homomorphism and $(\incl{S})_*$ for an inclusion-induced map |
 | `\End(w)` | the monoid of morphisms of a category from `w` to itself |
 | `\im` | the image of a homomorphism, and of a functor injective on objects |
 | `\sobj{M}` | the one-object category of a monoid |
@@ -240,8 +240,11 @@ syntax, helper names, coercions and other Lean bookkeeping out of the printed
 proofs. Preserve familiar mathematical notation where it reads more naturally.
 
 For the homotopy-invariance argument in 2.2, write the horizontal paths as
-$\gamma_j(t)=H(j/N,t)$. Show a strip of commuting squares in $\mathcal D$,
-with horizontal composites $L_N(\gamma_j)$ and $L_N(\gamma_{j+1})$.
+$\gamma_j(t)=H(j/N,t)$. Show the parameter square with its boundary paths and a magnified cell.
+Illustrate a row with successive routes, replacing the top and right sides
+of one cell by its left and bottom sides. Explain that each replacement
+preserves the composite, and that the constant outer sides have identity
+values; this gives $L_N(\gamma_j)=L_N(\gamma_{j+1})$.
 Use displayed equalities to pass from fixed endpoint arrows to equality of
 adjacent rows, then from the first row to the last. Keep the cell-containment
 argument implicit in the compactness result; do not expand routine metric
@@ -285,3 +288,6 @@ correspondences. Avoid repeating those details above the excerpt.
 In the gluing proof, settle the object assignment using compatibility, then
 explicitly state what remains: well-defined values on morphisms that respect
 identities and composition.
+
+Use $f_*$ for the induced fundamental-group homomorphism, reserving $\Pi_1(f)$
+for the fundamental-groupoid functor. Do not reintroduce $\iota_S$ in Section 3.

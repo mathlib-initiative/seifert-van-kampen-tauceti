@@ -87,15 +87,32 @@ Let $H$ be a homotopy from $\gamma$ to $\delta$ fixing the endpoints.
 \proofstep{2.2-s06-grid}{Choose a fine grid for the homotopy}{As in the proof of
 \itemref{1.2}, apply \itemref{1.1} to choose an $N\times N$ grid with each
 cell mapped by $H$ into some $U_i$.}
-For one cell mapped into $U_i$, label the images of its four oriented edges
-as paths in $U_i$:
-\[
-  \begin{array}{ccc}
-    \bullet & \xrightarrow{\ \alpha\ } & \bullet \\
-    {\scriptstyle\lambda}\big\downarrow && \big\downarrow{\scriptstyle\mu} \\
-    \bullet & \xrightarrow{\ \beta\ } & \bullet
-  \end{array}
-\]
+Under $H$, the top and bottom edges of the parameter square give $\gamma$
+and $\delta$; the sides are constant at $y$ and $z$. The enlarged cell
+shows its edge images in $U_i$.
+\begin{center}
+\begin{tikzpicture}[x=1.10cm,y=0.80cm,>=stealth,font=\small]
+  \fill[blue!6] (0,1) rectangle (3,2);
+  \fill[blue!16] (2,1) rectangle (3,2);
+  \draw[gray!60,step=1] (0,0) grid (3,3);
+  \draw[thick,->] (0,3) -- (1.65,3);
+  \draw[thick] (1.65,3) -- (3,3);
+  \draw[thick,->] (0,0) -- (1.65,0);
+  \draw[thick] (1.65,0) -- (3,0);
+  \node[above] at (1.5,3) {$\gamma(t)=H(0,t)$};
+  \node[below] at (1.5,0) {$\delta(t)=H(1,t)$};
+  \node[left] at (0,1.5) {$y$};
+  \node[right] at (3,1.5) {$z$};
+  \draw[gray,densely dotted] (3,2) -- (5.15,2.7);
+  \draw[gray,densely dotted] (3,1) -- (5.15,0.7);
+  \fill[blue!6] (5.15,0.7) rectangle (7.15,2.7);
+  \draw[blue!70!black,very thick,->] (5.15,2.7) -- node[above] {$\alpha$} (7.15,2.7);
+  \draw[blue!70!black,very thick,->] (7.15,2.7) -- node[right] {$\mu$} (7.15,0.7);
+  \draw[orange!70!black,very thick,dashed,->] (5.15,2.7) -- node[left] {$\lambda$} (5.15,0.7);
+  \draw[orange!70!black,very thick,dashed,->] (5.15,0.7) -- node[below] {$\beta$} (7.15,0.7);
+  \node at (6.15,1.7) {$U_i$};
+\end{tikzpicture}
+\end{center}
 The paths $\alpha\ptrans\mu$ and $\lambda\ptrans\beta$ are homotopic in $U_i$,
 since they are the images under $H$ of homotopic paths in the cell.
 Applying $F_i$ gives
@@ -108,20 +125,31 @@ Thus the images of the four edge classes form a commuting square in $\mathcal D$
 When adjacent cells map into $U_i$ and $U_j$, their shared edge maps into
 $U_i\cap U_j$. By \eqref{eq:gluing-compatibility}, the two squares in
 $\mathcal D$ have the same arrow on their shared edge.
-Write $\gamma_j(t)=H(j/N,t)$ for the horizontal paths, with
-$\gamma_0=\gamma$ and $\gamma_N=\delta$. The strip between $\gamma_j$ and
-$\gamma_{j+1}$ gives the following diagram in $\mathcal D$:
-\[
-  \begin{array}{rccccccccc}
-    L_N(\gamma_j): & F(y) & \longrightarrow & \bullet & \longrightarrow &
-      \cdots & \longrightarrow & \bullet & \longrightarrow & F(z) \\
-    & \big\Vert && \big\downarrow &&&& \big\downarrow && \big\Vert \\
-    L_N(\gamma_{j+1}): & F(y) & \longrightarrow & \bullet & \longrightarrow &
-      \cdots & \longrightarrow & \bullet & \longrightarrow & F(z)
-  \end{array}
-\]
-\proofstep{2.2-s08-paste}{Paste the commuting squares across one row}{Composing the cell squares makes the outside square commute.}
-Its outer vertical arrows are identities because $H$ fixes $y$ and $z$, so
+Write $\gamma_j(t)=H(j/N,t)$, so $\gamma_0=\gamma$ and $\gamma_N=\delta$.
+Across a strip, replace the top and right sides of one cell by its left and
+bottom sides. Here is the sequence for a strip of three cells; each blue
+route runs from the upper-left corner to the lower-right corner:
+\begin{center}
+\begin{tikzpicture}[x=0.67cm,y=0.85cm,>=stealth,font=\small]
+  \foreach \offset/\turn in {0/3,4.4/2,8.8/1,13.2/0} {
+    \begin{scope}[shift={(\offset,0)}]
+      \draw[gray!60] (0,0) rectangle (3,1);
+      \draw[gray!60] (1,0) -- (1,1) (2,0) -- (2,1);
+      \draw[blue!70!black,very thick] (0,1) -- (\turn,1) -- (\turn,0) -- (3,0);
+      \draw[blue!70!black,very thick,->] (\turn,0.85) -- (\turn,0.2);
+      \fill (0,1) circle (1.2pt);
+      \fill (3,0) circle (1.2pt);
+    \end{scope}
+  }
+  \foreach \x in {3.7,8.1,12.5} {\node at (\x,0.5) {$\rightsquigarrow$};}
+  \node[above] at (1.5,1) {$\gamma_j$};
+  \node[below] at (14.7,0) {$\gamma_{j+1}$};
+\end{tikzpicture}
+\end{center}
+\proofstep{2.2-s08-paste}{Paste the commuting squares across one row}{Each replacement preserves the composite by the cell equation, so traversing
+the top then the right side of the strip has the same value as traversing
+the left side then the bottom.}
+The two outer sides are constant paths, so their values are identities. Hence
 \proofequation{2.2-s09-boundary}{Fixed endpoints make the boundary arrows identities}{
   L_N(\gamma_j)=L_N(\gamma_{j+1})\qquad(0\le j<N).
 }
