@@ -23,7 +23,8 @@ denoted $\ptrans$.
 
 \begin{proposition}[id=1.2]{Subdividing a path}
 Let $\gamma$ be a path in $X$ and $(U_i)_{i\in I}$ a family of subsets of $X$.
-Suppose that, near each $t\in\uI$, $\gamma$ takes values in some $U_i$.
+Suppose $\uI$ has an open cover $(V_i)_{i\in I}$ with
+$\gamma(V_i)\subseteq U_i$ for every $i$.
 Then there is a finite nondecreasing
 sequence $0=t_0\le\cdots\le t_n=1$ in $\uI$ such
 that each consecutive subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in some $U_i$.
@@ -31,8 +32,8 @@ that each consecutive subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in some
 \end{proposition}
 
 \begin{proofpassage}{1.2-subdivide}{Proof}{Compactness}
-\proofstep{1.2-s01-cover}{The preimage interiors form an open cover}{The sets
-$c_i=\operatorname{int}_{\uI}(\gamma^{-1}(U_i))$ form an open cover of $\uI$.}
+\proofstep{1.2-s01-cover}{The preimage interiors form an open cover}{The open sets
+$c_i=\operatorname{int}_{\uI}(\gamma^{-1}(U_i))$ contain the $V_i$, so they cover $\uI$.}
 \proofstep{1.2-s01-lebesgue}{Obtain a Lebesgue radius}{Since $\uI$ is compact, \itemref{1.1} gives a Lebesgue radius $\rho>0$.}
 \proofstep{1.2-s01-partition}{Choose a finite subdivision with sufficiently short intervals}{Choose a finite subdivision
 $0=t_0\le\cdots\le t_N=1$ with each interval of length at most $\rho/2$.}

@@ -272,10 +272,10 @@ Write the family-cover hypothesis as "the interiors of the $U_i$ cover $X$".
 This is equivalent to the neighborhood formulation in Lean and permits the later
 applications to subsets that need not be open.
 
-In the statement of Proposition 1.2, say that near each parameter in the unit
-interval, $\gamma$ takes values in some $U_i$. This is the same local condition,
-with neighborhoods relative to the unit interval. Reserve the equivalent cover
-by preimage interiors for the proof.
+State Proposition 1.2 using an open cover $(V_i)$ of the unit interval with
+$\gamma(V_i)\subseteq U_i$. This is equivalent to the neighborhood hypothesis
+in Lean. In the proof, the preimage interiors contain the $V_i$, and hence cover
+the interval. Do not assume that the $U_i$ themselves are open.
 
 Keep each proof excerpt's visible note to one short mathematical sentence.
 Put Lean helper names, tactic explanations and implementation asides in its
