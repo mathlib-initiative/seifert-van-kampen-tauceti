@@ -267,3 +267,7 @@ links, without repeating the formula of 4.2.
 State the Lebesgue number lemma before the subdivision proposition that uses it.
 Vary section openings: introduce the mathematical object directly when that reads
 more naturally than repeating a stock ambient-space sentence.
+
+Write the family-cover hypothesis as "the interiors of the $U_i$ cover $X$".
+This is equivalent to the neighborhood formulation in Lean and permits the later
+applications to subsets that need not be open.
