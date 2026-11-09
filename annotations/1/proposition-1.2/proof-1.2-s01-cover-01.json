@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.310807, 0.620581, 0.461587, 0.022254]
+        "rect": [0.310807, 0.620265, 0.461587, 0.022254]
       },
       "title": "The preimage interiors form an open cover",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.310807, 0.620581, 0.772394, 0.620581, 0.772394, 0.642835, 0.310807, 0.642835]
+            [0.310807, 0.620265, 0.772394, 0.620265, 0.772394, 0.642519, 0.310807, 0.642519]
           ],
           "region": "proof-1.2-s01-cover@p001"
         }
