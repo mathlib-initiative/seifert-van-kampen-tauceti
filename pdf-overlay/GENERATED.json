@@ -140,12 +140,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "002ae142c0141576ee64ad1f40e57c119d9916c91194f6125f7c20d900df8933"
+      "sha256": "3c3ffafd57d4d8b5211bec1d5c7f5e206a3b0a37065789113a2aa94e98087608"
     },
     "count": 86,
     "directory": "annotations",
     "export": {
-      "commit": "704025c346d44b1bcc585a62a6c4af5e99e227a1",
+      "commit": "871143a36c78bbadfd6d56f7710508ad485aa81e",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -169,7 +169,7 @@
       },
       {
         "path": "informal/items.json",
-        "sha256": "6f89200393105e235ba15122c50dd8ec9eb836228fff14c7584b38df5eeb928f"
+        "sha256": "f41a28f3d87dd80e4a2d54fca4fdf5f467840d031548153d2629059c4d7076b0"
       },
       {
         "path": "informal/main.tex",
@@ -177,7 +177,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "b4e6844c1de8f5d03796240dc6008bcafb58aff625afbbc4c90b9b5ce78742f2"
+        "sha256": "1e7cb3ae4fb9263670e95a7c6e346d7cc8c760a1e1302b10f9190c0b97bd5740"
       },
       {
         "path": "informal/notation.sty",
@@ -205,7 +205,7 @@
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
-        "sha256": "d286ddbc8574fc80d941667fa245d92f50dc562870b8826113322a2277b00f5e"
+        "sha256": "8878b6731c9f192a270aa3650d16d69640e057299a3fea04c8d750056fcc0732"
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
@@ -220,6 +220,6 @@
         "sha256": "f9ca13a2cc00bece7edc7ebf80669015eac99203952eef4cffacb3b239c27cba"
       }
     ],
-    "manifest_sha256": "3d7e3c5a84ea5ba96221b56c5c85ac463df85c0657c3fe17401876e3318bc88e"
+    "manifest_sha256": "2ed8abc81302cae4745831f5b5fa8f17124b43ba3bfdfec8fd90b4802e62728f"
   }
 }
