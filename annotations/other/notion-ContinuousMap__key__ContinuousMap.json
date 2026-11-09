@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.736538, 0.134785, 0.128168, 0.019255]
+        "page": 1,
+        "rect": [0.736538, 0.846907, 0.128168, 0.019255]
       },
       "title": "continuous map",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:ContinuousMap@p002"
+          "region": "notion:ContinuousMap@p001"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

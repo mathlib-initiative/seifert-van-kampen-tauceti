@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.566597, 0.171086, 0.223147, 0.019255]
+        "page": 3,
+        "rect": [0.566597, 0.871686, 0.223147, 0.019413]
       },
       "title": "Induced homomorphism $f_*$",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroup.map@p004"
+          "region": "notion:FundamentalGroup.map@p003"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

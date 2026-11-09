@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.563459, 0.171086, 0.110096, 0.017519]
+        "page": 4,
+        "rect": [0.184863, 0.858902, 0.113388, 0.018939]
       },
       "title": "Inclusion between subspaces",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:ContinuousMap.inclusion@p002"
+          "region": "notion:ContinuousMap.inclusion@p004"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }

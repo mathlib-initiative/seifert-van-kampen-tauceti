@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 3,
-        "rect": [0.351414, 0.607672, 0.297172, 0.021929]
+        "rect": [0.351414, 0.525997, 0.297172, 0.021929]
       },
       "title": "Fixed endpoints make the boundary arrows identities",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.351414, 0.607672, 0.648586, 0.607672, 0.648586, 0.629601, 0.351414, 0.629601]
+            [0.351414, 0.525997, 0.648586, 0.525997, 0.648586, 0.547926, 0.351414, 0.547926]
           ],
           "region": "proof-2.2-s09-boundary@p003"
         }

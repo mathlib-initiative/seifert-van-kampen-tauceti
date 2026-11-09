@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.739777, 0.15404, 0.093949, 0.017045]
+        "page": 3,
+        "rect": [0.739777, 0.854482, 0.093949, 0.017203]
       },
       "title": "loop classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroup.fromPath@p004"
+          "region": "notion:FundamentalGroup.fromPath@p003"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }

@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.160516, 0.572917, 0.505631, 0.017361]
+        "rect": [0.160516, 0.479482, 0.505631, 0.017361]
       },
       "title": "Every loop class belongs to the subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.160516, 0.572917, 0.666147, 0.572917, 0.666147, 0.590278, 0.160516, 0.590278]
+            [0.160516, 0.479482, 0.666147, 0.479482, 0.666147, 0.496843, 0.160516, 0.496843]
           ],
           "region": "proof-3.1-s08-loops@p004"
         }

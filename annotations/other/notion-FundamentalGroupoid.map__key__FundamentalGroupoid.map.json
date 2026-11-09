@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.386256, 0.15404, 0.20982, 0.017045]
+        "page": 1,
+        "rect": [0.386256, 0.866162, 0.20982, 0.017045]
       },
       "title": "Induced functor $\\Pi_1(f)$",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroupoid.map@p002"
+          "region": "notion:FundamentalGroupoid.map@p001"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

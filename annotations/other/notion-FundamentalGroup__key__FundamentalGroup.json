@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.533347, 0.134785, 0.152282, 0.019255]
+        "page": 3,
+        "rect": [0.533347, 0.835227, 0.152282, 0.019255]
       },
       "title": "fundamental group",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroup@p004"
+          "region": "notion:FundamentalGroup@p003"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       }
     }
   }
