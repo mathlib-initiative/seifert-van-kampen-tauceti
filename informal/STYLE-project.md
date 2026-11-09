@@ -271,3 +271,6 @@ more naturally than repeating a stock ambient-space sentence.
 Write the family-cover hypothesis as "the interiors of the $U_i$ cover $X$".
 This is equivalent to the neighborhood formulation in Lean and permits the later
 applications to subsets that need not be open.
+
+In Proposition 1.2, use the equivalent covering condition on the interiors of
+preimages, explicitly taking interiors in the unit interval.

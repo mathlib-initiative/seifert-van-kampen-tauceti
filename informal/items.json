@@ -64,7 +64,7 @@
       "section": "1",
       "kind": "proposition",
       "title": "Subdividing a path",
-      "gist": "If every parameter has a neighborhood that the path sends into some member of a family of sets, then the path can be cut at finitely many increasing parameters running from zero to one so that each consecutive subpath has its range inside a single member.",
+      "gist": "If the interiors in the unit interval of the preimages of a family of sets under a path cover the interval, the path can be cut at finitely many nondecreasing parameters from zero to one so that each consecutive subpath lies in one member.",
       "parts": [],
       "in_v1": true,
       "reference": null,
