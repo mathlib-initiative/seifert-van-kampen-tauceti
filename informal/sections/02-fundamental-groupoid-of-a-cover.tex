@@ -163,7 +163,9 @@ By induction,
 }
 
 \proofstep{2.2-s11-quotient}{Descend the path value to homotopy classes}{Thus $L$ is homotopy invariant, so $F([\gamma])=L(\gamma)$ is well-defined.}
-If $\gamma\equiv y$ is constant, evaluating its pieces in any $U_i$ containing $y$ gives
+\proofstep{2.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If $\gamma$ lies in $U_i$, evaluating all pieces using $F_i$ gives
+$F([\gamma])=F_i([\gamma])$.}
+If $\gamma\equiv y$ is constant, then for any $U_i$ containing $y$,
 \[
   F([\gamma])=F_i([\gamma])=\mathrm{id}_{F_i(y)}=\mathrm{id}_{F(y)}.
 \]
@@ -175,9 +177,7 @@ pieces of $\gamma$, then the $N$ pieces of $\delta$. Thus
   L(\gamma\ptrans\delta)=L_{2N}(\gamma\ptrans\delta)
     =L_N(\delta)\circ L_N(\gamma)=L(\delta)\circ L(\gamma).
 \]
-Together with the identity calculation, this proves that $F$ is a functor.
-\proofstep{2.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If $\gamma$ lies in $U_i$, evaluate all pieces using $F_i$;
-their composite is $F_i([\gamma])$, proving the required restriction equations.}
+Thus $F([\gamma]\ptrans[\delta])=F([\delta])\circ F([\gamma])$, so $F$ is a functor.
 \end{proofpassage}
 
 \end{fcassumptions}
