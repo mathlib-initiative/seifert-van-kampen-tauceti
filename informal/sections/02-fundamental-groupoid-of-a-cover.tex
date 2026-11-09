@@ -76,10 +76,12 @@ The restriction equations prescribe the composite
 \]
 \proofstep{2.2-s03-indices}{Compatibility makes the local path value independent of the index}{If a piece $\gamma_k$ lies in $U_i\cap U_j$, then by
 \eqref{eq:gluing-compatibility}, $F_j([\gamma_k])=F_i([\gamma_k])$.}
-\proofstep{2.2-s04-refine-pieces}{Refining each interval preserves the composite}{Refining each piece into $m\ge1$ equal pieces preserves its value by
-\itemref{1.3} and functoriality, so $L_{mN}(\gamma)=L_N(\gamma)$.}
-\proofstep{2.2-s05-refinement}{Compare equal subdivisions through their common refinement}{Any two fine choices $N,N_0$ have a common refinement with $NN_0$ pieces;
-hence $L_N(\gamma)=L_{NN_0}(\gamma)=L_{N_0}(\gamma)$.}
+\proofstep{2.2-s04-refine-pieces}{Refining each interval preserves the composite}{Divide each interval $[t_k,t_{k+1}]$ into $m\ge1$ equal parts.
+By \itemref{1.3} and functoriality, the images under $F_{i_k}$ of the resulting
+subpath classes compose to $F_{i_k}([\gamma_k])$. Thus $L_{mN}(\gamma)=L_N(\gamma)$.}
+\proofstep{2.2-s05-refinement}{Compare equal subdivisions through their common refinement}{If both the $N$-piece and $N_0$-piece subdivisions have every subpath
+contained in some $U_i$, their common refinement into $NN_0$ equal pieces gives
+$L_N(\gamma)=L_{NN_0}(\gamma)=L_{N_0}(\gamma)$.}
 Write $L(\gamma)$ for this common value.
 
 Let $H$ be a homotopy from $\gamma$ to $\delta$ fixing the endpoints.
