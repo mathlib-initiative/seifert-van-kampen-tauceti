@@ -4,10 +4,6 @@
   "source_id": "svk-tauceti",
   "title": "The Seifert–van Kampen theorem, after TauCeti",
   "lede": "Statements, proofs and constructions, with their corresponding Lean arguments.",
-  "back_link": {
-    "href": "../../index.html",
-    "text": "Back to the site"
-  },
   "display": {
     "strip_prefix": "TauCeti.",
     "minimal": true
@@ -25,7 +21,7 @@
     "output_root": "site",
     "index": "index.html",
     "mount": "pdf-overlay",
-    "link_text": "Source overlay"
+    "link_text": "Open the annotated PDF"
   },
   "build": {
     "commands": []

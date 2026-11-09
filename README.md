@@ -7,7 +7,7 @@ are linked to the corresponding Lean declarations and lines. Variables and
 notation are introduced in the sections that use them.
 
 [Read the annotated text](https://mathlib-initiative.github.io/seifert-van-kampen-tauceti/pdf-overlay/viewer/index.html) ·
-[Download the PDF](https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v1/svk-tauceti.pdf) ·
+[Download the PDF](https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v2/svk-tauceti.pdf) ·
 [Browse the annotations](annotations/)
 
 - `informal/`: the LaTeX source. `main.tex` is the document, `sections/` its sections,
@@ -49,13 +49,13 @@ for gluing, the local functor equations, and the pushout universal property.
 They use the earlier numbered results and omit routine endpoint renaming and
 path reparametrizations.
 
-The eight arguments have 46 selected sentence or equation links. Each opens
-one pinned Lean range for that specific step, including explicit invocations of
-earlier results. Unmarked prose and proof headings carry no proof-wide link.
+The eight arguments have 46 selected sentence or equation links to 50 pinned
+Lean ranges. Each opens the relevant excerpt or a short chain of helper lemmas,
+including explicit invocations of earlier results. Unmarked prose and proof headings carry no proof-wide link.
 The project-owned `informal/proofsteps.sty` records word positions or the exact
 dimensions of a displayed equation; `informal/proofsteps.json` records the
 corresponding Lean ranges and their hashes. The exporter rejects changed ranges,
-whole-proof markers, and steps with multiple code targets. These new links are
+whole-proof markers, and inconsistent helper chains. These new links are
 agent-authored and await human review.
 
 To regenerate this revision, build the PDF twice with
@@ -107,6 +107,6 @@ requires every Mathlib card to have a matching hover statement. Separate page
 builds have separate hover identifiers; the exporter remaps them when combining
 the results. The generated `pdf-overlay/verso.json` is committed with the overlay.
 
-The v2 PDF URL is the proposed destination for this revision; publishing it
-requires review of the new PDF and proof-step links. The published v1 remains
-available at its original URL.
+The v2 release contains this revision of the text and its proof-step links.
+The published v1 remains available at its original URL. The website homepage
+opens the annotated PDF viewer directly.
