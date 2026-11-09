@@ -140,12 +140,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "1a17ac67df02ef1c70863afc43f623dad596ee4c6d2446980744f3f0b55095de"
+      "sha256": "6df9e0fb6bdaeb738006117d166d74a7eb3891fb9dc70c389d7063b7ea4f6a69"
     },
-    "count": 89,
+    "count": 87,
     "directory": "annotations",
     "export": {
-      "commit": "c4eb4d231e0bf00d2703cc4113480a6656f893d3",
+      "commit": "3bbdfb7e812a7228fa6f2403d65a015c36e5412c",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -169,7 +169,7 @@
       },
       {
         "path": "informal/items.json",
-        "sha256": "9d3cb024cd273a150068bfcb94378c5bec40c2bc307c9860c7862a2c6b5d6d96"
+        "sha256": "88a7543d481c4bbafedda9902f2c6c111787705ef052b112779985ffb632a881"
       },
       {
         "path": "informal/main.tex",
@@ -177,7 +177,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "1eac53fa06d2208b27fd9b2a2c3f156e3c4bd7840af29547f8186d0b70b19e54"
+        "sha256": "f601e3f480786dc330f51a8210dbf15b6163fafdc5d680e79f76534eb96ee692"
       },
       {
         "path": "informal/notation.sty",
@@ -185,7 +185,7 @@
       },
       {
         "path": "informal/proofsteps.json",
-        "sha256": "f2146a460435b98e30942071b45fe4d194bff240e47a9e5c7d7f1fdb4dcdae5d"
+        "sha256": "6842f252e901ed5958766bc1c93458f596814bda509b6caa8f111983865e4f9a"
       },
       {
         "path": "informal/proofsteps.sty",
@@ -205,11 +205,11 @@
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
-        "sha256": "74819dce3deb6341dbb150a893b94f9e6bf4b9b9bc975722118b5db1ad7dcd27"
+        "sha256": "96f24e2d42fc77ffa52d5ab4e21a649537ae9900775d8311160333d024a94553"
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
-        "sha256": "0267280dd041263f8d5fa92219b8851002d09620faf6e60699874818f97a9dc8"
+        "sha256": "3c54cf64fc8a64755b651d322de58741ff57e08644aa9f672382dee3ac64a6e8"
       },
       {
         "path": "tools/mathlib_hovers.py",
@@ -220,6 +220,6 @@
         "sha256": "f9ca13a2cc00bece7edc7ebf80669015eac99203952eef4cffacb3b239c27cba"
       }
     ],
-    "manifest_sha256": "89ec131ccecd55d0c11e8dea115f8c7425a441b627f360a462e4b931fe7a4c76"
+    "manifest_sha256": "969c1d3ee19be5a121d298c2fe05421471ad9a73df7b1c9eac030a3abcf4149f"
   }
 }

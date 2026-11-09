@@ -6,15 +6,15 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.130391, 0.321496, 0.739217, 0.052873]
+        "rect": [0.130391, 0.253946, 0.739218, 0.052872]
       },
       "title": "Invoke generation and conclude that the homomorphisms agree",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.816603, 0.321496, 0.869608, 0.321496, 0.869608, 0.338068, 0.816603, 0.338068],
-            [0.130391, 0.338068, 0.869608, 0.338068, 0.869608, 0.355745, 0.130391, 0.355745],
-            [0.130391, 0.355745, 0.414107, 0.355745, 0.414107, 0.374369, 0.130391, 0.374369]
+            [0.783921, 0.253946, 0.869609, 0.253946, 0.869609, 0.270518, 0.783921, 0.270518],
+            [0.130391, 0.270518, 0.869608, 0.270518, 0.869608, 0.288195, 0.130391, 0.288195],
+            [0.130391, 0.288194, 0.577752, 0.288194, 0.577752, 0.306818, 0.130391, 0.306818]
           ],
           "region": "proof-4.5-s02-generation@p006"
         }
@@ -44,6 +44,7 @@
             "resolution": "exact"
           },
           "proof_context": {
+            "bookkeeping": "`range_map_subtypeVal_sup_eq_top` applies Theorem 3.1 to the two-set cover $\\{A,B\\}$.",
             "conclusion": "Generation makes the equalizer the whole group, so the homomorphisms agree everywhere.",
             "declaration": "vanKampen_hom_ext",
             "lines": [329, 342]
