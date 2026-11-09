@@ -5,8 +5,20 @@
   "subject": [
     {
       "location": {
+        "page": 4,
+        "rect": [0.130391, 0.857955, 0.739217, 0.037879]
+      },
+      "title": "Corollary 4.3 (The descent homomorphism)",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "corollary-4.3@p004"
+        }
+      }
+    },
+    {
+      "location": {
         "page": 5,
-        "rect": [0.130391, 0.104167, 0.739217, 0.13447]
+        "rect": [0.130391, 0.104798, 0.739217, 0.087121]
       },
       "title": "Corollary 4.3 (The descent homomorphism)",
       "extensions": {
@@ -48,8 +60,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4, 5],
+        "printed": [4, 5]
       }
     }
   }
