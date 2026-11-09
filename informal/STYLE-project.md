@@ -78,7 +78,7 @@ printed wording is defined in `notation.sty`:
 | Macro | Printed assumption |
 | --- | --- |
 | `\hypCoverTwo` | The interiors of $A$ and $B$ cover $X$ |
-| `\hypCoverFamily` | Each point of $X$ has some $U_i$ as a neighborhood |
+| `\hypCoverFamily` | The family $(U_i)_{i\in I}$ is a neighborhood cover of $X$ |
 | `\hypPathConnected` | $A$, $B$, and $A\cap B$ are path connected |
 | `\hypBasepoint` | $x$ lies in $A$ and in $B$ |
 
@@ -96,7 +96,8 @@ specializations in `items.json`:
   each point of $K$ has some cover member as a neighborhood in $K$. The sets
   need not be open. Balls $B_K(z,\rho)$ are taken in $K$. Specialize TauCeti's
   pseudometric theorem to the space $K$ and its whole compact subset.
-  Define “Lebesgue number” immediately after the lemma, outside its statement.
+  Define “neighborhood cover” and “Lebesgue number” immediately after the lemma,
+  outside its statement. Reuse “neighborhood cover” in the later standing assumptions.
 - Proposition 1.2 uses a neighborhood cover of $X$. Continuity pulls it back
   to a neighborhood cover $c_i=\gamma^{-1}(U_i)$ of the interval. The Lean
   theorem needs the condition only along the path. Keep the `broadMatch`
