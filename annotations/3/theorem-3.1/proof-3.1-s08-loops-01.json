@@ -1,21 +1,20 @@
 {
-  "id": "proof-3.1-s08-basepoint-loop",
+  "id": "proof-3.1-s08-loops",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
         "page": 4,
-        "rect": [0.130391, 0.661616, 0.739217, 0.031408]
+        "rect": [0.160516, 0.666982, 0.505631, 0.017519]
       },
-      "title": "The chosen path at the basepoint belongs to the subgroup",
+      "title": "Every loop class belongs to the subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.544422, 0.661616, 0.869608, 0.661616, 0.869608, 0.678977, 0.544422, 0.678977],
-            [0.130391, 0.678977, 0.22593, 0.678977, 0.22593, 0.693024, 0.130391, 0.693024]
+            [0.160516, 0.666982, 0.666147, 0.666982, 0.666147, 0.684501, 0.160516, 0.684501]
           ],
-          "region": "proof-3.1-s08-basepoint-loop@p004"
+          "region": "proof-3.1-s08-loops@p004"
         }
       }
     }
@@ -26,30 +25,31 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [173, 174],
+        "lines": [169, 179],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
       },
-      "title": "The chosen path at the basepoint belongs to the subgroup",
+      "title": "Every loop class belongs to the subgroup",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-3.1-s08-basepoint-loop-1",
+            "id": "proof-3.1-s08-loops-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L173-L174",
+            "fragment": "L169-L179",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The chosen $\\tau_x$ is a loop in a cover member, so its class lies in $H$.",
+            "bookkeeping": "The informal normalization makes $T(\\omega)=\\omega$ for loops at $x$. Lean proves $\\tau_x\\in H$ and uses closure under multiplication and inverses to recover the original loop.",
+            "conclusion": "Here we choose $\\tau_x=1$; TauCeti keeps $\\tau_x$ arbitrary and cancels it.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
             "lines": [126, 179]
           },
           "snippet": {
-            "line": 173,
-            "text": "  have hτx : (End.of (τ (mk x)) : _root_.FundamentalGroup X x) ∈ H :=\n    fromPath_mem_iSup_range hx _ (hτ' x)"
+            "line": 169,
+            "text": "  refine eq_top_iff.2 fun γ _ ↦ ?_\n  have hγ : γ.asHom ∈ S.arrows (mk x) (mk x) := by\n    rw [hS]\n    trivial\n  have hτx : (End.of (τ (mk x)) : _root_.FundamentalGroup X x) ∈ H :=\n    fromPath_mem_iSup_range hx _ (hτ' x)\n  have h := H.mul_mem hτx (H.mul_mem hγ (H.inv_mem hτx))\n  rw [hinv] at h\n  convert h using 1\n  ext\n  simp"
           }
         }
       }
