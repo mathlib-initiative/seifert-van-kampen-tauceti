@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "732afe7364c49e231b12a5825a7fdb8413c909ea",
- "pdf_sha256": "899af994ba7e64095dd49a3c0a07fa672762b9ecef4b568704305a802016f4f2",
+ "source_commit": "0a34758624343aba26ee8b8e07a7a967d630cadb",
+ "pdf_sha256": "dfda5af6da0db1f55467e11a7daef28c7d93fa9ed11da483f1f5980a02619984",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -165,7 +165,7 @@
    ],
    "decls": [],
    "boxes": [
-    [5, 0.130391, 0.330808, 0.739217, 0.107008]
+    [5, 0.130391, 0.330492, 0.739217, 0.107008]
    ]
   },
   {
@@ -179,7 +179,7 @@
     "TauCeti.vanKampenDesc_comp_map_left"
    ],
    "boxes": [
-    [5, 0.130391, 0.401357, 0.739217, 0.017203]
+    [5, 0.130391, 0.400884, 0.739217, 0.017361]
    ]
   },
   {
@@ -193,7 +193,7 @@
     "TauCeti.vanKampenDesc_comp_map_right"
    ],
    "boxes": [
-    [5, 0.130391, 0.418561, 0.739217, 0.019255]
+    [5, 0.130391, 0.418245, 0.739217, 0.019255]
    ]
   },
   {
@@ -208,7 +208,7 @@
     "TauCeti.vanKampen_hom_ext"
    ],
    "boxes": [
-    [5, 0.130391, 0.619634, 0.739217, 0.072601]
+    [5, 0.130391, 0.619634, 0.739217, 0.072285]
    ]
   },
   {
