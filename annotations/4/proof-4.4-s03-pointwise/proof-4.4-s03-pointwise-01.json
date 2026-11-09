@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.139628, 0.574495, 0.454605, 0.019255]
+        "rect": [0.139628, 0.574179, 0.454605, 0.019255]
       },
       "title": "Pass from pointwise equality to equality of homomorphisms",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.139628, 0.574495, 0.594233, 0.574495, 0.594233, 0.59375, 0.139628, 0.59375]
+            [0.139628, 0.574179, 0.594233, 0.574179, 0.594233, 0.593434, 0.139628, 0.593434]
           ],
           "region": "proof-4.4-s03-pointwise@p005"
         }
