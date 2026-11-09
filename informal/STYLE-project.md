@@ -203,7 +203,8 @@ numbered statements. Present the compatibility hypothesis of Corollary 4.3
 as a commuting square, with the inclusion-induced maps and the maps to $M$
 labelled. In its proof, apply 4.2 and 2.2 directly. Focus its
 proof on compatible connecting paths and equality of the local functors on the
-intersection; do not repeat the formula from 4.2.
+intersection; do not repeat the formula from 4.2. Show this agreement in a
+commuting square rather than introducing auxiliary pointwise notation.
 
 ## References
 

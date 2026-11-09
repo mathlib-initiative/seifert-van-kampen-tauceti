@@ -45,13 +45,16 @@ $x$ to be the identity.}
 $F_A:\fgpd A\longrightarrow\sobj M$ and
 $F_B:\fgpd B\longrightarrow\sobj M$.}
 
-Let $j_A,j_B$ be the inclusion-induced maps from $\fgrp{C}{x}$.
-For $g:y\longrightarrow z$ in $\fgpd C$, put
-$\eta=\rho_z^{-1}\circ g\circ\rho_y$.  The shared choices on $C$ give
-\proofequation{4.3-s03-compatibility}{Apply compatibility to the transported loop in the intersection}{ F_A(\fgpd{\inclin{C}{A}}(g))
-   =\varphi_A(j_A(\eta))
-   =\varphi_B(j_B(\eta))
-   =F_B(\fgpd{\inclin{C}{B}}(g)).}
+The connecting paths agree on $C$, so compatibility of $\varphi_A,\varphi_B$
+gives the commuting square
+\proofequation{4.3-s03-compatibility}{The local functors agree on the intersection}{
+  \begin{array}{r@{}c@{\quad}c@{\quad}c@{}l}
+    & \fgpd C & \xrightarrow{\ \fgpd{\inclin{C}{A}}\ } & \fgpd A & \\
+    \scriptstyle\fgpd{\inclin{C}{B}}\; & \big\downarrow
+      && \big\downarrow & \;\scriptstyle F_A \\
+    & \fgpd B & \xrightarrow{\ F_B\ } & \sobj M &
+  \end{array}.
+}
 \proofstep{4.3-s04-glue}{Invoke gluing of the two local functors}{Thus \itemref{2.2} glues $F_A,F_B$ to a functor
 $F:\fgpd X\longrightarrow\sobj M$.}
 Restricting to loops at $x$ gives

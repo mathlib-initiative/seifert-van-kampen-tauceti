@@ -1424,7 +1424,7 @@
       "id": "4.3-s03-compatibility",
       "item": "4.3",
       "label": "Step",
-      "title": "Apply compatibility to the transported loop in the intersection",
+      "title": "The local functors agree on the intersection",
       "span": "display",
       "targets": [
         {
@@ -1434,7 +1434,7 @@
             217
           ],
           "sha256": "ec2ab6b65c1db2e89308cd3e7a1a429fe10d2db6fb5f1b84a9641fac80db2df9",
-          "title": "Apply compatibility to the transported loop in the intersection",
+          "title": "The local functors agree on the intersection",
           "role": "key",
           "context": {
             "declaration": "localFunctor_compatibility",
