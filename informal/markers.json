@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "4ad50fd2426dbab4ccc9fc267eb8284aff51156d",
- "pdf_sha256": "0ba410f68fe76ed7e1c06be3a3756872b231ced119e0e4a095285711c1979edb",
+ "source_commit": "0d0f331b51288ed4f450fdcc80f0ef283bd9fe2e",
+ "pdf_sha256": "41de4db938d701de14d5f1913d1a5dc27c3985c63c1d65baf67d051c3b7d4c94",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -359,7 +359,7 @@
    "label": "notion:13",
    "number": "n13",
    "boxes": [
-    [3, 0.397798, 0.866162, 0.122556, 0.017045]
+    [3, 0.385047, 0.866162, 0.122556, 0.017045]
    ]
   },
   {
@@ -370,7 +370,7 @@
    "number": "n14",
    "title": "Inclusion-induced homomorphism",
    "boxes": [
-    [3, 0.525447, 0.866162, 0.230353, 0.017045]
+    [3, 0.511527, 0.866162, 0.222566, 0.017045]
    ]
   },
   {
