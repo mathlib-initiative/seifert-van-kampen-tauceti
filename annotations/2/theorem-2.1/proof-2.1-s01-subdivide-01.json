@@ -6,15 +6,14 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.130391, 0.214015, 0.739217, 0.053662]
+        "rect": [0.130391, 0.212595, 0.739218, 0.035985]
       },
       "title": "Choose a subdivision subordinate to the cover",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.633485, 0.214015, 0.869608, 0.214015, 0.869608, 0.23106, 0.633485, 0.23106],
-            [0.130391, 0.231061, 0.869608, 0.231061, 0.869608, 0.250158, 0.130391, 0.250158],
-            [0.130391, 0.250158, 0.1863, 0.250158, 0.1863, 0.267677, 0.130391, 0.267677]
+            [0.611228, 0.212595, 0.869609, 0.212595, 0.869609, 0.230114, 0.611228, 0.230114],
+            [0.130391, 0.230114, 0.762612, 0.230114, 0.762612, 0.24858, 0.130391, 0.24858]
           ],
           "region": "proof-2.1-s01-subdivide@p002"
         }
@@ -44,7 +43,7 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Subdivision for the open cover by the interiors gives path pieces in the original cover members.",
+            "conclusion": "Subdivision gives path pieces lying in individual cover members.",
             "declaration": "iSup_im_map_subtypeVal_eq_top",
             "lines": [113, 131]
           },

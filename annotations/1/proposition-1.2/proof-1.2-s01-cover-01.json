@@ -6,13 +6,14 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.31045, 0.584912, 0.554257, 0.020676]
+        "rect": [0.130391, 0.584596, 0.739218, 0.037878]
       },
-      "title": "Pull back the open cover",
+      "title": "Pull back the cover",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.31045, 0.584912, 0.864707, 0.584912, 0.864707, 0.605588, 0.31045, 0.605588]
+            [0.311056, 0.584596, 0.869609, 0.584596, 0.869609, 0.605429, 0.311056, 0.605429],
+            [0.130391, 0.605429, 0.197404, 0.605429, 0.197404, 0.622474, 0.130391, 0.622474]
           ],
           "region": "proof-1.2-s01-cover@p001"
         }
@@ -28,7 +29,7 @@
         "lines": [230, 234],
         "module": "TauCeti.Topology.Homotopy.Path"
       },
-      "title": "Pull back the open cover",
+      "title": "Pull back the cover",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
@@ -42,14 +43,14 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "Lean allows a neighborhood cover and uses interiors of the preimages. For an open cover, these interiors equal the preimages; openness and continuity supply hU.",
-            "conclusion": "Continuity pulls the open cover back to the interval.",
+            "bookkeeping": "Continuity supplies hU from the cover assumption. Lean takes interiors of the preimages to use Mathlib's open-cover subdivision helper; these interiors still cover the interval.",
+            "conclusion": "Continuity pulls the neighborhood cover back to the interval.",
             "declaration": "exists_monotone_range_subpath_subset",
             "lines": [224, 244],
             "notation": [
               {
                 "lean": "c",
-                "math": "$c_i$"
+                "math": "$\\operatorname{int}(c_i)$"
               },
               {
                 "lean": "hU",
