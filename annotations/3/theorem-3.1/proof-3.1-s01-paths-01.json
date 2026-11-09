@@ -6,14 +6,14 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.130391, 0.294508, 0.739218, 0.038036]
+        "rect": [0.130391, 0.296717, 0.739218, 0.035985]
       },
       "title": "Choose paths from the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.406114, 0.294508, 0.869609, 0.294508, 0.869609, 0.315184, 0.406114, 0.315184],
-            [0.130391, 0.315183, 0.4058, 0.315183, 0.4058, 0.332544, 0.130391, 0.332544]
+            [0.412922, 0.296717, 0.869609, 0.296717, 0.869609, 0.316288, 0.412922, 0.316288],
+            [0.130391, 0.316288, 0.624731, 0.316288, 0.624731, 0.332702, 0.130391, 0.332702]
           ],
           "region": "proof-3.1-s01-paths@p004"
         }
@@ -45,7 +45,13 @@
           "proof_context": {
             "conclusion": "Each cover member is path connected by the intersection hypothesis, so choose $\\tau_c:x\\to c$ inside it.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
-            "lines": [126, 179]
+            "lines": [126, 179],
+            "notation": [
+              {
+                "lean": "U (i₀ c.as)",
+                "math": "$U_c$"
+              }
+            ]
           },
           "snippet": {
             "line": 133,
