@@ -1203,7 +1203,7 @@
       "id": "3.1-s05-middle",
       "item": "3.1",
       "label": "Step",
-      "title": "The middle factor belongs to $\\pi_1(U_i,x)$",
+      "title": "The middle loop lies in $U_i$",
       "span": "inline",
       "targets": [
         {
@@ -1213,7 +1213,7 @@
             115
           ],
           "sha256": "b7c61855accf299e49d1dea50d6660b31973d7d84111b924fc2cc114b3efd70e",
-          "title": "The middle factor belongs to $\\pi_1(U_i,x)$",
+          "title": "The middle loop lies in $U_i$",
           "role": "key",
           "context": {
             "declaration": "comp_comp_inv_mem_iSup_range",
@@ -1222,7 +1222,7 @@
               119
             ],
             "sha256": "a8de7066f82c8cfe35ebbfb3d7e693ff9d4e3809f59348b6d8456ca45dd6be1c",
-            "conclusion": "The middle factor belongs to $\\pi_1(U_i,x)$.",
+            "conclusion": "The middle loop lies in $U_i$.",
             "bookkeeping": "Lean represents the middle loop in $U_i$, then uses `fromPath_mem_iSup_range` to put its class in $H$."
           }
         }
