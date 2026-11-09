@@ -163,9 +163,10 @@ By induction,
 }
 
 \proofstep{2.2-s11-quotient}{Descend the path value to homotopy classes}{Thus $L$ is homotopy invariant, so $F([\gamma])=L(\gamma)$ is well-defined.}
-If $\gamma$ is constant at $y$, every subdivision piece represents an identity.
-Each $F_i$ sends that identity to $\mathrm{id}_{F(y)}$, so
-$F([\gamma])=L_N(\gamma)=\mathrm{id}_{F(y)}$.
+If $\gamma\equiv y$ is constant, evaluating its pieces in any $U_i$ containing $y$ gives
+\[
+  F([\gamma])=F_i([\gamma])=\mathrm{id}_{F_i(y)}=\mathrm{id}_{F(y)}.
+\]
 
 For composable paths $\gamma$ and $\delta$, choose $N$ fine enough for both.
 Subdividing $\gamma\ptrans\delta$ into $2N$ equal pieces gives first the $N$
