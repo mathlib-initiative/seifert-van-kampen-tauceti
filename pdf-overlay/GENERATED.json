@@ -140,12 +140,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "7ac8e47b81e986a75ce2163634064204b10193339955cb7039dffbaf9be17501"
+      "sha256": "99b6294a0882681dea615c8be4c0f1213cfb8f395f98b9957881e6fe9d1f4fd5"
     },
     "count": 86,
     "directory": "annotations",
     "export": {
-      "commit": "f3ff41301b2ba8754589822f7d996da8e534abd8",
+      "commit": "80ba789b0ec971b60056dbc027cd6c1ae235a5d3",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -177,11 +177,11 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "738b2e3213c6987e00bb02ad8788a617ccf71634e9dc443171ed6b51be6fa0dd"
+        "sha256": "c7fa08ce45b1cadc95ffc721e261b917511d4d25201114d500481cd29aa1ac8d"
       },
       {
         "path": "informal/notation.sty",
-        "sha256": "35e164a1d77d72d870168bc7a351e93908bbec67ef1bb054b078a11f94c46b05"
+        "sha256": "22aa9abe872905f5b7d4e60e8fdc2630e91b5d4cac12364dab611d906d6de0f5"
       },
       {
         "path": "informal/proofsteps.json",
@@ -205,11 +205,11 @@
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
-        "sha256": "e4fb0cce8746ebd1a0f5766fd424c24898b3bc42493e1a93f3f23b01ad0a237f"
+        "sha256": "9c3122aae8350b1005a86d107d500352157ca2c5241fde48cb91ec0535c67c59"
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
-        "sha256": "8718e3f07d646f57b76ca562c9a2b8446e51c633619590eb656dde0d05ca11d8"
+        "sha256": "532464ce42a39d64f35d285012129420fba6cf0d96102b4f2768efd674997a94"
       },
       {
         "path": "tools/mathlib_hovers.py",
@@ -220,6 +220,6 @@
         "sha256": "f9ca13a2cc00bece7edc7ebf80669015eac99203952eef4cffacb3b239c27cba"
       }
     ],
-    "manifest_sha256": "7176e93c6070d06dd4c8ffae0793220bd0eda09c97f7798dc84c4137e7ff136c"
+    "manifest_sha256": "3232cb36ba2cd14b3cd02ad4e818a967d1fd8a815555cef9ce2d72a420be7134"
   }
 }
