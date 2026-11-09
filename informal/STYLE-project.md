@@ -68,7 +68,8 @@ $H=\pi_1(X,x)$. Use this same $H$ in the proof rather than switching from
 image notation in the statement. Use $S$ for the subgroupoid obtained by
 basepoint transport. For each point $c$, choose a cover member $U_c$ containing
 $c$, and use $U_c$ throughout the proof. Explain the corresponding Lean index
-only in the reading notes.
+only in the reading notes. Explain $S=T^{-1}(H)$ as the inverse image under
+the transport functor $T$ to the one-object groupoid $\pi_1(X,x)$.
 
 When discussing generation, $\Pi_1(U_i)$ may denote its image in $\Pi_1(X)$
 after a short convention. Do not identify them globally: the inclusion functor

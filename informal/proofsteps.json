@@ -1100,8 +1100,8 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "Closure of $H$ under inverses and multiplication makes the transported morphisms a subgroupoid $S$.",
-            "bookkeeping": "`End.of` regards a groupoid endomorphism at the basepoint as an element of its vertex group. Composition and group multiplication have reversed notation: `f ≫ g` is the product `g * f`."
+            "conclusion": "$S=T^{-1}(H)$ is closed under inverses and composition.",
+            "bookkeeping": "Lean constructs `S` directly from the predicate $T(\\omega)\\in H$. `End.of` converts a basepoint endomorphism to a group element; `f ≫ g` corresponds to `g * f`."
           }
         }
       ],
