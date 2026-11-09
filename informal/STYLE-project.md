@@ -54,7 +54,8 @@ Keep shared notation in [notation.sty](notation.sty).
 | `\im`, `\gen{\dots}` | Image and generated subgroup or subgroupoid |
 
 Use $f_*$ for an induced fundamental-group homomorphism and $(\iota_S)_*$
-for an inclusion-induced homomorphism. Reserve $\Pi_1(f)$ for the groupoid
+for an inclusion-induced homomorphism. Introduce $\iota_{S,T}$ at its first
+use in Corollary 4.3, not in Section 2. Reserve $\Pi_1(f)$ for the groupoid
 functor, explaining its action on points and path classes at first use.
 
 Introduce a path $\gamma$ before its notation. Define its subpath directly by
