@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.339954, 0.768464, 0.320093, 0.023225]
+        "rect": [0.339954, 0.838354, 0.320093, 0.023225]
       },
       "title": "Refining each interval preserves the composite",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.339954, 0.768464, 0.660047, 0.768464, 0.660047, 0.791689, 0.339954, 0.791689]
+            [0.339954, 0.838354, 0.660047, 0.838354, 0.660047, 0.861579, 0.339954, 0.861579]
           ],
           "region": "proof-2.2-s04-refine-pieces@p002"
         }

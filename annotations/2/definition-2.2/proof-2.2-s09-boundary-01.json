@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 3,
-        "rect": [0.351036, 0.573293, 0.297928, 0.021929]
+        "rect": [0.351414, 0.607672, 0.297172, 0.021929]
       },
       "title": "Fixed endpoints make the boundary arrows identities",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.351036, 0.573293, 0.648964, 0.573293, 0.648964, 0.595222, 0.351036, 0.595222]
+            [0.351414, 0.607672, 0.648586, 0.607672, 0.648586, 0.629601, 0.351414, 0.629601]
           ],
           "region": "proof-2.2-s09-boundary@p003"
         }
@@ -43,7 +43,7 @@
           },
           "proof_context": {
             "bookkeeping": "A constant path with differently written but equal endpoints produces `eqToHom`. Once those endpoints are identified, this is the identity arrow in the informal diagram.",
-            "conclusion": "Constant outer edges give identity arrows, reducing the pasted square to $L_N(\\gamma_j)=L_N(\\gamma_{j+1})$.",
+            "conclusion": "Constant outer edges give identity arrows, reducing the pasted square to $L_N(\\eta_j)=L_N(\\eta_{j+1})$.",
             "declaration": "lift_eq_of_homotopy",
             "lines": [661, 694],
             "notation": [
