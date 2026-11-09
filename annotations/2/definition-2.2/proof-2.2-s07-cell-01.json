@@ -5,30 +5,16 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.4362, 0.883996, 0.433408, 0.017835]
-      },
-      "title": "The two routes around one cell have the same value",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "quads": [
-            [0.4362, 0.883996, 0.869608, 0.883996, 0.869608, 0.901831, 0.4362, 0.901831]
-          ],
-          "region": "proof-2.2-s07-cell@p002"
-        }
-      }
-    },
-    {
-      "location": {
         "page": 3,
-        "rect": [0.130391, 0.104798, 0.739217, 0.035354]
+        "rect": [0.130391, 0.124053, 0.739217, 0.050348]
       },
       "title": "The two routes around one cell have the same value",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.130391, 0.104798, 0.869608, 0.104798, 0.869608, 0.123422, 0.130391, 0.123422],
-            [0.130391, 0.123422, 0.329196, 0.123422, 0.329196, 0.140152, 0.130391, 0.140152]
+            [0.4362, 0.124053, 0.869608, 0.124053, 0.869608, 0.140467, 0.4362, 0.140467],
+            [0.130391, 0.140467, 0.869608, 0.140467, 0.869608, 0.157512, 0.130391, 0.157512],
+            [0.130391, 0.157513, 0.329196, 0.157513, 0.329196, 0.174401, 0.130391, 0.174401]
           ],
           "region": "proof-2.2-s07-cell@p003"
         }
@@ -127,8 +113,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2, 3],
-        "printed": [2, 3]
+        "physical": [3],
+        "printed": [3]
       },
       "proof": {
         "kind": "chain",

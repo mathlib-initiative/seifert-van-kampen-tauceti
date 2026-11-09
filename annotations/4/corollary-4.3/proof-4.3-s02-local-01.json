@@ -5,17 +5,17 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.850221, 0.739217, 0.035196]
+        "page": 5,
+        "rect": [0.130391, 0.143308, 0.739217, 0.032828]
       },
       "title": "Invoke the functor construction from a homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.491749, 0.850221, 0.869608, 0.850221, 0.869608, 0.866004, 0.491749, 0.866004],
-            [0.130391, 0.866004, 0.601345, 0.866004, 0.601345, 0.885417, 0.130391, 0.885417]
+            [0.491749, 0.143308, 0.869608, 0.143308, 0.869608, 0.158933, 0.491749, 0.158933],
+            [0.130391, 0.158933, 0.601345, 0.158933, 0.601345, 0.176136, 0.130391, 0.176136]
           ],
-          "region": "proof-4.3-s02-local@p004"
+          "region": "proof-4.3-s02-local@p005"
         }
       }
     }
@@ -59,8 +59,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [5],
+        "printed": [5]
       },
       "proof": {
         "kind": "helper",
