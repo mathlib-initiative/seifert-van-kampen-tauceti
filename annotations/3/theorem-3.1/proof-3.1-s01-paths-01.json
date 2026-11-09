@@ -5,29 +5,15 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.163849, 0.851641, 0.70576, 0.021149]
-      },
-      "title": "Choose paths from the basepoint",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "quads": [
-            [0.163849, 0.851641, 0.869609, 0.851641, 0.869609, 0.87279, 0.163849, 0.87279]
-          ],
-          "region": "proof-3.1-s01-paths@p003"
-        }
-      }
-    },
-    {
-      "location": {
         "page": 4,
-        "rect": [0.130391, 0.104167, 0.051087, 0.02036]
+        "rect": [0.130391, 0.123422, 0.739218, 0.036458]
       },
       "title": "Choose paths from the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.130391, 0.104167, 0.181478, 0.104167, 0.181478, 0.124527, 0.130391, 0.124527]
+            [0.163849, 0.123422, 0.869609, 0.123422, 0.869609, 0.141888, 0.163849, 0.141888],
+            [0.130391, 0.141888, 0.181478, 0.141888, 0.181478, 0.15988, 0.130391, 0.15988]
           ],
           "region": "proof-3.1-s01-paths@p004"
         }
@@ -72,8 +58,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3, 4],
-        "printed": [3, 4]
+        "physical": [4],
+        "printed": [4]
       },
       "proof": {
         "kind": "direct",

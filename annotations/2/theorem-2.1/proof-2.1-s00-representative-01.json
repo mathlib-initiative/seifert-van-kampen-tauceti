@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.335316, 0.215909, 0.24951, 0.017361]
+        "rect": [0.335316, 0.298138, 0.24951, 0.017519]
       },
       "title": "Choose a representative path",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.335316, 0.215909, 0.584826, 0.215909, 0.584826, 0.23327, 0.335316, 0.23327]
+            [0.335316, 0.298138, 0.584826, 0.298138, 0.584826, 0.315657, 0.335316, 0.315657]
           ],
           "region": "proof-2.1-s00-representative@p002"
         }

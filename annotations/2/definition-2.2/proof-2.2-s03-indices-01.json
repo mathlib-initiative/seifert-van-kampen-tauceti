@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.132842, 0.778409, 0.463207, 0.020044]
+        "rect": [0.132842, 0.863952, 0.463207, 0.020044]
       },
       "title": "Compatibility makes the local path value independent of the index",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.132842, 0.778409, 0.596049, 0.778409, 0.596049, 0.798453, 0.132842, 0.798453]
+            [0.132842, 0.863952, 0.596049, 0.863952, 0.596049, 0.883996, 0.132842, 0.883996]
           ],
           "region": "proof-2.2-s03-indices@p002"
         }
