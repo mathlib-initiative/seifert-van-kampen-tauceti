@@ -1081,7 +1081,7 @@
       "id": "3.1-s02-subgroupoid",
       "item": "3.1",
       "label": "Step",
-      "title": "The transported classes define a subgroupoid",
+      "title": "$S$ is a subgroupoid",
       "span": "inline",
       "targets": [
         {
@@ -1091,7 +1091,7 @@
             157
           ],
           "sha256": "303d1ed0eede8af5dbc629e6406da76928d2a8c8a39445d25292b6d54c84b0d6",
-          "title": "The transported classes define a subgroupoid",
+          "title": "$S$ is a subgroupoid",
           "role": "key",
           "context": {
             "declaration": "iSup_range_map_subtypeVal_eq_top",
@@ -1100,7 +1100,7 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "$S=T^{-1}(H)$ is closed under inverses and composition.",
+            "conclusion": "$S$ is a subgroupoid.",
             "bookkeeping": "Lean constructs `S` directly from the predicate $T(\\omega)\\in H$. `End.of` converts a basepoint endomorphism to a group element; `f ≫ g` corresponds to `g * f`."
           }
         }
@@ -1203,7 +1203,7 @@
       "id": "3.1-s05-middle",
       "item": "3.1",
       "label": "Step",
-      "title": "The middle loop lies in the generated subgroup",
+      "title": "The middle factor belongs to $\\pi_1(U_i,x)$",
       "span": "inline",
       "targets": [
         {
@@ -1213,7 +1213,7 @@
             115
           ],
           "sha256": "b7c61855accf299e49d1dea50d6660b31973d7d84111b924fc2cc114b3efd70e",
-          "title": "The middle loop lies in the generated subgroup",
+          "title": "The middle factor belongs to $\\pi_1(U_i,x)$",
           "role": "key",
           "context": {
             "declaration": "comp_comp_inv_mem_iSup_range",
@@ -1222,8 +1222,8 @@
               119
             ],
             "sha256": "a8de7066f82c8cfe35ebbfb3d7e693ff9d4e3809f59348b6d8456ca45dd6be1c",
-            "conclusion": "The middle loop lies in $U_i$, so its class belongs to $H$.",
-            "bookkeeping": "`fromPath_mem_iSup_range` puts the class of this local loop in $H$."
+            "conclusion": "The middle factor belongs to $\\pi_1(U_i,x)$.",
+            "bookkeeping": "Lean represents the middle loop in $U_i$, then uses `fromPath_mem_iSup_range` to put its class in $H$."
           }
         }
       ],
