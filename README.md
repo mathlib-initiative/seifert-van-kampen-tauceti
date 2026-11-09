@@ -6,7 +6,7 @@ directly to their Lean counterparts through
 [Literature Links](https://mathlib-initiative.github.io/literature-links/).
 
 **[Read the annotated PDF](https://mathlib-initiative.github.io/seifert-van-kampen-tauceti/)** ·
-[Download the PDF](https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v6/svk-tauceti.pdf) ·
+[Download the PDF](https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v7/svk-tauceti.pdf) ·
 [Browse the annotations](annotations/)
 
 The viewer connects individual sentences and equations to pinned Lean source
