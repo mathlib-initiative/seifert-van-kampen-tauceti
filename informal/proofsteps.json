@@ -10,7 +10,7 @@
       "id": "1.2-s01-cover",
       "item": "1.2",
       "label": "Step",
-      "title": "The preimage interiors form an open cover",
+      "title": "Pull back the open cover",
       "span": "inline",
       "targets": [
         {
@@ -20,7 +20,7 @@
             234
           ],
           "sha256": "67ae615cf4ca4dfe64cf9b522bc5b114a8e45e6ac36a6eff388f4672789beaba",
-          "title": "The preimage interiors form an open cover",
+          "title": "Pull back the open cover",
           "role": "key",
           "context": {
             "declaration": "exists_monotone_range_subpath_subset",
@@ -29,7 +29,7 @@
               244
             ],
             "sha256": "55ca2a3a8af4a909d3b9863cee51a52ead520a4f9942d62ea07e29af894b72e2",
-            "conclusion": "The neighborhood hypothesis makes the preimage interiors an open cover of $[0,1]$.",
+            "conclusion": "Continuity pulls the open cover back to the interval.",
             "notation": [
               {
                 "math": "$c_i$",
@@ -39,7 +39,8 @@
                 "math": "The neighborhood hypothesis",
                 "lean": "hU"
               }
-            ]
+            ],
+            "bookkeeping": "Lean allows a neighborhood cover and uses interiors of the preimages. For an open cover, these interiors equal the preimages; openness and continuity supply hU."
           }
         }
       ],
@@ -276,7 +277,7 @@
               131
             ],
             "sha256": "e47f20978871cdd034e43736461b410652491cdaae7a78547117a14c309626b4",
-            "conclusion": "Proposition 1.2 applies because continuity pulls covering neighborhoods back along $\\gamma$."
+            "conclusion": "Subdivision for the open cover by the interiors gives path pieces in the original cover members."
           }
         }
       ],

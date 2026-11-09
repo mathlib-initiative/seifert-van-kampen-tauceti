@@ -133,10 +133,14 @@ Specialize the linked TauCeti theorem by taking its underlying pseudometric
 space to be $K$ and its compact subset to be the whole space; openness and
 the covering property imply its neighborhood hypothesis. Retain the
 broadMatch relation because the linked theorem is more general.
-For Proposition 1.2, use $c_i=\operatorname{int}_{[0,1]}(\gamma^{-1}(U_i))$
-directly as relatively open subsets of the interval, matching the Lean
-family c. Use the corresponding relative preimage interiors for the homotopy
-square. Do not introduce ambient open extensions in either proof.
+Proposition 1.2 specializes its linked theorem to an open cover of $X$.
+Use $c_i=\gamma^{-1}(U_i)$ in the proof; continuity makes this an open cover
+of the interval. Lean uses interiors because its theorem permits neighborhood
+covers; for this specialization the interiors equal the preimages. Record this
+in the reading notes and retain broadMatch for the more general theorem.
+In Section 2, apply subdivision and compactness to the open cover $(\intr U_i)$;
+its members lie in the original $U_i$. For a homotopy, pull this open cover
+back to the parameter square. Do not introduce ambient open extensions.
 With the Euclidean metric, choose the homotopy grid by cell diameter, not
 side length; the Lean proof instead uses the equivalent maximum metric.
 
@@ -275,12 +279,11 @@ Write the family-cover hypothesis as "the interiors of the $U_i$ cover $X$".
 This is equivalent to the neighborhood formulation in Lean and permits the later
 applications to subsets that need not be open.
 
-State Proposition 1.2 using the condition applied in its proof: the interiors
-of the preimages $\gamma^{-1}(U_i)$ cover $[0,1]$. Introduce the path as
-$\gamma:[0,1]\to X$, so the interiors are understood in its domain.
-Do not introduce auxiliary neighborhoods $V$ or an indexed family $(V_i)$.
-This is equivalent to the neighborhood hypothesis in Lean. Do not assume
-that the $U_i$ themselves are open.
+State Proposition 1.2 for a path $\gamma:[0,1]\to X$ and an open cover
+$(U_i)$ of $X$. This simpler specialization is sufficient for the exposition.
+Do not introduce auxiliary neighborhoods $V$, a family $(V_i)$, or an interior
+condition in this statement. Keep the broader standing cover hypotheses in
+Sections 2 and 3, applying Proposition 1.2 to their interiors when needed.
 
 Keep each proof excerpt's visible note to one short mathematical sentence.
 Put Lean helper names, tactic explanations and implementation asides in its
