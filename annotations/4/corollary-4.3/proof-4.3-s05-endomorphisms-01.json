@@ -42,8 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "The source expression nests restriction around gluing. The PDF explains the inner construction first, so this step moves backwards by one source line.",
-            "conclusion": "`singleObjFunctor` restricts to loops at $x$; `SingleObj.mapHom` yields the mediating homomorphism.",
+            "bookkeeping": "`singleObjFunctor` restricts to loops; `SingleObj.mapHom` extracts the homomorphism. Lean nests restriction around gluing, so this step moves back one source line.",
+            "conclusion": "Restricting the glued functor to loops at $x$ gives the mediating homomorphism.",
             "declaration": "vanKampenDesc",
             "lines": [226, 239],
             "notation": [

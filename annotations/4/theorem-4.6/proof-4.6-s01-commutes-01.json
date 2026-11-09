@@ -43,7 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Quotient induction reduces the claim to a loop; both composites include that same loop into $X$.",
+            "bookkeeping": "Quotient induction reduces the equality to a representative loop.",
+            "conclusion": "Both composites include the same loop from the intersection into $X$.",
             "declaration": "isPushout_fundamentalGroup",
             "lines": [349, 378]
           },

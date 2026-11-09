@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`concat_subpath` identifies the composite of the subdivision classes with $[\\gamma]$.",
+            "bookkeeping": "`concat_subpath` identifies the composite with the original path class.",
+            "conclusion": "The composite of the subdivision classes is $[\\gamma]$.",
             "declaration": "iSup_im_map_subtypeVal_eq_top",
             "lines": [113, 131]
           },

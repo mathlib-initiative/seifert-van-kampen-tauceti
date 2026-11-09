@@ -44,7 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`addNSMul_eq_right` shows that steps of size $\\rho/2$ eventually reach the endpoint.",
+            "bookkeeping": "`addNSMul_eq_right` proves that this sequence eventually reaches the endpoint.",
+            "conclusion": "Steps of size $\\rho/2$, clipped at the endpoint, give a finite subdivision.",
             "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
             "lines": [474, 482],
             "notation": [

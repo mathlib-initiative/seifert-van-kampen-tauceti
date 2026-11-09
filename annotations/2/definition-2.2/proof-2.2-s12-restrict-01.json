@@ -43,7 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`map_segVal_eq` combines all subdivision pieces inside $U_i$ to recover $F_i([\\gamma])$.",
+            "bookkeeping": "`map_segVal_eq` combines the subdivision pieces.",
+            "conclusion": "Combining all pieces inside $U_i$ recovers $F_i([\\gamma])$.",
             "declaration": "liftN_eq_locVal",
             "lines": [507, 514],
             "notation": [
@@ -86,7 +87,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Choose a fine subdivision, then apply `liftN_eq_locVal` to obtain $L(\\gamma)=F_i([\\gamma])$.",
+            "bookkeeping": "`liftN_eq_locVal` evaluates the chosen fine subdivision inside $U_i$.",
+            "conclusion": "A fine subdivision gives $L(\\gamma)=F_i([\\gamma])$.",
             "declaration": "lift_eq_locVal",
             "lines": [564, 567],
             "notation": [

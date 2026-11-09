@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`map_subtypeVal_comp_glueTwo_left` reduces the glued value on a loop in $A$ to its local value.",
+            "bookkeeping": "`map_subtypeVal_comp_glueTwo_left` gives the left restriction equation.",
+            "conclusion": "The glued value on a loop in $A$ equals its local value.",
             "declaration": "vanKampenDesc_map_left",
             "lines": [267, 280]
           },

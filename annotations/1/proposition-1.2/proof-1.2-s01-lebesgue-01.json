@@ -44,7 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`lebesgue_number_lemma_of_metric` supplies $\\rho>0$ and the ball-containment property.",
+            "bookkeeping": "`lebesgue_number_lemma_of_metric` supplies the radius and ball-containment property.",
+            "conclusion": "Compactness gives a Lebesgue radius $\\rho>0$.",
             "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
             "lines": [474, 482],
             "notation": [

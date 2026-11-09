@@ -43,7 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Choose `vanKampenDesc` as the mediator for the compatible pair of homomorphisms.",
+            "bookkeeping": "`vanKampenDesc` is chosen as the mediator.",
+            "conclusion": "The descent homomorphism supplies a mediator for the compatible pair.",
             "declaration": "isPushout_fundamentalGroup",
             "lines": [349, 378],
             "notation": [

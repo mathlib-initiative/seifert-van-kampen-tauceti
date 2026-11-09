@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Quotient induction reduces an arbitrary morphism to the homotopy class of a path $\\gamma$.",
+            "bookkeeping": "Quotient induction reduces the argument to a representative path.",
+            "conclusion": "Every morphism is represented by a path $\\gamma$.",
             "declaration": "iSup_im_map_subtypeVal_eq_top",
             "lines": [113, 131],
             "notation": [

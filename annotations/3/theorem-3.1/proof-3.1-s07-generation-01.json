@@ -43,7 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`comp_comp_inv_mem_iSup_range` puts every local class in $S$; groupoid generation gives $S=\\top$.",
+            "bookkeeping": "`comp_comp_inv_mem_iSup_range` puts the local classes in $S$.",
+            "conclusion": "Every local class lies in $S$, so groupoid generation gives $S=\\top$.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
             "lines": [126, 179],
             "notation": [

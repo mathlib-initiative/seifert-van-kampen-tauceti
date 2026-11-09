@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`fromPath_mem_iSup_range` puts the middle loop in $H$ because it lies in $U_i$.",
+            "bookkeeping": "`fromPath_mem_iSup_range` puts the class of this local loop in $H$.",
+            "conclusion": "The middle loop lies in $U_i$, so its class belongs to $H$.",
             "declaration": "comp_comp_inv_mem_iSup_range",
             "lines": [87, 119]
           },

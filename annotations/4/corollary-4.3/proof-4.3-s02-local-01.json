@@ -43,7 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`functorOfEndHom` turns the homomorphism and chosen connecting paths into a local functor.",
+            "bookkeeping": "`functorOfEndHom` is the functor construction from Definition 4.2.",
+            "conclusion": "The homomorphism and chosen connecting paths determine a local functor.",
             "declaration": "localFunctor",
             "lines": [160, 164]
           },

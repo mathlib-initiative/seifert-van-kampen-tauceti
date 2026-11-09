@@ -101,7 +101,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Apply `locVal_eq_of_simplyConnected` to the two boundary routes in the unit square.",
+            "bookkeeping": "`locVal_eq_of_simplyConnected` is applied to the two boundary routes.",
+            "conclusion": "The two boundary routes in the unit square have equal local values.",
             "declaration": "pathVal_cell",
             "lines": [625, 658],
             "notation": [

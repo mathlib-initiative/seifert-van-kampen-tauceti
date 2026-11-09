@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`MonoidHom.ext` turns the pointwise calculation into equality of homomorphisms.",
+            "bookkeeping": "`MonoidHom.ext` turns the pointwise calculation into equality.",
+            "conclusion": "Equality on every loop gives equality of homomorphisms.",
             "declaration": "vanKampenDesc_comp_map_left",
             "lines": [300, 310]
           },

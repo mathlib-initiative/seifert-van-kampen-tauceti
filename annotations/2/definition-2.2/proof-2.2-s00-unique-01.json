@@ -13,7 +13,7 @@
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
             [0.412898, 0.561553, 0.869609, 0.561553, 0.869609, 0.581124, 0.412898, 0.581124],
-            [0.130391, 0.581124, 0.58497, 0.581124, 0.58497, 0.597538, 0.130391, 0.597538]
+            [0.130391, 0.581124, 0.578555, 0.581124, 0.578555, 0.597538, 0.130391, 0.597538]
           ],
           "region": "proof-2.2-s00-unique@p002"
         }
@@ -44,7 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`functor_ext` uses generation to identify functors with the same restrictions.",
+            "bookkeeping": "`functor_ext` applies the generation result.",
+            "conclusion": "Generation identifies functors with the same restrictions.",
             "declaration": "eq_glue",
             "lines": [736, 738]
           },

@@ -43,7 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Apply the right restriction equation for `glueTwo`, then `localFunctor_map_base`.",
+            "bookkeeping": "Apply the right restriction equation for `glueTwo`, then `localFunctor_map_base`.",
+            "conclusion": "Restricting to $B$ recovers the right-hand homomorphism.",
             "declaration": "vanKampenDesc_map_right",
             "lines": [283, 296]
           },

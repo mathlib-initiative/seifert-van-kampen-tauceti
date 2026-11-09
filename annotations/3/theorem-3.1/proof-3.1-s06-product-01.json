@@ -44,8 +44,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "Lean writes categorical composition in traversal order and group multiplication in the opposite order. This accounts for the order of the arguments to `H.mul_mem`.",
-            "conclusion": "The outer factors lie in $H$ by `comp_inv_mem_iSup_range`; multiply them with the middle factor.",
+            "bookkeeping": "`comp_inv_mem_iSup_range` handles the outer factors. The arguments to `H.mul_mem` reflect the opposite notation for composition and group multiplication.",
+            "conclusion": "All three factors lie in $H$, so their product does too.",
             "declaration": "comp_comp_inv_mem_iSup_range",
             "lines": [87, 119]
           },

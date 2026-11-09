@@ -42,8 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`GrpCat.ofHom` packages a group homomorphism as a category arrow; `GrpCat.hom_ext` transfers equality of the underlying homomorphisms to those arrows.",
-            "conclusion": "The two restriction theorems give the factorization equations; `GrpCat.hom_ext` transfers them to categorical arrows.",
+            "bookkeeping": "`GrpCat.ofHom` packages a group homomorphism as a category arrow; `GrpCat.hom_ext` transfers equality to those arrows.",
+            "conclusion": "The two restriction equations give the required factorizations.",
             "declaration": "isPushout_fundamentalGroup",
             "lines": [349, 378]
           },

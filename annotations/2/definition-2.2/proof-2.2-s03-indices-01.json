@@ -43,8 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`locVal` includes endpoint transports to the chosen global object values. The rest of this lemma checks that the inclusions recover the same underlying path and that those transports agree. The equality is not complete at the end of the displayed excerpt.",
-            "conclusion": "Apply `hF i j` to the path class in the intersection; the remaining lines align its endpoint objects.",
+            "bookkeeping": "`hF i j` is applied to the path class in the intersection. The rest of the lemma aligns the endpoint transports in `locVal`; the displayed excerpt begins this argument.",
+            "conclusion": "Compatibility identifies the two local values of a path in $U_i\\cap U_j$.",
             "declaration": "locVal_congr_index",
             "lines": [260, 288],
             "notation": [

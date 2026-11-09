@@ -42,8 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "A natural transformation encodes the vertical arrows and commuting cell squares. Naturality for the long arrow from the first to the last grid point is the statement that the outside square commutes.",
-            "conclusion": "`NatTrans.ofSequence` packages the cell squares; its naturality gives the commuting outside square.",
+            "bookkeeping": "`NatTrans.ofSequence` encodes the vertical arrows and cell squares. Its naturality for the first-to-last grid arrow makes the outside square commute.",
+            "conclusion": "Pasting the cell squares gives a commuting outside square.",
             "declaration": "lift_eq_of_homotopy",
             "lines": [661, 694],
             "notation": [

@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`vanKampen_hom_ext` identifies the two mediators because their restrictions agree.",
+            "bookkeeping": "`vanKampen_hom_ext` is the uniqueness result from Proposition 4.5.",
+            "conclusion": "The two mediators agree because their restrictions agree.",
             "declaration": "isPushout_fundamentalGroup",
             "lines": [349, 378]
           },

@@ -43,7 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Apply `liftN_mul` twice to compare the two subdivisions through their common refinement.",
+            "bookkeeping": "`liftN_mul` is applied twice, once for each subdivision.",
+            "conclusion": "A common refinement identifies the two subdivision values.",
             "declaration": "lift_eq_liftN",
             "lines": [554, 561],
             "notation": [

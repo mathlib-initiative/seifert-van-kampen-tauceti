@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`hsplit` inserts cancelling inverse pairs to express the transported loop as three local loops.",
+            "bookkeeping": "`hsplit` is the displayed factorization.",
+            "conclusion": "Inserting cancelling inverse pairs expresses the transported loop as three local loops.",
             "declaration": "comp_comp_inv_mem_iSup_range",
             "lines": [87, 119],
             "notation": [

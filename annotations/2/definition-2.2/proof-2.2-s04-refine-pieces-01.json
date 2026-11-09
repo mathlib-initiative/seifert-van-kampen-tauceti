@@ -87,8 +87,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
-            "conclusion": "Induction repeatedly applies `pathVal_subpath_trans` to combine all pieces inside one $U_i$.",
+            "bookkeeping": "`map_segVal_eq` repeatedly applies `pathVal_subpath_trans`. The `eqToHom` factors identify endpoint objects already proved equal.",
+            "conclusion": "Induction combines all pieces inside one $U_i$.",
             "declaration": "map_segVal_eq",
             "lines": [481, 497],
             "notation": [
@@ -135,8 +135,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
-            "conclusion": "Apply `map_segVal_eq` on each coarse interval to obtain $L_{mN}(\\gamma)=L_N(\\gamma)$.",
+            "bookkeeping": "`map_segVal_eq` combines the pieces on each coarse interval; `eqToHom` identifies equal endpoint objects.",
+            "conclusion": "Combining the refined pieces in each coarse interval gives $L_{mN}(\\gamma)=L_N(\\gamma)$.",
             "declaration": "liftN_mul",
             "lines": [523, 547],
             "notation": [

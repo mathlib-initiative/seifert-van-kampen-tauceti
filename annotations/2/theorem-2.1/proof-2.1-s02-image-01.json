@@ -43,8 +43,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`codRestrict` regards the same path in a subspace. The pairs carrying membership proofs specify its endpoints there; mapping back along inclusion recovers the original path.",
-            "conclusion": "`codRestrict` views the path inside $U_i$; inclusion recovers the original path, placing its class in the image subgroupoid.",
+            "bookkeeping": "`codRestrict` views the path in $U_i$; membership proofs specify its endpoints there. Mapping back along inclusion recovers the original path.",
+            "conclusion": "Regarding the path in $U_i$ places its class in the image of the inclusion functor.",
             "declaration": "mk_mem_iSup_im",
             "lines": [64, 87]
           },

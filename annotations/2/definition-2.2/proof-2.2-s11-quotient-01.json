@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`Quotient.lift` uses `lift_eq_of_homotopy` to make $[\\gamma]\\mapsto L(\\gamma)$ independent of the representative.",
+            "bookkeeping": "`Quotient.lift` uses `lift_eq_of_homotopy` to descend to homotopy classes.",
+            "conclusion": "Homotopy invariance makes $[\\gamma]\\mapsto L(\\gamma)$ independent of the representative.",
             "declaration": "glue",
             "lines": [702, 709],
             "notation": [

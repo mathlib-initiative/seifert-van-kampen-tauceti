@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`glueTwo` glues the compatible local functors to a functor on $\\Pi_1(X)$.",
+            "bookkeeping": "`glueTwo` specializes the gluing construction to two subsets.",
+            "conclusion": "The compatible local functors glue to a functor on $\\Pi_1(X)$.",
             "declaration": "vanKampenDesc",
             "lines": [226, 239]
           },

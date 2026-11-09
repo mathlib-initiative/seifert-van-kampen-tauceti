@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "`localFunctor_map_base` evaluates that local value using the original homomorphism.",
+            "bookkeeping": "`localFunctor_map_base` evaluates the local functor on a loop at the basepoint.",
+            "conclusion": "The local value at the basepoint is the original homomorphism's value.",
             "declaration": "vanKampenDesc_map_left",
             "lines": [267, 280]
           },
