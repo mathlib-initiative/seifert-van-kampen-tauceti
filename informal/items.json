@@ -431,7 +431,7 @@
         "source": "module docstring",
         "declaration": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
       },
-      "departures": "The members of the family are not assumed to be open, and path-connectedness is assumed of every intersection of two members, which for a member paired with itself is the member itself.",
+      "departures": "The members of the family are not assumed to be open, and path-connectedness is assumed of every intersection of two members, which for a member paired with itself is the member itself. In generation statements, the fundamental group of a cover member denotes its image under the inclusion-induced homomorphism into the fundamental group of the ambient space. This map is not assumed injective; the convention does not apply to the groups used as domains in descent.",
       "declarations": [
         {
           "name": "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top",
