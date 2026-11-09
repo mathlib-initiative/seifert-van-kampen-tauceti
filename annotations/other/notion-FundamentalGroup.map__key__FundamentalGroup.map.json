@@ -6,9 +6,9 @@
     {
       "location": {
         "page": 3,
-        "rect": [0.566597, 0.871686, 0.223147, 0.019413]
+        "rect": [0.518106, 0.866162, 0.226246, 0.017045]
       },
-      "title": "Induced homomorphism $f_*$",
+      "title": "Inclusion-induced homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:FundamentalGroup.map@p003"
