@@ -1204,7 +1204,7 @@
       "item": "3.1",
       "label": "Step",
       "title": "The middle loop lies in $U_j$",
-      "span": "inline",
+      "span": "display",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",

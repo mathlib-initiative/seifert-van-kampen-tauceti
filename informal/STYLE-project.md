@@ -73,6 +73,8 @@ proof. Keep the three-factor formula for $T(\omega)$ on one line when it fits.
 Use underbraces to label the subgroup containing each factor, instead of
 repeating those memberships in a paragraph. A proof tag can select the
 middle underbrace's label, preserving its specific Lean correspondence.
+Use a measured math fragment (the project macro \proofmath) for labels in stacked
+formulas; ordinary sentence markers assume paragraph line geometry.
 Use $S$ for the subgroupoid obtained by
 basepoint transport. For each point $c$, choose an index $i_c$ with
 $c\in U_{i_c}$, and use $U_{i_c}$ and $U_{i_d}$ throughout the proof.

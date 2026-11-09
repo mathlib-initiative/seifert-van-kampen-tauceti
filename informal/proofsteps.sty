@@ -23,6 +23,15 @@
   #3\fc@savepos{fc:proof:#1:end}\endgroup}
 % Measure exactly one displayed equation, including tall fractions/aligned rows.
 % Its own dimensions bound the link; the surrounding proof is never measured.
+% A measured mathematical fragment, including a label inside an underbrace.
+% Sentence geometry assumes paragraph lines; stacked math needs its own box.
+\newsavebox{\svk@fragment}
+\newcommand{\proofmath}[3]{%
+  \begingroup\svk@record{#1}{display}{#2}%
+  \sbox{\svk@fragment}{$#3$}%
+  \fc@auxwrite{\string\svk@auxmath{#1}{\number\wd\svk@fragment}{\number\ht\svk@fragment}{\number\dp\svk@fragment}}%
+  \hbox{\fc@savepos{fc:proof:#1:start}\usebox{\svk@fragment}\fc@savepos{fc:proof:#1:end}}%
+  \endgroup}
 \newsavebox{\svk@equation}
 % An optional label numbers a cited equation without enlarging its annotation.
 \newcommand{\proofequation}[4][]{%
