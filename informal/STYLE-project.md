@@ -70,6 +70,9 @@ basepoint transport. For each point $c$, choose a cover member $U_c$ containing
 $c$, and use $U_c$ throughout the proof. Explain the corresponding Lean index
 only in the reading notes. Explain $S=T^{-1}(H)$ as the inverse image under
 the transport functor $T$ to the one-object groupoid $\pi_1(X,x)$.
+Choose $\tau_x$ to be the constant loop class, so $T(\omega)=\omega$ for
+loops at $x$. The final proof link must explain that TauCeti instead leaves
+$\tau_x$ arbitrary and cancels it; do not present the normalization as a Lean step.
 Write $S=\Pi_1(X)$ in the exposition; explain Lean's top-subgroupoid notation
 only in the reading notes.
 

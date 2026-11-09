@@ -1313,52 +1313,20 @@
       }
     },
     {
-      "id": "3.1-s08-basepoint-loop",
+      "id": "3.1-s08-loops",
       "item": "3.1",
       "label": "Step",
-      "title": "The chosen path at the basepoint belongs to the subgroup",
+      "title": "Every loop class belongs to the subgroup",
       "span": "inline",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
           "lines": [
-            173,
-            174
-          ],
-          "sha256": "5e059f624e5837b279453a32bb0325c947e31a64695864b5b185de5aaf99f943",
-          "title": "The chosen path at the basepoint belongs to the subgroup",
-          "role": "key",
-          "context": {
-            "declaration": "iSup_range_map_subtypeVal_eq_top",
-            "lines": [
-              126,
-              179
-            ],
-            "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "The chosen $\\tau_x$ is a loop in a cover member, so its class lies in $H$."
-          }
-        }
-      ],
-      "proof": {
-        "kind": "direct",
-        "summary": ""
-      }
-    },
-    {
-      "id": "3.1-s09-cancellation",
-      "item": "3.1",
-      "label": "Step",
-      "title": "Cancel the basepoint transport",
-      "span": "display",
-      "targets": [
-        {
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
-          "lines": [
-            175,
+            169,
             179
           ],
-          "sha256": "d81bfc6d9aa81c6bb6a6e1ef1910fe05f8bbfb352eb3504d15b75f477dcd1d63",
-          "title": "Cancel the basepoint transport",
+          "sha256": "a93267a7ddb78542e8ff99030deb3019e0edaf67b4469d4c3c6ed2ef93bad7a3",
+          "title": "Every loop class belongs to the subgroup",
           "role": "key",
           "context": {
             "declaration": "iSup_range_map_subtypeVal_eq_top",
@@ -1367,8 +1335,8 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "Multiply by $\\tau_x$ and its inverse inside $H$, then cancel the basepoint transport.",
-            "bookkeeping": "`End.of` and the rewrite `hinv` convert between groupoid composition/inversion and the group operations. The cancellation is the same one displayed in the PDF."
+            "conclusion": "Here we choose $\\tau_x=1$; TauCeti keeps $\\tau_x$ arbitrary and cancels it.",
+            "bookkeeping": "The informal normalization makes $T(\\omega)=\\omega$ for loops at $x$. Lean proves $\\tau_x\\in H$ and uses closure under multiplication and inverses to recover the original loop."
           }
         }
       ],

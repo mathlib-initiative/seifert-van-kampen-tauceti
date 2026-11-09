@@ -21,6 +21,7 @@ classes of loops lying in some $U_i$. Then $H=\fgrp{X}{x}$.
 \begin{proofpassage}{3.1-basepoint}{Proof}{Generation by based loops}
 \proofstep{3.1-s01-paths}{Choose paths from the basepoint}{For each point $c$, choose a cover member $U_c$ containing $c$ and, by
 path connectedness, a path class $\tau_c:x\longrightarrow c$ inside $U_c$.}
+Take $\tau_x$ to be the constant loop class.
 For a morphism $\omega:c\longrightarrow d$ of $\fgpd X$, form the loop class
 \[
   T(\omega)=\tau_c\ptrans\omega\ptrans\tau_d^{-1}\in\fgrp{X}{x}.
@@ -49,10 +50,7 @@ Cancellation of inverse path classes gives
 respectively, so their classes also lie in $H$.  Closure under
 multiplication now gives $T(\omega)\in H$.}  \proofstep{3.1-s07-generation}{Invoke generation of the fundamental groupoid}{The subgroupoid $S$ contains all path classes represented in the $U_i$; \itemref{2.1} then gives $S=\fgpd X$.}
 
-For a loop class $\omega$ at $x$ we now have $T(\omega)\in H$.
-\proofstep{3.1-s08-basepoint-loop}{The chosen path at the basepoint belongs to the subgroup}{The class $\tau_x$ is itself a loop inside $U_x$, so it lies in $H$.}
-Hence
-\proofequation{3.1-s09-cancellation}{Cancel the basepoint transport}{  \omega=\tau_x^{-1}\ptrans T(\omega)\ptrans\tau_x\in H.}
+\proofstep{3.1-s08-loops}{Every loop class belongs to the subgroup}{Since $\tau_x=1$, every loop class $\omega$ at $x$ satisfies $\omega=T(\omega)\in H$.}
 Thus $H=\fgrp{X}{x}$, as required.
 \end{proofpassage}
 
