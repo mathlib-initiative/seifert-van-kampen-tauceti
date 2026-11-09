@@ -6,14 +6,14 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.130391, 0.62721, 0.739218, 0.03409]
+        "rect": [0.130391, 0.62721, 0.739218, 0.034406]
       },
       "title": "Invoke generation of the fundamental groupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.228263, 0.62721, 0.869609, 0.62721, 0.869609, 0.644887, 0.228263, 0.644887],
-            [0.130391, 0.644886, 0.514301, 0.644886, 0.514301, 0.6613, 0.130391, 0.6613]
+            [0.228263, 0.62721, 0.869609, 0.62721, 0.869609, 0.644571, 0.228263, 0.644571],
+            [0.130391, 0.644571, 0.311377, 0.644571, 0.311377, 0.661616, 0.130391, 0.661616]
           ],
           "region": "proof-3.1-s07-generation@p004"
         }
@@ -44,7 +44,7 @@
           },
           "proof_context": {
             "bookkeeping": "`comp_comp_inv_mem_iSup_range` puts the local classes in $S$.",
-            "conclusion": "Every local class lies in $S$, so groupoid generation gives $S=\\top$.",
+            "conclusion": "Every local class lies in $S$, so groupoid generation gives $S=\\Pi_1(X)$.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
             "lines": [126, 179],
             "notation": [
@@ -55,6 +55,10 @@
               {
                 "lean": "H",
                 "math": "The subgroup $H$"
+              },
+              {
+                "lean": "hS : S = ⊤",
+                "math": "$S=\\Pi_1(X)$"
               }
             ]
           },
