@@ -125,8 +125,9 @@ In Proposition 1.2 choose intervals of length at most half the Lebesgue radius,
 matching Mathlib's subdivision helper. Do not claim that helper chooses spacing
 $1/N$. Introduce equal subdivisions $t_k=k/N$ in the gluing proof where needed.
 Natural numbers start at zero, and subdivisions are nondecreasing rather than
-strictly increasing. Retain conventions that affect meaning, including the
-nonemptiness of path-connected subsets.
+strictly increasing. State that the pairwise intersections are nonempty and
+path connected in Theorem 3.1, without a global nonemptiness convention.
+The common basepoint guarantees nonemptiness in the later two-set results.
 
 ## Proof tags and reading notes
 
