@@ -6,31 +6,17 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.4362, 0.883523, 0.433408, 0.017992]
+        "rect": [0.130391, 0.849747, 0.739217, 0.051768]
       },
       "title": "The two routes around one cell have the same value",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.4362, 0.883523, 0.869608, 0.883523, 0.869608, 0.901515, 0.4362, 0.901515]
+            [0.4362, 0.849747, 0.869608, 0.849747, 0.869608, 0.866161, 0.4362, 0.866161],
+            [0.130391, 0.866162, 0.869608, 0.866162, 0.869608, 0.883207, 0.130391, 0.883207],
+            [0.130391, 0.883207, 0.329196, 0.883207, 0.329196, 0.901515, 0.130391, 0.901515]
           ],
           "region": "proof-2.2-s07-cell@p002"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 3,
-        "rect": [0.130391, 0.104798, 0.739217, 0.035354]
-      },
-      "title": "The two routes around one cell have the same value",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "quads": [
-            [0.130391, 0.104798, 0.869608, 0.104798, 0.869608, 0.123422, 0.130391, 0.123422],
-            [0.130391, 0.123422, 0.329196, 0.123422, 0.329196, 0.140152, 0.130391, 0.140152]
-          ],
-          "region": "proof-2.2-s07-cell@p003"
         }
       }
     }
@@ -127,8 +113,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2, 3],
-        "printed": [2, 3]
+        "physical": [2],
+        "printed": [2]
       },
       "proof": {
         "kind": "chain",
