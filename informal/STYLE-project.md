@@ -275,13 +275,12 @@ Write the family-cover hypothesis as "the interiors of the $U_i$ cover $X$".
 This is equivalent to the neighborhood formulation in Lean and permits the later
 applications to subsets that need not be open.
 
-State Proposition 1.2 directly: every parameter $t$ has an open neighborhood
-$V$ in $[0,1]$ with $\gamma(V)\subseteq U_i$ for some $i$. Introduce the
-path as $\gamma:[0,1]\to X$ to make the roles of the two spaces explicit.
-Do not introduce a second indexed family $(V_i)$ in the statement. This is
-equivalent to the neighborhood hypothesis in Lean, and the preimage interiors
-form the open cover used in the proof. Do not assume that the $U_i$ themselves
-are open.
+State Proposition 1.2 using the condition applied in its proof: the interiors
+of the preimages $\gamma^{-1}(U_i)$ cover $[0,1]$. Introduce the path as
+$\gamma:[0,1]\to X$, so the interiors are understood in its domain.
+Do not introduce auxiliary neighborhoods $V$ or an indexed family $(V_i)$.
+This is equivalent to the neighborhood hypothesis in Lean. Do not assume
+that the $U_i$ themselves are open.
 
 Keep each proof excerpt's visible note to one short mathematical sentence.
 Put Lean helper names, tactic explanations and implementation asides in its
