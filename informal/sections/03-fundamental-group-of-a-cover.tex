@@ -9,12 +9,9 @@ Throughout,
 \fcnotion{IsPathConnected}{path-connected subsets} are understood to be
 nonempty.
 
-\begin{fcassumptions}
-Assume that \hypCoverFamily.
-
 \begin{theorem}[id=3.1]{Generation by subspace groups}
 \fcref{Theorem 1.20}
-Suppose that $x$ lies in every $U_i$ and that
+Suppose that \hypCoverFamily, that $x$ lies in every $U_i$, and that
 $U_{i} \cap U_{j}$ is path connected for all $i$ and $j$.  Then the
 \fcnotion{Subgroup}{subgroups}
 \fcnotion[Image subgroup]{MonoidHom.range}{$\im(\incl{U_i})_*$} generate $\fgrp{X}{x}$.
@@ -56,8 +53,6 @@ Hence
 \proofequation{3.1-s09-cancellation}{Cancel the basepoint transport}{  \omega=\tau_x^{-1}\ptrans T(\omega)\ptrans\tau_x\in H.}
 Thus $H=\fgrp{X}{x}$, as required.
 \end{proofpassage}
-
-\end{fcassumptions}
 
 \begin{corollary}[id=3.2]{Generation from two subspaces}
 Let $A,B\subseteq X$.  Suppose that \hypCoverTwo, that \hypPathConnected,

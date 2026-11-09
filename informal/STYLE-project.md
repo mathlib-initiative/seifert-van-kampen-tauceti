@@ -82,12 +82,12 @@ printed wording is defined in `notation.sty`:
 | `\hypPathConnected` | $A$, $B$, and $A\cap B$ are path connected |
 | `\hypBasepoint` | $x$ lies in $A$ and in $B$ |
 
-In Sections 2 and 3, place the family-cover assumption once in the opening
-prose of an `fcassumptions` block. In Section 2 it follows the introduction of
-the fundamental groupoid. End the block before unrelated results. The cover
-condition is equivalent to Lean's assertion that each point has some cover
-member as a neighborhood. State indexed basepoint and pairwise
-path-connectedness assumptions separately.
+In Section 2, place the family-cover assumption once in the opening prose
+of an `fcassumptions` block, after introducing the fundamental groupoid.
+In Section 3, put it directly in Theorem 3.1 alongside the basepoint and
+pairwise path-connectedness assumptions; it needs no separate standing
+paragraph. The cover condition is equivalent to Lean's assertion that each
+point has some cover member as a neighborhood.
 
 Keep mathematical hypotheses faithful to the declarations, recording deliberate
 specializations in `items.json`:
@@ -97,7 +97,7 @@ specializations in `items.json`:
   need not be open. Balls $B_K(z,\rho)$ are taken in $K$. Specialize TauCeti's
   pseudometric theorem to the space $K$ and its whole compact subset.
   Define “neighborhood cover” and “Lebesgue number” immediately after the lemma,
-  outside its statement. Reuse “neighborhood cover” in the later standing assumptions.
+  outside its statement. Reuse “neighborhood cover” in the later cover assumptions.
 - Proposition 1.2 uses a neighborhood cover of $X$. Continuity pulls it back
   to a neighborhood cover $c_i=\gamma^{-1}(U_i)$ of the interval. The Lean
   theorem needs the condition only along the path. Keep the `broadMatch`
