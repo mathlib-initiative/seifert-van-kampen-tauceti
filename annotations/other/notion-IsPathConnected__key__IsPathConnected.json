@@ -6,9 +6,9 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.820663, 0.171086, 0.048945, 0.017519]
+        "rect": [0.752636, 0.214804, 0.116973, 0.017519]
       },
-      "title": "path-connected subsets",
+      "title": "Nonempty and path connected",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:IsPathConnected@p004"
@@ -18,9 +18,9 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.130391, 0.188605, 0.143841, 0.018466]
+        "rect": [0.130391, 0.232323, 0.11892, 0.01673]
       },
-      "title": "path-connected subsets",
+      "title": "Nonempty and path connected",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:IsPathConnected@p004#2"

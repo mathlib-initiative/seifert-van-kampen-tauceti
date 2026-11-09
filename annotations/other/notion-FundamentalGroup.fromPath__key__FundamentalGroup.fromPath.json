@@ -6,9 +6,9 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.437766, 0.15404, 0.110104, 0.017045]
+        "rect": [0.739777, 0.15404, 0.093949, 0.017045]
       },
-      "title": "loop class at x",
+      "title": "loop classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:FundamentalGroup.fromPath@p004"
