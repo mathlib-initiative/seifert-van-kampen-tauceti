@@ -2,7 +2,8 @@ The proof uses the following standard lemma several times. TauCeti proves a
 more general version for pseudometric spaces, but this form will suffice.
 
 \begin{lemma}[id=1.1]{A Lebesgue number}
-Let $K\subseteq\R^n$ be compact and $(V_i)_{i\in I}$ an open cover of $K$.
+Let $K\subseteq\R^n$ be compact and $(V_i)_{i\in I}$ a \emph{neighborhood cover}
+of $K$: each point of $K$ has some $V_i\subseteq K$ as a neighborhood in $K$.
 There is a radius $\rho>0$ such that for every $z\in K$, some $V_i$
 contains $B_K(z,\rho)$, the ball of radius $\rho$ about $z$ in $K$.
 \leanref{TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds}
@@ -22,7 +23,7 @@ class, with \fcnotion[Composition of path classes]{Path.Homotopic.Quotient.trans
 denoted $\ptrans$.
 
 \begin{proposition}[id=1.2]{Subdividing a path}
-Consider a path $\gamma:\uI\longrightarrow X$ and an open cover
+Consider a path $\gamma:\uI\longrightarrow X$ and a neighborhood cover
 $(U_i)_{i\in I}$ of $X$.
 Then there is a finite nondecreasing
 sequence $0=t_0\le\cdots\le t_n=1$ in $\uI$ such
@@ -31,12 +32,12 @@ that each consecutive subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in some
 \end{proposition}
 
 \begin{proofpassage}{1.2-subdivide}{Proof}{Compactness}
-\proofstep{1.2-s01-cover}{Pull back the open cover}{By continuity, the preimages
-$c_i=\gamma^{-1}(U_i)$ form an open cover of $\uI$.}
+\proofstep{1.2-s01-cover}{Pull back the cover}{By continuity, the preimages
+$c_i=\gamma^{-1}(U_i)$ form a neighborhood cover of $\uI$.}
 \proofstep{1.2-s01-lebesgue}{Obtain a Lebesgue radius}{Since $\uI$ is compact, \itemref{1.1} gives a Lebesgue radius $\rho>0$.}
 \proofstep{1.2-s01-partition}{Choose a finite subdivision with sufficiently short intervals}{Choose a finite subdivision
 $0=t_0\le\cdots\le t_N=1$ with each interval of length at most $\rho/2$.}
-\proofstep{1.2-s01-segments}{Each interval lies in a member of the open cover}{Each interval $[t_k,t_{k+1}]$ lies in the ball $B_{\uI}(t_k,\rho)$
+\proofstep{1.2-s01-segments}{Each interval lies in a cover member}{Each interval $[t_k,t_{k+1}]$ lies in the ball $B_{\uI}(t_k,\rho)$
 in $\uI$, which is contained in some $c_i$.}
 \proofstep{1.2-s02-subpaths}{Pass from parameter intervals to subpaths}{Hence each
 subpath $\subpath{\gamma}{t_k}{t_{k+1}}$ has image in $U_i$.}

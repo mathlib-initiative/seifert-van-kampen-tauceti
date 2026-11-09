@@ -78,7 +78,7 @@ printed wording is defined in `notation.sty`:
 | Macro | Printed assumption |
 | --- | --- |
 | `\hypCoverTwo` | The interiors of $A$ and $B$ cover $X$ |
-| `\hypCoverFamily` | The interiors of the $U_i$ cover $X$ |
+| `\hypCoverFamily` | Each point of $X$ has some $U_i$ as a neighborhood |
 | `\hypPathConnected` | $A$, $B$, and $A\cap B$ are path connected |
 | `\hypBasepoint` | $x$ lies in $A$ and in $B$ |
 
@@ -92,19 +92,19 @@ path-connectedness assumptions separately.
 Keep mathematical hypotheses faithful to the declarations, recording deliberate
 specializations in `items.json`:
 
-- Lemma 1.1 uses an open cover of a compact Euclidean subspace $K$, with balls
-  $B_K(z,\rho)$ taken in $K$. Specialize TauCeti's pseudometric theorem to the
-  space $K$ and its whole compact subset. Define “Lebesgue number” immediately
-  after the lemma, outside its statement.
-- Proposition 1.2 uses a path $\gamma:[0,1]\to X$ and an open cover $(U_i)$ of
-  $X$. Its proof uses $c_i=\gamma^{-1}(U_i)$ and compactness of the interval.
-  Do not introduce auxiliary neighborhoods or an interior condition in this
-  statement. Lean uses interiors for its broader theorem; here they equal
-  the preimages.
-- Both specializations retain the `broadMatch` relation to their more general
-  Lean statements. Sections 2 and 3 keep the broader cover condition and
-  apply Proposition 1.2 to $(\operatorname{int} U_i)$.
-- For homotopies, pull that open cover back to the parameter square. Under the
+- Lemma 1.1 uses a neighborhood cover of a compact Euclidean subspace $K$:
+  each point of $K$ has some cover member as a neighborhood in $K$. The sets
+  need not be open. Balls $B_K(z,\rho)$ are taken in $K$. Specialize TauCeti's
+  pseudometric theorem to the space $K$ and its whole compact subset.
+  Define “Lebesgue number” immediately after the lemma, outside its statement.
+- Proposition 1.2 uses a neighborhood cover of $X$. Continuity pulls it back
+  to a neighborhood cover $c_i=\gamma^{-1}(U_i)$ of the interval. The Lean
+  theorem needs the condition only along the path. Keep the `broadMatch`
+  relation for this specialization and for Lemma 1.1.
+- Apply these results directly to the $U_i$ and their preimages. Lean takes
+  interiors internally when using Mathlib's open-cover helper; explain that
+  in the collapsible reading notes, rather than repeating it in the proof.
+- For homotopies, pull the cover back to the parameter square. Under the
   Euclidean metric choose the grid by cell diameter; Lean uses the equivalent
   maximum metric. Do not introduce ambient open extensions.
 

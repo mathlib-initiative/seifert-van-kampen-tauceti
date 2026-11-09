@@ -34,11 +34,11 @@
       "section": "1",
       "kind": "lemma",
       "title": "A Lebesgue number",
-      "gist": "For a compact subset K of Euclidean space and an open cover of K in its subspace topology, there is a positive radius such that every ball of that radius in K is contained in a single member of the cover.",
+      "gist": "For a compact subset K of Euclidean space and a neighborhood cover of K in its subspace topology, there is a positive radius such that every ball of that radius in K lies in a single cover member.",
       "parts": [],
       "in_v1": true,
       "reference": null,
-      "departures": "Specialize the linked pseudometric theorem to the metric subspace K, with s the whole of K and the family an open cover of K. Compactness of K supplies compactness of this whole space, and each open cover member is a neighborhood of its points. The balls are intrinsic to K, not ambient balls in Euclidean space. The applications need only K = [0,1] and K = [0,1]^2; they use open covers pulled back to those parameter spaces. The linked TauCeti neighborhood theorem is more general; the interval proof's Lebesgue-radius step links directly to Mathlib's open-cover lemma call.",
+      "departures": "Specialize the linked pseudometric theorem to the metric subspace K, with s the whole of K. The covering sets need not be open: every point must have some member as a neighborhood in K. Balls are taken in K. The applications use K = [0,1] and K = [0,1]^2 with covers pulled back by the path or homotopy. The interval helper takes interiors internally to invoke Mathlib's open-cover form; the proof-step notes record this implementation detail.",
       "declarations": [
         {
           "name": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds",
@@ -64,11 +64,11 @@
       "section": "1",
       "kind": "proposition",
       "title": "Subdividing a path",
-      "gist": "A path in a space with an open cover can be cut at finitely many nondecreasing parameters from zero to one so that each consecutive subpath lies in a single cover member.",
+      "gist": "A path in a space with a neighborhood cover can be cut at finitely many nondecreasing parameters from zero to one so that each consecutive subpath lies in one cover member.",
       "parts": [],
       "in_v1": true,
       "reference": null,
-      "departures": "Specialize the linked neighborhood-cover theorem to an open cover of X. Continuity makes the preimages an open cover of [0,1], hence supplies the Lean hypothesis hU. Their interiors equal the preimages. Later applications with non-open cover members use the open cover by their interiors, so all resulting subpaths still lie in the original members.",
+      "departures": "The printed statement assumes a neighborhood cover of X. Continuity makes the preimages a neighborhood cover of [0,1], supplying the Lean hypothesis hU. The linked theorem only needs this condition along the path. No openness assumption is needed.",
       "declarations": [
         {
           "name": "Path.exists_monotone_range_subpath_subset",

@@ -10,7 +10,7 @@
       "id": "1.2-s01-cover",
       "item": "1.2",
       "label": "Step",
-      "title": "Pull back the open cover",
+      "title": "Pull back the cover",
       "span": "inline",
       "targets": [
         {
@@ -20,7 +20,7 @@
             234
           ],
           "sha256": "67ae615cf4ca4dfe64cf9b522bc5b114a8e45e6ac36a6eff388f4672789beaba",
-          "title": "Pull back the open cover",
+          "title": "Pull back the cover",
           "role": "key",
           "context": {
             "declaration": "exists_monotone_range_subpath_subset",
@@ -29,10 +29,10 @@
               244
             ],
             "sha256": "55ca2a3a8af4a909d3b9863cee51a52ead520a4f9942d62ea07e29af894b72e2",
-            "conclusion": "Continuity pulls the open cover back to the interval.",
+            "conclusion": "Continuity pulls the neighborhood cover back to the interval.",
             "notation": [
               {
-                "math": "$c_i$",
+                "math": "$\\operatorname{int}(c_i)$",
                 "lean": "c"
               },
               {
@@ -40,7 +40,7 @@
                 "lean": "hU"
               }
             ],
-            "bookkeeping": "Lean allows a neighborhood cover and uses interiors of the preimages. For an open cover, these interiors equal the preimages; openness and continuity supply hU."
+            "bookkeeping": "Continuity supplies hU from the cover assumption. Lean takes interiors of the preimages to use Mathlib's open-cover subdivision helper; these interiors still cover the interval."
           }
         }
       ],
@@ -143,7 +143,7 @@
       "id": "1.2-s01-segments",
       "item": "1.2",
       "label": "Step",
-      "title": "Each interval lies in a member of the open cover",
+      "title": "Each interval lies in a cover member",
       "span": "inline",
       "targets": [
         {
@@ -277,7 +277,7 @@
               131
             ],
             "sha256": "e47f20978871cdd034e43736461b410652491cdaae7a78547117a14c309626b4",
-            "conclusion": "Subdivision for the open cover by the interiors gives path pieces in the original cover members."
+            "conclusion": "Subdivision gives path pieces lying in individual cover members."
           }
         }
       ],
@@ -520,7 +520,7 @@
       "item": "2.2",
       "label": "Step",
       "title": "Refining each interval preserves the composite",
-      "span": "inline",
+      "span": "display",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
