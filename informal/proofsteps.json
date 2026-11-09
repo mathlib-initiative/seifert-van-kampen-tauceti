@@ -853,7 +853,7 @@
               694
             ],
             "sha256": "df5de9f550449409d51dec643f3fc059632131c7ce6f827ff7aff40f163b1abe",
-            "conclusion": "Constant outer edges give identity arrows, reducing the pasted square to $L_N(\\gamma_j)=L_N(\\gamma_{j+1})$.",
+            "conclusion": "Constant outer edges give identity arrows, reducing the pasted square to $L_N(\\eta_j)=L_N(\\eta_{j+1})$.",
             "notation": [
               {
                 "math": "The pasted-square equation",

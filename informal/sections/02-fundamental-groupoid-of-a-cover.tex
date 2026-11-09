@@ -130,7 +130,7 @@ Applying $F_i$ gives
 
 The shared path $\mu$ lies in $U_i\cap U_j$, so
 \eqref{eq:gluing-compatibility} gives $F_i([\mu])=F_j([\mu])$.
-Write $\gamma_j(t)=H(j/N,t)$, so $\gamma_0=\gamma$ and $\gamma_N=\delta$.
+Write $\eta_j(t)=H(j/N,t)$, so $\eta_0=\gamma$ and $\eta_N=\delta$.
 Across a strip, replace the top and right sides of one cell by its left and
 bottom sides:
 \begin{center}
@@ -146,8 +146,8 @@ bottom sides:
     \end{scope}
   }
   \foreach \x in {3.7,8.1,12.5} {\node at (\x,0.5) {$\rightsquigarrow$};}
-  \node[above] at (1.5,1) {$\gamma_j$};
-  \node[below] at (14.7,0) {$\gamma_{j+1}$};
+  \node[above] at (1.5,1) {$\eta_j$};
+  \node[below] at (14.7,0) {$\eta_{j+1}$};
 \end{tikzpicture}
 \end{center}
 \proofstep{2.2-s08-paste}{Paste the commuting squares across one row}{By \eqref{eq:2.2-cell}, each replacement leaves the composite unchanged, so traversing
@@ -155,7 +155,7 @@ the top then the right side of the strip has the same value as traversing
 the left side then the bottom.}
 The two outer sides are constant paths, so their values are identities. Hence
 \proofequation{2.2-s09-boundary}{Fixed endpoints make the boundary arrows identities}{
-  L_N(\gamma_j)=L_N(\gamma_{j+1})\qquad(0\le j<N).
+  L_N(\eta_j)=L_N(\eta_{j+1})\qquad(0\le j<N).
 }
 By induction,
 \proofequation{2.2-s10-rows}{Repeat the row equality throughout the homotopy}{
