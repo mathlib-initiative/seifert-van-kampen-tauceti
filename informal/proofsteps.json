@@ -1288,7 +1288,7 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "Every local class lies in $S$, so groupoid generation gives $S=\\top$.",
+            "conclusion": "Every local class lies in $S$, so groupoid generation gives $S=\\Pi_1(X)$.",
             "notation": [
               {
                 "math": "The subgroupoid $S$",
@@ -1297,6 +1297,10 @@
               {
                 "math": "The subgroup $H$",
                 "lean": "H"
+              },
+              {
+                "math": "$S=\\Pi_1(X)$",
+                "lean": "hS : S = ⊤"
               }
             ],
             "bookkeeping": "`comp_comp_inv_mem_iSup_range` puts the local classes in $S$."
