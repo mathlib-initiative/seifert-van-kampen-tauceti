@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "f2287f4d80adb1daded2ea82ff9a5ec0b1b5c2c5",
- "pdf_sha256": "1b2f22d92420785b897d100cd2ba7d816de37ba54e15895b09c0220af04662e2",
+ "source_commit": "2af44f8ef9aaad25261e94579209d21b46b5d95f",
+ "pdf_sha256": "5ce2760e9febef1f4796bf9d23f78eb42fbdefc274de9204533ebb8cf8ab7097",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -367,11 +367,11 @@
   {
    "id": "notion:FundamentalGroup.fromPath",
    "notion": "FundamentalGroup.fromPath",
-   "words": "loop class at $x$",
+   "words": "loop classes",
    "label": "notion:14",
    "number": "n14",
    "boxes": [
-    [4, 0.437766, 0.15404, 0.110104, 0.017045]
+    [4, 0.687459, 0.15404, 0.091823, 0.017045]
    ]
   },
   {
@@ -381,7 +381,7 @@
    "label": "notion:15",
    "number": "n15",
    "boxes": [
-    [4, 0.354014, 0.171086, 0.122556, 0.017519]
+    [4, 0.399042, 0.171086, 0.122556, 0.017519]
    ]
   },
   {
@@ -392,7 +392,7 @@
    "number": "n16",
    "title": "Induced homomorphism $f_*$",
    "boxes": [
-    [4, 0.480312, 0.171086, 0.224828, 0.017519]
+    [4, 0.525605, 0.171086, 0.226591, 0.017519]
    ]
   },
   {
@@ -402,8 +402,7 @@
    "label": "notion:17",
    "number": "n17",
    "boxes": [
-    [4, 0.820663, 0.171086, 0.048945, 0.017519],
-    [4, 0.130391, 0.188605, 0.143841, 0.018466]
+    [4, 0.132842, 0.188605, 0.182982, 0.018466]
    ]
   },
   {
