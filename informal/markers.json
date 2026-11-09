@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "043abf233365e94fce2dc8d23627a7764e10a40c",
- "pdf_sha256": "aaa52162be456da4b7a95cf50db32493fd13cc11790dbd69f8a41fb8bf4ca8a3",
+ "source_commit": "f2287f4d80adb1daded2ea82ff9a5ec0b1b5c2c5",
+ "pdf_sha256": "1b2f22d92420785b897d100cd2ba7d816de37ba54e15895b09c0220af04662e2",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -103,22 +103,7 @@
     "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
    ],
    "boxes": [
-    [4, 0.130391, 0.212753, 0.739217, 0.072917]
-   ]
-  },
-  {
-   "id": "3.2",
-   "kind": "corollary",
-   "label": "item:3.2",
-   "number": "3.2",
-   "section": "3",
-   "title": "Generation from two subspaces",
-   "parts": [],
-   "decls": [
-    "TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top"
-   ],
-   "boxes": [
-    [4, 0.130391, 0.712121, 0.739217, 0.055556]
+    [4, 0.130391, 0.210859, 0.739217, 0.072917]
    ]
   },
   {
@@ -133,7 +118,7 @@
     "TauCeti.Groupoid.singleObjFunctor"
    ],
    "boxes": [
-    [4, 0.130391, 0.863952, 0.739217, 0.03851]
+    [4, 0.130391, 0.785985, 0.739217, 0.037721]
    ]
   },
   {
@@ -149,7 +134,7 @@
     "TauCeti.Groupoid.functorOfEndHom_map"
    ],
    "boxes": [
-    [5, 0.130391, 0.104167, 0.739217, 0.075758]
+    [4, 0.130391, 0.828756, 0.739217, 0.074968]
    ]
   },
   {
@@ -164,7 +149,7 @@
     "TauCeti.vanKampenDesc"
    ],
    "boxes": [
-    [5, 0.130391, 0.185606, 0.739217, 0.134785]
+    [5, 0.130391, 0.104167, 0.739217, 0.13447]
    ]
   },
   {
@@ -180,7 +165,7 @@
    ],
    "decls": [],
    "boxes": [
-    [5, 0.130391, 0.570707, 0.739217, 0.107008]
+    [5, 0.130391, 0.488952, 0.739217, 0.107008]
    ]
   },
   {
@@ -194,7 +179,7 @@
     "TauCeti.vanKampenDesc_comp_map_left"
    ],
    "boxes": [
-    [5, 0.130391, 0.641256, 0.739217, 0.017203]
+    [5, 0.130391, 0.559501, 0.739217, 0.017203]
    ]
   },
   {
@@ -208,7 +193,7 @@
     "TauCeti.vanKampenDesc_comp_map_right"
    ],
    "boxes": [
-    [5, 0.130391, 0.65846, 0.739217, 0.019255]
+    [5, 0.130391, 0.576705, 0.739217, 0.019255]
    ]
   },
   {
@@ -223,7 +208,7 @@
     "TauCeti.vanKampen_hom_ext"
    ],
    "boxes": [
-    [6, 0.130391, 0.104167, 0.739298, 0.072601]
+    [5, 0.130391, 0.798295, 0.739298, 0.072601]
    ]
   },
   {
@@ -238,7 +223,7 @@
     "TauCeti.isPushout_fundamentalGroup"
    ],
    "boxes": [
-    [6, 0.130391, 0.378157, 0.739217, 0.136995]
+    [6, 0.130391, 0.317866, 0.739217, 0.151199]
    ]
   },
   {
@@ -428,78 +413,67 @@
    "label": "notion:18",
    "number": "n18",
    "boxes": [
-    [4, 0.363677, 0.249684, 0.069654, 0.01673]
-   ]
-  },
-  {
-   "id": "notion:MonoidHom.range",
-   "notion": "MonoidHom.range",
-   "words": "$\\im(\\incl{A})_*$",
-   "label": "notion:19",
-   "number": "n19",
-   "title": "Image subgroup",
-   "boxes": [
-    [4, 0.179306, 0.748106, 0.061473, 0.019571]
+    [4, 0.363677, 0.24779, 0.069654, 0.01673]
    ]
   },
   {
    "id": "notion:CategoryTheory.Category",
    "notion": "CategoryTheory.Category",
    "words": "category",
-   "label": "notion:20",
-   "number": "n20",
+   "label": "notion:19",
+   "number": "n19",
    "boxes": [
-    [4, 0.222167, 0.820076, 0.068498, 0.019571]
+    [4, 0.222167, 0.743687, 0.068498, 0.019729]
    ]
   },
   {
    "id": "notion:CategoryTheory.End",
    "notion": "CategoryTheory.End",
    "words": "$\\End(w)$",
-   "label": "notion:21",
-   "number": "n21",
+   "label": "notion:20",
+   "number": "n20",
    "boxes": [
-    [4, 0.525614, 0.820076, 0.061493, 0.019571]
+    [4, 0.525614, 0.743687, 0.061493, 0.019729]
    ]
   },
   {
    "id": "notion:CategoryTheory.SingleObj",
    "notion": "CategoryTheory.SingleObj",
    "words": "$\\sobj{M}$",
-   "label": "notion:22",
-   "number": "n22",
+   "label": "notion:21",
+   "number": "n21",
    "boxes": [
-    [4, 0.132842, 0.839646, 0.034561, 0.018308]
+    [4, 0.132842, 0.763415, 0.034561, 0.018466]
    ]
   },
   {
    "id": "notion:Monoid",
    "notion": "Monoid",
    "words": "monoid",
-   "label": "notion:23",
-   "number": "n23",
+   "label": "notion:22",
+   "number": "n22",
    "boxes": [
-    [4, 0.508388, 0.839646, 0.059887, 0.018308]
+    [4, 0.508388, 0.763415, 0.059887, 0.018466]
    ]
   },
   {
    "id": "notion:CategoryTheory.IsPushout",
    "notion": "CategoryTheory.IsPushout",
    "words": "pushout",
-   "label": "notion:24",
-   "number": "n24",
+   "label": "notion:23",
+   "number": "n23",
    "boxes": [
-    [6, 0.582454, 0.494949, 0.06335, 0.020202]
+    [6, 0.582454, 0.448864, 0.06335, 0.020202]
    ]
   },
   {
    "id": "notion:GrpCat",
    "notion": "GrpCat",
    "words": "category of groups",
-   "label": "notion:25",
-   "number": "n25",
+   "label": "notion:24",
+   "number": "n24",
    "boxes": [
-    [6, 0.701205, 0.494949, 0.143431, 0.020202]
+    [6, 0.701205, 0.448864, 0.143431, 0.020202]
    ]
   }
  ]
