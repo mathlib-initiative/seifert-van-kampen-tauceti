@@ -5,25 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.820663, 0.803662, 0.048945, 0.017835]
+        "page": 4,
+        "rect": [0.236872, 0.205808, 0.182982, 0.016414]
       },
       "title": "path-connected subsets",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:IsPathConnected@p003"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 3,
-        "rect": [0.130391, 0.821496, 0.143841, 0.018466]
-      },
-      "title": "path-connected subsets",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:IsPathConnected@p003#2"
+          "region": "notion:IsPathConnected@p004"
         }
       }
     }
@@ -55,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }

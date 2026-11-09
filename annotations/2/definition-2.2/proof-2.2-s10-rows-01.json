@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 3,
-        "rect": [0.300466, 0.47822, 0.399068, 0.02135]
+        "rect": [0.300466, 0.645423, 0.399068, 0.02135]
       },
       "title": "Repeat the row equality throughout the homotopy",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.300466, 0.47822, 0.699534, 0.47822, 0.699534, 0.49957, 0.300466, 0.49957]
+            [0.300466, 0.645423, 0.699534, 0.645423, 0.699534, 0.666773, 0.300466, 0.666773]
           ],
           "region": "proof-2.2-s10-rows@p003"
         }

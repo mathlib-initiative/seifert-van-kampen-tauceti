@@ -5,25 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.78543, 0.769886, 0.084178, 0.017203]
+        "page": 4,
+        "rect": [0.274093, 0.171244, 0.116096, 0.01673]
       },
       "title": "loop class at x",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroup.fromPath@p003"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 3,
-        "rect": [0.130391, 0.78709, 0.037904, 0.016572]
-      },
-      "title": "loop class at x",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroup.fromPath@p003#2"
+          "region": "notion:FundamentalGroup.fromPath@p004"
         }
       }
     }
@@ -55,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }
