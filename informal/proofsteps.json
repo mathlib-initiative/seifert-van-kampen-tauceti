@@ -1718,7 +1718,8 @@
               342
             ],
             "sha256": "09567fdc7b4ea02c6f2fafa17bd851c3d2cd6c7a2039c536c74f4a838a56f451",
-            "conclusion": "Generation makes the equalizer the whole group, so the homomorphisms agree everywhere."
+            "conclusion": "Generation makes the equalizer the whole group, so the homomorphisms agree everywhere.",
+            "bookkeeping": "`range_map_subtypeVal_sup_eq_top` applies Theorem 3.1 to the two-set cover $\\{A,B\\}$."
           }
         }
       ],

@@ -31,7 +31,9 @@ The sections advance the argument in this order:
 Give actual proofs or concise proof sketches: constructions, equations, and
 the deduction of the conclusion. A description of the intended strategy is
 not a proof. Use earlier numbered results explicitly, without restating their
-immediate special cases as new definitions or propositions.
+immediate special cases as new definitions or propositions. Apply Theorem 3.1
+directly to the two-set cover in the uniqueness proof; its specialization
+needs no separate numbered corollary.
 
 ## Notation
 

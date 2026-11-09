@@ -483,37 +483,6 @@
       ]
     },
     {
-      "id": "3.2",
-      "section": "3",
-      "kind": "corollary",
-      "title": "Generation from two subspaces",
-      "gist": "If the interiors of two subsets cover the space, the two subsets and their intersection are path connected, and both subsets contain the basepoint, then the images of the two fundamental groups generate the fundamental group of the space.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "The two subsets need not be open: only their interiors have to cover the space.",
-      "declarations": [
-        {
-          "name": "TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top",
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
-          "line": 185,
-          "part": null,
-          "role": "key",
-          "relation": "exactMatch",
-          "junk": [],
-          "hypotheses": [
-            "a topological space",
-            "a basepoint in the space",
-            "two subsets of the space",
-            "the interiors of the two subsets cover the space",
-            "each of the two subsets is path connected",
-            "the intersection of the two subsets is path connected",
-            "each of the two subsets contains the basepoint"
-          ]
-        }
-      ]
-    },
-    {
       "id": "4.1",
       "section": "4",
       "kind": "definition",
