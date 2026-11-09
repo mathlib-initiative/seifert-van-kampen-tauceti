@@ -2,17 +2,17 @@
   "status": "formalized",
   "subject": {
     "type": "pdf",
-    "uri": "https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v25/svk-tauceti.pdf",
-    "sha256": "28cf2e7898b755617ceb2f3dcd8a02f61e0fb2617524e287d3ea120ba3c6c6ac",
+    "uri": "https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v26/svk-tauceti.pdf",
+    "sha256": "6d3081f8f32faf8ade0679432d0534ad271024fc14479d4ef933bcee76edeae0",
     "citation": {
       "type": "book",
-      "URL": "https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v25/svk-tauceti.pdf",
+      "URL": "https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v26/svk-tauceti.pdf",
       "id": "svk-tauceti",
       "title": "The Seifert–van Kampen theorem, after TauCeti"
     },
     "extensions": {
       "org.mathlib-initiative.formal-companion.overlay": {
-        "bytes": 342047,
+        "bytes": 342142,
         "physical_page_count": 6,
         "source_id": "svk-tauceti"
       }

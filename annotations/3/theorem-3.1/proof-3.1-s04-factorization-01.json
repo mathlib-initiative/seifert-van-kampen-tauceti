@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.328374, 0.381356, 0.343251, 0.048245]
+        "rect": [0.328374, 0.378389, 0.343251, 0.056882]
       },
       "title": "Factor the transported loop into three local loops",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.328374, 0.381356, 0.671625, 0.381356, 0.671625, 0.429601, 0.328374, 0.429601]
+            [0.328374, 0.378389, 0.671625, 0.378389, 0.671625, 0.435271, 0.328374, 0.435271]
           ],
           "region": "proof-3.1-s04-factorization@p004"
         }
