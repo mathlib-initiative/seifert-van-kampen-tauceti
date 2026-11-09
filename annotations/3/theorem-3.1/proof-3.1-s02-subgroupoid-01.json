@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.132842, 0.443497, 0.369433, 0.021149]
+        "rect": [0.132842, 0.45202, 0.369433, 0.021307]
       },
       "title": "The transported classes define a subgroupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.132842, 0.443497, 0.502275, 0.443497, 0.502275, 0.464646, 0.132842, 0.464646]
+            [0.132842, 0.45202, 0.502275, 0.45202, 0.502275, 0.473327, 0.132842, 0.473327]
           ],
           "region": "proof-3.1-s02-subgroupoid@p004"
         }
