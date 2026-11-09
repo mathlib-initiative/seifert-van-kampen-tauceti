@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.139457, 0.403725, 0.419897, 0.018624]
+        "rect": [0.493027, 0.410827, 0.063327, 0.017519]
       },
-      "title": "The middle loop lies in the generated subgroup",
+      "title": "The middle loop lies in $U_i$",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.139457, 0.403725, 0.559354, 0.403725, 0.559354, 0.422349, 0.139457, 0.422349]
+            [0.493027, 0.410827, 0.556354, 0.410827, 0.556354, 0.428346, 0.493027, 0.428346]
           ],
           "region": "proof-3.1-s05-middle@p004"
         }
@@ -28,7 +28,7 @@
         "lines": [109, 115],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
       },
-      "title": "The middle loop lies in the generated subgroup",
+      "title": "The middle loop lies in $U_i$",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
@@ -42,8 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`fromPath_mem_iSup_range` puts the class of this local loop in $H$.",
-            "conclusion": "The middle loop lies in $U_i$, so its class belongs to $H$.",
+            "bookkeeping": "Lean represents the middle loop in $U_i$, then uses `fromPath_mem_iSup_range` to put its class in $H$.",
+            "conclusion": "The middle loop lies in $U_i$.",
             "declaration": "comp_comp_inv_mem_iSup_range",
             "lines": [87, 119]
           },

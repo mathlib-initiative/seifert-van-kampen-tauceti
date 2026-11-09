@@ -6,14 +6,14 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.130391, 0.295455, 0.739218, 0.035038]
+        "rect": [0.130391, 0.298927, 0.739218, 0.035038]
       },
-      "title": "The transported classes define a subgroupoid",
+      "title": "$S$ is a subgroupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.77457, 0.295455, 0.869609, 0.295455, 0.869609, 0.312027, 0.77457, 0.312027],
-            [0.130391, 0.312027, 0.413569, 0.312027, 0.413569, 0.330493, 0.130391, 0.330493]
+            [0.77457, 0.298927, 0.869609, 0.298927, 0.869609, 0.315499, 0.77457, 0.315499],
+            [0.130391, 0.315499, 0.413569, 0.315499, 0.413569, 0.333965, 0.130391, 0.333965]
           ],
           "region": "proof-3.1-s02-subgroupoid@p004"
         }
@@ -29,7 +29,7 @@
         "lines": [144, 157],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
       },
-      "title": "The transported classes define a subgroupoid",
+      "title": "$S$ is a subgroupoid",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
@@ -44,7 +44,7 @@
           },
           "proof_context": {
             "bookkeeping": "Lean constructs `S` directly from the predicate $T(\\omega)\\in H$. `End.of` converts a basepoint endomorphism to a group element; `f ≫ g` corresponds to `g * f`.",
-            "conclusion": "$S=T^{-1}(H)$ is closed under inverses and composition.",
+            "conclusion": "$S$ is a subgroupoid.",
             "declaration": "iSup_range_map_subtypeVal_eq_top",
             "lines": [126, 179]
           },
