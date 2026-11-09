@@ -154,14 +154,17 @@ its common value $L(\gamma)$. Say which composite is unchanged under refinement.
 Compare sufficiently large $N$ and $N_0$ through the common refinement with
 $NN_0$ pieces. Refer to the compatibility square by a proper star.
 
-For homotopy invariance, write $\gamma_j(t)=H(j/N,t)$. Show the parameter grid,
-its image under $H$, and a magnified cell. Make clear that
-$\alpha,\mu,\beta,\lambda$ are paths in $U_i\subseteq X$, not in the parameter
-square. Identify the shared-edge equality explicitly.
+For homotopy invariance, write $\gamma_j(t)=H(j/N,t)$. Show two neighboring
+cells in the parameter grid and their images under $H$, with a single labelled
+shared edge. Make clear that the edge labels denote paths in $X$, not in the
+parameter square. Identify the shared-edge equality explicitly.
 
 Illustrate passage across a row by successive routes, replacing the top and
 right sides of one cell by its left and bottom sides. Each replacement
-preserves the composite; the constant outer sides give identities.
+preserves the composite; cite the numbered equality that justifies it, rather
+than inventing a name such as “the cell equation”. An optional label on
+`\proofequation` numbers the display for use with `\eqref`.
+The constant outer sides give identities.
 Use equations to obtain $L_N(\gamma_j)=L_N(\gamma_{j+1})$ and then
 $L(\gamma)=L(\delta)$. Avoid vague descriptions such as “the squares fit together”
 and omit routine metric bookkeeping. Link the cell relation, row argument, and

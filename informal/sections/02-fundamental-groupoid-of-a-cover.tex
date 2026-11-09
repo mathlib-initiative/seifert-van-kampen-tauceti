@@ -90,14 +90,14 @@ $(H^{-1}(U_i))_{i\in I}$ of $\uI^2$ to choose an $N\times N$ grid
 with each cell mapped by $H$ into some $U_i$.}
 We have $H(0,\cdot)=\gamma$, $H(1,\cdot)=\delta$,
 $H(\cdot,0)\equiv y$ and $H(\cdot,1)\equiv z$.
-Here
-$\alpha,\mu,\beta,\lambda$ are paths in $U_i\subseteq X$, obtained by
-applying $H$ to the four edges of the highlighted cell in $\uI^2$.
+The labelled edges on the right are paths in $X$, obtained by applying $H$
+to the two highlighted cells.
 \begin{center}
-\begin{tikzpicture}[x=1.10cm,y=0.70cm,>=stealth,font=\small]
-  \fill[blue!6] (0,1) rectangle (3,2);
-  \fill[blue!16] (2,1) rectangle (3,2);
+\begin{tikzpicture}[x=1cm,y=0.70cm,>=stealth,font=\small]
+  \fill[blue!12] (1,1) rectangle (2,2);
+  \fill[orange!16] (2,1) rectangle (3,2);
   \draw[gray!60,step=1] (0,0) grid (3,3);
+  \draw[violet!80!black,very thick] (2,1) -- (2,2);
   \draw[thick,->] (0,3) -- (1.65,3);
   \draw[thick] (1.65,3) -- (3,3);
   \draw[thick,->] (0,0) -- (1.65,0);
@@ -107,31 +107,32 @@ applying $H$ to the four edges of the highlighted cell in $\uI^2$.
   \node[left] at (0,1.5) {$y$};
   \node[right] at (3,1.5) {$z$};
   \draw[->,thick] (3.55,1.7) -- node[above] {$H$} (4.65,1.7);
-  \node at (6.15,-0.9) {Paths in $U_i\subseteq X$};
-  \fill[blue!6] (5.15,0.7) rectangle (7.15,2.7);
-  \draw[blue!70!black,very thick,->] (5.15,2.7) -- node[above] {$\alpha$} (7.15,2.7);
-  \draw[blue!70!black,very thick,->] (7.15,2.7) -- node[right] {$\mu$} (7.15,0.7);
-  \draw[orange!70!black,very thick,dashed,->] (5.15,2.7) -- node[left] {$\lambda$} (5.15,0.7);
-  \draw[orange!70!black,very thick,dashed,->] (5.15,0.7) -- node[below] {$\beta$} (7.15,0.7);
-  \node at (6.15,1.7) {$U_i$};
+  \fill[blue!12] (5.15,0.7) rectangle (6.85,2.7);
+  \fill[orange!16] (6.85,0.7) rectangle (8.55,2.7);
+  \draw[blue!70!black,thick,->] (5.15,2.7) -- node[above] {$\alpha$} (6.85,2.7);
+  \draw[blue!70!black,thick,->] (5.15,2.7) -- node[left] {$\lambda$} (5.15,0.7);
+  \draw[blue!70!black,thick,->] (5.15,0.7) -- node[below] {$\beta$} (6.85,0.7);
+  \draw[orange!70!black,thick,->] (6.85,2.7) -- node[above] {$\alpha'$} (8.55,2.7);
+  \draw[orange!70!black,thick,->] (8.55,2.7) -- node[right] {$\nu$} (8.55,0.7);
+  \draw[orange!70!black,thick,->] (6.85,0.7) -- node[below] {$\beta'$} (8.55,0.7);
+  \draw[violet!80!black,very thick,->] (6.85,2.7) -- node[right] {$\mu$} (6.85,0.7);
+  \node at (6,1.7) {$U_i$};
+  \node at (7.85,1.7) {$U_j$};
 \end{tikzpicture}
 \end{center}
 The paths $\alpha\ptrans\mu$ and $\lambda\ptrans\beta$ are homotopic in $U_i$,
 since they are the images under $H$ of homotopic paths in the cell.
 Applying $F_i$ gives
-\proofequation{2.2-s07-cell}{The two routes around one cell have the same value}{
+\proofequation[eq:2.2-cell]{2.2-s07-cell}{The two routes around one cell have the same value}{
   F_i([\mu])\circ F_i([\alpha])
     =F_i([\beta])\circ F_i([\lambda]).
 }
 
-For two cells lying side by side and mapping into $U_i$ and $U_j$, the
-right-edge path $\mu$ of the left cell is the left-edge path $\lambda$ of
-the right cell. This shared path lies in $U_i\cap U_j$, so
-\eqref{eq:gluing-compatibility} gives $F_i([\mu])=F_j([\lambda])$.
+The shared path $\mu$ lies in $U_i\cap U_j$, so
+\eqref{eq:gluing-compatibility} gives $F_i([\mu])=F_j([\mu])$.
 Write $\gamma_j(t)=H(j/N,t)$, so $\gamma_0=\gamma$ and $\gamma_N=\delta$.
 Across a strip, replace the top and right sides of one cell by its left and
-bottom sides. Here is the sequence for a strip of three cells; each blue
-route runs from the upper-left corner to the lower-right corner:
+bottom sides:
 \begin{center}
 \begin{tikzpicture}[x=0.67cm,y=0.85cm,>=stealth,font=\small]
   \foreach \offset/\turn in {0/3,4.4/2,8.8/1,13.2/0} {
@@ -149,7 +150,7 @@ route runs from the upper-left corner to the lower-right corner:
   \node[below] at (14.7,0) {$\gamma_{j+1}$};
 \end{tikzpicture}
 \end{center}
-\proofstep{2.2-s08-paste}{Paste the commuting squares across one row}{Each replacement preserves the composite by the cell equation, so traversing
+\proofstep{2.2-s08-paste}{Paste the commuting squares across one row}{By \eqref{eq:2.2-cell}, each replacement leaves the composite unchanged, so traversing
 the top then the right side of the strip has the same value as traversing
 the left side then the bottom.}
 The two outer sides are constant paths, so their values are identities. Hence

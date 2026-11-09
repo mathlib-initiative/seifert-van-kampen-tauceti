@@ -24,10 +24,16 @@
 % Measure exactly one displayed equation, including tall fractions/aligned rows.
 % Its own dimensions bound the link; the surrounding proof is never measured.
 \newsavebox{\svk@equation}
-\newcommand{\proofequation}[3]{%
-  \begingroup\svk@record{#1}{display}{#2}%
-  \sbox{\svk@equation}{$\displaystyle #3$}%
-  \fc@auxwrite{\string\svk@auxmath{#1}{\number\wd\svk@equation}{\number\ht\svk@equation}{\number\dp\svk@equation}}%
-  \[\hbox{\fc@savepos{fc:proof:#1:start}\usebox{\svk@equation}\fc@savepos{fc:proof:#1:end}}\]%
+% An optional label numbers a cited equation without enlarging its annotation.
+\newcommand{\proofequation}[4][]{%
+  \begingroup\svk@record{#2}{display}{#3}%
+  \sbox{\svk@equation}{$\displaystyle #4$}%
+  \fc@auxwrite{\string\svk@auxmath{#2}{\number\wd\svk@equation}{\number\ht\svk@equation}{\number\dp\svk@equation}}%
+  \def\svk@display{\hbox{\fc@savepos{fc:proof:#2:start}\usebox{\svk@equation}\fc@savepos{fc:proof:#2:end}}}%
+  \if\relax\detokenize{#1}\relax
+    \[\svk@display\]%
+  \else
+    \begin{equation}\label{#1}\svk@display\end{equation}%
+  \fi
   \endgroup}
 \makeatother
