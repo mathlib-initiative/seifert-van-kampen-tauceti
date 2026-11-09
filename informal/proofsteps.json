@@ -1062,7 +1062,13 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "Each cover member is path connected by the intersection hypothesis, so choose $\\tau_c:x\\to c$ inside it."
+            "conclusion": "Each cover member is path connected by the intersection hypothesis, so choose $\\tau_c:x\\to c$ inside it.",
+            "notation": [
+              {
+                "math": "$U_c$",
+                "lean": "U (i₀ c.as)"
+              }
+            ]
           }
         }
       ],
@@ -1138,8 +1144,8 @@
                 "lean": "σa, σb"
               },
               {
-                "math": "$i_0(c),i,i_0(d)$",
-                "lean": "j, i, k"
+                "math": "$U_c,U_i,U_d$",
+                "lean": "U j, U i, U k"
               }
             ]
           }
