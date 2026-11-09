@@ -140,12 +140,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "8248a70b7dd98b03d1bc40be9ff0598efd3869dae25b2ae068613a06e77a337d"
+      "sha256": "b231f1bcbd5125be27193185e941f2fbc38c209f6774ceb5ba42ec419c799c9a"
     },
     "count": 90,
     "directory": "annotations",
     "export": {
-      "commit": "8c3752c39664d03bdad3af35266943c8fc240273",
+      "commit": "384909c49558de3615da21ac9910904ef65f398d",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -177,11 +177,11 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "3469fa5ea3951df7edea4c60ee45916e8d8fa3c7e70dfdfa0510e181ec87ce64"
+        "sha256": "c2ca1e7801fe2234e84d6486a33b2246bdbae34d73f717bf1fc13fdfe743bf59"
       },
       {
         "path": "informal/notation.sty",
-        "sha256": "39d77c8ff4d2bfef9996a23ebd0fb8905f699b13d3249243d9127f4c5a6931e5"
+        "sha256": "9fd38beb815e905ca8de90f2470486dcb4a0697fe9b993bb1b87915cdabe4d1d"
       },
       {
         "path": "informal/proofsteps.json",
@@ -201,15 +201,15 @@
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "7c1f661849c17aa45c3cc8027daba244d57f15182fa37802409be014c3d5d988"
+        "sha256": "fb3f346257db6c861b0eaa3f99f5256c33dfab21f48768a439ef12ac32654362"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
-        "sha256": "48b9a8af0ea897552c34296e22b4b2f24061fff45bd6f8d3550628b2647b4128"
+        "sha256": "79dd802c9a6001f4235817492061cb79474dfdce582a81d4e4fa24d9e7bdc3f5"
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
-        "sha256": "7c7662aac4de9e6090970bcde3dcead1a451b9a8129799af260218b5e330ca3f"
+        "sha256": "0267280dd041263f8d5fa92219b8851002d09620faf6e60699874818f97a9dc8"
       },
       {
         "path": "tools/mathlib_hovers.py",
@@ -220,6 +220,6 @@
         "sha256": "f9ca13a2cc00bece7edc7ebf80669015eac99203952eef4cffacb3b239c27cba"
       }
     ],
-    "manifest_sha256": "b704e49128cdb56b510cbd16a65997bd3ccf26a3f9df32d956357ef0b272610c"
+    "manifest_sha256": "4e7078eeb536577e135565c586e646afba2ee713b90366d180908fd5fa7a9ab7"
   }
 }
