@@ -7,7 +7,7 @@ import tempfile
 import subprocess
 import unittest
 
-spec = importlib.util.spec_from_file_location('proof_steps', Path(__file__).with_name('proof_steps.py'))
+spec = importlib.util.spec_from_file_location('proof_steps', Path(__file__).resolve().parents[1] / 'tools' / 'proof_steps.py')
 proof_steps = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(proof_steps)
 

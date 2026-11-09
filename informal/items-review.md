@@ -1,92 +1,57 @@
-# The item table, for the maintainer
+# Mathematical scope and review notes
 
-The source inventory records the dependency closure of `TauCeti.isPushout_fundamentalGroup` at commit
-`37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`: 32 scope members, 16 selected items in 5 sections, 20 of
-the members as key declarations and 12 as helpers. The ids are provisional and contiguous
-within each section, in reading order.
+The current item numbers, titles, declarations, and specializations live in
+[items.json](items.json). The source inventory in
+[declarations.json](declarations.json) is pinned to the dependency closure of
+`TauCeti.isPushout_fundamentalGroup`. This note explains the editorial choices
+rather than maintaining a second copy of the item table.
 
-The five sections run from path subdivision, through functors out of a connected
-groupoid, to gluing over a cover, generation of the fundamental group, and the
-based theorem. Fundamental groupoids and groups are introduced in the sections
-that use them.
+## Structure
 
-## Items
+| Section | Role in the proof |
+| --- | --- |
+| 1. Paths and subdivisions | A Lebesgue number, path subdivision, and reassembly of subpath classes |
+| 2. Gluing fundamental groupoids | Generation by a cover and the unique extension of compatible local functors |
+| 3. Fundamental groups of a cover | Generation by subspace groups, using connecting paths and basepoint transport |
+| 4. Seifert–van Kampen | Vertex-group functors, descent, restriction and uniqueness, and the pushout |
 
-| id | kind | title | key declarations | reference | source | departures |
-|---|---|---|---|---|---|---|
-| 1.1 | lemma | A Lebesgue number for a family of neighborhoods | `TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds` | — | — | the members of the family need not be open, only neighborhoods of the points they cover |
-| 1.2 | proposition | Subdividing a path along a family of sets | `Path.exists_monotone_range_subpath_subset` | — | — | — |
-| 1.3 | lemma | Cutting a path class at an intermediate parameter | `Path.Homotopic.Quotient.subpath_cast_trans` | — | — | — |
-| 2.1 | definition | The functor picking out a chosen object | `TauCeti.Groupoid.singleObjFunctor` | — | — | — |
-| 2.2 | definition | The functor induced by a homomorphism out of a vertex group | `TauCeti.Groupoid.functorOfEndHom` | — | — | — |
-| 3.1 | theorem | Covers generate the fundamental groupoid | `TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top` | Theorem 1.20 | module docstring | the members need not be open and nothing is assumed connected |
-| 3.2 | definition | Gluing functors out of fundamental groupoids | `TauCeti.FundamentalGroupoid.glue` | Theorem 1.20 | module docstring | the target is an arbitrary category; the members need not be open and nothing is assumed connected |
-| 3.3 | proposition | The glued functor restricts to the given functors | `TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue` | — | — | — |
-| 3.4 | definition | Gluing two functors out of fundamental groupoids | `TauCeti.FundamentalGroupoid.glueTwo` | — | — | the two subsets need not be open, only their interiors cover; nothing is assumed connected |
-| 3.5 | proposition | The functor glued from two restricts to each of them | (a) `TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_left`; (b) `TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right` | — | — | — |
-| 4.1 | theorem | Covers generate the fundamental group | `TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top` | Theorem 1.20 | module docstring | the members need not be open; every intersection of two members is path connected, which for a member with itself is the member |
-| 4.2 | corollary | Two sets generate the fundamental group | `TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top` | — | — | the two subsets need not be open, only their interiors cover |
-| 5.1 | definition | The homomorphism out of the fundamental group of the space | `TauCeti.vanKampenDesc` | — | — | the target is only a monoid; the two subsets need not be open |
-| 5.2 | proposition | The induced homomorphism restricts to the given ones | (a) `TauCeti.vanKampenDesc_map_left`, `TauCeti.vanKampenDesc_comp_map_left`; (b) `TauCeti.vanKampenDesc_map_right`, `TauCeti.vanKampenDesc_comp_map_right` | — | — | each equality is stated both element by element and as an equality of homomorphisms |
-| 5.3 | proposition | Uniqueness of the induced homomorphism | `TauCeti.vanKampen_hom_ext` | — | — | the target is only a monoid; the two subsets need not be open |
-| 5.4 | theorem | The based Seifert--van Kampen theorem | `TauCeti.isPushout_fundamentalGroup` | Theorem 1.20 | module docstring | the two subsets need not be open; the basepoint of the intersection is the basepoint of the space |
+## Specializations and combined statements
 
-Every reference number is `Theorem 1.20`, and each is grounded in the module docstring of the
-file the item comes from: the references list of
-`TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean` and of
-`TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean` names Section 1.2 and the proof of
-Theorem 1.20, that of `TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean` names
-Theorem 1.20 and the surjectivity of the canonical map, and that of
-`TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean` names Theorem 1.20 and
-Example 1.21. Items 3.3, 3.4, 3.5, 4.2 and 5.1 to 5.3 are steps inside those same files; the
-number is cited once per strand, on the statement the strand is named for, rather than on every
-item of the strand. No number is inferred, so the text prints no dagger. Example 1.21 is the
-free-product case of the theorem, which the closure of this theorem does not reach, so it is
-cited nowhere.
+- Lemma 1.1 uses an open cover of a compact Euclidean subspace `K`, with
+  balls taken in `K`. The linked TauCeti result allows general pseudometric
+  spaces and neighborhood covers. The applications use the interval and the
+  parameter square.
+- Proposition 1.2 assumes an open cover of `X`. Its linked Lean theorem permits
+  the more general neighborhood condition along the path. The proof uses the
+  preimages of the open cover; the generation and gluing arguments apply it
+  to the interiors of their cover members.
+- Definition 2.2 combines the gluing construction with its restriction and
+  uniqueness theorems. The two-set construction and its restriction theorems
+  remain source helpers rather than separate numbered statements.
+- Corollary 4.3 applies the earlier vertex-group and gluing constructions.
+  The descent target in 4.3–4.5 is a monoid; the final pushout in 4.6 is in
+  the category of groups.
+- Proposition 4.4 has two parts, one for each subspace. Each part links both
+  the pointwise restriction and the equality of homomorphisms.
 
-## Scope members that are no key declaration
+The broader cover hypothesis in Sections 2 and 3 says that the interiors of
+the cover members cover `X`; it does not require the members themselves to
+be open. In generation arguments, the notation for a subspace groupoid can
+denote its image. This is not a global identification: inclusion can identify
+distinct path classes, and gluing uses the actual subspace groupoids.
 
-The seven routine path and interval constructions and lemmas below are helpers
-on 1.2. The paper introduces notation and uses their elementary properties implicitly;
-their presence in the source inventory does not require separate statements.
+## Helpers and review status
 
-- `Path.codRestrict`: linked from the notation $\gamma^S$ in the local prose.
-- `Path.codRestrict_coe`: the pointwise formula for that construction.
-- `Path.map_codRestrict`: recovering the ambient path under inclusion.
-- `Path.trans_apply_of_le` and `Path.trans_apply_of_ge`: the two formulas in
-  the definition of concatenation.
-- `Path.subpath_apply_mem`: containment of a subpath in the original segment.
-- `Set.Icc.coe_addNSMul`: the clipped-step formula used internally by the
-  subdivision machinery; it has no definition or example in the exposition.
-- `TauCeti.Groupoid.functorOfEndHom_map` (helper on 2.2): it states the formula for the value
-  of the induced functor on a morphism, which is the content of the definition in 3.2.
+Routine path restriction, endpoint transport, concatenation formulas, and
+clipped subdivision machinery remain in the source inventory without separate
+numbered statements. Their roles are recorded in `items.json`. In particular,
+the removed path-restriction notation is not a notion link.
 
-The immediate consequences of the groupoid and group definitions remain in
-the source inventory as helpers, without numbered statements or cards:
+The references to Hatcher's Theorem 1.20 are grounded in the Lean module
+docstrings and attached to the relevant strands of the argument.
+`items.json` records each reference's provenance; no reference number is
+inferred from an unverified source.
 
-- `FundamentalGroupoid.nonempty_hom` (helper on 4.1): path connectedness supplies
-  the connecting morphisms.
-- `ContinuousMap.fundamentalGroupoid_map_obj_injective` (helper on 3.1): the
-  object map is the original continuous map.
-- `Path.Homotopic.Quotient.cast_mem_arrows_iff` (helper on 3.1): endpoint
-  transport is implicit throughout the argument.
-- `TauCeti.FundamentalGroup.map_fromPath` (helper on 4.1): the map on loop classes
-  is already covered by the local introductions in Sections 3 and 4.
-
-## Notes on the shape of the table
-
-- Items 3.5 and 5.2 have parts because the library splits a single statement by side:
-  the two subsets of the cover and the two given homomorphisms.
-- Item 5.2 carries two key declarations per part: the library states each restriction both
-  element by element and as an equality of homomorphisms, and the two are the same statement.
-- No statement in the closure relies on a junk value, so every `junk` list is empty. The
-  statements do use coercions out of subtypes and out of the unit interval, which the
-  local notation leaves implicit.
-- The target of the descent in 5.1 to 5.3 is a monoid, not a group, while the pushout in 5.4 is
-  taken in the category of groups. The text should say this where it states 5.1, since a reader
-  expecting the usual statement will expect a group.
-- `TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top` (4.1) and
-  `TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top` (3.1) state their covering
-  hypothesis as "every point has some member as a neighborhood"; 3.4, 4.2 and 5.1 to 5.4 state
-  it as "the interiors of the two subsets cover the space". The items follow their own
-  signatures rather than converting one form into the other.
+The proof excerpts and their context are checked against pinned Lean bytes.
+That check does not establish the mathematical correspondence. The exported
+proof links retain their agent-authored provenance and require human review.

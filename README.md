@@ -1,112 +1,49 @@
 # The Seifert–van Kampen theorem, after TauCeti
 
-An informal account of how the Seifert–van Kampen theorem is proved in the Lean library
-[TauCeti](https://github.com/TauCetiProject/TauCeti) at commit
-`37f5e9dce5ac83d2825198ac72d7f5d64eb26c85`. Statements and selected proof steps
-are linked to the corresponding Lean declarations and lines. Variables and
-notation are introduced in the sections that use them.
+An informal account of how [TauCeti](https://github.com/TauCetiProject/TauCeti)
+proves the Seifert–van Kampen theorem. Statements and selected proof steps link
+directly to their Lean counterparts through
+[Literature Links](https://mathlib-initiative.github.io/literature-links/).
 
-[Read the annotated text](https://mathlib-initiative.github.io/seifert-van-kampen-tauceti/pdf-overlay/viewer/index.html) ·
+**[Read the annotated PDF](https://mathlib-initiative.github.io/seifert-van-kampen-tauceti/)** ·
 [Download the PDF](https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v2/svk-tauceti.pdf) ·
 [Browse the annotations](annotations/)
 
-- `informal/`: the LaTeX source. `main.tex` is the document, `sections/` its sections,
-  `items.json` the table of items and their declarations, `STYLE.md` and
-  `STYLE-project.md` the rules it is written to.
-- `annotations/`: the links from each box of the PDF to the Lean declarations, in the
-  Literature Links format.
-- `pdf-overlay/`: the viewer that shows the PDF with those links.
+The viewer connects individual sentences and equations to pinned Lean source
+ranges, with definitions and token hovers available alongside the text.
+The public site is the primary place to read and review changes.
 
-The annotations use [Literature Links](https://github.com/mathlib-initiative/literature-links).
-The viewer and validation tools need Python 3.11 or later. From a fresh clone:
+## Repository guide
 
-```sh
-python3 pdf-overlay/tools/check_generated.py
-python3 pdf-overlay/tools/serve.py --build
-```
+| Directory | Contents |
+| --- | --- |
+| [informal/](informal/) | LaTeX text, mathematical notation, and curated statement and proof-step links |
+| [annotations/](annotations/) | Exported Literature Links records |
+| [pdf-overlay/](pdf-overlay/) | Generated viewer, bundled annotations, and hover data |
+| [tools/](tools/) | Project-specific annotation and hover exporters |
+| [tests/](tests/) | Tests for source ranges, annotation integrity, and highlight geometry |
+| [docs/](docs/) | Build, regeneration, and publication instructions |
 
-The viewer fetches the published PDF and verifies its SHA-256 before serving it locally.
+## Development
 
-Build the PDF from this directory with TeX Live (pdflatex, latexmk):
-
-```sh
-bash informal/tools/build_pdf.sh build/pdf
-```
-
-Two builds on one TeX installation give the same bytes; the published PDF is the one whose
-sha256 the annotations pin.
-
-The text and the PDF are released under the Apache License, Version 2.0 (`LICENSE`). The runtime that
-formal-companion copies into `informal/` (`fcmarkers.sty`, `STYLE.md`, `tools/`) is under
-the Apache License 2.0 (`informal/LICENSE-runtime`).
-
-## Proofs linked to the Lean
-
-Selected results now have proofs, and the gluing definitions have explicit
-constructions with their well-definedness checks. The arguments include the
-three-loop factorization in the generation theorem, the homotopy-grid proof
-for gluing, the local functor equations, and the pushout universal property.
-They use the earlier numbered results and omit routine endpoint renaming and
-path reparametrizations.
-
-The eight arguments have 46 selected sentence or equation links to 50 pinned
-Lean ranges. Each opens the relevant excerpt or a short chain of helper lemmas,
-including explicit invocations of earlier results. Unmarked prose and proof headings carry no proof-wide link.
-The project-owned `informal/proofsteps.sty` records word positions or the exact
-dimensions of a displayed equation; `informal/proofsteps.json` records the
-corresponding Lean ranges and their hashes. The exporter rejects changed ranges,
-whole-proof markers, and inconsistent helper chains. These new links are
-agent-authored and await human review.
-
-To regenerate this revision, build the PDF twice with
-`bash informal/tools/canonical_pdf.sh --source-commit COMMIT build/proof-ideas`,
-copy `build/proof-ideas/a/markers.json` to `informal/markers.json`, and commit it.
-Then export both the statements and proofs with the producer checkout:
+On Linux or macOS, Python 3.11 or later, Git, and Make are enough to validate
+the repository and build the website. No Python packages or Lean installation are needed for these
+commands:
 
 ```sh
-python3 tools/proof_steps.py \
-  --formal-companion /path/to/formal-companion \
-  --library-src /path/to/pinned/TauCeti/source \
-  --packages-src /path/to/pinned/TauCeti/.lake/packages \
-  --build-dir build/proof-ideas/a \
-  --pdf-url https://github.com/mathlib-initiative/seifert-van-kampen-tauceti/releases/download/v2/svk-tauceti.pdf
-python3 pdf-overlay/tools/check_generated.py
-python3 tools/proof_steps.py --check
-python3 pdf-overlay/tools/serve.py --build
+make check
+make site
 ```
 
-In the viewer, click a marked sentence or equation to open its corresponding Lean lines.
-Proof steps may also point into the pinned Mathlib dependency: their target names
-`package: mathlib` and the matching pin is recorded in `proofsteps.json`.
-The Lebesgue-radius step in Proposition 1.2 links directly to the lemma call
-inside Mathlib's interval-subdivision helper, which TauCeti invokes through
-`exists_monotone_Icc_subset_open_cover_unitInterval`. Dependency ranges are checked
-against the source inventory and the exact committed source before export.
+The site build downloads the released PDF, verifies its SHA-256, and writes
+the website to `site/`. Changes pushed to `main` are checked and deployed to
+GitHub Pages.
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for editing guidance and
+[the maintenance guide](docs/maintenance.md) for PDF builds and new releases.
 
-Mathlib notion cards also show their definitions and structure fields inline.
-Supply `--packages-src` from the same pinned TauCeti checkout when regenerating
-them: this revision uses Mathlib commit
-`1b1ccf4b088b32fa3f23f2de1127433254a81e1e`. The snippets are from Mathlib's
-Apache-2.0 source, with each card linking to the declaration at that revision.
+## License
 
-To rebuild Mathlib's token hovers, use the Verso workspace prepared for this
-TauCeti revision, with its original dependency pins and matching Verso package:
-
-```sh
-python3 tools/mathlib_hovers.py \
-  --formal-companion /path/to/formal-companion \
-  --verso-project /path/to/verso/libs/svk-tauceti-lib
-python3 pdf-overlay/tools/check_generated.py
-python3 pdf-overlay/tools/serve.py --build-only
-```
-
-This builds only the Mathlib modules used by the cards and combines their
-hovers with the TauCeti pages. It checks source revisions before building and
-requires every Mathlib card to have a matching hover statement. Separate page
-builds have separate hover identifiers; the exporter remaps them when combining
-the results. The generated `pdf-overlay/verso.json` is committed with the overlay.
-
-The v2 release contains this revision of the text and its proof-step links.
-The published v1 remains available at its original URL. The website homepage
-opens the annotated PDF viewer directly.
+The text and project code are released under [Apache-2.0](LICENSE).
+Generated runtime and bundled dependencies retain their
+[license notices](pdf-overlay/THIRD_PARTY.md).
