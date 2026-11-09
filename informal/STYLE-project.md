@@ -274,3 +274,12 @@ applications to subsets that need not be open.
 
 In Proposition 1.2, use the equivalent covering condition on the interiors of
 preimages, explicitly taking interiors in the unit interval.
+
+Keep each proof excerpt's visible note to one short mathematical sentence.
+Put Lean helper names, tactic explanations and implementation asides in its
+existing collapsible "Reading the Lean notation" notes, alongside notation
+correspondences. Avoid repeating those details above the excerpt.
+
+In the gluing proof, settle the object assignment using compatibility, then
+explicitly state what remains: well-defined values on morphisms that respect
+identities and composition.

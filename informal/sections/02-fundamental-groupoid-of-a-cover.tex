@@ -59,10 +59,11 @@ Then there is a unique functor $F:\fgpd{X}\longrightarrow\mathcal D$ satisfying
 \begin{proofpassage}{2.2-homotopy}{Proof}{Uniqueness and existence}
 \proofstep{2.2-s00-unique}{Generation makes the extension unique}{By \itemref{2.1}, the $\fgpd{U_i}$ generate $\fgpd X$.
 Any two functors with the prescribed restrictions therefore agree.}
-For existence, it remains to show that the prescribed values are well defined.
-On objects, the restrictions require $F(y)=F_i(y)$ whenever $y\in U_i$.
+For existence, the restrictions force $F(y)=F_i(y)$ whenever $y\in U_i$.
 \proofstep{2.2-s01-objects}{The object value is independent of the cover member}{Compatibility gives $F_i(y)=F_j(y)$ on $U_i\cap U_j$, so this is independent
 of the choice of $i$.}
+It remains to show that the prescribed values on morphisms are well defined
+and respect identities and composition.
 
 For a path $\gamma$ from $y$ to $z$, \proofstep{2.2-s02-partition}{Choose a sufficiently fine equal subdivision}{the compactness argument of \itemref{1.2} gives, for every sufficiently
 large integer $N$, a subdivision $t_k=k/N$ with each piece

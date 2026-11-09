@@ -73,7 +73,7 @@
               482
             ],
             "sha256": "8f64f8440ea5a554d35747139bd4f7e1c33cf33e09d6f1d64b6fbd8b0dc4c5de",
-            "conclusion": "`lebesgue_number_lemma_of_metric` supplies $\\rho>0$ and the ball-containment property.",
+            "conclusion": "Compactness gives a Lebesgue radius $\\rho>0$.",
             "notation": [
               {
                 "math": "$\\rho$",
@@ -83,7 +83,8 @@
                 "math": "Ball containment",
                 "lean": "ball_subset"
               }
-            ]
+            ],
+            "bookkeeping": "`lebesgue_number_lemma_of_metric` supplies the radius and ball-containment property."
           }
         }
       ],
@@ -117,7 +118,7 @@
               482
             ],
             "sha256": "8f64f8440ea5a554d35747139bd4f7e1c33cf33e09d6f1d64b6fbd8b0dc4c5de",
-            "conclusion": "`addNSMul_eq_right` shows that steps of size $\\rho/2$ eventually reach the endpoint.",
+            "conclusion": "Steps of size $\\rho/2$, clipped at the endpoint, give a finite subdivision.",
             "notation": [
               {
                 "math": "$\\rho$",
@@ -127,7 +128,8 @@
                 "math": "Subdivision points",
                 "lean": "addNSMul h (δ/2)"
               }
-            ]
+            ],
+            "bookkeeping": "`addNSMul_eq_right` proves that this sequence eventually reaches the endpoint."
           }
         }
       ],
@@ -231,7 +233,7 @@
               131
             ],
             "sha256": "e47f20978871cdd034e43736461b410652491cdaae7a78547117a14c309626b4",
-            "conclusion": "Quotient induction reduces an arbitrary morphism to the homotopy class of a path $\\gamma$.",
+            "conclusion": "Every morphism is represented by a path $\\gamma$.",
             "notation": [
               {
                 "math": "$\\omega$",
@@ -241,7 +243,8 @@
                 "math": "$\\gamma$",
                 "lean": "γ"
               }
-            ]
+            ],
+            "bookkeeping": "Quotient induction reduces the argument to a representative path."
           }
         }
       ],
@@ -305,8 +308,8 @@
               87
             ],
             "sha256": "b61ab690aa4d6a683053d456320546bded2e23f8271d55c851774616e35cf18b",
-            "conclusion": "`codRestrict` views the path inside $U_i$; inclusion recovers the original path, placing its class in the image subgroupoid.",
-            "bookkeeping": "`codRestrict` regards the same path in a subspace. The pairs carrying membership proofs specify its endpoints there; mapping back along inclusion recovers the original path."
+            "conclusion": "Regarding the path in $U_i$ places its class in the image of the inclusion functor.",
+            "bookkeeping": "`codRestrict` views the path in $U_i$; membership proofs specify its endpoints there. Mapping back along inclusion recovers the original path."
           }
         }
       ],
@@ -338,7 +341,8 @@
               131
             ],
             "sha256": "e47f20978871cdd034e43736461b410652491cdaae7a78547117a14c309626b4",
-            "conclusion": "`concat_subpath` identifies the composite of the subdivision classes with $[\\gamma]$."
+            "conclusion": "The composite of the subdivision classes is $[\\gamma]$.",
+            "bookkeeping": "`concat_subpath` identifies the composite with the original path class."
           }
         }
       ],
@@ -371,7 +375,8 @@
               738
             ],
             "sha256": "add2fcf7dd449ac45fe4452a7869103b8e40e30f7e0be1ca10a0135fa31caa75",
-            "conclusion": "`functor_ext` uses generation to identify functors with the same restrictions."
+            "conclusion": "Generation identifies functors with the same restrictions.",
+            "bookkeeping": "`functor_ext` applies the generation result."
           }
         }
       ],
@@ -446,7 +451,7 @@
               216
             ],
             "sha256": "1b957020f3759923a209fff34decc3e27955bd8d6588a14c5aeb3f4a6544ae84",
-            "conclusion": "`exists_nat_one_div_lt` chooses a threshold with $1/N<\\rho$, so all larger $N$ give fine subdivisions.",
+            "conclusion": "Every sufficiently fine equal subdivision is subordinate to the cover.",
             "notation": [
               {
                 "math": "$t_k=k/N$ for $k\\leq N$",
@@ -456,7 +461,8 @@
                 "math": "Fine subdivision",
                 "lean": "IsFine U γ N"
               }
-            ]
+            ],
+            "bookkeeping": "`exists_nat_one_div_lt` chooses a threshold with $1/N<\\rho$, so all larger $N$ give fine subdivisions."
           }
         }
       ],
@@ -488,7 +494,7 @@
               288
             ],
             "sha256": "4250833a7c01bcd48f4770e06e72136771ed9065b61a54b40126b79e6b366d3f",
-            "conclusion": "Apply `hF i j` to the path class in the intersection; the remaining lines align its endpoint objects.",
+            "conclusion": "Compatibility identifies the two local values of a path in $U_i\\cap U_j$.",
             "notation": [
               {
                 "math": "The local value $F_i([P])$",
@@ -499,7 +505,7 @@
                 "lean": "hF"
               }
             ],
-            "bookkeeping": "`locVal` includes endpoint transports to the chosen global object values. The rest of this lemma checks that the inclusions recover the same underlying path and that those transports agree. The equality is not complete at the end of the displayed excerpt."
+            "bookkeeping": "`hF i j` is applied to the path class in the intersection. The rest of the lemma aligns the endpoint transports in `locVal`; the displayed excerpt begins this argument."
           }
         }
       ],
@@ -561,7 +567,7 @@
               497
             ],
             "sha256": "b3514f07c80bef20d6568774f7f2ec563ba13bc9d90a016a41c428bcbea83900",
-            "conclusion": "Induction repeatedly applies `pathVal_subpath_trans` to combine all pieces inside one $U_i$.",
+            "conclusion": "Induction combines all pieces inside one $U_i$.",
             "notation": [
               {
                 "math": "The value of one subdivision piece",
@@ -576,7 +582,7 @@
                 "lean": "pathVal"
               }
             ],
-            "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity."
+            "bookkeeping": "`map_segVal_eq` repeatedly applies `pathVal_subpath_trans`. The `eqToHom` factors identify endpoint objects already proved equal."
           }
         },
         {
@@ -595,7 +601,7 @@
               547
             ],
             "sha256": "16455df979903d3ff783b396cb771725e3b8047978a504e70cb2835f8e090124",
-            "conclusion": "Apply `map_segVal_eq` on each coarse interval to obtain $L_{mN}(\\gamma)=L_N(\\gamma)$.",
+            "conclusion": "Combining the refined pieces in each coarse interval gives $L_{mN}(\\gamma)=L_N(\\gamma)$.",
             "notation": [
               {
                 "math": "$L_N(\\gamma)$",
@@ -610,7 +616,7 @@
                 "lean": "pathVal"
               }
             ],
-            "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity."
+            "bookkeeping": "`map_segVal_eq` combines the pieces on each coarse interval; `eqToHom` identifies equal endpoint objects."
           }
         }
       ],
@@ -642,7 +648,7 @@
               561
             ],
             "sha256": "d92773dc0cc63fe94e5e4428e4a92846d7ec36f07a9bb82a2cfcd7fa3a942a96",
-            "conclusion": "Apply `liftN_mul` twice to compare the two subdivisions through their common refinement.",
+            "conclusion": "A common refinement identifies the two subdivision values.",
             "notation": [
               {
                 "math": "$L(\\gamma)$",
@@ -652,7 +658,8 @@
                 "math": "$L_N(\\gamma)$",
                 "lean": "liftN hU F hF γ h hN"
               }
-            ]
+            ],
+            "bookkeeping": "`liftN_mul` is applied twice, once for each subdivision."
           }
         }
       ],
@@ -755,7 +762,7 @@
               658
             ],
             "sha256": "3e7f21b32f127b90f12c1cd616f1aa264b22f0f0d7d496bd8c218ada0e2dcda7",
-            "conclusion": "Apply `locVal_eq_of_simplyConnected` to the two boundary routes in the unit square.",
+            "conclusion": "The two boundary routes in the unit square have equal local values.",
             "notation": [
               {
                 "math": "The cell parametrization followed by $H$",
@@ -765,7 +772,8 @@
                 "math": "A vertical edge path",
                 "lean": "colSeg H N l k"
               }
-            ]
+            ],
+            "bookkeeping": "`locVal_eq_of_simplyConnected` is applied to the two boundary routes."
           }
         }
       ],
@@ -797,7 +805,7 @@
               694
             ],
             "sha256": "df5de9f550449409d51dec643f3fc059632131c7ce6f827ff7aff40f163b1abe",
-            "conclusion": "`NatTrans.ofSequence` packages the cell squares; its naturality gives the commuting outside square.",
+            "conclusion": "Pasting the cell squares gives a commuting outside square.",
             "notation": [
               {
                 "math": "A horizontal edge value",
@@ -812,7 +820,7 @@
                 "lean": "Functor.ofSequence"
               }
             ],
-            "bookkeeping": "A natural transformation encodes the vertical arrows and commuting cell squares. Naturality for the long arrow from the first to the last grid point is the statement that the outside square commutes."
+            "bookkeeping": "`NatTrans.ofSequence` encodes the vertical arrows and cell squares. Its naturality for the first-to-last grid arrow makes the outside square commute."
           }
         }
       ],
@@ -933,7 +941,7 @@
               709
             ],
             "sha256": "f42a13c605cc46c364fbc80fe4c3cb251b9c59182e367e5892cc661f9e95588d",
-            "conclusion": "`Quotient.lift` uses `lift_eq_of_homotopy` to make $[\\gamma]\\mapsto L(\\gamma)$ independent of the representative.",
+            "conclusion": "Homotopy invariance makes $[\\gamma]\\mapsto L(\\gamma)$ independent of the representative.",
             "notation": [
               {
                 "math": "The global functor $F$",
@@ -947,7 +955,8 @@
                 "math": "$L$",
                 "lean": "lift"
               }
-            ]
+            ],
+            "bookkeeping": "`Quotient.lift` uses `lift_eq_of_homotopy` to descend to homotopy classes."
           }
         }
       ],
@@ -979,7 +988,7 @@
               514
             ],
             "sha256": "a46e2f8a18b9d32fd86599e522cbbf69b16a12d5cd4332698ba5610b2d7db628",
-            "conclusion": "`map_segVal_eq` combines all subdivision pieces inside $U_i$ to recover $F_i([\\gamma])$.",
+            "conclusion": "Combining all pieces inside $U_i$ recovers $F_i([\\gamma])$.",
             "notation": [
               {
                 "math": "$L(\\gamma)$",
@@ -989,7 +998,8 @@
                 "math": "The local value $F_i([\\gamma])$",
                 "lean": "locVal hU F hF i γ hγ"
               }
-            ]
+            ],
+            "bookkeeping": "`map_segVal_eq` combines the subdivision pieces."
           }
         },
         {
@@ -1008,7 +1018,7 @@
               567
             ],
             "sha256": "0d50aa2d662b3ef59d6528d4bb21428364aad72916d7422309257180ca9503f0",
-            "conclusion": "Choose a fine subdivision, then apply `liftN_eq_locVal` to obtain $L(\\gamma)=F_i([\\gamma])$.",
+            "conclusion": "A fine subdivision gives $L(\\gamma)=F_i([\\gamma])$.",
             "notation": [
               {
                 "math": "$L(\\gamma)$",
@@ -1018,7 +1028,8 @@
                 "math": "The local value $F_i([\\gamma])$",
                 "lean": "locVal hU F hF i γ hγ"
               }
-            ]
+            ],
+            "bookkeeping": "`liftN_eq_locVal` evaluates the chosen fine subdivision inside $U_i$."
           }
         }
       ],
@@ -1161,7 +1172,7 @@
               119
             ],
             "sha256": "a8de7066f82c8cfe35ebbfb3d7e693ff9d4e3809f59348b6d8456ca45dd6be1c",
-            "conclusion": "`hsplit` inserts cancelling inverse pairs to express the transported loop as three local loops.",
+            "conclusion": "Inserting cancelling inverse pairs expresses the transported loop as three local loops.",
             "notation": [
               {
                 "math": "$\\tau_c,\\omega,\\tau_d$",
@@ -1171,7 +1182,8 @@
                 "math": "$\\sigma_c,\\sigma_d$",
                 "lean": "σa, σb"
               }
-            ]
+            ],
+            "bookkeeping": "`hsplit` is the displayed factorization."
           }
         }
       ],
@@ -1203,7 +1215,8 @@
               119
             ],
             "sha256": "a8de7066f82c8cfe35ebbfb3d7e693ff9d4e3809f59348b6d8456ca45dd6be1c",
-            "conclusion": "`fromPath_mem_iSup_range` puts the middle loop in $H$ because it lies in $U_i$."
+            "conclusion": "The middle loop lies in $U_i$, so its class belongs to $H$.",
+            "bookkeeping": "`fromPath_mem_iSup_range` puts the class of this local loop in $H$."
           }
         }
       ],
@@ -1235,8 +1248,8 @@
               119
             ],
             "sha256": "a8de7066f82c8cfe35ebbfb3d7e693ff9d4e3809f59348b6d8456ca45dd6be1c",
-            "conclusion": "The outer factors lie in $H$ by `comp_inv_mem_iSup_range`; multiply them with the middle factor.",
-            "bookkeeping": "Lean writes categorical composition in traversal order and group multiplication in the opposite order. This accounts for the order of the arguments to `H.mul_mem`."
+            "conclusion": "All three factors lie in $H$, so their product does too.",
+            "bookkeeping": "`comp_inv_mem_iSup_range` handles the outer factors. The arguments to `H.mul_mem` reflect the opposite notation for composition and group multiplication."
           }
         }
       ],
@@ -1268,7 +1281,7 @@
               179
             ],
             "sha256": "00a45f637debfe31ae8258072c2538d68bc350df2ea163a05aca48095bc180f4",
-            "conclusion": "`comp_comp_inv_mem_iSup_range` puts every local class in $S$; groupoid generation gives $S=\\top$.",
+            "conclusion": "Every local class lies in $S$, so groupoid generation gives $S=\\top$.",
             "notation": [
               {
                 "math": "The subgroupoid $S$",
@@ -1278,7 +1291,8 @@
                 "math": "The subgroup $H$",
                 "lean": "H"
               }
-            ]
+            ],
+            "bookkeeping": "`comp_comp_inv_mem_iSup_range` puts the local classes in $S$."
           }
         }
       ],
@@ -1417,7 +1431,8 @@
               164
             ],
             "sha256": "9e8d983b531f7d110198ac4d6537e983ebccfad9e405a92cad5d6aaa391e2870",
-            "conclusion": "`functorOfEndHom` turns the homomorphism and chosen connecting paths into a local functor."
+            "conclusion": "The homomorphism and chosen connecting paths determine a local functor.",
+            "bookkeeping": "`functorOfEndHom` is the functor construction from Definition 4.2."
           }
         }
       ],
@@ -1481,7 +1496,8 @@
               239
             ],
             "sha256": "5971fa8a79548860d8f97e184de6ef57d224404fff086e9da2385178abae7284",
-            "conclusion": "`glueTwo` glues the compatible local functors to a functor on $\\Pi_1(X)$."
+            "conclusion": "The compatible local functors glue to a functor on $\\Pi_1(X)$.",
+            "bookkeeping": "`glueTwo` specializes the gluing construction to two subsets."
           }
         }
       ],
@@ -1513,14 +1529,14 @@
               239
             ],
             "sha256": "5971fa8a79548860d8f97e184de6ef57d224404fff086e9da2385178abae7284",
-            "conclusion": "`singleObjFunctor` restricts to loops at $x$; `SingleObj.mapHom` yields the mediating homomorphism.",
+            "conclusion": "Restricting the glued functor to loops at $x$ gives the mediating homomorphism.",
             "notation": [
               {
                 "math": "The mediating homomorphism",
                 "lean": "vanKampenDesc"
               }
             ],
-            "bookkeeping": "The source expression nests restriction around gluing. The PDF explains the inner construction first, so this step moves backwards by one source line."
+            "bookkeeping": "`singleObjFunctor` restricts to loops; `SingleObj.mapHom` extracts the homomorphism. Lean nests restriction around gluing, so this step moves back one source line."
           }
         }
       ],
@@ -1552,7 +1568,8 @@
               280
             ],
             "sha256": "0f5da162c1031f3bed36f91bf77a66f65faa89379fcd96aaab4fbfa79bf0707f",
-            "conclusion": "`map_subtypeVal_comp_glueTwo_left` reduces the glued value on a loop in $A$ to its local value."
+            "conclusion": "The glued value on a loop in $A$ equals its local value.",
+            "bookkeeping": "`map_subtypeVal_comp_glueTwo_left` gives the left restriction equation."
           }
         }
       ],
@@ -1584,7 +1601,8 @@
               280
             ],
             "sha256": "0f5da162c1031f3bed36f91bf77a66f65faa89379fcd96aaab4fbfa79bf0707f",
-            "conclusion": "`localFunctor_map_base` evaluates that local value using the original homomorphism."
+            "conclusion": "The local value at the basepoint is the original homomorphism's value.",
+            "bookkeeping": "`localFunctor_map_base` evaluates the local functor on a loop at the basepoint."
           }
         }
       ],
@@ -1616,7 +1634,8 @@
               310
             ],
             "sha256": "7edf45390390dbe022ed3e36406502c25f46466686737e14d7fe7fcbb44a252b",
-            "conclusion": "`MonoidHom.ext` turns the pointwise calculation into equality of homomorphisms."
+            "conclusion": "Equality on every loop gives equality of homomorphisms.",
+            "bookkeeping": "`MonoidHom.ext` turns the pointwise calculation into equality."
           }
         }
       ],
@@ -1648,7 +1667,8 @@
               296
             ],
             "sha256": "69873075f5d92418a47f475586a028ab7830384faa2e248de7e510134cd514c3",
-            "conclusion": "Apply the right restriction equation for `glueTwo`, then `localFunctor_map_base`."
+            "conclusion": "Restricting to $B$ recovers the right-hand homomorphism.",
+            "bookkeeping": "Apply the right restriction equation for `glueTwo`, then `localFunctor_map_base`."
           }
         }
       ],
@@ -1680,13 +1700,14 @@
               342
             ],
             "sha256": "09567fdc7b4ea02c6f2fafa17bd851c3d2cd6c7a2039c536c74f4a838a56f451",
-            "conclusion": "The two restriction equations place both generating images in the equalizer subgroup `f.eqLocus g`.",
+            "conclusion": "The two restriction equations place both generating images in the equalizer subgroup.",
             "notation": [
               {
                 "math": "The equalizer subgroup",
                 "lean": "f.eqLocus g"
               }
-            ]
+            ],
+            "bookkeeping": "`f.eqLocus g` is the subgroup where the two homomorphisms agree."
           }
         }
       ],
@@ -1750,7 +1771,8 @@
               378
             ],
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "Quotient induction reduces the claim to a loop; both composites include that same loop into $X$."
+            "conclusion": "Both composites include the same loop from the intersection into $X$.",
+            "bookkeeping": "Quotient induction reduces the equality to a representative loop."
           }
         }
       ],
@@ -1782,7 +1804,7 @@
               378
             ],
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "Choose `vanKampenDesc` as the mediator for the compatible pair of homomorphisms.",
+            "conclusion": "The descent homomorphism supplies a mediator for the compatible pair.",
             "notation": [
               {
                 "math": "An arbitrary compatible pair",
@@ -1792,7 +1814,8 @@
                 "math": "Its compatibility equation",
                 "lean": "s.condition"
               }
-            ]
+            ],
+            "bookkeeping": "`vanKampenDesc` is chosen as the mediator."
           }
         }
       ],
@@ -1824,8 +1847,8 @@
               378
             ],
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "The two restriction theorems give the factorization equations; `GrpCat.hom_ext` transfers them to categorical arrows.",
-            "bookkeeping": "`GrpCat.ofHom` packages a group homomorphism as a category arrow; `GrpCat.hom_ext` transfers equality of the underlying homomorphisms to those arrows."
+            "conclusion": "The two restriction equations give the required factorizations.",
+            "bookkeeping": "`GrpCat.ofHom` packages a group homomorphism as a category arrow; `GrpCat.hom_ext` transfers equality to those arrows."
           }
         }
       ],
@@ -1857,7 +1880,8 @@
               378
             ],
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "`vanKampen_hom_ext` identifies the two mediators because their restrictions agree."
+            "conclusion": "The two mediators agree because their restrictions agree.",
+            "bookkeeping": "`vanKampen_hom_ext` is the uniqueness result from Proposition 4.5."
           }
         }
       ],
