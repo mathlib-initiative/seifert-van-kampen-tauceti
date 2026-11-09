@@ -715,7 +715,7 @@
       "item": "2.2",
       "label": "Step",
       "title": "The two routes around one cell have the same value",
-      "span": "inline",
+      "span": "display",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",

@@ -88,15 +88,30 @@ Let $H$ be a homotopy from $\gamma$ to $\delta$ fixing the endpoints.
 \proofstep{2.2-s06-grid}{Choose a fine grid for the homotopy}{As in the proof of
 \itemref{1.2}, apply \itemref{1.1} to choose an $N\times N$ grid with each
 cell mapped by $H$ into some $U_i$.}
-Write $\gamma_j(t)=H(j/N,t)$ for the horizontal paths, so
-$\gamma_0=\gamma$ and $\gamma_N=\delta$. Apply the appropriate $F_i$ to the
-homotopy class of each grid edge.
-\proofstep{2.2-s07-cell}{The two routes around one cell have the same value}{Each cell gives a commuting square: its two boundary routes between opposite
-corners are homotopic within the cell, so their images under $H$ have the same
-value under $F_i$.}
+For one cell mapped into $U_i$, label the images of its four oriented edges
+as paths in $U_i$:
+\[
+  \begin{array}{ccc}
+    \bullet & \xrightarrow{\ \alpha\ } & \bullet \\
+    {\scriptstyle\lambda}\big\downarrow && \big\downarrow{\scriptstyle\mu} \\
+    \bullet & \xrightarrow{\ \beta\ } & \bullet
+  \end{array}
+\]
+The two boundary routes are homotopic inside the cell. Composing this homotopy
+with $H$ shows that $\alpha\ptrans\mu$ and $\lambda\ptrans\beta$ are homotopic
+in $U_i$. Applying $F_i$ gives
+\proofequation{2.2-s07-cell}{The two routes around one cell have the same value}{
+  F_i([\mu])\circ F_i([\alpha])
+    =F_i([\beta])\circ F_i([\lambda]).
+}
+Thus the images of the four edge classes form a commuting square in $\mathcal D$.
 
-Compatibility makes the values on shared edges agree. Each strip gives the
-following diagram in $\mathcal D$, with horizontal composites labelled on the left:
+When adjacent cells map into $U_i$ and $U_j$, their shared edge maps into
+$U_i\cap U_j$. By \eqref{eq:gluing-compatibility}, $F_i$ and $F_j$ assign its
+class the same morphism, so the cell squares fit together.
+Write $\gamma_j(t)=H(j/N,t)$ for the horizontal paths, with
+$\gamma_0=\gamma$ and $\gamma_N=\delta$. The strip between $\gamma_j$ and
+$\gamma_{j+1}$ gives the following diagram in $\mathcal D$:
 \[
   \begin{array}{rccccccccc}
     L_N(\gamma_j): & F(y) & \longrightarrow & \bullet & \longrightarrow &
