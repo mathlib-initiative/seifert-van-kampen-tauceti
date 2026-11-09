@@ -85,7 +85,7 @@ only in the reading notes.
 When discussing generation, $\Pi_1(U_i)$ may denote its image in $\Pi_1(X)$
 after a short convention. Do not identify them globally: the inclusion functor
 need not be faithful, and gluing needs the actual subspace groupoids.
-Likewise, in generation statements $\pi_1(S,x)$ denotes its image under
+In Section 3, identify $\pi_1(S,x)$ with its image under
 $(\iota_S)_*:\pi_1(S,x)\to\pi_1(X,x)$. State this convention once in
 Section 3. Do not call this homomorphism an inclusion or assume it injective;
 the descent argument still uses the actual subspace fundamental groups.
