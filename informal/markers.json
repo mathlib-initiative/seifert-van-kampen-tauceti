@@ -2,7 +2,7 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "eabd8da3c5f6610178d5fd7df10867968d0b51ae",
+ "source_commit": "2816c2ac23db0e5b0d311c4fdcab8ee648389ed2",
  "pdf_sha256": "28cf2e7898b755617ceb2f3dcd8a02f61e0fb2617524e287d3ea120ba3c6c6ac",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
