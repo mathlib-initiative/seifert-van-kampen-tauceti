@@ -157,12 +157,12 @@ The two outer sides are constant paths, so their values are identities. Hence
 \proofequation{2.2-s09-boundary}{Fixed endpoints make the boundary arrows identities}{
   L_N(\gamma_j)=L_N(\gamma_{j+1})\qquad(0\le j<N).
 }
-Repeating across the strips gives
+By induction,
 \proofequation{2.2-s10-rows}{Repeat the row equality throughout the homotopy}{
-  L(\gamma)=L_N(\gamma_0)=L_N(\gamma_1)=\cdots=L_N(\gamma_N)=L(\delta).
+  L(\gamma)=L(\delta).
 }
 
-\proofstep{2.2-s11-quotient}{Descend the path value to homotopy classes}{Define $F([\gamma])=L(\gamma)$; homotopy invariance makes this well defined.}
+\proofstep{2.2-s11-quotient}{Descend the path value to homotopy classes}{Thus $L$ is homotopy invariant, so $F([\gamma])=L(\gamma)$ is well-defined.}
 If $\gamma$ is constant at $y$, every subdivision piece represents an identity.
 Each $F_i$ sends that identity to $\mathrm{id}_{F(y)}$, so
 $F([\gamma])=L_N(\gamma)=\mathrm{id}_{F(y)}$.
