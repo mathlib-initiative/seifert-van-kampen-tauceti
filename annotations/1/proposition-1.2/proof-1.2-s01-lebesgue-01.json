@@ -1,21 +1,21 @@
 {
-  "id": "proof-1.1-s01-lebesgue",
+  "id": "proof-1.2-s01-lebesgue",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.495896, 0.739218, 0.03788]
+        "rect": [0.130391, 0.558081, 0.739218, 0.037721]
       },
       "title": "Obtain a Lebesgue radius",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.779446, 0.495896, 0.869609, 0.495896, 0.869609, 0.517834, 0.779446, 0.517834],
-            [0.130391, 0.517835, 0.566515, 0.517835, 0.566515, 0.533776, 0.130391, 0.533776]
+            [0.779446, 0.558081, 0.869609, 0.558081, 0.869609, 0.580019, 0.779446, 0.580019],
+            [0.130391, 0.580019, 0.566515, 0.580019, 0.566515, 0.595802, 0.130391, 0.595802]
           ],
-          "region": "proof-1.1-s01-lebesgue@p001"
+          "region": "proof-1.2-s01-lebesgue@p001"
         }
       }
     }
@@ -35,7 +35,7 @@
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-1.1-s01-lebesgue-1",
+            "id": "proof-1.2-s01-lebesgue-1",
             "kind": "proof_step"
           },
           "destination": {

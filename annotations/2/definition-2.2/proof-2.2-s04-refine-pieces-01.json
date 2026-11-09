@@ -44,7 +44,7 @@
           },
           "proof_context": {
             "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
-            "conclusion": "Lemma 1.2 and functoriality combine consecutive subpath values.",
+            "conclusion": "Lemma 1.3 and functoriality combine consecutive subpath values.",
             "declaration": "pathVal_subpath_trans",
             "lines": [394, 463],
             "notation": [

@@ -1,21 +1,20 @@
 {
-  "id": "proof-1.1-s02-subpaths",
+  "id": "proof-1.2-s01-cover",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
         "page": 1,
-        "rect": [0.130391, 0.551136, 0.739218, 0.035669]
+        "rect": [0.310807, 0.558081, 0.461587, 0.021938]
       },
-      "title": "Pass from parameter intervals to subpaths",
+      "title": "The preimage interiors form an open cover",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.534293, 0.551136, 0.869609, 0.551136, 0.869609, 0.56976, 0.534293, 0.56976],
-            [0.130391, 0.56976, 0.15794, 0.56976, 0.15794, 0.586805, 0.130391, 0.586805]
+            [0.310807, 0.558081, 0.772394, 0.558081, 0.772394, 0.580019, 0.310807, 0.580019]
           ],
-          "region": "proof-1.1-s02-subpaths@p001"
+          "region": "proof-1.2-s01-cover@p001"
         }
       }
     }
@@ -26,30 +25,40 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [237, 242],
+        "lines": [230, 234],
         "module": "TauCeti.Topology.Homotopy.Path"
       },
-      "title": "Pass from parameter intervals to subpaths",
+      "title": "The preimage interiors form an open cover",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-1.1-s02-subpaths-1",
+            "id": "proof-1.2-s01-cover-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L237-L242",
+            "fragment": "L230-L234",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/Topology/Homotopy/Path.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Each subpath has the same image as its parameter interval, which lies in one preimage $\\gamma^{-1}(U_i)$.",
+            "conclusion": "The neighborhood hypothesis makes the preimage interiors an open cover of $[0,1]$.",
             "declaration": "exists_monotone_range_subpath_subset",
-            "lines": [224, 244]
+            "lines": [224, 244],
+            "notation": [
+              {
+                "lean": "c",
+                "math": "$c_i$"
+              },
+              {
+                "lean": "hU",
+                "math": "The neighborhood hypothesis"
+              }
+            ]
           },
           "snippet": {
-            "line": 237,
-            "text": "  obtain ⟨i, hi⟩ := ht_cover k\n  refine ⟨i, ?_⟩\n  rw [range_subpath_of_le _ _ _ (ht_mono (by simp))]\n  rintro _ ⟨s, hs, rfl⟩\n  have hs' : s ∈ γ ⁻¹' U i := interior_subset (hi (by simpa using hs))\n  exact hs'"
+            "line": 230,
+            "text": "      (c := fun i ↦ interior (γ ⁻¹' U i))\n      (fun i ↦ isOpen_interior)\n      (fun s _ ↦ by\n        obtain ⟨i, hi⟩ := hU s\n        exact mem_iUnion.2 ⟨i, mem_interior_iff_mem_nhds.2 hi⟩)"
           }
         }
       }

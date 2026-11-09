@@ -140,12 +140,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "8c53e532e18439a1d925aa8d6ea010494b3d5bd88a4dd0143cc19945c479fbaa"
+      "sha256": "af6b05f04dea8287837103c509c2ba317652a01c47ccb10d89b5952796c3ff4a"
     },
     "count": 90,
     "directory": "annotations",
     "export": {
-      "commit": "c3ae60c612e81b68491b5a8f718691c317da67f0",
+      "commit": "d2f78d8e34957af656b1b8b90f1fd39ef6545ca7",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -169,7 +169,7 @@
       },
       {
         "path": "informal/items.json",
-        "sha256": "e74941d1a0a4f6fc9a5bd3afed1384aba7fd3c32381333ec1f09fd9b132fc7a4"
+        "sha256": "d7764d2ec98841f8972780388e25ca251427a739ab8c4d4a01f2dc2cf3e08084"
       },
       {
         "path": "informal/main.tex",
@@ -177,15 +177,15 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "06839ac4e543a5070d583dda9c86ca74b2cc705f4199e9da15fa8925c2ef4ba0"
+        "sha256": "921c59458dfbc3285d258304b047916a133f39000d1cb5a318b58fd75093eb60"
       },
       {
         "path": "informal/notation.sty",
-        "sha256": "2906404e07c71384415ff09b3cd885a14e34f72705b67156d270adad80e6819a"
+        "sha256": "39d77c8ff4d2bfef9996a23ebd0fb8905f699b13d3249243d9127f4c5a6931e5"
       },
       {
         "path": "informal/proofsteps.json",
-        "sha256": "ff224812b1a3144f9eacabd4d5641b2e56f8be9f818db0e37c0d5fca8201f221"
+        "sha256": "1ee819f30bf28adcd839fbcca1b51acd5d94c15a1b3f3c7d82ce9b01df5bbb6a"
       },
       {
         "path": "informal/proofsteps.sty",
@@ -197,11 +197,11 @@
       },
       {
         "path": "informal/sections/01-paths-and-subdivisions.tex",
-        "sha256": "014a9d5cd9f1508702942951f96bc20fa48cfc5c4101a30dc92cd5689a665806"
+        "sha256": "fe91f1d486a498148b218f95a81fec36989e7dc3d3c9c925337b005c464648c7"
       },
       {
         "path": "informal/sections/02-fundamental-groupoid-of-a-cover.tex",
-        "sha256": "e6476c36b83f0812078b00d326ff726fc670ee569f1d7cfed063d317fae55c4d"
+        "sha256": "ab10acf388af04078d21427cc33e10ce0650173ac5381221520a27db9cf82d29"
       },
       {
         "path": "informal/sections/03-fundamental-group-of-a-cover.tex",
@@ -220,6 +220,6 @@
         "sha256": "f9ca13a2cc00bece7edc7ebf80669015eac99203952eef4cffacb3b239c27cba"
       }
     ],
-    "manifest_sha256": "475c0c0a19986d9b47102a089c9f20f504712bd43ed633c2828bbceb71f7584a"
+    "manifest_sha256": "e84585847d7e0b89e1652fb196a47246f90c89f221465f4ce52c5b2de6d91b0b"
   }
 }

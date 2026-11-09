@@ -6,12 +6,24 @@
     {
       "location": {
         "page": 3,
-        "rect": [0.236872, 0.666035, 0.182982, 0.018308]
+        "rect": [0.820663, 0.648359, 0.048945, 0.017677]
       },
       "title": "path-connected subsets",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "region": "notion:IsPathConnected@p003"
+        }
+      }
+    },
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.130391, 0.666035, 0.143841, 0.018308]
+      },
+      "title": "path-connected subsets",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "region": "notion:IsPathConnected@p003#2"
         }
       }
     }
