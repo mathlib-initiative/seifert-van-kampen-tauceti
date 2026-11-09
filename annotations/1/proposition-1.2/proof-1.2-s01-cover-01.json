@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.311757, 0.620896, 0.499749, 0.021938]
+        "rect": [0.31045, 0.584912, 0.554257, 0.020676]
       },
-      "title": "The preimage interiors form an open cover",
+      "title": "Pull back the open cover",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.311757, 0.620896, 0.811506, 0.620896, 0.811506, 0.642834, 0.311757, 0.642834]
+            [0.31045, 0.584912, 0.864707, 0.584912, 0.864707, 0.605588, 0.31045, 0.605588]
           ],
           "region": "proof-1.2-s01-cover@p001"
         }
@@ -28,7 +28,7 @@
         "lines": [230, 234],
         "module": "TauCeti.Topology.Homotopy.Path"
       },
-      "title": "The preimage interiors form an open cover",
+      "title": "Pull back the open cover",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
@@ -42,7 +42,8 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "The neighborhood hypothesis makes the preimage interiors an open cover of $[0,1]$.",
+            "bookkeeping": "Lean allows a neighborhood cover and uses interiors of the preimages. For an open cover, these interiors equal the preimages; openness and continuity supply hU.",
+            "conclusion": "Continuity pulls the open cover back to the interval.",
             "declaration": "exists_monotone_range_subpath_subset",
             "lines": [224, 244],
             "notation": [

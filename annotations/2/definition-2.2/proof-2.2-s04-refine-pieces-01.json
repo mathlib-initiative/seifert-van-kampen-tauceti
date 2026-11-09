@@ -6,31 +6,17 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.130391, 0.863952, 0.739217, 0.038511]
+        "rect": [0.130391, 0.744318, 0.739217, 0.053346]
       },
       "title": "Refining each interval preserves the composite",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.601379, 0.863952, 0.869608, 0.863952, 0.869608, 0.883681, 0.601379, 0.883681],
-            [0.130391, 0.883681, 0.869608, 0.883681, 0.869608, 0.902463, 0.130391, 0.902463]
+            [0.601379, 0.744318, 0.869608, 0.744318, 0.869608, 0.763889, 0.601379, 0.763889],
+            [0.130391, 0.763889, 0.869608, 0.763889, 0.869608, 0.780619, 0.130391, 0.780619],
+            [0.130391, 0.780619, 0.275316, 0.780619, 0.275316, 0.797664, 0.130391, 0.797664]
           ],
           "region": "proof-2.2-s04-refine-pieces@p002"
-        }
-      }
-    },
-    {
-      "location": {
-        "page": 3,
-        "rect": [0.130391, 0.104167, 0.144925, 0.019255]
-      },
-      "title": "Refining each interval preserves the composite",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "quads": [
-            [0.130391, 0.104167, 0.275316, 0.104167, 0.275316, 0.123422, 0.130391, 0.123422]
-          ],
-          "region": "proof-2.2-s04-refine-pieces@p003"
         }
       }
     }
@@ -180,8 +166,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2, 3],
-        "printed": [2, 3]
+        "physical": [2],
+        "printed": [2]
       },
       "proof": {
         "kind": "chain",

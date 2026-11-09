@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 2,
-        "rect": [0.18523, 0.134785, 0.053583, 0.019255]
+        "page": 1,
+        "rect": [0.18523, 0.846907, 0.053583, 0.019255]
       },
       "title": "Fundamental groupoid $\\Pi_1(X)$",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroupoid@p002"
+          "region": "notion:FundamentalGroupoid@p001"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [2],
-        "printed": [2]
+        "physical": [1],
+        "printed": [1]
       }
     }
   }

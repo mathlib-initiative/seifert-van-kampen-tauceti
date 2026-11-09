@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.132842, 0.154356, 0.034561, 0.018308]
+        "page": 4,
+        "rect": [0.132842, 0.871212, 0.034561, 0.018308]
       },
       "title": "ΣM",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:CategoryTheory.SingleObj@p005"
+          "region": "notion:CategoryTheory.SingleObj@p004"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }

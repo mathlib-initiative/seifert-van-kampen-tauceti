@@ -5,17 +5,17 @@
   "subject": [
     {
       "location": {
-        "page": 4,
-        "rect": [0.130391, 0.172664, 0.739217, 0.037879]
+        "page": 3,
+        "rect": [0.130391, 0.815341, 0.739217, 0.037879]
       },
       "title": "Collapse the subdivision inside a single cover member",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.685928, 0.172664, 0.869608, 0.172664, 0.869608, 0.19113, 0.685928, 0.19113],
-            [0.130391, 0.19113, 0.821685, 0.19113, 0.821685, 0.210543, 0.130391, 0.210543]
+            [0.685928, 0.815341, 0.869608, 0.815341, 0.869608, 0.833807, 0.685928, 0.833807],
+            [0.130391, 0.833807, 0.821685, 0.833807, 0.821685, 0.85322, 0.130391, 0.85322]
           ],
-          "region": "proof-2.2-s12-restrict@p004"
+          "region": "proof-2.2-s12-restrict@p003"
         }
       }
     }
@@ -113,8 +113,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [4],
-        "printed": [4]
+        "physical": [3],
+        "printed": [3]
       },
       "proof": {
         "kind": "chain",

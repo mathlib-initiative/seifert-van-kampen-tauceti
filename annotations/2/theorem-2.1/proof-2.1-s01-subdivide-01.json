@@ -6,15 +6,15 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.130391, 0.298138, 0.739218, 0.053188]
+        "rect": [0.130391, 0.214015, 0.739217, 0.053662]
       },
       "title": "Choose a subdivision subordinate to the cover",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.589968, 0.298138, 0.869609, 0.298138, 0.869609, 0.315657, 0.589968, 0.315657],
-            [0.130391, 0.315657, 0.869608, 0.315657, 0.869608, 0.332229, 0.130391, 0.332229],
-            [0.130391, 0.332229, 0.489597, 0.332229, 0.489597, 0.351326, 0.130391, 0.351326]
+            [0.633485, 0.214015, 0.869608, 0.214015, 0.869608, 0.23106, 0.633485, 0.23106],
+            [0.130391, 0.231061, 0.869608, 0.231061, 0.869608, 0.250158, 0.130391, 0.250158],
+            [0.130391, 0.250158, 0.1863, 0.250158, 0.1863, 0.267677, 0.130391, 0.267677]
           ],
           "region": "proof-2.1-s01-subdivide@p002"
         }
@@ -44,7 +44,7 @@
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Proposition 1.2 applies because continuity pulls covering neighborhoods back along $\\gamma$.",
+            "conclusion": "Subdivision for the open cover by the interiors gives path pieces in the original cover members.",
             "declaration": "iSup_im_map_subtypeVal_eq_top",
             "lines": [113, 131]
           },
