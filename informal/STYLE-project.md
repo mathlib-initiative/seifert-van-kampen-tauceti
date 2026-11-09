@@ -105,7 +105,7 @@ printed wording is defined in `notation.sty`:
 | `\hypCoverTwo` | The interiors of $A$ and $B$ cover $X$ |
 | `\hypCoverFamily` | The family $(U_i)_{i\in I}$ is a neighborhood cover of $X$ |
 | `\hypPathConnected` | $A$, $B$, and $A\cap B$ are path connected |
-| `\hypBasepoint` | $x$ lies in $A$ and in $B$ |
+| `\hypBasepoint` | $x\in A\cap B$ |
 
 In Section 2, place the family-cover assumption once in the opening prose
 of an `fcassumptions` block, after introducing the fundamental groupoid.
@@ -140,7 +140,7 @@ $1/N$. Introduce equal subdivisions $t_k=k/N$ in the gluing proof where needed.
 Natural numbers start at zero, and subdivisions are nondecreasing rather than
 strictly increasing. State that the pairwise intersections are nonempty and
 path connected in Theorem 3.1, without a global nonemptiness convention.
-The common basepoint guarantees nonemptiness in the later two-set results.
+Introduce $x\in A\cap B$ at the start of the two-set statements, rather than adding separate membership assumptions later. The common basepoint guarantees nonemptiness in these results.
 
 ## Proof tags and reading notes
 
