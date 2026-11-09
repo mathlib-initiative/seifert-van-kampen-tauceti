@@ -89,10 +89,11 @@ Let $H$ be a homotopy from $\gamma$ to $\delta$ fixing the endpoints.
 \itemref{1.2}, apply \itemref{1.1} to choose an $N\times N$ grid with each
 cell mapped by $H$ into some $U_i$.}
 Under $H$, the top and bottom edges of the parameter square give $\gamma$
-and $\delta$; the sides are constant at $y$ and $z$. The enlarged cell
-shows its edge images in $U_i$.
+and $\delta$; the sides are constant at $y$ and $z$. Here
+$\alpha,\mu,\beta,\lambda$ are paths in $U_i\subseteq X$, obtained by
+applying $H$ to the four edges of the highlighted cell in $\uI^2$.
 \begin{center}
-\begin{tikzpicture}[x=1.10cm,y=0.80cm,>=stealth,font=\small]
+\begin{tikzpicture}[x=1.10cm,y=0.70cm,>=stealth,font=\small]
   \fill[blue!6] (0,1) rectangle (3,2);
   \fill[blue!16] (2,1) rectangle (3,2);
   \draw[gray!60,step=1] (0,0) grid (3,3);
@@ -104,8 +105,9 @@ shows its edge images in $U_i$.
   \node[below] at (1.5,0) {$\delta(t)=H(1,t)$};
   \node[left] at (0,1.5) {$y$};
   \node[right] at (3,1.5) {$z$};
-  \draw[gray,densely dotted] (3,2) -- (5.15,2.7);
-  \draw[gray,densely dotted] (3,1) -- (5.15,0.7);
+  \draw[->,thick] (3.55,1.7) -- node[above] {$H$} (4.65,1.7);
+  \node at (1.5,-0.9) {Domain $\uI^2$};
+  \node at (6.15,-0.9) {Paths in $U_i\subseteq X$};
   \fill[blue!6] (5.15,0.7) rectangle (7.15,2.7);
   \draw[blue!70!black,very thick,->] (5.15,2.7) -- node[above] {$\alpha$} (7.15,2.7);
   \draw[blue!70!black,very thick,->] (7.15,2.7) -- node[right] {$\mu$} (7.15,0.7);
@@ -121,7 +123,7 @@ Applying $F_i$ gives
   F_i([\mu])\circ F_i([\alpha])
     =F_i([\beta])\circ F_i([\lambda]).
 }
-Thus the images of the four edge classes form a commuting square in $\mathcal D$.
+The resulting square in $\mathcal D$ therefore commutes.
 
 When adjacent cells map into $U_i$ and $U_j$, their shared edge maps into
 $U_i\cap U_j$. By \eqref{eq:gluing-compatibility}, the two squares in
