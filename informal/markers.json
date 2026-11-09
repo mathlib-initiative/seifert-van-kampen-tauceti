@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "029998783bf54d92baf5f867240f4a0bf3bfc8c8",
- "pdf_sha256": "8df1ffaee6298fd34e029f5f3af280ca8d7cb0366f57e63f214eaef5b07b6578",
+ "source_commit": "96005238e27f85532c9578ce6e46253e1ab4cac5",
+ "pdf_sha256": "ee16872438142afbf5ad6eea2b2f5fadb396c08e0c05b0b2faf69ab87f5c47f5",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -103,7 +103,7 @@
     "TauCeti.FundamentalGroup.iSup_range_map_subtypeVal_eq_top"
    ],
    "boxes": [
-    [4, 0.130391, 0.214646, 0.739217, 0.056187]
+    [4, 0.130391, 0.212437, 0.739217, 0.072601]
    ]
   },
   {
@@ -118,7 +118,7 @@
     "TauCeti.FundamentalGroup.range_map_subtypeVal_sup_eq_top"
    ],
    "boxes": [
-    [4, 0.130391, 0.70928, 0.739217, 0.055556]
+    [4, 0.130391, 0.712753, 0.739217, 0.055556]
    ]
   },
   {
@@ -133,7 +133,7 @@
     "TauCeti.Groupoid.singleObjFunctor"
    ],
    "boxes": [
-    [4, 0.130391, 0.863005, 0.739217, 0.03851]
+    [4, 0.130391, 0.863952, 0.739217, 0.03851]
    ]
   },
   {
@@ -424,22 +424,22 @@
   {
    "id": "notion:Subgroup",
    "notion": "Subgroup",
-   "words": "subgroups",
+   "words": "subgroup",
    "label": "notion:18",
    "number": "n18",
    "boxes": [
-    [4, 0.332517, 0.251263, 0.077152, 0.019571]
+    [4, 0.363677, 0.249053, 0.069654, 0.01673]
    ]
   },
   {
    "id": "notion:MonoidHom.range",
    "notion": "MonoidHom.range",
-   "words": "$\\im(\\incl{U_i})_*$",
+   "words": "$\\im(\\incl{A})_*$",
    "label": "notion:19",
    "number": "n19",
    "title": "Image subgroup",
    "boxes": [
-    [4, 0.413595, 0.251263, 0.065636, 0.019571]
+    [4, 0.179306, 0.748737, 0.061473, 0.019571]
    ]
   },
   {
@@ -449,7 +449,7 @@
    "label": "notion:20",
    "number": "n20",
    "boxes": [
-    [4, 0.222167, 0.817551, 0.068498, 0.019571]
+    [4, 0.222167, 0.820707, 0.068498, 0.019571]
    ]
   },
   {
@@ -459,7 +459,7 @@
    "label": "notion:21",
    "number": "n21",
    "boxes": [
-    [4, 0.525614, 0.817551, 0.061493, 0.019571]
+    [4, 0.525614, 0.820707, 0.061493, 0.019571]
    ]
   },
   {
@@ -469,7 +469,7 @@
    "label": "notion:22",
    "number": "n22",
    "boxes": [
-    [4, 0.132842, 0.837121, 0.034561, 0.018308]
+    [4, 0.132842, 0.840278, 0.034561, 0.018308]
    ]
   },
   {
@@ -479,7 +479,7 @@
    "label": "notion:23",
    "number": "n23",
    "boxes": [
-    [4, 0.508388, 0.837121, 0.059887, 0.018308]
+    [4, 0.508388, 0.840278, 0.059887, 0.018308]
    ]
   },
   {
