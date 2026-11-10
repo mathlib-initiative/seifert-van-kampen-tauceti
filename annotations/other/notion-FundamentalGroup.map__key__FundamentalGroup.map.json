@@ -5,13 +5,13 @@
   "subject": [
     {
       "location": {
-        "page": 3,
-        "rect": [0.511527, 0.866162, 0.222566, 0.017045]
+        "page": 4,
+        "rect": [0.511527, 0.171086, 0.222566, 0.017203]
       },
       "title": "Inclusion-induced homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "notion:FundamentalGroup.map@p003"
+          "region": "notion:FundamentalGroup.map@p004"
         }
       }
     }
@@ -43,8 +43,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [3],
-        "printed": [3]
+        "physical": [4],
+        "printed": [4]
       }
     }
   }

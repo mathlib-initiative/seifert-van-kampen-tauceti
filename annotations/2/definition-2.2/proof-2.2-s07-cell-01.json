@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 3,
-        "rect": [0.3604, 0.285198, 0.2792, 0.02135]
+        "rect": [0.3604, 0.367768, 0.2792, 0.02135]
       },
       "title": "The two routes around one cell have the same value",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.3604, 0.285198, 0.6396, 0.285198, 0.6396, 0.306548, 0.3604, 0.306548]
+            [0.3604, 0.367768, 0.6396, 0.367768, 0.6396, 0.389118, 0.3604, 0.389118]
           ],
           "region": "proof-2.2-s07-cell@p003"
         }

@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 4,
-        "rect": [0.139946, 0.44476, 0.322746, 0.019255]
+        "rect": [0.139946, 0.55524, 0.322746, 0.019255]
       },
       "title": "Multiply the three local loop classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.139946, 0.44476, 0.462692, 0.44476, 0.462692, 0.464015, 0.139946, 0.464015]
+            [0.139946, 0.55524, 0.462692, 0.55524, 0.462692, 0.574495, 0.139946, 0.574495]
           ],
           "region": "proof-3.1-s06-product@p004"
         }
