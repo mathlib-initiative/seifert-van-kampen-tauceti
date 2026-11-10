@@ -32,7 +32,7 @@
             "conclusion": "Continuity pulls the neighborhood cover back to the interval.",
             "notation": [
               {
-                "math": "$\\operatorname{int}(c_i)$",
+                "math": "$\\operatorname{int}(\\gamma^{-1}(U_i))$",
                 "lean": "c"
               },
               {
@@ -290,7 +290,7 @@
       "id": "2.1-s02-image",
       "item": "2.1",
       "label": "Step",
-      "title": "Each piece lies in an image subgroupoid",
+      "title": "Each subpath class belongs to the generated subgroupoid",
       "span": "inline",
       "targets": [
         {
@@ -300,7 +300,7 @@
             84
           ],
           "sha256": "9b06f492c46f0a9e0a050e32ae6a02506116c7c75caa5af984aa42f9497a2410",
-          "title": "Each piece lies in an image subgroupoid",
+          "title": "Each subpath class belongs to the generated subgroupoid",
           "role": "key",
           "context": {
             "declaration": "mk_mem_iSup_im",
@@ -519,17 +519,17 @@
       "id": "2.2-s04-refine-pieces",
       "item": "2.2",
       "label": "Step",
-      "title": "Refining each interval preserves the composite",
+      "title": "Reassemble the refined subpath classes",
       "span": "display",
       "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
           "lines": [
             459,
-            463
+            462
           ],
-          "sha256": "e91190788f9f1d8114132a787f93b3ae6b9522225cc30729d698e94f49090e1d",
-          "title": "Compose two subpaths",
+          "sha256": "3a7ee89d070e29f612b7fd1f838796a70c5b59bdac93e2ae4e63be6ca1a78255",
+          "title": "Reassemble the refined subpath classes",
           "role": "key",
           "context": {
             "declaration": "pathVal_subpath_trans",
@@ -538,20 +538,28 @@
               463
             ],
             "sha256": "bc89ca626c8fd31f3d392d6269df47f292867bad9069342207bfc07836701050",
-            "conclusion": "Lemma 1.3 and functoriality combine consecutive subpath values.",
+            "conclusion": "Lemma 1.3 combines consecutive subpath classes.",
             "notation": [
-              {
-                "math": "The three subpaths in the subspace",
-                "lean": "qab, qbc, qac"
-              },
               {
                 "math": "The identity of path classes",
                 "lean": "hquot"
               }
-            ],
-            "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity."
+            ]
           }
-        },
+        }
+      ],
+      "proof": {
+        "kind": "helper",
+        "summary": ""
+      }
+    },
+    {
+      "id": "2.2-s04-value",
+      "item": "2.2",
+      "label": "Step",
+      "title": "Refining preserves the subdivision value",
+      "span": "inline",
+      "targets": [
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
           "lines": [
@@ -623,7 +631,7 @@
       ],
       "proof": {
         "kind": "chain",
-        "summary": "Combine two pieces, then finitely many, then refine every coarse interval."
+        "summary": ""
       }
     },
     {
@@ -992,8 +1000,8 @@
             "conclusion": "Combining all pieces inside $U_i$ recovers $F_i([\\gamma])$.",
             "notation": [
               {
-                "math": "$L(\\gamma)$",
-                "lean": "lift hU F hF γ"
+                "math": "$L_N(\\gamma)$",
+                "lean": "liftN hU F hF γ h hN"
               },
               {
                 "math": "The local value $F_i([\\gamma])$",
@@ -1037,6 +1045,72 @@
       "proof": {
         "kind": "chain",
         "summary": "Collapse the subdivision, then use independence of subdivision."
+      }
+    },
+    {
+      "id": "2.2-s13-identity",
+      "item": "2.2",
+      "label": "Step",
+      "title": "Preserve identities",
+      "span": "display",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            569,
+            571
+          ],
+          "sha256": "55b28dc7a25508c8e2e93cfcbe253ac110444649d19b3b9a74bcf52e611d2b78",
+          "title": "Preserve identities",
+          "role": "key",
+          "context": {
+            "declaration": "lift_refl",
+            "lines": [
+              569,
+              571
+            ],
+            "sha256": "55b28dc7a25508c8e2e93cfcbe253ac110444649d19b3b9a74bcf52e611d2b78",
+            "conclusion": "Evaluate the constant path in any cover member containing its point.",
+            "bookkeeping": "`locVal_refl` gives the identity of the local object."
+          }
+        }
+      ],
+      "proof": {
+        "kind": "helper",
+        "summary": ""
+      }
+    },
+    {
+      "id": "2.2-s14-compose",
+      "item": "2.2",
+      "label": "Step",
+      "title": "Split the concatenated subdivision into its two halves",
+      "span": "display",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "lines": [
+            617,
+            621
+          ],
+          "sha256": "248600163bab51bd9bdb5f6194a8e9d41d9bbe930599338b0253d8aac46d8d41",
+          "title": "Split the concatenated subdivision into its two halves",
+          "role": "key",
+          "context": {
+            "declaration": "lift_trans",
+            "lines": [
+              573,
+              621
+            ],
+            "sha256": "ae055d07f829f9cf9f1fe444aeec372632ac677aed55e973223b1476422533c8",
+            "conclusion": "Split the composite of the $2N$ pieces at $N$.",
+            "bookkeeping": "`first N` and `second N` identify the two halves with the original path subdivisions."
+          }
+        }
+      ],
+      "proof": {
+        "kind": "helper",
+        "summary": ""
       }
     },
     {
@@ -1633,21 +1707,21 @@
         {
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "lines": [
-            294,
-            296
+            324,
+            324
           ],
-          "sha256": "975a032c4b4aa7103419bbe72f86356a4deb5e9d69ff47549e1377cde0012683",
+          "sha256": "ba8fa6e2414a166744e68f885a9539a364c7b83b4b614ef7caf3ccf86295b71f",
           "title": "Apply the right restriction in the same way",
           "role": "key",
           "context": {
-            "declaration": "vanKampenDesc_map_right",
+            "declaration": "vanKampenDesc_comp_map_right",
             "lines": [
-              283,
-              296
+              314,
+              324
             ],
-            "sha256": "69873075f5d92418a47f475586a028ab7830384faa2e248de7e510134cd514c3",
+            "sha256": "5d39fd8faafb1dc72dd74b03a2383caafdd5dff4fe9ddf105ecdd16202be0bdc",
             "conclusion": "Restricting to $B$ recovers the right-hand homomorphism.",
-            "bookkeeping": "Apply the right restriction equation for `glueTwo`, then `localFunctor_map_base`."
+            "bookkeeping": "`MonoidHom.ext` applies the pointwise right restriction, just as for $A$."
           }
         }
       ],

@@ -23,11 +23,9 @@ and let $\omega$ be a morphism of $\fgpd X$.
 $\gamma$ representing $\omega$.}  \proofstep{2.1-s01-subdivide}{Choose a subdivision subordinate to the cover}{Apply \itemref{1.2} to $(U_i)_{i\in I}$ to choose
 $0=t_0\le\cdots\le t_n=1$ and indices $i_k$ such that
 $\gamma_k=\subpath{\gamma}{t_k}{t_{k+1}}$ lies in $U_{i_k}$.}
-\proofstep{2.1-s02-image}{Each piece lies in an image subgroupoid}{Since $\gamma_k$ lies in $U_{i_k}$,
-its class in $\fgpd X$ belongs to $\mathcal H$.}  Repeatedly applying \itemref{1.3} gives
+\proofstep{2.1-s02-image}{Each subpath class belongs to the generated subgroupoid}{Thus $[\gamma_k]$ belongs to $\mathcal H$.}  Repeatedly applying \itemref{1.3} gives
 \proofequation{2.1-s03-reassemble}{Reassemble the original path class}{  \omega=[\gamma]=[\gamma_0]\ptrans\cdots\ptrans[\gamma_{n-1}].}
-The right side lies in $\mathcal H$ by closure under composition.  Every
-morphism therefore lies in $\mathcal H$, which proves the claim.
+Closure under composition gives $\omega\in\mathcal H$.
 \end{proofpassage}
 
 \begin{definition}[id=2.2]{The gluing functor}
@@ -72,11 +70,11 @@ Define $L_N(\gamma)$ by composing the images of the subpath classes:
 \proofstep{2.2-s03-indices}{Compatibility makes the local path value independent of the index}{If a piece $\gamma_k$ lies in $U_i\cap U_j$, then by
 \eqref{eq:gluing-compatibility}, $F_j([\gamma_k])=F_i([\gamma_k])$, so this is well-defined.}
 Divide each interval $[t_k,t_{k+1}]$ into $m\ge1$ equal parts. By \itemref{1.3},
-\proofequation{2.2-s04-refine-pieces}{Refining each interval preserves the composite}{
+\proofequation{2.2-s04-refine-pieces}{Reassemble the refined subpath classes}{
   \pcls{\subpath{(\gamma_k)}{0}{1/m}}\ptrans\cdots\ptrans
   \pcls{\subpath{(\gamma_k)}{(m-1)/m}{1}}=\pcls{\gamma_k}.
 }
-Thus functoriality gives $L_{mN}(\gamma)=L_N(\gamma)$.
+\proofstep{2.2-s04-value}{Refining preserves the subdivision value}{Applying the local functors gives $L_{mN}(\gamma)=L_N(\gamma)$.}
 \proofstep{2.2-s05-refinement}{Compare equal subdivisions through their common refinement}{For $N,N_0$ sufficiently large, the common refinement into $NN_0$ pieces gives
 $L_N(\gamma)=L_{NN_0}(\gamma)=L_{N_0}(\gamma)$.}
 Write $L(\gamma)$ for this common value.
@@ -163,18 +161,18 @@ By induction,
 \proofstep{2.2-s12-restrict}{Collapse the subdivision inside a single cover member}{If $\gamma$ lies in $U_i$, evaluating all pieces using $F_i$ gives
 $F([\gamma])=F_i([\gamma])$.}
 If $\gamma\equiv y$ is constant, then for any $U_i$ containing $y$,
-\[
+\proofequation{2.2-s13-identity}{Preserve identities}{
   F([\gamma])=F_i([\gamma])=\mathrm{id}_{F_i(y)}=\mathrm{id}_{F(y)}.
-\]
+}
 
 For composable paths $\gamma$ and $\delta$, choose $N$ large enough for both.
 Subdividing $\gamma\ptrans\delta$ into $2N$ equal pieces gives first the $N$
-pieces of $\gamma$, then the $N$ pieces of $\delta$. Thus
-\[
+pieces of $\gamma$, then the $N$ pieces of $\delta$. Hence
+\proofequation{2.2-s14-compose}{Split the concatenated subdivision into its two halves}{
   L(\gamma\ptrans\delta)=L_{2N}(\gamma\ptrans\delta)
     =L_N(\delta)\circ L_N(\gamma)=L(\delta)\circ L(\gamma).
-\]
-Thus $F([\gamma]\ptrans[\delta])=F([\delta])\circ F([\gamma])$, so $F$ is a functor.
+}
+It follows that $F([\gamma]\ptrans[\delta])=F([\delta])\circ F([\gamma])$, so $F$ is a functor.
 \end{proofpassage}
 
 \end{fcassumptions}

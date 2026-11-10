@@ -126,7 +126,7 @@ specializations in `items.json`:
   Define “neighborhood cover” and “Lebesgue number” immediately after the lemma,
   outside its statement. Reuse “neighborhood cover” in the later cover assumptions.
 - Proposition 1.2 uses a neighborhood cover of $X$. Continuity pulls it back
-  to a neighborhood cover $c_i=\gamma^{-1}(U_i)$ of the interval. The Lean
+  to a neighborhood cover of the interval by the preimages $\gamma^{-1}(U_i)$. The Lean
   theorem needs the condition only along the path. Keep the `broadMatch`
   relation for this specialization and for Lemma 1.1.
 - Apply these results directly to the $U_i$ and their preimages. Lean takes
@@ -157,9 +157,8 @@ to one exact Lean range; a short explicit helper chain can have several.
 Separate deductions when their source locations differ. Show where an earlier
 result is invoked, not only the declaration of that result.
 
-Keep the visible excerpt note to one short mathematical sentence. Put Lean
-helper names, tactic explanations, and implementation details in the existing
-collapsible “Reading the Lean notation” notes. Make each step title describe the mathematical deduction; its number is
+Keep correspondence notes short and place them under the existing
+collapsible “Reading the Lean notation” section. Make each step title describe the mathematical deduction; its number is
 navigation, not a substitute for a title. Do not duplicate the title or
 the printed sentence in explanatory prose.
 
