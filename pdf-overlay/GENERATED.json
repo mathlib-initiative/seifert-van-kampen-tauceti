@@ -140,12 +140,12 @@
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "eb01aff875b20413d4c1dac2422e0a972fdff604030e0b11ec1efc238f666359"
+      "sha256": "af5d523263fb4befc1da18255c6b34ecfbff5d8b6a13a39885328527ef9fb6ae"
     },
     "count": 82,
     "directory": "annotations",
     "export": {
-      "commit": "2abbaf9ce6589e2518cc9b448c4f491ea7f3f2e2",
+      "commit": "b78e2979f7c4fc16b7d754d02771da8e2cc3dd58",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -177,7 +177,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "2eb36485b7544082769e269a5b6b9e5673b89b032c828b8ba0cc7c075c1cdf28"
+        "sha256": "5dec95e167b3896ae2b8ce3d801e888e0479471f6dcd9627a54ae20fbc0846b7"
       },
       {
         "path": "informal/notation.sty",
@@ -209,7 +209,7 @@
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
-        "sha256": "5702478314cbd95fda59cd7a87f6b09733468c7db7781ebbb0df9a6beba001ce"
+        "sha256": "e60c53caf62ea36bd60b2dc1272a179280705376f615d7f688c95e4932fe444b"
       },
       {
         "path": "tools/mathlib_hovers.py",
@@ -220,6 +220,6 @@
         "sha256": "f9ca13a2cc00bece7edc7ebf80669015eac99203952eef4cffacb3b239c27cba"
       }
     ],
-    "manifest_sha256": "c792063507431795767d6516194d009690ebea3283cfbb385ad7e85c74dc4ff5"
+    "manifest_sha256": "6129f7fea2bc71b4bbdb03b0c23f2aebd817edb669cd43df6c79f688f93d0cd5"
   }
 }
