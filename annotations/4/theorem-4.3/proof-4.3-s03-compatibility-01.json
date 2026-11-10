@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.370118, 0.486371, 0.259764, 0.0632]
+        "rect": [0.370118, 0.488065, 0.259764, 0.0632]
       },
       "title": "The local functors agree on the intersection",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.370118, 0.486371, 0.629882, 0.486371, 0.629882, 0.549571, 0.370118, 0.549571]
+            [0.370118, 0.488065, 0.629882, 0.488065, 0.629882, 0.551265, 0.370118, 0.551265]
           ],
           "region": "proof-4.3-s03-compatibility@p005"
         }
