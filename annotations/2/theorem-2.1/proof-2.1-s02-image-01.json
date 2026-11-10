@@ -6,14 +6,14 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.130391, 0.311237, 0.739217, 0.037879]
+        "rect": [0.130391, 0.312184, 0.739218, 0.036301]
       },
-      "title": "Each piece lies in an image subgroupoid",
+      "title": "Each subpath class belongs to the generated subgroupoid",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.767974, 0.311237, 0.869608, 0.311237, 0.869608, 0.329703, 0.767974, 0.329703],
-            [0.130391, 0.329703, 0.442605, 0.329703, 0.442605, 0.349116, 0.130391, 0.349116]
+            [0.78895, 0.312184, 0.869609, 0.312184, 0.869609, 0.330966, 0.78895, 0.330966],
+            [0.130391, 0.330966, 0.24123, 0.330966, 0.24123, 0.348485, 0.130391, 0.348485]
           ],
           "region": "proof-2.1-s02-image@p002"
         }
@@ -29,7 +29,7 @@
         "lines": [76, 84],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
       },
-      "title": "Each piece lies in an image subgroupoid",
+      "title": "Each subpath class belongs to the generated subgroupoid",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {

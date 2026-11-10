@@ -1,0 +1,137 @@
+{
+  "id": "proof-2.2-s04-value",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "subject": [
+    {
+      "location": {
+        "page": 2,
+        "rect": [0.138432, 0.863952, 0.403122, 0.019255]
+      },
+      "title": "Refining preserves the subdivision value",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.138432, 0.863952, 0.541554, 0.863952, 0.541554, 0.883207, 0.138432, 0.883207]
+          ],
+          "region": "proof-2.2-s04-value@p002"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [487, 497],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Combine a finite sequence of pieces",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s04-value-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L487-L497",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "proof_context": {
+            "bookkeeping": "`map_segVal_eq` repeatedly applies `pathVal_subpath_trans`. The `eqToHom` factors identify endpoint objects already proved equal.",
+            "conclusion": "Induction combines all pieces inside one $U_i$.",
+            "declaration": "map_segVal_eq",
+            "lines": [481, 497],
+            "notation": [
+              {
+                "lean": "segVal",
+                "math": "The value of one subdivision piece"
+              },
+              {
+                "lean": "Functor.OfSequence.map",
+                "math": "The composite from index a to index b"
+              },
+              {
+                "lean": "pathVal",
+                "math": "A local subpath value"
+              }
+            ]
+          },
+          "snippet": {
+            "line": 487,
+            "text": "  induction b, hab using Nat.le_induction with\n  | base =>\n    rw [Functor.OfSequence.map_id, pathVal_eq hU F hF i _ _\n      (Path.subpath_apply_mem hγ (hpt a le_rfl le_rfl) (hpt a le_rfl le_rfl)),\n      locVal_eq_eqToHom hU F hF i _ _ fun t ↦ by simp]\n    simp\n  | succ b hab ih =>\n    rw [Functor.OfSequence.map_comp _ a b (b + 1) hab b.le_succ,\n      ih fun j hj hj' ↦ hpt j hj (by omega), Functor.OfSequence.map_le_succ, segVal,\n      pathVal_subpath_trans hU F hF γ i hγ (hpt a le_rfl (by omega)) (hpt b hab (by omega))\n        (hpt (b + 1) (by omega) le_rfl)]"
+          }
+        }
+      }
+    },
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [535, 545],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Refining each interval preserves the composite",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s04-value-2",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L535-L545",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "proof_context": {
+            "bookkeeping": "`map_segVal_eq` combines the pieces on each coarse interval; `eqToHom` identifies equal endpoint objects.",
+            "conclusion": "Combining the refined pieces in each coarse interval gives $L_{mN}(\\gamma)=L_N(\\gamma)$.",
+            "declaration": "liftN_mul",
+            "lines": [523, 547],
+            "notation": [
+              {
+                "lean": "liftN hU F hF γ h hN",
+                "math": "$L_N(\\gamma)$"
+              },
+              {
+                "lean": "M",
+                "math": "$m$"
+              },
+              {
+                "lean": "pathVal",
+                "math": "A local subpath value"
+              }
+            ]
+          },
+          "snippet": {
+            "line": 535,
+            "text": "      obtain ⟨i, hi⟩ := h k\n      rw [Functor.OfSequence.map_comp _ 0 (M * k) (M * (k + 1)) (M * k).zero_le\n          (Nat.mul_le_mul_left M k.le_succ),\n        map_segVal_eq hU F hF γ h' i hi (Nat.mul_le_mul_left M k.le_succ) fun j hj hj' ↦\n          ⟨pt_mul hM (k.le_succ.trans hk) ▸ pt_mono _ hj, pt_mul hM hk ▸ pt_mono _ hj'⟩,\n        ih (by omega), Functor.OfSequence.map_comp _ 0 k (k + 1) k.zero_le k.le_succ,\n        Functor.OfSequence.map_le_succ, segVal,\n        pathVal_congr hU F hF _ _ (by rw [pt_mul hM (k.le_succ.trans hk)])\n          (by rw [pt_mul hM hk]) (fun t ↦ by rw [pt_mul hM (k.le_succ.trans hk), pt_mul hM hk]) _\n          (h.subpath_mem k)]\n      simp"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [2],
+        "printed": [2]
+      },
+      "proof": {
+        "kind": "chain",
+        "summary": ""
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

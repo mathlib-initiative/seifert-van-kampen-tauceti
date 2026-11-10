@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 2,
-        "rect": [0.339954, 0.838354, 0.320093, 0.023225]
+        "rect": [0.339954, 0.836837, 0.320093, 0.023225]
       },
-      "title": "Refining each interval preserves the composite",
+      "title": "Reassemble the refined subpath classes",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.339954, 0.838354, 0.660047, 0.838354, 0.660047, 0.861579, 0.339954, 0.861579]
+            [0.339954, 0.836837, 0.660047, 0.836837, 0.660047, 0.860062, 0.339954, 0.860062]
           ],
           "region": "proof-2.2-s04-refine-pieces@p002"
         }
@@ -25,10 +25,10 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [459, 463],
+        "lines": [459, 462],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
       },
-      "title": "Compose two subpaths",
+      "title": "Reassemble the refined subpath classes",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
@@ -37,20 +37,15 @@
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L459-L463",
+            "fragment": "L459-L462",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`eqToHom` changes between endpoint objects already proved equal. The longer subpath lemma also checks affine reparametrizations and restrictions to the same subspace before applying the homotopy-class identity.",
-            "conclusion": "Lemma 1.3 and functoriality combine consecutive subpath values.",
+            "conclusion": "Lemma 1.3 combines consecutive subpath classes.",
             "declaration": "pathVal_subpath_trans",
             "lines": [394, 463],
             "notation": [
-              {
-                "lean": "qab, qbc, qac",
-                "math": "The three subpaths in the subspace"
-              },
               {
                 "lean": "hquot",
                 "math": "The identity of path classes"
@@ -59,103 +54,7 @@
           },
           "snippet": {
             "line": 459,
-            "text": "  have hquot : Path.Homotopic.Quotient.trans (Path.Homotopic.Quotient.mk qab)\n      (Path.Homotopic.Quotient.mk qbc) = Path.Homotopic.Quotient.mk qac := by\n    rw [← hab', ← hbc', ← hac']\n    exact Path.Homotopic.Quotient.subpath_cast_trans p a' b' c' hpa hpb hpc\n  exact locVal_comp_eq_of_trans hU F hF i _ _ _ _ _ _ hquot"
-          }
-        }
-      }
-    },
-    {
-      "type": "lean",
-      "uri": "https://github.com/TauCetiProject/TauCeti",
-      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
-      "location": {
-        "lines": [487, 497],
-        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
-      },
-      "title": "Combine a finite sequence of pieces",
-      "role": "key",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "declaration": {
-            "id": "proof-2.2-s04-refine-pieces-2",
-            "kind": "proof_step"
-          },
-          "destination": {
-            "fragment": "L487-L497",
-            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
-            "resolution": "exact"
-          },
-          "proof_context": {
-            "bookkeeping": "`map_segVal_eq` repeatedly applies `pathVal_subpath_trans`. The `eqToHom` factors identify endpoint objects already proved equal.",
-            "conclusion": "Induction combines all pieces inside one $U_i$.",
-            "declaration": "map_segVal_eq",
-            "lines": [481, 497],
-            "notation": [
-              {
-                "lean": "segVal",
-                "math": "The value of one subdivision piece"
-              },
-              {
-                "lean": "Functor.OfSequence.map",
-                "math": "The composite from index a to index b"
-              },
-              {
-                "lean": "pathVal",
-                "math": "A local subpath value"
-              }
-            ]
-          },
-          "snippet": {
-            "line": 487,
-            "text": "  induction b, hab using Nat.le_induction with\n  | base =>\n    rw [Functor.OfSequence.map_id, pathVal_eq hU F hF i _ _\n      (Path.subpath_apply_mem hγ (hpt a le_rfl le_rfl) (hpt a le_rfl le_rfl)),\n      locVal_eq_eqToHom hU F hF i _ _ fun t ↦ by simp]\n    simp\n  | succ b hab ih =>\n    rw [Functor.OfSequence.map_comp _ a b (b + 1) hab b.le_succ,\n      ih fun j hj hj' ↦ hpt j hj (by omega), Functor.OfSequence.map_le_succ, segVal,\n      pathVal_subpath_trans hU F hF γ i hγ (hpt a le_rfl (by omega)) (hpt b hab (by omega))\n        (hpt (b + 1) (by omega) le_rfl)]"
-          }
-        }
-      }
-    },
-    {
-      "type": "lean",
-      "uri": "https://github.com/TauCetiProject/TauCeti",
-      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
-      "location": {
-        "lines": [535, 545],
-        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
-      },
-      "title": "Refining each interval preserves the composite",
-      "role": "key",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "declaration": {
-            "id": "proof-2.2-s04-refine-pieces-3",
-            "kind": "proof_step"
-          },
-          "destination": {
-            "fragment": "L535-L545",
-            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
-            "resolution": "exact"
-          },
-          "proof_context": {
-            "bookkeeping": "`map_segVal_eq` combines the pieces on each coarse interval; `eqToHom` identifies equal endpoint objects.",
-            "conclusion": "Combining the refined pieces in each coarse interval gives $L_{mN}(\\gamma)=L_N(\\gamma)$.",
-            "declaration": "liftN_mul",
-            "lines": [523, 547],
-            "notation": [
-              {
-                "lean": "liftN hU F hF γ h hN",
-                "math": "$L_N(\\gamma)$"
-              },
-              {
-                "lean": "M",
-                "math": "$m$"
-              },
-              {
-                "lean": "pathVal",
-                "math": "A local subpath value"
-              }
-            ]
-          },
-          "snippet": {
-            "line": 535,
-            "text": "      obtain ⟨i, hi⟩ := h k\n      rw [Functor.OfSequence.map_comp _ 0 (M * k) (M * (k + 1)) (M * k).zero_le\n          (Nat.mul_le_mul_left M k.le_succ),\n        map_segVal_eq hU F hF γ h' i hi (Nat.mul_le_mul_left M k.le_succ) fun j hj hj' ↦\n          ⟨pt_mul hM (k.le_succ.trans hk) ▸ pt_mono _ hj, pt_mul hM hk ▸ pt_mono _ hj'⟩,\n        ih (by omega), Functor.OfSequence.map_comp _ 0 k (k + 1) k.zero_le k.le_succ,\n        Functor.OfSequence.map_le_succ, segVal,\n        pathVal_congr hU F hF _ _ (by rw [pt_mul hM (k.le_succ.trans hk)])\n          (by rw [pt_mul hM hk]) (fun t ↦ by rw [pt_mul hM (k.le_succ.trans hk), pt_mul hM hk]) _\n          (h.subpath_mem k)]\n      simp"
+            "text": "  have hquot : Path.Homotopic.Quotient.trans (Path.Homotopic.Quotient.mk qab)\n      (Path.Homotopic.Quotient.mk qbc) = Path.Homotopic.Quotient.mk qac := by\n    rw [← hab', ← hbc', ← hac']\n    exact Path.Homotopic.Quotient.subpath_cast_trans p a' b' c' hpa hpb hpc"
           }
         }
       }
@@ -168,8 +67,8 @@
         "printed": [2]
       },
       "proof": {
-        "kind": "chain",
-        "summary": "Combine two pieces, then finitely many, then refine every coarse interval."
+        "kind": "helper",
+        "summary": ""
       },
       "provenance": {
         "actor": "agent",

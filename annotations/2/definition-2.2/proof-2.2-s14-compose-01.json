@@ -1,0 +1,75 @@
+{
+  "id": "proof-2.2-s14-compose",
+  "kind": "proof_step",
+  "relation": "closeMatch",
+  "subject": [
+    {
+      "location": {
+        "page": 3,
+        "rect": [0.288409, 0.80835, 0.423182, 0.02135]
+      },
+      "title": "Split the concatenated subdivision into its two halves",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "quads": [
+            [0.288409, 0.80835, 0.711591, 0.80835, 0.711591, 0.8297, 0.288409, 0.8297]
+          ],
+          "region": "proof-2.2-s14-compose@p003"
+        }
+      }
+    }
+  ],
+  "object": [
+    {
+      "type": "lean",
+      "uri": "https://github.com/TauCetiProject/TauCeti",
+      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
+      "location": {
+        "lines": [617, 621],
+        "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      },
+      "title": "Split the concatenated subdivision into its two halves",
+      "role": "key",
+      "extensions": {
+        "org.mathlib-initiative.formal-companion.overlay": {
+          "declaration": {
+            "id": "proof-2.2-s14-compose-1",
+            "kind": "proof_step"
+          },
+          "destination": {
+            "fragment": "L617-L621",
+            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+            "resolution": "exact"
+          },
+          "proof_context": {
+            "bookkeeping": "`first N` and `second N` identify the two halves with the original path subdivisions.",
+            "conclusion": "Split the composite of the $2N$ pieces at $N$.",
+            "declaration": "lift_trans",
+            "lines": [573, 621]
+          },
+          "snippet": {
+            "line": 617,
+            "text": "  rw [lift_eq_liftN hU F hF _ hγδ hNN, lift_eq_liftN hU F hF _ hγ hN,\n    lift_eq_liftN hU F hF _ hδ hN, liftN, liftN, liftN,\n    Functor.OfSequence.map_comp _ 0 N (N + N) N.zero_le (N.le_add_right N), first N le_rfl,\n    second N le_rfl]\n  simp"
+          }
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "org.mathlib-initiative.formal-companion.overlay": {
+      "locator": {
+        "physical": [3],
+        "printed": [3]
+      },
+      "proof": {
+        "kind": "helper",
+        "summary": ""
+      },
+      "provenance": {
+        "actor": "agent",
+        "confirmed_by_human": false,
+        "method": "agent_annotation"
+      }
+    }
+  }
+}

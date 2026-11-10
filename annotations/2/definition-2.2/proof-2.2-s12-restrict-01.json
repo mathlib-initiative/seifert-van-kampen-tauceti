@@ -49,8 +49,8 @@
             "lines": [507, 514],
             "notation": [
               {
-                "lean": "lift hU F hF γ",
-                "math": "$L(\\gamma)$"
+                "lean": "liftN hU F hF γ h hN",
+                "math": "$L_N(\\gamma)$"
               },
               {
                 "lean": "locVal hU F hF i γ hγ",

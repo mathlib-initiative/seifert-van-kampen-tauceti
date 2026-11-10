@@ -25,7 +25,7 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [294, 296],
+        "lines": [324, 324],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
       "title": "Apply the right restriction in the same way",
@@ -37,19 +37,19 @@
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L294-L296",
+            "fragment": "L324-L324",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "Apply the right restriction equation for `glueTwo`, then `localFunctor_map_base`.",
+            "bookkeeping": "`MonoidHom.ext` applies the pointwise right restriction, just as for $A$.",
             "conclusion": "Restricting to $B$ recovers the right-hand homomorphism.",
-            "declaration": "vanKampenDesc_map_right",
-            "lines": [283, 296]
+            "declaration": "vanKampenDesc_comp_map_right",
+            "lines": [314, 324]
           },
           "snippet": {
-            "line": 294,
-            "text": "  (vanKampenDesc_map_subtypeVal hCover hA hB hAB hxA hxB fA fB h hxB _\n    (FundamentalGroupoid.map_subtypeVal_comp_glueTwo_right hCover _ _ _) g).trans\n    (localFunctor_map_base inter_subset_right hAB hB (interBase hxA hxB) fB g)"
+            "line": 324,
+            "text": "  MonoidHom.ext (vanKampenDesc_map_right hCover hA hB hAB hxA hxB fA fB h)"
           }
         }
       }

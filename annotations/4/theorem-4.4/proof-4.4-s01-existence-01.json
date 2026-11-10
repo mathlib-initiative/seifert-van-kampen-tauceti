@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 6,
-        "rect": [0.485388, 0.271465, 0.198737, 0.017045]
+        "rect": [0.330802, 0.271465, 0.201948, 0.017361]
       },
       "title": "Construct a map for any compatible pair",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.485388, 0.271465, 0.684125, 0.271465, 0.684125, 0.28851, 0.485388, 0.28851]
+            [0.330802, 0.271465, 0.53275, 0.271465, 0.53275, 0.288826, 0.330802, 0.288826]
           ],
           "region": "proof-4.4-s01-existence@p006"
         }
