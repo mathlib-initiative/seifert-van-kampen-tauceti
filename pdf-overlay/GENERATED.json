@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "44a4119e9084c99e6093230152d2373150765c0e"
+    "commit": "33dfd785354fe2b8c00cf529db27fa80e6f7068b"
   },
   "format": {
     "package": "literature-links",
@@ -110,7 +110,7 @@
     },
     {
       "path": "viewer/index.html",
-      "sha256": "a3c8247eb1561889cc96c1334f0f2fa1841ea1e7f84915830645318f0aa0cd1f"
+      "sha256": "8cf258d99ab0588173c5f775c1d380927bce4edb968234f8fcaa34fd4975bc55"
     },
     {
       "path": "viewer/viewer-core.js",
@@ -134,18 +134,18 @@
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "9214edb9c643febffbb6b8e3080a4b229d24acd6aa85f2b163fd584c70ef8e33"
+      "sha256": "a08729ec1a9bb7709dad53e9244b3cbb636737b0daf9d65a92a40ad0fd8b3ac3"
     }
   ],
   "annotations": {
     "bundle": {
       "path": "annotations.bundle.json",
-      "sha256": "9ff91ef4eb79222c10524c36243f2d536fc44e86590766fb01b7172338709005"
+      "sha256": "eb01aff875b20413d4c1dac2422e0a972fdff604030e0b11ec1efc238f666359"
     },
     "count": 82,
     "directory": "annotations",
     "export": {
-      "commit": "42f387a490597c9e66019a6894b385f185af47b2",
+      "commit": "2abbaf9ce6589e2518cc9b448c4f491ea7f3f2e2",
       "convention": "informal-markers",
       "source_id": "svk-tauceti",
       "lean": {
@@ -177,7 +177,7 @@
       },
       {
         "path": "informal/markers.json",
-        "sha256": "7dbae594f46d0c55c029adb22dd2f9013cacac8afa325f494a899c4fe8cf0c8e"
+        "sha256": "2eb36485b7544082769e269a5b6b9e5673b89b032c828b8ba0cc7c075c1cdf28"
       },
       {
         "path": "informal/notation.sty",
@@ -209,7 +209,7 @@
       },
       {
         "path": "informal/sections/04-seifert-van-kampen.tex",
-        "sha256": "a46e663ee45ee2c59701c515ccea846528661f34f9c59f73a365201dc10d3a9a"
+        "sha256": "5702478314cbd95fda59cd7a87f6b09733468c7db7781ebbb0df9a6beba001ce"
       },
       {
         "path": "tools/mathlib_hovers.py",
@@ -220,6 +220,6 @@
         "sha256": "f9ca13a2cc00bece7edc7ebf80669015eac99203952eef4cffacb3b239c27cba"
       }
     ],
-    "manifest_sha256": "1c2d8205b4eaa1db273901a92f96f0715138b1bf79916aba6a81dd346df9e307"
+    "manifest_sha256": "c792063507431795767d6516194d009690ebea3283cfbb385ad7e85c74dc4ff5"
   }
 }
