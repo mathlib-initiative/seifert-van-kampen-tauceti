@@ -1,5 +1,5 @@
 {
-  "id": "proof-4.4-s02-factorization",
+  "id": "proof-4.4-s03-factorization",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
@@ -14,7 +14,7 @@
           "quads": [
             [0.377786, 0.321705, 0.622214, 0.321705, 0.622214, 0.338081, 0.377786, 0.338081]
           ],
-          "region": "proof-4.4-s02-factorization@p006"
+          "region": "proof-4.4-s03-factorization@p006"
         }
       }
     }
@@ -33,7 +33,7 @@
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.4-s02-factorization-1",
+            "id": "proof-4.4-s03-factorization-1",
             "kind": "proof_step"
           },
           "destination": {

@@ -1,20 +1,21 @@
 {
-  "id": "proof-4.4-s03-uniqueness",
+  "id": "proof-4.4-s02-uniqueness",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
         "page": 6,
-        "rect": [0.138784, 0.348801, 0.225415, 0.020202]
+        "rect": [0.130391, 0.271465, 0.739217, 0.0363]
       },
       "title": "Invoke uniqueness for the mediating homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.138784, 0.348801, 0.364199, 0.348801, 0.364199, 0.369003, 0.138784, 0.369003]
+            [0.685983, 0.271465, 0.869608, 0.271465, 0.869608, 0.28851, 0.685983, 0.28851],
+            [0.130391, 0.28851, 0.280431, 0.28851, 0.280431, 0.307765, 0.130391, 0.307765]
           ],
-          "region": "proof-4.4-s03-uniqueness@p006"
+          "region": "proof-4.4-s02-uniqueness@p006"
         }
       }
     }
@@ -33,7 +34,7 @@
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.4-s03-uniqueness-1",
+            "id": "proof-4.4-s02-uniqueness-1",
             "kind": "proof_step"
           },
           "destination": {
