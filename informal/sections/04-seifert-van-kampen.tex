@@ -45,9 +45,9 @@ homomorphism $\varphi:\fgrp{X}{x}\longrightarrow M$ such that
 \end{samepage}
 
 \begin{proofpassage}{4.3-descent}{Proof}{Existence and uniqueness}
-\proofstep{4.3-s01-connect}{Choose connecting paths compatibly on the intersection}{By path connectedness, choose path classes $\rho_y:x\longrightarrow y$ in $A\cap B$, and extend these
-to choices $\tau^A_y$ in $A$ and $\tau^B_y$ in $B$, taking the class at
-$x$ to be the identity.}
+\proofstep{4.3-s01-connect}{Choose connecting paths compatibly on the intersection}{By path connectedness, for each $y\in X$ choose a path class $\tau_y^A:x\longrightarrow y$
+in $A$ if $y\in A$, and $\tau_y^B$ in $B$ if $y\in B$. For $y\in A\cap B$,
+use one path in the intersection for both classes, taking the constant path when $y=x$.}
 \proofstep{4.3-s02-local}{Invoke the functor construction from a homomorphism}{By \itemref{4.2}, the homomorphisms $\varphi_A,\varphi_B$ give functors
 $F_A:\fgpd A\longrightarrow\sobj M$ and
 $F_B:\fgpd B\longrightarrow\sobj M$.}
