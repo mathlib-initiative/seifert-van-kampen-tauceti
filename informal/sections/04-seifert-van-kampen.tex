@@ -48,17 +48,18 @@ homomorphism $\varphi:\fgrp{X}{x}\longrightarrow M$ such that
 \end{samepage}
 
 \begin{proofpassage}{4.3-descent}{Proof}{Existence and uniqueness}
-\proofstep{4.3-s01-connect}{Choose connecting paths compatibly on the intersection}{By path connectedness, for each $y\in X$ choose a path class $\tau_y^A:x\longrightarrow y$
-in $A$ if $y\in A$, and $\tau_y^B$ in $B$ if $y\in B$. For $y\in A\cap B$,
-use one path in the intersection for both classes, taking the constant path when $y=x$.}
-\proofstep{4.3-s02-local}{Invoke the functor construction from a homomorphism}{By \itemref{4.2}, the homomorphisms $\varphi_A,\varphi_B$ give functors
-$F_A:\fgpd A\longrightarrow\sobj M$ and
+\proofstep{4.3-s01-connect}{Choose connecting paths compatibly on the intersection}{By path connectedness, for each $y\in X$ choose a path $\tau_y^A:x\longrightarrow y$
+with image in $A$ if $y\in A$, and $\tau_y^B$ with image in $B$ if $y\in B$.
+For $y\in A\cap B$, we may choose $\tau_y^A=\tau_y^B$ lying in $A\cap B$,
+taking the constant path when $y=x$.}
+\proofstep{4.3-s02-local}{Invoke the functor construction from a homomorphism}{Using the classes of these paths in \itemref{4.2}, the homomorphisms
+$\varphi_A,\varphi_B$ give functors $F_A:\fgpd A\longrightarrow\sobj M$ and
 $F_B:\fgpd B\longrightarrow\sobj M$.}
 
-For a path $\gamma:y\longrightarrow z$ in $A\cap B$, the classes
-$\tau_y^A,\tau_y^B$ come from one path in the intersection, and likewise at $z$.
-Thus \eqref{eq:4.2-vertex-group-functor} applies $\varphi_A$ and $\varphi_B$
-to the same based loop in $A\cap B$. By compatibility,
+For a path $\gamma:y\longrightarrow z$ in $A\cap B$, we have
+$\tau_y^A=\tau_y^B$ and $\tau_z^A=\tau_z^B$. Thus
+\eqref{eq:4.2-vertex-group-functor} applies $\varphi_A$ and $\varphi_B$ to the
+class of the same based loop in $A\cap B$. By compatibility,
 $F_A([\gamma])=F_B([\gamma])$, so the square commutes.
 \proofequation{4.3-s03-compatibility}{The local functors agree on the intersection}{
   \begin{array}{ccc@{}l}
@@ -79,9 +80,9 @@ By the definition of $\varphi$ and the restriction property in
 \proofequation{4.3-s06-left}{Use the glued functor's restriction to A}{
  \varphi(p_A(\omega))=F(\fgpd{\incl{A}}(\omega))=F_A(\omega).
 }
-The chosen path $\tau^A_x$ is the identity at the basepoint, so
+The constant path $\tau^A_x$ has identity class, so
 \proofequation{4.3-s07-basepoint}{Evaluate the local functor at the basepoint}{
- F_A(\omega)=\varphi_A\bigl((\tau^A_x)^{-1}\circ\omega\circ\tau^A_x\bigr)
+ F_A(\omega)=\varphi_A\bigl([\tau^A_x]^{-1}\circ\omega\circ[\tau^A_x]\bigr)
             =\varphi_A(\omega).
 }
 \proofstep{4.3-s08-pointwise}{Pass from pointwise equality to equality of homomorphisms}{Since this holds for every $\omega$, we have $\varphi\circ(\incl A)_*=\varphi_A$.}
