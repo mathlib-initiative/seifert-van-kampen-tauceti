@@ -88,13 +88,18 @@ By the definition of $\varphi$ and the restriction property in
 \proofstep{4.3-s08-pointwise}{Pass from pointwise equality to equality of homomorphisms}{As $\omega$ was arbitrary, $\varphi\circ(\incl A)_*=\varphi_A$.}
 \proofstep{4.3-s09-right}{Apply the right restriction in the same way}{Similarly, $\varphi\circ(\incl B)_*=\varphi_B$ holds by symmetry.}
 
-For uniqueness, suppose that $\psi:\fgrp{X}{x}\longrightarrow M$ also satisfies
-these restriction equations. Consider the subgroup
+For uniqueness, let $\psi:\fgrp{X}{x}\longrightarrow M$ be a homomorphism with
+\begin{equation}\label{eq:4.3-psi-restrictions}
+  \psi\circ(\incl A)_*=\varphi_A,\qquad
+  \psi\circ(\incl B)_*=\varphi_B.
+\end{equation}
+Consider the subgroup
 \[
  E=\{\omega\in\fgrp{X}{x}:\varphi(\omega)=\psi(\omega)\}.
 \]
 
-\proofstep{4.3-s10-images}{Both generating images lie in the equalizer subgroup}{The restriction equations put the images of both $\fgrp{A}{x}$ and $\fgrp{B}{x}$ in $E$.}
+\proofstep{4.3-s10-images}{Both generating images lie in the equalizer subgroup}{By \eqref{eq:4.3-psi-restrictions} and the restriction equations for $\varphi$,
+$E$ contains the images of both $\fgrp{A}{x}$ and $\fgrp{B}{x}$.}
 \proofstep{4.3-s11-generation}{Invoke generation and conclude that the homomorphisms agree}{These two images generate $\fgrp{X}{x}$ by
 \itemref{3.1} applied to the cover $\{A,B\}$.  Therefore $E=\fgrp{X}{x}$: the homomorphisms agree on every loop class,
 so $\varphi=\psi$.}
