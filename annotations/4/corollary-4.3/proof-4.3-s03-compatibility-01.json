@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.251143, 0.218056, 0.497713, 0.021995]
+        "rect": [0.337505, 0.203041, 0.324991, 0.06964]
       },
-      "title": "Apply compatibility to the transported loop in the intersection",
+      "title": "The local functors agree on the intersection",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.251143, 0.218056, 0.748856, 0.218056, 0.748856, 0.240051, 0.251143, 0.240051]
+            [0.337505, 0.203041, 0.662496, 0.203041, 0.662496, 0.272681, 0.337505, 0.272681]
           ],
           "region": "proof-4.3-s03-compatibility@p005"
         }
@@ -28,7 +28,7 @@
         "lines": [215, 217],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Apply compatibility to the transported loop in the intersection",
+      "title": "The local functors agree on the intersection",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
