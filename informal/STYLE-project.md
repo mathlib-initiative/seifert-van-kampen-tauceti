@@ -136,7 +136,7 @@ specializations in `items.json`:
   Euclidean metric choose the grid by cell diameter; Lean uses the equivalent
   maximum metric. Do not introduce ambient open extensions.
 
-In Proposition 1.2 choose intervals of length at most half the Lebesgue radius,
+In Proposition 1.2 choose intervals of length at most half the Lebesgue number,
 matching Mathlib's subdivision helper. Do not claim that helper chooses spacing
 $1/N$. Introduce equal subdivisions $t_k=k/N$ in the gluing proof where needed.
 Natural numbers start at zero, and subdivisions are nondecreasing rather than

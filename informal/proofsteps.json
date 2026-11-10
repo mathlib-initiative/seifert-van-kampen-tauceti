@@ -53,7 +53,7 @@
       "id": "1.2-s01-lebesgue",
       "item": "1.2",
       "label": "Step",
-      "title": "Obtain a Lebesgue radius",
+      "title": "Obtain a Lebesgue number",
       "span": "inline",
       "targets": [
         {
@@ -74,7 +74,7 @@
               482
             ],
             "sha256": "8f64f8440ea5a554d35747139bd4f7e1c33cf33e09d6f1d64b6fbd8b0dc4c5de",
-            "conclusion": "Compactness gives a Lebesgue radius $\\rho>0$.",
+            "conclusion": "Compactness gives a Lebesgue number $\\rho>0$.",
             "notation": [
               {
                 "math": "$\\rho$",
@@ -110,7 +110,7 @@
             480
           ],
           "sha256": "8bd848392cd48cea73b525c5c7195019b07f90380f11cd1cd65decd08855526c",
-          "title": "Construct subdivision points with step size half the Lebesgue radius",
+          "title": "Construct subdivision points with step size half the Lebesgue number",
           "role": "key",
           "context": {
             "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
