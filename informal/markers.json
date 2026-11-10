@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "f9fc3cd4df82fe70282abdabd46991a987c0f931",
- "pdf_sha256": "3c77f250aeb5262c760493e82be159fe22696cb65f5457aaa51a3047738e0609",
+ "source_commit": "b29ec0a2670f6ccdeba3c8ce0d32c0277dbc39f6",
+ "pdf_sha256": "5c5bb9491550725862577d229154764233880c693add2f3483fac1d65d5bde96",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
@@ -152,7 +152,7 @@
     "TauCeti.vanKampen_hom_ext"
    ],
    "boxes": [
-    [5, 0.130391, 0.104167, 0.739217, 0.200442]
+    [5, 0.130391, 0.104167, 0.739217, 0.185606]
    ]
   },
   {
@@ -167,7 +167,7 @@
     "TauCeti.isPushout_fundamentalGroup"
    ],
    "boxes": [
-    [6, 0.130391, 0.170455, 0.739217, 0.137942]
+    [6, 0.130391, 0.104167, 0.739217, 0.137942]
    ]
   },
   {
@@ -386,7 +386,7 @@
    "label": "notion:21",
    "number": "n21",
    "boxes": [
-    [6, 0.582454, 0.288194, 0.06335, 0.020202]
+    [6, 0.582454, 0.221907, 0.06335, 0.020202]
    ]
   },
   {
@@ -396,7 +396,7 @@
    "label": "notion:22",
    "number": "n22",
    "boxes": [
-    [6, 0.701205, 0.288194, 0.143431, 0.020202]
+    [6, 0.701205, 0.221907, 0.143431, 0.020202]
    ]
   }
  ]
