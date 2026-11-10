@@ -77,16 +77,16 @@ Restricting to loops at $x$ gives
 Let $\omega\in\fgrp{A}{x}$ be arbitrary.
 By the definition of $\varphi$ and the restriction property in
 \itemref{2.2},
-\proofequation{4.3-s06-left}{Use the glued functor's restriction to A}{
- \varphi\bigl((\incl{A})_*(\omega)\bigr)=F(\fgpd{\incl{A}}(\omega))=F_A(\omega).
-}
-The constant path $\tau^A_x$ has identity class, so
-\proofequation{4.3-s07-basepoint}{Evaluate the local functor at the basepoint}{
- F_A(\omega)=\varphi_A\bigl([\tau^A_x]^{-1}\circ\omega\circ[\tau^A_x]\bigr)
-            =\varphi_A(\omega).
-}
+\[
+  \proofmath{4.3-s06-left}{Use the glued functor's restriction to A}{
+    \varphi\bigl((\incl{A})_*(\omega)\bigr)=F(\fgpd{\incl{A}}(\omega))=F_A(\omega)
+  }
+  \proofmath{4.3-s07-basepoint}{Evaluate the local functor at the basepoint}{
+    {}=\varphi_A(\omega)\qquad\bigl(\text{since }[\tau_x^A]=1\bigr).
+  }
+\]
 \proofstep{4.3-s08-pointwise}{Pass from pointwise equality to equality of homomorphisms}{Since this holds for every $\omega$, we have $\varphi\circ(\incl A)_*=\varphi_A$.}
-\proofstep{4.3-s09-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ gives $\varphi\circ(\incl B)_*=\varphi_B$.}
+\proofstep{4.3-s09-right}{Apply the right restriction in the same way}{Similarly, $\varphi\circ(\incl B)_*=\varphi_B$ holds by symmetry.}
 
 For uniqueness, suppose that $\psi:\fgrp{X}{x}\longrightarrow M$ also satisfies
 these restriction equations.  Consider
