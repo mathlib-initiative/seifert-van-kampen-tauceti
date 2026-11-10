@@ -1772,40 +1772,7 @@
       }
     },
     {
-      "id": "4.4-s02-factorization",
-      "item": "4.4",
-      "label": "Step",
-      "title": "Invoke the two restriction equations",
-      "span": "display",
-      "targets": [
-        {
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
-          "lines": [
-            370,
-            373
-          ],
-          "sha256": "4a8855805f635b724e502970334912d76c110d2594cb5e616d3dc069e4db44b2",
-          "title": "Invoke the two restriction equations",
-          "role": "key",
-          "context": {
-            "declaration": "isPushout_fundamentalGroup",
-            "lines": [
-              349,
-              378
-            ],
-            "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "The two restriction equations give the required factorizations.",
-            "bookkeeping": "`GrpCat.ofHom` packages a group homomorphism as a category arrow; `GrpCat.hom_ext` transfers equality to those arrows."
-          }
-        }
-      ],
-      "proof": {
-        "kind": "direct",
-        "summary": ""
-      }
-    },
-    {
-      "id": "4.4-s03-uniqueness",
+      "id": "4.4-s02-uniqueness",
       "item": "4.4",
       "label": "Step",
       "title": "Invoke uniqueness for the mediating homomorphism",
@@ -1829,6 +1796,39 @@
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
             "conclusion": "The two mediators agree because their restrictions agree.",
             "bookkeeping": "`vanKampen_hom_ext` supplies the uniqueness part of Theorem 4.3."
+          }
+        }
+      ],
+      "proof": {
+        "kind": "direct",
+        "summary": ""
+      }
+    },
+    {
+      "id": "4.4-s03-factorization",
+      "item": "4.4",
+      "label": "Step",
+      "title": "Invoke the two restriction equations",
+      "span": "display",
+      "targets": [
+        {
+          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "lines": [
+            370,
+            373
+          ],
+          "sha256": "4a8855805f635b724e502970334912d76c110d2594cb5e616d3dc069e4db44b2",
+          "title": "Invoke the two restriction equations",
+          "role": "key",
+          "context": {
+            "declaration": "isPushout_fundamentalGroup",
+            "lines": [
+              349,
+              378
+            ],
+            "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
+            "conclusion": "The two restriction equations give the required factorizations.",
+            "bookkeeping": "`GrpCat.ofHom` packages a group homomorphism as a category arrow; `GrpCat.hom_ext` transfers equality to those arrows."
           }
         }
       ],
