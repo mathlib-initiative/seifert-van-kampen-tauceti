@@ -2,8 +2,8 @@
  "schema": "formal-companion/informalize-markers",
  "schema_version": 1,
  "job": "svk-tauceti",
- "source_commit": "cce660744190bef4cbffa73dabdc28939a74067f",
- "pdf_sha256": "2aa5541954a5e8d20de572f668ca215cfdd85b1cb085210e9a74b38f4fb5ae32",
+ "source_commit": "8ce5ed6c750bb42b13b05d8520df4a3da912f34a",
+ "pdf_sha256": "760586e18abe41209548340ae996743fd115f80fa3868b658c0cf84da2be1ffa",
  "pages": 6,
  "page_size_pt": [612.0, 792.0],
  "boxes_config": {
