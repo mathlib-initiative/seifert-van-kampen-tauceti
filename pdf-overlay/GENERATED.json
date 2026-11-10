@@ -4,7 +4,7 @@
   "generator": {
     "name": "formal-companion",
     "version": "0.2.0",
-    "commit": "0048845ca4816d18f85f4ad4e86e810a069fecf2"
+    "commit": "44a4119e9084c99e6093230152d2373150765c0e"
   },
   "format": {
     "package": "literature-links",
@@ -110,7 +110,7 @@
     },
     {
       "path": "viewer/index.html",
-      "sha256": "65634da28e1d4333501f82d709895374709906709cf2426c9d388fd8484843f4"
+      "sha256": "a3c8247eb1561889cc96c1334f0f2fa1841ea1e7f84915830645318f0aa0cd1f"
     },
     {
       "path": "viewer/viewer-core.js",
@@ -130,11 +130,11 @@
     },
     {
       "path": "viewer/viewer.css",
-      "sha256": "755ccd9fa3107264cca0c4cce2bb5d7cd86c3a8352a8415b0e6a50389405e332"
+      "sha256": "b22d4ba21a1d8a8467bab92a550965bd15b463a4d6c5f022b1e8bd9ac7f79e65"
     },
     {
       "path": "viewer/viewer.js",
-      "sha256": "1753447e7f1c6041a9cb421b1c0a1051d543c070a4a9a3c9b1c579c8c8c279a2"
+      "sha256": "9214edb9c643febffbb6b8e3080a4b229d24acd6aa85f2b163fd584c70ef8e33"
     }
   ],
   "annotations": {
