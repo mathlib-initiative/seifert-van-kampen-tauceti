@@ -44,7 +44,7 @@ Keep shared notation in [notation.sty](notation.sty).
 | `\N`, `\Z`, `\R` | Natural numbers, integers, real numbers |
 | `\cint{a}{b}`, `\uI` | Closed interval and unit interval |
 | `\intr A`, `\ball{x}{\rho}` | Interior and open ball |
-| `\incl{S}`, `\inclin{S}{T}` | Inclusion into the ambient space or into `T` |
+| `\incl{S}` | Inclusion into the ambient space |
 | `\ptrans` | Path concatenation and composition of homotopy classes |
 | `\subpath{\gamma}{r}{s}` | Affinely parametrized subpath |
 | `\pcls{\gamma}` | Homotopy class |
@@ -55,8 +55,10 @@ Keep shared notation in [notation.sty](notation.sty).
 
 Use $f_*$ for an induced fundamental-group homomorphism and $(\iota_S)_*$
 for an inclusion-induced homomorphism. In Section 3, introduce only these
-inclusion-induced maps; a general continuous map is not needed there. Introduce $\iota_{S,T}$ at its first
-use in Corollary 4.3, not in Section 2. Reserve $\Pi_1(f)$ for the groupoid
+inclusion-induced maps; a general continuous map is not needed there. Use unlabelled
+inclusion-induced arrows in the descent diagrams, and label the four maps in the final
+pushout diagram directly. Write $A\cap B$ throughout; do not abbreviate it by $C$
+or introduce separate inclusion notation between subspaces. Reserve $\Pi_1(f)$ for the groupoid
 functor, explaining its action on points and path classes at first use.
 
 Introduce a path $\gamma$ before its notation. Define its subpath directly by
@@ -140,10 +142,9 @@ $1/N$. Introduce equal subdivisions $t_k=k/N$ in the gluing proof where needed.
 Natural numbers start at zero, and subdivisions are nondecreasing rather than
 strictly increasing. State that the pairwise intersections are nonempty and
 path connected in Theorem 3.1, without a global nonemptiness convention.
-Group the common assumptions on $A$, $B$, $x\in A\cap B$, and $M$ for
-Corollary 4.3 and Propositions 4.4--4.5 in one opening paragraph within an
-`fcassumptions` block. Keep Theorem 4.6 self-contained. The common basepoint
-guarantees nonemptiness in these results.
+Theorem 4.3 combines descent, its restrictions, and uniqueness. State the common
+assumptions on $A$, $B$, $x\in A\cap B$, and $M$ once inside that theorem. Keep
+Theorem 4.4 self-contained. The common basepoint guarantees nonemptiness.
 
 ## Proof tags and reading notes
 
@@ -202,19 +203,23 @@ and omit routine metric bookkeeping. Link the cell relation, row argument, and
 final deductions separately.
 
 Do not give the gluing restriction equations or two-set specialization separate
-numbered statements. Present the compatibility hypothesis of Corollary 4.3
+numbered statements. Present the compatibility hypothesis of Theorem 4.3
 as a commuting square, with the inclusion-induced maps and the maps to $M$
 labelled. In its proof, apply 4.2 and 2.2 directly. Focus its
 proof on compatible connecting paths and equality of the local functors on the
 intersection; do not repeat the formula from 4.2. Show this agreement in a
-commuting square rather than introducing auxiliary pointwise notation.
+commuting square rather than introducing auxiliary pointwise notation. Keep construction,
+restriction, and uniqueness in one proof, with their separate Lean correspondences.
+For Theorem 4.4, label $j_A,j_B,p_A,p_B$ in the diagram and use Theorem 4.3
+directly for the universal property; omit a separate map catalogue and the routine
+commutativity calculation.
 
 ## References
 
 Cite Hatcher's *Algebraic Topology* by result number through `\fcref`, without
 copying or closely paraphrasing its prose. Use an unstarred reference for a
 number given by a Lean docstring; `items.json` records this provenance.
-The current references to Theorem 1.20 are in 2.1, 2.2, 3.1, and 4.6.
+The current references to Theorem 1.20 are in 2.1, 2.2, 3.1, and 4.4.
 Do not infer a new reference number without checking its source.
 
 The item table records no junk-value behavior requiring a printed caveat.

@@ -557,13 +557,13 @@
     {
       "id": "4.3",
       "section": "4",
-      "kind": "corollary",
+      "kind": "theorem",
       "title": "The descent homomorphism",
-      "gist": "Homomorphisms to a monoid out of the fundamental groups of two subsets, whose interiors cover the space and which are path connected along with their intersection, and which agree after restriction to the fundamental group of the intersection, induce a homomorphism out of the fundamental group of the space.",
+      "gist": "Compatible homomorphisms to a monoid from the fundamental groups of two subsets extend uniquely to the fundamental group of the whole space, with the prescribed restrictions, when the interiors cover the space and both subsets and their intersection are path connected.",
       "parts": [],
       "in_v1": true,
       "reference": null,
-      "departures": "The target is only assumed to be a monoid, and the two subsets need not be open: only their interiors have to cover the space. Presented as a corollary of groupoid gluing (2.2) and the vertex-group functor construction (4.2); the proof checks compatibility using connecting paths chosen in the intersection.",
+      "departures": "The target is a monoid, and only the interiors of the two subsets must cover the space. This theorem combines the descent construction, its two restriction equations, and the uniqueness theorem; its key declarations jointly establish the stated unique extension. The pointwise restriction lemmas are retained as helpers.",
       "declarations": [
         {
           "name": "TauCeti.vanKampenDesc",
@@ -585,38 +585,14 @@
             "a homomorphism to the monoid out of the fundamental group of each of the two subsets",
             "the two homomorphisms agree after restriction along the inclusions of the intersection"
           ]
-        }
-      ]
-    },
-    {
-      "id": "4.4",
-      "section": "4",
-      "kind": "proposition",
-      "title": "Restriction of the descent homomorphism",
-      "gist": "The induced homomorphism agrees with each of the two given homomorphisms after restriction along the inclusion of the corresponding subset.",
-      "parts": [
-        {
-          "letter": "a",
-          "gist": "On the image of the fundamental group of the first subset, the induced homomorphism takes the value the first given homomorphism takes.",
-          "reference": null
         },
-        {
-          "letter": "b",
-          "gist": "On the image of the fundamental group of the second subset, the induced homomorphism takes the value the second given homomorphism takes.",
-          "reference": null
-        }
-      ],
-      "in_v1": true,
-      "reference": null,
-      "departures": "The library states each equality both element by element and as an equality of homomorphisms; the two forms say the same thing.",
-      "declarations": [
         {
           "name": "TauCeti.vanKampenDesc_map_left",
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "line": 267,
-          "part": "a",
-          "role": "key",
-          "relation": "exactMatch",
+          "part": null,
+          "role": "helper",
+          "relation": "relatedMatch",
           "junk": [],
           "hypotheses": [
             "a topological space",
@@ -636,7 +612,7 @@
           "name": "TauCeti.vanKampenDesc_comp_map_left",
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "line": 300,
-          "part": "a",
+          "part": null,
           "role": "key",
           "relation": "exactMatch",
           "junk": [],
@@ -657,9 +633,9 @@
           "name": "TauCeti.vanKampenDesc_map_right",
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "line": 283,
-          "part": "b",
-          "role": "key",
-          "relation": "exactMatch",
+          "part": null,
+          "role": "helper",
+          "relation": "relatedMatch",
           "junk": [],
           "hypotheses": [
             "a topological space",
@@ -679,7 +655,7 @@
           "name": "TauCeti.vanKampenDesc_comp_map_right",
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
           "line": 314,
-          "part": "b",
+          "part": null,
           "role": "key",
           "relation": "exactMatch",
           "junk": [],
@@ -695,20 +671,7 @@
             "a homomorphism to the monoid out of the fundamental group of each of the two subsets",
             "the two homomorphisms agree after restriction along the inclusions of the intersection"
           ]
-        }
-      ]
-    },
-    {
-      "id": "4.5",
-      "section": "4",
-      "kind": "proposition",
-      "title": "Uniqueness of the descent homomorphism",
-      "gist": "Two homomorphisms to a monoid out of the fundamental group of the space are equal as soon as they agree after restriction along the inclusions of both subsets.",
-      "parts": [],
-      "in_v1": true,
-      "reference": null,
-      "departures": "The target is only assumed to be a monoid, and the two subsets need not be open: only their interiors have to cover the space.",
-      "declarations": [
+        },
         {
           "name": "TauCeti.vanKampen_hom_ext",
           "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
@@ -734,7 +697,7 @@
       ]
     },
     {
-      "id": "4.6",
+      "id": "4.4",
       "section": "4",
       "kind": "theorem",
       "title": "The based Seifert--van Kampen theorem",

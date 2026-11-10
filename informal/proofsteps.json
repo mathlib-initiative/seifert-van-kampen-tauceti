@@ -1525,8 +1525,8 @@
       }
     },
     {
-      "id": "4.4-s01-left",
-      "item": "4.4",
+      "id": "4.3-s06-left",
+      "item": "4.3",
       "label": "Step",
       "title": "Use the glued functor's restriction to A",
       "span": "display",
@@ -1558,8 +1558,8 @@
       }
     },
     {
-      "id": "4.4-s02-basepoint",
-      "item": "4.4",
+      "id": "4.3-s07-basepoint",
+      "item": "4.3",
       "label": "Step",
       "title": "Evaluate the local functor at the basepoint",
       "span": "display",
@@ -1591,8 +1591,8 @@
       }
     },
     {
-      "id": "4.4-s03-pointwise",
-      "item": "4.4",
+      "id": "4.3-s08-pointwise",
+      "item": "4.3",
       "label": "Step",
       "title": "Pass from pointwise equality to equality of homomorphisms",
       "span": "inline",
@@ -1624,8 +1624,8 @@
       }
     },
     {
-      "id": "4.4-s04-right",
-      "item": "4.4",
+      "id": "4.3-s09-right",
+      "item": "4.3",
       "label": "Step",
       "title": "Apply the right restriction in the same way",
       "span": "inline",
@@ -1657,8 +1657,8 @@
       }
     },
     {
-      "id": "4.5-s01-images",
-      "item": "4.5",
+      "id": "4.3-s10-images",
+      "item": "4.3",
       "label": "Step",
       "title": "Both generating images lie in the equalizer subgroup",
       "span": "inline",
@@ -1696,8 +1696,8 @@
       }
     },
     {
-      "id": "4.5-s02-generation",
-      "item": "4.5",
+      "id": "4.3-s11-generation",
+      "item": "4.3",
       "label": "Step",
       "title": "Invoke generation and conclude that the homomorphisms agree",
       "span": "inline",
@@ -1729,41 +1729,8 @@
       }
     },
     {
-      "id": "4.6-s01-commutes",
-      "item": "4.6",
-      "label": "Step",
-      "title": "The two inclusions give the same loop class",
-      "span": "inline",
-      "targets": [
-        {
-          "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
-          "lines": [
-            364,
-            366
-          ],
-          "sha256": "545dfdafec98e0092bdd97357e67d979ec1ba80984a51c8b55966999a058792b",
-          "title": "The two inclusions give the same loop class",
-          "role": "key",
-          "context": {
-            "declaration": "isPushout_fundamentalGroup",
-            "lines": [
-              349,
-              378
-            ],
-            "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
-            "conclusion": "Both composites include the same loop from the intersection into $X$.",
-            "bookkeeping": "Quotient induction reduces the equality to a representative loop."
-          }
-        }
-      ],
-      "proof": {
-        "kind": "direct",
-        "summary": ""
-      }
-    },
-    {
-      "id": "4.6-s02-existence",
-      "item": "4.6",
+      "id": "4.4-s01-existence",
+      "item": "4.4",
       "label": "Step",
       "title": "Construct a map for any compatible pair",
       "span": "inline",
@@ -1805,8 +1772,8 @@
       }
     },
     {
-      "id": "4.6-s03-factorization",
-      "item": "4.6",
+      "id": "4.4-s02-factorization",
+      "item": "4.4",
       "label": "Step",
       "title": "Invoke the two restriction equations",
       "span": "display",
@@ -1838,8 +1805,8 @@
       }
     },
     {
-      "id": "4.6-s04-uniqueness",
-      "item": "4.6",
+      "id": "4.4-s03-uniqueness",
+      "item": "4.4",
       "label": "Step",
       "title": "Invoke uniqueness for the mediating homomorphism",
       "span": "inline",
@@ -1861,7 +1828,7 @@
             ],
             "sha256": "182fd518ad1db68159ebd5f067a1446546d436b80d477724c991c625479521b0",
             "conclusion": "The two mediators agree because their restrictions agree.",
-            "bookkeeping": "`vanKampen_hom_ext` is the uniqueness result from Proposition 4.5."
+            "bookkeeping": "`vanKampen_hom_ext` supplies the uniqueness part of Theorem 4.3."
           }
         }
       ],

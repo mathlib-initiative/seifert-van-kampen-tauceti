@@ -28,11 +28,11 @@ rather than maintaining a second copy of the item table.
 - Definition 2.2 combines the gluing construction with its restriction and
   uniqueness theorems. The two-set construction and its restriction theorems
   remain source helpers rather than separate numbered statements.
-- Corollary 4.3 applies the earlier vertex-group and gluing constructions.
-  The descent target in 4.3–4.5 is a monoid; the final pushout in 4.6 is in
-  the category of groups.
-- Proposition 4.4 has two parts, one for each subspace. Each part links both
-  the pointwise restriction and the equality of homomorphisms.
+- Theorem 4.3 combines the descent construction, both restriction equations,
+  and uniqueness into one unique-extension statement with a monoid target.
+  Its four key Lean declarations jointly establish the statement; the two
+  pointwise restriction lemmas remain helpers. The final pushout in Theorem 4.4
+  is in the category of groups and follows by taking the target to be a group.
 
 The broader cover hypothesis in Sections 2 and 3 says that the interiors of
 the cover members cover `X`; it does not require the members themselves to

@@ -19,43 +19,44 @@ $g:c\longrightarrow c'$ to $f(\tau_{c'}^{-1}\circ g\circ\tau_c)$.
 \leanref{TauCeti.Groupoid.functorOfEndHom_map}
 \end{definition}
 
-\begin{fcassumptions}
-For the next three results, fix a topological space $X$, subsets $A,B\subseteq X$,
-a point \hypBasepoint, and a monoid $M$.  Suppose that \hypCoverTwo and
-\hypPathConnected.
-
-\begin{corollary}[id=4.3]{The descent homomorphism}
+\begin{theorem}[id=4.3]{The descent homomorphism}
+Let $A,B\subseteq X$ for a topological space $X$, let \hypBasepoint, and let
+$M$ be a monoid.  Suppose that \hypCoverTwo and \hypPathConnected.
 Let $\varphi_A$ and $\varphi_B$ be homomorphisms such that the square
 \[
-  \begin{array}{ccc}
-    \fgrp{A\cap B}{x} & \xrightarrow{\ (\inclin{A\cap B}{A})_*\ } & \fgrp{A}{x} \\
-    \llap{$\scriptstyle(\inclin{A\cap B}{B})_*\,$}\big\downarrow
-      && \big\downarrow\rlap{$\scriptstyle\,\varphi_A$} \\
-    \fgrp{B}{x} & \xrightarrow{\ \varphi_B\ } & M
+  \begin{array}{ccc@{}l}
+    \fgrp{A\cap B}{x} & \longrightarrow & \fgrp{A}{x} & \\
+    \big\downarrow && \big\downarrow & \;\scriptstyle\varphi_A \\
+    \fgrp{B}{x} & \xrightarrow{\ \varphi_B\ } & M &
   \end{array}
 \]
-commutes, where \fcnotion[Inclusion between subspaces]{ContinuousMap.inclusion}{$\inclin{S}{T}:S\hookrightarrow T$} denotes inclusion.
-Then $\varphi_{A}$ and $\varphi_{B}$ induce a homomorphism $\varphi$ from
-$\fgrp{X}{x}$ to $M$.
+commutes, with the unlabelled maps induced by inclusions.  Then there is a unique
+homomorphism $\varphi:\fgrp{X}{x}\longrightarrow M$ such that
+\[
+  \varphi\circ(\incl A)_*=\varphi_A,\qquad
+  \varphi\circ(\incl B)_*=\varphi_B.
+\]
 \leanref{TauCeti.vanKampenDesc}
-\end{corollary}
+\leanref{TauCeti.vanKampenDesc_comp_map_left}
+\leanref{TauCeti.vanKampenDesc_comp_map_right}
+\leanref{TauCeti.vanKampen_hom_ext}
+\end{theorem}
 
-\begin{proofpassage}{4.3-descent}{Proof}{Descent from groupoid gluing}
-Put $C=A\cap B$.  \proofstep{4.3-s01-connect}{Choose connecting paths compatibly on the intersection}{By path connectedness, choose path classes $\rho_y:x\longrightarrow y$ in $C$, and extend these
+\begin{proofpassage}{4.3-descent}{Proof}{Existence and uniqueness}
+\proofstep{4.3-s01-connect}{Choose connecting paths compatibly on the intersection}{By path connectedness, choose path classes $\rho_y:x\longrightarrow y$ in $A\cap B$, and extend these
 to choices $\tau^A_y$ in $A$ and $\tau^B_y$ in $B$, taking the class at
 $x$ to be the identity.}
 \proofstep{4.3-s02-local}{Invoke the functor construction from a homomorphism}{By \itemref{4.2}, the homomorphisms $\varphi_A,\varphi_B$ give functors
 $F_A:\fgpd A\longrightarrow\sobj M$ and
 $F_B:\fgpd B\longrightarrow\sobj M$.}
 
-The connecting paths agree on $C$, so compatibility of $\varphi_A,\varphi_B$
+The connecting paths agree on $A\cap B$, so compatibility of $\varphi_A,\varphi_B$
 gives the commuting square
 \proofequation{4.3-s03-compatibility}{The local functors agree on the intersection}{
-  \begin{array}{r@{}c@{\quad}c@{\quad}c@{}l}
-    & \fgpd C & \xrightarrow{\ \fgpd{\inclin{C}{A}}\ } & \fgpd A & \\
-    \scriptstyle\fgpd{\inclin{C}{B}}\; & \big\downarrow
-      && \big\downarrow & \;\scriptstyle F_A \\
-    & \fgpd B & \xrightarrow{\ F_B\ } & \sobj M &
+  \begin{array}{ccc@{}l}
+    \fgpd{A\cap B} & \longrightarrow & \fgpd A & \\
+    \big\downarrow && \big\downarrow & \;\scriptstyle F_A \\
+    \fgpd B & \xrightarrow{\ F_B\ } & \sobj M &
   \end{array}.
 }
 \proofstep{4.3-s04-glue}{Invoke gluing of the two local functors}{Thus \itemref{2.2} glues $F_A,F_B$ to a functor
@@ -63,50 +64,23 @@ $F:\fgpd X\longrightarrow\sobj M$.}
 Restricting to loops at $x$ gives
 \proofequation{4.3-s05-endomorphisms}{Restrict the glued functor to loops at the basepoint}{  \varphi:\fgrp{X}{x}\longrightarrow M,\qquad
   \varphi(\omega)=F(\omega).}
-\end{proofpassage}
 
-\begin{proposition}[id=4.4]{Restriction of the descent homomorphism}
-Let
-$\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
-$\fgrp{B}{x}$ that agree after restriction along the inclusions of $A \cap B$,
-as in \itemref{4.3}, and let $\varphi$ be the homomorphism they induce.
-\itempart{a}{%
-  $\varphi \circ (\incl{A})_* = \varphi_{A}$.
-  \leanref{TauCeti.vanKampenDesc_map_left}%
-  \leanref{TauCeti.vanKampenDesc_comp_map_left}}
-\itempart{b}{%
-  $\varphi \circ (\incl{B})_* = \varphi_{B}$.
-  \leanref{TauCeti.vanKampenDesc_map_right}%
-  \leanref{TauCeti.vanKampenDesc_comp_map_right}}
-\end{proposition}
-
-\begin{proofpassage}{4.4-restrict}{Proof}{The restriction equations}
 Let $\omega\in\fgrp{A}{x}$ be arbitrary.  Write $p_A=(\incl{A})_*$.
 By the definition of $\varphi$ and the restriction property in
 \itemref{2.2},
-\proofequation{4.4-s01-left}{Use the glued functor's restriction to A}{
+\proofequation{4.3-s06-left}{Use the glued functor's restriction to A}{
  \varphi(p_A(\omega))=F(\fgpd{\incl{A}}(\omega))=F_A(\omega).
 }
 The chosen path $\tau^A_x$ is the identity at the basepoint, so
-\proofequation{4.4-s02-basepoint}{Evaluate the local functor at the basepoint}{
+\proofequation{4.3-s07-basepoint}{Evaluate the local functor at the basepoint}{
  F_A(\omega)=\varphi_A\bigl((\tau^A_x)^{-1}\circ\omega\circ\tau^A_x\bigr)
             =\varphi_A(\omega).
 }
-\proofstep{4.4-s03-pointwise}{Pass from pointwise equality to equality of homomorphisms}{Since this holds for every $\omega$, it proves \itemref[a]{4.4}.}
-\proofstep{4.4-s04-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ gives \itemref[b]{4.4} in the same way.}
-\end{proofpassage}
+\proofstep{4.3-s08-pointwise}{Pass from pointwise equality to equality of homomorphisms}{Since this holds for every $\omega$, we have $\varphi\circ(\incl A)_*=\varphi_A$.}
+\proofstep{4.3-s09-right}{Apply the right restriction in the same way}{Replacing $A$ by $B$ gives $\varphi\circ(\incl B)_*=\varphi_B$.}
 
-\begin{proposition}[id=4.5]{Uniqueness of the descent homomorphism}
-Let
-$\varphi$ and $\psi$ be homomorphisms from $\fgrp{X}{x}$ to $M$ such that
-$\varphi \circ (\incl{A})_* = \psi \circ (\incl{A})_*$ and
-$\varphi \circ (\incl{B})_* = \psi \circ (\incl{B})_*$.  Then
-$\varphi = \psi$.
-\leanref{TauCeti.vanKampen_hom_ext}
-\end{proposition}
-
-\begin{proofpassage}{4.5-generate}{Proof}{Uniqueness from generation}
-Consider the set where the two homomorphisms agree:
+For uniqueness, suppose that $\psi:\fgrp{X}{x}\longrightarrow M$ also satisfies
+these restriction equations.  Consider
 \[
  E=\{\omega\in\fgrp{X}{x}:\varphi(\omega)=\psi(\omega)\}.
 \]
@@ -114,28 +88,24 @@ It contains the identity and is closed under multiplication, since
 $\varphi$ and $\psi$ are homomorphisms.  It is also closed under inverses:
 if their values on $\omega$ agree, then $\varphi(\omega^{-1})$ and
 $\psi(\omega^{-1})$ are two-sided inverses of the same element of $M$,
-and a two-sided inverse is unique.  Thus $E$ is a subgroup, the equalizer of $\varphi$ and $\psi$, even
+and a two-sided inverse is unique.  Thus $E$ is a subgroup, even
 though $M$ is only assumed to be a monoid.
 
-\proofstep{4.5-s01-images}{Both generating images lie in the equalizer subgroup}{For every $\eta\in\fgrp{A}{x}$, the first hypothesis says
-$\varphi((\incl{A})_*(\eta))=\psi((\incl{A})_*(\eta))$;
-hence $E$ contains the image from $A$.  The second hypothesis puts the
-image from $B$ in $E$ as well.}  \proofstep{4.5-s02-generation}{Invoke generation and conclude that the homomorphisms agree}{These two images generate $\fgrp{X}{x}$ by
+\proofstep{4.3-s10-images}{Both generating images lie in the equalizer subgroup}{The restriction equations put the images of both $\fgrp{A}{x}$ and $\fgrp{B}{x}$ in $E$.}
+\proofstep{4.3-s11-generation}{Invoke generation and conclude that the homomorphisms agree}{These two images generate $\fgrp{X}{x}$ by
 \itemref{3.1} applied to the cover $\{A,B\}$.  Therefore $E=\fgrp{X}{x}$: the homomorphisms agree on every loop class,
 so $\varphi=\psi$.}
 \end{proofpassage}
 
-\end{fcassumptions}
-
-\begin{theorem}[id=4.6]{The based Seifert--van Kampen theorem}
+\begin{theorem}[id=4.4]{The based Seifert--van Kampen theorem}
 \fcref{Theorem 1.20}
 Let \hypBasepoint, and suppose that \hypCoverTwo and \hypPathConnected.  Then
 the square
 \[
-  \begin{array}{ccc}
-    \fgrp{A \cap B}{x} & \longrightarrow & \fgrp{A}{x} \\
-    \downarrow & & \downarrow \\
-    \fgrp{B}{x} & \longrightarrow & \fgrp{X}{x}
+  \begin{array}{r@{}c@{\quad}c@{\quad}c@{}l}
+    & \fgrp{A\cap B}{x} & \xrightarrow{\ j_A\ } & \fgrp{A}{x} & \\
+    \scriptstyle j_B\; & \big\downarrow && \big\downarrow & \;\scriptstyle p_A \\
+    & \fgrp{B}{x} & \xrightarrow{\ p_B\ } & \fgrp{X}{x} &
   \end{array}
 \]
 whose homomorphisms are induced by the inclusions is a
@@ -144,27 +114,13 @@ whose homomorphisms are induced by the inclusions is a
 \leanref{TauCeti.isPushout_fundamentalGroup}
 \end{theorem}
 
-\begin{proofpassage}{4.6-pushout}{Proof}{The pushout universal property}
-Write $C=A\cap B$, and denote the inclusion-induced maps by
-\[
-\begin{aligned}
- j_A&:\fgrp{C}{x}\longrightarrow\fgrp{A}{x},&
- j_B&:\fgrp{C}{x}\longrightarrow\fgrp{B}{x},\\
- p_A&:\fgrp{A}{x}\longrightarrow\fgrp{X}{x},&
- p_B&:\fgrp{B}{x}\longrightarrow\fgrp{X}{x}.
-\end{aligned}
-\]
-\proofstep{4.6-s01-commutes}{The two inclusions give the same loop class}{For a loop in $C$, either composite inclusion gives the same loop in $X$.
-Passing to classes proves $p_A\circ j_A=p_B\circ j_B$, so the square
-commutes.}
-
+\begin{proofpassage}{4.4-pushout}{Proof}{The pushout universal property}
 Let $K$ be any group, and let $u_A:\fgrp{A}{x}\longrightarrow K$ and
 $u_B:\fgrp{B}{x}\longrightarrow K$ satisfy
-$u_A\circ j_A=u_B\circ j_B$.  \proofstep{4.6-s02-existence}{Construct a map for any compatible pair}{The construction of \itemref{4.3}, with
-$M=K$, supplies a homomorphism $u:\fgrp{X}{x}\longrightarrow K$.}
-By \itemref{4.4} it satisfies
-\proofequation{4.6-s03-factorization}{Invoke the two restriction equations}{  u\circ p_A=u_A,\qquad u\circ p_B=u_B.}
-If $v:\fgrp{X}{x}\longrightarrow K$ satisfies the same equations, then
-$u\circ p_A=v\circ p_A$ and $u\circ p_B=v\circ p_B$.
-\proofstep{4.6-s04-uniqueness}{Invoke uniqueness for the mediating homomorphism}{\itemref{4.5} gives $u=v$.}
+$u_A\circ j_A=u_B\circ j_B$.  \proofstep{4.4-s01-existence}{Construct a map for any compatible pair}{By \itemref{4.3}, with
+$M=K$, there is a homomorphism $u:\fgrp{X}{x}\longrightarrow K$}
+satisfying
+\proofequation{4.4-s02-factorization}{Invoke the two restriction equations}{  u\circ p_A=u_A,\qquad u\circ p_B=u_B.}
+\proofstep{4.4-s03-uniqueness}{Invoke uniqueness for the mediating homomorphism}{It is unique by \itemref{4.3}.}
+This is the universal property of the pushout.
 \end{proofpassage}
