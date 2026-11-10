@@ -1,21 +1,21 @@
 {
-  "id": "proof-4.6-s01-commutes",
+  "id": "proof-4.3-s02-local",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
-        "page": 6,
-        "rect": [0.130391, 0.32923, 0.739217, 0.035669]
+        "page": 5,
+        "rect": [0.130391, 0.375789, 0.739218, 0.033933]
       },
-      "title": "The two inclusions give the same loop class",
+      "title": "Invoke the functor construction from a homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.132842, 0.32923, 0.869608, 0.32923, 0.869608, 0.348012, 0.132842, 0.348012],
-            [0.130391, 0.348011, 0.473856, 0.348011, 0.473856, 0.364899, 0.130391, 0.364899]
+            [0.203881, 0.375789, 0.869609, 0.375789, 0.869609, 0.392361, 0.203881, 0.392361],
+            [0.130391, 0.392361, 0.298566, 0.392361, 0.298566, 0.409722, 0.130391, 0.409722]
           ],
-          "region": "proof-4.6-s01-commutes@p006"
+          "region": "proof-4.3-s02-local@p005"
         }
       }
     }
@@ -26,31 +26,31 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [364, 366],
+        "lines": [164, 164],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "The two inclusions give the same loop class",
+      "title": "Invoke the functor construction from a homomorphism",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.6-s01-commutes-1",
+            "id": "proof-4.3-s02-local-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L364-L366",
+            "fragment": "L164-L164",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "Quotient induction reduces the equality to a representative loop.",
-            "conclusion": "Both composites include the same loop from the intersection into $X$.",
-            "declaration": "isPushout_fundamentalGroup",
-            "lines": [349, 378]
+            "bookkeeping": "`functorOfEndHom` is the functor construction from Definition 4.2.",
+            "conclusion": "The homomorphism and chosen connecting paths determine a local functor.",
+            "declaration": "localFunctor",
+            "lines": [160, 164]
           },
           "snippet": {
-            "line": 364,
-            "text": "    ext ⟨g⟩\n    induction g using Path.Homotopic.Quotient.ind\n    rfl"
+            "line": 164,
+            "text": "  Groupoid.functorOfEndHom _ (connect hST hS hT s₀) f"
           }
         }
       }
@@ -59,11 +59,11 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [6],
-        "printed": [6]
+        "physical": [5],
+        "printed": [5]
       },
       "proof": {
-        "kind": "direct",
+        "kind": "helper",
         "summary": ""
       },
       "provenance": {

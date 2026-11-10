@@ -8,7 +8,8 @@
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "TauCeti.vanKampenDesc_comp_map_left"
+            "id": "TauCeti.vanKampenDesc_comp_map_left",
+            "kind": "theorem"
           },
           "destination": {
             "fragment": "L300"

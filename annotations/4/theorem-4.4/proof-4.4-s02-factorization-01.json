@@ -1,21 +1,20 @@
 {
-  "id": "proof-4.6-s02-existence",
+  "id": "proof-4.4-s02-factorization",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
         "page": 6,
-        "rect": [0.130391, 0.382576, 0.739218, 0.035985]
+        "rect": [0.377786, 0.321705, 0.244428, 0.016376]
       },
-      "title": "Construct a map for any compatible pair",
+      "title": "Invoke the two restriction equations",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.280943, 0.382576, 0.869609, 0.382576, 0.869609, 0.39899, 0.280943, 0.39899],
-            [0.130391, 0.39899, 0.285382, 0.39899, 0.285382, 0.418561, 0.130391, 0.418561]
+            [0.377786, 0.321705, 0.622214, 0.321705, 0.622214, 0.338081, 0.377786, 0.338081]
           ],
-          "region": "proof-4.6-s02-existence@p006"
+          "region": "proof-4.4-s02-factorization@p006"
         }
       }
     }
@@ -26,41 +25,31 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [367, 369],
+        "lines": [370, 373],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Construct a map for any compatible pair",
+      "title": "Invoke the two restriction equations",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.6-s02-existence-1",
+            "id": "proof-4.4-s02-factorization-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L367-L369",
+            "fragment": "L370-L373",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`vanKampenDesc` is chosen as the mediator.",
-            "conclusion": "The descent homomorphism supplies a mediator for the compatible pair.",
+            "bookkeeping": "`GrpCat.ofHom` packages a group homomorphism as a category arrow; `GrpCat.hom_ext` transfers equality to those arrows.",
+            "conclusion": "The two restriction equations give the required factorizations.",
             "declaration": "isPushout_fundamentalGroup",
-            "lines": [349, 378],
-            "notation": [
-              {
-                "lean": "s.inl.hom, s.inr.hom",
-                "math": "An arbitrary compatible pair"
-              },
-              {
-                "lean": "s.condition",
-                "math": "Its compatibility equation"
-              }
-            ]
+            "lines": [349, 378]
           },
           "snippet": {
-            "line": 367,
-            "text": "  refine IsPushout.of_isColimit (PushoutCocone.IsColimit.mk (congrArg GrpCat.ofHom comm)\n    (fun s ↦ GrpCat.ofHom (vanKampenDesc hCover hA hB hAB hxA hxB s.inl.hom s.inr.hom\n      (congrArg GrpCat.Hom.hom s.condition))) (fun s ↦ ?_) (fun s ↦ ?_) fun s m h₁ h₂ ↦ ?_)"
+            "line": 370,
+            "text": "  · exact GrpCat.hom_ext (vanKampenDesc_comp_map_left hCover hA hB hAB hxA hxB _ _\n      (congrArg GrpCat.Hom.hom s.condition))\n  · exact GrpCat.hom_ext (vanKampenDesc_comp_map_right hCover hA hB hAB hxA hxB _ _\n      (congrArg GrpCat.Hom.hom s.condition))"
           }
         }
       }

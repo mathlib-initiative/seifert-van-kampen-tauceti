@@ -1,20 +1,20 @@
 {
-  "id": "proof-4.3-s05-endomorphisms",
+  "id": "proof-4.4-s03-uniqueness",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.34634, 0.311941, 0.30732, 0.02135]
+        "page": 6,
+        "rect": [0.138784, 0.348801, 0.225415, 0.020202]
       },
-      "title": "Restrict the glued functor to loops at the basepoint",
+      "title": "Invoke uniqueness for the mediating homomorphism",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.34634, 0.311941, 0.65366, 0.311941, 0.65366, 0.333291, 0.34634, 0.333291]
+            [0.138784, 0.348801, 0.364199, 0.348801, 0.364199, 0.369003, 0.138784, 0.369003]
           ],
-          "region": "proof-4.3-s05-endomorphisms@p005"
+          "region": "proof-4.4-s03-uniqueness@p006"
         }
       }
     }
@@ -25,37 +25,31 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [235, 235],
+        "lines": [374, 378],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Restrict the glued functor to loops at the basepoint",
+      "title": "Invoke uniqueness for the mediating homomorphism",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.3-s05-endomorphisms-1",
+            "id": "proof-4.4-s03-uniqueness-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L235-L235",
+            "fragment": "L374-L378",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`singleObjFunctor` restricts to loops; `SingleObj.mapHom` extracts the homomorphism. Lean nests restriction around gluing, so this step moves back one source line.",
-            "conclusion": "Restricting the glued functor to loops at $x$ gives the mediating homomorphism.",
-            "declaration": "vanKampenDesc",
-            "lines": [226, 239],
-            "notation": [
-              {
-                "lean": "vanKampenDesc",
-                "math": "The mediating homomorphism"
-              }
-            ]
+            "bookkeeping": "`vanKampen_hom_ext` supplies the uniqueness part of Theorem 4.3.",
+            "conclusion": "The two mediators agree because their restrictions agree.",
+            "declaration": "isPushout_fundamentalGroup",
+            "lines": [349, 378]
           },
           "snippet": {
-            "line": 235,
-            "text": "  (SingleObj.mapHom _ _).symm (Groupoid.singleObjFunctor (FundamentalGroupoid.mk x) ⋙"
+            "line": 374,
+            "text": "  · refine GrpCat.hom_ext (vanKampen_hom_ext hCover hA hB hAB hxA hxB ?_ ?_)\n    · exact (congrArg GrpCat.Hom.hom h₁).trans (vanKampenDesc_comp_map_left hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm\n    · exact (congrArg GrpCat.Hom.hom h₂).trans (vanKampenDesc_comp_map_right hCover hA hB hAB\n        hxA hxB _ _ (congrArg GrpCat.Hom.hom s.condition)).symm"
           }
         }
       }
@@ -64,8 +58,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [6],
+        "printed": [6]
       },
       "proof": {
         "kind": "direct",

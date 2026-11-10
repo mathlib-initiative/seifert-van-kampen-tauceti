@@ -1,31 +1,10 @@
 {
-  "id": "proposition-4.5",
-  "kind": "proposition",
-  "relation": "exactMatch",
-  "subject": [
-    {
-      "location": {
-        "page": 5,
-        "rect": [0.130391, 0.64899, 0.739217, 0.038826]
-      },
-      "title": "Proposition 4.5 (Uniqueness of the descent homomorphism)",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "proposition-4.5@p005"
-        }
-      }
-    }
-  ],
   "object": [
     {
-      "type": "lean",
-      "uri": "https://github.com/TauCetiProject/TauCeti",
-      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
         "declaration": "TauCeti.vanKampen_hom_ext",
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -33,9 +12,7 @@
             "kind": "theorem"
           },
           "destination": {
-            "fragment": "L329",
-            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
-            "resolution": "exact"
+            "fragment": "L329"
           },
           "snippet": {
             "line": 329,
@@ -44,13 +21,5 @@
         }
       }
     }
-  ],
-  "extensions": {
-    "org.mathlib-initiative.formal-companion.overlay": {
-      "locator": {
-        "physical": [5],
-        "printed": [5]
-      }
-    }
-  }
+  ]
 }

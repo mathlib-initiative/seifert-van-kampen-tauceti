@@ -1,22 +1,21 @@
 {
-  "id": "proof-4.3-s01-connect",
+  "id": "proof-4.4-s01-existence",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.130391, 0.104167, 0.739217, 0.054135]
+        "page": 6,
+        "rect": [0.130391, 0.271465, 0.739217, 0.0363]
       },
-      "title": "Choose connecting paths compatibly on the intersection",
+      "title": "Construct a map for any compatible pair",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.577646, 0.104167, 0.869608, 0.104167, 0.869608, 0.122791, 0.577646, 0.122791],
-            [0.130391, 0.12279, 0.869608, 0.12279, 0.869608, 0.142676, 0.130391, 0.142676],
-            [0.130391, 0.142677, 0.367496, 0.142677, 0.367496, 0.158302, 0.130391, 0.158302]
+            [0.526857, 0.271465, 0.869608, 0.271465, 0.869608, 0.28851, 0.526857, 0.28851],
+            [0.130391, 0.28851, 0.406345, 0.28851, 0.406345, 0.307765, 0.130391, 0.307765]
           ],
-          "region": "proof-4.3-s01-connect@p005"
+          "region": "proof-4.4-s01-existence@p006"
         }
       }
     }
@@ -27,40 +26,41 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [136, 139],
+        "lines": [367, 369],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Choose connecting paths compatibly on the intersection",
+      "title": "Construct a map for any compatible pair",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.3-s01-connect-1",
+            "id": "proof-4.4-s01-existence-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L136-L139",
+            "fragment": "L367-L369",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "conclusion": "Reuse the intersection's chosen paths inside $A$ and $B$; choose other connecting paths independently.",
-            "declaration": "connect",
-            "lines": [132, 139],
+            "bookkeeping": "`vanKampenDesc` is chosen as the mediator.",
+            "conclusion": "The descent homomorphism supplies a mediator for the compatible pair.",
+            "declaration": "isPushout_fundamentalGroup",
+            "lines": [349, 378],
             "notation": [
               {
-                "lean": "S",
-                "math": "The intersection"
+                "lean": "s.inl.hom, s.inr.hom",
+                "math": "An arbitrary compatible pair"
               },
               {
-                "lean": "T",
-                "math": "Either larger subspace"
+                "lean": "s.condition",
+                "math": "Its compatibility equation"
               }
             ]
           },
           "snippet": {
-            "line": 136,
-            "text": "  exact if hz : z.as.1 ∈ S then\n    (FundamentalGroupoid.map (ContinuousMap.inclusion hST)).map\n      (baseHom hS s₀ (FundamentalGroupoid.mk ⟨z.as.1, hz⟩))\n  else baseHom hT _ z"
+            "line": 367,
+            "text": "  refine IsPushout.of_isColimit (PushoutCocone.IsColimit.mk (congrArg GrpCat.ofHom comm)\n    (fun s ↦ GrpCat.ofHom (vanKampenDesc hCover hA hB hAB hxA hxB s.inl.hom s.inr.hom\n      (congrArg GrpCat.Hom.hom s.condition))) (fun s ↦ ?_) (fun s ↦ ?_) fun s m h₁ h₂ ↦ ?_)"
           }
         }
       }
@@ -69,11 +69,11 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [6],
+        "printed": [6]
       },
       "proof": {
-        "kind": "helper",
+        "kind": "direct",
         "summary": ""
       },
       "provenance": {

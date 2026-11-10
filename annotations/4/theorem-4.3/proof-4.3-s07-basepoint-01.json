@@ -1,22 +1,20 @@
 {
-  "id": "proof-4.5-s02-generation",
+  "id": "proof-4.3-s07-basepoint",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
         "page": 5,
-        "rect": [0.130391, 0.843119, 0.739218, 0.05303]
+        "rect": [0.341765, 0.665979, 0.316471, 0.02496]
       },
-      "title": "Invoke generation and conclude that the homomorphisms agree",
+      "title": "Evaluate the local functor at the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.783921, 0.843119, 0.869609, 0.843119, 0.869609, 0.859691, 0.783921, 0.859691],
-            [0.130391, 0.859691, 0.869608, 0.859691, 0.869608, 0.877526, 0.130391, 0.877526],
-            [0.130391, 0.877525, 0.577752, 0.877525, 0.577752, 0.896149, 0.130391, 0.896149]
+            [0.341765, 0.665979, 0.658236, 0.665979, 0.658236, 0.690939, 0.341765, 0.690939]
           ],
-          "region": "proof-4.5-s02-generation@p005"
+          "region": "proof-4.3-s07-basepoint@p005"
         }
       }
     }
@@ -27,31 +25,31 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [341, 342],
+        "lines": [280, 280],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Invoke generation and conclude that the homomorphisms agree",
+      "title": "Evaluate the local functor at the basepoint",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.5-s02-generation-1",
+            "id": "proof-4.3-s07-basepoint-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L341-L342",
+            "fragment": "L280-L280",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`range_map_subtypeVal_sup_eq_top` applies Theorem 3.1 to the two-set cover $\\{A,B\\}$.",
-            "conclusion": "Generation makes the equalizer the whole group, so the homomorphisms agree everywhere.",
-            "declaration": "vanKampen_hom_ext",
-            "lines": [329, 342]
+            "bookkeeping": "`localFunctor_map_base` evaluates the local functor on a loop at the basepoint.",
+            "conclusion": "The local value at the basepoint is the original homomorphism's value.",
+            "declaration": "vanKampenDesc_map_left",
+            "lines": [267, 280]
           },
           "snippet": {
-            "line": 341,
-            "text": "  have htop := FundamentalGroup.range_map_subtypeVal_sup_eq_top hCover hA hB hAB hxA hxB\n  exact MonoidHom.eq_of_eqOn_top fun y _ ↦ (htop.ge.trans hle) (Subgroup.mem_top y)"
+            "line": 280,
+            "text": "    (localFunctor_map_base inter_subset_left hAB hA (interBase hxA hxB) fA g)"
           }
         }
       }

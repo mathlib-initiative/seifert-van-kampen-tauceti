@@ -1,16 +1,16 @@
 {
-  "id": "proposition-4.4-b",
-  "kind": "proposition",
+  "id": "theorem-4.3",
+  "kind": "theorem",
   "relation": "exactMatch",
   "subject": {
     "location": {
       "page": 5,
-      "rect": [0.130391, 0.436869, 0.739298, 0.019255]
+      "rect": [0.130391, 0.104167, 0.739217, 0.194444]
     },
-    "title": "Proposition 4.4(b) (Restriction of the descent homomorphism)",
+    "title": "Theorem 4.3 (The descent homomorphism)",
     "extensions": {
       "org.mathlib-initiative.formal-companion.overlay": {
-        "region": "proposition-4.4-b@p005"
+        "region": "theorem-4.3@p005"
       }
     }
   },
@@ -19,9 +19,6 @@
     "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
     "extensions": {
       "org.mathlib-initiative.formal-companion.overlay": {
-        "declaration": {
-          "kind": "theorem"
-        },
         "destination": {
           "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean"
         }

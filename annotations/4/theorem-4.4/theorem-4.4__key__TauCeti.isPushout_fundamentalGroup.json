@@ -1,17 +1,17 @@
 {
-  "id": "theorem-4.6",
+  "id": "theorem-4.4",
   "kind": "theorem",
   "relation": "exactMatch",
   "subject": [
     {
       "location": {
         "page": 6,
-        "rect": [0.130391, 0.104167, 0.739217, 0.131629]
+        "rect": [0.130391, 0.104167, 0.739217, 0.137942]
       },
-      "title": "Theorem 4.6 (The based Seifert–van Kampen theorem)",
+      "title": "Theorem 4.4 (The based Seifert–van Kampen theorem)",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "theorem-4.6@p006"
+          "region": "theorem-4.4@p006"
         }
       }
     }

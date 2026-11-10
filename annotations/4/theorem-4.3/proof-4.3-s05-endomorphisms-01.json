@@ -1,20 +1,20 @@
 {
-  "id": "proof-4.4-s02-basepoint",
+  "id": "proof-4.3-s05-endomorphisms",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
         "page": 5,
-        "rect": [0.341765, 0.570068, 0.316471, 0.02496]
+        "rect": [0.34634, 0.539461, 0.30732, 0.02135]
       },
-      "title": "Evaluate the local functor at the basepoint",
+      "title": "Restrict the glued functor to loops at the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.341765, 0.570068, 0.658236, 0.570068, 0.658236, 0.595028, 0.341765, 0.595028]
+            [0.34634, 0.539461, 0.65366, 0.539461, 0.65366, 0.560811, 0.34634, 0.560811]
           ],
-          "region": "proof-4.4-s02-basepoint@p005"
+          "region": "proof-4.3-s05-endomorphisms@p005"
         }
       }
     }
@@ -25,31 +25,37 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [280, 280],
+        "lines": [235, 235],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Evaluate the local functor at the basepoint",
+      "title": "Restrict the glued functor to loops at the basepoint",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.4-s02-basepoint-1",
+            "id": "proof-4.3-s05-endomorphisms-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L280-L280",
+            "fragment": "L235-L235",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`localFunctor_map_base` evaluates the local functor on a loop at the basepoint.",
-            "conclusion": "The local value at the basepoint is the original homomorphism's value.",
-            "declaration": "vanKampenDesc_map_left",
-            "lines": [267, 280]
+            "bookkeeping": "`singleObjFunctor` restricts to loops; `SingleObj.mapHom` extracts the homomorphism. Lean nests restriction around gluing, so this step moves back one source line.",
+            "conclusion": "Restricting the glued functor to loops at $x$ gives the mediating homomorphism.",
+            "declaration": "vanKampenDesc",
+            "lines": [226, 239],
+            "notation": [
+              {
+                "lean": "vanKampenDesc",
+                "math": "The mediating homomorphism"
+              }
+            ]
           },
           "snippet": {
-            "line": 280,
-            "text": "    (localFunctor_map_base inter_subset_left hAB hA (interBase hxA hxB) fA g)"
+            "line": 235,
+            "text": "  (SingleObj.mapHom _ _).symm (Groupoid.singleObjFunctor (FundamentalGroupoid.mk x) ⋙"
           }
         }
       }

@@ -1,31 +1,10 @@
 {
-  "id": "corollary-4.3",
-  "kind": "corollary",
-  "relation": "exactMatch",
-  "subject": [
-    {
-      "location": {
-        "page": 4,
-        "rect": [0.130391, 0.765152, 0.739217, 0.137311]
-      },
-      "title": "Corollary 4.3 (The descent homomorphism)",
-      "extensions": {
-        "org.mathlib-initiative.formal-companion.overlay": {
-          "region": "corollary-4.3@p004"
-        }
-      }
-    }
-  ],
   "object": [
     {
-      "type": "lean",
-      "uri": "https://github.com/TauCetiProject/TauCeti",
-      "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
         "declaration": "TauCeti.vanKampenDesc",
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
@@ -33,9 +12,7 @@
             "kind": "def"
           },
           "destination": {
-            "fragment": "L226",
-            "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
-            "resolution": "exact"
+            "fragment": "L226"
           },
           "snippet": {
             "line": 226,
@@ -44,13 +21,5 @@
         }
       }
     }
-  ],
-  "extensions": {
-    "org.mathlib-initiative.formal-companion.overlay": {
-      "locator": {
-        "physical": [4],
-        "printed": [4]
-      }
-    }
-  }
+  ]
 }

@@ -1,21 +1,20 @@
 {
-  "id": "proof-4.5-s01-images",
+  "id": "proof-4.3-s04-glue",
   "kind": "proof_step",
   "relation": "closeMatch",
   "subject": [
     {
       "location": {
         "page": 5,
-        "rect": [0.130391, 0.8256, 0.739217, 0.034091]
+        "rect": [0.139164, 0.505051, 0.523549, 0.019886]
       },
-      "title": "Both generating images lie in the equalizer subgroup",
+      "title": "Invoke gluing of the two local functors",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.160516, 0.8256, 0.869608, 0.8256, 0.869608, 0.843119, 0.160516, 0.843119],
-            [0.130391, 0.843119, 0.778778, 0.843119, 0.778778, 0.859691, 0.130391, 0.859691]
+            [0.139164, 0.505051, 0.662713, 0.505051, 0.662713, 0.524937, 0.139164, 0.524937]
           ],
-          "region": "proof-4.5-s01-images@p005"
+          "region": "proof-4.3-s04-glue@p005"
         }
       }
     }
@@ -26,37 +25,31 @@
       "uri": "https://github.com/TauCetiProject/TauCeti",
       "version": "37f5e9dce5ac83d2825198ac72d7f5d64eb26c85",
       "location": {
-        "lines": [337, 340],
+        "lines": [236, 239],
         "module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
       },
-      "title": "Both generating images lie in the equalizer subgroup",
+      "title": "Invoke gluing of the two local functors",
       "role": "key",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "declaration": {
-            "id": "proof-4.5-s01-images-1",
+            "id": "proof-4.3-s04-glue-1",
             "kind": "proof_step"
           },
           "destination": {
-            "fragment": "L337-L340",
+            "fragment": "L236-L239",
             "href": "https://github.com/TauCetiProject/TauCeti/blob/37f5e9dce5ac83d2825198ac72d7f5d64eb26c85/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
             "resolution": "exact"
           },
           "proof_context": {
-            "bookkeeping": "`f.eqLocus g` is the subgroup where the two homomorphisms agree.",
-            "conclusion": "The two restriction equations place both generating images in the equalizer subgroup.",
-            "declaration": "vanKampen_hom_ext",
-            "lines": [329, 342],
-            "notation": [
-              {
-                "lean": "f.eqLocus g",
-                "math": "The equalizer subgroup"
-              }
-            ]
+            "bookkeeping": "`glueTwo` specializes the gluing construction to two subsets.",
+            "conclusion": "The compatible local functors glue to a functor on $\\Pi_1(X)$.",
+            "declaration": "vanKampenDesc",
+            "lines": [226, 239]
           },
           "snippet": {
-            "line": 337,
-            "text": "  have hle : (FundamentalGroup.map (ContinuousMap.subtypeVal A) ⟨x, hxA⟩).range ⊔\n      (FundamentalGroup.map (ContinuousMap.subtypeVal B) ⟨x, hxB⟩).range ≤ f.eqLocus g := by\n    refine sup_le ?_ ?_ <;> rintro _ ⟨y, rfl⟩\n    exacts [DFunLike.congr_fun hfgA y, DFunLike.congr_fun hfgB y]"
+            "line": 236,
+            "text": "    FundamentalGroupoid.glueTwo hCover\n      (localFunctor inter_subset_left hAB hA (interBase hxA hxB) fA)\n      (localFunctor inter_subset_right hAB hB (interBase hxA hxB) fB)\n      (localFunctor_compatibility hA hB hAB hxA hxB fA fB h))"
           }
         }
       }
