@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.553988, 0.699179, 0.310718, 0.019255]
+        "rect": [0.553988, 0.753472, 0.310718, 0.019255]
       },
       "title": "Apply the right restriction in the same way",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.553988, 0.699179, 0.864706, 0.699179, 0.864706, 0.718434, 0.553988, 0.718434]
+            [0.553988, 0.753472, 0.864706, 0.753472, 0.864706, 0.772727, 0.553988, 0.772727]
           ],
           "region": "proof-4.3-s09-right@p005"
         }

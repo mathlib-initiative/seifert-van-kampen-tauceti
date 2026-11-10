@@ -5,16 +5,16 @@
   "subject": [
     {
       "location": {
-        "page": 5,
-        "rect": [0.160516, 0.843119, 0.61335, 0.017519]
+        "page": 6,
+        "rect": [0.160516, 0.104167, 0.61335, 0.019255]
       },
       "title": "Both generating images lie in the equalizer subgroup",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.160516, 0.843119, 0.773866, 0.843119, 0.773866, 0.860638, 0.160516, 0.860638]
+            [0.160516, 0.104167, 0.773866, 0.104167, 0.773866, 0.123422, 0.160516, 0.123422]
           ],
-          "region": "proof-4.3-s10-images@p005"
+          "region": "proof-4.3-s10-images@p006"
         }
       }
     }
@@ -64,8 +64,8 @@
   "extensions": {
     "org.mathlib-initiative.formal-companion.overlay": {
       "locator": {
-        "physical": [5],
-        "printed": [5]
+        "physical": [6],
+        "printed": [6]
       },
       "proof": {
         "kind": "direct",

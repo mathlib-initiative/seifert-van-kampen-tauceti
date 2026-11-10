@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.341765, 0.671069, 0.316471, 0.02496]
+        "rect": [0.338705, 0.720305, 0.32259, 0.02496]
       },
       "title": "Evaluate the local functor at the basepoint",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.341765, 0.671069, 0.658236, 0.671069, 0.658236, 0.696029, 0.341765, 0.696029]
+            [0.338705, 0.720305, 0.661295, 0.720305, 0.661295, 0.745265, 0.338705, 0.745265]
           ],
           "region": "proof-4.3-s07-basepoint@p005"
         }

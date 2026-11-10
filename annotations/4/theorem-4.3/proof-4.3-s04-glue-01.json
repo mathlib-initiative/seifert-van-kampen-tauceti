@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 5,
-        "rect": [0.139164, 0.520833, 0.523549, 0.019886]
+        "rect": [0.139164, 0.552083, 0.523549, 0.020044]
       },
       "title": "Invoke gluing of the two local functors",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.139164, 0.520833, 0.662713, 0.520833, 0.662713, 0.540719, 0.139164, 0.540719]
+            [0.139164, 0.552083, 0.662713, 0.552083, 0.662713, 0.572127, 0.139164, 0.572127]
           ],
           "region": "proof-4.3-s04-glue@p005"
         }
