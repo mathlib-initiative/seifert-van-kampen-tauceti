@@ -19,10 +19,13 @@ $g:c\longrightarrow c'$ to $f(\tau_{c'}^{-1}\circ g\circ\tau_c)$.
 \leanref{TauCeti.Groupoid.functorOfEndHom_map}
 \end{definition}
 
+\begin{fcassumptions}
+For the next three results, fix a topological space $X$, subsets $A,B\subseteq X$,
+a point \hypBasepoint, and a monoid $M$.  Suppose that \hypCoverTwo and
+\hypPathConnected.
+
 \begin{corollary}[id=4.3]{The descent homomorphism}
-Let $A,B\subseteq X$ for a topological space $X$, let \hypBasepoint, and let
-$M$ be a monoid.  Suppose that \hypCoverTwo and \hypPathConnected.  Let
-$\varphi_A$ and $\varphi_B$ be homomorphisms such that the square
+Let $\varphi_A$ and $\varphi_B$ be homomorphisms such that the square
 \[
   \begin{array}{ccc}
     \fgrp{A\cap B}{x} & \xrightarrow{\ (\inclin{A\cap B}{A})_*\ } & \fgrp{A}{x} \\
@@ -63,7 +66,7 @@ Restricting to loops at $x$ gives
 \end{proofpassage}
 
 \begin{proposition}[id=4.4]{Restriction of the descent homomorphism}
-Let \hypBasepoint, and suppose that \hypCoverTwo and \hypPathConnected.  Let
+Let
 $\varphi_{A}$ and $\varphi_{B}$ be homomorphisms to $M$ from $\fgrp{A}{x}$ and
 $\fgrp{B}{x}$ that agree after restriction along the inclusions of $A \cap B$,
 as in \itemref{4.3}, and let $\varphi$ be the homomorphism they induce.
@@ -94,7 +97,7 @@ The chosen path $\tau^A_x$ is the identity at the basepoint, so
 \end{proofpassage}
 
 \begin{proposition}[id=4.5]{Uniqueness of the descent homomorphism}
-Let \hypBasepoint, and suppose that \hypCoverTwo and \hypPathConnected.  Let
+Let
 $\varphi$ and $\psi$ be homomorphisms from $\fgrp{X}{x}$ to $M$ such that
 $\varphi \circ (\incl{A})_* = \psi \circ (\incl{A})_*$ and
 $\varphi \circ (\incl{B})_* = \psi \circ (\incl{B})_*$.  Then
@@ -121,6 +124,8 @@ image from $B$ in $E$ as well.}  \proofstep{4.5-s02-generation}{Invoke generatio
 \itemref{3.1} applied to the cover $\{A,B\}$.  Therefore $E=\fgrp{X}{x}$: the homomorphisms agree on every loop class,
 so $\varphi=\psi$.}
 \end{proofpassage}
+
+\end{fcassumptions}
 
 \begin{theorem}[id=4.6]{The based Seifert--van Kampen theorem}
 \fcref{Theorem 1.20}

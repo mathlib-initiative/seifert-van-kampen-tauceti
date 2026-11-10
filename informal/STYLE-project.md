@@ -140,7 +140,10 @@ $1/N$. Introduce equal subdivisions $t_k=k/N$ in the gluing proof where needed.
 Natural numbers start at zero, and subdivisions are nondecreasing rather than
 strictly increasing. State that the pairwise intersections are nonempty and
 path connected in Theorem 3.1, without a global nonemptiness convention.
-Introduce $x\in A\cap B$ at the start of the two-set statements, rather than adding separate membership assumptions later. The common basepoint guarantees nonemptiness in these results.
+Group the common assumptions on $A$, $B$, $x\in A\cap B$, and $M$ for
+Corollary 4.3 and Propositions 4.4--4.5 in one opening paragraph within an
+`fcassumptions` block. Keep Theorem 4.6 self-contained. The common basepoint
+guarantees nonemptiness in these results.
 
 ## Proof tags and reading notes
 
