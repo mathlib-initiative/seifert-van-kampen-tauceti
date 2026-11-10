@@ -6,13 +6,13 @@
     {
       "location": {
         "page": 1,
-        "rect": [0.206234, 0.641888, 0.528495, 0.017203]
+        "rect": [0.204235, 0.641888, 0.532993, 0.017203]
       },
-      "title": "Obtain a Lebesgue radius",
+      "title": "Obtain a Lebesgue number",
       "extensions": {
         "org.mathlib-initiative.formal-companion.overlay": {
           "quads": [
-            [0.206234, 0.641888, 0.734729, 0.641888, 0.734729, 0.659091, 0.206234, 0.659091]
+            [0.204235, 0.641888, 0.737228, 0.641888, 0.737228, 0.659091, 0.204235, 0.659091]
           ],
           "region": "proof-1.2-s01-lebesgue@p001"
         }
@@ -44,7 +44,7 @@
           },
           "proof_context": {
             "bookkeeping": "`lebesgue_number_lemma_of_metric` supplies the radius and ball-containment property.",
-            "conclusion": "Compactness gives a Lebesgue radius $\\rho>0$.",
+            "conclusion": "Compactness gives a Lebesgue number $\\rho>0$.",
             "declaration": "exists_monotone_Icc_subset_open_cover_Icc",
             "lines": [474, 482],
             "notation": [
